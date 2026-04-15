@@ -4,9 +4,9 @@ type: concept
 category: ai
 tags: [MCP, model-context-protocol, LLM, 도구, tool-use, 프로토콜]
 related: [[llm-wiki-pattern]], [[qmd]], [[claude-code]]
-source_count: 2
+source_count: 3
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-15
 ---
 
 # MCP (Model Context Protocol)
@@ -60,10 +60,17 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[qmd]]: MCP 서버 모드를 제공하는 구체적 도구
 - [[claude-code]]: MCP의 대표적 클라이언트. Anthropic이 MCP 프로토콜과 Claude Code를 함께 개발
 
+## 사용 순서 (마스터 가이드)
+
+**MCP로 닿기 → Skill로 절차 얹기 → Plugin으로 배포**. MCP는 "닿는 길"이고, Skill은 그 위에 올리는 반복 작업 매뉴얼, Plugin은 Skills·commands·agents·hooks·MCP를 묶어 팀에 배포하는 상자.
+
+거버넌스 관점에서는 `allowManagedMcpServersOnly` 같은 managed 설정으로 조직이 허용한 MCP만 실제 연결되도록 강제할 수 있다.
+
 ## 출처
 
 - [[llm-wiki-idea-doc]] — 역자 주석 3번에서 MCP를 "게임 체인저"로 소개
 - [[claude-code-overview]] — Claude Code 공식 문서에서 MCP를 외부 데이터 소스 연결의 핵심으로 설명
+- [[claude-code-master-guide]] — 6장 "확장과 자동화"에서 MCP·Skill·Plugin·Connector·Hook 5종의 관계와 사용 순서 정리
 
 ## 열린 질문
 

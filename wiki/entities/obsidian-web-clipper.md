@@ -3,7 +3,7 @@ title: "Obsidian Web Clipper"
 type: entity
 entity_type: tool
 tags: [obsidian, 웹클리핑, web-clipper, 소스수집, 마크다운, markdown]
-related: [[llm-wiki-pattern]]
+related: [[obsidian]], [[llm-wiki-pattern]]
 source_count: 1
 created: 2026-04-09
 updated: 2026-04-09
@@ -35,6 +35,7 @@ updated: 2026-04-09
 
 ## 관련 개념
 
+- [[obsidian]]: Obsidian 본체. 이 확장은 Obsidian vault의 지정 폴더로 클리핑을 직접 저장
 - [[llm-wiki-pattern]]: 수집(Ingest) 워크플로우의 소스 획득 단계에서 핵심 도구
 
 ## 출처

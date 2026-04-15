@@ -3,10 +3,10 @@ title: "Claude Code"
 type: entity
 entity_type: tool
 tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI]
-related: [[mcp]], [[llm-wiki-pattern]], [[obsidian-web-clipper]]
-source_count: 1
+related: [[mcp]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]]
+source_count: 3
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-15
 ---
 
 # Claude Code
@@ -52,17 +52,61 @@ curl -fsSL https://claude.ai/install.sh | bash
 irm https://claude.ai/install.ps1 | iex
 ```
 
-설치 후 프로젝트 디렉토리에서 `claude` 명령으로 시작.
+설치 후 프로젝트 디렉토리에서 `claude` 명령으로 시작. 네이티브 설치는 백그라운드 자동 업데이트.
+
+### 필수 CLI 명령
+
+| 명령 | 기능 |
+|------|------|
+| `claude` | 대화형 모드 |
+| `claude "task"` | 일회성 작업 |
+| `claude -p "query"` | 일회성 쿼리 후 종료 (파이프라인용) |
+| `claude -c` | 현재 디렉토리 최근 대화 계속 |
+| `claude -r` | 이전 대화 재개 |
+| `claude commit` | Git 커밋 생성 |
+| `/clear` | 대화 기록 지우기 |
+| `/login` | 계정 전환 |
+| `/help` | 명령 목록 |
+
+단축키: `?` 전체 단축키, `Tab` 자동완성, `↑` 명령 기록, `/` skills 탐색.
+
+### 프롬프팅 원칙
+
+- **구체적으로**: "버그 수정" 대신 증상·맥락을 포함하여 지시
+- **단계 분해**: 복잡한 작업은 1~3단계로 쪼개서 요청
+- **이해 먼저**: 변경 전 "스키마 분석"처럼 탐색 요청으로 컨텍스트 확보
+- **동료 메타포**: 달성 목표 설명이 명령보다 효과적
+- **권한 모델**: 파일 수정 전 항상 승인 요청, 세션 단위 "모두 수락" 모드 지원
 
 ## 관련 개념
 
+- [[harness]]: Claude Code가 구현한 작업장 구조 전체 — 이 도구의 중심 추상
+- [[context-engineering]]: CLAUDE.md 설계의 이론적 배경
+- [[token-economy]]: `/compact`, `--resume`, 세션 분리 같은 기능의 설계 원리
+- [[cowork]]: 비개발 지식 업무용 자매 작업 경로. 같은 하네스를 공유
 - [[llm-wiki-pattern]]: 이 위키의 운영 패턴. Claude Code가 에이전트 역할 수행
 - [[mcp]]: Claude Code의 외부 도구 통합 프로토콜
 - [[obsidian-web-clipper]]: 소스 수집 후 Claude Code가 위키에 통합하는 워크플로우
 
+## 운영 관점 보강 (마스터 가이드 기반)
+
+### 허용/질문/차단 (allow/ask/deny)
+모든 요청은 세 갈래로 흐른다. 고위험 작업은 프롬프트 경고가 아니라 **설정 차단**으로 앞단에서 멈춘다.
+
+### 설정 scope 우선순위
+`managed` > `user` > `project` > `local`. `managed`는 조직이 강제하는 층이며 다른 층에서 덮어쓸 수 없다 (`strictKnownMarketplaces`, `allowManagedPermissionRulesOnly`, `allowManagedMcpServersOnly`).
+
+### 세션 재개 플래그
+`claude --continue` / `claude --resume`. 이어받을 때는 `handoff.md` 같은 바깥 상태 파일과 함께 쓰는 게 안정적.
+
+### Worktree 패턴
+같은 저장소를 역할별로 분리해 병렬 작업 (plan / implement / review 세션 격리).
+
 ## 출처
 
 - [[claude-code-overview]] — Anthropic 공식 문서 개요 페이지
+- [[claude-code-quickstart]] — 설치부터 첫 세션·Git 작업까지의 실전 온보딩 가이드
+- [[claude-code-master-guide]] — CHOI의 848페이지 실전 마스터 가이드. 하네스·거버넌스·직무별 플레이북 포함
 
 ## 메모
 
