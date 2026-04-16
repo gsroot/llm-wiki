@@ -4,7 +4,7 @@ type: concept
 category: ai
 tags: [MCP, model-context-protocol, LLM, 도구, tool-use, 프로토콜]
 related: [[llm-wiki-pattern]], [[qmd]], [[claude-code]]
-source_count: 3
+source_count: 4
 created: 2026-04-09
 updated: 2026-04-15
 ---
@@ -71,6 +71,7 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[llm-wiki-idea-doc]] — 역자 주석 3번에서 MCP를 "게임 체인저"로 소개
 - [[claude-code-overview]] — Claude Code 공식 문서에서 MCP를 외부 데이터 소스 연결의 핵심으로 설명
 - [[claude-code-master-guide]] — 6장 "확장과 자동화"에서 MCP·Skill·Plugin·Connector·Hook 5종의 관계와 사용 순서 정리
+- [[using-llm-wiki-as-rag]] — `.mcp.json` 등록 예시와 qmd를 위키 전용 MCP 서버로 쓰는 방법
 
 ## 열린 질문
 

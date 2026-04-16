@@ -10,6 +10,60 @@ type: log
 
 ---
 
+## [2026-04-16] ingest | Slash Commands vs Agent Skills 조사 수집 + RAG 가이드 재수집
+
+- **소스 1 (신규)**: `raw/notes/slash-commands-vs-agent-skills.md` — 공식 문서(code.claude.com/docs/en/skills) 기반 조사·분석
+- **소스 2 (업데이트)**: `raw/notes/using-llm-wiki-as-rag.md` — 방법 4를 "Slash Command"에서 "Agent Skill"로 승격, 새 소스 참조 추가
+- **생성된 파일**:
+  - `wiki/sources/slash-commands-vs-agent-skills.md` — 통합 경위, 기능 비교표, 위키 조회에 Skill이 유리한 4가지, frontmatter 핵심 필드, 호출 제어 매트릭스, 동적 context injection
+- **업데이트된 파일**:
+  - `wiki/sources/using-llm-wiki-as-rag.md` — 방법 4 전체 재작성(Agent Skill), 선택 매트릭스·인사이트·관련 링크 갱신
+  - `wiki/entities/claude-code.md` — source_count 4→5, Skills 설명 보강(통합 경위·자동 호출·context:fork·paths·agentskills.io 표준), 출처 2건 추가
+  - `wiki/index.md` — 총 페이지 19→20, 소스 6→7
+- **raw/ 수정 참고**: `using-llm-wiki-as-rag.md`는 석근 본인+Claude 세션이 원저자인 메모이므로 업데이트를 허용. 외부 클리핑이었으면 불변 원칙 적용.
+- **핵심 판단**: "어떤 도구든 Skills로 시작한다. 예외는 기존 commands 자산이 많아 이관 비용이 큰 경우뿐" — 이것이 이 조사의 결론이자 위키 전체의 새 운영 원칙
+
+---
+
+## [2026-04-16] setup | `wiki` Agent Skill 생성 (방법 4 구현)
+
+- **작업**: [[using-llm-wiki-as-rag]]의 "방법 4"로 제안됐던 slash command를 **Agent Skill**로 승격하여 구현
+- **생성된 파일**: `~/.claude/skills/wiki/SKILL.md` (Personal scope — 모든 프로젝트에서 자동 사용)
+- **설계 결정**:
+  - **Slash command가 아니라 Skill 선택**: 공식 문서 확인 결과 "Custom commands have been merged into skills"로 통합됐고 Skills가 권장됨. 자동 호출·supporting files·context:fork·paths 제한 등 Skill 전용 기능이 위키 조회에 특히 유용
+  - **광범위한 description**: 초기 안은 "AI/LLM 질문"으로 좁혔으나, 개인 위키는 BI·업무·학습·독서·사이드 프로젝트 등 모든 주제로 확장될 예정이므로 description에 전 카테고리 열거
+  - **"빈 조회" 방지 로직**: SKILL.md 1단계에서 `index.md` Read 후 관련 페이지 없으면 즉시 종료. Claude가 자동 호출해도 토큰 낭비 최소
+  - **`context: fork` + `agent: Explore`**: 조회를 서브에이전트로 격리해 메인 세션 컨텍스트 오염 방지. [[harness]] 원칙 중 세션 분리 적용
+  - **Personal scope 선택**: `~/.claude/skills/wiki/`에 두어 회사·개인 프로젝트 구분 없이 작동
+- **업데이트된 파일**:
+  - `wiki/sources/using-llm-wiki-as-rag.md` — 후속 과제 중 방법 4 완료 표시
+- **의미**: 이 위키가 Claude Code의 네이티브 retrieval 경로로 **제품화**된 시점. 이제 어느 프로젝트에서든 `claude` 실행 후 관련 질문이 들어오면 자동으로 이 위키가 참조됨
+- **후속 과제**:
+  - 실사용하며 자동 호출의 정확도 관찰 → description 조정 여부 판정
+  - 패턴이 쌓이면 `~/.claude/skills/wiki/query-patterns.md` supporting file 추가 검토
+  - `context: fork` 비용이 과하다 싶으면 inline 모드로 전환 실험
+
+---
+
+## [2026-04-15] ingest | 이 위키를 Claude Code에서 RAG처럼 쓰는 법 (자기참조)
+
+- **소스**: `raw/notes/using-llm-wiki-as-rag.md` (석근이 Claude Code 세션 대화 답변을 본인이 수집 대상으로 지정)
+- **성격**: 자기참조적 수집 — 위키 운영 메타 문서. 이 위키의 활용법이 위키 자체의 한 페이지가 됨.
+- **생성된 파일**:
+  - `wiki/sources/using-llm-wiki-as-rag.md` — 5가지 통합 방법(디렉토리 실행 / 프로젝트 참조 / 명시적 로드 / slash command / MCP) + 선택 매트릭스
+- **업데이트된 파일**:
+  - `wiki/concepts/llm-wiki-pattern.md` — source_count 2→3, "RAG처럼 활용하기 (5단계)" 섹션 추가
+  - `wiki/entities/claude-code.md` — source_count 3→4, 출처에 사용 가이드 추가
+  - `wiki/concepts/mcp.md` — source_count 3→4, `.mcp.json` 예시 소스로 사용 가이드 추가
+  - `wiki/index.md` — 총 페이지 18→19, 소스 5→6
+- **후속 과제**:
+  - 방법 4 구현: `~/.claude/commands/wiki.md` 실제 생성 (비용 대비 이득이 큼)
+  - 방법 2 지원: 회사 프로젝트 CLAUDE.md 템플릿에 "참조 지식 베이스" 섹션 추가
+  - qmd 도입 트리거 기준: 페이지 50개 또는 "index.md 읽는 데 5초 이상"
+- **메모**: 수집하면서 확인된 것 — 이 위키는 이미 RAG 역할을 하고 있고, 18페이지 규모에서는 벡터 검색보다 index.md + Read가 오히려 빠르고 정확함. MCP 도입은 성급하지 않게.
+
+---
+
 ## [2026-04-15] ingest | Obsidian 사용 가이드 수집
 
 - **소스**: `raw/notes/OBSIDIAN_GUIDE.md` (석근 개인 정리, 21개 섹션)

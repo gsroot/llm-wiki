@@ -4,7 +4,7 @@ type: concept
 category: ai
 tags: [지식관리, knowledge-management, LLM, 위키, obsidian, RAG, 하네스, harness]
 related: [[wiki-bootstrap-log]], [[memex]], [[qmd]], [[mcp]], [[obsidian-web-clipper]], [[harness]], [[context-engineering]]
-source_count: 2
+source_count: 3
 created: 2026-04-09
 updated: 2026-04-15
 ---
@@ -77,6 +77,22 @@ RAG는 대체재가 아닌 **보완재**이다:
 
 LLM 위키가 해결하는 가장 큰 실전 문제는 **세션 간 컨텍스트 유실**이다. 스키마에 "세션 시작 시 `index.md`와 `log.md`를 먼저 읽어라"고 명시하면, 새 세션에서도 축적된 지식의 지도를 즉시 파악할 수 있다.
 
+### RAG처럼 활용하기 (5단계)
+
+이 위키는 "수작업 컴파일된 RAG"이므로, Claude Code의 Read/Grep/Glob가 retrieval 엔진 역할을 한다. 상황별 5가지 통합 방법:
+
+| 단계 | 방법 | 적용 시점 |
+|------|------|----------|
+| 1 | 위키 디렉토리에서 직접 실행 (`cd ~/llm-wiki && claude`) | 위키 자체 관리 |
+| 2 | 다른 프로젝트 CLAUDE.md에 "참조 지식 베이스" 경로 추가 | 회사 프로젝트에서 참조 |
+| 3 | 세션 첫 메시지로 `index.md` 명시적 로드 | 가끔 한 번씩 |
+| 4 | `~/.claude/commands/wiki.md` 로 `/wiki` slash command 제작 | 반복 조회 |
+| 5 | [[qmd]] + [[mcp]]로 네이티브 검색 도구화 | 50+ 페이지 이후 |
+
+핵심 감각: **"위키에 물어본다"**. 일반 지식 질문보다 "`wiki/concepts/harness.md` 기준으로 ..." 같은 **페이지 기반 합성 질문**이 가장 강력하다.
+
+자세한 예시는 [[using-llm-wiki-as-rag]] 참조.
+
 ## 하네스 관점에서 본 위키
 
 [[claude-code-master-guide]]의 [[harness]] 개념으로 이 위키를 다시 읽으면:
@@ -99,6 +115,7 @@ LLM 위키가 해결하는 가장 큰 실전 문제는 **세션 간 컨텍스트
 
 - [[llm-wiki-idea-doc]] — 이 패턴을 제안한 원본 아이디어 문서 (원문 + 역자 주석 10개 항목)
 - [[claude-code-master-guide]] — 하네스·파일 운영·기본 파일 8종 등 위키 패턴과 동형 구조 다수 제시
+- [[using-llm-wiki-as-rag]] — 이 위키를 Claude Code에서 RAG처럼 쓰는 5단계 실전 가이드
 
 ## 열린 질문
 

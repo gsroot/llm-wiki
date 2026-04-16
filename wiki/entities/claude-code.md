@@ -4,9 +4,9 @@ type: entity
 entity_type: tool
 tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI]
 related: [[mcp]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]]
-source_count: 3
+source_count: 5
 created: 2026-04-09
-updated: 2026-04-15
+updated: 2026-04-16
 ---
 
 # Claude Code
@@ -29,7 +29,7 @@ Anthropic이 개발한 에이전트 코딩 도구. 전체 코드베이스를 이
 - **CLAUDE.md**: 프로젝트 루트의 마크다운 파일로 세션마다 자동 로드. 코딩 표준, 아키텍처, 워크플로우 규칙 정의. 이 위키의 스키마가 바로 이 기능을 활용
 - **자동 메모리**: 빌드 명령, 디버깅 인사이트 등을 자동 축적
 - **[[mcp]]**: 외부 서비스(Google Drive, Jira, Slack 등)를 네이티브 도구로 연결. 프로젝트 루트 `.mcp.json`에 등록
-- **Skills (커스텀 명령)**: `/review-pr`, `/deploy-staging` 같은 반복 워크플로우를 팀과 공유
+- **Skills (Agent Skills)**: `/review-pr`, `/deploy-staging` 같은 반복 워크플로우를 패키징. 기존 Custom Commands가 Skills에 **공식 통합**됨. [agentskills.io](https://agentskills.io) 오픈 표준 준수. 핵심 차별점은 **자동 호출**(description 기반으로 Claude가 판단), **supporting files**, **`context: fork`**(서브에이전트 격리), **`paths`**(경로 조건 활성화). 상세 비교 → [[slash-commands-vs-agent-skills]]
 - **Hooks**: 도구 실행 전후에 셸 명령 자동 실행
 
 ### 멀티 에이전트
@@ -107,6 +107,8 @@ irm https://claude.ai/install.ps1 | iex
 - [[claude-code-overview]] — Anthropic 공식 문서 개요 페이지
 - [[claude-code-quickstart]] — 설치부터 첫 세션·Git 작업까지의 실전 온보딩 가이드
 - [[claude-code-master-guide]] — CHOI의 848페이지 실전 마스터 가이드. 하네스·거버넌스·직무별 플레이북 포함
+- [[using-llm-wiki-as-rag]] — 이 위키를 Claude Code에서 retrieval 소스로 통합하는 5가지 방법 (Agent Skill, `.mcp.json` 등)
+- [[slash-commands-vs-agent-skills]] — Slash Commands와 Agent Skills 통합 경위·비교·판단 (Anthropic 공식 문서 기반)
 
 ## 메모
 
