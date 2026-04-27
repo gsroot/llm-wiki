@@ -3,6 +3,7 @@ title: "컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (
 type: source
 source_type: note
 source_url: ""
+raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/2024-08-analytics-common-module.md"
 author: "석근"
 date_published: 2026-04-24
 date_ingested: 2026-04-24

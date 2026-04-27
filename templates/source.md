@@ -3,6 +3,7 @@ title: "소스 제목"
 type: source
 source_type: article | paper | note | video | podcast
 source_url: ""
+raw_path: ""
 author: ""
 date_published: YYYY-MM-DD
 date_ingested: YYYY-MM-DD

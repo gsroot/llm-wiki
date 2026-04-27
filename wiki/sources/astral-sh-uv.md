@@ -3,6 +3,7 @@ title: "astral-sh/uv — Rust로 작성된 초고속 Python 패키지·프로젝
 type: source
 source_type: article
 source_url: "https://github.com/astral-sh/uv"
+raw_path: "raw/articles/astral-sh-uv/"
 author: "Astral"
 date_published: 2024-02-15
 date_ingested: 2026-04-27

@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 ## 개요
 
-Claude 모델군과 그 주변 생태계(Claude Code, Claude Agent SDK, Claude Managed Agents, Skills, MCP 표준 등)를 만드는 AI 연구·제품 회사. 위키에서 만나는 거의 모든 핵심 도구·표준이 이쪽에서 출발한다.
+Claude 모델군과 그 주변 생태계(Claude Code, Claude Agent SDK, [[claude-managed-agents|Claude Managed Agents]], Skills, MCP 표준 등)를 만드는 AI 연구·제품 회사. 위키에서 만나는 거의 모든 핵심 도구·표준이 이쪽에서 출발한다.
 
 ## 핵심 제품·표준
 
@@ -22,7 +22,7 @@ Claude 모델군과 그 주변 생태계(Claude Code, Claude Agent SDK, Claude M
 | 모델 | Claude Sonnet 4.6 / Haiku 4.5 / Opus 4.6 (정책: dated ID 금지, alias만) | (모델 자체 페이지 없음) |
 | CLI/에이전트 | Claude Code (CLI/IDE/Web/iOS) | [[claude-code]] |
 | SDK | Claude Agent SDK | [[claude-agent-sdk]] |
-| Hosted runtime | Claude Managed Agents (CMA) | (claude-cookbooks 소스에 정리) |
+| Hosted runtime | [[claude-managed-agents|Claude Managed Agents]] (CMA) | hosted stateful agent runtime |
 | 패키지 표준 | Agent Skills (`SKILL.md`) | [[agent-skills]] |
 | 도구 표준 | Model Context Protocol (MCP) | [[mcp]] |
 | 에이전트 분류 | "Building Effective Agents" 5 패턴 | [[agent-patterns]] |

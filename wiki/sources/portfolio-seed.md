@@ -3,6 +3,7 @@ title: "포트폴리오 시드 문서 (old-portfolio.md)"
 type: source
 source_type: note
 source_url: ""
+raw_path: "raw/notes/portfolio/old-portfolio.md"
 author: "석근"
 date_published: 2025-11-01
 date_ingested: 2026-04-24

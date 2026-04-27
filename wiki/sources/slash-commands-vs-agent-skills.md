@@ -3,6 +3,7 @@ title: "Claude Code: Slash Commands vs Agent Skills"
 type: source
 source_type: note
 source_url: "https://code.claude.com/docs/en/skills"
+raw_path: "raw/notes/slash-commands-vs-agent-skills.md"
 author: "석근 (Claude Code 세션 조사·분석)"
 date_published: 2026-04-16
 date_ingested: 2026-04-16

@@ -10,6 +10,33 @@ type: log
 
 ---
 
+## [2026-04-27] lint-followup | 평가 우선순위 미완료 항목 반영 — 4개 페이지 신설 + raw_path 추적성 보강
+
+- **트리거**: 소유자 요청 — "지금 로컬에 변경사항들이 있는데 확인해보고 너가 말한 우선순위에서 아직 진행되지 않은 부분들은 진행해줘."
+- **로컬 변경 확인**:
+  - 이미 반영됨: `copy-on-write` / `dataframe` / `prompt-cache` 3개 개념 페이지, `career-timeline-seokgeun` 역링크, source frontmatter 규칙 명확화, obsidian 예시 링크 처리.
+  - 미완료로 확인됨: `agent-stack-evolution.md` 중복 섹션, `BDFL`/`NumFOCUS`/`PDEP`/`Claude Managed Agents` 페이지 신설, source 원본 경로 일관 기록.
+- **후속 수정**:
+  - `wiki/syntheses/agent-stack-evolution.md` — 중복된 "스냅샷 이후 — 4축·5축 확장 노트" 섹션 제거, 제목을 3축에서 5축으로 정정.
+  - 신규 페이지 4건:
+    - `wiki/concepts/bdfl.md`
+    - `wiki/concepts/pdep.md`
+    - `wiki/entities/numfocus.md`
+    - `wiki/entities/claude-managed-agents.md`
+  - 관련 문서 재연결: `pandas.md`, `pandas-dev.md`, `pandas-dev-pandas.md`, `anthropic.md`, `claude-agent-sdk.md`, `anthropics-claude-cookbooks.md`, `scikit-learn.md`, `data-pipeline-bigquery.md`.
+  - `templates/source.md`와 `CLAUDE.md`에 `raw_path` 필드 추가.
+  - `wiki/sources/*.md` 31개 전부에 로컬 원본 `raw_path` 추가.
+- **인덱스/통계 갱신**:
+  - `wiki/index.md` — 통계 88/31/32/21/3으로 갱신, 신규 4페이지 등록, `agent-stack-evolution` 제목 갱신.
+- **검증**:
+  - 깨진 위키링크(코드블록/inline-code 제외): 0건
+  - source `raw_path` 누락/존재 오류: 0건
+  - 인덱스 미등록/파일 없음: 0건
+  - 프론트매터 필수 필드 누락: 0건
+  - `git diff --check`: 통과
+
+---
+
 ## [2026-04-27] lint | 위키 전체 점검 — 깨진 링크 해소 + 스키마 명확화 + 신규 개념 3종
 
 - **트리거**: 소유자 요청 — "llm-wiki 가 전체적으로 깨지거나 이상이 있는 부분이 혹시 있는지 확인해주고, obsidian에서 잘 활용될 수 있는 상태인지, 혹시 필요한 작업이 있을지 검토해줘."
@@ -20,7 +47,7 @@ type: log
   - 고아 페이지: 1건 (career-timeline-seokgeun)
   - 스키마 드리프트: CLAUDE.md "필수 필드: created/updated"가 source 31개 실제 사용 패턴(`date_ingested`)과 불일치
 - **P0 즉시 수정**:
-  - `wiki/sources/obsidian-guide.md:86` — 표 안 예시 위키링크에 백틱 추가 (`` `[[프로젝트 - 결제 개선]]` ``)
+  - `wiki/sources/obsidian-guide.md:86` — 표 안 예시 위키링크를 inline code로 처리
   - `wiki/entities/seokgeun-kim.md` — "종합 분석" 섹션 신설 + `[[career-timeline-seokgeun]]` 백링크 (고아 페이지 해소)
 - **P1 스키마 명확화**:
   - `CLAUDE.md` 프론트매터 규칙 갱신 — 공통 필수(`title`/`type`/`tags`) + 타입별 필수 필드 명세 (entity/concept = `created`+`updated`, source = `date_ingested`, synthesis = `created`+`updated`). source가 `date_ingested`로 시간 추적함을 명시.

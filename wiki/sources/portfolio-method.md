@@ -3,6 +3,7 @@ title: "포트폴리오 방법론 (docs/00-meta 합본)"
 type: source
 source_type: note
 source_url: ""
+raw_path: "raw/notes/portfolio/docs/00-meta/"
 author: "석근"
 date_published: 2026-04-24
 date_ingested: 2026-04-24

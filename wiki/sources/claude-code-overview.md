@@ -3,6 +3,7 @@ title: "Claude Code 개요"
 type: source
 source_type: article
 source_url: "https://code.claude.com/docs/ko/overview"
+raw_path: "raw/articles/claude-code/Claude Code 개요.md"
 author: "Anthropic"
 date_published: 2026-04-09
 date_ingested: 2026-04-09

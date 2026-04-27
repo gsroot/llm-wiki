@@ -3,6 +3,7 @@ title: "microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문"
 type: source
 source_type: article
 source_url: "https://github.com/microsoft/generative-ai-for-beginners"
+raw_path: "raw/articles/microsoft-generative-ai-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2023-06-19
 date_ingested: 2026-04-27

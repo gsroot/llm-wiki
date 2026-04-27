@@ -3,6 +3,7 @@ title: "github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 
 type: source
 source_type: article
 source_url: "https://github.com/github/spec-kit"
+raw_path: "raw/articles/github-spec-kit/"
 author: "GitHub"
 date_published: 2026-04-24
 date_ingested: 2026-04-27

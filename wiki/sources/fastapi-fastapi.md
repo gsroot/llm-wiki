@@ -3,6 +3,7 @@ title: "fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라
 type: source
 source_type: article
 source_url: "https://github.com/fastapi/fastapi"
+raw_path: "raw/articles/fastapi-fastapi/"
 author: "Sebastián Ramírez (tiangolo) — fastapi.tiangolo.com"
 date_published: 2018-12-05
 date_ingested: 2026-04-27

@@ -3,6 +3,7 @@ title: "microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터�
 type: source
 source_type: article
 source_url: "https://github.com/microsoft/Data-Science-For-Beginners"
+raw_path: "raw/articles/microsoft-data-science-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2021-03-03
 date_ingested: 2026-04-27

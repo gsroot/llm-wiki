@@ -26,7 +26,7 @@ Python에서 머신러닝의 사실상 표준(de facto) 라이브러리. 2007년
 - **+1 신규** (1.3+, experimental): **Metadata Routing API** — `set_fit_request(sample_weight=True)` 패턴, 19년의 "X, y만 다룬다" 컨트랙트 첫 명시적 확장.
 - **의도적 범위 잠금**: 딥러닝/RL/그래픽 모델/시퀀스 예측/GPU "out of scope" 명시. 직사각형 데이터 위 정통 ML만.
 - **거버넌스**: meritocratic + consensus seeking + **SLEP** (Scikit-Learn Enhancement Proposal, 별도 repo) 3중 강제. 4팀(Maintainers, Documentation, Contributor Experience, Communication) + Technical Committee 7명.
-- **다층 자금 모델**: NumFOCUS 재정 후원 / probabl.ai 풀타임 메인테이너 8명 고용 / Founding INRIA / Gold Chanel / Silver BNP Paribas / Bronze NVIDIA / Microsoft·Quansight·CZI·Tidelift 후원. 단일 회사 의존성 없음.
+- **다층 자금 모델**: [[numfocus]] 재정 후원 / probabl.ai 풀타임 메인테이너 8명 고용 / Founding INRIA / Gold Chanel / Silver BNP Paribas / Bronze NVIDIA / Microsoft·Quansight·CZI·Tidelift 후원. 단일 회사 의존성 없음.
 - **의존성 최소화**: Python 3.11+ / NumPy 1.24+ / SciPy 1.10+ / joblib 1.3+ / threadpoolctl 3.2+ — 5개만으로 작동.
 - **빌드 시스템**: `pyproject.toml` + `meson.build` (Cython) — Python ML 라이브러리 중 드물게 meson 채택.
 - **AGENTS.md** (965 bytes, 루트): 메이저 OSS 중 첫 명문화된 AI 작성 코드 disclosure 강제 정책.

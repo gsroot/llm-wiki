@@ -3,6 +3,7 @@ title: "Claude Code 빠른 시작"
 type: source
 source_type: article
 source_url: "https://code.claude.com/docs/ko/quickstart"
+raw_path: "raw/articles/claude-code/빠른 시작.md"
 author: "Anthropic"
 date_published: 2026-04-15
 date_ingested: 2026-04-15

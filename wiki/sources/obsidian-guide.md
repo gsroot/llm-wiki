@@ -3,6 +3,7 @@ title: "Obsidian 사용 가이드"
 type: source
 source_type: note
 source_url: ""
+raw_path: "raw/notes/OBSIDIAN_GUIDE.md"
 author: "석근 (개인 정리)"
 date_published: 2026-04-07
 date_ingested: 2026-04-15
@@ -83,7 +84,7 @@ confidence: high
 |------|------|---|
 | **Properties** | 고정된 필드 (정렬·필터·Bases용) | `type`, `status`, `date`, `owner`, `tags` |
 | **Tags** | 반복 분류 (짧고 자주) | `#meeting`, `#billing`, `#inbox/to-read` |
-| **Links** | 문맥 연결 | `` `[[프로젝트 - 결제 개선]]` `` |
+| **Links** | 문맥 연결 | `[[프로젝트 - 결제 개선]]` |
 
 핵심 기준: **반복 분류는 태그, 고정 필드는 속성, 문맥 연결은 링크**.
 

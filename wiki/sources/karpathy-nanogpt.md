@@ -3,6 +3,7 @@ title: "karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)"
 type: source
 source_type: article
 source_url: "https://github.com/karpathy/nanoGPT"
+raw_path: "raw/articles/karpathy-nanogpt/"
 author: "Andrej Karpathy"
 date_published: 2022-12-28
 date_ingested: 2026-04-27

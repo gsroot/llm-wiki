@@ -3,6 +3,7 @@ title: "컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)"
 type: source
 source_type: note
 source_url: ""
+raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/2024-04-xpla-platform.md"
 author: "석근"
 date_published: 2026-04-24
 date_ingested: 2026-04-24

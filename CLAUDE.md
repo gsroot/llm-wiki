@@ -56,7 +56,7 @@ llm-wiki/
 - **타입별 필수 필드**:
   - `entity`: `entity_type`, `related`, `source_count`, `created`, `updated`
   - `concept`: `category`, `related`, `source_count`, `created`, `updated`
-  - `source`: `source_type`, `source_url`, `author`, `date_published`, `date_ingested`, `related`, `confidence` (※ source는 `date_ingested`로 시간 추적, `created`/`updated` 사용 안 함)
+  - `source`: `source_type`, `source_url`, `raw_path`, `author`, `date_published`, `date_ingested`, `related`, `confidence` (※ source는 `date_ingested`로 시간 추적, `created`/`updated` 사용 안 함)
   - `synthesis`: `category`, `sources`, `created`, `updated`
 - 자세한 형식은 `templates/{entity,concept,source,synthesis}.md` 참조
 

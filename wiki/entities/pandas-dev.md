@@ -3,7 +3,7 @@ title: "pandas-dev (GitHub 조직)"
 type: entity
 entity_type: organization
 tags: [pandas-dev, github-org, numfocus, bdfl, pdep, governance, oss-governance, wes-mckinney]
-related: [[pandas]], [[karpathy]], [[anthropic]], [[microsoft]], [[github]]
+related: [[pandas]], [[numfocus]], [[pdep]], [[bdfl]], [[karpathy]], [[anthropic]], [[microsoft]], [[github]]
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27
@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 ## 개요
 
-**pandas-dev**는 [[pandas]] 라이브러리와 그 부속 저장소들을 운영하는 GitHub 조직이다. 2015년 NumFOCUS(501(c)(3) 비영리, NumPy/Jupyter/scikit-learn 등을 후원하는 PyData 모회사) sponsored project로 공식화. 11개 저장소 운영, 활성 메인테이너 15명 + pandas-stubs 메인테이너 3명 + 비활성 메인테이너 20명, 2,000+ 컨트리뷰터.
+**pandas-dev**는 [[pandas]] 라이브러리와 그 부속 저장소들을 운영하는 GitHub 조직이다. 2015년 [[numfocus]] sponsored project로 공식화. 11개 저장소 운영, 활성 메인테이너 15명 + pandas-stubs 메인테이너 3명 + 비활성 메인테이너 20명, 2,000+ 컨트리뷰터.
 
 URL: https://github.com/pandas-dev
 
@@ -38,7 +38,7 @@ URL: https://github.com/pandas-dev
 
 ### 거버넌스 모델 — 3축
 
-#### 1. BDFL (Benevolent Dictator for Life)
+#### 1. [[bdfl|BDFL]] (Benevolent Dictator for Life)
 
 - 현재: **Wes McKinney**
 - 권한: 모든 최종 결정에 대한 override 권한 ("special vote")
@@ -90,7 +90,7 @@ In-kind: OVH (호스팅), Indeed (로고 디자인)
 
 과거 institutional partners (10): Paris-Saclay, Anaconda, RStudio, Ursa Labs, Gousto, d-fine GmbH, Two Sigma, Voltron Data, Intel, Coiled
 
-### PDEP (Pandas Enhancement Proposal) 시스템
+### [[pdep|PDEP]] (Pandas Enhancement Proposal) 시스템
 
 PDEP-1이 메소드론 자체. Python의 PEP, NumPy의 NEP와 같은 가족.
 
@@ -115,9 +115,9 @@ PyData shared copyright:
 ## 관련 개념
 
 - [[pandas]]: 운영하는 라이브러리
-- NumFOCUS: 501(c)(3) 모회사 (PyData 생태계 비영리 후원)
-- PDEP (Pandas Enhancement Proposal): 거버넌스 산출물 시스템 (PEP의 pandas판)
-- BDFL (Benevolent Dictator For Life): 오픈소스 거버넌스 패턴 — pandas는 BDFL 단계에서 코어 팀 + PDEP 단계로 진화한 사례
+- [[numfocus]]: 501(c)(3) 모회사 (PyData 생태계 비영리 후원)
+- [[pdep]]: 거버넌스 산출물 시스템 (PEP의 pandas판)
+- [[bdfl]]: 오픈소스 거버넌스 패턴 — pandas는 BDFL 단계에서 코어 팀 + PDEP 단계로 진화한 사례
 - [[github]]: 인프라 호스트
 - [[anthropic]] / [[microsoft]] / [[karpathy]]와의 비교: 거버넌스 모델이 본질적으로 다름
 
@@ -127,6 +127,6 @@ PyData shared copyright:
 
 ## 메모
 
-- pandas-dev의 거버넌스는 LLM 위키 운영 패턴의 후보 — BDFL(석근님) + Core Team(LLM) + NumFOCUS Subcommittee(외부 도구 정책 위원회) 3축으로 매핑 가능.
+- pandas-dev의 거버넌스는 LLM 위키 운영 패턴의 후보 — [[bdfl|BDFL]](석근님) + Core Team(LLM) + [[numfocus|NumFOCUS]] Subcommittee(외부 도구 정책 위원회) 3축으로 매핑 가능.
 - "BDFL ≠ 일상 메인테이너" 원칙: Wes McKinney도 일상 메인테이너 리스트에서는 inactive — 정치적 권위와 일상 운영 권한이 분리되는 패턴.
 - 메트릭 게이밍 명시적 거부 — "100 commits" 같은 자의적 임계치를 두지 않음. 이는 [[autonomous-research-loop]]의 "메트릭 잠금"과 정반대 철학.

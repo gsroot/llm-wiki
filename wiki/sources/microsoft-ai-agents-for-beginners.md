@@ -3,6 +3,7 @@ title: "microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문
 type: source
 source_type: article
 source_url: "https://github.com/microsoft/ai-agents-for-beginners"
+raw_path: "raw/articles/microsoft-ai-agents-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2024-11-28
 date_ingested: 2026-04-27

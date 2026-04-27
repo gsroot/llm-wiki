@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 ## 개요
 
-**pandas**는 Python의 사실상 표준 데이터 분석 라이브러리다. 2008년 Wes McKinney가 AQR Capital Management(헤지펀드)에서 사내 도구로 개발 시작, 2009년 오픈소스, 2015년 NumFOCUS 후원 프로젝트, 2026-04-27 v3.0 stable.
+**pandas**는 Python의 사실상 표준 데이터 분석 라이브러리다. 2008년 Wes McKinney가 AQR Capital Management(헤지펀드)에서 사내 도구로 개발 시작, 2009년 오픈소스, 2015년 [[numfocus]] 후원 프로젝트, 2026-04-27 v3.0 stable.
 
 **Mission**: "the fundamental high-level building block for doing practical, real world data analysis in Python"
 
@@ -48,7 +48,7 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 ### 성능 모델
 
 - 핫패스는 **Cython** 또는 C로 작성
-- **Copy-on-Write** (PDEP-7, v2.0 Implemented) — 메모리 모델 변혁
+- **[[copy-on-write|Copy-on-Write]]** ([[pdep|PDEP]]-7, v2.0 Implemented) — 메모리 모델 변혁
 - 옵션 의존성 `pandas[performance]` (numexpr, bottleneck, numba)으로 가속
 
 ### 시계열 (BI 핵심)
@@ -73,8 +73,8 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 | 축 | 내용 | 비교 |
 |----|------|------|
 | 라이브러리 본체 | 101 공개 API, BSD-3 | NumPy/SciPy와 동급의 PyData 핵심 |
-| **거버넌스** | BDFL + Core Team + NumFOCUS Subcommittee | spec-kit·anthropics-skills와 본질적으로 다른 3축 |
-| **로드맵 시스템** | PDEP (절차적 결정) | spec-kit Constitution(사전 합의)과 대조 |
+| **거버넌스** | [[bdfl|BDFL]] + Core Team + [[numfocus|NumFOCUS]] Subcommittee | spec-kit·anthropics-skills와 본질적으로 다른 3축 |
+| **로드맵 시스템** | [[pdep|PDEP]] (절차적 결정) | spec-kit Constitution(사전 합의)과 대조 |
 | 에코시스템 | Modin/Dask/Bodo/bigframes로 스케일, Pandera로 검증, scikit-learn 연동 | 표준 인터페이스 역할 |
 
 ## Brand & Logo
@@ -87,7 +87,7 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 
 - [[data-pipeline-bigquery]]: pandas-gbq, bigframes 액세서로 BigQuery ↔ DataFrame 양방향
 - [[ml-ai]]: scikit-learn의 first-class citizen (입력/출력 모두 DataFrame), skrub이 다리
-- PDEP (Pandas Enhancement Proposal): pandas의 거버넌스 산출물 시스템 (1~14번 채택, BDFL 단계 → PDEP 단계로 거버넌스 진화)
+- [[pdep]]: pandas의 거버넌스 산출물 시스템 (1~14번 채택, BDFL 단계 → PDEP 단계로 거버넌스 진화)
 - [[copy-on-write]]: PDEP-7 메모리 모델 변혁
 - [[dataframe]]: 데이터 분석의 보편적 추상
 
@@ -98,6 +98,6 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 ## 메모
 
 - McKinney의 책 "Python for Data Analysis"가 pandas 학습의 표준 — 2012년 초판, 현재 3판. 일하면서 곁에 두면 좋은 레퍼런스.
-- Wes McKinney = BDFL이지만 일상 메인테이너 리스트에서는 "inactive"로 분류됨 — BDFL ≠ 일상 운영자라는 거버넌스 위계 표시.
+- Wes McKinney = [[bdfl|BDFL]]이지만 일상 메인테이너 리스트에서는 "inactive"로 분류됨 — BDFL ≠ 일상 운영자라는 거버넌스 위계 표시.
 - pandas 3.0 stable 출시 후 PyArrow가 점차 1급 데이터 모델로 전환 중. PDEP-10이 통과되면 NumPy 단일 의존이 깨짐.
 - "Highly optimized for performance" — 그러나 100M+ row에서는 Modin/Dask/Bodo로 자동 병렬화 또는 bigframes로 BigQuery 위임이 표준 결정 트리.

@@ -3,6 +3,7 @@ title: "anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스"
 type: source
 source_type: article
 source_url: "https://github.com/anthropics/skills"
+raw_path: "raw/articles/anthropics-skills/"
 author: "Anthropic"
 date_published: 2026-04
 date_ingested: 2026-04-27

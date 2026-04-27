@@ -3,6 +3,7 @@ title: "flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vend
 type: source
 source_type: article
 source_url: "https://github.com/flutter/flutter"
+raw_path: "raw/articles/flutter-flutter/"
 author: "Google (Flutter Team)"
 date_published: 2015-03-06
 date_ingested: 2026-04-27

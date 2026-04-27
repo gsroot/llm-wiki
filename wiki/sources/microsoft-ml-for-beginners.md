@@ -3,6 +3,7 @@ title: "microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML"
 type: source
 source_type: article
 source_url: "https://github.com/microsoft/ML-For-Beginners"
+raw_path: "raw/articles/microsoft-ml-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2021-03-03
 date_ingested: 2026-04-27

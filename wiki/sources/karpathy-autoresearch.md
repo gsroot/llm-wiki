@@ -3,6 +3,7 @@ title: "karpathy/autoresearch — 자율 LLM 실험 루프"
 type: source
 source_type: article
 source_url: "https://github.com/karpathy/autoresearch"
+raw_path: "raw/articles/karpathy-autoresearch/"
 author: "Andrej Karpathy"
 date_published: 2026-03-06
 date_ingested: 2026-04-27

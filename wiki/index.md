@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-27 (12회차 + 점검)
+updated: 2026-04-27 (12회차 + 점검 후속)
 ---
 
 # 위키 인덱스
@@ -24,6 +24,7 @@ updated: 2026-04-27 (12회차 + 점검)
 <!-- 수집일 2026-04-27 (12회차): flutter/flutter 수집 — 소스 1 + 엔티티 3 (flutter, dart, google) 추가, agent-skills/harness 2개 개념 + agent-stack-evolution 종합 분석 보강. Google 멀티플랫폼 UI SDK (★176K 11년차). 결정적 발견 2가지: (1) **agent-skills 표준의 vendor-neutral 채택** — `.agents/skills/` 3 SKILL.md (find-release/rebuilding-flutter-tool/upgrade-browser) + `.claude/skills` → `../.agents/skills` 심볼릭 링크 + agentskills.io 표준 명시 인용 + `dart_skills_lint` 자체 검증 도구. **표준 채택자가 정의자의 위치 컨벤션을 누른 첫 사례**. agent-skills 외부 채택 4단계 진화 완성: anthropics/skills(표준 정의) → spec-kit(메소드론 어댑터) → fastapi(라이브러리 self-hosted) → flutter(vendor-neutral asset). (2) **`docs/rules/` 4계층 토큰 예산 룰** — rules.md(30K) → 10k → 4k → 1k 동일 룰을 도구별 한계(Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K) 매트릭스에 자동 매칭 — progressive disclosure를 토큰 단위로 더 세분화. agent-stack-evolution 3축 → 5축 확장 (Microsoft·Anthropic·Karpathy + GitHub spec-kit + Google flutter). Flutter Values 5개 + 차등 지원 4단계 모델 + agent-artifacts/ 격리 패턴은 위키 운영 차용 후보 -->
 
 <!-- 점검 2026-04-27: lint 결과 후속 조치 — (1) 깨진 위키링크 7개 해소: 핵심 3개(copy-on-write/dataframe/prompt-cache) 페이지 신설 + 약어 4개(BDFL/NumFOCUS/PDEP/CMA) 일반 텍스트화. (2) 고아 페이지 career-timeline-seokgeun에 entities/seokgeun-kim.md 백링크 추가. (3) CLAUDE.md frontmatter 규칙을 타입별로 명확화 (source는 date_ingested 사용 명시). (4) obsidian-guide.md 표 안 예시 위키링크 백틱 처리. 위키 페이지 81 → 84개 -->
+<!-- 점검 후속 2026-04-27: 이전 평가 우선순위 미완료 항목 반영 — agent-stack-evolution 중복 섹션 제거 및 제목 5축으로 정정, BDFL/NumFOCUS/PDEP/CMA 4개 페이지 신설, 모든 source 페이지에 raw_path 추가, source 템플릿/CLAUDE.md raw_path 규칙 반영. 위키 페이지 84 → 88개 -->
 
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
@@ -31,10 +32,10 @@ updated: 2026-04-27 (12회차 + 점검)
 
 ## 통계
 
-- 총 페이지 수: 84
+- 총 페이지 수: 88
 - 소스 요약: 31
-- 엔티티: 30
-- 개념: 19
+- 엔티티: 32
+- 개념: 21
 - 종합 분석: 3
 
 ---
@@ -98,6 +99,8 @@ updated: 2026-04-27 (12회차 + 점검)
 | [[copy-on-write]] | Copy-on-Write (CoW) | copy-on-write, cow, pandas, 메모리관리, 성능, optimization | 1 | 2026-04-27 |
 | [[dataframe]] | DataFrame | dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data | 1 | 2026-04-27 |
 | [[prompt-cache]] | Prompt Caching | prompt-cache, claude, anthropic, llm-api, 토큰경제, latency, optimization | 1 | 2026-04-27 |
+| [[pdep]] | PDEP (Pandas Enhancement Proposal) | pdep, pandas, governance, decision-record, proposal, open-source, roadmap | 1 | 2026-04-27 |
+| [[bdfl]] | BDFL (Benevolent Dictator For Life) | bdfl, governance, open-source, decision-making, pandas, python | 1 | 2026-04-27 |
 
 ## 엔티티 (Entities)
 
@@ -105,6 +108,7 @@ updated: 2026-04-27 (12회차 + 점검)
 |------|------|------|------|---------|-----------|
 | [[claude-code]] | Claude Code | tool | claude-code, AI, 에이전트, Anthropic, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness, spec-kit | 8 | 2026-04-27 |
 | [[claude-agent-sdk]] | Claude Agent SDK | tool | claude-agent-sdk, anthropic, sdk, agent, claude-code, mcp, hooks, plan-mode, output-styles, subagent | 1 | 2026-04-27 |
+| [[claude-managed-agents]] | Claude Managed Agents | service | claude-managed-agents, cma, anthropic, hosted-runtime, agent, stateful-agent, sandbox, human-in-the-loop | 1 | 2026-04-27 |
 | [[anthropic]] | Anthropic | organization | anthropic, AI, AI연구소, claude, claude-code, agent-skills, mcp, building-effective-agents | 4 | 2026-04-27 |
 | [[cowork]] | Cowork | tool | cowork, AI, Anthropic, 지식업무 | 1 | 2026-04-15 |
 | [[obsidian]] | Obsidian | tool | obsidian, 지식관리, 마크다운, vault | 1 | 2026-04-15 |
@@ -125,6 +129,7 @@ updated: 2026-04-27 (12회차 + 점검)
 | [[spec-kit]] | Spec Kit (Specify CLI) | tool | spec-kit, specify-cli, github, spec-driven-development, sdd, slash-command, agent-skills, claude-code, copilot, gemini, codex, multi-agent | 1 | 2026-04-27 |
 | [[pandas]] | pandas (데이터 분석 라이브러리) | tool | pandas, python, dataframe, data-analysis, time-series, BI, scikit-learn, numpy, pyarrow, bigquery, copy-on-write | 1 | 2026-04-27 |
 | [[pandas-dev]] | pandas-dev (GitHub 조직) | organization | pandas-dev, github-org, numfocus, bdfl, pdep, governance, oss-governance, wes-mckinney | 1 | 2026-04-27 |
+| [[numfocus]] | NumFOCUS | organization | numfocus, pydata, nonprofit, open-source, governance, pandas, scikit-learn | 2 | 2026-04-27 |
 | [[fastapi]] | FastAPI | tool | fastapi, python, web-framework, asgi, openapi, pydantic, starlette, tiangolo, agent-skills, SKILL.md, dependency-injection, type-hints | 1 | 2026-04-27 |
 | [[tiangolo]] | Sebastián Ramírez (tiangolo) | person | tiangolo, sebastian-ramirez, python, oss, fastapi, pydantic-contributor, starlette-contributor, typer, sqlmodel, asyncer, fastapi-cloud | 1 | 2026-04-27 |
 | [[astral]] | Astral | organization | astral, charlie-marsh, ruff, uv, ty, python, rust, dev-tools, open-source, vc-backed | 1 | 2026-04-27 |
@@ -140,4 +145,4 @@ updated: 2026-04-27 (12회차 + 점검)
 |------|------|------|-----------|
 | [[wiki-bootstrap-log]] | 위키 부트스트랩 기록 | 메타, 운영 | 2026-04-09 |
 | [[career-timeline-seokgeun]] | 석근 커리어 타임라인 (2016-2026) | career, timeline, evolution | 2026-04-24 |
-| [[agent-stack-evolution]] | 에이전트 스택의 3축 진화 — Microsoft · Anthropic · Karpathy 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, harness, BI, 개인비서 | 2026-04-27 |
+| [[agent-stack-evolution]] | 에이전트 스택의 5축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, harness, BI, 개인비서 | 2026-04-27 |

@@ -3,6 +3,7 @@ title: "karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인"
 type: source
 source_type: article
 source_url: "https://github.com/karpathy/nanochat"
+raw_path: "raw/articles/karpathy-nanochat/"
 author: "Andrej Karpathy"
 date_published: 2025-10-13
 date_ingested: 2026-04-27

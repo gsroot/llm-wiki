@@ -95,5 +95,5 @@ Claude Code = Anthropic이 자기 운영 패턴을 사람에게 노출하는 진
 
 ## 메모
 
-- 위키에 Claude Managed Agents (CMA, hosted runtime) 페이지를 추후 분리할 가치 있음 — Agent SDK가 "에이전트의 SDK"라면 Managed Agents는 "에이전트의 PaaS". 두 추상화 레이어가 다름.
+- [[claude-managed-agents]]는 Agent SDK와 분리해 추적할 가치가 있음 — Agent SDK가 "에이전트의 SDK"라면 Managed Agents는 "에이전트의 PaaS". 두 추상화 레이어가 다름.
 - 04번 노트북 (OpenAI Agents SDK → Claude Agent SDK 마이그레이션)이 별도로 가치 있음 — OpenAI Agents SDK 사용자 → Claude로 이동하는 표준 변환 가이드.

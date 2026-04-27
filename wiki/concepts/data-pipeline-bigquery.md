@@ -77,7 +77,7 @@ GCP BigQuery를 핵심 데이터 웨어하우스로 두고, 게임 로그 수집
    - **bigframes**: 데이터를 BigQuery에 두고 pandas 코드만 컴파일 (석근님 BI 환경에 가장 fit)
    - Dask/Bodo: 분산/HPC
 
-### PyArrow 통합 (PDEP-10 진행 중)
+### PyArrow 통합 ([[pdep|PDEP]]-10 진행 중)
 
 BigQuery는 Arrow 기반 응답을 우선시. pandas의 `dtype_backend="pyarrow"` + `read_csv(engine="pyarrow")` + `pd.ArrowDtype(pa.string())`로 (1) 결측 지원 (2) polars/cuDF/DuckDB와의 상호운용 (3) 더 빠른 IO. 
 
@@ -103,7 +103,7 @@ schema.validate(df)
 - [[ml-ai]] — BigQuery → AutoML → AI Platform Pipeline 파이프라인의 데이터 소스 (pandas DataFrame이 입력 표준)
 - [[devops-cicd]] — Promtail/Loki/Grafana로 데이터 파이프라인 로그 관측
 - [[pandas]] — 클라이언트 측 도구 레이어 표준
-- [[pandas-dev]] — BDFL+Core Team+NumFOCUS 거버넌스로 운영되는 조직
+- [[pandas-dev]] — [[bdfl|BDFL]] + Core Team + [[numfocus|NumFOCUS]] 거버넌스로 운영되는 조직
 
 ## 출처
 

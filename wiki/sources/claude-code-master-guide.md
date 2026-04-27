@@ -3,6 +3,7 @@ title: "클로드 코드 중심 실전 마스터 가이드"
 type: source
 source_type: book
 source_url: ""
+raw_path: "raw/articles/claude-code/클로드코드_가이드북.pdf"
 author: "CHOI (@choi.openai)"
 date_published: 2026
 date_ingested: 2026-04-15

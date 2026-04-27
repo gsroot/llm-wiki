@@ -3,6 +3,7 @@ title: "microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입�
 type: source
 source_type: article
 source_url: "https://github.com/microsoft/Web-Dev-For-Beginners"
+raw_path: "raw/articles/microsoft-web-dev-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2020-11-10
 date_ingested: 2026-04-27

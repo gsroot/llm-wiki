@@ -3,6 +3,7 @@ title: "pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BD
 type: source
 source_type: article
 source_url: "https://github.com/pandas-dev/pandas"
+raw_path: "raw/articles/pandas-dev-pandas/"
 author: "The pandas development team (BDFL: Wes McKinney)"
 date_published: 2010-08-24
 date_ingested: 2026-04-27
@@ -15,7 +16,7 @@ confidence: high
 
 ## 한줄 요약
 
-> 2008년 AQR 헤지펀드에서 Wes McKinney가 시작 → 2009 오픈소스 → 2015 NumFOCUS 후원 → 2026-04-27 v3.0 stable. **BDFL+Core Team+NumFOCUS Subcommittee 3축 거버넌스**, **PDEP(Pandas Enhancement Proposal) 시스템**으로 운영되는 로드맵, **150만+ DataFrame**·**101개 공개 API**, BSD-3 라이선스. 석근님의 BI 직무에서 BigQuery·Airbridge MMP·React 대시보드를 잇는 **데이터 핸들링 단일 진실 공급원**.
+> 2008년 AQR 헤지펀드에서 Wes McKinney가 시작 → 2009 오픈소스 → 2015 [[numfocus]] 후원 → 2026-04-27 v3.0 stable. **[[bdfl|BDFL]]+Core Team+[[numfocus|NumFOCUS]] Subcommittee 3축 거버넌스**, **[[pdep|PDEP]](Pandas Enhancement Proposal) 시스템**으로 운영되는 로드맵, **150만+ [[dataframe|DataFrame]]**·**101개 공개 API**, BSD-3 라이선스. 석근님의 BI 직무에서 BigQuery·Airbridge MMP·React 대시보드를 잇는 **데이터 핸들링 단일 진실 공급원**.
 
 ## 메타
 
@@ -47,23 +48,23 @@ confidence: high
 
 **관찰**: IO 읽기 20개 vs 쓰기 3개 — pandas는 본질적으로 "**모든 데이터 소스를 DataFrame으로 끌어오는** 게이트웨이"이며, 출력은 ecosystem(matplotlib/Seaborn/Plotly)에 위임.
 
-### 2. **거버넌스 3축** — BDFL + Core Team + NumFOCUS Subcommittee
+### 2. **거버넌스 3축** — [[bdfl|BDFL]] + Core Team + [[numfocus|NumFOCUS]] Subcommittee
 
 이게 spec-kit·anthropics-skills와 본질적으로 다른 점:
 
 | 축 | 역할 | 권한 |
 |----|------|------|
-| **BDFL** (Wes McKinney) | 최종 결정권자, "Benevolent Dictator for Life" | 거의 행사 안 함, 하지만 막다른 골목에서 override 가능 |
+| **[[bdfl|BDFL]]** (Wes McKinney) | 최종 결정권자, "Benevolent Dictator for Life" | 거의 행사 안 함, 하지만 막다른 골목에서 override 가능 |
 | **Core Team** (15명) | 일상 의사결정, 기술 방향 결정 | 최소 1년간 substantial contribution 후 nomination + vote |
-| **NumFOCUS Subcommittee** (5명+) | 자금 관리만 | 기술 방향에 관여 **불가** — "no more than 2 members report to one person" 규칙으로 권력 집중 방지 |
+| **[[numfocus|NumFOCUS]] Subcommittee** (5명+) | 자금 관리만 | 기술 방향에 관여 **불가** — "no more than 2 members report to one person" 규칙으로 권력 집중 방지 |
 
 **페르소나 분리 원칙**: NumFOCUS는 자금만, Core Team은 기술만 — 자금이 기술을 지배하지 못하게 하는 명시적 방화벽. 
 
-### 3. **PDEP 시스템** — 로드맵 = 거버넌스 산출물
+### 3. **[[pdep|PDEP]] 시스템** — 로드맵 = 거버넌스 산출물
 
 [[github-spec-kit]]의 9 Articles Constitution이 "사전 합의된 헌법"이라면, pandas의 PDEP는 "**살아있는 결정 절차**":
 
-| PDEP | 주제 | 상태 (2026-04-27) |
+| [[pdep|PDEP]] | 주제 | 상태 (2026-04-27) |
 |------|------|------------------|
 | 1 | Purpose and guidelines | Accepted (Rev 3, 2023-06-09) |
 | 4 | Consistent to_datetime parsing | — |
@@ -77,7 +78,7 @@ confidence: high
 | 14 | String dtype | — |
 | 17 | Backwards compatibility and deprecation policy | — |
 
-**PDEP 워크플로우**:
+**[[pdep|PDEP]] 워크플로우**:
 1. Draft → Under discussion (60일) → Vote (15일) → Accepted/Rejected/Withdrawn
 2. **Quorum**: 11명 또는 voting 구성원의 50% 중 더 작은 값
 3. **Majority**: non-abstaining 표의 70% 찬성
@@ -142,7 +143,7 @@ Use chunking      →   glob + per-file read_parquet + value_counts.add(fill_val
 
 ### 5. **거버넌스 모델 = LLM 위키의 후보**
 
-이 위키(llm-wiki) 자체가 BDFL(석근님) + Core Team(LLM) + 다른 도구(Cowork, Antigravity) 3축으로 운영된다는 점에서, pandas의 모델은 **개인 지식 시스템에도 적용 가능**한 정치 구조. PDEP-1 같은 절차서가 위키 운영 규칙(CLAUDE.md)의 진화를 명시적으로 추적할 수 있음.
+이 위키(llm-wiki) 자체가 [[bdfl|BDFL]](석근님) + Core Team(LLM) + 다른 도구(Cowork, Antigravity) 3축으로 운영된다는 점에서, pandas의 모델은 **개인 지식 시스템에도 적용 가능**한 정치 구조. [[pdep|PDEP]]-1 같은 절차서가 위키 운영 규칙(CLAUDE.md)의 진화를 명시적으로 추적할 수 있음.
 
 ## AI 에이전트 통합 — `AGENTS.md` 발견
 
@@ -172,22 +173,21 @@ pandas는 2024년경 추가한 `AGENTS.md`에서 AI 코딩 에이전트(Copilot,
 
 ## 관련 엔티티/개념
 
-- [[pandas]] (예정): tool 페이지 — 신설 예정
-- [[pandas-dev]] (예정): organization 페이지 — 신설 예정
+- [[pandas]]: tool 페이지
+- [[pandas-dev]]: organization 페이지
 - [[microsoft-data-science-for-beginners]]: pandas는 lessons 07(pandas), 08(데이터 준비), 14-16(라이프사이클)의 도구 레이어
 - [[microsoft-ml-for-beginners]]: ARIMA·SVR 강의의 전제 라이브러리
 - [[data-pipeline-bigquery]]: pandas-gbq + bigframes로 BigQuery ↔ pandas 양방향 표준
 - [[ml-ai]]: scikit-learn은 pandas DataFrame을 "first-class citizen"으로 처리, skrub이 다리 역할
 - [[c2spf-analytics]]: 이 데이터 분석 BI 서비스의 백엔드는 사실상 pandas 의존
-- [[github-spec-kit]]: 사전 합의 메소드론(Constitution) vs pandas의 절차적 의사결정(PDEP) — 다른 거버넌스 철학
+- [[github-spec-kit]]: 사전 합의 메소드론(Constitution) vs pandas의 절차적 의사결정([[pdep|PDEP]]) — 다른 거버넌스 철학
 - [[anthropics-claude-cookbooks]]: Cookbook 패턴은 pandas의 user_guide/cookbook.rst와 같은 가족
-- [[harness]]: pandas의 PDEP는 "메타 거버넌스 하네스" — autoresearch(최소)와 spec-kit(최대) 사이의 새로운 좌표
+- [[harness]]: pandas의 [[pdep|PDEP]]는 "메타 거버넌스 하네스" — autoresearch(최소)와 spec-kit(최대) 사이의 새로운 좌표
 
 ## 메모
 
 - **후속 탐구 (a)**: synthesis 페이지 신설 — `wiki/syntheses/data-analysis-essentials.md`로 [[microsoft-data-science-for-beginners]] 라이프사이클 + pandas 도구 레이어 + [[data-pipeline-bigquery]] 운영을 종합 (사용자가 4월 27일 8:08p에 이미 7개 핵심 요소 도출함 — 그 산출물을 페이지로 영구화).
-- **후속 탐구 (b)**: PDEP-7 Copy-on-Write 단독 raw 보관 — pandas 메모리 모델의 가장 큰 변혁이지만 27kB라 본 수집에서 제외. 별도 깊이 수집 가치 있음.
+- **후속 탐구 (b)**: [[pdep|PDEP]]-7 [[copy-on-write|Copy-on-Write]] 단독 raw 보관 — pandas 메모리 모델의 가장 큰 변혁이지만 27kB라 본 수집에서 제외. 별도 깊이 수집 가치 있음.
 - **후속 탐구 (c)**: pandas-stubs 별도 entity 페이지 — 타입 시스템 표준화가 BI 코드 안정성에 직결.
-- **후속 탐구 (d)**: 거버넌스 진화 종합 분석 — [[github-spec-kit]] Constitution 9 Articles + [[anthropics-skills]] Anthropic 단독 큐레이션 + pandas BDFL+Core Team+NumFOCUS 3축 비교. [[agent-stack-evolution]]에 4축 거버넌스 비교축 추가 가능.
+- **후속 탐구 (d)**: 거버넌스 진화 종합 분석 — [[github-spec-kit]] Constitution 9 Articles + [[anthropics-skills]] Anthropic 단독 큐레이션 + pandas [[bdfl|BDFL]]+Core Team+[[numfocus|NumFOCUS]] 3축 비교. [[agent-stack-evolution]]에 4축 거버넌스 비교축 추가 가능.
 - **결정 트리 발견**: pandas 메모리 폭발 시 (1) Load less data → (2) efficient dtypes → (3) chunking → (4) Modin/Dask. 이 4단계가 BI 데이터 처리 전반의 표준 결정 트리.
-
