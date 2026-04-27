@@ -10,6 +10,25 @@ type: log
 
 ---
 
+## [2026-04-24] ingest | portfolio 커리어 자료 베이스 통합 수집
+
+- **소스 (raw 신규 복사, 공개 자료만)**:
+  - `raw/notes/portfolio/README.md` — portfolio 저장소 README
+  - `raw/notes/portfolio/old-portfolio.md` — 시드 포트폴리오(22KB)
+  - `raw/notes/portfolio/docs/**` — 3-Layer + Johnny.Decimal 구조 문서 미러 (총 47개 파일)
+- **민감 자료 제외**: portfolio/private/ (Jira 22 + Confluence 10 + Google Drive 3)는 공개 GitHub 원격(`gsroot/llm-wiki`) 누출 방지를 위해 복사 제외. portfolio 저장소의 로컬 전용 폴더에만 보존.
+- **수집 전략**: 계층적 — 개별 Jira/Confluence dump마다 source 페이지를 만들지 않고, 핵심 산출물(이력서·상세 포트폴리오·시드)과 프로젝트 통합 문서만 source 페이지로 요약. 세부 증거는 portfolio 내 `20-projects/*.md`의 `sources:` 필드에서 역추적 가능.
+- **생성된 파일** (총 19개)
+  - **소스 (8)**: `wiki/sources/portfolio-seed.md` · `portfolio-resume-ko.md` · `portfolio-ko.md` · `portfolio-method.md` · `c2spf-nft-market.md` · `c2spf-xpla-platform.md` · `c2spf-analytics-common.md` · `c2spf-analytics-renewal.md`
+  - **엔티티 (4)**: `wiki/entities/seokgeun-kim.md` (위키 소유자) · `com2us-platform.md` (현 재직사) · `c2spf-analytics.md` (BI 서비스) · `xpla-platform.md` (블록체인 플랫폼)
+  - **개념 (6)**: `wiki/concepts/backend-python-fastapi.md` · `frontend-react.md` · `data-pipeline-bigquery.md` · `devops-cicd.md` · `blockchain-xpla.md` · `ml-ai.md`
+  - **종합 분석 (1)**: `wiki/syntheses/career-timeline-seokgeun.md` — 2016~2026 9년 커리어 타임라인, 4 패턴(역할 진화/스택 누적/정량 지표/회사+개인) 분석
+- **업데이트된 파일**
+  - `wiki/index.md` — 총 페이지 20→39, 소스 7→15, 엔티티 6→10, 개념 5→11, 종합 분석 1→2. 4개 카테고리 테이블에 19행 추가.
+- **메모**: portfolio 저장소(3-Layer + Johnny.Decimal)와 llm-wiki(raw → sources → syntheses)는 같은 "원천 → 요약 → 종합" 패턴을 공유하므로 통합이 자연스러웠음. 향후 portfolio가 갱신되면 같은 source 페이지를 업데이트하는 방식으로 동기화 가능. 본 수집으로 LLM이 "내 커리어/프로젝트/스킬" 질의에 portfolio 저장소까지 가지 않고도 wiki 내에서 답변 생성 가능.
+
+---
+
 ## [2026-04-16] ingest | Slash Commands vs Agent Skills 조사 수집 + RAG 가이드 재수집
 
 - **소스 1 (신규)**: `raw/notes/slash-commands-vs-agent-skills.md` — 공식 문서(code.claude.com/docs/en/skills) 기반 조사·분석
