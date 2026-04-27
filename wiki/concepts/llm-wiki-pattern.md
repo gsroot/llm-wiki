@@ -86,7 +86,7 @@ LLM 위키가 해결하는 가장 큰 실전 문제는 **세션 간 컨텍스트
 | 1 | 위키 디렉토리에서 직접 실행 (`cd ~/llm-wiki && claude`) | 위키 자체 관리 |
 | 2 | 다른 프로젝트 CLAUDE.md에 "참조 지식 베이스" 경로 추가 | 회사 프로젝트에서 참조 |
 | 3 | 세션 첫 메시지로 `index.md` 명시적 로드 | 가끔 한 번씩 |
-| 4 | `~/.claude/commands/wiki.md` 로 `/wiki` slash command 제작 | 반복 조회 |
+| 4 | `~/.claude/skills/wiki/SKILL.md` 로 [[agent-skills]] 패키징 (자동 호출 + `context: fork`) | 반복 조회 |
 | 5 | [[qmd]] + [[mcp]]로 네이티브 검색 도구화 | 50+ 페이지 이후 |
 
 핵심 감각: **"위키에 물어본다"**. 일반 지식 질문보다 "`wiki/concepts/harness.md` 기준으로 ..." 같은 **페이지 기반 합성 질문**이 가장 강력하다.
@@ -98,10 +98,22 @@ LLM 위키가 해결하는 가장 큰 실전 문제는 **세션 간 컨텍스트
 [[claude-code-master-guide]]의 [[harness]] 개념으로 이 위키를 다시 읽으면:
 - **지식 레이어**: `CLAUDE.md` (운영 계약) + `wiki/index.md` (탐색 진입점) + 각 페이지
 - **도구 레이어**: Read/Write/Edit, Grep/Glob, 향후 [[mcp]] (qmd)
-- **패키지 레이어**: `templates/*` (엔티티·개념·소스·종합 템플릿)
+- **패키지 레이어**: `templates/*` (엔티티·개념·소스·종합 템플릿) + `~/.claude/skills/wiki/SKILL.md` ([[agent-skills]])
 - **통제 레이어**: CLAUDE.md의 금지 사항, 수집 워크플로우 체크리스트, `log.md` 사후 흔적
 
 즉 이 위키는 **개인 지식 관리용 하네스**이며, [[context-engineering]]의 전형적 적용 사례다.
+
+### 위키 ↔ Agent Skill의 동형성
+
+[[anthropics-skills]] 분석에서 발견한 핵심 통찰: 위키의 3레이어 아키텍처와 SKILL의 3-Level Progressive Disclosure가 동형이다.
+
+| 위키 | SKILL.md |
+|-----|---------|
+| `wiki/index.md` (항상 읽힘) | Metadata (frontmatter, ~100w 상시) |
+| `wiki/sources/`·`wiki/concepts/` 등 | SKILL.md body (트리거 시 로드, <500lines) |
+| `raw/articles/` (필요 시 grep) | scripts·references·assets (필요 시 호출) |
+
+이 동형성은 **위키 운영 자체를 SKILL.md로 패키징할 수 있음**을 시사. 실제로 `~/.claude/skills/wiki/SKILL.md`가 운영 중이며, [[agent-skills]] 페이지의 "description pushy 원칙"과 "20개 trigger 검증 쿼리" 루프를 적용해 자동 호출 정확도 튜닝 가능.
 
 ## 관련 개념
 
@@ -116,6 +128,8 @@ LLM 위키가 해결하는 가장 큰 실전 문제는 **세션 간 컨텍스트
 - [[llm-wiki-idea-doc]] — 이 패턴을 제안한 원본 아이디어 문서 (원문 + 역자 주석 10개 항목)
 - [[claude-code-master-guide]] — 하네스·파일 운영·기본 파일 8종 등 위키 패턴과 동형 구조 다수 제시
 - [[using-llm-wiki-as-rag]] — 이 위키를 Claude Code에서 RAG처럼 쓰는 5단계 실전 가이드
+- [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스. 위키 3레이어와 SKILL 3-Level Progressive Disclosure의 동형성 발견
+- [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스. 위키 3레이어와 SKILL 3-Level Progressive Disclosure의 동형성 발견
 
 ## 열린 질문
 

@@ -2,9 +2,9 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구]
-related: [[claude-code]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]]
-source_count: 2
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어]
+related: [[claude-code]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]]
+source_count: 3
 created: 2026-04-15
 updated: 2026-04-27
 ---
@@ -39,8 +39,19 @@ AI 성능 경쟁이 "어느 모델이 더 똑똑한가"에서 "어느 도구가 
 
 1. **지식 레이어**: CLAUDE.md, 규칙 파일, 메모리, 예시, 스킬 지침
 2. **도구 레이어**: Bash, Read/Edit/Write, MCP, Connector, 브라우저 제어, 예약 실행
-3. **패키지 레이어**: Skills, Plugins
+3. **패키지 레이어**: Skills, Plugins → 단일 표준 구현은 [[agent-skills]] 참조 (SKILL.md + scripts·references·assets)
 4. **통제 레이어**: Permissions, Hooks, 승인 단계, Plan Mode, Worktree, 테스트, 검토 에이전트
+
+### 패키지 레이어 상세 (Anthropic anthropics/skills 사례 기준)
+
+[[anthropics-skills]] 마켓플레이스가 패키지 레이어의 운영 사례를 노출:
+
+- **3-Level Progressive Disclosure**: Metadata 100w 상시 / SKILL.md body <500lines / scripts·references·assets 필요 시만
+- **자동 호출**: description 기반으로 LLM이 스스로 트리거 결정 → 패키지 레이어가 사용자 호출에 의존하지 않게 됨
+- **`context: fork`**: 서브에이전트 격리 → 패키지가 메인 컨텍스트를 오염시키지 않음
+- **`paths`**: 자동 호출 조건을 glob으로 제한 → 패키지가 다른 작업을 방해하지 않음
+
+이 4가지 메커니즘이 패키지 레이어를 "단순 명령 묶음"에서 "지능형 작업장 모듈"로 격상시킴.
 
 ## 하네스 엔지니어링 vs 프롬프트/컨텍스트 엔지니어링
 
@@ -106,6 +117,7 @@ project/
 
 - [[claude-code-master-guide]] — CHOI의 가이드북에서 가장 중심적인 개념. 5장 "시스템 설계: 문맥, 하네스, 검증"
 - [[karpathy-autoresearch]] — 하네스 최소화의 극단 사례. `program.md` 한 장으로 LLM 학습 자율 실험 운영
+- [[anthropics-skills]] — 패키지 레이어의 표준 구현 (SKILL.md + scripts·references·assets, 3-Level Progressive Disclosure)
 
 ## 열린 질문
 

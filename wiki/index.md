@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-27
+updated: 2026-04-27 (3회차)
 ---
 
 # 위키 인덱스
@@ -17,10 +17,10 @@ updated: 2026-04-27
 
 ## 통계
 
-- 총 페이지 수: 47
-- 소스 요약: 18
+- 총 페이지 수: 49
+- 소스 요약: 19
 - 엔티티: 14
-- 개념: 12
+- 개념: 13
 - 종합 분석: 2
 
 ---
@@ -47,6 +47,7 @@ updated: 2026-04-27
 | [[karpathy-autoresearch]] | karpathy/autoresearch — 자율 LLM 실험 루프 | article | Andrej Karpathy | 2026-04-27 | autoresearch, karpathy, llm, 자율연구, agent, harness, val-bpb |
 | [[karpathy-nanogpt]] | karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated) | article | Andrej Karpathy | 2026-04-27 | nanogpt, karpathy, gpt, llm, 교육코드, deprecated |
 | [[karpathy-nanochat]] | karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인 | article | Andrej Karpathy | 2026-04-27 | nanochat, karpathy, llm, gpt2-speedrun, depth-dial, autoresearch |
+| [[anthropics-skills]] | anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스 | article | Anthropic | 2026-04-27 | agent-skills, anthropic, claude-code, marketplace, plugin, progressive-disclosure, skill-creator |
 
 ## 개념 (Concepts)
 
@@ -58,6 +59,7 @@ updated: 2026-04-27
 | [[token-economy]] | 토큰 경제학 (Token Economy) | 토큰, 비용, 컨텍스트 | 1 | 2026-04-15 |
 | [[context-engineering]] | 컨텍스트 엔지니어링 | 컨텍스트엔지니어링, 프롬프트엔지니어링, 자율연구 | 2 | 2026-04-27 |
 | [[autonomous-research-loop]] | 자율 연구 루프 (Autonomous Research Loop) | 자율연구, agent, 메트릭주도, 시간예산, harness, gpt2-speedrun | 2 | 2026-04-27 |
+| [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness | 2 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot | 5 | 2026-04-24 |
 | [[frontend-react]] | 프론트엔드 (React + TS + Vite + TanStack) | frontend, react, typescript, vite, tanstack, ag-grid | 4 | 2026-04-24 |
 | [[data-pipeline-bigquery]] | 데이터 파이프라인 (BigQuery 중심 BI) | data-pipeline, bigquery, mysql, BI, mmp | 4 | 2026-04-24 |
@@ -69,7 +71,7 @@ updated: 2026-04-27
 
 | 파일 | 제목 | 유형 | 태그 | 소스 수 | 최종 수정 |
 |------|------|------|------|---------|-----------|
-| [[claude-code]] | Claude Code | tool | claude-code, AI, 에이전트, Anthropic | 5 | 2026-04-16 |
+| [[claude-code]] | Claude Code | tool | claude-code, AI, 에이전트, Anthropic, agent-skills, plugin-marketplace | 6 | 2026-04-27 |
 | [[cowork]] | Cowork | tool | cowork, AI, Anthropic, 지식업무 | 1 | 2026-04-15 |
 | [[obsidian]] | Obsidian | tool | obsidian, 지식관리, 마크다운, vault | 1 | 2026-04-15 |
 | [[memex]] | 메멕스 (Memex) | project | 지식관리, 정보검색, 역사 | 1 | 2026-04-09 |

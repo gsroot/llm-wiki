@@ -10,6 +10,36 @@ type: log
 
 ---
 
+## [2026-04-27] ingest | anthropics/skills 수집 — Agent Skills 표준·마켓플레이스·skill-creator
+
+- **소스 (raw 신규 보관)** — `raw/articles/anthropics-skills/` (8 파일):
+  - `README.md` (5.5KB) — 마켓플레이스 등록·스킬 작성 가이드·document-skills 라이선스 안내
+  - `marketplace.json` — 3개 플러그인(document-skills 4개, example-skills 12개, claude-api 1개) 정의
+  - `template-skill.md` — 7줄 placeholder
+  - `spec-redirect.md` — `spec/agent-skills-spec.md`가 agentskills.io/specification으로 리다이렉트되는 안내문
+  - `skill-creator-skill.md` (33KB) — 가장 풍부한 메타-스킬, 5단계 루프·description 최적화·Claude.ai/Cowork specific 분기
+  - `mcp-builder-skill.md` (9KB) — multi-domain reference 분리 패턴
+  - `frontend-design-skill.md` (4.4KB) — 짧고 강한 단일 SKILL.md 패턴
+  - `webapp-testing-skill.md` (3.9KB) — "scripts는 읽지 마라" 블랙박스 패턴
+- **선택 근거**: 17개 스킬 전부를 raw에 두면 과적재 — 4가지 SKILL.md 패턴(메타-스킬·multi-domain·짧은 단일 파일·블랙박스) 대표 사례만 선별. 마켓플레이스 메타·README·spec 리다이렉트는 표준 진입점이라 보존 필수. 기존 `raw/articles/karpathy-*/` 관례와 일치.
+- **생성된 파일 (2개)**
+  - **소스 (1)**: `wiki/sources/anthropics-skills.md` — 리포 구조·17개 스킬 4갈래 분류·4개 SKILL.md 사례 분석·SKILL 작성 표준·spec 분리의 의미·document-skills source-available 라이선스의 비즈니스 신호·위키에 직접 응용 가능한 4가지 패턴
+  - **개념 (1)**: `wiki/concepts/agent-skills.md` — Agent Skills 정의·3-Level Progressive Disclosure·14개 frontmatter 필드·호출 제어 매트릭스·Skill 저장 위치 우선순위·content lifecycle·description 작성 4룰·description 자동 최적화 루프·Slash Command vs Skill 비교·SKILL.md 패턴 4가지·석근 시나리오 4종(위키·BI·비서·templates/skill.md)·5가지 안티패턴
+- **업데이트된 파일**
+  - `wiki/entities/claude-code.md` — source_count 5→6, updated 2026-04-16→2026-04-27, tags에 agent-skills·plugin-marketplace 추가, Skills 항목 본문에 progressive disclosure 3-level 명시 + [[agent-skills]] 링크, **Plugin Marketplace 항목 신규** (anthropics-skills 등록 명령·플러그인 3종), 출처에 [[anthropics-skills]] 추가, 관련 개념에 [[agent-skills]] 추가
+  - `wiki/index.md` — 통계 47→49 / 소스 18→19 / 개념 12→13. 소스 표·개념 표에 신규 행 추가
+- **메모**: 핵심 발견 3가지.
+  1. **spec 분리 = 표준 오너십 분리** — Anthropic이 SKILL.md 표준의 단일 운영자가 되는 걸 의도적으로 피한 흔적 (agentskills.io). [[mcp]]가 Anthropic 발이지만 modelcontextprotocol.io에서 운영되는 패턴과 동일.
+  2. **document-skills "source-available, not open source"** — xlsx/docx/pptx/pdf는 Claude.ai 문서 생성 production 코드. 라이선스로 fork·재배포 통제. Anthropic의 비즈니스 라인이 어디서 시작되는지 노출.
+  3. **skill-creator의 자기참조 구조** — 스킬 작성을 가르치는 스킬이 다시 SKILL.md 형식으로 쓰여 있고, 자기 자신을 평가·개선하는 검증 루프를 본문에서 주도. 이게 [[autonomous-research-loop]] (program.md)와 같은 자기 진화 패턴이지만 **코드가 아닌 지침서를 진화**시킨다는 차이.
+- **후속 탐구**:
+  1. `~/.claude/skills/wiki/SKILL.md` description을 "pushy" 원칙으로 재작성 + 20개 trigger 검증 쿼리로 trigger rate 측정
+  2. 위키에 `templates/skill.md` 추가 검토 (entity/concept/source/synthesis 4종 + skill 1종)
+  3. **컴투스플랫폼 BI 스킬** 후보: `bi-query-patterns/SKILL.md` — KPI 조회/코호트/retention 패턴, references에 BigQuery 슬롯 최적화·MMP 데이터 조인
+  4. Partner Skills 첫 사례 Notion이 향후 확장 시그널 — 사내 도구 스킬 패키징 가능성
+
+---
+
 ## [2026-04-27] ingest | karpathy/nanoGPT + karpathy/nanochat 수집
 
 - **소스 (raw 신규 보관)**:
