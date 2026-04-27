@@ -10,6 +10,52 @@ type: log
 
 ---
 
+## [2026-04-27] ingest | flutter/flutter — Google 멀티플랫폼 UI SDK + vendor-neutral .agents/ 표준 (12회차)
+
+- **소스**: `raw/articles/flutter-flutter/` (28개 파일 보관)
+  - 루트 6종: `README.md` (7KB), `CONTRIBUTING.md` (13KB), `CODE_OF_CONDUCT.md` (2.9KB), `CHANGELOG.md` (105KB), `LICENSE` (BSD-3, 1.5KB), `pubspec.yaml` (6.2KB)
+  - `.agents/` 5종: `dart-editing.md` (309B, `trigger: always_on`), `skills/README.md` (3.8KB, agentskills.io 표준 인용 + 5 채택 요건), `skill-find-release.md` (2.1KB), `skill-rebuilding-flutter-tool.md` (792B), `skill-upgrade-browser.md` (4.3KB)
+  - `docs/about/` 5종: `Values.md` (6.7KB, 5 가치 + 4단 지원 모델), `Repository-architecture.md` (2.5KB), `Glossary.md` (6.2KB), `Framework-architecture.md` (468B), `Engine-architecture.md` (17.7KB)
+  - `docs/contributing/` 2종: `Design-Documents.md` (6.8KB), `Tree-hygiene.md` (38KB, PR 절차 풀파이프라인)
+  - `docs/rules/` 5종: `README.md` (2.3KB, 도구별 한계 매트릭스), `rules-1k.md` (799B), `rules-4k.md` (3.5KB), `rules-10k.md` (9.4KB), `rules-full.md` (30.7KB)
+  - `docs/` 2종: `README.md` (2.7KB, contributor wiki entry), `Self-Service-Index.md` (9.1KB)
+  - `.gemini/` 2종: `config.yaml` (785B), `styleguide.md` (6.9KB)
+  - `agent-artifacts/` 2종: `.gitignore` (25B), `README.md` (227B)
+  - **제외**: `engine/` C++ 소스, `packages/` Dart 소스, `examples/` 앱, `third_party/` 의존성 (메타·거버넌스 자료가 위키 관심사)
+- **작업**: flutter/flutter 공식 GitHub 저장소 수집. ★176,117 / fork 30,289 / open issues 12,587 (2026-04-27 기준), BSD-3-Clause, 2015-03-06 창설 11년차, 440MB 저장소. raw 경로: 기존 `<org>-<repo>` 컨벤션 따라 `raw/articles/flutter-flutter/` (org=repo 두 번째 사례, scikit-learn-scikit-learn 패턴 자연 확장).
+- **생성된 파일**:
+  - `wiki/sources/flutter-flutter.md` — 소스 요약 (저장소 핵심 디렉토리 표 + 4기둥 기술 스택 + 5 Values + 4단 지원 모델 + .agents/ vendor-neutral 채택 + 토큰 예산 4계층 + agent-artifacts 격리 + Contributing design doc 절차 + 7개 인사이트 + 위키 갱신 포인트 + 6 활용 시나리오 + 7개 인용)
+  - `wiki/entities/flutter.md` — Flutter framework/tool 엔티티 (Skia/Impeller, Material/Cupertino, hot reload, .agents/ 채택, docs/rules 4계층)
+  - `wiki/entities/dart.md` — Dart language 엔티티 (4-target compile AOT/JIT/JS/WASM, sound null safety, Isolates, dart_format/analyze)
+  - `wiki/entities/google.md` — Google organization 엔티티 (Microsoft·Anthropic·GitHub와 균형, Gemini/Antigravity/Skia/Android/GCP)
+- **업데이트된 파일**:
+  - `wiki/concepts/agent-skills.md` — source_count 5→6, tags에 vendor-neutral/dart-skills-lint/flutter/token-budget-tiers 추가, related에 [[flutter]]/[[google]] 추가, 출처에 **flutter-flutter를 외부 채택 4단계 진화 4번째 사례**로 박음 ("표준 채택자가 정의자의 위치 컨벤션을 누른 첫 사례")
+  - `wiki/concepts/harness.md` — source_count 6→7, tags에 flutter/vendor-neutral/token-budget-tiers 추가, related에 [[flutter]]/[[google]] 추가, **"제4의 축 — vendor-neutral 자산 + 토큰 예산 다층화"** 섹션 신설 (4축 비교 표), 출처에 [[flutter-flutter]] 4번째 축으로 추가
+  - `wiki/syntheses/agent-stack-evolution.md` — tags에 github/spec-kit/google/flutter/vendor-neutral 추가, sources에 [[github-spec-kit]]/[[flutter-flutter]] 추가, **"스냅샷 이후 — 4축·5축 확장 노트"** 섹션 신설 (3축 → 5축 진화, GitHub spec-kit + Google Flutter 추가, 결론 갱신)
+  - `wiki/index.md` — 12회차 표기, 통계 77/30/27/16/3 → 81/31/30/16/3, 신규 4 페이지 등록 (flutter-flutter source + flutter/dart/google entity), harness/agent-skills 행 source_count·tags 동기화
+- **메모**: 12회차 핵심 발견 2가지가 위키에 큰 변화를 박음. (1) **agent-skills 외부 채택 4단계 진화 완성** — anthropics/skills(표준 정의 2025) → github-spec-kit Codex(메소드론 → 다중 어댑터, 2025) → fastapi(라이브러리 self-hosted, 2025) → **flutter(거대 OSS의 vendor-neutral asset, 2025)**. 마지막 단계가 "표준 채택자가 정의자를 누른" 첫 사례 — `.agents/skills`가 `.claude/skills`를 누르고, 후자가 전자로 심볼릭 링크. (2) **토큰 예산 4계층(rules_1k/4k/10k/full)이 AI 도구 시장 매트릭스에 자동 매칭** — Antigravity 12K/OpenAI 1.5K/CodeRabbit 1K/Copilot 4K. 거대 OSS가 다중 AI 도구 환경을 운영하는 첫 표준 사례. agent-stack-evolution 페이지가 3축에서 5축으로 확장(Microsoft·Anthropic·Karpathy + GitHub·Google) — 같은 스냅샷을 한 회차 안에 5번이나 갱신해야 했던 회차. 후속 탐구 후보: (a) `dart_skills_lint` 소스 1회독으로 마크다운 lint 패턴 추출 → 위키 자체 .agents/skills/lint 도구 구축, (b) Flutter `docs/rules/` 4계층을 위키 CLAUDE.md 4계층화로 직접 차용 (CLAUDE_1k.md/4k.md/10k.md), (c) Flutter `agent-artifacts/` 격리 패턴을 위키 `wiki/.agent-artifacts/`로 차용 (LLM 임시 분석 격리), (d) 개인 비서 AI 모바일 앱 PoC — Flutter + FastAPI 스택으로 회사 BI(React) 외 다른 길 형성.
+
+---
+
+## [2026-04-27] ingest | scikit-learn/scikit-learn — Python ML 사실상 표준 라이브러리 (11회차)
+
+- **소스**: `raw/articles/scikit-learn-scikit-learn/` (20개 파일 보관)
+  - 루트 7종: `README.rst` (215줄), `AGENTS.md` (24줄, AI disclosure 강제), `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CITATION.cff`, `COPYING` (BSD-3)
+  - `doc/` 13종: `governance.rst` (10.6KB, SLEP+TC+4팀), `roadmap.rst` (8.8KB, 18 항목), `faq.rst` (28.4KB, scope 잠금 명시), `getting_started.rst` (10.6KB, fit/predict 입문), `related_projects.rst` (15.3KB, 30+ 호환 라이브러리), `common_pitfalls.rst` (25.1KB, data leakage 방지), `machine_learning_map.rst` (2.4KB), `model_persistence.rst` (18.5KB, 5단 의사결정 트리), `metadata_routing.rst` (15.8KB, 1.3+ 신규 API), `about.rst` (16.5KB, 다층 자금 + GSoC 기원), `install.rst` (14.2KB), `maintainers.rst` (현재 19명), `presentations.rst`
+  - **제외**: `sklearn/` 핵심 코드, `glossary.rst` (94KB, 너무 큼), `examples/` (notebook 다수)
+- **작업**: scikit-learn 공식 GitHub 저장소 수집. ★65,932 / fork 26,974 / open issues 2,048 (2026-04-27 기준), BSD-3-Clause, 2007 GSoC 시작 / 2010-02-01 v0.1 / 약 3개월 릴리스 주기 / DOI 보유. raw 경로 결정: 기존 `<org>-<repo>` 컨벤션 따라 `raw/articles/scikit-learn-scikit-learn/` (org=repo 첫 사례, [[pandas-dev-pandas]] 패턴의 자연스러운 확장).
+- **생성된 파일**:
+  - `wiki/sources/scikit-learn-scikit-learn.md` — 소스 요약 (5가지 API 컨트랙트, SLEP 거버넌스 4 룰, 다층 자금 모델, 2018 Roadmap 9년 후 평가, model_persistence 5단 의사결정, AGENTS.md 메이저 OSS 첫 사례, 30+ 호환 생태계, 석근 BI 적용 6가지). 파일명은 wikilink 충돌 회피 위해 entity와 분리.
+  - `wiki/entities/scikit-learn.md` — sklearn tool 엔티티 (5+1 API 컨트랙트, 의도적 범위 잠금, SLEP 4가지 룰, 5단 영속성 의사결정, 회사 BI 적용 후보)
+- **업데이트된 파일**:
+  - `wiki/concepts/ml-ai.md` — source_count 4→5, tags에 sklearn/slep/fit-predict 추가, related에 [[scikit-learn]] 추가, 본문에 "scikit-learn 직접 사용 가능성" 단락 신설(GCP AutoML 대안 검토), 출처에 [[scikit-learn-scikit-learn]] 추가. (병렬로 진행된 pandas 수집과 충돌 없이 통합)
+  - `wiki/concepts/harness.md` — source_count 5→6, tags에 library-as-harness/scikit-learn/slep 추가, **"제3의 축 — 라이브러리 자체가 하네스"** 신설 (autoresearch 최소 / spec-kit 표준화 / scikit-learn 컨트랙트 영구성 — 5축 비교표). 출처에 [[scikit-learn]] 추가
+  - `wiki/sources/microsoft-ml-for-beginners.md` — 관련 엔티티/개념에 [[scikit-learn]] 한 줄 추가 (26 lesson 전체가 sklearn API 컨트랙트에 의존)
+  - `wiki/index.md` — 11회차 표기, 통계 75/29/26/16/3 → 77/30/27/16/3, 신규 2 페이지 등록 + harness/ml-ai 행 source_count·tags 동기화
+- **메모**: 11회차에서 위키가 두 가지 뼈대를 동시에 박음 — (1) **표준화 분리 패턴 4번째 사례** ([[anthropics-skills]] SKILL.md 2025 / [[github-spec-kit]] Constitution 2025 / [[pandas-dev-pandas]] PDEP 2022 / **[[scikit-learn]] SLEP 2007**), (2) **"라이브러리가 하네스" 제3축**으로 [[harness]] 개념 양극이 3축으로 확장. AGENTS.md 패턴은 [[fastapi-fastapi]] (라이브러리 self-hosted SKILL.md), [[astral-sh-uv]] (single source of truth), **[[scikit-learn]] (AI disclosure 강제)** 3 단계 OSS 진화. 후속 탐구 후보: (a) SLEP 별도 repo 수집 → 4축 거버넌스 종합 분석 (BDFL+PDEP / TC+SLEP / Anthropic 큐레이션 / GitHub Constitution), (b) `model_persistence.rst` 5단 트리를 c2spf BI 모델 운영 SOP로 차용 PoC, (c) AGENTS.md 패턴을 트래블메이트/Mate Chat OSS 공개 시 차용.
+
+---
+
 ## [2026-04-27] ingest | astral-sh/uv — Rust 단일 바이너리 Python 도구체인 통합 (10회차)
 
 - **소스**: `raw/articles/astral-sh-uv/` (37개 파일, 416KB 보관)

@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-27 (8회차)
+updated: 2026-04-27 (12회차)
 ---
 
 # 위키 인덱스
@@ -16,6 +16,12 @@ updated: 2026-04-27 (8회차)
 <!-- 후속 분석 2026-04-27 (5회차 후속): synthesis/agent-stack-evolution.md 신설 — Microsoft "단일 운영체계" / Anthropic "표준-구현 분리" / Karpathy "minimal harness" 3축 비교 종합 분석 -->
 <!-- 수집일 2026-04-27 (7회차): github/spec-kit 수집 — 소스 1 + 엔티티 2 (github, spec-kit) + 개념 1 (spec-driven-development) 추가, claude-code/agent-skills/harness/agent-patterns 4개 페이지 보강. SDD 메소드론 + Codex Skills 모드(agent-skills 표준 첫 외부 채택) + 메타-하네스 사례(autoresearch 최소 하네스의 반대 극단) -->
 <!-- 수집일 2026-04-27 (8회차): pandas-dev/pandas 수집 — 소스 1 + 엔티티 2 (pandas, pandas-dev) 추가, data-pipeline-bigquery/ml-ai/microsoft-data-science-for-beginners 3개 페이지 보강. BDFL+Core Team+NumFOCUS 3축 거버넌스 + PDEP 시스템(11개) + 101개 공개 API + scale.rst 메모리 폭발 결정 트리 + bigframes/Pandera/Modin BI 직결 라이브러리. 거버넌스 모델이 spec-kit Constitution(GitHub 단독)과 anthropics-skills(Anthropic 단독 큐레이션)와 본질적으로 다른 4번째 거버넌스 축 -->
+<!-- 수집일 2026-04-27 (9회차): fastapi/fastapi 수집 — 소스 1 + 엔티티 2 (fastapi, tiangolo) 추가, agent-skills/backend-python-fastapi 2개 페이지 보강. 결정적 발견: fastapi/.agents/skills/fastapi/SKILL.md (10.4KB + references/) 라이브러리 self-hosted Agent Skill — agent-skills 표준 외부 채택 3단계 진화 완성 (anthropics/skills 표준 → spec-kit Codex Skills 외부 도구 통합 → fastapi 라이브러리 self-hosted). README는 사람용·SKILL.md는 에이전트용이라는 OSS 분업이 메인스트림 라이브러리에서 명시화. Tiangolo 디폴트 스택(FastAPI/SQLModel/Asyncer/HTTPX/Typer/uv/Ruff/ty)이 SKILL.md로 명문화 → c2spf analytics-common-api 점검 기준점 -->
+<!-- 수집일 2026-04-27 (10회차): astral-sh/uv 수집 — 소스 1 + 엔티티 2 (astral, uv) + 개념 1 (python-packaging) 추가. uv는 7개 기존 도구(pip·pip-tools·pipx·poetry·pyenv·twine·virtualenv) Rust 단일 바이너리 통합. universal lockfile + PubGrub resolver + PEP 723 인라인 의존성 + Cargo-style workspace. 듀얼 지침서 패턴 발견: CLAUDE.md(1줄) = `@AGENTS.md` import — Anthropic AGENTS.md 표준의 외부 산업 채택 4단계 진화(anthropics/skills → spec-kit → fastapi self-hosted SKILL.md → uv 단일 진실원). [[astral]] 회사 ruff·uv·ty 3제품 모두 "Rust 재구현형 통합" 패턴. 9회차 fastapi 디폴트 스택 (FastAPI/SQLModel/.../uv/Ruff/ty)이 본 회차 수집의 우(uv)와 ruff/ty까지 위키에 박힘 → c2spf-analytics uv 마이그레이션 ROI 분석 후속 후보 -->
+<!-- 수집일 2026-04-27 (11회차): scikit-learn/scikit-learn 수집 — 소스 1 + 엔티티 1 (scikit-learn) 추가, ml-ai/microsoft-ml-for-beginners/harness 3개 페이지 보강. 19년 변하지 않은 5가지 API 컨트랙트(fit/predict/transform/Pipeline/Meta-estimator)가 입문자 교재부터 회사 BI까지 같은 코드 모양 가능케 한 핵심. SLEP(Scikit-Learn Enhancement Proposal) 거버넌스가 spec-kit Constitution(2025)·anthropics-skills SKILL.md(2025)·pandas PDEP(2022)의 19년 선배 — "표준화 → 구현" 분리 패턴의 원형. AGENTS.md(965 bytes) = 메이저 OSS 첫 명문화 AI 작성 코드 disclosure 강제. harness 개념에 제3축 "library-as-harness" 추가 — autoresearch 최소 / spec-kit 표준화 / scikit-learn 컨트랙트 영구성. 5단 영속성 의사결정 트리(ONNX/skops/joblib/표준직렬화/cloudpickle)가 회사 BI 모델 운영 SOP로 차용 가능. probabl.ai 풀타임 8명 + INRIA·Chanel·BNP·NVIDIA·Microsoft·Quansight·CZI 다층 후원이 19년 안정성의 비밀 -->
+
+
+<!-- 수집일 2026-04-27 (12회차): flutter/flutter 수집 — 소스 1 + 엔티티 3 (flutter, dart, google) 추가, agent-skills/harness 2개 개념 + agent-stack-evolution 종합 분석 보강. Google 멀티플랫폼 UI SDK (★176K 11년차). 결정적 발견 2가지: (1) **agent-skills 표준의 vendor-neutral 채택** — `.agents/skills/` 3 SKILL.md (find-release/rebuilding-flutter-tool/upgrade-browser) + `.claude/skills` → `../.agents/skills` 심볼릭 링크 + agentskills.io 표준 명시 인용 + `dart_skills_lint` 자체 검증 도구. **표준 채택자가 정의자의 위치 컨벤션을 누른 첫 사례**. agent-skills 외부 채택 4단계 진화 완성: anthropics/skills(표준 정의) → spec-kit(메소드론 어댑터) → fastapi(라이브러리 self-hosted) → flutter(vendor-neutral asset). (2) **`docs/rules/` 4계층 토큰 예산 룰** — rules.md(30K) → 10k → 4k → 1k 동일 룰을 도구별 한계(Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K) 매트릭스에 자동 매칭 — progressive disclosure를 토큰 단위로 더 세분화. agent-stack-evolution 3축 → 5축 확장 (Microsoft·Anthropic·Karpathy + GitHub spec-kit + Google flutter). Flutter Values 5개 + 차등 지원 4단계 모델 + agent-artifacts/ 격리 패턴은 위키 운영 차용 후보 -->
 
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
@@ -23,10 +29,10 @@ updated: 2026-04-27 (8회차)
 
 ## 통계
 
-- 총 페이지 수: 68
-- 소스 요약: 27
-- 엔티티: 22
-- 개념: 15
+- 총 페이지 수: 81
+- 소스 요약: 31
+- 엔티티: 30
+- 개념: 16
 - 종합 분석: 3
 
 ---
@@ -62,6 +68,10 @@ updated: 2026-04-27 (8회차)
 | [[anthropics-claude-cookbooks]] | anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음 | article | Anthropic | 2026-04-27 | claude-cookbooks, anthropic, claude-agent-sdk, managed-agents, agent-patterns, prompt-caching, memory, tool-use, rag, multimodal |
 | [[github-spec-kit]] | github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합) | article | GitHub | 2026-04-27 | spec-kit, github, spec-driven-development, sdd, specify-cli, slash-command, agent-skills, claude-code, copilot, gemini, codex, harness, agent-patterns |
 | [[pandas-dev-pandas]] | pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BDFL+NumFOCUS+PDEP 3축 거버넌스) | article | The pandas development team (BDFL: Wes McKinney) | 2026-04-27 | pandas, python, dataframe, data-analysis, time-series, bigquery, BI, numfocus, bdfl, pdep, pyarrow, copy-on-write, ecosystem, scikit-learn, modin, dask, bigframes, pandera |
+| [[fastapi-fastapi]] | fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md) | article | Sebastián Ramírez (tiangolo) | 2026-04-27 | fastapi, tiangolo, python, pydantic, starlette, openapi, async, dependency-injection, agent-skills, SKILL.md, editor-support |
+| [[astral-sh-uv]] | astral-sh/uv — Rust로 작성된 초고속 Python 패키지·프로젝트 관리자 | article | Astral | 2026-04-27 | uv, astral, python, package-manager, rust, pubgrub, universal-lockfile, pep-723, agents-md, virtualenv, pyenv, poetry, pipx, pip-tools |
+| [[scikit-learn-scikit-learn]] | scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~) | article | scikit-learn community (David Cournapeau / INRIA / NumFOCUS / probabl.ai) | 2026-04-27 | scikit-learn, sklearn, machine-learning, python, classic-ml, fit-predict-transform, pipeline, estimator-api, slep, governance, numfocus, probabl, agents-md, ai-disclosure |
+| [[flutter-flutter]] | flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준 | article | Google (Flutter Team) | 2026-04-27 | flutter, dart, google, multiplatform, ui-toolkit, mobile, web, desktop, skia, impeller, hot-reload, agent-skills, agentskills.io, vendor-neutral, progressive-disclosure, token-budget |
 
 ## 개념 (Concepts)
 
@@ -69,19 +79,20 @@ updated: 2026-04-27 (8회차)
 |------|------|------|---------|-----------|
 | [[llm-wiki-pattern]] | LLM 위키 패턴 | 지식관리, LLM, 위키, RAG, 하네스 | 3 | 2026-04-15 |
 | [[mcp]] | MCP (Model Context Protocol) | MCP, LLM, 도구, 프로토콜, agentic-protocols, claude-cookbooks | 6 | 2026-04-27 |
-| [[harness]] | 하네스 (Harness) | 하네스, 에이전트, 작업운영, 자율연구, bare-metal-harness, meta-harness, claude-cookbooks, spec-kit | 5 | 2026-04-27 |
+| [[harness]] | 하네스 (Harness) | 하네스, 에이전트, 작업운영, 자율연구, bare-metal-harness, meta-harness, claude-cookbooks, spec-kit, library-as-harness, scikit-learn, slep, flutter, vendor-neutral, token-budget-tiers | 7 | 2026-04-27 |
 | [[token-economy]] | 토큰 경제학 (Token Economy) | 토큰, 비용, 컨텍스트, prompt-caching, claude-cookbooks | 2 | 2026-04-27 |
 | [[context-engineering]] | 컨텍스트 엔지니어링 | 컨텍스트엔지니어링, 프롬프트엔지니어링, 자율연구, memory-cookbook, claude-cookbooks | 4 | 2026-04-27 |
 | [[autonomous-research-loop]] | 자율 연구 루프 (Autonomous Research Loop) | 자율연구, agent, 메트릭주도, 시간예산, harness, gpt2-speedrun | 2 | 2026-04-27 |
-| [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills | 4 | 2026-04-27 |
+| [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills, library-self-hosted-skill, fastapi, flutter, vendor-neutral, dart-skills-lint, token-budget-tiers | 6 | 2026-04-27 |
 | [[agent-patterns]] | Building Effective Agents — 5 패턴 | agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, spec-kit, sdd | 2 | 2026-04-27 |
 | [[spec-driven-development]] | Spec-Driven Development (SDD) | spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology | 1 | 2026-04-27 |
-| [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot | 5 | 2026-04-24 |
+| [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot, tiangolo, agent-skills, annotated, pydantic2 | 6 | 2026-04-27 |
 | [[frontend-react]] | 프론트엔드 (React + TS + Vite + TanStack) | frontend, react, typescript, vite, tanstack, ag-grid | 4 | 2026-04-24 |
 | [[data-pipeline-bigquery]] | 데이터 파이프라인 (BigQuery 중심 BI) | data-pipeline, bigquery, mysql, BI, mmp, pandas, pandas-gbq, bigframes, pyarrow | 5 | 2026-04-27 |
 | [[devops-cicd]] | DevOps & CI/CD (Docker · Jenkins · Loki) | devops, cicd, docker, jenkins, loki, grafana | 3 | 2026-04-24 |
 | [[blockchain-xpla]] | 블록체인 (XPLA · Rust · NFT) | blockchain, xpla, nft, smart-contract, rust, gas-fee | 3 | 2026-04-24 |
-| [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops, pandas, scikit-learn, dataframe | 4 | 2026-04-27 |
+| [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict | 5 | 2026-04-27 |
+| [[python-packaging]] | Python 패키징 (Python Packaging) | python-packaging, pip, poetry, uv, pyproject-toml, lockfile, pep-517, pep-518, pep-621, pep-723, pep-735, virtualenv, pyenv, pipx, dependency-resolution, supply-chain | 1 | 2026-04-27 |
 
 ## 엔티티 (Entities)
 
@@ -109,6 +120,14 @@ updated: 2026-04-27 (8회차)
 | [[spec-kit]] | Spec Kit (Specify CLI) | tool | spec-kit, specify-cli, github, spec-driven-development, sdd, slash-command, agent-skills, claude-code, copilot, gemini, codex, multi-agent | 1 | 2026-04-27 |
 | [[pandas]] | pandas (데이터 분석 라이브러리) | tool | pandas, python, dataframe, data-analysis, time-series, BI, scikit-learn, numpy, pyarrow, bigquery, copy-on-write | 1 | 2026-04-27 |
 | [[pandas-dev]] | pandas-dev (GitHub 조직) | organization | pandas-dev, github-org, numfocus, bdfl, pdep, governance, oss-governance, wes-mckinney | 1 | 2026-04-27 |
+| [[fastapi]] | FastAPI | tool | fastapi, python, web-framework, asgi, openapi, pydantic, starlette, tiangolo, agent-skills, SKILL.md, dependency-injection, type-hints | 1 | 2026-04-27 |
+| [[tiangolo]] | Sebastián Ramírez (tiangolo) | person | tiangolo, sebastian-ramirez, python, oss, fastapi, pydantic-contributor, starlette-contributor, typer, sqlmodel, asyncer, fastapi-cloud | 1 | 2026-04-27 |
+| [[astral]] | Astral | organization | astral, charlie-marsh, ruff, uv, ty, python, rust, dev-tools, open-source, vc-backed | 1 | 2026-04-27 |
+| [[uv]] | uv (astral-sh/uv) | tool | uv, astral, python, package-manager, rust, pubgrub, universal-lockfile, pep-723, virtualenv, pyenv, poetry, pipx, pip-tools, twine, agents-md | 1 | 2026-04-27 |
+| [[flutter]] | Flutter | tool | flutter, dart, google, ui-toolkit, multiplatform, mobile, web, desktop, skia, impeller, hot-reload, material-design, cupertino, agent-skills, agentskills.io, vendor-neutral | 1 | 2026-04-27 |
+| [[dart]] | Dart | tool | dart, programming-language, google, flutter, aot, jit, javascript-compile, wasm, sound-null-safety, isolates | 1 | 2026-04-27 |
+| [[google]] | Google | organization | google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, ai | 1 | 2026-04-27 |
+| [[scikit-learn]] | scikit-learn (sklearn) | tool | scikit-learn, sklearn, machine-learning, python, library, classic-ml, fit-predict-transform, pipeline, BSD-3, numfocus, probabl, slep, agents-md | 2 | 2026-04-27 |
 
 ## 종합 분석 (Syntheses)
 

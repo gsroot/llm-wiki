@@ -60,7 +60,7 @@ updated: 2026-04-27
 - [[portfolio-seed]] — AutoML/AI Platform Pipeline 시대 + LLM/Agent 시대 양쪽
 - [[portfolio-resume-ko]] · [[portfolio-ko]] — 정량 지표(85%+ 정확도, Google Play 출시)
 - [[pandas-dev-pandas]] — ML 입력/출력의 도구 레이어 표준 (DataFrame), Pandera로 학습 데이터 검증, ecosystem.md의 skrub/Hamilton/Featuretools가 pandas → ML 다리
-- [[scikit-learn]] — sklearn 자체 소스 페이지, 거버넌스(SLEP)·5단 영속성 의사결정·생태계 30개+ 호환 라이브러리·AGENTS.md 정책
+- [[scikit-learn-scikit-learn]] — sklearn 자체 소스 페이지, 거버넌스(SLEP)·5단 영속성 의사결정·생태계 30개+ 호환 라이브러리·AGENTS.md 정책
 
 ## 열린 질문
 

@@ -72,6 +72,7 @@ confidence: high
 - [[microsoft]] / [[microsoft-for-beginners]]
 - [[ml-ai]] — 회사 BI에서 사용하는 AutoML과 비교 가능
 - [[data-pipeline-bigquery]] — BigQuery에 적재된 시계열 데이터를 ARIMA/SVR로 다루는 발상
+- [[scikit-learn]] — 26 lesson 전체가 의존하는 라이브러리. ML-For-Beginners의 "한 가지 추상화로 모든 ML 알고리즘 다루기"는 sklearn의 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator)가 19년 변하지 않았기에 가능
 
 ## 인용
 

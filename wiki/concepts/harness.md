@@ -2,9 +2,9 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]]
-source_count: 5
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]], [[scikit-learn]]
+source_count: 6
 created: 2026-04-15
 updated: 2026-04-27
 ---
@@ -106,6 +106,36 @@ project/
 
 [[spec-driven-development]]는 spec-kit가 강제하는 메소드론 자체의 페이지. 양극 사이의 "어떤 작업에 어느 쪽이 ROI인가"는 [[spec-driven-development]]의 열린 질문.
 
+### 제3의 축 — "라이브러리 자체가 하네스"
+
+위 양극은 **에이전트의 작업 환경**을 최소화하거나 표준화한다. [[scikit-learn]]은 다른 차원의 사례 — **라이브러리 디자인 자체가 작업 운영 패턴**:
+
+| 축 | scikit-learn (library-as-harness) |
+|----|----------------------------------|
+| **지식** | 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator) — 19년간 변하지 않은 추상화가 곧 "작업 모양" |
+| **도구** | NumPy + SciPy + joblib + threadpoolctl 5개 의존성 — 최소 도구 셋이 학습/예측 모든 작업에 충분 |
+| **패키지** | scikit-learn-contrib + skops + sklearn-onnx + auto-sklearn + MLFlow + yellowbrick 등 30+ 호환 라이브러리 — sklearn 컨트랙트 따르면 자동 호환 |
+| **통제** | **SLEP** (Scikit-Learn Enhancement Proposal) — API 변경에 1주+ 토론 + 2/3 다수결 강제, `pytest sklearn` 공통 테스트 헬퍼가 컨트랙트 위반 자동 검출 |
+| **세계관** | **API 컨트랙트가 곧 협업 표준**, 라이브러리 자체가 외부 컴포넌트의 협업 하네스 |
+
+→ [[autoresearch]]가 "에이전트의 자유도", [[spec-kit]]가 "메소드론 강제", [[scikit-learn]]은 "API 컨트랙트의 영구성"으로 각자 다른 강제 메커니즘. 회사 BI 모델 운영에는 sklearn 모델이 곧 작은 하네스 — `model_persistence.rst` 5단 의사결정 트리가 그대로 운영 SOP가 됨.
+
+### 제4의 축 — "vendor-neutral 자산 + 토큰 예산 다층화"
+
+[[flutter]] (Google, ★176K 11년차 OSS)가 박은 또 다른 변종:
+
+| 축 | flutter/flutter (vendor-neutral asset) |
+|----|---------------------------------------|
+| **지식** | `.agents/rules/dart-editing.md` (always_on trigger) + `.agents/skills/README.md` (5개 채택 요건 + agentskills.io 표준 인용) + `docs/about/Values.md` (5 가치) |
+| **도구** | `dart_skills_lint` 자체 검증 도구, dart format/analyze, MCP 서버, `dart_format` MCP |
+| **패키지** | `.agents/skills/{find-release, rebuilding-flutter-tool, upgrade-browser}/SKILL.md` 3종 + scripts/ ([[agent-skills]] 표준) |
+| **통제** | (1) **vendor-neutral 위치**(`.agents/`)를 단일 원천, `.claude/skills` → `../.agents/skills` 심볼릭 링크로 멀티 벤더 forwarding, (2) **토큰 예산 4계층** rules.md(30K) → 10k → 4k → 1k 동일 룰을 도구 한계별로 자동 매칭, (3) `agent-artifacts/` 별도 디렉토리 + .gitignore로 AI 산출물 격리 |
+| **세계관** | **표준은 채택하되 위치 컨벤션은 자체 결정** — agent-skills 표준의 형식을 따르면서 위치는 vendor-neutral, 토큰 예산은 도구별 대응 |
+
+→ [[anthropics-skills]] 진영의 `.claude/skills/` (자기 도구 중심)와 정면 다른 모델. **표준 채택자가 표준 정의자의 위치 컨벤션을 누르고 자체 결정**. [[github-spec-kit]] Codex 모드의 `.codex/skills/` (벤더별 분산 설치)와도 다름.
+
+특히 `docs/rules/` 4계층(rules_1k 799B → 4k 3.5K → 10k 9.4K → full 30K)이 **AI 도구 시장 매트릭스** (Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K)에 자동 매칭하는 패턴은 [[anthropics-skills]] progressive disclosure 3계층의 도구별 변종. 거대 OSS가 다중 AI 도구 환경에서 운영하는 첫 사례.
+
 ## 극한 사례 1: autoresearch의 초경량 하네스
 
 [[autoresearch]] (Karpathy, 2026-03)는 **하네스를 어디까지 줄일 수 있는가**의 한 답변이다. 4층 레이어가 모두 최소화돼 있다:
@@ -145,6 +175,8 @@ project/
 - [[anthropics-skills]] — 패키지 레이어의 표준 구현 (SKILL.md + scripts·references·assets, 3-Level Progressive Disclosure)
 - [[anthropics-claude-cookbooks]] — Anthropic 자기 정의 "bare-metal harness" 문장 출처 + claude_agent_sdk 6단계 튜토리얼이 하네스를 SW 외 도메인으로 푸는 reference
 - [[github-spec-kit]] — 하네스 스펙트럼의 **표준화 극단**. SDD 메소드론을 9개 슬래시 명령 + 5 템플릿 + 9 Articles 헌법으로 코드화. autoresearch의 최소 하네스와 정확히 반대 극단을 박음 → harness 개념의 양극 완성
+- [[scikit-learn]] — 하네스의 **제3축 "library-as-harness"** 사례. 19년 변하지 않은 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator)가 곧 작업 운영 패턴. SLEP(Scikit-Learn Enhancement Proposal)이 [[github-spec-kit]] SDD나 [[anthropics-skills]] SKILL.md의 19년 선배 — "표준화 → 구현" 분리 패턴의 원형. 30+ 호환 라이브러리 생태계가 컨트랙트 영구성의 결과
+- [[flutter-flutter]] — 하네스의 **제4축 "vendor-neutral asset + 토큰 예산 다층화"** 사례. `.agents/skills/` 표준 채택 + `.claude/skills` 심볼릭 링크 forwarding + `docs/rules/` 4계층(1k/4k/10k/full) 도구별 대응 + `agent-artifacts/` 격리. 11년차 거대 OSS가 다중 AI 도구 환경에서 거버넌스를 운영하는 첫 사례. [[anthropics-skills]] 표준의 두 번째 외부 채택([[github-spec-kit]] Codex 모드 첫 번째)이지만, **위치 컨벤션은 자체 결정**으로 표준 채택자가 정의자를 누른 모델
 
 ## 열린 질문
 
