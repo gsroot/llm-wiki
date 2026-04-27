@@ -2,9 +2,9 @@
 title: "컨텍스트 엔지니어링 (Context Engineering)"
 type: concept
 category: ai
-tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM, 자율연구, agent-memory, scratchpad, microsoft-for-beginners]
-related: [[harness]], [[token-economy]], [[claude-code]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[mcp]], [[microsoft-ai-agents-for-beginners]]
-source_count: 3
+tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM, 자율연구, agent-memory, scratchpad, microsoft-for-beginners, claude-cookbooks, memory-cookbook, automatic-context-compaction, session-memory-compaction]
+related: [[harness]], [[token-economy]], [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[mcp]], [[microsoft-ai-agents-for-beginners]], [[anthropics-claude-cookbooks]]
+source_count: 4
 created: 2026-04-15
 updated: 2026-04-27
 ---
@@ -180,6 +180,7 @@ lesson 13(Managing Agentic Memory)이 "Memories" strategy를 구현 수준으로
 - [[claude-code-master-guide]] — CHOI의 가이드북 5장 "프롬프트 엔지니어링, 컨텍스트 엔지니어링, 하네스 엔지니어링"
 - [[karpathy-autoresearch]] — 자율 실험 루프 운영의 컨텍스트 보호 패턴(`> run.log 2>&1` + `grep` 1줄 발췌)
 - [[microsoft-ai-agents-for-beginners]] — lesson 12 "Context Engineering for AI Agents"가 5 type / 6 strategy / 4 failure mode 카탈로그화 (Microsoft Cloud Advocates 운영판)
+- [[anthropics-claude-cookbooks]] — `tool_use/memory_cookbook.ipynb` (615줄 마크다운, 7가지 메모리 타입을 실제 코드 인터페이스로) + `tool_use/automatic-context-compaction.ipynb` + `misc/session_memory_compaction.ipynb` 3종이 전략(Memories·Compress)의 코드 reference
 
 ## 열린 질문
 

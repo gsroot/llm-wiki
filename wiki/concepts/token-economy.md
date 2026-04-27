@@ -2,11 +2,11 @@
 title: "토큰 경제학 (Token Economy)"
 type: concept
 category: ai
-tags: [토큰경제학, token-economy, LLM, 비용, 컨텍스트, context]
-related: [[harness]], [[context-engineering]], [[claude-code]]
-source_count: 1
+tags: [토큰경제학, token-economy, LLM, 비용, 컨텍스트, context, prompt-caching, claude-cookbooks, claude-agent-sdk]
+related: [[harness]], [[context-engineering]], [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]]
+source_count: 2
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-27
 ---
 
 # 토큰 경제학 (Token Economy)
@@ -78,9 +78,29 @@ Anthropic의 prompt cache는 **같은 컨텍스트를 오래 유지할수록 재
 - [[context-engineering]]: 어떤 자료를 컨텍스트에 넣을지 선택하는 기술
 - [[claude-code]]: `/compact`, `--resume`, CLAUDE.md 등 토큰 경제학 도구 제공
 
+## Prompt Caching 운영 핸들 (claude-cookbooks 기준)
+
+[[anthropics-claude-cookbooks]] `misc/prompt_caching.ipynb`에서 정리된 실제 운영 핸들:
+
+| 항목 | 값 |
+|------|-----|
+| **TTL** | 5분 (기본) / 1시간 (확장) — 두 옵션 |
+| **breakpoint 한도** | 메시지당 4개 |
+| **최소 캐시 단위** | 1024 토큰 (이보다 작으면 캐시 안 됨) |
+| **캐시 적중 시 입력 비용** | 정상가의 약 **0.1×** |
+| **캐시 작성 비용** | 정상가의 약 1.25× (한 번 작성 후 재사용) |
+
+운영 패턴:
+- 시스템 프롬프트 + 자주 안 변하는 컨텍스트(예: CLAUDE.md)를 **캐시 대상**으로 두고 동적 부분만 뒤에 붙이기
+- 멀티턴 세션에서 첫 N 메시지를 캐시 → 후속 턴에서 입력 비용 절감
+- 5분 TTL은 "사용자가 활발히 대화 중"인 경우, 1시간 TTL은 "주기적으로 재호출되는 워크플로우"에 매핑
+
+이 핸들이 [[harness]]의 "안정적 부모 컨텍스트가 prompt cache를 공유" 인용을 정량 수치로 풀어준다.
+
 ## 출처
 
 - [[claude-code-master-guide]] — CHOI의 가이드북 2장 "핵심 개념" 및 9장 "커뮤니티 패턴"에서 prompt cache 해석
+- [[anthropics-claude-cookbooks]] — `misc/prompt_caching.ipynb` 운영 핸들 (TTL 5분/1시간, 4 breakpoint, 1024 토큰 최소, 0.1× 적중 비용)
 
 ## 열린 질문
 

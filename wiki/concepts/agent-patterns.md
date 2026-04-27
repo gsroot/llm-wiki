@@ -1,0 +1,174 @@
+---
+title: "Building Effective Agents — 5 패턴"
+type: concept
+category: ai
+tags: [agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, agent, workflow]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[autonomous-research-loop]], [[harness]], [[anthropics-claude-cookbooks]], [[mcp]]
+source_count: 1
+created: 2026-04-27
+updated: 2026-04-27
+---
+
+# Building Effective Agents — 5 패턴
+
+## 정의
+
+[[anthropic]] (Erik Schluntz · Barry Zhang)이 [공식 블로그](https://anthropic.com/research/building-effective-agents)에서 정의한 **에이전트 워크플로우 5가지 표준 분류**. 각 패턴이 cost·latency를 작업 성능과 trade-off하는 방식이 명확히 다르다. 위키에서는 이 5분류를 자율 에이전트 설계의 1차 분류 체계로 채택.
+
+## 왜 중요한가
+
+LLM 에이전트 시대 직전까지 "프롬프트 엔지니어링"이 분류 단위였다. 에이전트 시대에 들어서며 **여러 LLM 호출을 어떻게 묶을 것인가**가 새 분류 단위가 됐고, Anthropic의 5 패턴이 사실상 표준 분류로 자리잡고 있다. 위키에서 [[autonomous-research-loop]] · [[harness]] · 향후 들어올 모든 에이전트 페이지가 이 5 패턴 위에 올라간다.
+
+## 핵심 내용
+
+### Basic Building Blocks (3종)
+
+#### 1. Prompt Chaining (프롬프트 체인)
+
+**아이디어**: 단일 작업을 순차 서브태스크로 분해, 각 단계가 이전 결과 위에 빌드.
+
+```
+입력 → LLM 1 (계획) → LLM 2 (초안) → LLM 3 (검토·정제) → 출력
+```
+
+**Trade-off**: latency 증가 ↔ 각 단계 단순화로 정확도 향상.
+
+**적용 사례**: 마크다운 → 슬라이드 변환, 긴 문서 요약 → 핵심 인사이트 추출 → SNS 포스팅 변환.
+
+#### 2. Routing (라우팅)
+
+**아이디어**: 입력 특성을 보고 전용 LLM 경로를 동적으로 선택.
+
+```
+입력 → Router LLM → {LLM-A | LLM-B | LLM-C} → 출력
+```
+
+**Trade-off**: 추가 분류 호출 1회 ↔ 각 경로의 모델/프롬프트를 도메인 최적화 가능.
+
+**적용 사례**: 고객 지원 — refund 문의/기술 문의/일반 질의에 따라 다른 LLM 호출. 모델 선택(쉬운 건 Haiku, 어려운 건 Opus).
+
+#### 3. Parallelization (병렬화)
+
+**아이디어**: 독립 서브태스크를 여러 LLM에 동시 분산.
+
+```
+            ┌→ LLM 1 ─┐
+입력 ───────┼→ LLM 2 ─┼─→ aggregator → 출력
+            └→ LLM 3 ─┘
+```
+
+**두 변종**:
+- **Sectioning** — 작업을 독립 부분으로 쪼개 병렬 처리 (예: 리뷰 N 측면 평가)
+- **Voting** — 같은 작업을 여러 번 실행해 다수결/평균 (예: 코드 보안성 다중 평가)
+
+**Trade-off**: 비용 N배 ↔ wall-clock 시간 단축 + 다양성 확보.
+
+**적용 사례**: 이해관계자 영향 분석 (각 stakeholder별 병렬 LLM), 다관점 코드 리뷰.
+
+### Advanced Workflows (2종)
+
+#### 4. Orchestrator-Workers
+
+**아이디어**: 오케스트레이터 LLM이 **동적으로** 서브태스크를 생성하고 워커 LLM들을 조율, 결과를 합성.
+
+```
+입력 → Orchestrator LLM ─┬→ Worker A → ┐
+                          ├→ Worker B → ├─→ Synthesizer → 출력
+                          └→ Worker C → ┘
+       (서브태스크 동적 결정)
+```
+
+**Parallelization과의 차이**: Parallelization은 **사전에 알려진** 서브태스크를 분산. Orchestrator는 **런타임에 서브태스크를 결정**.
+
+**Trade-off**: 오케스트레이터 호출 + 워커 호출 N개 + synthesizer = 비용 큼 ↔ 사전에 분해 불가능한 복잡 작업 처리.
+
+**적용 사례**: 복잡 코딩 task (변경 대상 파일을 스캔 후 결정), 자율 연구 (다음 검색 쿼리를 결정).
+
+#### 5. Evaluator-Optimizer
+
+**아이디어**: 한 LLM이 출력 생성, 다른 LLM이 평가/피드백 → 반복 개선.
+
+```
+입력 → Generator LLM → 출력 후보
+         ↑                    ↓
+      (수정)         Evaluator LLM (acceptable?)
+         ↑                    ↓
+         └────── feedback ─────
+                              ↓ (yes)
+                            출력 확정
+```
+
+**Trade-off**: 반복 횟수 × 비용 ↔ 자체 검증으로 품질 ceiling 상승.
+
+**적용 사례**: 번역 품질 개선, 복잡 검색 답변 정제, **자율 연구 루프**.
+
+## 5 패턴의 위계
+
+| 분류 | 패턴 수 | 호출 흐름 |
+|------|--------|----------|
+| Basic | 3 | 정적 (사전 결정) |
+| Advanced | 2 | 동적 (런타임 결정) |
+
+Advanced 2개의 핵심: **런타임에 흐름을 결정한다**. 이게 사람들이 "에이전트답다"고 부르는 특징.
+
+## [[autonomous-research-loop]]과의 관계
+
+[[autoresearch]] (Karpathy) 같은 자율 연구 루프는 **Evaluator-Optimizer + Orchestrator-Workers의 도메인 특화 합성**:
+
+| autoresearch 요소 | 5 패턴 매핑 |
+|------------------|-------------|
+| 시간 예산 안에서 다음 실험을 결정 | Orchestrator-Workers (실험 = 워커) |
+| `val_bpb` 메트릭으로 결과 평가 → 다음 실험 방향 결정 | Evaluator-Optimizer (메트릭이 evaluator) |
+| `program.md` 자율 진화 | Evaluator-Optimizer (program.md가 generator의 산출물 + evaluator의 입력) |
+
+즉 [[autonomous-research-loop]]은 **5 패턴의 추상화 위에 "메트릭 객관성 + 시간 예산 + Simplicity 기준"이라는 도메인 제약을 추가한 합성 패턴**.
+
+## 실전 적용
+
+### A. 회사 BI에서
+
+| 작업 | 패턴 |
+|------|------|
+| 일간 KPI 보고서 생성 | Prompt Chaining (데이터 → 차트 → 코멘트 → 슬라이드) |
+| 사용자 문의 라우팅 (대시보드 / 데이터 / 권한) | Routing |
+| 동일 쿼리에 대한 다중 데이터 출처 검증 | Parallelization (Voting) |
+| 신규 지표 정의 — 어떤 테이블·조인이 필요한지 동적 결정 | Orchestrator-Workers |
+| SQL 쿼리 자동 정정 (실행 결과 보고 다시 작성) | Evaluator-Optimizer |
+
+### B. 개인 비서 AI에서
+
+- **Chief of Staff Agent** ([[anthropics-claude-cookbooks]]의 01번 노트북) = Orchestrator-Workers + Evaluator-Optimizer 합성
+- 일정 조율 = Routing (참석자별 선호 라우팅)
+- 자료 조사 = Orchestrator-Workers (다음 검색을 LLM이 결정) + Evaluator-Optimizer (만족도 미달 시 재검색)
+
+### C. [[claude-agent-sdk]]에서의 구현
+
+5 패턴 모두 `query()` 또는 `ClaudeSDKClient` + 서브에이전트 조합으로 구현 가능. cookbook의 `patterns/agents/basic_workflows.ipynb` (앞 3개) + `evaluator_optimizer.ipynb` + `orchestrator_workers.ipynb`가 reference.
+
+## 안티패턴
+
+| 패턴 | 문제 | 회피 |
+|------|------|------|
+| 5 패턴 무관하게 단일 거대 프롬프트로 전부 해결 | 검증 불가, 토큰 폭발, 디버깅 지옥 | 패턴별 분해 후 재합성 |
+| Orchestrator-Workers를 작은 작업에 사용 | 오케스트레이션 오버헤드가 작업보다 큼 | 정적 분해 가능하면 Parallelization |
+| Evaluator-Optimizer 무한 루프 | iteration cap 부재 | 최대 N회 + 시간 예산 강제 (autoresearch 패턴) |
+| Routing의 분류 LLM이 너무 비쌈 | Router 비용 > 도메인 LLM 비용 | Router는 Haiku, 워커는 Sonnet/Opus |
+
+## 관련 개념
+
+- [[harness]]: 5 패턴 모두 4층 하네스 안에서 구현 — Orchestrator-Workers는 통제 레이어 부담이 큼
+- [[autonomous-research-loop]]: 5 패턴 합성의 도메인 특화
+- [[claude-agent-sdk]]: 5 패턴의 reference 구현 진입로
+- [[claude-code]]: 5 패턴이 Claude Code 안에서는 subagent + plan mode + hooks 조합으로 모두 표현 가능
+- [[token-economy]]: Parallelization · Orchestrator-Workers는 비용이 N배. token economy 시점에서 가장 신중해야 할 패턴
+
+## 출처
+
+- [[anthropics-claude-cookbooks]] — `patterns/agents/` 3개 노트북 (basic_workflows, evaluator_optimizer, orchestrator_workers) + 원조 블로그 "Building Effective Agents" (Schluntz·Zhang) 링크
+
+## 열린 질문
+
+- 5 패턴 외에 추가 분류가 등장할 가능성? (예: ReAct, MCTS 기반 에이전트는 5 패턴의 변종인가 별개인가?)
+- Multi-agent 시스템 (서로 다른 페르소나의 에이전트들이 협업)은 5 패턴 중 어디?
+- Evaluator-Optimizer의 evaluator가 사람일 때(HITL) 같은 패턴인가 별개 분류인가?
+- 회사 BI에 도입 시 가장 ROI가 높은 패턴은? (가설: Routing — 모델 선택 자동화로 비용 즉시 절감)

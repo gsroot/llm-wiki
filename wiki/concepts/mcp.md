@@ -2,9 +2,9 @@
 title: "MCP (Model Context Protocol)"
 type: concept
 category: ai
-tags: [MCP, model-context-protocol, LLM, 도구, tool-use, 프로토콜, a2a, nlweb, agentic-protocols]
-related: [[llm-wiki-pattern]], [[qmd]], [[claude-code]], [[microsoft-for-beginners]], [[context-engineering]]
-source_count: 5
+tags: [MCP, model-context-protocol, LLM, 도구, tool-use, 프로토콜, a2a, nlweb, agentic-protocols, claude-cookbooks, claude-agent-sdk, json-rpc-subprocess]
+related: [[llm-wiki-pattern]], [[qmd]], [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[microsoft-for-beginners]], [[context-engineering]], [[agent-patterns]]
+source_count: 6
 created: 2026-04-09
 updated: 2026-04-27
 ---
@@ -106,6 +106,7 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[claude-code-master-guide]] — 6장 "확장과 자동화"에서 MCP·Skill·Plugin·Connector·Hook 5종의 관계와 사용 순서 정리
 - [[using-llm-wiki-as-rag]] — `.mcp.json` 등록 예시와 qmd를 위키 전용 MCP 서버로 쓰는 방법
 - [[microsoft-ai-agents-for-beginners]] — lesson 11 "Agentic Protocols (MCP, A2A, NLWeb)"에서 MCP의 3 primitives(Tools/Resources/Prompts), 클라이언트-서버 아키텍처, 자매 프로토콜 카탈로그화
+- [[anthropics-claude-cookbooks]] — `claude_agent_sdk/` Observability Agent(Git MCP 13+ tools, GitHub MCP 100+ tools) + SRE Agent(자체 JSON-RPC subprocess MCP 서버 12+ tools, Prometheus 통합) + `managed_agents/CMA_operate_in_production.ipynb` (vault-backed MCP credentials) — 운영 레벨 MCP 통합의 reference
 
 ## 열린 질문
 

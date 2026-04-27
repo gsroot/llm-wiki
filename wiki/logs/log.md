@@ -10,6 +10,64 @@ type: log
 
 ---
 
+## [2026-04-27] synthesis | 에이전트 스택의 3축 진화 — Microsoft · Anthropic · Karpathy 비교
+
+직전 5회차 anthropics/claude-cookbooks 수집의 후속 분석. 사용자 의사결정 가치 검토 후 후속 탐구 (b) 진행. (a) `claude-managed-agents` entity는 source_count 1 회피로 보류, (c) `/wiki-lint`는 위키 100 페이지 후로 보류.
+
+- **신규 종합 분석**: `wiki/syntheses/agent-stack-evolution.md` (174 lines) — 8개 비교 축으로 3축 분석:
+  1. 표준-구현 관계 (분리 안 함 / 명확 분리 / 표준=구현)
+  2. 최소 단위 (lesson.md / SKILL.md+notebook / 단일 파일)
+  3. 페다고지 위계 (입문자 6단 / API 개발자 노트북 / 연구자 read the source)
+  4. CI-로컬 통합 채널 (GitHub Action / 슬래시 커맨드 / 평가 스크립트)
+  5. 다국어/접근성 정책 (50+ 언어 + 02·03번 가치 박기 / 영어 only / 비고려)
+  6. 메트릭과 객관성 (인간 평가 / 자동+인간 / 메트릭 잠금)
+  7. [[harness]] 4층 레이어 비교 (지식 두꺼움 / 패키지 두꺼움 / 통제 가벼움)
+  8. 자기 정의 인용 비교 ("free of charge" / "bare metal harness" / "Read the source")
+- **결론 핵심 5가지 + 실전 가이드**:
+  - "3축은 보완 관계, 경쟁 관계가 아니다" — 사용자 단계에 따라 다른 축
+  - 회사 BI 시나리오별 권장 축 표 (자연어 SQL=MS, 쿼리 표준화=Anthropic, 지표 자동화=Karpathy)
+  - **개인 비서 = "Anthropic 70% + Karpathy 30%"**, **회사 BI = "Microsoft 50% + Anthropic 30% + Karpathy 20%"** 일차 가설
+  - 위키 자기 차용 분석 (한영 병기=MS, CLAUDE.md=Karpathy, 향후 /wiki-lint=Anthropic)
+- **업데이트된 파일**:
+  - `wiki/index.md` — 종합 분석 표에 [[agent-stack-evolution]] 행 추가, 통계 60→61, HTML 주석 후속 분석 줄 추가
+  - `wiki/logs/log.md` — 본 항목
+- **후속 합성 후보** (이 페이지 본문 메모에 박음): (a) `synthesis/llm-eval-objectivity.md` — 메트릭 객관성 3축 비교 심화, (b) `synthesis/wiki-operating-model.md` — 위키 자체가 3축을 어떤 비율로 차용 중인지 자기 분석.
+
+---
+
+## [2026-04-27] ingest | anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음
+
+5회차 수집. anthropics/skills(3회차) + microsoft for-beginners(4회차)와의 짝을 이루는 anthropic 측 두 번째 큰 자료. 14개 디렉토리 ~100 노트북 카탈로그.
+
+- **소스 (raw 신규 보관)** — `raw/articles/anthropics-claude-cookbooks/` (17개 파일, 3,410 lines):
+  - 루트 메타 5종: README.md, CLAUDE.md, CONTRIBUTING.md, Makefile, pyproject.toml
+  - 디렉토리 README 5종: patterns-agents, claude_agent_sdk, managed_agents, skills, capabilities
+  - 카탈로그 메타 2종: registry.yaml(노트북 단일 진실원, 23KB), authors.yaml(기여자 메타)
+  - 노트북 마크다운 추출 5종: basic-workflows(Building Effective Agents 5 패턴), research-agent, chief-of-staff, memory-cookbook, prompt-caching
+  - **선택 근거**: 거대 ipynb 본체(3MB+ 멀티모달 스크린샷 등)는 본질이 마크다운에 다 있고 보관 시 무게 폭발 → 마크다운 셀만 jq로 추출. ipynb의 `source` 필드가 string 또는 array 양형식이라 파이프라인에 type 분기 필요(`if type=="array" then join else .source end`)
+- **생성된 파일 (4개)**
+  - **소스 (1)**: `wiki/sources/anthropics-claude-cookbooks.md` — 14 디렉토리 카탈로그, "Building Effective Agents 5 패턴" 정의, claude_agent_sdk 6단계 튜토리얼 표, managed_agents 8개 학습 포인트 표, skills 3 노트북, Anthropic의 노트북 운영 표준(슬래시 커맨드 = CI = 로컬 / 모델 ID 정책 / registry.yaml)
+  - **엔티티 (2)**:
+    - `wiki/entities/anthropic.md` (organization) — Microsoft 페이지와 균형. "표준 vs 구현" 분리 운영 패턴, "Claude Code = bare-metal harness" 자기 정의 인용, Microsoft와의 운영 차이 표
+    - `wiki/entities/claude-agent-sdk.md` (tool) — Python SDK 인터페이스 3개(`query()` · `ClaudeSDKClient` · `ClaudeAgentOptions`), Claude Code 운영 기법의 SDK화, 6단계 튜토리얼, "Beyond Coding: The Agent Builder's Toolkit" 자기 정의
+  - **개념 (1)**: `wiki/concepts/agent-patterns.md` — Building Effective Agents 5 패턴(Prompt Chaining/Routing/Parallelization/Orchestrator-Workers/Evaluator-Optimizer), Basic 3 + Advanced 2 위계, autoresearch과의 매핑 표, BI/개인비서 적용 예, 안티패턴 4종
+- **업데이트된 파일 (6개)**
+  - `wiki/entities/claude-code.md` — frontmatter related/tags/source_count 5→7/updated 갱신, 개요에 "bare-metal harness" 인용 + [[claude-agent-sdk]] 추가, 멀티 에이전트 섹션의 "Agent SDK"가 [[claude-agent-sdk]] 위키링크로 격상, 출처에 [[anthropics-claude-cookbooks]] 추가, 중복 [[anthropics-skills]] 1개 제거 (1276 버그 픽스)
+  - `wiki/concepts/agent-skills.md` — frontmatter source_count 2→3, related에 [[claude-agent-sdk]]·[[anthropic]] 추가, 출처에 [[anthropics-claude-cookbooks]] 추가 (skills/ 노트북 3종 + custom_skills 사례 3종 reference)
+  - `wiki/concepts/harness.md` — frontmatter source_count 3→4, related에 [[claude-agent-sdk]]·[[anthropic]]·[[agent-patterns]] 추가, **신규 섹션 "Anthropic의 자기 정의 (claude-cookbooks)"** — bare-metal harness 인용 + Claude Code/Agent SDK가 하네스의 anthropic-side 정통 정의라는 자리매김
+  - `wiki/concepts/context-engineering.md` — frontmatter source_count 3→4, related에 [[claude-agent-sdk]]·[[anthropic]]·[[anthropics-claude-cookbooks]] 추가, 출처에 memory_cookbook + automatic-context-compaction + session_memory_compaction 3종 추가
+  - `wiki/concepts/token-economy.md` — frontmatter source_count 1→2, updated 2026-04-15→2026-04-27, related에 [[claude-agent-sdk]]·[[anthropic]]·[[agent-patterns]] 추가, **신규 섹션 "Prompt Caching 운영 핸들"** — TTL 5분/1시간, 4 breakpoint 한도, 1024 토큰 최소, 0.1× 적중 비용 정량 수치
+  - `wiki/concepts/mcp.md` — frontmatter source_count 5→6, related에 [[claude-agent-sdk]]·[[anthropic]]·[[agent-patterns]] 추가, 출처에 Observability Agent(13+/100+ tools) + SRE Agent(자체 JSON-RPC subprocess MCP) + CMA_operate_in_production(vault-backed credentials) reference 추가
+- **메모**: 핵심 발견 5가지.
+  1. **"skills 리포 ↔ cookbooks 리포" 분업이 명료** — skills = 배포 채널(SKILL.md 패키지 17개), cookbooks = 실습 채널(노트북 ~100). 두 리포 합쳐 "Anthropic 표준 스택" 완성. 위키 4개 entity([[claude-code]]/[[agent-skills]]/[[claude-agent-sdk]]/(추후 claude-managed-agents))가 이 스택의 짝.
+  2. **Building Effective Agents 5 패턴이 위키의 빈자리를 정확히 채움** — [[autonomous-research-loop]]은 "한 종류의 자율 루프"였지, 일반 분류는 부재했음. Anthropic 5 패턴(Schluntz·Zhang)이 위키의 1차 분류 체계로 자리잡고, autoresearch는 "Evaluator-Optimizer + Orchestrator-Workers의 도메인 특화 합성"으로 자리매김.
+  3. **"Claude Code = bare-metal harness for Claude's raw agentic power"** 자기 정의 입수 — `claude_agent_sdk/README.md`에 박힌 한 문장이 [[harness]]·[[claude-code]]·[[claude-agent-sdk]] 세 페이지의 정통 정의가 됨. 가장 인용 가치 높은 문장.
+  4. **Anthropic의 운영 표준 자체가 자료** — `/notebook-review`·`/model-check`·`/link-review` 슬래시 커맨드를 .claude/commands/에 정의해 Claude Code(로컬)와 GitHub Actions(CI)가 같은 정의를 호출하는 패턴. 위키에 그대로 차용 가능 (예: `/wiki-lint`).
+  5. **Memory Cookbook이 Microsoft lesson 13의 코드 짝** — 7가지 메모리 타입을 코드 인터페이스로 구현. context-engineering의 "Memories" strategy 항목이 이론(Microsoft) + 코드(Anthropic) 짝으로 완성.
+- **후속 탐구 후보**: (a) `claude-managed-agents` entity 분리 — 현재 cookbooks 소스 안에만 정리, "에이전트의 PaaS" 추상화로 별도 페이지 가치 있음. (b) `synthesis/agent-stack-evolution.md` — Microsoft for-beginners ↔ Anthropic skills/cookbooks ↔ Karpathy autoresearch 3축 비교 종합 분석. (c) `/wiki-lint` 슬래시 커맨드 시도 (CLAUDE.md "lint" 워크플로우 코드화).
+
+---
+
 ## [2026-04-27] follow-up | lesson 13 (Agentic Memory) 보강 + templates/lesson.md 신설
 
 직전 microsoft for-beginners 통합 수집의 후속 탐구 2건을 즉시 진행.

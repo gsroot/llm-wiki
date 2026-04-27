@@ -2,20 +2,24 @@
 title: "Claude Code"
 type: entity
 entity_type: tool
-tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI]
-related: [[mcp]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]]
-source_count: 5
+tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness]
+related: [[anthropic]], [[claude-agent-sdk]], [[mcp]], [[agent-skills]], [[agent-patterns]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]]
+source_count: 7
 created: 2026-04-09
-updated: 2026-04-16
+updated: 2026-04-27
 ---
 
 # Claude Code
 
 ## 개요
 
-Anthropic이 개발한 에이전트 코딩 도구. 전체 코드베이스를 이해하고, 파일 편집, 명령 실행, 외부 도구 통합을 수행한다. Terminal CLI, VS Code, JetBrains, Desktop 앱, Web, iOS 등 다양한 환경에서 동일한 엔진으로 작동한다.
+[[anthropic]]이 개발한 에이전트 코딩 도구. 전체 코드베이스를 이해하고, 파일 편집, 명령 실행, 외부 도구 통합을 수행한다. Terminal CLI, VS Code, JetBrains, Desktop 앱, Web, iOS 등 다양한 환경에서 동일한 엔진으로 작동한다.
 
-이 위키 자체가 Claude Code를 에이전트로 사용하여 운영되고 있다.
+Anthropic 자기 정의 (`claude_agent_sdk/README.md`):
+
+> "Claude Code the closest thing to a 'bare metal' harness for Claude's raw agentic power: a minimal yet complete and sophisticated interface that lets the model's capabilities shine with the least possible overhead."
+
+= **Claude의 raw agentic power를 위한 bare-metal [[harness]]**. 같은 운영 기법을 코드로 노출하는 자매 도구가 [[claude-agent-sdk]]. 이 위키 자체가 Claude Code를 에이전트로 사용하여 운영되고 있다.
 
 ## 주요 특징
 
@@ -34,8 +38,8 @@ Anthropic이 개발한 에이전트 코딩 도구. 전체 코드베이스를 이
 - **Hooks**: 도구 실행 전후에 셸 명령 자동 실행
 
 ### 멀티 에이전트
-- **서브 에이전트**: 여러 에이전트를 병렬 생성. 리드 에이전트가 조정하고 결과 병합
-- **Agent SDK**: 완전 커스텀 에이전트 구축. 오케스트레이션·도구 액세스·권한 제어
+- **서브 에이전트**: 여러 에이전트를 병렬 생성. 리드 에이전트가 조정하고 결과 병합. 서브에이전트 조율 패턴은 [[agent-patterns]]의 Orchestrator-Workers 분류
+- **[[claude-agent-sdk]]**: Claude Code의 모든 운영 기법(hooks·plan mode·output styles·subagent·MCP)을 Python SDK 옵션으로 노출. SW 외 도메인(연구 에이전트·개인 비서·SRE 등)에 raw agentic power를 푸는 통로. 6단계 튜토리얼은 [[anthropics-claude-cookbooks]] `claude_agent_sdk/` 디렉토리
 
 ### 자동화 & 크로스 디바이스
 - **예약 작업**: 클라우드(서버) / 데스크톱(로컬) / `/loop`(CLI 폴링)
@@ -112,7 +116,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[using-llm-wiki-as-rag]] — 이 위키를 Claude Code에서 retrieval 소스로 통합하는 5가지 방법 (Agent Skill, `.mcp.json` 등)
 - [[slash-commands-vs-agent-skills]] — Slash Commands와 Agent Skills 통합 경위·비교·판단 (Anthropic 공식 문서 기반)
 - [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스 리포(17개 스킬·3개 플러그인 마켓플레이스·skill-creator)
-- [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스 리포(17개 스킬·3개 플러그인 마켓플레이스·skill-creator)
+- [[anthropics-claude-cookbooks]] — Claude API/SDK 실습 노트북 카탈로그 (~100 노트북, 14 디렉토리). claude_agent_sdk 6단계·managed_agents 8개·patterns/agents 5패턴·skills 3종
 
 ## 메모
 

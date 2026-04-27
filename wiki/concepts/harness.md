@@ -2,9 +2,9 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어]
-related: [[claude-code]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]]
-source_count: 3
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]]
+source_count: 4
 created: 2026-04-15
 updated: 2026-04-27
 ---
@@ -113,11 +113,20 @@ project/
 - [[autonomous-research-loop]]: 하네스를 극한으로 압축한 자율 운영 패턴
 - [[autoresearch]]: 그 패턴의 표준 시제품
 
+## Anthropic의 자기 정의 (claude-cookbooks)
+
+[[anthropic]]이 직접 박은 하네스 정의 (`claude_agent_sdk/README.md`):
+
+> "Claude Code the closest thing to a 'bare metal' harness for Claude's raw agentic power: a minimal yet complete and sophisticated interface that lets the model's capabilities shine with the least possible overhead."
+
+이 한 문장이 [[claude-code]]를 "코딩 도구"에서 "Claude의 raw agentic power를 위한 bare-metal harness"로 자리매김함. [[claude-agent-sdk]]는 같은 하네스를 코드로 노출해 SW 외 도메인(연구 에이전트·개인 비서·SRE)에 raw power를 푸는 통로. 따라서 위키에서 하네스 = "Claude Code/Agent SDK 인터페이스 + 사용자 정의 4층 레이어 합성".
+
 ## 출처
 
 - [[claude-code-master-guide]] — CHOI의 가이드북에서 가장 중심적인 개념. 5장 "시스템 설계: 문맥, 하네스, 검증"
 - [[karpathy-autoresearch]] — 하네스 최소화의 극단 사례. `program.md` 한 장으로 LLM 학습 자율 실험 운영
 - [[anthropics-skills]] — 패키지 레이어의 표준 구현 (SKILL.md + scripts·references·assets, 3-Level Progressive Disclosure)
+- [[anthropics-claude-cookbooks]] — Anthropic 자기 정의 "bare-metal harness" 문장 출처 + claude_agent_sdk 6단계 튜토리얼이 하네스를 SW 외 도메인으로 푸는 reference
 
 ## 열린 질문
 
