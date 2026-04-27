@@ -1,0 +1,19 @@
+[
+    {"name": "dev", "version": "dev", "url": "https://pandas.pydata.org/docs/dev/"},
+    {"name": "3.0 (stable)", "version": "3.0", "url": "https://pandas.pydata.org/docs/", "preferred": true},
+    {"name": "2.3", "version": "2.3", "url": "https://pandas.pydata.org/pandas-docs/version/2.3/"},
+    {"name": "2.2", "version": "2.2", "url": "https://pandas.pydata.org/pandas-docs/version/2.2/"},
+    {"name": "2.1", "version": "2.1", "url": "https://pandas.pydata.org/pandas-docs/version/2.1/"},
+    {"name": "2.0", "version": "2.0", "url": "https://pandas.pydata.org/pandas-docs/version/2.0/"},
+    {"name": "1.5", "version": "1.5", "url": "https://pandas.pydata.org/pandas-docs/version/1.5/"},
+    {"name": "1.4", "version": "1.4", "url": "https://pandas.pydata.org/pandas-docs/version/1.4/"},
+    {"name": "1.3", "version": "1.3", "url": "https://pandas.pydata.org/pandas-docs/version/1.3/"},
+    {"name": "1.2", "version": "1.2", "url": "https://pandas.pydata.org/pandas-docs/version/1.2/"},
+    {"name": "1.1", "version": "1.1", "url": "https://pandas.pydata.org/pandas-docs/version/1.1/"},
+    {"name": "1.0", "version": "1.0", "url": "https://pandas.pydata.org/pandas-docs/version/1.0/"}
+]
+
+# 원본: https://github.com/pandas-dev/pandas/blob/main/web/pandas/versions.json
+# SHA: 24365e883781a3f49f12159d3722f073e1c2ea41 (size 1,565 bytes)
+# 수집일: 2026-04-27
+# 의미: 2026-04-27 기준 stable 버전은 3.0. 1.x → 2.x → 3.x 순으로 메이저 버전 진화 — Copy-on-Write(PDEP-7) 채택이 2.0의 이정표.

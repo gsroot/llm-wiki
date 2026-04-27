@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-27 (7회차)
+updated: 2026-04-27 (8회차)
 ---
 
 # 위키 인덱스
@@ -15,6 +15,7 @@ updated: 2026-04-27 (7회차)
 <!-- 수집일 2026-04-27 (5회차): anthropics/claude-cookbooks 수집 — 소스 1 + 엔티티 2 (anthropic, claude-agent-sdk) + 개념 1 (agent-patterns) 추가, claude-code/agent-skills/harness/context-engineering/token-economy/mcp 6개 페이지 보강 -->
 <!-- 후속 분석 2026-04-27 (5회차 후속): synthesis/agent-stack-evolution.md 신설 — Microsoft "단일 운영체계" / Anthropic "표준-구현 분리" / Karpathy "minimal harness" 3축 비교 종합 분석 -->
 <!-- 수집일 2026-04-27 (7회차): github/spec-kit 수집 — 소스 1 + 엔티티 2 (github, spec-kit) + 개념 1 (spec-driven-development) 추가, claude-code/agent-skills/harness/agent-patterns 4개 페이지 보강. SDD 메소드론 + Codex Skills 모드(agent-skills 표준 첫 외부 채택) + 메타-하네스 사례(autoresearch 최소 하네스의 반대 극단) -->
+<!-- 수집일 2026-04-27 (8회차): pandas-dev/pandas 수집 — 소스 1 + 엔티티 2 (pandas, pandas-dev) 추가, data-pipeline-bigquery/ml-ai/microsoft-data-science-for-beginners 3개 페이지 보강. BDFL+Core Team+NumFOCUS 3축 거버넌스 + PDEP 시스템(11개) + 101개 공개 API + scale.rst 메모리 폭발 결정 트리 + bigframes/Pandera/Modin BI 직결 라이브러리. 거버넌스 모델이 spec-kit Constitution(GitHub 단독)과 anthropics-skills(Anthropic 단독 큐레이션)와 본질적으로 다른 4번째 거버넌스 축 -->
 
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
@@ -22,9 +23,9 @@ updated: 2026-04-27 (7회차)
 
 ## 통계
 
-- 총 페이지 수: 65
-- 소스 요약: 26
-- 엔티티: 20
+- 총 페이지 수: 68
+- 소스 요약: 27
+- 엔티티: 22
 - 개념: 15
 - 종합 분석: 3
 
@@ -60,6 +61,7 @@ updated: 2026-04-27 (7회차)
 | [[microsoft-data-science-for-beginners]] | microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문 | article | Microsoft Cloud Advocates | 2026-04-27 | data-science, microsoft, pandas, sql, matplotlib, data-lifecycle, azure-ml, BI |
 | [[anthropics-claude-cookbooks]] | anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음 | article | Anthropic | 2026-04-27 | claude-cookbooks, anthropic, claude-agent-sdk, managed-agents, agent-patterns, prompt-caching, memory, tool-use, rag, multimodal |
 | [[github-spec-kit]] | github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합) | article | GitHub | 2026-04-27 | spec-kit, github, spec-driven-development, sdd, specify-cli, slash-command, agent-skills, claude-code, copilot, gemini, codex, harness, agent-patterns |
+| [[pandas-dev-pandas]] | pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BDFL+NumFOCUS+PDEP 3축 거버넌스) | article | The pandas development team (BDFL: Wes McKinney) | 2026-04-27 | pandas, python, dataframe, data-analysis, time-series, bigquery, BI, numfocus, bdfl, pdep, pyarrow, copy-on-write, ecosystem, scikit-learn, modin, dask, bigframes, pandera |
 
 ## 개념 (Concepts)
 
@@ -76,10 +78,10 @@ updated: 2026-04-27 (7회차)
 | [[spec-driven-development]] | Spec-Driven Development (SDD) | spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology | 1 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot | 5 | 2026-04-24 |
 | [[frontend-react]] | 프론트엔드 (React + TS + Vite + TanStack) | frontend, react, typescript, vite, tanstack, ag-grid | 4 | 2026-04-24 |
-| [[data-pipeline-bigquery]] | 데이터 파이프라인 (BigQuery 중심 BI) | data-pipeline, bigquery, mysql, BI, mmp | 4 | 2026-04-24 |
+| [[data-pipeline-bigquery]] | 데이터 파이프라인 (BigQuery 중심 BI) | data-pipeline, bigquery, mysql, BI, mmp, pandas, pandas-gbq, bigframes, pyarrow | 5 | 2026-04-27 |
 | [[devops-cicd]] | DevOps & CI/CD (Docker · Jenkins · Loki) | devops, cicd, docker, jenkins, loki, grafana | 3 | 2026-04-24 |
 | [[blockchain-xpla]] | 블록체인 (XPLA · Rust · NFT) | blockchain, xpla, nft, smart-contract, rust, gas-fee | 3 | 2026-04-24 |
-| [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops | 3 | 2026-04-24 |
+| [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops, pandas, scikit-learn, dataframe | 4 | 2026-04-27 |
 
 ## 엔티티 (Entities)
 
@@ -105,6 +107,8 @@ updated: 2026-04-27 (7회차)
 | [[microsoft-for-beginners]] | microsoft-for-beginners (시리즈) | project | microsoft-for-beginners, microsoft, curriculum, 무료교육, project-based-learning, co-op-translator | 5 | 2026-04-27 |
 | [[github]] | GitHub | organization | github, microsoft, copilot, spec-kit, marketplace, codespaces, octoverse, devops | 1 | 2026-04-27 |
 | [[spec-kit]] | Spec Kit (Specify CLI) | tool | spec-kit, specify-cli, github, spec-driven-development, sdd, slash-command, agent-skills, claude-code, copilot, gemini, codex, multi-agent | 1 | 2026-04-27 |
+| [[pandas]] | pandas (데이터 분석 라이브러리) | tool | pandas, python, dataframe, data-analysis, time-series, BI, scikit-learn, numpy, pyarrow, bigquery, copy-on-write | 1 | 2026-04-27 |
+| [[pandas-dev]] | pandas-dev (GitHub 조직) | organization | pandas-dev, github-org, numfocus, bdfl, pdep, governance, oss-governance, wes-mckinney | 1 | 2026-04-27 |
 
 ## 종합 분석 (Syntheses)
 

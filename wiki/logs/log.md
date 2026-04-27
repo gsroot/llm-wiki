@@ -10,6 +10,30 @@ type: log
 
 ---
 
+## [2026-04-27] ingest | pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (8회차)
+
+- **소스**: `raw/articles/pandas-dev-pandas/` (24개 파일 / 1,700줄 보관)
+  - 루트 정체성 4종: `README.md`, `AGENTS.md` (★ AI 코딩 에이전트 가이드 발견 — pandas도 AGENTS.md 표준 채택), `AUTHORS.md` (Copyright 모델: 2008-2011 AQR / 2011-2012 Lambda Foundry / 2011- PyData), `CITATION.cff` (DOI 10.5281/zenodo.3509134, McKinney 2010 SciPy)
+  - 거버넌스 7종: `governance.md` (★ BDFL+Core Team+NumFOCUS Subcommittee 3축, 산업 표준 거버넌스), `about-index.md` (Mission/Vision/Values + 타임라인 2008→2009→2012→2015→2018), `roadmap.md` (PDEP 시스템), `team.md` (활성 메인테이너 15명 + pandas-stubs 3명 + 비활성 20명 + 4 워크그룹), `sponsors.md` (Tier 1/2 Institutional Partners), `coc.md`, `citing.md` (브랜드/로고/색상)
+  - 커뮤니티 2종: `ecosystem.md` (★ 28k → BI 직결 라이브러리 50개 — pandas-gbq, bigframes, Modin, Dask, Bodo, Pandera, Hugging Face `hf://`, marimo, skrub), `benchmarks.md`
+  - 사용자 가이드 5종: `overview.rst`, `install.rst` (전체 의존성 매트릭스), `10min.rst`, `scale.rst` (★ 4단계 메모리 폭발 결정 트리: load less → efficient dtypes → chunking → other libraries), `pyarrow.rst`
+  - 거버넌스 본체: `pdep-0001-purpose-and-guidelines.md` (★ Quorum=lower(11, 50%), Majority=70% non-abstaining, 60+15일 워크플로우)
+  - 메타 3종: `versions.json` (3.0 stable), `config-web.yml` (메인테이너/스폰서/워크그룹 단일 진실 공급원), `pandas-init-public-api.py` (★ pandas/__init__.py의 __all__ 101개 공개 API 카테고리화 — IO read 20개 vs write 3개로 pandas의 본질 = "데이터 게이트웨이" 시사)
+  - **제외**: pandas/core 본체 코드, doc/source/whatsnew (CHANGELOG 50+개 리비전), asv_bench, ci, scripts (메소드론은 위 24개에 다 있음)
+- **작업**: pandas-dev/pandas GitHub + pandas.pydata.org 공식 사이트 통합 수집. 2008 AQR Capital Management 사내 시작 → 2009 오픈소스 → 2015 NumFOCUS sponsored project → 2026-04-27 v3.0 stable. BSD-3, ★91k+, 2,000+ 컨트리뷰터. raw 경로 결정: 기존 컨벤션 `<org>-<repo>` 형식 따라 `raw/articles/pandas-dev-pandas/` 채택 ([[anthropics-claude-cookbooks]], [[github-spec-kit]], [[microsoft-data-science-for-beginners]] 등과 일관)
+- **생성된 파일**:
+  - `wiki/sources/pandas-dev-pandas.md` (193줄) — 소스 요약 (한줄 요약 / 메타 / 4축 정체성 / 거버넌스 3축 / PDEP 11개 표 / 에코시스템 BI 매핑 / 핵심 시사점 5개 / AI 에이전트 통합 / 인용할 만한 구절 4개 / 후속 탐구 4건)
+  - `wiki/entities/pandas.md` — tool 페이지 (Mission/Vision, Series/DataFrame, 101 공개 API 카테고리화, 시계열 BI 핵심, 4축 정체성 비교, 학술 인용)
+  - `wiki/entities/pandas-dev.md` — organization 페이지 (산하 11 저장소, 거버넌스 3축, 4 워크그룹, Institutional Partners Tier 1/2, PDEP 워크플로우, PyData shared copyright)
+- **업데이트된 파일**:
+  - `wiki/concepts/data-pipeline-bigquery.md` — source_count 4→5, tags 확장(+pandas, pandas-gbq, bigframes, modin, dask, pyarrow), related +[[pandas]], [[pandas-dev]]. **새 섹션 "pandas 통합 — 도구 레이어 표준"** (BigQuery 진입 포인트 표 / scale.rst 4단계 결정 트리 / PyArrow 통합 PDEP-10 / Pandera 검증 코드 예시). 출처 +[[pandas-dev-pandas]]. 열린 질문 +2건
+  - `wiki/concepts/ml-ai.md` — source_count 3→4, tags +pandas/scikit-learn/dataframe, related +[[pandas]]. "데이터 분석 도구" 단락 확장 (DataFrame이 scikit-learn first-class citizen). 출처 +[[pandas-dev-pandas]]
+  - `wiki/sources/microsoft-data-science-for-beginners.md` — related +[[pandas]], [[pandas-dev-pandas]]
+  - `wiki/index.md` — 8회차 표기, 통계 65→68 / 26→27 소스 / 20→22 엔티티, 신규 3페이지 등록 + 갱신 2개 페이지 source_count·tags·updated 동기화
+- **메모**: pandas의 거버넌스(BDFL+Core Team+NumFOCUS Subcommittee)는 [[github-spec-kit]] Constitution(GitHub 단독)과 [[anthropics-skills]](Anthropic 단독 큐레이션)와 본질적으로 다른 4번째 거버넌스 축 — 향후 [[agent-stack-evolution]]에 4축 거버넌스 비교축 추가 가치 있음. PDEP-1의 "메트릭 게이밍 명시적 거부"("100 commits"같은 자의적 임계치 거부)는 [[autonomous-research-loop]]의 메트릭 잠금과 정반대 — 인간 거버넌스 vs 메트릭 거버넌스 대비. scale.rst의 "Load less data → efficient dtypes → chunking → other libraries" 4단계는 BI 데이터 처리의 메모리 폭발 대응 표준. 후속 탐구 후보 4건: (a) `synthesis/data-analysis-essentials.md` 신설(Microsoft 라이프사이클 + pandas 도구 레이어 + BigQuery 운영 종합), (b) PDEP-7 Copy-on-Write 단독 raw 보관 (27kB), (c) pandas-stubs 별도 entity, (d) [[agent-stack-evolution]]에 4축 거버넌스 비교축 추가.
+
+---
+
 ## [2026-04-27] ingest | github/spec-kit — Spec-Driven Development 툴킷 (7회차)
 
 - **소스**: `raw/articles/github-spec-kit/` (32개 파일 보관)

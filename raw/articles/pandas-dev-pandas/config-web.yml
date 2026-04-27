@@ -1,0 +1,68 @@
+# 발췌: web/pandas/config.yml (2026-04-27)
+# 원본 SHA: 76e44948501829f8b34c5c6b8054940aaecd05f1 (size 6,269 bytes)
+# 핵심: 사이트 네비게이션 + 메인테이너 레지스트리 + 워크그룹 + 스폰서 단일 진실 공급원
+
+main:
+  github_repo_url: pandas-dev/pandas
+  production_url: "https://pandas.pydata.org/"
+  context_preprocessors:
+    - pandas_web.Preprocessors.current_year
+    - pandas_web.Preprocessors.navbar_add_info
+    - pandas_web.Preprocessors.blog_add_posts
+    - pandas_web.Preprocessors.maintainers_add_info
+    - pandas_web.Preprocessors.home_add_releases
+    - pandas_web.Preprocessors.roadmap_pdeps   # 로드맵 = pdeps 디렉터리 자동 인덱싱
+
+navbar:
+  - About us: about/, about/roadmap.html, about/governance.html, about/team.html, about/sponsors.html, about/citing.html
+  - Getting started: getting_started.html
+  - Documentation: docs/
+  - Community: community/blog/, StackOverflow, community/coc.html, community/ecosystem.html, community/benchmarks.html
+  - Contribute: contribute.html
+
+blog:
+  num_posts: 50
+  feed:
+    - https://wesmckinney.com/feeds/pandas.atom.xml
+    - https://tomaugspurger.github.io/feed
+    - https://jorisvandenbossche.github.io/feeds/pandas.atom.xml
+    - https://datapythonista.me/blog/feeds/pandas.atom.xml
+    - https://numfocus.org/tag/pandas/feed/
+    - https://phofl.github.io/feeds/pandas.atom.xml
+
+maintainers:
+  active: [jorisvandenbossche, TomAugspurger, jreback, WillAyd, mroeschke, jbrockmendel, datapythonista, simonjayhawkins, topper-123, alimcmaster1, Dr-Irv, rhshadrach, phofl, attack68, fangchenli]
+  inactive: [lodagro, jseabold, jtratner, shoyer, chris-b1, sinhrks, cpcloud, toobaz, jschendel, charlesdong1991, dsaxton, wesm, gfyoung, mzeitlin11, twoertwein, MarcoGorelli, bashtage, noatamir, lithomas1, lukemanley]
+  pandasstubs: [Dr-Irv, loicdiridollou, cmp0xff]
+
+workgroups:
+  coc:
+    contact: coc@pandas.pydata.org
+    members: [Tom Augspurger, Bijay Regmi, Wuraola Oyewusi, Мария Чакчурина]
+  finance:
+    contact: finance@pandas.pydata.org
+    members: [Matthew Roeschke, Jeff Reback, Joris Van den Bossche, Patrick Hoefler]
+  infrastructure:
+    contact: infrastructure@pandas.pydata.org
+    members: [William Ayd, Thomas Li]
+  communications:
+    contact: communications@pandas.pydata.org
+    members: [datapythonista]
+
+sponsors:
+  active:
+    - {name: NumFOCUS, kind: numfocus}
+    - {name: Nvidia, kind: partner, description: "Matthew Roeschke 풀타임 고용"}
+    - {name: Tidelift, kind: regular}
+    - {name: Bodo, kind: regular, description: "Bodo의 병렬 컴퓨팅 플랫폼은 pandas API를 사용하며 pandas 개발에 재정 지원"}
+  inkind:
+    - {name: OVH, description: "Website and documentation hosting"}
+    - {name: Indeed, description: "pandas logo design"}
+  past:
+    partners: [Paris-Saclay Center for Data Science, Anaconda, RStudio, Ursa Labs, Gousto, d-fine GmbH, Two Sigma, Voltron Data, Intel, Coiled]
+    regular: [Chan Zuckerberg Initiative]
+
+roadmap:
+  pdeps_path: pdeps   # 로드맵 = web/pandas/pdeps/ 디렉터리의 모든 마크다운 파일
+
+# 수집일: 2026-04-27
