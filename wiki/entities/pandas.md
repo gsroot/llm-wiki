@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 ## 개요
 
-**pandas**는 Python의 사실상 표준 데이터 분석 라이브러리다. 2008년 Wes McKinney가 AQR Capital Management(헤지펀드)에서 사내 도구로 개발 시작, 2009년 오픈소스, 2015년 [[numfocus]] 후원 프로젝트, 2026-04-27 v3.0 stable.
+**pandas**는 Python의 사실상 표준 데이터 분석 라이브러리다. 2008년 Wes McKinney가 AQR Capital Management(헤지펀드)에서 사내 도구로 개발 시작, 2009년 오픈소스, 2015년 NumFOCUS 후원 프로젝트, 2026-04-27 v3.0 stable.
 
 **Mission**: "the fundamental high-level building block for doing practical, real world data analysis in Python"
 
@@ -87,9 +87,9 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 
 - [[data-pipeline-bigquery]]: pandas-gbq, bigframes 액세서로 BigQuery ↔ DataFrame 양방향
 - [[ml-ai]]: scikit-learn의 first-class citizen (입력/출력 모두 DataFrame), skrub이 다리
-- (예정) [[pdep]]: pandas의 거버넌스 산출물 시스템
-- (예정) [[copy-on-write]]: PDEP-7 메모리 모델 변혁
-- (예정) [[dataframe]]: 데이터 분석의 보편적 추상
+- PDEP (Pandas Enhancement Proposal): pandas의 거버넌스 산출물 시스템 (1~14번 채택, BDFL 단계 → PDEP 단계로 거버넌스 진화)
+- [[copy-on-write]]: PDEP-7 메모리 모델 변혁
+- [[dataframe]]: 데이터 분석의 보편적 추상
 
 ## 출처
 

@@ -54,6 +54,10 @@ updated: 2026-04-24
 - [[xpla-platform]] — 블록체인 통합 플랫폼 (NFT 마켓에서 XPLA로 이어짐)
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]] — 주요 기술 영역
 
+## 종합 분석
+
+- [[career-timeline-seokgeun]] — 2016-2026 커리어 타임라인 (역할 진화 분석)
+
 ## 출처
 
 - [[portfolio-seed]] — 시드 포트폴리오 (커리어 전체 압축본)

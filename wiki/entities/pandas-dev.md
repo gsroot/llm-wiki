@@ -3,7 +3,7 @@ title: "pandas-dev (GitHub 조직)"
 type: entity
 entity_type: organization
 tags: [pandas-dev, github-org, numfocus, bdfl, pdep, governance, oss-governance, wes-mckinney]
-related: [[pandas]], [[numfocus]], [[karpathy]], [[anthropic]], [[microsoft]], [[github]]
+related: [[pandas]], [[karpathy]], [[anthropic]], [[microsoft]], [[github]]
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27
@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 ## 개요
 
-**pandas-dev**는 [[pandas]] 라이브러리와 그 부속 저장소들을 운영하는 GitHub 조직이다. 2015년 [[numfocus]] sponsored project로 공식화. 11개 저장소 운영, 활성 메인테이너 15명 + pandas-stubs 메인테이너 3명 + 비활성 메인테이너 20명, 2,000+ 컨트리뷰터.
+**pandas-dev**는 [[pandas]] 라이브러리와 그 부속 저장소들을 운영하는 GitHub 조직이다. 2015년 NumFOCUS(501(c)(3) 비영리, NumPy/Jupyter/scikit-learn 등을 후원하는 PyData 모회사) sponsored project로 공식화. 11개 저장소 운영, 활성 메인테이너 15명 + pandas-stubs 메인테이너 3명 + 비활성 메인테이너 20명, 2,000+ 컨트리뷰터.
 
 URL: https://github.com/pandas-dev
 
@@ -115,9 +115,9 @@ PyData shared copyright:
 ## 관련 개념
 
 - [[pandas]]: 운영하는 라이브러리
-- [[numfocus]] (예정): 501(c)(3) 모회사
-- (예정) [[pdep]]: 거버넌스 산출물 시스템
-- (예정) [[bdfl]]: 오픈소스 거버넌스 패턴
+- NumFOCUS: 501(c)(3) 모회사 (PyData 생태계 비영리 후원)
+- PDEP (Pandas Enhancement Proposal): 거버넌스 산출물 시스템 (PEP의 pandas판)
+- BDFL (Benevolent Dictator For Life): 오픈소스 거버넌스 패턴 — pandas는 BDFL 단계에서 코어 팀 + PDEP 단계로 진화한 사례
 - [[github]]: 인프라 호스트
 - [[anthropic]] / [[microsoft]] / [[karpathy]]와의 비교: 거버넌스 모델이 본질적으로 다름
 

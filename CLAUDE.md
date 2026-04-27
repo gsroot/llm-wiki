@@ -52,8 +52,13 @@ llm-wiki/
 
 ### 프론트매터 규칙
 - 모든 위키 페이지는 YAML 프론트매터 필수
-- 필수 필드: `title`, `type`, `tags`, `created`, `updated`
-- 타입별 추가 필드는 각 템플릿 참조
+- **공통 필수 필드**: `title`, `type`, `tags`
+- **타입별 필수 필드**:
+  - `entity`: `entity_type`, `related`, `source_count`, `created`, `updated`
+  - `concept`: `category`, `related`, `source_count`, `created`, `updated`
+  - `source`: `source_type`, `source_url`, `author`, `date_published`, `date_ingested`, `related`, `confidence` (※ source는 `date_ingested`로 시간 추적, `created`/`updated` 사용 안 함)
+  - `synthesis`: `category`, `sources`, `created`, `updated`
+- 자세한 형식은 `templates/{entity,concept,source,synthesis}.md` 참조
 
 ## 워크플로우
 

@@ -10,6 +10,39 @@ type: log
 
 ---
 
+## [2026-04-27] lint | 위키 전체 점검 — 깨진 링크 해소 + 스키마 명확화 + 신규 개념 3종
+
+- **트리거**: 소유자 요청 — "llm-wiki 가 전체적으로 깨지거나 이상이 있는 부분이 혹시 있는지 확인해주고, obsidian에서 잘 활용될 수 있는 상태인지, 혹시 필요한 작업이 있을지 검토해줘."
+- **점검 결과 (자동 분석)**:
+  - 위키링크 무결성: 깨진 링크 16건 → 실질 누락 7건 + 코드 예시 9건(코드블록 안전)
+  - 인덱스 ↔ 파일 동기화: 누락/미등록 0건 ✓
+  - 프론트매터 type 일관성: entity/concept/source/synthesis 분류 정확 ✓
+  - 고아 페이지: 1건 (career-timeline-seokgeun)
+  - 스키마 드리프트: CLAUDE.md "필수 필드: created/updated"가 source 31개 실제 사용 패턴(`date_ingested`)과 불일치
+- **P0 즉시 수정**:
+  - `wiki/sources/obsidian-guide.md:86` — 표 안 예시 위키링크에 백틱 추가 (`` `[[프로젝트 - 결제 개선]]` ``)
+  - `wiki/entities/seokgeun-kim.md` — "종합 분석" 섹션 신설 + `[[career-timeline-seokgeun]]` 백링크 (고아 페이지 해소)
+- **P1 스키마 명확화**:
+  - `CLAUDE.md` 프론트매터 규칙 갱신 — 공통 필수(`title`/`type`/`tags`) + 타입별 필수 필드 명세 (entity/concept = `created`+`updated`, source = `date_ingested`, synthesis = `created`+`updated`). source가 `date_ingested`로 시간 추적함을 명시.
+- **P2 옵션 B (선택적 페이지화)**:
+  - **신규 페이지 3건 (개념적 깊이 있는 보편 추상)**:
+    - `wiki/concepts/copy-on-write.md` — pandas 2.0 PDEP-7 메모리 모델, OS/FS/VCS 등 보편 적용
+    - `wiki/concepts/dataframe.md` — pandas/Polars/Dask/Ibis 공통 추상, R `data.frame`에서 시작된 계보
+    - `wiki/concepts/prompt-cache.md` — Anthropic 5분 TTL · prefix-based · 90% 비용 절감, 에이전트 경제성 핵심
+  - **약어 4종 일반 텍스트화 (단일 컨텍스트, ROI 낮음)**:
+    - `BDFL` (Benevolent Dictator For Life) — `pandas-dev.md`
+    - `NumFOCUS` — `pandas.md`, `pandas-dev.md` (frontmatter related + 본문 + 관련 개념)
+    - `PDEP` (Pandas Enhancement Proposal) — `pandas.md`, `pandas-dev.md`
+    - `Claude Managed Agents` — `claude-agent-sdk.md`
+- **검증**: 깨진 링크 16 → 9 (남은 9건 모두 코드블록 안 의도된 예시), 페이지 81 → 84
+- **인덱스/통계 갱신**: `wiki/index.md` — frontmatter `(12회차 + 점검)`, 통계 84/31/30/19/3, 개념 표에 copy-on-write/dataframe/prompt-cache 3행 추가, 점검 코멘트 헤더 추가
+- **다음 점검 후보**:
+  - `career-timeline-seokgeun`을 `c2spf-analytics`/`com2us-platform` 등 업무 엔티티에서도 백링크 (현재 `seokgeun-kim`만 연결)
+  - source 31개의 `date_ingested` 형식 일관성 (날짜만? 회차 표기?) 정형화
+  - `templates/lesson.md` 등록 후 사용 사례 추적
+
+---
+
 ## [2026-04-27] ingest | flutter/flutter — Google 멀티플랫폼 UI SDK + vendor-neutral .agents/ 표준 (12회차)
 
 - **소스**: `raw/articles/flutter-flutter/` (28개 파일 보관)

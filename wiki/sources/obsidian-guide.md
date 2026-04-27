@@ -83,7 +83,7 @@ confidence: high
 |------|------|---|
 | **Properties** | 고정된 필드 (정렬·필터·Bases용) | `type`, `status`, `date`, `owner`, `tags` |
 | **Tags** | 반복 분류 (짧고 자주) | `#meeting`, `#billing`, `#inbox/to-read` |
-| **Links** | 문맥 연결 | `[[프로젝트 - 결제 개선]]` |
+| **Links** | 문맥 연결 | `` `[[프로젝트 - 결제 개선]]` `` |
 
 핵심 기준: **반복 분류는 태그, 고정 필드는 속성, 문맥 연결은 링크**.
 

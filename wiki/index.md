@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-27 (12회차)
+updated: 2026-04-27 (12회차 + 점검)
 ---
 
 # 위키 인덱스
@@ -23,16 +23,18 @@ updated: 2026-04-27 (12회차)
 
 <!-- 수집일 2026-04-27 (12회차): flutter/flutter 수집 — 소스 1 + 엔티티 3 (flutter, dart, google) 추가, agent-skills/harness 2개 개념 + agent-stack-evolution 종합 분석 보강. Google 멀티플랫폼 UI SDK (★176K 11년차). 결정적 발견 2가지: (1) **agent-skills 표준의 vendor-neutral 채택** — `.agents/skills/` 3 SKILL.md (find-release/rebuilding-flutter-tool/upgrade-browser) + `.claude/skills` → `../.agents/skills` 심볼릭 링크 + agentskills.io 표준 명시 인용 + `dart_skills_lint` 자체 검증 도구. **표준 채택자가 정의자의 위치 컨벤션을 누른 첫 사례**. agent-skills 외부 채택 4단계 진화 완성: anthropics/skills(표준 정의) → spec-kit(메소드론 어댑터) → fastapi(라이브러리 self-hosted) → flutter(vendor-neutral asset). (2) **`docs/rules/` 4계층 토큰 예산 룰** — rules.md(30K) → 10k → 4k → 1k 동일 룰을 도구별 한계(Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K) 매트릭스에 자동 매칭 — progressive disclosure를 토큰 단위로 더 세분화. agent-stack-evolution 3축 → 5축 확장 (Microsoft·Anthropic·Karpathy + GitHub spec-kit + Google flutter). Flutter Values 5개 + 차등 지원 4단계 모델 + agent-artifacts/ 격리 패턴은 위키 운영 차용 후보 -->
 
+<!-- 점검 2026-04-27: lint 결과 후속 조치 — (1) 깨진 위키링크 7개 해소: 핵심 3개(copy-on-write/dataframe/prompt-cache) 페이지 신설 + 약어 4개(BDFL/NumFOCUS/PDEP/CMA) 일반 텍스트화. (2) 고아 페이지 career-timeline-seokgeun에 entities/seokgeun-kim.md 백링크 추가. (3) CLAUDE.md frontmatter 규칙을 타입별로 명확화 (source는 date_ingested 사용 명시). (4) obsidian-guide.md 표 안 예시 위키링크 백틱 처리. 위키 페이지 81 → 84개 -->
+
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
 > LLM은 질의 시 이 파일을 먼저 읽어서 관련 페이지를 찾습니다.
 
 ## 통계
 
-- 총 페이지 수: 81
+- 총 페이지 수: 84
 - 소스 요약: 31
 - 엔티티: 30
-- 개념: 16
+- 개념: 19
 - 종합 분석: 3
 
 ---
@@ -93,6 +95,9 @@ updated: 2026-04-27 (12회차)
 | [[blockchain-xpla]] | 블록체인 (XPLA · Rust · NFT) | blockchain, xpla, nft, smart-contract, rust, gas-fee | 3 | 2026-04-24 |
 | [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict | 5 | 2026-04-27 |
 | [[python-packaging]] | Python 패키징 (Python Packaging) | python-packaging, pip, poetry, uv, pyproject-toml, lockfile, pep-517, pep-518, pep-621, pep-723, pep-735, virtualenv, pyenv, pipx, dependency-resolution, supply-chain | 1 | 2026-04-27 |
+| [[copy-on-write]] | Copy-on-Write (CoW) | copy-on-write, cow, pandas, 메모리관리, 성능, optimization | 1 | 2026-04-27 |
+| [[dataframe]] | DataFrame | dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data | 1 | 2026-04-27 |
+| [[prompt-cache]] | Prompt Caching | prompt-cache, claude, anthropic, llm-api, 토큰경제, latency, optimization | 1 | 2026-04-27 |
 
 ## 엔티티 (Entities)
 
