@@ -2,9 +2,9 @@
 title: "Claude Code"
 type: entity
 entity_type: tool
-tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness]
-related: [[anthropic]], [[claude-agent-sdk]], [[mcp]], [[agent-skills]], [[agent-patterns]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]]
-source_count: 7
+tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness, spec-kit]
+related: [[anthropic]], [[claude-agent-sdk]], [[mcp]], [[agent-skills]], [[agent-patterns]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]], [[spec-kit]], [[spec-driven-development]]
+source_count: 8
 created: 2026-04-09
 updated: 2026-04-27
 ---
@@ -93,6 +93,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[mcp]]: Claude Code의 외부 도구 통합 프로토콜
 - [[obsidian-web-clipper]]: 소스 수집 후 Claude Code가 위키에 통합하는 워크플로우
 - [[agent-skills]]: SKILL.md 기반 작업 패키지의 표준·구조·운영 원칙. Claude Code의 Skills 기능이 구현하는 개념
+- [[spec-kit]] / [[spec-driven-development]]: GitHub의 SDD 메소드론 도구. `specify init . --integration claude --here` 한 줄로 9개 슬래시 명령(`/speckit.constitution` 외 8종)을 `.claude/commands/`에 자동 설치 — Claude Code가 SDD 4단계 워크플로우(헌법→사양→계획→태스크)를 그대로 수행하는 방식의 표준 설치 채널
 
 ## 운영 관점 보강 (마스터 가이드 기반)
 
@@ -117,6 +118,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[slash-commands-vs-agent-skills]] — Slash Commands와 Agent Skills 통합 경위·비교·판단 (Anthropic 공식 문서 기반)
 - [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스 리포(17개 스킬·3개 플러그인 마켓플레이스·skill-creator)
 - [[anthropics-claude-cookbooks]] — Claude API/SDK 실습 노트북 카탈로그 (~100 노트북, 14 디렉토리). claude_agent_sdk 6단계·managed_agents 8개·patterns/agents 5패턴·skills 3종
+- [[github-spec-kit]] — GitHub의 Spec-Driven Development 툴킷. `--integration claude` 옵션이 Claude Code를 1급 시민으로 지원, `MarkdownIntegration` base class 사례
 
 ## 메모
 

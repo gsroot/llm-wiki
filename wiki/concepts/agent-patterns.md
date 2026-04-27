@@ -2,9 +2,9 @@
 title: "Building Effective Agents — 5 패턴"
 type: concept
 category: ai
-tags: [agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, agent, workflow]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[autonomous-research-loop]], [[harness]], [[anthropics-claude-cookbooks]], [[mcp]]
-source_count: 1
+tags: [agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, agent, workflow, spec-kit, sdd, pre-composed-patterns]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[autonomous-research-loop]], [[harness]], [[anthropics-claude-cookbooks]], [[mcp]], [[spec-kit]], [[spec-driven-development]], [[github]]
+source_count: 2
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -165,6 +165,7 @@ Advanced 2개의 핵심: **런타임에 흐름을 결정한다**. 이게 사람�
 ## 출처
 
 - [[anthropics-claude-cookbooks]] — `patterns/agents/` 3개 노트북 (basic_workflows, evaluator_optimizer, orchestrator_workers) + 원조 블로그 "Building Effective Agents" (Schluntz·Zhang) 링크
+- [[github-spec-kit]] — 5 패턴을 **메소드론으로 사전 합성한 결과물**. `/speckit.constitution → specify → plan → tasks → implement` 정적 5단계 = Prompt Chaining. `/speckit.clarify`/`/speckit.analyze` = Evaluator-Optimizer (사용자/LLM이 evaluator). `tasks.md`의 `[P]` 마커 = Parallelization Sectioning. 커뮤니티 확장 "Agent Assign" = Routing. 복잡 spec의 plan 동적 결정 = Orchestrator-Workers. 사용자가 직접 패턴 선택할 필요 없이 [[spec-driven-development]] 단계만 따라가면 5 패턴이 자동 합성됨
 
 ## 열린 질문
 

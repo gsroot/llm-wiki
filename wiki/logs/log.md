@@ -10,6 +10,33 @@ type: log
 
 ---
 
+## [2026-04-27] ingest | github/spec-kit — Spec-Driven Development 툴킷 (7회차)
+
+- **소스**: `raw/articles/github-spec-kit/` (32개 파일 보관)
+  - 루트 메타 6종: `README.md` (765줄), `spec-driven.md` (412줄, SDD 메소드론 정통 정의), `AGENTS.md` (451줄, 통합 아키텍처), `CHANGELOG.md` (1,368줄), `DEVELOPMENT.md`, `CONTRIBUTING.md`
+  - `docs/` 5종: `index.md`, `quickstart.md`, `installation.md`, `upgrade.md` (462줄), `local-development.md`
+  - `templates/` 5 템플릿: `spec-template.md` (128줄), `plan-template.md` (104줄), `tasks-template.md` (251줄), `constitution-template.md` (50줄), `checklist-template.md` (40줄)
+  - `templates/commands/` 9개 슬래시 명령 정의 마크다운: `analyze.md` (252줄), `checklist.md` (364줄), `clarify.md` (250줄), `constitution.md` (150줄), `implement.md` (201줄), `plan.md` (152줄), `specify.md` (327줄), `tasks.md` (203줄), `taskstoissues.md` (99줄)
+  - `workflows/` 3종: `README.md`, `ARCHITECTURE.md`, `speckit-workflow.yml`
+  - `presets/` 2종: `README.md`, `ARCHITECTURE.md`
+  - `integrations/` 2종: `README.md`, `catalog.json`
+  - **제외**: `src/specify_cli/` Python 소스 (메소드론은 마크다운에 다 있음 — Python은 thin wrapper)
+- **작업**: GitHub 공식 SDD 툴킷 수집. ★91k+ / fork 7.8k (2026-04-27 기준), MIT, 2025-08 시작 / 2026-04-24 v0.8.1. raw 경로 결정: 기존 컨벤션 `<org>-<repo>` 형식 따라 `raw/articles/github-spec-kit/` 채택 ([[anthropics-claude-cookbooks]], [[microsoft-for-beginners]] 시리즈와 동일)
+- **생성된 파일**:
+  - `wiki/sources/github-spec-kit.md` — 소스 요약 (SDD 4 + 5 단계, 7가지 LLM 출력 제약 메커니즘, 9 Articles Constitution, 5가지 Integration Base Class, 4층 Override Stack, Codex Skills 모드 = agent-skills 표준 첫 외부 채택, Microsoft·Anthropic·Karpathy·GitHub 4축 비교)
+  - `wiki/entities/github.md` — GitHub organization 페이지 (인프라 노드 + 조직 노드, spec-kit/Copilot/Marketplace/CLI/Codespaces, Microsoft 모회사와의 전략 추상화 비교)
+  - `wiki/entities/spec-kit.md` — Spec Kit + Specify CLI tool 페이지 (9 슬래시 명령, 5 템플릿, 5 base class, 4층 override, 40+ 커뮤니티 확장)
+  - `wiki/concepts/spec-driven-development.md` — SDD 메소드론 (Power Inversion, 6 Core Principles, 9 Articles, Template-Driven Quality, 5 패턴 사전 합성, 3가지 개발 단계, 6가지 안티패턴, 6가지 열린 질문)
+- **업데이트된 파일**:
+  - `wiki/entities/claude-code.md` — source_count 7→8, spec-kit `--integration claude` 통합 사례 추가, 출처에 `[[github-spec-kit]]` 추가
+  - `wiki/concepts/agent-skills.md` — source_count 3→4, **agent-skills 표준의 첫 외부 채택 사례**(Codex Skills 모드)로 spec-kit 박음, "agent-skills = Anthropic-only" 가설 명확히 깸
+  - `wiki/concepts/harness.md` — source_count 4→5, "**하네스 스펙트럼 — 양극 사례**" 섹션 신설(autoresearch 최소 극단 ↔ spec-kit 표준화 극단 8개 축 비교표), [[spec-driven-development]] 링크
+  - `wiki/concepts/agent-patterns.md` — source_count 1→2, spec-kit가 5 패턴을 "메소드론으로 사전 합성한 결과물"이라는 관점 추가
+  - `wiki/index.md` — 7회차 표기, 통계 65/26/20/15, 신규 4페이지 등록 + 갱신 4페이지 source_count·tags 동기화
+- **메모**: 이 위키 자체에 spec-kit 패턴을 차용할 강한 근거 발견 — `templates/commands/`에 `/wiki-ingest`, `/wiki-lint`, `/wiki-synthesize`, `/wiki-query` 4개 LLM 지침서를 spec-kit `templates/commands/specify.md` 스타일로 작성하면 CLAUDE.md 워크플로우의 코드화. 후속 탐구 후보로 분리. SDD vs vibe coding ROI 경계는 [[spec-driven-development]] 열린 질문에 박음. v0.8.1이 3일 전(2026-04-24) 릴리스 — 활발한 변경 추적 가치.
+
+---
+
 ## [2026-04-27] synthesis | 에이전트 스택의 3축 진화 — Microsoft · Anthropic · Karpathy 비교
 
 직전 5회차 anthropics/claude-cookbooks 수집의 후속 분석. 사용자 의사결정 가치 검토 후 후속 탐구 (b) 진행. (a) `claude-managed-agents` entity는 source_count 1 회피로 보류, (c) `/wiki-lint`는 위키 100 페이지 후로 보류.

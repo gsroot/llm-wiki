@@ -2,9 +2,9 @@
 title: "Agent Skills (SKILL.md 패키지)"
 type: concept
 category: ai
-tags: [agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, skill-creator, harness, 패키지레이어, claude-cookbooks, custom-skills]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[mcp]], [[harness]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]]
-source_count: 3
+tags: [agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, skill-creator, harness, 패키지레이어, claude-cookbooks, custom-skills, spec-kit, codex-skills, multi-agent-adoption]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[mcp]], [[harness]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[spec-kit]], [[spec-driven-development]], [[github]]
+source_count: 4
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -214,6 +214,7 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스 (마켓플레이스, skill-creator, mcp-builder 등 17개 스킬)
 - [[slash-commands-vs-agent-skills]] — Anthropic 공식 문서 기반 Custom Commands 통합 경위·비교 분석
 - [[anthropics-claude-cookbooks]] — `skills/` 디렉토리 3 노트북(introduction → financial → custom development) + `custom_skills/` 사례 3종(analyzing-financial-statements, applying-brand-guidelines, creating-financial-models). progressive disclosure 설명을 BI 도메인 사례로 완성하는 reference
+- [[github-spec-kit]] — **agent-skills 표준의 첫 외부 채택 사례**. [[spec-kit]]의 Codex CLI 통합(`SkillsIntegration` base class)이 `--integration-options="--skills"` 플래그로 9개 슬래시 명령을 `.codex/skills/speckit-*/SKILL.md` 패키지 형태로 배포. SKILL.md frontmatter (`name`, `description`, `when_to_use`, `allowed-tools`)와 progressive disclosure (body + scripts/ + references/) 구조를 그대로 사용 → "agent-skills = Anthropic-only" 가설 명확히 깸. [[github]]가 [[anthropics-skills]] 표준을 GitHub 공식 도구의 통합 형식 중 하나로 채택
 
 ## 열린 질문
 

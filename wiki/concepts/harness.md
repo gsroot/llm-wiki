@@ -2,9 +2,9 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]]
-source_count: 4
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]]
+source_count: 5
 created: 2026-04-15
 updated: 2026-04-27
 ---
@@ -89,7 +89,24 @@ project/
 - 고위험 작업에 approval gate가 앞단에 있는가
 - 세션이 끊겨도 바깥 파일로 상태 복원이 가능한가
 
-## 극한 사례: autoresearch의 초경량 하네스
+## 하네스 스펙트럼 — 양극 사례
+
+[[harness]]는 "최소화 ↔ 완전 표준화"의 스펙트럼 위에 놓인다. 위키에 등록된 두 극단:
+
+| 축 | 최소 극단 | 표준화 극단 |
+|----|---------|------------|
+| **사례** | [[autoresearch]] (Karpathy) | [[spec-kit]] (GitHub) |
+| **지식** | `program.md` 한 장 (~7KB) | `constitution.md` (9 Articles) + `spec.md` + `plan.md` + 5 템플릿 |
+| **도구** | bash, python, git만 | bash, git, GitHub CLI, MCP, 30+ 에이전트 통합 |
+| **패키지** | 없음 | 9 슬래시 명령 (또는 Codex SKILL.md 9 패키지) |
+| **통제** | "5분 시간 예산 + `val_bpb` 단일 메트릭 + Simplicity" 세 줄 | Phase -1 Gates, `[NEEDS CLARIFICATION]` 마커, Constitutional Compliance, TDD Red 단계 강제 |
+| **세계관** | **메트릭 객관성**이 자유도를 견딘다 | **메소드론 강제**가 산출물 품질을 보장한다 |
+| **장점** | 빠른 0→1, 창의적 탐색, 적은 오버헤드 | 일관성, 추적성, 다중 spec 누적 가능 |
+| **단점** | 도메인 외에서 재현 어려움, 메트릭 의존 | 5분 prototype에는 과잉, 학습 곡선 |
+
+[[spec-driven-development]]는 spec-kit가 강제하는 메소드론 자체의 페이지. 양극 사이의 "어떤 작업에 어느 쪽이 ROI인가"는 [[spec-driven-development]]의 열린 질문.
+
+## 극한 사례 1: autoresearch의 초경량 하네스
 
 [[autoresearch]] (Karpathy, 2026-03)는 **하네스를 어디까지 줄일 수 있는가**의 한 답변이다. 4층 레이어가 모두 최소화돼 있다:
 
@@ -127,6 +144,7 @@ project/
 - [[karpathy-autoresearch]] — 하네스 최소화의 극단 사례. `program.md` 한 장으로 LLM 학습 자율 실험 운영
 - [[anthropics-skills]] — 패키지 레이어의 표준 구현 (SKILL.md + scripts·references·assets, 3-Level Progressive Disclosure)
 - [[anthropics-claude-cookbooks]] — Anthropic 자기 정의 "bare-metal harness" 문장 출처 + claude_agent_sdk 6단계 튜토리얼이 하네스를 SW 외 도메인으로 푸는 reference
+- [[github-spec-kit]] — 하네스 스펙트럼의 **표준화 극단**. SDD 메소드론을 9개 슬래시 명령 + 5 템플릿 + 9 Articles 헌법으로 코드화. autoresearch의 최소 하네스와 정확히 반대 극단을 박음 → harness 개념의 양극 완성
 
 ## 열린 질문
 
