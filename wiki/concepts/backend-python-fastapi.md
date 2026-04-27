@@ -2,15 +2,17 @@
 title: "Python 백엔드 (FastAPI · Spring Boot 비교 맥락)"
 type: concept
 category: web-dev
-tags: [backend, python, fastapi, flask, django, spring-boot, sqlalchemy, pytest, api]
+tags: [backend, python, fastapi, flask, django, spring-boot, sqlalchemy, pytest, api, tiangolo, agent-skills, annotated, pydantic2]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
   - "[[devops-cicd]]"
   - "[[data-pipeline-bigquery]]"
-source_count: 5
+  - "[[fastapi]]"
+  - "[[tiangolo]]"
+source_count: 6
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 # Python 백엔드 (FastAPI · Spring Boot 비교 맥락)
@@ -61,8 +63,25 @@ updated: 2026-04-24
 - [[portfolio-ko]] — Selected Work 5선
 - [[c2spf-analytics-common]] — FastAPI 공통 API 표준화
 - [[c2spf-analytics-renewal]] — Spring Boot + FastAPI 하이브리드 파이프라인
+- [[fastapi-fastapi]] — fastapi/fastapi v0.136.1 공식 저장소 (README · docs · pyproject.toml · `.agents/skills/fastapi/SKILL.md`). 라이브러리가 직접 출하하는 코딩 컨벤션 — `Annotated` 강제, `def` 디폴트, `ORJSONResponse` deprecation, Asyncer/SQLModel/HTTPX 권장, 라우터 레벨 prefix/tags. c2spf `analytics-common-api` 점검 기준점.
+
+## 공식 SKILL.md가 제시하는 코딩 컨벤션 (2026-04 갱신)
+
+[[fastapi]] v0.136.1부터 `fastapi/.agents/skills/fastapi/SKILL.md`가 라이브러리 자체에 번들링되어 LLM 에이전트가 자동으로 따라야 할 권장사항이 명문화됐다:
+
+- **`Annotated[T, Path/Query/Depends(...)]` 강제**: 디폴트 인자(`q: str = Query(...)`) 패턴 금지. 시그니처가 다른 컨텍스트(테스트, 문서)에서도 의미 보존 + 재사용성.
+- **return type annotation 우선**: `response_model=`보다 함수 반환 타입을 권장. Pydantic 2 Rust 직렬화로 처리되므로 `ORJSONResponse`/`UJSONResponse`는 deprecated.
+- **`def` 디폴트, async는 확실할 때만**: blocking I/O는 `def`(자동 threadpool)에서 안전. async 안에 blocking이 가장 큰 성능 함정.
+- **라우터 레벨 prefix/tags/dependencies**: `include_router()`에 인자 전달하지 말고 `APIRouter(prefix=..., tags=...)`에 둔다.
+- **함수 1개 = HTTP operation 1개**: `@app.api_route(methods=[...])` 다중 메서드 회피.
+- **Pydantic `RootModel` 회피**: 대신 `Annotated[list[int], Field(min_length=1), Body()]`.
+- **Tiangolo 추천 보조 스택**: Asyncer(>AnyIO/asyncio), SQLModel(>SQLAlchemy), HTTPX(>Requests), uv·Ruff·ty.
+
+c2spf `analytics-common-api`가 이 권장과 어디서 일치/충돌하는지 점검하는 게 단기 후속 작업.
 
 ## 열린 질문
 
 - Pydantic v2 마이그레이션 후 성능 변화는 측정되었는가?
 - Spring Boot 부분을 FastAPI로 통합 일원화하는 시나리오의 비용/이득은?
+- 기존 `result_code/message/data` envelope을 `Annotated` + 제네릭 응답 모델로 표현하면 자동 OpenAPI 스키마와 잘 맞는가?
+- SQLAlchemy 자산을 SQLModel로 점진 마이그레이션하는 비용은? (Pydantic 모델과 통합되는 이득 vs 마이그레이션 부담)

@@ -10,6 +10,65 @@ type: log
 
 ---
 
+## [2026-04-27] ingest | astral-sh/uv — Rust 단일 바이너리 Python 도구체인 통합 (10회차)
+
+- **소스**: `raw/articles/astral-sh-uv/` (37개 파일, 416KB 보관)
+  - 루트 메타 9종: `README.md` (329줄), `AGENTS.md` (20줄, single source of truth), `CLAUDE.md` (1줄, `@AGENTS.md` import만), `CHANGELOG.md` (742줄, v0.5.0~v0.11.8), `CONTRIBUTING.md` (356줄), `BENCHMARKS.md` (117줄), `STYLE.md` (134줄), `SECURITY.md` (15줄), `pyproject.toml` (115줄), `mkdocs.yml` (278줄)
+  - `docs/index.md` + `docs/getting-started/` 3종 (`installation.md`, `features.md`, `help.md`)
+  - `docs/concepts/` 8종 (`build-backend`, `cache`, `configuration-files`, `indexes`, `preview`, `python-versions` 498줄, `resolution` 856줄, `tools`)
+  - `docs/concepts/projects/` 10종 (`build`, `config` 619줄, `dependencies` 967줄, `export`, `index`, `init`, `layout`, `run`, `sync`, `workspaces`)
+  - `docs/guides/` 5종 (`install-python`, `package`, `projects`, `scripts`, `tools`)
+  - **제외**: `crates/` Rust 워크스페이스(거대), `python/` 트램폴린, `assets/`, `scripts/` 벤치마크 도구, `docs/pip/` 호환 가이드 일부, `docs/reference/` 자동생성 CLI 레퍼런스
+- **작업**: Astral 회사의 두 번째 제품 uv 수집. ★84,003 / fork 3,006 (2026-04-27 기준), Apache-2.0 OR MIT 듀얼, 첫 커밋 2023-10-02. **수집일 당일 v0.11.8 릴리스** (CHANGELOG `Released on 2026-04-27`). raw 경로 결정: `<org>-<repo>` 컨벤션 따라 `raw/articles/astral-sh-uv/`.
+- **생성된 파일**:
+  - `wiki/sources/astral-sh-uv.md` — 소스 요약 (7개 도구 통합 야망, universal lockfile uv.lock, 10-100x 성능 4가지 벤치마크 시나리오, 듀얼 지침서 패턴 AGENTS.md+CLAUDE.md, PEP 723 인라인 의존성, Cargo-style workspace, GHSA-pjjw 보안 advisory 5일 패치, 6개 인사이트 + 5개 후속 탐구 후보)
+  - `wiki/entities/astral.md` (organization) — Astral Software Inc. 3제품 라인업(ruff/uv/ty), VC-backed OSS, "Rust 재구현형 통합" 5요소 시그니처 패턴, Python fragmentation 사후 해체 가설
+  - `wiki/entities/uv.md` (tool) — 6개 기능군 표, universal lockfile, PubGrub resolver, AGENTS.md 외부 채택 사례, PEP 723 자급자족, c2spf-analytics 마이그레이션 ROI 가설
+  - `wiki/concepts/python-packaging.md` — PEP 진화 타임라인 8개(440/508/517/518/621/660/723/735), 의존성 해석 알고리즘 3종(Backtracking/PubGrub/Greedy), Lockfile 전략 5도구 비교, Wheel 메타데이터 보안(RECORD), 도구별 포지셔닝 매트릭스 5x8, 4가지 실전 시나리오 + 6개 열린 질문
+- **업데이트된 파일**:
+  - `wiki/index.md` — 10회차 표기, 통계 71→75 / 28→29 / 24→26 / 15→16, 신규 4페이지 등록 (소스 표·개념 표·엔티티 표 2행)
+  - `wiki/logs/log.md` — 본 항목
+- **결정적 발견**: **AGENTS.md 외부 산업 채택 4단계 진화** 완성:
+  1. [[anthropics-skills]] (3회차) — Anthropic 자체 표준 정의
+  2. [[github-spec-kit]] (7회차) — Codex Skills 모드로 외부 도구 통합 (1차 외부 채택)
+  3. [[fastapi-fastapi]] (9회차) — `.agents/skills/fastapi/SKILL.md` 라이브러리 self-hosted (2차 외부 채택)
+  4. **[[astral-sh-uv]] (본 회차) — `CLAUDE.md` (1줄: `@AGENTS.md`) + `AGENTS.md` (20줄, single source of truth)** — 듀얼 지침서 단일 진실원 패턴 (3차 외부 채택)
+
+  4단계 진화는 [[anthropic]]이 push 중인 표준이 OSS 라이브러리 → 메타-하네스 → 라이브러리 self-hosted skill → minimal single-source dual-pointer로 형태가 다양화하면서도 **표준 자체는 견고**함을 입증한다. 이는 위키의 [[agent-stack-evolution]] 종합 분석에 새 차원을 추가할 가치 있는 발견.
+- **메모**:
+  - **9회차→10회차 연쇄**: fastapi 9회차 [[tiangolo]] 디폴트 스택의 `uv/Ruff/ty`가 본 회차에 모두 위키에 박힘 (uv 직접, ruff/ty는 [[astral]] 페이지 내부에서). 회차 간 자기일관성이 자연스럽게 형성됨.
+  - **c2spf-analytics 마이그레이션 ROI 가설**: pyproject.toml만 정비하면 거의 drop-in. Cold install 5분 → 10초 추정, lockfile universal로 macOS dev / Linux Docker 일관성. 적용 가능성 High. 후속 실험 후보로 분리.
+  - **위키 자기 적용**: 향후 `/wiki-ingest`, `/wiki-lint` 슬래시 커맨드를 Python 스크립트로 구현한다면 PEP 723 + `uv run` 단일 파일 패턴이 답.
+  - **수집일 당일 v0.11.8 릴리스 — 변경 추적 가치 매우 높음**. CHANGELOG 케이던스 2~3주 패치/마이너 사이클. 향후 lint 시 CHANGELOG 신규 항목 자동 인지 후속 탐구 후보.
+  - **후속 탐구 후보 5종** (소스 페이지 메모에 박음):
+    - (a) `synthesis/python-toolchain-evolution.md` — pip→poetry→uv 진화의 fragmentation 해체와 통합 패턴
+    - (b) `synthesis/rust-rewrite-pattern.md` — Astral + bun + deno + pnpm + Rome(실패) 메타 패턴
+    - (c) `concepts/lockfile-strategies.md` — universal vs platform-specific lockfile 5도구 심화
+    - (d) `entities/charlie-marsh.md` — Astral 창립자, ruff·uv·ty 3연속 hit 인물
+    - (e) `entities/ruff.md`, `entities/ty.md` — Astral 다른 두 제품 별도 수집
+
+---
+
+## [2026-04-27] ingest | fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (9회차)
+
+- **소스**: `raw/articles/fastapi-fastapi/` (19개 파일 보관)
+  - 루트 4종: `README.md` (24KB — 핵심 가치 7개 + 기업 채택 인용 + 스폰서 매트릭스), `pyproject.toml` (의존성, classifiers, optional `[standard]`), `SECURITY.md`, `CONTRIBUTING.md`
+  - 핵심 docs 10종 (`docs/`): `index.md` (메인 랜딩), `features.md` (FastAPI/Starlette/Pydantic 3계층 기능), `history-design-future.md` (★ Tiangolo의 표준 우선 설계 철학 — OpenAPI/JSON Schema/OAuth2 사전 학습), `alternatives.md` (Flask, DRF, APIStar 등 비교), `async.md` (24KB — `async def` vs `def` 결정 트리), `python-types.md` (타입힌트 활용), `fastapi-cli.md`, `benchmarks.md`, `_llm-test.md` (★ 번역 LLM 회귀 테스트 골든셋 — i18n LLM 파이프라인 사례), `management.md`
+  - **결정적 발견 — `agents-dir/`** (`fastapi/.agents/skills/fastapi/`): `SKILL.md` (10.4KB) + `references/{dependencies,streaming,other-tools}.md`. **메인스트림 OSS 라이브러리가 LLM 에이전트용 사용 매뉴얼을 직접 출하한 첫 사례**. frontmatter `name: fastapi` + `description: FastAPI best practices and conventions...`로 자동 호출 트리거.
+  - 코드 진입점: `fastapi/__init__.py` (Public API 25개 심볼 + Starlette `status` 재노출). 코어 3대 파일은 `applications.py` (181KB) + `routing.py` (197KB) + `param_functions.py` (69KB)에 집중.
+- **작업**: fastapi/fastapi GitHub 저장소(2018-12 출시, MIT, v0.136.1, Python 3.10~3.14, ★80k+) 통합 수집. raw 경로 컨벤션 `<org>-<repo>` 형식 → `raw/articles/fastapi-fastapi/` 채택. 핵심 발견은 라이브러리 디렉토리 안에 [[anthropics-skills]] 표준에 맞춘 self-hosted SKILL.md 패키지가 번들링되어 있다는 점.
+- **생성된 파일**:
+  - `wiki/sources/fastapi-fastapi.md` — 소스 요약 (메타 / 6단 핵심 내용 / 6개 인사이트 / SKILL.md 강제 컨벤션 매트릭스 / 인용 / 후속 작업 후보 4건). agent-skills 표준 외부 채택 3단계 진화 도식 (anthropics/skills → spec-kit → fastapi self-hosted) 정립.
+  - `wiki/entities/fastapi.md` — tool 페이지 (설계 4원칙 + 핵심 기술 5종 + Public API 25개 심볼 표 + `.agents/skills/` 구조 + SKILL.md 권장 컨벤션 14항 + 채택 사례 5사).
+  - `wiki/entities/tiangolo.md` — person 페이지 (Sebastián Ramírez OSS 5종 출하 표: FastAPI/Typer/SQLModel/Asyncer/fastapi-cli + "Tiangolo 양식" 6원칙 + i18n LLM 자동화 + agent-skills 출하 사례).
+- **업데이트된 파일**:
+  - `wiki/concepts/agent-skills.md` — source_count 4→5, tags +library-self-hosted-skill/fastapi, related +[[fastapi]]/[[tiangolo]]. 출처 섹션에 [[fastapi-fastapi]] 추가하며 **외부 채택 3단계 진화 완성** 명시: ① anthropics/skills(표준 정의) → ② github/spec-kit(외부 도구 통합) → ③ fastapi/fastapi(라이브러리 self-hosted).
+  - `wiki/concepts/backend-python-fastapi.md` — source_count 5→6, tags +tiangolo/agent-skills/annotated/pydantic2, related +[[fastapi]]/[[tiangolo]], updated 2026-04-24→2026-04-27. 신규 섹션 **"공식 SKILL.md가 제시하는 코딩 컨벤션 (2026-04 갱신)"** 추가 (Annotated 강제, def 디폴트, ORJSONResponse deprecation, Asyncer/SQLModel/HTTPX 추천, c2spf 점검 기준점). 열린 질문 +2건(envelope generic 모델화, SQLAlchemy→SQLModel 마이그레이션 비용).
+  - `wiki/index.md` — 9회차 표기, 통계 68→71 / 27→28 소스 / 22→24 엔티티, 신규 3페이지 등록 + 갱신 2개 페이지 source_count·tags·updated 동기화.
+- **메모**: 9회차의 결정적 시사점은 **`fastapi/.agents/skills/fastapi/SKILL.md` 발견** — [[agent-stack-evolution]] 분석의 "표준-구현 분리(Anthropic축)" 명제가 OSS 라이브러리 코어까지 침투했다는 정량적 증거. README는 사람용·SKILL.md는 에이전트용이라는 **OSS 분업의 명시화**가 메인스트림에서 처음 일어난 것. 후속 작업 후보 4건: (a) [[agent-stack-evolution]]에 "library self-hosted skill" 4번째 사례 반영, (b) c2spf `analytics-common-api` 코드베이스가 SKILL.md 권장과 어디서 일치/충돌하는지 점검(특히 Annotated/response_model/def 분포), (c) "Tiangolo Default Stack"(fastapi/SQLModel/Asyncer/HTTPX/Typer + uv/Ruff/ty)을 별도 종합 페이지로 정리, (d) `_llm-test.md` 패턴을 위키 자체 lint 워크플로우(LLM 출력 회귀 검사)에 응용.
+
+---
+
 ## [2026-04-27] ingest | pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (8회차)
 
 - **소스**: `raw/articles/pandas-dev-pandas/` (24개 파일 / 1,700줄 보관)
