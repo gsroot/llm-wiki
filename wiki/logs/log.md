@@ -10,6 +10,63 @@ type: log
 
 ---
 
+## [2026-04-27] follow-up | lesson 13 (Agentic Memory) 보강 + templates/lesson.md 신설
+
+직전 microsoft for-beginners 통합 수집의 후속 탐구 2건을 즉시 진행.
+
+- **신규 raw 파일**:
+  - `raw/articles/microsoft-ai-agents-for-beginners/lesson-13-agent-memory.md` (163줄) — 7가지 메모리 타입 정의(Working/Short-term/Long-term/Persona/Episodic/Entity/Structured RAG), Mem0/Cognee/Azure AI Search 구현 도구, "Knowledge Agent" Self-Improving 4단계 패턴, latency/cold-storage 최적화 가이드
+- **갱신된 파일**:
+  - `wiki/concepts/context-engineering.md` — "Memories Strategy 심화 — 7가지 메모리 타입 (lesson 13)" 서브섹션 신규 추가 (Failure Mode 표 뒤, 자율 루프 보호 3원칙 앞). 7가지 메모리 타입 분류 표, Mem0/Cognee/Azure AI Search 도구 목록, Knowledge Agent 4단계 패턴 + latency/cold storage 최적화. [[harness]]의 "다단계 검증 게이트"와 같은 발상의 메모리 버전이라는 연결 포인트 명시
+  - `wiki/sources/microsoft-ai-agents-for-beginners.md` — Lesson 카탈로그 표 13번 행 강조 + "(raw 보관)" 마킹 추가 (기존 11/12번과 동일 처리)
+- **신규 템플릿**:
+  - `templates/lesson.md` (5번째 페이지 템플릿) — Microsoft for-beginners 페다고지 6단(pre-quiz / 본문 / knowledge checks / challenge / supplemental reading / assignment / post-quiz)을 위키용으로 응용한 7섹션 구조 (Warmup → 본문 → Knowledge Check → Challenge → 추가 자료 → Assignment → Wrap-up). 신규 frontmatter 필드: `type: lesson`, `difficulty` (beginner/intermediate/advanced), `duration_min` (예상 학습 시간). 헤더 주석에 응용 의도와 기존 4종(entity/concept/source/synthesis)과의 차이 명시
+  - `CLAUDE.md` — 디렉토리 구조 ASCII 트리에 `lesson.md` 한 줄 추가 (templates 카탈로그 4종→5종)
+- **메모**: lesson 13 자체가 [[context-engineering]]의 "Memories" strategy 한 항목을 구현 깊이까지 펼친 것이라, 이번 보강은 12번 lesson(전체 카탈로그) + 13번 lesson(한 strategy 심화)을 같은 페이지에서 추상화 레이어 차이를 살리며 통합. 추후 메모리 토픽이 더 무거워지면 별도 `concepts/agent-memory.md` 분리 검토 가능.
+- **lesson.md 응용 시나리오**: 가장 적합한 첫 사용처는 (a) microsoft-data-science-for-beginners의 lesson 14(Lifecycle)을 회사 BI에 매핑한 자기 학습 페이지, 또는 (b) microsoft-generative-ai-for-beginners의 lesson 15(RAG)을 [[llm-wiki-pattern]]에 직접 응용한 실습 페이지. 둘 다 "교과서 형식"의 1회 학습 자원이라 lesson 타입에 맞음.
+
+---
+
+## [2026-04-27] ingest | microsoft for-beginners 5종 통합 수집 — Cloud Advocates 무료 커리큘럼 시리즈
+
+- **소스 (raw 신규 보관)** — `raw/articles/microsoft-*-for-beginners/` 5개 디렉토리:
+  - `microsoft-generative-ai-for-beginners/` — README.md (24KB) + lesson-15-rag-and-vector-databases.md + lesson-17-ai-agents.md
+  - `microsoft-ai-agents-for-beginners/` — README.md (20KB) + lesson-11-agentic-protocols.md (13KB) + lesson-12-context-engineering.md (13KB)
+  - `microsoft-ml-for-beginners/` — README.md (31KB) + lesson-21-timeseries-intro.md
+  - `microsoft-web-dev-for-beginners/` — README.md (33KB) + lesson-26-chat-project.md
+  - `microsoft-data-science-for-beginners/` — README.md (27KB) + lesson-14-lifecycle-intro.md
+- **선택 근거**:
+  - 5개 시리즈 합 1.5–6.5GB 규모 (50+ 언어 자동 번역으로 비대) — README 본체 + 석근(BI 개발자, AI 관심사) 직결 lesson만 선별 보관
+  - lesson 선정 기준: [[mcp]] 정확화에 직결되는 11(Agentic Protocols), [[context-engineering]] 보강하는 12(Context Engineering for AI Agents), BI 직결 7-TimeSeries, Data Science 라이프사이클 14, GenAI 통합 lesson(15 RAG/17 Agents/26 chat-project)
+  - 거대 코드/notebook은 raw 보관 제외 — 불변성 + 본질 압축 원칙 (기존 `raw/articles/karpathy-*/`, `raw/articles/anthropics-skills/` 관례와 일치)
+- **생성된 파일 (7개)**
+  - **소스 (5)**:
+    - `wiki/sources/microsoft-generative-ai-for-beginners.md` — 21 Lesson 카탈로그, "Learn/Build" 명시 분리, 다중 백엔드(Azure/GitHub Models/OpenAI), 19–21=SLM/Mistral/Meta 모델 단원
+    - `wiki/sources/microsoft-ai-agents-for-beginners.md` — 12+ Lesson, 11 Agentic Protocols 3종(MCP/A2A/NLWeb), 12 Context Engineering 5 type/6 strategy/4 failure 카탈로그
+    - `wiki/sources/microsoft-ml-for-beginners.md` — 26 Lesson 클래식 ML, 의도적 딥러닝 회피, R lesson 병행, "세계 문화" 데이터셋
+    - `wiki/sources/microsoft-web-dev-for-beginners.md` — 24 Lesson 의도적 프레임워크 회피, 7개 프로젝트, 9-chat-project = AI Assistant 신설
+    - `wiki/sources/microsoft-data-science-for-beginners.md` — 20 Lesson, 02=Data Ethics 본문 두 번째, 4-Lifecycle 3단계(Introduction→Analyzing→Communication)
+  - **엔티티 (2)**:
+    - `wiki/entities/microsoft.md` (organization) — Microsoft Cloud Advocates DevRel 운영체계, Azure AI Foundry/Microsoft Agent Framework, GitHub 자회사 인프라(Copilot/Codespaces/Marketplace), MCP/A2A/NLWeb 카탈로그화 신호
+    - `wiki/entities/microsoft-for-beginners.md` (project) — 5개 시리즈 통합 표(107 lessons, 386,000+ stars), 공통 인프라(co-op-translator GitHub Action, ff-quizzes, Foundry Discord), 페다고지(project-based + frequent quizzes), 살아있는 커리큘럼(v3, "Coming Soon", Copilot 챌린지 사후 추가)
+- **업데이트된 파일**
+  - `wiki/concepts/mcp.md` — source_count 4→5, updated 2026-04-15→2026-04-27, tags에 a2a/nlweb/agentic-protocols 추가, related에 [[microsoft-for-beginners]]·[[context-engineering]] 추가, 본문에 **3 Primitives**(Tools/Resources/Prompts) + **클라이언트-서버 아키텍처**(Hosts/Clients/Servers) + **MCP의 3가지 이점 표** + **자매 프로토콜 A2A/NLWeb 섹션** 신규
+  - `wiki/concepts/context-engineering.md` — source_count 2→3, updated 2026-04-27 (재갱신), tags에 agent-memory/scratchpad/microsoft-for-beginners 추가, related에 [[mcp]]·[[microsoft-ai-agents-for-beginners]] 추가, 본문에 **5가지 Context Type 표 + Planning 3단계 + 6가지 Practical Strategy + 4가지 Failure Mode 표** 섹션 신규
+  - `wiki/index.md` — 통계 49→56 / 소스 19→24 / 엔티티 14→16, 소스 표에 5행, 엔티티 표에 2행 추가, HTML 주석에 4회차 수집 기록
+- **메모**: 핵심 발견 4가지.
+  1. **MCP가 단독이 아니라 "Agentic Protocols" 카탈로그의 한 축** — Microsoft가 lesson 11에서 MCP/A2A/NLWeb를 묶어 가르치는 구도는 [[mcp]]가 위키에서 더 큰 카테고리(수직-LLM↔도구 / 수평-에이전트↔에이전트 / 수직-에이전트↔웹) 안에 자리잡게 한다. Anthropic이 만든 표준이 Microsoft 입문 자료에 정식 편입되는 표준 확산 신호.
+  2. **Context Engineering이 운영 카탈로그로 체계화** — Karpathy의 컨텍스트 보호 3원칙(stdout 격리·메트릭 1줄·크래시시 tail)이 운영 휴리스틱이라면, Microsoft lesson 12는 5 type / 6 strategy / 4 failure mode로 분류 체계를 제공. 두 추상화가 보완.
+  3. **Microsoft Cloud Advocates의 "단일 운영체계"** — 5개 시리즈가 같은 GitHub Action·같은 Discord·같은 퀴즈 앱·같은 페다고지를 공유. Anthropic의 [[claude-code]] + Skills + Plugin Marketplace + Cowork와 비교하면 Microsoft는 "**인프라+표준 카탈로그**" 추상화 레벨에서 운영.
+  4. **데이터 윤리/접근성을 본문 02·03번에 배치** — Data Science(02=Ethics)·Web Dev(03=Accessibility) 모두 입문 단계에 가치(values)를 박는 페다고지. 회사 BI에 적용 가능한 메타 패턴.
+- **후속 탐구**:
+  1. lesson 13 (Agentic Memory) raw 보관 검토 — [[context-engineering]]의 "Memories" strategy를 구현 수준으로 확장
+  2. `microsoft/mcp-for-beginners` 수집 검토 — MCP 전용 입문 코스
+  3. `microsoft/AI-For-Beginners` 수집 검토 — 딥러닝까지 보강 (현재 ML-For-Beginners는 의도적 회피)
+  4. `templates/lesson.md` 신설 검토 — Microsoft 페다고지 6단(pre-quiz / 본문 / knowledge checks / challenge / assignment / post-quiz) 위키 응용
+  5. **컴투스플랫폼 BI 응용**: Data Science lesson 14(Lifecycle) 3단계를 회사 BI 라이프사이클에 1:1 매핑한 [[c2spf-analytics]] 보강 가능
+
+---
+
 ## [2026-04-27] ingest | anthropics/skills 수집 — Agent Skills 표준·마켓플레이스·skill-creator
 
 - **소스 (raw 신규 보관)** — `raw/articles/anthropics-skills/` (8 파일):

@@ -33,7 +33,8 @@ llm-wiki/
     ├── entity.md
     ├── concept.md
     ├── source.md
-    └── synthesis.md
+    ├── synthesis.md
+    └── lesson.md           # Microsoft for-beginners 페다고지 6단 응용
 ```
 
 ## 핵심 규칙

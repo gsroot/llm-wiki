@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-27 (3회차)
+updated: 2026-04-27 (5회차)
 ---
 
 # 위키 인덱스
@@ -10,6 +10,8 @@ updated: 2026-04-27 (3회차)
 <!-- 수집일 2026-04-24: portfolio 커리어 자료 베이스 통합 수집 — 소스 8 + 엔티티 4 + 개념 6 + 종합분석 1 추가 -->
 <!-- 수집일 2026-04-27: karpathy/autoresearch 수집 — 소스 1 + 엔티티 2 (karpathy, autoresearch) + 개념 1 (autonomous-research-loop) 추가 -->
 <!-- 수집일 2026-04-27 (2회차): karpathy/nanoGPT + karpathy/nanochat 수집 — 소스 2 + 엔티티 2 (nanogpt, nanochat) 추가, 자율 루프 실증(nanochat 리더보드 #5/#6) 반영 -->
+<!-- 수집일 2026-04-27 (3회차): anthropics/skills 수집 — 소스 1 + 개념 1 (agent-skills) 추가, claude-code 갱신 -->
+<!-- 수집일 2026-04-27 (4회차): microsoft for-beginners 5종 수집 — 소스 5 + 엔티티 2 (microsoft, microsoft-for-beginners) 추가, mcp·context-engineering 보강 -->
 
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
@@ -17,9 +19,9 @@ updated: 2026-04-27 (3회차)
 
 ## 통계
 
-- 총 페이지 수: 49
-- 소스 요약: 19
-- 엔티티: 14
+- 총 페이지 수: 56
+- 소스 요약: 24
+- 엔티티: 16
 - 개념: 13
 - 종합 분석: 2
 
@@ -48,6 +50,11 @@ updated: 2026-04-27 (3회차)
 | [[karpathy-nanogpt]] | karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated) | article | Andrej Karpathy | 2026-04-27 | nanogpt, karpathy, gpt, llm, 교육코드, deprecated |
 | [[karpathy-nanochat]] | karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인 | article | Andrej Karpathy | 2026-04-27 | nanochat, karpathy, llm, gpt2-speedrun, depth-dial, autoresearch |
 | [[anthropics-skills]] | anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스 | article | Anthropic | 2026-04-27 | agent-skills, anthropic, claude-code, marketplace, plugin, progressive-disclosure, skill-creator |
+| [[microsoft-generative-ai-for-beginners]] | microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문 | article | Microsoft Cloud Advocates | 2026-04-27 | generative-ai, microsoft, microsoft-for-beginners, openai, prompt-engineering, rag, ai-agents |
+| [[microsoft-ai-agents-for-beginners]] | microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문 | article | Microsoft Cloud Advocates | 2026-04-27 | ai-agents, microsoft, microsoft-agent-framework, mcp, a2a, nlweb, context-engineering |
+| [[microsoft-ml-for-beginners]] | microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML | article | Microsoft Cloud Advocates | 2026-04-27 | machine-learning, microsoft, scikit-learn, python, r, time-series, classification, clustering, nlp |
+| [[microsoft-web-dev-for-beginners]] | microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문 | article | Microsoft Cloud Advocates | 2026-04-27 | web-dev, microsoft, html, css, javascript, vanilla-js, project-based, github-copilot |
+| [[microsoft-data-science-for-beginners]] | microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문 | article | Microsoft Cloud Advocates | 2026-04-27 | data-science, microsoft, pandas, sql, matplotlib, data-lifecycle, azure-ml, BI |
 
 ## 개념 (Concepts)
 
@@ -85,6 +92,8 @@ updated: 2026-04-27 (3회차)
 | [[autoresearch]] | autoresearch (karpathy/autoresearch) | project | autoresearch, llm, agent, 자율연구, val-bpb, 단일파일 | 1 | 2026-04-27 |
 | [[nanogpt]] | nanoGPT (karpathy/nanoGPT) | project | nanogpt, gpt, llm, 교육코드, deprecated, 단일파일 | 1 | 2026-04-27 |
 | [[nanochat]] | nanochat (karpathy/nanochat) | project | nanochat, llm, gpt2-speedrun, depth-dial, 풀파이프라인 | 1 | 2026-04-27 |
+| [[microsoft]] | Microsoft | organization | microsoft, microsoft-cloud-advocates, microsoft-for-beginners, openai, azure, github, devrel | 5 | 2026-04-27 |
+| [[microsoft-for-beginners]] | microsoft-for-beginners (시리즈) | project | microsoft-for-beginners, microsoft, curriculum, 무료교육, project-based-learning, co-op-translator | 5 | 2026-04-27 |
 
 ## 종합 분석 (Syntheses)
 
