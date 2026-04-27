@@ -2,11 +2,11 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops]
-related: [[claude-code]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]]
-source_count: 1
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구]
+related: [[claude-code]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]]
+source_count: 2
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-27
 ---
 
 # 하네스 (Harness)
@@ -78,16 +78,34 @@ project/
 - 고위험 작업에 approval gate가 앞단에 있는가
 - 세션이 끊겨도 바깥 파일로 상태 복원이 가능한가
 
+## 극한 사례: autoresearch의 초경량 하네스
+
+[[autoresearch]] (Karpathy, 2026-03)는 **하네스를 어디까지 줄일 수 있는가**의 한 답변이다. 4층 레이어가 모두 최소화돼 있다:
+
+| 레이어 | autoresearch에서의 모양 |
+|--------|------------------------|
+| 지식 | `program.md` 한 장 (~7KB) |
+| 도구 | `bash`, `python`, `git`만 |
+| 패키지 | 없음 (Skills/Plugins 미사용, `pyproject.toml` 추가 금지) |
+| 통제 | "5분 시간 예산 + `val_bpb` 단일 메트릭 + Simplicity 기준" 세 줄 |
+
+가벼운데도 작동한다는 점이 핵심. 하네스가 작을수록 에이전트의 자유도가 커지고, 그 자유도를 견디는 건 **평가 메트릭의 객관성**이다 (autoresearch는 이걸 `prepare.py`에 잠궈둠).
+
+[[autonomous-research-loop]] 페이지에서 이 패턴을 일반화한 모양으로 정리.
+
 ## 관련 개념
 
 - [[context-engineering]]: 하네스의 지식 레이어를 설계하는 방법
 - [[token-economy]]: 하네스가 컨텍스트를 낭비 없이 쓰도록 만드는 원리
 - [[claude-code]]: 하네스 개념을 제일 선명하게 구현한 제품
 - [[llm-wiki-pattern]]: 이 위키 자체가 개인 지식 관리용 하네스
+- [[autonomous-research-loop]]: 하네스를 극한으로 압축한 자율 운영 패턴
+- [[autoresearch]]: 그 패턴의 표준 시제품
 
 ## 출처
 
 - [[claude-code-master-guide]] — CHOI의 가이드북에서 가장 중심적인 개념. 5장 "시스템 설계: 문맥, 하네스, 검증"
+- [[karpathy-autoresearch]] — 하네스 최소화의 극단 사례. `program.md` 한 장으로 LLM 학습 자율 실험 운영
 
 ## 열린 질문
 

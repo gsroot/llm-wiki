@@ -1,13 +1,15 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 # 위키 인덱스
 
 <!-- 수집일 2026-04-15: 클로드코드 가이드북(CHOI, 848페이지 PDF) 수집으로 페이지 다수 추가 -->
 <!-- 수집일 2026-04-24: portfolio 커리어 자료 베이스 통합 수집 — 소스 8 + 엔티티 4 + 개념 6 + 종합분석 1 추가 -->
+<!-- 수집일 2026-04-27: karpathy/autoresearch 수집 — 소스 1 + 엔티티 2 (karpathy, autoresearch) + 개념 1 (autonomous-research-loop) 추가 -->
+<!-- 수집일 2026-04-27 (2회차): karpathy/nanoGPT + karpathy/nanochat 수집 — 소스 2 + 엔티티 2 (nanogpt, nanochat) 추가, 자율 루프 실증(nanochat 리더보드 #5/#6) 반영 -->
 
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
@@ -15,10 +17,10 @@ updated: 2026-04-24
 
 ## 통계
 
-- 총 페이지 수: 39
-- 소스 요약: 15
-- 엔티티: 10
-- 개념: 11
+- 총 페이지 수: 47
+- 소스 요약: 18
+- 엔티티: 14
+- 개념: 12
 - 종합 분석: 2
 
 ---
@@ -42,6 +44,9 @@ updated: 2026-04-24
 | [[c2spf-xpla-platform]] | 컴투스플랫폼 XPLA 플랫폼 | note | 석근 | 2026-04-24 | com2us-platform, xpla, blockchain, nestjs, SDK |
 | [[c2spf-analytics-common]] | 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 (2024-08) | note | 석근 | 2026-04-24 | com2us-platform, analytics, fastapi, jenkins, loki |
 | [[c2spf-analytics-renewal]] | 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge (2025) | note | 석근 | 2026-04-24 | com2us-platform, analytics, react, vite, airbridge |
+| [[karpathy-autoresearch]] | karpathy/autoresearch — 자율 LLM 실험 루프 | article | Andrej Karpathy | 2026-04-27 | autoresearch, karpathy, llm, 자율연구, agent, harness, val-bpb |
+| [[karpathy-nanogpt]] | karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated) | article | Andrej Karpathy | 2026-04-27 | nanogpt, karpathy, gpt, llm, 교육코드, deprecated |
+| [[karpathy-nanochat]] | karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인 | article | Andrej Karpathy | 2026-04-27 | nanochat, karpathy, llm, gpt2-speedrun, depth-dial, autoresearch |
 
 ## 개념 (Concepts)
 
@@ -49,9 +54,10 @@ updated: 2026-04-24
 |------|------|------|---------|-----------|
 | [[llm-wiki-pattern]] | LLM 위키 패턴 | 지식관리, LLM, 위키, RAG, 하네스 | 3 | 2026-04-15 |
 | [[mcp]] | MCP (Model Context Protocol) | MCP, LLM, 도구, 프로토콜 | 4 | 2026-04-15 |
-| [[harness]] | 하네스 (Harness) | 하네스, 에이전트, 작업운영 | 1 | 2026-04-15 |
+| [[harness]] | 하네스 (Harness) | 하네스, 에이전트, 작업운영, 자율연구 | 2 | 2026-04-27 |
 | [[token-economy]] | 토큰 경제학 (Token Economy) | 토큰, 비용, 컨텍스트 | 1 | 2026-04-15 |
-| [[context-engineering]] | 컨텍스트 엔지니어링 | 컨텍스트엔지니어링, 프롬프트엔지니어링 | 1 | 2026-04-15 |
+| [[context-engineering]] | 컨텍스트 엔지니어링 | 컨텍스트엔지니어링, 프롬프트엔지니어링, 자율연구 | 2 | 2026-04-27 |
+| [[autonomous-research-loop]] | 자율 연구 루프 (Autonomous Research Loop) | 자율연구, agent, 메트릭주도, 시간예산, harness, gpt2-speedrun | 2 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot | 5 | 2026-04-24 |
 | [[frontend-react]] | 프론트엔드 (React + TS + Vite + TanStack) | frontend, react, typescript, vite, tanstack, ag-grid | 4 | 2026-04-24 |
 | [[data-pipeline-bigquery]] | 데이터 파이프라인 (BigQuery 중심 BI) | data-pipeline, bigquery, mysql, BI, mmp | 4 | 2026-04-24 |
@@ -73,6 +79,10 @@ updated: 2026-04-24
 | [[com2us-platform]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
 | [[c2spf-analytics]] | c2spf 애널리틱스 (게임 데이터 BI) | service | analytics, c2spf, BI, 게임데이터, fastapi, react | 4 | 2026-04-24 |
 | [[xpla-platform]] | XPLA 플랫폼 (블록체인 통합 서비스) | service | xpla, blockchain, nft, smart-contract, c2spf | 3 | 2026-04-24 |
+| [[karpathy]] | Andrej Karpathy | person | karpathy, AI, llm, openai, tesla, 교육콘텐츠, nanogpt, nanochat | 3 | 2026-04-27 |
+| [[autoresearch]] | autoresearch (karpathy/autoresearch) | project | autoresearch, llm, agent, 자율연구, val-bpb, 단일파일 | 1 | 2026-04-27 |
+| [[nanogpt]] | nanoGPT (karpathy/nanoGPT) | project | nanogpt, gpt, llm, 교육코드, deprecated, 단일파일 | 1 | 2026-04-27 |
+| [[nanochat]] | nanochat (karpathy/nanochat) | project | nanochat, llm, gpt2-speedrun, depth-dial, 풀파이프라인 | 1 | 2026-04-27 |
 
 ## 종합 분석 (Syntheses)
 

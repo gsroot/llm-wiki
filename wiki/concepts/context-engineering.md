@@ -2,11 +2,11 @@
 title: "컨텍스트 엔지니어링 (Context Engineering)"
 type: concept
 category: ai
-tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM]
-related: [[harness]], [[token-economy]], [[claude-code]], [[llm-wiki-pattern]]
-source_count: 1
+tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM, 자율연구]
+related: [[harness]], [[token-economy]], [[claude-code]], [[llm-wiki-pattern]], [[autonomous-research-loop]]
+source_count: 2
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-27
 ---
 
 # 컨텍스트 엔지니어링 (Context Engineering)
@@ -82,6 +82,16 @@ templates/
 - 긴 세션에서 `/compact`로 압축
 - Worktree로 병렬 작업을 물리적으로 분리
 
+### 자율 루프 컨텍스트 보호 3원칙 ([[autoresearch]] 사례)
+
+자율 실험 루프가 12회/시간으로 돌면 학습 로그가 즉시 컨텍스트를 폭파시킨다. autoresearch의 `program.md`가 보여준 회피책:
+
+1. **stdout 격리**: `uv run train.py > run.log 2>&1` — `tee` 금지. 출력은 파일로만.
+2. **메트릭 1줄 발췌**: `grep "^val_bpb:" run.log` — 결과 1줄만 본문에 노출.
+3. **크래시 시에만 tail**: 정상 시 로그 자체를 안 봄. 비정상 시에도 `tail -n 50` 한도.
+
+이 3줄 패턴은 위키 운영에도 그대로 이식 가능하다 — 큰 PDF 변환물이나 외부 데이터를 직접 컨텍스트에 끌어들이지 말고, `grep`/`head`/`tail` 발췌 1~2줄만.
+
 ## 관련 개념
 
 - [[harness]]: 컨텍스트 엔지니어링을 지속적으로 작동시키는 상위 구조
@@ -92,6 +102,7 @@ templates/
 ## 출처
 
 - [[claude-code-master-guide]] — CHOI의 가이드북 5장 "프롬프트 엔지니어링, 컨텍스트 엔지니어링, 하네스 엔지니어링"
+- [[karpathy-autoresearch]] — 자율 실험 루프 운영의 컨텍스트 보호 패턴(`> run.log 2>&1` + `grep` 1줄 발췌)
 
 ## 열린 질문
 

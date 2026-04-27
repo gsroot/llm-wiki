@@ -10,6 +10,53 @@ type: log
 
 ---
 
+## [2026-04-27] ingest | karpathy/nanoGPT + karpathy/nanochat 수집
+
+- **소스 (raw 신규 보관)**:
+  - `raw/articles/karpathy-nanogpt/README.md` (13.8KB, 234줄) — `gh api repos/karpathy/nanoGPT/contents/README.md`로 base64 디코드 보관. 라이선스 MIT.
+  - `raw/articles/karpathy-nanochat/README.md` (16.5KB, 222줄) — `gh api repos/karpathy/nanochat/contents/README.md`로 보관. 라이선스 MIT.
+- **선택 근거**: 기존 `raw/articles/karpathy-autoresearch/` 관례와 일치. 두 저장소 모두 README가 운영 패턴의 본질 — 무거운 Python 코드(`train.py`, `model.py`, `prepare.py` 등) 및 `uv.lock`은 보관 제외.
+- **생성된 파일 (4개)**
+  - **소스 (2)**:
+    - `wiki/sources/karpathy-nanogpt.md` — 2025-11 deprecated 명시, ~300줄 train.py + model.py 디자인, MPS 지원 디테일, 한계 4가지(사전학습만/구식 아키텍처/단일 다이얼 부재/평가 미내장) — 모두 nanochat에서 해결됨
+    - `wiki/sources/karpathy-nanochat.md` — $100 GPT-2 풀 파이프라인, 단일 `--depth` 다이얼 디자인, **Time-to-GPT-2 리더보드** 표(행 #5, #6이 autoresearch 라운드 1, 2), AI Policy disclosure 정책
+  - **엔티티 (2)**:
+    - `wiki/entities/nanogpt.md` (project) — deprecated 상태 마킹, 자손 계보(minGPT → nanoGPT → nanochat → autoresearch), 위키 보존 사유 명시
+    - `wiki/entities/nanochat.md` (project) — 활성 주력, 풀 파이프라인 모듈 매핑, 리더보드 표, 정밀도/하드웨어 가이드, AI Policy
+- **업데이트된 파일 (3 + 1)**
+  - `wiki/entities/karpathy.md` — source_count 1→3, 교육 자산 항목을 자손 계보로 구체화(minGPT → nanoGPT → nanochat → autoresearch), AI Policy 명문화 사실 추가, related에 [[nanogpt]]·[[nanochat]] 추가, 출처 2건 추가
+  - `wiki/entities/autoresearch.md` — 부모 저장소 nanochat을 위키링크화([[nanochat]]), **"자기 강화 순환" 섹션 신규 추가** (autoresearch round 1·2가 nanochat 리더보드 #5·#6를 갱신했다는 사실)
+  - `wiki/concepts/autonomous-research-loop.md` — source_count 1→2, **"실증: nanochat 리더보드 #5, #6" 섹션 신규** (자율 루프가 사람 SOTA를 갱신한 첫 공개 사례), 출처에 [[karpathy-nanochat]] 추가
+  - `wiki/index.md` — 통계 43→47 / 소스 16→18 / 엔티티 12→14. 4개 카테고리 테이블 행 추가/갱신
+- **메모**: 핵심 발견은 **autoresearch가 nanochat 리더보드 #4(사람) → #5(자율) → #6(자율)에서 사람 SOTA를 능가하고 그 결과가 부모 저장소로 머지되는 자기 강화 순환을 만든다는 점**. 이로써 [[autonomous-research-loop]] 패턴이 사변적이지 않고 실증된 운영 모델임이 위키에 박힘. 또한 nanoGPT의 deprecated 처리(2025-11)를 위키에 그대로 반영하여 사용자가 잘못된 출발점을 선택하지 않도록 함.
+- **후속 탐구**:
+  1. autoresearch round 3+ 결과를 정기 추적 → nanochat 페이지 리더보드 표 / autoresearch 페이지 / autonomous-research-loop 페이지 3곳 동기 갱신
+  2. minGPT(전신) raw 보관은 보류 — 패턴 계보 시작점이지만 실용성이 nanoGPT보다 낮음
+  3. micrograd, llm.c, Zero to Hero 등 Karpathy의 다른 교육 자산은 [[ml-ai]] 페이지 보강용으로 별도 수집 가치 있음
+  4. **Karpathy의 두 작업(nanochat ↔ autoresearch)이 자기 강화 순환을 이루는 점**은 별도 종합 분석(`wiki/syntheses/`)으로 정리할 가치 있음 — "사람-자율 루프 협업의 첫 공개 사례"라는 큰 그림으로
+
+---
+
+## [2026-04-27] ingest | karpathy/autoresearch 수집
+
+- **소스 (raw 신규 보관)**: `raw/articles/karpathy-autoresearch/README.md` (8.0KB) + `raw/articles/karpathy-autoresearch/program.md` (7.0KB) — `gh api repos/karpathy/autoresearch/contents/...` 로 base64 디코드해 그대로 복사. 라이선스 MIT.
+- **선택 근거**: GitHub 프로젝트의 공식 문서라서 `raw/articles/`에 두는 게 기존 `raw/articles/claude-code/` 관례와 일치. 무거운 파이썬 코드(`prepare.py` 15KB, `train.py` 26KB, `uv.lock` 443KB)와 `progress.png`는 raw에 두지 않음 — 위키는 운영 패턴이 본질이므로 마크다운 2개로 충분.
+- **생성된 파일 (4개)**
+  - **소스 (1)**: `wiki/sources/karpathy-autoresearch.md` — 5분 시간 예산 / `val_bpb` 단일 메트릭 / `train.py` 단일 파일 수정 / `program.md` = "lightweight skill" / NEVER STOP 원칙 정리
+  - **엔티티 (2)**: `wiki/entities/karpathy.md` (person — OpenAI 창립 멤버, Tesla AI 디렉터 출신, 교육 자산 nanoGPT/micrograd/llm.c/Zero to Hero 보유) · `wiki/entities/autoresearch.md` (project — 76,912 stars, MIT, 4개 포크 macos/mlx/win-rtx/amd 노출)
+  - **개념 (1)**: `wiki/concepts/autonomous-research-loop.md` — 4중 제약(단일 메트릭·고정 시간 예산·단일 파일·무한 루프) / 5단계 루프 골격 / 컨텍스트 보호 3원칙 / 석근 응용 시나리오 3종(BI 쿼리 자율 튜닝, 비서 AI prompt 진화, 위키 운영 — 위키는 메트릭 부재로 직접 적용 불가)
+- **업데이트된 파일**
+  - `wiki/concepts/harness.md` — source_count 1→2, "극한 사례: autoresearch의 초경량 하네스" 섹션 추가, related에 [[autoresearch]]·[[autonomous-research-loop]] 추가
+  - `wiki/concepts/context-engineering.md` — source_count 1→2, "자율 루프 컨텍스트 보호 3원칙" 섹션 추가 (`> run.log 2>&1` + `grep` 1줄 발췌 + 크래시 시에만 tail), 출처에 [[karpathy-autoresearch]] 추가
+  - `wiki/index.md` — 통계 39→43 / 소스 15→16 / 엔티티 10→12 / 개념 11→12. 4개 카테고리 테이블에 행 추가, harness/context-engineering 행 갱신.
+- **메모**: 이번 수집의 진짜 가치는 [[autonomous-research-loop]]를 위키의 새 지층으로 자리잡힌 것. **"단일 메트릭 + 시간 예산 + 단일 파일 + 무한 루프"** 4중 제약은 [[harness]] 개념을 극한으로 압축한 형태이며, 석근의 BI 자동화·개인 비서 AI 양쪽에 직접 이식 후보. 위키 자체는 메트릭 정의가 어려워 자율 루프 적용 전에 평가축을 먼저 정의해야 함을 본문에 명시.
+- **후속 탐구**:
+  1. macOS / MLX 포크 1종을 회사 맥북에서 실제 가동 → 1박 ~100실험 재현해보기
+  2. nanochat 본 저장소 raw 보관 여부 결정 (별도 가치 검증 후)
+  3. 위키 운영용 메트릭 후보(고정 질의 세트 정답률, 토큰/질의)를 3개월 운영하며 검증
+
+---
+
 ## [2026-04-24] ingest | portfolio 커리어 자료 베이스 통합 수집
 
 - **소스 (raw 신규 복사, 공개 자료만)**:
