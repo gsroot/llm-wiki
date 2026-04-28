@@ -3,7 +3,12 @@ title: "Prometheus"
 type: entity
 entity_type: tool
 tags: [prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차]
-related: [[grafana]], [[docker]], [[observability-and-cicd-stack]], [[agent-skills]], [[devops-cicd]]
+related:
+  - "[[grafana]]"
+  - "[[docker]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

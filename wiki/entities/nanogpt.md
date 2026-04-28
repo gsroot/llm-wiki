@@ -3,7 +3,11 @@ title: "nanoGPT (karpathy/nanoGPT)"
 type: entity
 entity_type: project
 tags: [nanogpt, karpathy, gpt, llm, 교육코드, deprecated, mingpt, 단일파일, mps, MIT]
-related: [[karpathy]], [[nanochat]], [[autoresearch]], [[ml-ai]]
+related:
+  - "[[karpathy]]"
+  - "[[nanochat]]"
+  - "[[autoresearch]]"
+  - "[[ml-ai]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

@@ -3,7 +3,10 @@ title: "Dart"
 type: entity
 entity_type: tool
 tags: [dart, programming-language, google, flutter, aot, jit, javascript-compile, wasm, sound-null-safety, isolates]
-related: [[flutter]], [[google]], [[github]]
+related:
+  - "[[flutter]]"
+  - "[[google]]"
+  - "[[github]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

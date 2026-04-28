@@ -3,7 +3,24 @@ title: "하네스 (Harness)"
 type: concept
 category: ai
 tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, openai-agents-python, plans-md, exec-plans, living-document, 7-hour-task, 9-sop-skills, skill-chaining]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]], [[scikit-learn]], [[openai]], [[openai-cookbook]], [[openai-agents-python]]
+related:
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[anthropic]]"
+  - "[[agent-patterns]]"
+  - "[[context-engineering]]"
+  - "[[token-economy]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[autonomous-research-loop]]"
+  - "[[autoresearch]]"
+  - "[[agent-skills]]"
+  - "[[spec-kit]]"
+  - "[[spec-driven-development]]"
+  - "[[github]]"
+  - "[[scikit-learn]]"
+  - "[[openai]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-agents-python]]"
 source_count: 8
 created: 2026-04-15
 updated: 2026-04-28

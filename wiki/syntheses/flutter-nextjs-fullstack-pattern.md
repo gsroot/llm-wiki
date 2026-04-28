@@ -5,11 +5,11 @@ category: frontend-architecture
 sources:
   - "[[rrousselGit-riverpod]]"
   - "[[vercel-next.js]]"
-  - "[[tanstack-query]]"
+  - "[[tanstack-tanstack-query]]"
   - "[[pmndrs-zustand]]"
   - "[[shadcn-ui-ui]]"
   - "[[flutter-flutter]]"
-  - "[[mate-chat]]"
+  - "[[matechat]]"
 sources_count: 7
 related:
   - "[[riverpod]]"
@@ -20,7 +20,7 @@ related:
   - "[[flutter]]"
   - "[[agent-skills]]"
   - "[[backend-fastapi-stack]]"
-  - "[[mate-chat]]"
+  - "[[matechat]]"
 created: 2026-04-28
 updated: 2026-04-28
 tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차]
@@ -163,7 +163,7 @@ Flutter (모바일) + Next.js (웹) + 공통 FastAPI 백엔드
 
 기존 통합:
 - [[flutter-flutter]] (20회차) — Flutter 진영 호스트
-- [[mate-chat]] (17~18회차) — Riverpod 실증 프로젝트
+- [[matechat]] (17~18회차) — Riverpod 실증 프로젝트
 
 ## 21회차 종합 (observability-and-cicd-stack)과의 연결
 

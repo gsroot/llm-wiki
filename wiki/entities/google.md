@@ -3,7 +3,12 @@ title: "Google"
 type: entity
 entity_type: organization
 tags: [google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, ai]
-related: [[flutter]], [[dart]], [[github]], [[microsoft]], [[anthropic]]
+related:
+  - "[[flutter]]"
+  - "[[dart]]"
+  - "[[github]]"
+  - "[[microsoft]]"
+  - "[[anthropic]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

@@ -8,7 +8,11 @@ author: "Prometheus Authors (CNCF)"
 date_published: 2026-04-28
 date_ingested: 2026-04-28
 tags: [prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차]
-related: [[prometheus]], [[grafana]], [[observability-and-cicd-stack]], [[agent-skills]]
+related:
+  - "[[prometheus]]"
+  - "[[grafana]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[agent-skills]]"
 confidence: high
 ---
 

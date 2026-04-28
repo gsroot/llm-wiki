@@ -8,7 +8,10 @@ author: "Anthropic"
 date_published: 2026-04-09
 date_ingested: 2026-04-09
 tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic]
-related: [[claude-code]], [[mcp]], [[llm-wiki-pattern]]
+related:
+  - "[[claude-code]]"
+  - "[[mcp]]"
+  - "[[llm-wiki-pattern]]"
 confidence: high
 ---
 

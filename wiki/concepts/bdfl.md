@@ -3,7 +3,12 @@ title: "BDFL (Benevolent Dictator For Life)"
 type: concept
 category: dev-tools
 tags: [bdfl, governance, open-source, decision-making, pandas, python]
-related: [[pandas-dev]], [[pandas]], [[pdep]], [[numfocus]], [[github]]
+related:
+  - "[[pandas-dev]]"
+  - "[[pandas]]"
+  - "[[pdep]]"
+  - "[[numfocus]]"
+  - "[[github]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

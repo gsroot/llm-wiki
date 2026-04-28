@@ -3,7 +3,10 @@ title: "Obsidian"
 type: entity
 entity_type: tool
 tags: [obsidian, 지식관리, knowledge-management, 마크다운, markdown, 노트앱, vault]
-related: [[obsidian-web-clipper]], [[llm-wiki-pattern]], [[claude-code]]
+related:
+  - "[[obsidian-web-clipper]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[claude-code]]"
 source_count: 1
 created: 2026-04-15
 updated: 2026-04-15

@@ -3,7 +3,11 @@ title: "Lakehouse"
 type: concept
 category: data-architecture
 tags: [lakehouse, data-warehouse, data-lake, parquet, delta-lake, iceberg, 25회차]
-related: [[parquet]], [[duckdb]], [[polars]], [[pyarrow]]
+related:
+  - "[[parquet]]"
+  - "[[duckdb]]"
+  - "[[polars]]"
+  - "[[pyarrow]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

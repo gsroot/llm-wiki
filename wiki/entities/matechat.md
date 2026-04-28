@@ -2,24 +2,35 @@
 title: "MateChat"
 type: entity
 entity_type: project
-tags: [matechat, 메이트챗, AI, social, social-ai, fastapi, flutter, openai, websocket, iap, clover, startup, side-project, project-wiki]
+tags: [matechat, mate-chat, 메이트챗, AI, social, social-ai, fastapi, flutter, riverpod, openai, websocket, iap, clover, startup, side-project, project-wiki, sentry, prometheus, agent-skills, gstack, v1.0.0]
 related:
   - "[[seokgeun-kim]]"
   - "[[seokgeun-kim-profile-2026]]"
   - "[[seokgeun-operating-profile-2026]]"
   - "[[mate-chat-project-wiki-2026]]"
   - "[[matechat-project-knowledge-map]]"
+  - "[[seokgeun-mate-chat]]"
   - "[[backend-python-fastapi]]"
+  - "[[backend-fastapi-stack]]"
   - "[[ml-ai]]"
   - "[[flutter]]"
+  - "[[riverpod]]"
   - "[[fastapi]]"
+  - "[[pydantic]]"
   - "[[openai]]"
   - "[[postgresql]]"
   - "[[redis]]"
   - "[[sqlalchemy]]"
   - "[[alembic]]"
+  - "[[uv]]"
+  - "[[ruff]]"
+  - "[[sentry]]"
+  - "[[prometheus]]"
+  - "[[shadcn-ui]]"
+  - "[[agent-skills]]"
+  - "[[seokgeun-stack-guide]]"
   - "[[token-economy]]"
-source_count: 5
+source_count: 6
 created: 2026-04-28
 updated: 2026-04-28
 ---
@@ -28,9 +39,11 @@ updated: 2026-04-28
 
 ## 개요
 
-**MateChat**은 석근이 개발 중인 소셜+AI 하이브리드 모바일 서비스다. 제품 슬로건은 "대화의 시작은 AI, 끝은 사람." / "Start with AI. End with people."이며, 핵심 정체성은 **AI가 사람을 대체하는 앱이 아니라 사람과 사람의 연결을 돕는 앱**이다.
+**MateChat**은 석근이 개발·운영하는 소셜+AI 하이브리드 모바일 서비스다. 제품 슬로건은 "대화의 시작은 AI, 끝은 사람." / "Start with AI. End with people."이며, 핵심 정체성은 **AI가 사람을 대체하는 앱이 아니라 사람과 사람의 연결을 돕는 앱**이다.
 
 기존 AI 컴패니언 앱은 AI와의 관계 자체를 끝점으로 삼고, 기존 소셜/채팅 앱은 사용자가 어색함과 대화 시작의 부담을 직접 감당하게 만든다. MateChat은 그 사이에서 AI가 사회적 어색함을 완충하고, 최종적으로 실제 인간 대화를 만들도록 돕는 것을 목표로 한다.
+
+이 페이지가 MateChat의 canonical 엔티티다. 과거 `mate-chat` slug는 24회차 raw 수집에서 생긴 중복 노드였고, 2026-04-28 정리에서 이 페이지로 병합했다.
 
 ## 주요 특징
 
@@ -52,11 +65,12 @@ updated: 2026-04-28
 
 ### 기술 스택
 
-- **Backend**: [[fastapi]], Python 3.13, [[postgresql]] 15, [[redis]] 7, [[sqlalchemy]] 2.0 async, [[alembic]]
-- **Mobile App**: [[flutter]]
+- **Backend**: [[fastapi]], Python 3.13, [[postgresql]] 15, [[redis]] 7, [[sqlalchemy]] 2.0 async, [[alembic]], [[pydantic]]
+- **Mobile App**: [[flutter]], [[riverpod]], shadcn_ui Flutter port
 - **AI**: [[openai]] GPT-4 계열 API
-- **Storage/Infra**: MinIO, Redis, PostgreSQL
-- **Tooling**: [[uv]]
+- **Storage/Infra**: MinIO, Redis, PostgreSQL, Docker Compose
+- **Tooling**: [[uv]], [[ruff]], black, isort, mypy
+- **Observability**: [[sentry]], [[prometheus]], structlog
 - **주요 기능**: OAuth, JWT, WebSocket 실시간 채팅, AI 챗봇, 가상 화폐 클로버, IAP, FCM 푸시 알림
 
 ### 현재 상태
@@ -70,6 +84,49 @@ updated: 2026-04-28
 `mate-chat/wiki`는 MateChat 전용 LLM-maintained wiki이며, 2026-04-28 스냅샷 기준 68개 마크다운 파일을 가진다. 구조는 `sources/` 19개, `entities/` 22개, `concepts/` 22개, `synthesis/` 2개와 메타 파일 3개다.
 
 이 프로젝트 위키는 FastAPI 앱, Flutter 앱, WebSocket, Redis Pub/Sub, PostgreSQL, IAP, Clover, FCM, i18n, Google Play Store, 배포 파이프라인, 글로벌 출시 준비를 세부적으로 다룬다. `llm-wiki`에서는 이를 개별 페이지로 복제하지 않고, [[mate-chat-project-wiki-2026]] 원천 스냅샷과 [[matechat-project-knowledge-map]] 종합 분석으로 추적한다.
+
+### 본진 raw 수집 결과
+
+24회차에는 `/Users/sgkim/Projects/mate-chat/` 저장소의 README, AGENTS.md, CLAUDE.md, GEMINI.md, TODO.md, skills-lock.json, `.agents/skills/` 38개 SKILL.md, 백엔드 README/pyproject/docs, Flutter README/pubspec.yaml을 raw로 수집했다.
+
+핵심 규모:
+
+| 영역 | 수치 |
+|---|---|
+| 백엔드 API | 83 endpoints |
+| PostgreSQL | 20 테이블 / 13 마이그레이션 |
+| 백엔드 테스트 | 113 테스트, 커버리지 약 61% |
+| Flutter Dart | 132 파일 / 51,960줄 |
+| 백엔드 docs | 18 설계 문서 |
+| `.agents/skills/` | 38 SKILL.md |
+| `.gstack/` | 27 슬래시 커맨드 |
+| 국제화 | 9개 언어 ARB |
+
+### 위키 발견의 종합 실증
+
+MateChat은 [[seokgeun-stack-guide]]가 정리한 백엔드 6단, Flutter+Riverpod 모바일, 관측성 트리플, OpenAI 통합, agent-skills 운영 패턴이 실제 개인 프로젝트에 적용된 사례다. 이 점에서 MateChat은 단순 사이드 프로젝트가 아니라, 이 위키가 15~22회차에 수집한 기술 판단의 실증 프로젝트다.
+
+특히 38개 SKILL.md는 개인 프로젝트 규모에서는 과하다 싶을 정도로 깊은 SOP 체계다. 하지만 이 덕분에 `fastapi-testing`, `api-consistency`, `websocket-pattern`, `security-review`, `migration-safety`, `pre-deployment`, `feature-workflow`, `doc-management`, `skill-creator` 같은 운영 지식을 회사 BI 쪽으로 역수입할 후보가 생긴다.
+
+### 주요 기능
+
+- **인증**: Google OAuth, 이메일/비밀번호, JWT, COPPA, 이메일 인증, 비밀번호 재설정, Welcome 보너스 200 클로버
+- **소셜**: 팔로우, 메이트 요청/수락/거절/취소, 차단, 신고, 쿨다운, 양방향 메이트 관계
+- **채팅**: 1:1, 메이트, 공개 채팅방, WebSocket 실시간, 타이핑 인디케이터, 읽음 표시, 다중 기기, 채팅방 초대, Redis Pub/Sub
+- **AI 챗봇**: GPT-4, 커스텀 봇, 공개/비공개 봇, 클로버 사용량 추적, 챗봇 메이트, 하이브리드 채팅 `@botname` 멘션
+- **가상 화폐**: 클로버, Welcome 보너스, Google Play + App Store IAP 검증, 보너스/구매 분리 추적
+- **알림**: REST API + FCM 푸시, 11개 언어, follow / mate_request / mate / invite / chat / force_exit 타입
+
+### 운영 로드맵과 제한사항
+
+단기 v1.1 후보는 Apple OAuth, iOS 앱 빌드·App Store 제출, 콘텐츠 모더레이션 강화다. 중기 v1.2+ 후보는 Redis Pub/Sub 분산 배포, WebSocket DB 풀 최적화, 채팅 리액션·답장이다.
+
+알려진 제한사항:
+
+- Apple OAuth 미구현은 iOS 출시 시 필수 차단 항목이다.
+- Redis Pub/Sub 분산 배포는 다중 서버 WebSocket 운영 전 보강이 필요하다.
+- WebSocket이 DB 풀 슬롯을 연결 수명 동안 점유하는 구조는 접속자 증가 시 병목이 될 수 있다.
+- Android v1.0.0 출시 완료 기록과 출시 직전 기록이 공존하므로, 최신 운영 상태는 Play Console과 mate-chat 저장소 기준으로 재확인해야 한다.
 
 ## 핵심 검증 질문
 
@@ -105,13 +162,18 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 
 - [[ml-ai]]: OpenAI 기반 AI 챗봇과 AI→사람 연결 전략
 - [[backend-python-fastapi]]: MateChat 백엔드의 기본 기술 축
-- [[flutter]]: 모바일 앱 구현 스택
+- [[backend-fastapi-stack]]: FastAPI/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis 6단의 직접 실증
+- [[flutter]] · [[riverpod]]: 모바일 앱 구현 스택
+- [[observability-and-cicd-stack]]: Sentry/Prometheus 운영 패턴
+- [[agent-skills]]: 38 SKILL.md 기반 개인 프로젝트 SOP 체계
+- [[seokgeun-stack-guide]]: 이 위키의 기술 스택 판단과 MateChat 실제 스택의 연결
 - [[token-economy]]: 클로버 기반 AI 사용량 과금과 LLM 비용 구조
 
 ## 출처
 
 - [[seokgeun-kim-profile-2026]] — 제품 비전, 사업화 목표, KPI, 리스크, 육아휴직 기간 운영 계획의 1차 소스
 - [[mate-chat-project-wiki-2026]] — 프로젝트 전용 위키 스냅샷. 구현, 아키텍처, 출시 준비, 운영 지식의 세부 소스
+- [[seokgeun-mate-chat]] — MateChat 본진 저장소 24회차 raw 수집. README/AGENTS.md/CLAUDE.md/GEMINI.md/TODO.md, 38 SKILL.md, 백엔드/Flutter 메타 자료
 - [[portfolio-seed]] — 개인 프로젝트로서 Mate Chat 언급
 - [[portfolio-resume-ko]] — 이력서의 Mate Chat 요약
 - [[portfolio-ko]] — 상세 포트폴리오의 Mate Chat 기술 스택 요약
@@ -126,3 +188,4 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 - 단기 최우선은 "더 많은 기능"이 아니라 실제 사람 간 대화가 만들어지는지 확인하는 것이다.
 - 포지셔닝 문장은 "AI 친구 앱"보다 "AI가 사람 친구를 만들어주는 앱" 쪽이 핵심 가설과 더 잘 맞는다.
 - 사업화가 가족 시간 확보 전략과 직접 연결되어 있으므로, 운영 계획에는 개발뿐 아니라 마케팅·QA·지표 분석·번아웃 방지 루틴이 함께 들어가야 한다.
+- `mate-chat` slug는 이 페이지로 병합 완료. 앞으로 새 링크는 `[[matechat]]`을 사용한다.

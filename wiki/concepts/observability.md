@@ -3,7 +3,14 @@ title: "Observability — 메트릭/로그/트레이스 + 에러 + 사용자 경
 type: concept
 category: dev-tools
 tags: [observability, monitoring, metrics, logs, traces, error-tracking, sre, prometheus, grafana, sentry, otel, 19회차]
-related: [[prometheus]], [[grafana]], [[sentry]], [[devops-cicd]], [[observability-and-cicd-stack]], [[github-actions]], [[docker]]
+related:
+  - "[[prometheus]]"
+  - "[[grafana]]"
+  - "[[sentry]]"
+  - "[[devops-cicd]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[github-actions]]"
+  - "[[docker]]"
 source_count: 3
 created: 2026-04-28
 updated: 2026-04-28

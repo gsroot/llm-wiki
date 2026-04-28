@@ -3,7 +3,14 @@ title: "uv (astral-sh/uv)"
 type: entity
 entity_type: tool
 tags: [uv, astral, python, package-manager, rust, pubgrub, universal-lockfile, pep-723, virtualenv, pyenv, poetry, pipx, pip-tools, twine, agents-md]
-related: [[astral]], [[python-packaging]], [[github]], [[anthropic]], [[ruff]], [[fastapi]], [[pydantic]]
+related:
+  - "[[astral]]"
+  - "[[python-packaging]]"
+  - "[[github]]"
+  - "[[anthropic]]"
+  - "[[ruff]]"
+  - "[[fastapi]]"
+  - "[[pydantic]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-28

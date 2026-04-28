@@ -8,7 +8,14 @@ author: "CHOI (@choi.openai)"
 date_published: 2026
 date_ingested: 2026-04-15
 tags: [claude-code, cowork, 하네스, harness, 토큰경제학, 거버넌스, 가이드북, 실무운영, 한국어]
-related: [[claude-code]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]], [[mcp]], [[llm-wiki-pattern]]
+related:
+  - "[[claude-code]]"
+  - "[[cowork]]"
+  - "[[harness]]"
+  - "[[token-economy]]"
+  - "[[context-engineering]]"
+  - "[[mcp]]"
+  - "[[llm-wiki-pattern]]"
 confidence: high
 ---
 

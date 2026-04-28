@@ -3,7 +3,10 @@ title: "Turbopack"
 type: entity
 entity_type: tool
 tags: [turbopack, vercel, rust, bundler, nextjs, build-tool, 25회차]
-related: [[vercel]], [[nextjs]], [[react]]
+related:
+  - "[[vercel]]"
+  - "[[nextjs]]"
+  - "[[react]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

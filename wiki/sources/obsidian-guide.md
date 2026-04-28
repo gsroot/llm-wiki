@@ -8,7 +8,10 @@ author: "석근 (개인 정리)"
 date_published: 2026-04-07
 date_ingested: 2026-04-15
 tags: [obsidian, 지식관리, knowledge-management, 마크다운, markdown, notion, 업무생산성]
-related: [[obsidian]], [[llm-wiki-pattern]], [[obsidian-web-clipper]]
+related:
+  - "[[obsidian]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[obsidian-web-clipper]]"
 confidence: high
 ---
 

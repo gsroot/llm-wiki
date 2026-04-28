@@ -3,7 +3,13 @@ title: "PDEP (Pandas Enhancement Proposal)"
 type: concept
 category: dev-tools
 tags: [pdep, pandas, governance, decision-record, proposal, open-source, roadmap]
-related: [[pandas]], [[pandas-dev]], [[copy-on-write]], [[bdfl]], [[spec-driven-development]], [[github-spec-kit]]
+related:
+  - "[[pandas]]"
+  - "[[pandas-dev]]"
+  - "[[copy-on-write]]"
+  - "[[bdfl]]"
+  - "[[spec-driven-development]]"
+  - "[[github-spec-kit]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

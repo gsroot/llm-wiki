@@ -7,7 +7,14 @@ raw_path: raw/articles/pydantic-pydantic-ai/
 author: Pydantic Services Inc. (Samuel Colvin et al.)
 date_published: 2024
 date_ingested: 2026-04-28
-related: [[pydantic-ai]], [[pydantic]], [[langchain]], [[langgraph]], [[fastmcp]], [[agent-patterns]], [[agent-skills]]
+related:
+  - "[[pydantic-ai]]"
+  - "[[pydantic]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[fastmcp]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
 confidence: high
 tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, 18회차]
 ---

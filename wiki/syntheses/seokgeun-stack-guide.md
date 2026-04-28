@@ -18,7 +18,7 @@ related:
   - "[[openai-agents-python]]"
   - "[[flutter]]"
   - "[[nextjs]]"
-  - "[[mate-chat]]"
+  - "[[matechat]]"
 created: 2026-04-28
 updated: 2026-04-28
 tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]
@@ -28,7 +28,7 @@ tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차
 
 ## 한줄 요약
 
-15~22회차 8회차에 걸쳐 수집한 32개 OSS + 기존 8개를 **6분류 카탈로그** + **시나리오별 의사결정 트리**로 재정리. 사이드 프로젝트(개인 비서, [[mate-chat]] 등) 30분 부트스트랩과 회사 BI(컴투스플랫폼 게임 데이터) 적용 매핑 동시 제공.
+15~22회차 8회차에 걸쳐 수집한 32개 OSS + 기존 8개를 **6분류 카탈로그** + **시나리오별 의사결정 트리**로 재정리. 사이드 프로젝트(개인 비서, [[matechat]] 등) 30분 부트스트랩과 회사 BI(컴투스플랫폼 게임 데이터) 적용 매핑 동시 제공.
 
 ## 6분류 카탈로그
 
@@ -216,7 +216,7 @@ flutter pub add --dev riverpod_generator build_runner
 
 ## 미래 작업
 
-1. **[[mate-chat]] 1차 수집**: 저장소 노출 시 raw → source → entity 보강. 채팅 분석 모듈 7가지 축 별도 종합 페이지.
+1. **[[matechat]] 1차 수집**: 저장소 노출 시 raw → source → entity 보강. 채팅 분석 모듈 7가지 축 별도 종합 페이지.
 2. **6번째 회차 사이클**: Web3/블록체인 / 결제 / 인증/SSO / 검색(Elastic/Meilisearch) 별도 카테고리 검토.
 3. **AGENTS.md 13단계 모니터링**: Vercel 산하 다른 OSS (turbo, swr 등) + 다른 진영의 양대 변종 동시 채택 사례.
 4. **23회차 점검 후속**: turbopack/radix-ui/tailwindcss/poimandres/tanstack 등 5개 stub 추가 작성.

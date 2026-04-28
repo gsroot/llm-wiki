@@ -7,7 +7,17 @@ raw_path: raw/articles/seokgeun-mate-chat/
 author: "석근 (Mate Chat Team)"
 date_published: 2026-04-23
 date_ingested: 2026-04-28
-related: [[mate-chat]], [[flutter]], [[riverpod]], [[fastapi]], [[backend-fastapi-stack]], [[agent-skills]], [[shadcn-ui]], [[sentry]], [[prometheus]], [[openai-agents-python]]
+related:
+  - "[[matechat]]"
+  - "[[flutter]]"
+  - "[[riverpod]]"
+  - "[[fastapi]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[agent-skills]]"
+  - "[[shadcn-ui]]"
+  - "[[sentry]]"
+  - "[[prometheus]]"
+  - "[[openai-agents-python]]"
 confidence: high
 tags: [mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, 24회차]
 ---
@@ -231,7 +241,7 @@ CLAUDE.md "기능 구현 70% 수준" + "v1.0.0 Google Play Store 출시" → 백
 
 ## 관련 엔티티/개념
 
-- [[mate-chat]] (T3에서 stub → 정식 격상)
+- [[matechat]] (T3에서 stub → 정식 격상)
 - [[fastapi]], [[pydantic]], [[sqlalchemy]], [[alembic]], [[postgresql]], [[redis]] — 15회차 6단 적용
 - [[uv]], [[ruff]] — Astral 도구 적용
 - [[sentry]], [[prometheus]] — 21회차 관측성
@@ -262,6 +272,6 @@ AGENTS.md:
 ## 메모
 
 - **18회차 mate-chat-wiki 스냅샷과의 보완 관계**: 18회차는 `wiki/` 디렉토리(소비자 문서) 68개 md를 스냅샷으로 보관, 본 24회차는 **코드 메타·SOP**(`AGENTS.md` / `CLAUDE.md` / `.agents/skills/` / 백엔드 pyproject.toml / Flutter pubspec.yaml)를 보관. 두 측면이 합쳐져 Mate Chat 1차 자료 완성.
-- **위키에 박힐 것**: (a) [[mate-chat]] entity stub → 정식 페이지(T3), (b) [[matechat-chat-analysis-module]] 종합(T4), (c) [[shadcn-ui]] 페이지에 Flutter port 메모(후속), (d) [[agent-skills]] 페이지에 13단계 분리형 진화 항목 추가(T4 종합과 함께), (e) [[seokgeun-stack-guide]] 페이지에 "위키 발견의 종합 실증" 섹션 백링크.
+- **위키에 박힐 것**: (a) [[matechat]] entity stub → 정식 페이지(T3), (b) [[matechat-chat-analysis-module]] 종합(T4), (c) [[shadcn-ui]] 페이지에 Flutter port 메모(후속), (d) [[agent-skills]] 페이지에 13단계 분리형 진화 항목 추가(T4 종합과 함께), (e) [[seokgeun-stack-guide]] 페이지에 "위키 발견의 종합 실증" 섹션 백링크.
 - **민감 정보 처리**: pyproject.toml의 의존성·버전·CLAUDE.md의 비전·기능·DB 스키마는 위키에 반영 가능. **그러나 환경변수 키 / Sentry DSN / Firebase 프로젝트 ID / Apple Team/Key ID** 등은 raw에 그대로 보관하되 위키 페이지에서는 인용 금지 (CLAUDE.md "필수 환경 변수" 섹션의 키 이름은 인용 가능, 값은 절대 인용 금지).
 - 후속: 9개 SKILL 샘플(api-consistency / fastapi-testing / websocket-pattern / security-review / migration-safety / pre-deployment / feature-workflow / doc-management / skill-creator) 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 추가.

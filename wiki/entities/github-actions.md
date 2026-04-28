@@ -3,7 +3,10 @@ title: "GitHub Actions"
 type: entity
 entity_type: service
 tags: [github-actions, ci-cd, runner, toolkit, devops, oidc, 19회차]
-related: [[docker]], [[devops-cicd]], [[observability-and-cicd-stack]]
+related:
+  - "[[docker]]"
+  - "[[devops-cicd]]"
+  - "[[observability-and-cicd-stack]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

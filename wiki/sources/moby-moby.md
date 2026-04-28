@@ -8,7 +8,10 @@ author: "Moby Project (Docker Inc. + 커뮤니티)"
 date_published: 2026-04-28
 date_ingested: 2026-04-28
 tags: [docker, moby, container, devops, runtime, 19회차]
-related: [[docker]], [[devops-cicd]], [[observability-and-cicd-stack]]
+related:
+  - "[[docker]]"
+  - "[[devops-cicd]]"
+  - "[[observability-and-cicd-stack]]"
 confidence: high
 ---
 

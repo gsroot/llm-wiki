@@ -8,7 +8,14 @@ author: "duckdb 개발팀 (Hannes Mühleisen + Mark Raasveldt + DuckDB Labs)"
 date_published: 2018-06-26
 date_ingested: 2026-04-28
 tags: [duckdb, embedded, sql, analytical, columnar, vectorized, in-process, mit-license, c++17, cmake]
-related: [[duckdb]], [[postgresql]], [[pandas]], [[polars]], [[pyarrow]], [[parquet]], [[sqlite]]
+related:
+  - "[[duckdb]]"
+  - "[[postgresql]]"
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[pyarrow]]"
+  - "[[parquet]]"
+  - "[[sqlite]]"
 confidence: high
 ---
 

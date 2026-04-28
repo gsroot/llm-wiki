@@ -3,7 +3,14 @@ title: "LLM 위키 패턴"
 type: concept
 category: ai
 tags: [지식관리, knowledge-management, LLM, 위키, obsidian, RAG, 하네스, harness]
-related: [[wiki-bootstrap-log]], [[memex]], [[qmd]], [[mcp]], [[obsidian-web-clipper]], [[harness]], [[context-engineering]]
+related:
+  - "[[wiki-bootstrap-log]]"
+  - "[[memex]]"
+  - "[[qmd]]"
+  - "[[mcp]]"
+  - "[[obsidian-web-clipper]]"
+  - "[[harness]]"
+  - "[[context-engineering]]"
 source_count: 3
 created: 2026-04-09
 updated: 2026-04-15

@@ -3,7 +3,15 @@ title: "Claude Managed Agents"
 type: entity
 entity_type: service
 tags: [claude-managed-agents, cma, anthropic, hosted-runtime, agent, stateful-agent, sandbox, human-in-the-loop]
-related: [[anthropic]], [[claude-agent-sdk]], [[claude-code]], [[agent-patterns]], [[harness]], [[mcp]], [[context-engineering]], [[token-economy]]
+related:
+  - "[[anthropic]]"
+  - "[[claude-agent-sdk]]"
+  - "[[claude-code]]"
+  - "[[agent-patterns]]"
+  - "[[harness]]"
+  - "[[mcp]]"
+  - "[[context-engineering]]"
+  - "[[token-economy]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

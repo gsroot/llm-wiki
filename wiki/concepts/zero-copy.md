@@ -3,7 +3,11 @@ title: "Zero-copy"
 type: concept
 category: data-architecture
 tags: [zero-copy, arrow, parquet, memory-model, performance, 25회차]
-related: [[pyarrow]], [[parquet]], [[duckdb]], [[polars]]
+related:
+  - "[[pyarrow]]"
+  - "[[parquet]]"
+  - "[[duckdb]]"
+  - "[[polars]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

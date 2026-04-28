@@ -3,7 +3,10 @@ title: "Cowork"
 type: entity
 entity_type: tool
 tags: [cowork, AI, Anthropic, 지식업무, knowledge-work, 에이전트, 비개발자]
-related: [[claude-code]], [[harness]], [[llm-wiki-pattern]]
+related:
+  - "[[claude-code]]"
+  - "[[harness]]"
+  - "[[llm-wiki-pattern]]"
 source_count: 1
 created: 2026-04-15
 updated: 2026-04-15

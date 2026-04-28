@@ -8,7 +8,19 @@ author: "GitHub"
 date_published: 2026-04-24
 date_ingested: 2026-04-27
 tags: [spec-kit, github, spec-driven-development, sdd, specify-cli, slash-command, agent-skills, claude-code, copilot, gemini, codex, cursor, constitution, prd, prompt-engineering, harness, agent-patterns]
-related: [[github]], [[spec-kit]], [[spec-driven-development]], [[claude-code]], [[claude-agent-sdk]], [[agent-skills]], [[harness]], [[agent-patterns]], [[anthropic]], [[anthropics-skills]], [[anthropics-claude-cookbooks]], [[context-engineering]]
+related:
+  - "[[github]]"
+  - "[[spec-kit]]"
+  - "[[spec-driven-development]]"
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[agent-patterns]]"
+  - "[[anthropic]]"
+  - "[[anthropics-skills]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[context-engineering]]"
 confidence: high
 ---
 

@@ -3,7 +3,15 @@ title: "MCP (Model Context Protocol)"
 type: concept
 category: ai
 tags: [MCP, model-context-protocol, LLM, 도구, tool-use, 프로토콜, a2a, nlweb, agentic-protocols, claude-cookbooks, claude-agent-sdk, json-rpc-subprocess]
-related: [[llm-wiki-pattern]], [[qmd]], [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[microsoft-for-beginners]], [[context-engineering]], [[agent-patterns]]
+related:
+  - "[[llm-wiki-pattern]]"
+  - "[[qmd]]"
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[anthropic]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[context-engineering]]"
+  - "[[agent-patterns]]"
 source_count: 6
 created: 2026-04-09
 updated: 2026-04-27

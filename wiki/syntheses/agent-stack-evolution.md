@@ -3,7 +3,20 @@ title: "에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpath
 type: synthesis
 category: comparison
 tags: [agent-stack, 비교분석, microsoft, anthropic, karpathy, github, google, openai, harness, agent-skills, agent-patterns, autonomous-research-loop, 운영표준, BI, 개인비서, exec-plans, plans-md, recent-learnings, agents-md-living]
-sources: [[microsoft-generative-ai-for-beginners]], [[microsoft-ai-agents-for-beginners]], [[microsoft-ml-for-beginners]], [[microsoft-web-dev-for-beginners]], [[microsoft-data-science-for-beginners]], [[anthropics-skills]], [[anthropics-claude-cookbooks]], [[karpathy-autoresearch]], [[karpathy-nanogpt]], [[karpathy-nanochat]], [[github-spec-kit]], [[flutter-flutter]], [[openai-openai-cookbook]]
+sources:
+  - "[[microsoft-generative-ai-for-beginners]]"
+  - "[[microsoft-ai-agents-for-beginners]]"
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[microsoft-web-dev-for-beginners]]"
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[anthropics-skills]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[karpathy-autoresearch]]"
+  - "[[karpathy-nanogpt]]"
+  - "[[karpathy-nanochat]]"
+  - "[[github-spec-kit]]"
+  - "[[flutter-flutter]]"
+  - "[[openai-openai-cookbook]]"
 created: 2026-04-27
 updated: 2026-04-28
 ---

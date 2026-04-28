@@ -3,7 +3,13 @@ title: "autoresearch (karpathy/autoresearch)"
 type: entity
 entity_type: project
 tags: [autoresearch, karpathy, llm, agent, 자율연구, nanochat, val-bpb, gpu, 단일파일, MIT, nanochat-leaderboard]
-related: [[karpathy]], [[autonomous-research-loop]], [[harness]], [[claude-code]], [[nanochat]], [[nanogpt]]
+related:
+  - "[[karpathy]]"
+  - "[[autonomous-research-loop]]"
+  - "[[harness]]"
+  - "[[claude-code]]"
+  - "[[nanochat]]"
+  - "[[nanogpt]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

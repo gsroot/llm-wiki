@@ -8,7 +8,7 @@ sources:
   - "[[seokgeun-operating-profile-2026]]"
 sources_count: 3
 related:
-  - "[[mate-chat]]"
+  - "[[matechat]]"
   - "[[backend-fastapi-stack]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[duckdb]]"
@@ -26,7 +26,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 
 ## 한줄 요약
 
-[[mate-chat]] 본진(v1.0.0 출시) 외에 석근이 운영 중인 **3개 형제 분석 프로젝트**(`mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate`)와 메모리 컨텍스트(2026-04-27 S442/S443)에 박혀있는 **7가지 채팅 분석 축 + BigQuery 파이프라인** 설계 메모를 한 페이지로 통합. 회사 BI([[c2spf-analytics]]) 게임 데이터 분석에 직접 적용 가능한 패턴 정리.
+[[matechat]] 본진(v1.0.0 출시) 외에 석근이 운영 중인 **3개 형제 분석 프로젝트**(`mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate`)와 메모리 컨텍스트(2026-04-27 S442/S443)에 박혀있는 **7가지 채팅 분석 축 + BigQuery 파이프라인** 설계 메모를 한 페이지로 통합. 회사 BI([[c2spf-analytics]]) 게임 데이터 분석에 직접 적용 가능한 패턴 정리.
 
 ## 형제 프로젝트 3개 (24회차 발견)
 
@@ -116,7 +116,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 
 ## 23회차 stub 가설과의 차이
 
-23회차 [[mate-chat]] stub에서 다음과 같이 적었음:
+23회차 [[matechat]] stub에서 다음과 같이 적었음:
 
 > **추정 스택 — 분석**: (가설) BigQuery 파이프라인, ML 분석 레이어
 
@@ -141,7 +141,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 기존 통합:
 - [[matechat-project-knowledge-map]] (18회차) — Mate Chat 위키 스냅샷
 - [[seokgeun-operating-profile-2026]] (17회차) — 석근 운영 프로필 / 사업화 맥락
-- [[mate-chat]] entity (24회차 정식 격상)
+- [[matechat]] entity (24회차 정식 격상)
 
 ## 메모
 

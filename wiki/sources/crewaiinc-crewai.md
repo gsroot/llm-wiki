@@ -7,7 +7,12 @@ raw_path: raw/articles/crewaiinc-crewai/
 author: CrewAI Inc. (crewAIInc)
 date_published: 2024
 date_ingested: 2026-04-28
-related: [[crewai]], [[langchain]], [[langgraph]], [[agent-patterns]], [[oss-saas-dual]]
+related:
+  - "[[crewai]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[agent-patterns]]"
+  - "[[oss-saas-dual]]"
 confidence: high
 tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차]
 ---

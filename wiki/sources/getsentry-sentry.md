@@ -8,7 +8,10 @@ author: "Sentry (Functional Software, Inc.)"
 date_published: 2026-04-28
 date_ingested: 2026-04-28
 tags: [sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차]
-related: [[sentry]], [[observability-and-cicd-stack]], [[agent-skills]]
+related:
+  - "[[sentry]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[agent-skills]]"
 confidence: high
 ---
 

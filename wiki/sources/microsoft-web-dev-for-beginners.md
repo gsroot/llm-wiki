@@ -8,7 +8,10 @@ author: "Microsoft Cloud Advocates"
 date_published: 2020-11-10
 date_ingested: 2026-04-27
 tags: [web-dev, microsoft, microsoft-for-beginners, html, css, javascript, vanilla-js, project-based, accessibility, github-copilot]
-related: [[microsoft]], [[microsoft-for-beginners]], [[frontend-react]]
+related:
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[frontend-react]]"
 confidence: high
 ---
 

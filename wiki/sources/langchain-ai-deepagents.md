@@ -7,7 +7,12 @@ raw_path: raw/articles/langchain-ai-deepagents/
 author: LangChain Inc.
 date_published: 2025-09
 date_ingested: 2026-04-28
-related: [[langchain]], [[langgraph]], [[deepagents]], [[agent-skills]], [[agent-patterns]]
+related:
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[deepagents]]"
+  - "[[agent-skills]]"
+  - "[[agent-patterns]]"
 confidence: high
 tags: [langchain, langgraph, deepagents, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
 ---

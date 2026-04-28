@@ -8,7 +8,15 @@ author: "Anthropic"
 date_published: 2026-04
 date_ingested: 2026-04-27
 tags: [claude-cookbooks, anthropic, claude-api, claude-agent-sdk, managed-agents, agent-patterns, prompt-caching, memory, tool-use, rag, multimodal, jupyter, notebook, mcp, skills]
-related: [[claude-code]], [[agent-skills]], [[anthropics-skills]], [[mcp]], [[harness]], [[context-engineering]], [[token-economy]], [[karpathy-autoresearch]]
+related:
+  - "[[claude-code]]"
+  - "[[agent-skills]]"
+  - "[[anthropics-skills]]"
+  - "[[mcp]]"
+  - "[[harness]]"
+  - "[[context-engineering]]"
+  - "[[token-economy]]"
+  - "[[karpathy-autoresearch]]"
 confidence: high
 ---
 

@@ -3,7 +3,14 @@ title: "DuckDB"
 type: entity
 entity_type: tool
 tags: [duckdb, embedded, sql, analytical, columnar, vectorized, in-process, mit-license, c++17, olap, sqlite-for-olap, motherduck]
-related: [[postgresql]], [[pandas]], [[polars]], [[pyarrow]], [[apache-arrow]], [[parquet]], [[c2spf-analytics]]
+related:
+  - "[[postgresql]]"
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[pyarrow]]"
+  - "[[apache-arrow]]"
+  - "[[parquet]]"
+  - "[[c2spf-analytics]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

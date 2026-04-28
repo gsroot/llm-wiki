@@ -3,7 +3,20 @@ title: "Claude Code"
 type: entity
 entity_type: tool
 tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness, spec-kit]
-related: [[anthropic]], [[claude-agent-sdk]], [[mcp]], [[agent-skills]], [[agent-patterns]], [[llm-wiki-pattern]], [[obsidian-web-clipper]], [[cowork]], [[harness]], [[token-economy]], [[context-engineering]], [[spec-kit]], [[spec-driven-development]]
+related:
+  - "[[anthropic]]"
+  - "[[claude-agent-sdk]]"
+  - "[[mcp]]"
+  - "[[agent-skills]]"
+  - "[[agent-patterns]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[obsidian-web-clipper]]"
+  - "[[cowork]]"
+  - "[[harness]]"
+  - "[[token-economy]]"
+  - "[[context-engineering]]"
+  - "[[spec-kit]]"
+  - "[[spec-driven-development]]"
 source_count: 8
 created: 2026-04-09
 updated: 2026-04-27

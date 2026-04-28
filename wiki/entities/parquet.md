@@ -3,7 +3,14 @@ title: "Apache Parquet"
 type: entity
 entity_type: tool
 tags: [parquet, columnar, on-disk, file-format, dremel, thrift, compression, encoding, hadoop, asf, big-data]
-related: [[apache-arrow]], [[pyarrow]], [[duckdb]], [[polars]], [[pandas]], [[apache-foundation]], [[c2spf-analytics]]
+related:
+  - "[[apache-arrow]]"
+  - "[[pyarrow]]"
+  - "[[duckdb]]"
+  - "[[polars]]"
+  - "[[pandas]]"
+  - "[[apache-foundation]]"
+  - "[[c2spf-analytics]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

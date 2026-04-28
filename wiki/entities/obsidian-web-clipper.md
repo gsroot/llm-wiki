@@ -3,7 +3,9 @@ title: "Obsidian Web Clipper"
 type: entity
 entity_type: tool
 tags: [obsidian, 웹클리핑, web-clipper, 소스수집, 마크다운, markdown]
-related: [[obsidian]], [[llm-wiki-pattern]]
+related:
+  - "[[obsidian]]"
+  - "[[llm-wiki-pattern]]"
 source_count: 1
 created: 2026-04-09
 updated: 2026-04-09

@@ -8,7 +8,12 @@ author: "Astral"
 date_published: 2024-02-15
 date_ingested: 2026-04-27
 tags: [uv, astral, python, package-manager, rust, pypi, virtualenv, pyenv, poetry, pipx, pip-tools, pubgrub, universal-lockfile, agents-md]
-related: [[astral]], [[uv]], [[python-packaging]], [[seokgeun-kim]], [[backend-python-fastapi]]
+related:
+  - "[[astral]]"
+  - "[[uv]]"
+  - "[[python-packaging]]"
+  - "[[seokgeun-kim]]"
+  - "[[backend-python-fastapi]]"
 confidence: high
 ---
 

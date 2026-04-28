@@ -3,7 +3,12 @@ title: "NumFOCUS"
 type: entity
 entity_type: organization
 tags: [numfocus, pydata, nonprofit, open-source, governance, pandas, scikit-learn]
-related: [[pandas]], [[pandas-dev]], [[scikit-learn]], [[ml-ai]], [[github]]
+related:
+  - "[[pandas]]"
+  - "[[pandas-dev]]"
+  - "[[scikit-learn]]"
+  - "[[ml-ai]]"
+  - "[[github]]"
 source_count: 2
 created: 2026-04-27
 updated: 2026-04-27

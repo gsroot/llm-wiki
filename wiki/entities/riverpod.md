@@ -4,7 +4,7 @@ type: entity
 entity_type: tool
 related:
   - "[[flutter]]"
-  - "[[mate-chat]]"
+  - "[[matechat]]"
   - "[[seokgeun-kim]]"
   - "[[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]]"
   - "[[zustand]]"
@@ -37,7 +37,7 @@ Flutter/Dart 진영의 reactive caching + dependency injection 프레임워크. 
 ## 관련 개념
 
 - [[flutter]] — 호스트 프레임워크
-- [[mate-chat]] — Riverpod 기반 사이드 프로젝트
+- [[matechat]] — Riverpod 기반 사이드 프로젝트
 - [[seokgeun-kim]] — 사용자 (석근님 Flutter 사이드 프로젝트 핵심 라이브러리)
 - [[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]] — Flutter 진영 표준 상태관리 (22회차 신규 종합)
 - [[zustand]] — React 진영 동등 위치 라이브러리

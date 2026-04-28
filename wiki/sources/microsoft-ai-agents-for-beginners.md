@@ -8,7 +8,13 @@ author: "Microsoft Cloud Advocates"
 date_published: 2024-11-28
 date_ingested: 2026-04-27
 tags: [ai-agents, microsoft, microsoft-for-beginners, microsoft-agent-framework, azure-ai-foundry, mcp, a2a, nlweb, context-engineering, agent-memory]
-related: [[microsoft]], [[microsoft-for-beginners]], [[mcp]], [[context-engineering]], [[harness]], [[autonomous-research-loop]]
+related:
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[mcp]]"
+  - "[[context-engineering]]"
+  - "[[harness]]"
+  - "[[autonomous-research-loop]]"
 confidence: high
 ---
 

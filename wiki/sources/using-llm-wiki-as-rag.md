@@ -8,7 +8,12 @@ author: "석근 (Claude Code Opus 4.6 세션 대화 정리)"
 date_published: 2026-04-15
 date_ingested: 2026-04-15
 tags: [llm-wiki, RAG, claude-code, mcp, agent-skills, 운영가이드, 자기참조]
-related: [[llm-wiki-pattern]], [[claude-code]], [[mcp]], [[qmd]], [[slash-commands-vs-agent-skills]]
+related:
+  - "[[llm-wiki-pattern]]"
+  - "[[claude-code]]"
+  - "[[mcp]]"
+  - "[[qmd]]"
+  - "[[slash-commands-vs-agent-skills]]"
 confidence: high
 ---
 

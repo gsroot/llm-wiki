@@ -3,7 +3,15 @@ title: "Polars"
 type: entity
 entity_type: tool
 tags: [polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3, immutable, pola-rs]
-related: [[pandas]], [[duckdb]], [[pyarrow]], [[apache-arrow]], [[copy-on-write]], [[dataframe]], [[lazy-evaluation]], [[c2spf-analytics]]
+related:
+  - "[[pandas]]"
+  - "[[duckdb]]"
+  - "[[pyarrow]]"
+  - "[[apache-arrow]]"
+  - "[[copy-on-write]]"
+  - "[[dataframe]]"
+  - "[[lazy-evaluation]]"
+  - "[[c2spf-analytics]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

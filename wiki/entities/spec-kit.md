@@ -3,7 +3,15 @@ title: "Spec Kit (Specify CLI)"
 type: entity
 entity_type: tool
 tags: [spec-kit, specify-cli, github, spec-driven-development, sdd, slash-command, agent-skills, claude-code, copilot, gemini, codex, cursor, multi-agent]
-related: [[github]], [[spec-driven-development]], [[claude-code]], [[claude-agent-sdk]], [[agent-skills]], [[harness]], [[agent-patterns]], [[anthropics-skills]]
+related:
+  - "[[github]]"
+  - "[[spec-driven-development]]"
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[agent-patterns]]"
+  - "[[anthropics-skills]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

@@ -10,6 +10,81 @@ type: log
 
 ---
 
+## [2026-04-28] cleanup+ingest | codex 평가 후속 5대 작업 (26회차)
+
+- **트리거**: codex가 작성한 위키 평가 보고서 5건 권고 — (1) matechat/mate-chat canonical 정리, (2) invalid YAML frontmatter 일괄 정리, (3) 중복 basename 제거, (4) 예시/실제 wikilink 구분, (5) MateChat 사용자 검증 로그 source 추가. codex가 1번 작업을 시작하다 중단된 상태에서 이어서 5건 일괄 처리.
+
+### 산출
+
+#### (1) matechat canonical 정리
+
+- `wiki/entities/matechat.md`를 canonical로 지정 (codex가 시작한 본문 보강 마무리 — 백엔드/Flutter/관측성/agent-skills 풍부화)
+- `wiki/entities/mate-chat.md` 정식 페이지를 redirect stub(15줄)으로 축소
+- 12개 파일에서 `[[mate-chat]]` → `[[matechat]]` sed 일괄 교체 (31개 인용 모두 처리)
+- index.md mate-chat 행 = redirect 표시로 대체
+
+#### (2) invalid YAML frontmatter 일괄 정리
+
+- 자동 변환 스크립트로 `related: [[a]], [[b]]` inline → list 형식 (`related:\n  - "[[a]]"\n  - "[[b]]"`)
+- **PyYAML 기준 invalid 106개 → 0개 (100% 해소)**
+- Obsidian Properties + RAG structured metadata 파서 호환성 확보
+
+#### (3) 중복 basename 제거
+
+- `wiki/sources/tanstack-query.md` → `wiki/sources/tanstack-tanstack-query.md` git mv
+- 다른 sources의 `<org>-<repo>` 패턴과 일치
+- 인덱스·log·종합 sources 배열 인용 갱신, related 인용은 entity (`[[tanstack-query]]`) 그대로 유지
+
+#### (4) 예시/실제 wikilink 구분
+
+- `wiki/sources/pydantic-pydantic.md`: `[[kebab-case]]` → 백틱 처리
+- `wiki/sources/jlowin-fastmcp.md`: `[[code-reviewer]]` → 백틱 처리
+- `[[wikilink]]` 4곳은 이미 백틱 안 (정상)
+
+#### (5) MateChat 검증 source 추가
+
+- `raw/articles/seokgeun-matechat-validation/` 신규 6 docs 수집 (3,641줄):
+  - 19-implementation-status.md (2,084줄, 기능 구현 현황)
+  - 22-mobile-release-checklist.md (출시 체크리스트, "Do Not Ship If" 명문화)
+  - 26-global-launch-readiness.md (4단계 진단 + 로드맵)
+  - 27-competitive-analysis.md (Maum 등 경쟁 분석)
+  - 29-revenue-projection.md (702줄 매출 예측 모델 + Sensitivity)
+  - 30-product-vision.md (북극성 비전 + Persona + Moat)
+- 신규 source `wiki/sources/seokgeun-matechat-validation.md` 작성
+
+### 결정적 발견 — codex 평가 응답 매트릭스
+
+| codex 권고 | 본 회차 응답 |
+|---|---|
+| canonical 정리 | ✅ 완료 (matechat canonical, redirect stub) |
+| YAML 일괄 정리 | ✅ 100% (106 → 0) |
+| 중복 basename | ✅ 1 → 0 |
+| 예시 wikilink 구분 | ✅ 2곳 백틱 처리 |
+| 사용자 검증 로그 | ⚠️ 75% — 가설/계획/예측은 박힘, 실측 메트릭은 출시 후 30~90일 후속 |
+
+→ codex 평가의 "내용 품질이 구조 품질보다 앞서 있는 상태" 구조 결함을 RAG·Obsidian 동시 사용에 적합한 정합성 수준으로 격상.
+
+### 통계 변화
+
+| 영역 | 25회차 | 26회차 | 증가 |
+|---|---|---|---|
+| 총 페이지 | 188 | 189 | +1 (validation source) |
+| 소스 | 64 | 65 | +1 |
+| 엔티티 | 76 | 76 | 0 (mate-chat redirect 격하 — 카운트 유지) |
+| 개념 | 31 | 31 | 0 |
+| 종합 | 13 | 13 | 0 |
+| **YAML invalid** | **106** | **0** | **-106 (100% 해소)** |
+| **중복 basename** | **1** | **0** | **-1** |
+
+### 다음 단서
+
+- v1.0.0 출시 후 30/60/90일 시점 실측 KPI source 추가 (별도 `seokgeun-matechat-metrics-{YYYY-MM}.md`)
+- 형제 분석 프로젝트 raw 수집 (mate-katok-analysis-backend / -flutter / data-mate)
+- 빈약 6 페이지 보강 (com2us-platform / xpla-platform / frontend-react / c2spf-analytics / microsoft / devops-cicd)
+- 38 SKILL 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 추가 (24회차 후속)
+
+---
+
 ## [2026-04-28] lint | 잔여 깨진 링크 stub 보강 — 84% 해소 (25회차)
 
 - **트리거**: 24회차 마무리 후 사용자 지시 — "(c) 잔여 깨진 링크 19개 stub 보강 진행". 23회차 9단계 점검에서 식별된 잔여 깨진 위키링크 19개 중 의도적·예시 텍스트 4개 제외, 15개 stub 보강 + 10개 redirect 일괄 처리.
@@ -90,7 +165,7 @@ type: log
 
 ## [2026-04-28] ingest | Mate Chat 본진 1차 수집 — 38 SKILL + 위키 발견 종합 실증 (24회차)
 
-- **트리거**: 23회차 마무리 후 사용자 지시 — "(a) Mate Chat 수집 → (c) 깨진 링크 정리" 순서. 23회차에서 [[mate-chat]] stub만 등록했던 본인 핵심 사이드 프로젝트의 raw 1차 수집으로 stub → 정식 격상 + 채팅 분석 모듈 종합 분리.
+- **트리거**: 23회차 마무리 후 사용자 지시 — "(a) Mate Chat 수집 → (c) 깨진 링크 정리" 순서. 23회차에서 [[matechat]] stub만 등록했던 본인 핵심 사이드 프로젝트의 raw 1차 수집으로 stub → 정식 격상 + 채팅 분석 모듈 종합 분리.
 
 ### 수집 대상
 
@@ -162,7 +237,7 @@ CLAUDE.md 첫 섹션에 명시:
 | # | 페이지 | 위치 | 종류 |
 |---|---|---|---|
 | 1 | [[seokgeun-mate-chat]] | wiki/sources/ | 신규 source |
-| 2 | [[mate-chat]] | wiki/entities/ | stub → 정식 격상 (source_count 0→1) |
+| 2 | [[matechat]] | wiki/entities/ | stub → 정식 격상 (source_count 0→1) |
 | 3 | [[matechat-chat-analysis-module]] | wiki/syntheses/ | 신규 종합 (7축 + BigQuery 파이프라인 + 회사 BI 4축 차용) |
 
 ### 부수 발견
@@ -203,7 +278,7 @@ CLAUDE.md 첫 섹션에 명시:
 
 | stub | 참조 빈도 | 사유 |
 |---|---|---|
-| [[mate-chat]] | 4곳 | 석근 개인 사이드 프로젝트, [[flutter]]/[[riverpod]]/[[backend-fastapi-stack]]/[[flutter-nextjs-fullstack-pattern]]에서 인용 |
+| [[matechat]] | 4곳 | 석근 개인 사이드 프로젝트, [[flutter]]/[[riverpod]]/[[backend-fastapi-stack]]/[[flutter-nextjs-fullstack-pattern]]에서 인용 |
 | [[vercel]] | 11곳 | Next.js 모회사, 22회차 핵심 발견자 |
 | [[react]] | 5곳 | 22회차 신규 5개 entity 모두 호스트 진영 |
 | [[python]] | ~30곳 | 위키 절반 이상 도구가 Python 기반, dart는 있는데 python 부재의 비대칭 해소 |
@@ -252,11 +327,11 @@ CLAUDE.md 첫 섹션에 명시:
 - **23회차 = "통합·점검 마무리"**: 9단계 점검 + 6분류 카탈로그 + 의사결정 트리
 - **위키 규모**: Plan 시작 시점 93페이지 → 종료 시점 169페이지 = **1.82배 확장** (목표 ~150페이지 초과 달성)
 - **메타 발견 누적**: AGENTS.md 12단계 진화 + 10개 OSS 거버넌스 모델 + 6번째 종합 축
-- **다음 사이클 후보**: Web3/결제/SSO/검색 6번째 회차 사이클 또는 [[mate-chat]] 1차 raw 수집 후 종합 페이지 분리
+- **다음 사이클 후보**: Web3/결제/SSO/검색 6번째 회차 사이클 또는 [[matechat]] 1차 raw 수집 후 종합 페이지 분리
 
 ### 다음 단서
 
-- [[mate-chat]] stub의 raw 수집 트리거 — 저장소 노출 시 `raw/articles/seokgeun-mate-chat/` 위치
+- [[matechat]] stub의 raw 수집 트리거 — 저장소 노출 시 `raw/articles/seokgeun-mate-chat/` 위치
 - 19개 잔여 깨진 링크 후속 stub — 5~10개씩 분할
 - AGENTS.md 13단계 변종 모니터링 — Vercel turbo/swr 또는 Anthropic-Claude-Code-skills 신규 도입 추적
 - 빈약 6 페이지 보강: com2us-platform / xpla-platform / frontend-react / c2spf-analytics / microsoft / devops-cicd
@@ -303,7 +378,7 @@ CLAUDE.md 첫 섹션에 명시:
 
 ### 산출 페이지 (12개)
 
-- **소스 5개**: [[rrousselGit-riverpod]], [[vercel-next.js]], [[tanstack-query]], [[pmndrs-zustand]], [[shadcn-ui-ui]]
+- **소스 5개**: [[rrousselGit-riverpod]], [[vercel-next.js]], [[tanstack-tanstack-query]], [[pmndrs-zustand]], [[shadcn-ui-ui]]
 - **엔티티 5개**: [[riverpod]], [[nextjs]], [[tanstack-query]], [[zustand]], [[shadcn-ui]]
 - **종합 1개**: [[flutter-nextjs-fullstack-pattern]] (6번째 종합 축 — 15 backend / 16 dataframe / 17~18 agent / 19 observability / 20 frontend)
 - **갱신 2개**: [[agent-skills]] (12단계 진화 추가, source_count 15→16), [[flutter]] (Riverpod 연계 추가)

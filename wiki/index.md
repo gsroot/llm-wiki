@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (25회차 / 잔여 깨진 링크 stub 보강 — 84% 해소)
+updated: 2026-04-28 (26회차 / codex 평가 후속 5대 정리 — canonical / YAML / 중복 / 예시 / 검증 source)
 ---
 
 # 위키 인덱스
@@ -32,6 +32,8 @@ updated: 2026-04-28 (25회차 / 잔여 깨진 링크 stub 보강 — 84% 해소)
 <!-- 수집일 2026-04-28 (17회차): 석근 프로필 수집 — 개인 프로필 원문을 raw/notes/personal에 보관하고, 소스 요약 1 + 엔티티 1(MateChat) + 종합 분석 1(석근 개인 운영 프로필) 추가, seokgeun-kim 엔티티 보강. 핵심 정리: 2026년 운영 병목은 기능 개발보다 MateChat 사용자 검증이며, 육아휴직 1년은 가족 시간 확보와 사업화 검증을 동시에 다루는 기간. 민감한 신상 정보는 raw 원문에만 두고 위키에는 전략/운영/AI 협업 관점으로 요약. AI 호칭은 회사 직급 호칭이 아니라 친구처럼 자연스러운 이름 호칭 선호 -->
 <!-- 수집일 2026-04-28 (18회차): mate-chat 프로젝트 위키 스냅샷 수집 — ../mate-chat/wiki 콘텐츠 68개 md 파일을 raw/notes/mate-chat-wiki-2026-04-28/에 보관(.obsidian 제외), 소스 요약 1 + 종합 분석 1(MateChat 프로젝트 지식 지도) 추가, MateChat 엔티티 보강. 핵심 결정: 프로젝트 위키를 llm-wiki에 개별 페이지로 복제하지 않고 원천 스냅샷으로 추적. 프로젝트 위키는 구현/출시/운영 지식, llm-wiki는 석근의 사업화/가족/AI 협업 맥락의 상위 해석을 담당 -->
 
+<!-- 정리 2026-04-28 (26회차 — codex 평가 후속 5대 작업): codex가 작성한 위키 평가 보고서 권고 5건 일괄 처리. 산출: (1) **matechat / mate-chat canonical 정리** — codex 시작분 이어서 마무리. matechat을 canonical로 지정, mate-chat은 redirect stub으로 축소, 12파일 31개 [[mate-chat]] 인용을 [[matechat]]로 sed 일괄 교체. (2) **invalid YAML frontmatter 일괄 정리** — PyYAML 기준 invalid 106개 페이지를 `related: [[a]], [[b]]` inline → list 형식으로 자동 변환. **invalid 0개 달성**. (3) **중복 basename 제거** — wiki/sources/tanstack-query.md를 wiki/sources/tanstack-tanstack-query.md로 git mv하여 entity와 stem 충돌 해소. 인덱스·log·종합 페이지 sources 인용 갱신, related 인용은 entity 그대로 유지. (4) **예시/실제 wikilink 구분** — `[[kebab-case]]` (pydantic-pydantic.md), `[[code-reviewer]]` (jlowin-fastmcp.md) 백틱 처리해 Obsidian wikilink 오해석 방지. (5) **MateChat 검증 source 추가** — mate-chat/docs/ 6개 검증 docs(비전 / 구현현황 2,084줄 / 출시 체크리스트 / 출시 진단 / 경쟁 분석 / 매출 예측 702줄) raw 수집 후 [[seokgeun-matechat-validation]] 신규 source 페이지 작성. 결과: PyYAML invalid 106 → 0 (100% 해소), 중복 basename 1 → 0, 의도된 예시 wikilink 정리, sources +1 (64→65). 메타: codex 평가에서 "내용 품질이 구조 품질보다 앞서 있는 상태"로 진단된 구조 결함을 RAG·Obsidian 동시 사용에 적합한 정합성 수준으로 격상. -->
+
 <!-- 점검 2026-04-28 (25회차 — 잔여 깨진 링크 stub 보강): 23회차 마무리 점검에서 식별한 19개 잔여 깨진 위키링크 중 15개 stub 보강 + 10개 redirect 처리. 산출: (1) 신규 entity stub 7개 (turbopack / radix-ui / tailwindcss / poimandres / tanstack / sqlite / apache-foundation), (2) 신규 concept stub 8개 (lakehouse / streaming / zero-copy / append-only-log / predicate-pushdown / query-optimization / event-driven-architecture / oss-saas-dual), (3) source 5개 + entity 5개의 [[frontend-flutter-stack]] / [[frontend-react-stack]] 본문·frontmatter 인용 → [[flutter-nextjs-fullstack-pattern|진영 종합]] alias로 일괄 redirect. 결과: 깨진 링크 24개 → 4개 (84% 해소), 잔여 4개는 모두 의도적 (log.md 회고 + synthesis 자기 참조 + 단일 인용 + 예시 텍스트). 통계: 171 → 188 (+17). 메타: 본 회차는 신규 발견이 0인 순수 정합성 작업으로, 위키가 "발견 도구"에서 "탐색 가능한 그래프"로 격상. -->
 
 <!-- 수집일 2026-04-28 (24회차 — Mate Chat 본진 1차 수집): /Users/sgkim/Projects/mate-chat 코드·메타·SOP raw 수집 — 소스 1 (seokgeun-mate-chat) + 종합 1 (matechat-chat-analysis-module) 추가, mate-chat entity stub → 정식 격상 (source_count 0→1). 결정적 발견 5가지: (1) **38 SKILL.md = 단일 OSS 최대 규모** — anthropics-skills(~12) / OpenAI agents-python(9) / flutter(3)을 각각 3~12배 초과. Flutter 본진 3 SKILL → 19개 fork·확장 + 도메인 SOP 15개 + 환경 4개. 7,566줄 / 평균 200줄/SKILL. 개인 사이드 프로젝트가 메이저 OSS의 4배 SKILL 운영 SOP 보유 → agent-skills 표준 채택 깊이는 OSS 규모와 무관함을 입증. (2) **AGENTS.md ↔ CLAUDE.md 분리형 = 13단계 진화 양분 가능성** — 22회차까지의 8 OSS는 모두 수렴형(symlink/byte-for-byte/redirect), 본 회차는 분리형(AGENTS 협업자용 2.8KB + CLAUDE 에이전트용 22KB + GEMINI 벤더 특화 3.5KB) = 13단계 양극 패턴. (3) **위키 15~22회차 발견의 종합 실증** — FastAPI/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis(15) + uv/ruff(15) + Sentry/Prometheus/structlog(21) + Flutter+Riverpod(22) + OpenAI(17/18) 100% 적용. [[seokgeun-stack-guide]] 권장 스택과 1:1 일치 → 가이드 신뢰도 강한 뒷받침 + 가이드가 본인 운영 경험 사후 명문화 가능성 시사. (4) **shadcn-ui 진영 횡단 첫 사례** — 22회차 React "Open Code" 거버넌스가 Flutter용 shadcn_ui 0.40.5 패키지로 이식, Mate Chat 채택. (5) **27 gstack 슬래시 커맨드 = 자체 생산성 시스템** — /office-hours, /plan-{ceo,eng,design}-review, /ship, /canary, /qa, /benchmark, /document-release 등. 1인 사이드 프로젝트가 회사 운영 관행을 슬래시 패키지화. [[harness]] 6번째 축 PLANS.md ExecPlan의 다음 단계 진화. 부수: (a) v1.0.0 Google Play 출시 + Android 9개 언어 / 백엔드 70%+ 비대칭 운영 = 사업화 우선·기능 후속 모델. (b) 형제 프로젝트 3개 발견 (mate-katok-analysis-{backend,flutter} + data-mate) — 채팅 분석 모듈은 본진 분리 운영, 25회차 raw 수집 후속. (c) 백엔드 83 API + 20 PostgreSQL 테이블 + 113 테스트 + 132 Dart 파일 51,960줄. -->
@@ -50,9 +52,9 @@ updated: 2026-04-28 (25회차 / 잔여 깨진 링크 stub 보강 — 84% 해소)
 
 ## 통계
 
-- 총 페이지 수: 188
-- 소스 요약: 64
-- 엔티티: 76
+- 총 페이지 수: 189
+- 소스 요약: 65
+- 엔티티: 76 (mate-chat은 [[matechat]]로 redirect)
 - 개념: 31
 - 종합 분석: 13
 
@@ -122,10 +124,11 @@ updated: 2026-04-28 (25회차 / 잔여 깨진 링크 stub 보강 — 84% 해소)
 | [[getsentry-sentry]] | Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT (4-tier hierarchy + "do not add to CLAUDE.md") | article | Sentry (Functional Software, Inc.) | 2026-04-28 | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차 |
 | [[rrousselGit-riverpod]] | rrousselGit/riverpod — Flutter Favorite reactive caching + DI (Provider 후속작, Remi Rousselet) | article | Remi Rousselet | 2026-04-28 | riverpod, flutter, dart, state-management, reactive, dependency-injection, 22회차 |
 | [[vercel-next.js]] | vercel/next.js — The React Framework + AGENTS.md 12단계 진화 (`$skill` 인덱싱 + LLM PR HTML 마커) | article | Vercel | 2026-04-28 | nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, llm-pr-marker, 22회차 |
-| [[tanstack-query]] | TanStack/query — 서버 상태 관리 사실상 표준 (멀티 프레임워크 어댑터, TanStack 12 패키지) | article | Tanner Linsley + TanStack Team | 2026-04-28 | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 |
+| [[tanstack-tanstack-query]] | TanStack/query — 서버 상태 관리 사실상 표준 (멀티 프레임워크 어댑터, TanStack 12 패키지) | article | Tanner Linsley + TanStack Team | 2026-04-28 | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 |
 | [[pmndrs-zustand]] | pmndrs/zustand — React 클라이언트 상태 미니멀 챔피언 ("Bear necessities", providerless) | article | Daishi Kato + Poimandres | 2026-04-28 | zustand, react, state-management, hooks, flux, minimal, 22회차 |
 | [[shadcn-ui-ui]] | shadcn-ui/ui — Open Code 패러다임 (코드 분배 플랫폼, 10번째 OSS 거버넌스 모델, 113K stars 22회차 1위) | article | shadcn | 2026-04-28 | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차 |
 | [[seokgeun-mate-chat]] | Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 Google Play 출시, 38 SKILL + 위키 발견 종합 실증) | project | 석근 (Mate Chat Team) | 2026-04-28 | mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, 24회차 |
+| [[seokgeun-matechat-validation]] | MateChat v1.0 검증·출시 자료 (비전 / 구현 / 체크리스트 / 경쟁 / 매출 / 출시 진단 6 docs) | project | 석근 (Mate Chat Team) | 2026-04-28 | matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision, 26회차 |
 
 ## 개념 (Concepts)
 
@@ -177,7 +180,8 @@ updated: 2026-04-28 (25회차 / 잔여 깨진 링크 stub 보강 — 84% 해소)
 | [[qmd]] | qmd | tool | 검색, 마크다운, CLI, MCP | 1 | 2026-04-09 |
 | [[obsidian-web-clipper]] | Obsidian Web Clipper | tool | obsidian, 웹클리핑, 소스수집 | 1 | 2026-04-09 |
 | [[seokgeun-kim]] | 김석근 (Seokgeun Kim) | person | 석근, owner, 백엔드, 풀스택, BI, matechat | 8 | 2026-04-28 |
-| [[matechat]] | MateChat | project | matechat, 메이트챗, AI, social, fastapi, flutter, project-wiki | 5 | 2026-04-28 |
+| [[matechat]] | MateChat (canonical) — v1.0.0 Google Play 출시 + 38 SKILL + 위키 발견 종합 실증 | project | matechat, mate-chat, 메이트챗, AI, social, fastapi, flutter, riverpod, openai, websocket, iap, clover, sentry, prometheus, agent-skills, gstack, v1.0.0, project-wiki, 24회차, 26회차 | 6 | 2026-04-28 |
+| [[mate-chat]] | (redirect → [[matechat]]) | redirect | redirect, alias, matechat | 0 | 2026-04-28 |
 | [[com2us-platform]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
 | [[c2spf-analytics]] | c2spf 애널리틱스 (게임 데이터 BI) | service | analytics, c2spf, BI, 게임데이터, fastapi, react | 4 | 2026-04-24 |
 | [[xpla-platform]] | XPLA 플랫폼 (블록체인 통합 서비스) | service | xpla, blockchain, nft, smart-contract, c2spf | 3 | 2026-04-24 |
@@ -232,7 +236,6 @@ updated: 2026-04-28 (25회차 / 잔여 깨진 링크 stub 보강 — 84% 해소)
 | [[tanstack-query]] | TanStack Query | tool | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 | 1 | 2026-04-28 |
 | [[zustand]] | Zustand | tool | zustand, react, state-management, hooks, flux, minimal, providerless, 22회차 | 1 | 2026-04-28 |
 | [[shadcn-ui]] | shadcn/ui | tool | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차 | 1 | 2026-04-28 |
-| [[mate-chat]] | Mate Chat (v1.0.0 Google Play — 38 SKILL + 위키 발견 종합 실증) | project | mate-chat, side-project, personal, flutter, riverpod, fastapi, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, v1.0.0, 24회차 | 1 | 2026-04-28 |
 | [[turbopack]] | Turbopack | tool | turbopack, vercel, rust, bundler, nextjs, build-tool, 25회차 | 0 | 2026-04-28 |
 | [[radix-ui]] | Radix UI | tool | radix-ui, react, primitives, accessibility, headless, 25회차 | 0 | 2026-04-28 |
 | [[tailwindcss]] | Tailwind CSS | tool | tailwindcss, css, utility-first, atomic-css, 25회차 | 0 | 2026-04-28 |

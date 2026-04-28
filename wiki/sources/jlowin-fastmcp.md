@@ -106,7 +106,7 @@ src/fastmcp/
 
 1. **OSS 진화의 9번째 모델**: "1.0이 공식 SDK에 흡수 → 2.0으로 재시작" — 일반적인 fork/abandon이 아닌 **자발적 표준화 후 재진입**. 16회차 ASF PMC를 8번째로 추가한 후 9번째 모델.
 2. **70% 점유율의 의미**: MCP가 표준 프로토콜이지만 실제 구현 다수가 FastMCP라는 것은, **Anthropic이 정한 프로토콜 + Prefect가 정한 구현 표준**의 이중 표준. 즉 [[mcp]] 페이지는 프로토콜만으로 충분치 않고 FastMCP 사실 표준 언급 필수.
-3. **Bot review에 대한 메타-가이던스**: AGENTS.md에 "bot review 자체에 비판적이어라"라는 항목이 있다는 것은, **CodeRabbit/Codex/Claude bot이 일상화된 시대의 새 워크플로우**. [[code-reviewer]] 에이전트와 인간 리뷰의 새 균형.
+3. **Bot review에 대한 메타-가이던스**: AGENTS.md에 "bot review 자체에 비판적이어라"라는 항목이 있다는 것은, **CodeRabbit/Codex/Claude bot이 일상화된 시대의 새 워크플로우**. `code-reviewer` 에이전트와 인간 리뷰의 새 균형.
 4. **`FastMCPComponent.key`의 versioned identity**: 같은 도구의 다른 버전을 별개로 처리하는 모델은, **MCP 도구 호환성 매트릭스를 versioned하게 관리**하는 인프라 — 향후 MCP 도구 마켓플레이스의 핵심 데이터 모델.
 5. **Prefect Horizon은 FastMCP의 Polars Cloud / MotherDuck**: OSS + SaaS 듀얼 모델. 이로써 17회차에 발견한 **OSS+SaaS 듀얼 패턴 4번째 사례** ([[polars]]/[[duckdb]]/[[langchain]]+LangSmith/[[fastmcp]]+Horizon).
 

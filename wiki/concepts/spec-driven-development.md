@@ -3,7 +3,15 @@ title: "Spec-Driven Development (SDD)"
 type: concept
 category: ai
 tags: [spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology]
-related: [[spec-kit]], [[github]], [[harness]], [[agent-patterns]], [[claude-code]], [[agent-skills]], [[context-engineering]], [[autonomous-research-loop]]
+related:
+  - "[[spec-kit]]"
+  - "[[github]]"
+  - "[[harness]]"
+  - "[[agent-patterns]]"
+  - "[[claude-code]]"
+  - "[[agent-skills]]"
+  - "[[context-engineering]]"
+  - "[[autonomous-research-loop]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

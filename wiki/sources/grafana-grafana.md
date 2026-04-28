@@ -8,7 +8,11 @@ author: "Grafana Labs"
 date_published: 2026-04-28
 date_ingested: 2026-04-28
 tags: [grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차]
-related: [[grafana]], [[prometheus]], [[observability-and-cicd-stack]], [[agent-skills]]
+related:
+  - "[[grafana]]"
+  - "[[prometheus]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[agent-skills]]"
 confidence: high
 ---
 

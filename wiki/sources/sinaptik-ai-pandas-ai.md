@@ -7,7 +7,12 @@ raw_path: raw/articles/sinaptik-ai-pandas-ai/
 author: Sinaptik AI
 date_published: 2023
 date_ingested: 2026-04-28
-related: [[pandas-ai]], [[pandas]], [[polars]], [[duckdb]], [[langchain]]
+related:
+  - "[[pandas-ai]]"
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[langchain]]"
 confidence: medium
 tags: [pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차]
 ---

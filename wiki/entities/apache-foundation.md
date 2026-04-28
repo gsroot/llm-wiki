@@ -3,7 +3,10 @@ title: "Apache Software Foundation"
 type: entity
 entity_type: organization
 tags: [apache-software-foundation, asf, oss-governance, pmc, vendor-neutral, 25회차]
-related: [[kafka]], [[parquet]], [[pyarrow]]
+related:
+  - "[[kafka]]"
+  - "[[parquet]]"
+  - "[[pyarrow]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

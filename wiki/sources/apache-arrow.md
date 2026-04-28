@@ -8,7 +8,13 @@ author: "Apache Software Foundation (Wes McKinney 발기, Arrow PMC)"
 date_published: 2016-02-17
 date_ingested: 2026-04-28
 tags: [apache-arrow, pyarrow, parquet, columnar, in-memory, ipc, flatbuffers, zero-copy, language-agnostic, asf, dremel]
-related: [[pyarrow]], [[parquet]], [[pandas]], [[polars]], [[duckdb]], [[apache-foundation]]
+related:
+  - "[[pyarrow]]"
+  - "[[parquet]]"
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[apache-foundation]]"
 confidence: high
 ---
 

@@ -3,7 +3,14 @@ title: "Grafana"
 type: entity
 entity_type: tool
 tags: [grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차]
-related: [[prometheus]], [[postgresql]], [[docker]], [[sentry]], [[observability-and-cicd-stack]], [[agent-skills]], [[devops-cicd]]
+related:
+  - "[[prometheus]]"
+  - "[[postgresql]]"
+  - "[[docker]]"
+  - "[[sentry]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

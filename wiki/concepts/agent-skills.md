@@ -3,7 +3,38 @@ title: "Agent Skills (SKILL.md 패키지)"
 type: concept
 category: ai
 tags: [agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, skill-creator, harness, 패키지레이어, claude-cookbooks, custom-skills, spec-kit, codex-skills, multi-agent-adoption, library-self-hosted-skill, fastapi, vendor-neutral, dart-skills-lint, flutter, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror, pydantic-ai, prometheus, grafana, sentry, anti-fragmentation, hierarchical-agents-md, pr-pattern-agents-md, nextjs, vercel, skill-indexing, llm-pr-marker, open-code, code-distribution, 18회차, 19회차, 22회차]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[mcp]], [[harness]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[spec-kit]], [[spec-driven-development]], [[github]], [[fastapi]], [[tiangolo]], [[flutter]], [[google]], [[openai]], [[openai-cookbook]], [[openai-agents-python]], [[langchain]], [[langgraph]], [[deepagents]], [[fastmcp]], [[pydantic-ai]], [[prometheus]], [[grafana]], [[sentry]], [[observability]], [[nextjs]], [[shadcn-ui]], [[vercel]]
+related:
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[anthropic]]"
+  - "[[mcp]]"
+  - "[[harness]]"
+  - "[[context-engineering]]"
+  - "[[token-economy]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[autonomous-research-loop]]"
+  - "[[spec-kit]]"
+  - "[[spec-driven-development]]"
+  - "[[github]]"
+  - "[[fastapi]]"
+  - "[[tiangolo]]"
+  - "[[flutter]]"
+  - "[[google]]"
+  - "[[openai]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-agents-python]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[deepagents]]"
+  - "[[fastmcp]]"
+  - "[[pydantic-ai]]"
+  - "[[prometheus]]"
+  - "[[grafana]]"
+  - "[[sentry]]"
+  - "[[observability]]"
+  - "[[nextjs]]"
+  - "[[shadcn-ui]]"
+  - "[[vercel]]"
 source_count: 16
 created: 2026-04-27
 updated: 2026-04-28

@@ -3,7 +3,11 @@ title: "Streaming (데이터 스트리밍)"
 type: concept
 category: data-architecture
 tags: [streaming, kafka, polars, pubsub, real-time, 25회차]
-related: [[kafka]], [[polars]], [[duckdb]], [[redis]]
+related:
+  - "[[kafka]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[redis]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

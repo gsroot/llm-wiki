@@ -8,7 +8,12 @@ author: "원저자 미상 (역자 주석 포함)"
 date_published: 2026-04-09
 date_ingested: 2026-04-09
 tags: [지식관리, knowledge-management, LLM, 위키, wiki, RAG, obsidian]
-related: [[llm-wiki-pattern]], [[memex]], [[qmd]], [[mcp]], [[obsidian-web-clipper]]
+related:
+  - "[[llm-wiki-pattern]]"
+  - "[[memex]]"
+  - "[[qmd]]"
+  - "[[mcp]]"
+  - "[[obsidian-web-clipper]]"
 confidence: high
 ---
 

@@ -8,7 +8,13 @@ author: "Andrej Karpathy"
 date_published: 2026-03-06
 date_ingested: 2026-04-27
 tags: [autoresearch, karpathy, llm, 자율연구, agent, harness, nanochat, val-bpb, 실험루프]
-related: [[karpathy]], [[autoresearch]], [[autonomous-research-loop]], [[harness]], [[context-engineering]], [[claude-code]]
+related:
+  - "[[karpathy]]"
+  - "[[autoresearch]]"
+  - "[[autonomous-research-loop]]"
+  - "[[harness]]"
+  - "[[context-engineering]]"
+  - "[[claude-code]]"
 confidence: high
 ---
 

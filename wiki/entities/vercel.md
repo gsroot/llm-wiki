@@ -3,7 +3,12 @@ title: "Vercel"
 type: entity
 entity_type: organization
 tags: [vercel, organization, frontend, edge, nextjs, turbopack, ai-sdk, 23회차]
-related: [[nextjs]], [[turbopack]], [[react]], [[shadcn-ui]], [[agent-skills]]
+related:
+  - "[[nextjs]]"
+  - "[[turbopack]]"
+  - "[[react]]"
+  - "[[shadcn-ui]]"
+  - "[[agent-skills]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

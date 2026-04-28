@@ -3,7 +3,10 @@ title: "Append-only Log"
 type: concept
 category: data-architecture
 tags: [append-only-log, wal, kafka, log-structured, sequential-io, 25회차]
-related: [[kafka]], [[postgresql]], [[redis]]
+related:
+  - "[[kafka]]"
+  - "[[postgresql]]"
+  - "[[redis]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

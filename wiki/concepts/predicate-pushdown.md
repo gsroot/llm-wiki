@@ -3,7 +3,11 @@ title: "Predicate Pushdown"
 type: concept
 category: query-optimization
 tags: [predicate-pushdown, sql-optimization, parquet, duckdb, polars, 25회차]
-related: [[duckdb]], [[polars]], [[parquet]], [[pyarrow]]
+related:
+  - "[[duckdb]]"
+  - "[[polars]]"
+  - "[[parquet]]"
+  - "[[pyarrow]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

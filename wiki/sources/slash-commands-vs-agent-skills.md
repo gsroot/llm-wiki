@@ -8,7 +8,11 @@ author: "석근 (Claude Code 세션 조사·분석)"
 date_published: 2026-04-16
 date_ingested: 2026-04-16
 tags: [claude-code, skills, slash-command, agent-skills, 에이전트, 자동호출, 운영가이드]
-related: [[claude-code]], [[using-llm-wiki-as-rag]], [[harness]], [[context-engineering]]
+related:
+  - "[[claude-code]]"
+  - "[[using-llm-wiki-as-rag]]"
+  - "[[harness]]"
+  - "[[context-engineering]]"
 confidence: high
 ---
 

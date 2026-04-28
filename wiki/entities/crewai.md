@@ -2,7 +2,12 @@
 title: "CrewAI"
 type: entity
 entity_type: tool
-related: [[langchain]], [[langgraph]], [[pydantic-ai]], [[agent-patterns]], [[oss-saas-dual]]
+related:
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[pydantic-ai]]"
+  - "[[agent-patterns]]"
+  - "[[oss-saas-dual]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

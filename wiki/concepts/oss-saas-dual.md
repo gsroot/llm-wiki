@@ -3,7 +3,13 @@ title: "OSS+SaaS 듀얼 모델"
 type: concept
 category: oss-governance
 tags: [oss-saas-dual, governance, business-model, langchain, polars, crewai, 25회차]
-related: [[langchain]], [[langgraph]], [[polars]], [[duckdb]], [[fastmcp]], [[crewai]]
+related:
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[fastmcp]]"
+  - "[[crewai]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

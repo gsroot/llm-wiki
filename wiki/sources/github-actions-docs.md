@@ -8,7 +8,10 @@ author: "GitHub (actions/runner + actions/toolkit 메인테이너)"
 date_published: 2026-04-28
 date_ingested: 2026-04-28
 tags: [github-actions, ci-cd, runner, toolkit, devops, 19회차]
-related: [[github-actions]], [[devops-cicd]], [[observability-and-cicd-stack]]
+related:
+  - "[[github-actions]]"
+  - "[[devops-cicd]]"
+  - "[[observability-and-cicd-stack]]"
 confidence: medium
 ---
 

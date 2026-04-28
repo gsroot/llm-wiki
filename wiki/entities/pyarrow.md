@@ -3,7 +3,14 @@ title: "PyArrow"
 type: entity
 entity_type: tool
 tags: [pyarrow, apache-arrow, columnar, in-memory, zero-copy, parquet, ipc, python, pandas-backend, adbc, gandiva]
-related: [[apache-arrow]], [[parquet]], [[pandas]], [[polars]], [[duckdb]], [[copy-on-write]], [[c2spf-analytics]]
+related:
+  - "[[apache-arrow]]"
+  - "[[parquet]]"
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[copy-on-write]]"
+  - "[[c2spf-analytics]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

@@ -3,7 +3,12 @@ title: "GitHub"
 type: entity
 entity_type: organization
 tags: [github, microsoft, copilot, spec-kit, marketplace, codespaces, octoverse, devops]
-related: [[spec-kit]], [[microsoft]], [[claude-code]], [[anthropic]], [[agent-skills]]
+related:
+  - "[[spec-kit]]"
+  - "[[microsoft]]"
+  - "[[claude-code]]"
+  - "[[anthropic]]"
+  - "[[agent-skills]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

@@ -8,7 +8,14 @@ author: "Microsoft Cloud Advocates"
 date_published: 2021-03-03
 date_ingested: 2026-04-27
 tags: [data-science, microsoft, microsoft-for-beginners, pandas, sql, nosql, matplotlib, data-visualization, data-ethics, data-lifecycle, azure-ml, BI]
-related: [[microsoft]], [[microsoft-for-beginners]], [[data-pipeline-bigquery]], [[ml-ai]], [[c2spf-analytics]], [[pandas]], [[pandas-dev-pandas]]
+related:
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[ml-ai]]"
+  - "[[c2spf-analytics]]"
+  - "[[pandas]]"
+  - "[[pandas-dev-pandas]]"
 confidence: high
 ---
 

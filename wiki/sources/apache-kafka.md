@@ -8,7 +8,11 @@ author: "Apache Software Foundation + Confluent"
 date_published: 2011-01-25
 date_ingested: 2026-04-28
 tags: [kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip]
-related: [[kafka]], [[redis]], [[postgresql]], [[apache-foundation]]
+related:
+  - "[[kafka]]"
+  - "[[redis]]"
+  - "[[postgresql]]"
+  - "[[apache-foundation]]"
 confidence: high
 ---
 

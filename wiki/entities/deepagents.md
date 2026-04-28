@@ -2,7 +2,12 @@
 title: "DeepAgents"
 type: entity
 entity_type: tool
-related: [[langchain]], [[langgraph]], [[fastmcp]], [[agent-skills]], [[agent-patterns]]
+related:
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[fastmcp]]"
+  - "[[agent-skills]]"
+  - "[[agent-patterns]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

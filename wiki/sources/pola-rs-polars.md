@@ -8,7 +8,14 @@ author: "pola-rs (Ritchie Vink + 컨트리뷰터)"
 date_published: 2020-08-01
 date_ingested: 2026-04-28
 tags: [polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3]
-related: [[polars]], [[pandas]], [[duckdb]], [[pyarrow]], [[copy-on-write]], [[dataframe]], [[lazy-evaluation]]
+related:
+  - "[[polars]]"
+  - "[[pandas]]"
+  - "[[duckdb]]"
+  - "[[pyarrow]]"
+  - "[[copy-on-write]]"
+  - "[[dataframe]]"
+  - "[[lazy-evaluation]]"
 confidence: high
 ---
 

@@ -8,7 +8,14 @@ author: "The pandas development team (BDFL: Wes McKinney)"
 date_published: 2010-08-24
 date_ingested: 2026-04-27
 tags: [pandas, python, dataframe, data-analysis, time-series, bigquery, BI, numfocus, bdfl, pdep, pyarrow, copy-on-write, ecosystem, scikit-learn, modin, dask, bigframes, pandera]
-related: [[microsoft-data-science-for-beginners]], [[microsoft-ml-for-beginners]], [[data-pipeline-bigquery]], [[ml-ai]], [[c2spf-analytics]], [[anthropics-claude-cookbooks]], [[github-spec-kit]]
+related:
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[ml-ai]]"
+  - "[[c2spf-analytics]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[github-spec-kit]]"
 confidence: high
 ---
 

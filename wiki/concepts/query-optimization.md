@@ -3,7 +3,10 @@ title: "Query Optimization"
 type: concept
 category: database
 tags: [query-optimization, sql, planner, optimizer, predicate-pushdown, 25회차]
-related: [[postgresql]], [[duckdb]], [[polars]]
+related:
+  - "[[postgresql]]"
+  - "[[duckdb]]"
+  - "[[polars]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

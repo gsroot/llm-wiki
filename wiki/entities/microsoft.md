@@ -3,7 +3,11 @@ title: "Microsoft"
 type: entity
 entity_type: organization
 tags: [microsoft, microsoft-cloud-advocates, microsoft-for-beginners, openai, azure, github, devrel]
-related: [[microsoft-for-beginners]], [[claude-code]], [[mcp]], [[agent-skills]]
+related:
+  - "[[microsoft-for-beginners]]"
+  - "[[claude-code]]"
+  - "[[mcp]]"
+  - "[[agent-skills]]"
 source_count: 5
 created: 2026-04-27
 updated: 2026-04-27

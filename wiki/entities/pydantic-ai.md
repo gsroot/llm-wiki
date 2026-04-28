@@ -2,7 +2,16 @@
 title: "Pydantic AI"
 type: entity
 entity_type: tool
-related: [[pydantic]], [[langchain]], [[langgraph]], [[fastmcp]], [[openai-agents-python]], [[crewai]], [[deepagents]], [[agent-patterns]], [[agent-skills]]
+related:
+  - "[[pydantic]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[fastmcp]]"
+  - "[[openai-agents-python]]"
+  - "[[crewai]]"
+  - "[[deepagents]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

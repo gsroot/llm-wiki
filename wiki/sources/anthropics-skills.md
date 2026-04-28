@@ -8,7 +8,14 @@ author: "Anthropic"
 date_published: 2026-04
 date_ingested: 2026-04-27
 tags: [agent-skills, anthropic, skills, claude-code, marketplace, plugin, progressive-disclosure, skill-creator, mcp-builder, agentskills.io]
-related: [[claude-code]], [[agent-skills]], [[slash-commands-vs-agent-skills]], [[mcp]], [[harness]], [[context-engineering]], [[token-economy]]
+related:
+  - "[[claude-code]]"
+  - "[[agent-skills]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[mcp]]"
+  - "[[harness]]"
+  - "[[context-engineering]]"
+  - "[[token-economy]]"
 confidence: high
 ---
 

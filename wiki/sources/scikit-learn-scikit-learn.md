@@ -8,7 +8,11 @@ author: "scikit-learn community (David Cournapeau 시작 / INRIA 인큐베이션
 date_published: 2010-02-01
 date_ingested: 2026-04-27
 tags: [scikit-learn, sklearn, machine-learning, python, classic-ml, fit-predict-transform, pipeline, estimator-api, slep, governance, numfocus, probabl, agents-md, ai-disclosure]
-related: [[microsoft-ml-for-beginners]], [[ml-ai]], [[data-pipeline-bigquery]], [[com2us-platform]]
+related:
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[ml-ai]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[com2us-platform]]"
 confidence: high
 ---
 

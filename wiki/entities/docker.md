@@ -3,7 +3,13 @@ title: "Docker / Moby"
 type: entity
 entity_type: tool
 tags: [docker, moby, container, runtime, devops, 19회차]
-related: [[devops-cicd]], [[github-actions]], [[prometheus]], [[grafana]], [[sentry]], [[observability-and-cicd-stack]]
+related:
+  - "[[devops-cicd]]"
+  - "[[github-actions]]"
+  - "[[prometheus]]"
+  - "[[grafana]]"
+  - "[[sentry]]"
+  - "[[observability-and-cicd-stack]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

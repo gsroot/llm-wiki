@@ -2,7 +2,12 @@
 title: "PandasAI"
 type: entity
 entity_type: tool
-related: [[pandas]], [[polars]], [[duckdb]], [[langchain]], [[langgraph]]
+related:
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

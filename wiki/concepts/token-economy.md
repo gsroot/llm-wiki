@@ -3,7 +3,13 @@ title: "토큰 경제학 (Token Economy)"
 type: concept
 category: ai
 tags: [토큰경제학, token-economy, LLM, 비용, 컨텍스트, context, prompt-caching, claude-cookbooks, claude-agent-sdk]
-related: [[harness]], [[context-engineering]], [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]]
+related:
+  - "[[harness]]"
+  - "[[context-engineering]]"
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[anthropic]]"
+  - "[[agent-patterns]]"
 source_count: 2
 created: 2026-04-15
 updated: 2026-04-27

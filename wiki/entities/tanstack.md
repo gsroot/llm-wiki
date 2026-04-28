@@ -3,7 +3,9 @@ title: "TanStack"
 type: entity
 entity_type: organization
 tags: [tanstack, tanner-linsley, react, query, table, router, form, 25회차]
-related: [[tanstack-query]], [[react]]
+related:
+  - "[[tanstack-query]]"
+  - "[[react]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

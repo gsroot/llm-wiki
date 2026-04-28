@@ -3,7 +3,14 @@ title: "Anthropic"
 type: entity
 entity_type: organization
 tags: [anthropic, AI, AI연구소, claude, claude-code, agent-skills, mcp, building-effective-agents]
-related: [[claude-code]], [[claude-agent-sdk]], [[agent-skills]], [[mcp]], [[harness]], [[karpathy]], [[microsoft]]
+related:
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[agent-skills]]"
+  - "[[mcp]]"
+  - "[[harness]]"
+  - "[[karpathy]]"
+  - "[[microsoft]]"
 source_count: 4
 created: 2026-04-27
 updated: 2026-04-27

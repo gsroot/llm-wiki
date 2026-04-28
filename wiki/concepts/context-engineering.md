@@ -3,7 +3,17 @@ title: "컨텍스트 엔지니어링 (Context Engineering)"
 type: concept
 category: ai
 tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM, 자율연구, agent-memory, scratchpad, microsoft-for-beginners, claude-cookbooks, memory-cookbook, automatic-context-compaction, session-memory-compaction]
-related: [[harness]], [[token-economy]], [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[mcp]], [[microsoft-ai-agents-for-beginners]], [[anthropics-claude-cookbooks]]
+related:
+  - "[[harness]]"
+  - "[[token-economy]]"
+  - "[[claude-code]]"
+  - "[[claude-agent-sdk]]"
+  - "[[anthropic]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[autonomous-research-loop]]"
+  - "[[mcp]]"
+  - "[[microsoft-ai-agents-for-beginners]]"
+  - "[[anthropics-claude-cookbooks]]"
 source_count: 4
 created: 2026-04-15
 updated: 2026-04-27

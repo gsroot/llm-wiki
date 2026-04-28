@@ -3,7 +3,12 @@ title: "React"
 type: entity
 entity_type: tool
 tags: [react, javascript, ui-library, meta, frontend, hooks, jsx, 23회차]
-related: [[nextjs]], [[zustand]], [[tanstack-query]], [[shadcn-ui]], [[radix-ui]]
+related:
+  - "[[nextjs]]"
+  - "[[zustand]]"
+  - "[[tanstack-query]]"
+  - "[[shadcn-ui]]"
+  - "[[radix-ui]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

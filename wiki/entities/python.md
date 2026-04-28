@@ -3,7 +3,17 @@ title: "Python"
 type: entity
 entity_type: language
 tags: [python, language, dynamic-typing, gil, asyncio, 23회차]
-related: [[fastapi]], [[uv]], [[pydantic]], [[sqlalchemy]], [[pandas]], [[polars]], [[duckdb]], [[scikit-learn]], [[langchain]], [[openai-agents-python]]
+related:
+  - "[[fastapi]]"
+  - "[[uv]]"
+  - "[[pydantic]]"
+  - "[[sqlalchemy]]"
+  - "[[pandas]]"
+  - "[[polars]]"
+  - "[[duckdb]]"
+  - "[[scikit-learn]]"
+  - "[[langchain]]"
+  - "[[openai-agents-python]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28

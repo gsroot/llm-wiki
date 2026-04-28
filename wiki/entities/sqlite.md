@@ -3,7 +3,10 @@ title: "SQLite"
 type: entity
 entity_type: tool
 tags: [sqlite, embedded-database, sql, c, single-file, file-format, 25회차]
-related: [[postgresql]], [[duckdb]], [[redis]]
+related:
+  - "[[postgresql]]"
+  - "[[duckdb]]"
+  - "[[redis]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28
@@ -49,4 +52,4 @@ updated: 2026-04-28
 ## 메모
 
 - 25회차 stub 사유: 23회차 점검에서 `[[sqlite]]` 깨진 링크 발견. [[pandas-vs-polars-vs-duckdb]] 비교 페이지의 사실상 표준 대조군.
-- 본 위키에서 SQLite 본격 페이지가 부재하지만, [[duckdb]] / [[mate-chat]] (Flutter Hive 사용) / [[backend-fastapi-stack]] 운영 시 PostgreSQL 부재 환경의 대안으로 자주 호출됨.
+- 본 위키에서 SQLite 본격 페이지가 부재하지만, [[duckdb]] / [[matechat]] (Flutter Hive 사용) / [[backend-fastapi-stack]] 운영 시 PostgreSQL 부재 환경의 대안으로 자주 호출됨.

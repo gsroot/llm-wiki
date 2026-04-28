@@ -3,7 +3,13 @@ title: "Claude Agent SDK"
 type: entity
 entity_type: tool
 tags: [claude-agent-sdk, anthropic, sdk, agent, claude-code, mcp, hooks, plan-mode, output-styles, subagent]
-related: [[claude-code]], [[anthropic]], [[anthropics-claude-cookbooks]], [[agent-skills]], [[mcp]], [[harness]]
+related:
+  - "[[claude-code]]"
+  - "[[anthropic]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[agent-skills]]"
+  - "[[mcp]]"
+  - "[[harness]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

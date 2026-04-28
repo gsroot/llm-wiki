@@ -8,7 +8,18 @@ author: "Google (Flutter Team)"
 date_published: 2015-03-06
 date_ingested: 2026-04-27
 tags: [flutter, dart, google, multiplatform, ui-toolkit, mobile, web, desktop, skia, impeller, hot-reload, agent-skills, agentskills.io, vendor-neutral, progressive-disclosure, token-budget, agent-artifacts, claude-code, gemini, copilot]
-related: [[flutter]], [[dart]], [[google]], [[agent-skills]], [[harness]], [[anthropics-skills]], [[github-spec-kit]], [[claude-code]], [[token-economy]], [[context-engineering]], [[github]]
+related:
+  - "[[flutter]]"
+  - "[[dart]]"
+  - "[[google]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[anthropics-skills]]"
+  - "[[github-spec-kit]]"
+  - "[[claude-code]]"
+  - "[[token-economy]]"
+  - "[[context-engineering]]"
+  - "[[github]]"
 confidence: high
 ---
 

@@ -3,7 +3,9 @@ title: "Poimandres"
 type: entity
 entity_type: organization
 tags: [poimandres, collective, react, three-fiber, zustand, jotai, valtio, 25회차]
-related: [[zustand]], [[react]]
+related:
+  - "[[zustand]]"
+  - "[[react]]"
 source_count: 0
 created: 2026-04-28
 updated: 2026-04-28
