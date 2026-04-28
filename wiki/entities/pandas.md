@@ -90,6 +90,20 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 - [[pdep]]: pandas의 거버넌스 산출물 시스템 (1~14번 채택, BDFL 단계 → PDEP 단계로 거버넌스 진화)
 - [[copy-on-write]]: PDEP-7 메모리 모델 변혁
 - [[dataframe]]: 데이터 분석의 보편적 추상
+- [[lazy-evaluation]]: pandas는 본질적 eager. Polars/DuckDB의 lazy 모델과 대조 — PDEP-10 이후 부분 lazy 진화 가능성
+
+## 자매 도구 비교 (16회차 추가)
+
+| 축 | pandas | [[polars]] | [[duckdb]] |
+|----|--------|------------|------------|
+| 정체성 | 라이브러리 | 쿼리 엔진 | 임베디드 OLAP DB |
+| 메모리 모델 | NumPy + CoW (PyArrow 점진) | Apache Arrow immutable | Vectorized columnar |
+| 평가 모델 | Eager | Lazy + Eager + Streaming | SQL 본질적 lazy |
+| Import 시간 | 520ms | 70ms | (인프로세스, 즉시) |
+| API | 메소드 + indexing | Expression DSL | SQL |
+| Lock-in | NumPy, 풍부한 통합 | Apache Arrow | Apache Arrow + SQL 표준 |
+
+→ 셋은 경쟁이 아니라 **워크플로우 단계별 도구**. 자세한 비교는 [[dataframe-ecosystem-evolution]] / [[pandas-vs-polars-vs-duckdb]] 참조.
 
 ## 출처
 

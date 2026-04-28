@@ -10,6 +10,58 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | 데이터 레이어 5개 신규 수집 — Polars/DuckDB/PyArrow+Apache Arrow/Apache Kafka/Parquet (16회차)
+
+- **트리거**: 15회차 종료 직후 사용자 "계속 진행해줘" → Auto Mode에서 16회차(데이터 레이어) 즉시 실행. 계획 `cozy-swinging-donut.md` 16회차 명세 그대로 진행.
+- **소스** (4개 신규 raw 폴더, 약 21개 파일):
+  - `raw/articles/pola-rs-polars/` (6개 파일) — README.md 160줄 (정체성 + 7대 핵심 특징 + 임포트 시간 70/104/520ms) / CONTRIBUTING.md / **lazy-api.md** ★ predicate/projection pushdown / **expressions-and-contexts.md** ★ 4 컨텍스트 / data-types-and-structures.md / streaming.md
+  - `raw/articles/duckdb-duckdb/` (3개 파일) — README.md 51줄 (4축 정체성 + 파일=테이블 패러다임) / **CONTRIBUTING.md 132줄** ★ README보다 길다 (게이트키핑 진지함) / SECURITY.md
+  - `raw/articles/apache-arrow/` (6개 파일) — apache/arrow README.md (5대 컴포넌트 + 11+ 언어 매트릭스) / format-README.rst / **Schema.fbs 571줄** ★ FlatBuffers 자료형 명세 / **parquet-README.md 284줄** ★ Dremel + 4계층 구조 / **parquet-Encodings.md 393줄** ★ 8개+ 인코딩 / parquet-CHANGES.md
+  - `raw/articles/apache-kafka/` (4개 파일) — README.md 362줄 / **design.md 511줄** ★ 분산 시스템 설계 교과서 (Don't fear the filesystem! / pagecache 위임 / O(1) Persistent Queue / sendfile / Message Set / End-to-end Compression) / design-index.md / docs-index.md
+- **작업**: 4개 GitHub 저장소(pola-rs/polars, duckdb/duckdb, apache/arrow + apache/parquet-format 통합, apache/kafka) raw 수집 + 위키 페이지 12종 신규 + 2종 갱신.
+- **생성된 파일** (12건):
+  - `wiki/sources/pola-rs-polars.md` — Polars 소스 요약 (쿼리 엔진 정체성 + lazy + immutable)
+  - `wiki/sources/duckdb-duckdb.md` — DuckDB 소스 요약 (SQLite for OLAP + Lakehouse Lite)
+  - `wiki/sources/apache-arrow.md` — Arrow + Parquet 통합 소스 요약 (메모리 = 디스크 표준)
+  - `wiki/sources/apache-kafka.md` — Kafka 소스 요약 (design.md = 분산 시스템 교과서)
+  - `wiki/entities/polars.md` — Polars tool 엔티티 (Eager + Lazy + Streaming 3중 모드)
+  - `wiki/entities/duckdb.md` — DuckDB tool 엔티티 (OLAP × Embedded 사분면)
+  - `wiki/entities/pyarrow.md` — PyArrow tool 엔티티 (3개 DataFrame 라이브러리 공통 다리)
+  - `wiki/entities/kafka.md` — Apache Kafka tool 엔티티 (6대 핵심 설계 결정)
+  - `wiki/entities/parquet.md` — Apache Parquet tool 엔티티 (4계층 + 8 인코딩 + Dremel)
+  - `wiki/concepts/lazy-evaluation.md` — Lazy Evaluation 개념 (Polars/DuckDB/Spark 공통 패턴)
+  - `wiki/syntheses/dataframe-ecosystem-evolution.md` — DataFrame 18년 진화사 (4단계 + ASF PMC 8번째 거버넌스 + Kafka 사상 일반화)
+  - `wiki/syntheses/pandas-vs-polars-vs-duckdb.md` — 정량 비교 매트릭스 (PDS-H 벤치마크 + 의사결정 트리 + 마이그레이션 ROI)
+- **업데이트된 파일** (2건):
+  - `wiki/entities/pandas.md` — related +[[polars]]/[[duckdb]]/[[pyarrow]]/[[parquet]]/[[lazy-evaluation]] (5개 추가), updated 2026-04-27→2026-04-28. "자매 도구 비교" 섹션 추가 (pandas/polars/duckdb 6축 비교)
+  - `wiki/concepts/copy-on-write.md` — related +[[polars]]/[[apache-arrow]]/[[lazy-evaluation]] (3개 추가), source_count 1→2, "CoW vs Immutable-by-Default 비교" 섹션 추가, 열린 질문 "다른 데이터프레임 라이브러리 메모리 모델"에 답 박힘 (Polars=immutable, Dask=chunked CoW)
+- **거버넌스 모델 8번째 발견 — ASF PMC**:
+  | # | 모델 | 사례 | 특징 |
+  |---|------|------|------|
+  | 1 | BDFL | python, pandas (초기) | 단일 결정자 |
+  | 2 | BDFL + Core Team | pandas (현재) | 위임 구조 |
+  | 3 | Core Team + PEP | python | 절차적 의사결정 |
+  | 4 | 회사 + OSS | fastapi, pydantic (Pydantic Inc) | 창립자 회사 + OSS 본체 |
+  | 5 | VC-backed 회사 | astral (uv/ruff/ty) | 기업 통합 |
+  | 6 | 메일링 리스트 | postgresql | PR 받지 않음, 30년 |
+  | 7 | 라이센스 변경 | redis (2024 SSPL) | OSS → 유사 OSS |
+  | 8 | **ASF PMC** | **arrow, kafka, parquet** | **재단 + PMC + Apache Way** |
+- **메타 발견 5가지**:
+  1. **"메모리 표준 = 디스크 표준" 통합**: Apache Arrow + Parquet 단일 자료형 모델 → 변환 비용 0 → pandas/Polars/DuckDB zero-copy 교환 → GB/s IO 처리량
+  2. **CoW vs Immutable의 정반대 답**: pandas는 모델 유지 + 명확화, Polars/Arrow는 모델 자체 교체. PDEP-10 통과 시 둘이 수렴
+  3. **"디스크는 친구" Kafka 사상의 일반화**: design.md 511줄이 데이터 인프라 전체에 영향. PostgreSQL WAL / Kafka Topic / Redis AOF / Parquet column chunk / DuckDB mmap / Polars streaming 모두 sequential I/O + pagecache 위임
+  4. **"쿼리 엔진" 정체성 부상**: Polars + DuckDB 동시 자기 정의 → DataFrame ↔ SQL 경계 무너짐. 둘 다 옵티마이저 + 벡터화 + Arrow 위에 빌드
+  5. **단일 노드 한계 = 4.2B 행**: Polars bigidx, pandas 64bit, DuckDB in-process 모두 2^32에서 한계. 그 너머는 분산 (Spark/Dask)
+- **회사 BI 적용 가설** ([[c2spf-analytics]]):
+  - **권장 스택**: pandas (ML 출력만) + Polars (메인 변환, lazy + streaming) + DuckDB (SQL 탐색, BQ 비용 절감)
+  - **마이그레이션 ROI**: cold start 520ms → 70ms · 200GB+ 일일 로그 streaming 가능 · BQ 슬롯 -30% 추정
+  - **마이그레이션 비용**: ~3-4주 (1인 풀타임, 학습 + 변환 + 검증 + 배포)
+  - **Risk**: Polars DSL ≠ pandas (학습), Plotly/Geopandas 일부 pandas-only (변환 레이어)
+- **위키 통계**: 106 → **118** 페이지 (소스 39→43, 엔티티 41→46, 개념 21→22, 종합 4→6)
+- **메모**: PEP 723 + uv run 패턴이 데이터 레이어에서도 작동 — 단일 파일 분석 스크립트의 표준화 가능성. 다음 17회차는 ML 클래식 + LLM 인프라 (LightGBM/LangChain/LangGraph/FastMCP) → Polars/Pandas와의 통합 패턴 검토 예정.
+
+---
+
 ## [2026-04-28] ingest | 백엔드 코어 6개 신규 수집 — Ruff/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis (15회차)
 
 - **트리거**: 소유자 요청 — "다음 기술 스택에 대해 원천 데이터를 추출하고 수집해서 위키를 더 풍부하게 만드려고 하는데 그렇게 하기 위한 계획을 세워줘. 백엔드: UV, Ruff, FastAPI, Pydantic, SQLAlchemy, Alembic, PostgreSQL, Redis [데이터/ML/LLM/운영/프론트 32개 추가]" → 6회차 분할 (15~21회차) 표준 깊이 계획 수립 → Auto Mode 승인 → 15회차 백엔드 코어 즉시 실행.

@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (15회차)
+updated: 2026-04-28 (16회차)
 ---
 
 # 위키 인덱스
@@ -28,6 +28,7 @@ updated: 2026-04-28 (15회차)
 <!-- 수집일 2026-04-28 (13회차): openai/openai-cookbook 수집 — 소스 1 + 엔티티 2 (openai 조직 + openai-cookbook 프로젝트) 추가, agent-skills/harness/ml-ai/agent-patterns/agent-stack-evolution 5개 페이지 보강. ★73K 4년차 cookbook (289 콘텐츠 / 115명 저자 / MIT). 결정적 발견 2가지: (1) **AGENTS.md "Recent Learnings" 섹션 — 살아있는 운영 노트 패턴** = AGENTS.md 외부 채택 7단계 진화의 7번째이자 첫 살아있는 사례 (1~6번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter는 모두 정적 가이드, 7번째 OpenAI에서 처음으로 운영 중 발견을 즉시 반영). (2) **PLANS.md / ExecPlans = 6번째 거버넌스 축** — 단일 LLM 작업 7시간+를 가능케 하는 자기완결 living document. NON-NEGOTIABLE 5 요건(자기완결 / 살아있는 / 초보자 구현 / 관찰 가능한 동작 / 본문 용어 정의). [[harness]] 5축에 6번째로 추가, [[agent-stack-evolution]] 5축 → 6축 확장. 부수: registry.yaml 3,180줄 + authors.yaml 583줄 + check_notebooks.py 콘텐츠 거버넌스 자동화는 본 위키 index.md 자동 생성 PoC 후속 후보. 회사 BI 적용 가설: c2spf-analytics 분기/연간 대형 분석에 PLANS.md ExecPlan 패턴 적용 시 7시간+ 단일 작업 가능 -->
 
 <!-- 수집일 2026-04-28 (15회차): 백엔드 코어 6개 신규 수집 (Ruff/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis) — 소스 6 + 엔티티 6 + 종합 분석 1 (backend-fastapi-stack) 추가, fastapi/uv/astral 3개 엔티티 갱신. 결정적 발견 4가지: (1) **agent-skills 외부 채택 8단계 → 9번째 "회사 차원 표준화"** — astral-sh/ruff가 같은 회사 [[uv]] (10회차)와 동일한 `CLAUDE.md = @AGENTS.md` 1줄 import 패턴 채택 → 진정한 새 패턴은 "조직별 채택" → "조직 내 표준화" 진화. (2) **PEP 593 Annotated = 단일 타입 체인 사실상 표준** — Pydantic V2 / SQLAlchemy 2.0 / FastAPI DI가 같은 표현으로 통합 (Type-First Python Backend). (3) **PostgreSQL = 메일링 리스트 거버넌스 첫 사례 (6번째 모델)** — Pull Request 받지 않음, pgsql-hackers 메일링 + GitHub 미러 30년 보수파. (4) **Redis = MANIFESTO 철학 명문화 첫 사례 (7번째 모델)** — 10항목 ("DSL for Abstract Data Types" / "Memory storage is #1" / "We optimize for joy") + 2024 라이선스 변경 → Valkey fork. 단일 백엔드 도메인에 7개 거버넌스 모델 공존이 [[backend-fastapi-stack]]에 박힘 -->
+<!-- 수집일 2026-04-28 (16회차): 데이터 레이어 5개 신규 수집 (Polars/DuckDB/PyArrow+Apache Arrow/Apache Kafka/Parquet) — 소스 4 + 엔티티 5 + 개념 1 (lazy-evaluation) + 종합 2 (dataframe-ecosystem-evolution + pandas-vs-polars-vs-duckdb) 추가, pandas/copy-on-write 2개 페이지 갱신. 결정적 발견 5가지: (1) **"메모리 표준 = 디스크 표준" 통합** — Apache Arrow + Parquet의 단일 자료형 모델이 데이터 인프라 역사상 가장 성공적인 표준화. 변환 비용 0 보장 → pandas/Polars/DuckDB가 zero-copy 교환. (2) **8번째 거버넌스 모델 = ASF PMC** — Apache Software Foundation의 Project Management Committee 모델. 15회차의 7개 + ASF PMC = 8개 OSS 거버넌스 모델 공존 (Apache 산하는 단일 회사 흡수 불가 구조). (3) **CoW vs Immutable의 정반대 답** — pandas의 [[copy-on-write]]는 모델 유지 + 명확화, Polars/Arrow의 immutable-by-default는 모델 자체 교체. PDEP-10 통과 시 둘이 수렴. (4) **"디스크는 친구" Kafka 사상의 일반화** — design.md 511줄이 데이터 인프라 전체에 영향: PostgreSQL WAL / Kafka Topic / Redis AOF / Parquet column chunk / DuckDB mmap / Polars streaming 모두 sequential I/O + pagecache 위임. (5) **"쿼리 엔진" 정체성 부상** — Polars + DuckDB가 동시에 자기 정의 → DataFrame ↔ SQL 경계 무너짐. 회사 BI 적용: pandas → Polars(메인) + DuckDB(SQL 탐색) + pandas(ML 출력만) 3중 스택 권장 -->
 <!-- 수집일 2026-04-28 (14회차): openai/openai-agents-python 수집 — 소스 1 + 엔티티 1 (openai-agents-python tool) 추가, openai 엔티티 + agent-skills/harness/agent-patterns/ml-ai 4개 개념 + agent-stack-evolution 종합 분석 보강 (총 6개 페이지 갱신). ★25K 1년차 OpenAI 공식 멀티 에이전트 Python SDK (v0.14.6 / MIT / 1년 14 메이저 버전). 13회차 cookbook과 한 쌍 — cookbook이 메소드론 정의 단(가이드)이라면 본 SDK는 같은 회사가 자기 핵심 SDK 본체에 동일 패턴을 풀스택 적용한 **거버넌스 자기 채택 (self-adoption)** 직접 증거. 결정적 발견 3가지: (1) **AGENTS.md = CLAUDE.md byte-for-byte 동기화 패턴 (12,900B 양쪽 미러링)** = agent-skills 외부 채택 **8단계 진화의 8번째 사례** (1~7번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter/openai-cookbook의 끝, 가장 단순한 vendor-neutral 적응). (2) **`.agents/skills/` 9개 운영 SOP 스킬 + 스킬 간 호출 (skill chaining)** — `$skill-name` 명령형 호출 + 트리거/스킵 조건 명시. flutter 3개의 3배 규모, **첫 "9개 본격 운영 SOP" 사례**. (3) **examples/agent_patterns/ 16개 .py = Anthropic 5패턴 + OpenAI 6확장 (Guardrails 3종 / Human-in-the-loop 3종 / Forced tool use) = 11종 reference 구현** — [[agent-patterns]]에 OpenAI 확장 6패턴 명시 추가. 부수: PLANS.md 5,485B (cookbook 16KB 응축) + .codex/hooks.json Stop 훅 자동화 + Public API Positional Compatibility 정책 (dataclass 필드 순서 호환성 계약 격상) + uv+ruff+pyright 도구 스택 + llms.txt 표준 채택. 회사 BI 적용 가설 강화: 9개 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑, 13회차 PLANS.md 가설은 self-adoption 증거로 신뢰도 상승 -->
 
 
@@ -36,11 +37,11 @@ updated: 2026-04-28 (15회차)
 
 ## 통계
 
-- 총 페이지 수: 106
-- 소스 요약: 39
-- 엔티티: 41
-- 개념: 21
-- 종합 분석: 4
+- 총 페이지 수: 118
+- 소스 요약: 43
+- 엔티티: 46
+- 개념: 22
+- 종합 분석: 6
 
 ---
 
@@ -87,6 +88,10 @@ updated: 2026-04-28 (15회차)
 | [[sqlalchemy-alembic]] | sqlalchemy/alembic — SQLAlchemy 진영 데이터베이스 마이그레이션 도구 (autogenerate · transactional DDL · branch merging · offline SQL) | article | Mike Bayer (zzzeek) | 2026-04-28 | alembic, migration, sqlalchemy, python, ddl, transactional-ddl, autogenerate, branch-merging, sql-script-output, batch-migration, offline-migration, cookbook |
 | [[postgres-postgres]] | postgres/postgres — PostgreSQL 본체 GitHub 미러 (★20.7K, ML+미러 거버넌스, 30년 보수파) | article | PostgreSQL Global Development Group (PGDG) | 2026-04-28 | postgresql, postgres, sql, rdbms, oss, mailing-list-governance, github-mirror, c-language, object-relational, mvcc, jsonb, replication, pgdg, pgvector, timescaledb |
 | [[redis-redis]] | redis/redis — In-Memory Data Structure Server (★74K, 17년차 MANIFESTO 10항목 철학 + 단일 스레드 + Vector Search 전환) | article | Salvatore Sanfilippo (antirez 원저자) + Redis Labs | 2026-04-28 | redis, cache, in-memory-database, key-value-store, data-structure-server, message-broker, vector-databases, antirez, single-thread, manifesto, valkey, license-change-2024 |
+| [[pola-rs-polars]] | pola-rs/polars — Rust 분석 쿼리 엔진 (Lazy + Eager + Streaming 3중 모델 + Apache Arrow immutable) | article | pola-rs (Ritchie Vink + 컨트리뷰터) | 2026-04-28 | polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3 |
+| [[duckdb-duckdb]] | duckdb/duckdb — 임베디드 OLAP DB ("분석용 SQLite") + 풍부한 SQL 방언 + 파일=테이블 패러다임 | article | duckdb 개발팀 (Hannes Mühleisen + Mark Raasveldt + DuckDB Labs) | 2026-04-28 | duckdb, embedded, sql, analytical, columnar, vectorized, in-process, mit-license, c++17, cmake |
+| [[apache-arrow]] | apache/arrow + apache/parquet-format — 인메모리/온디스크 컬럼 표준 통합 (Wes McKinney 발기, 11+ 언어, ASF PMC) | article | Apache Software Foundation (Wes McKinney 발기, Arrow PMC) | 2026-04-28 | apache-arrow, pyarrow, parquet, columnar, in-memory, ipc, flatbuffers, zero-copy, language-agnostic, asf, dremel |
+| [[apache-kafka]] | apache/kafka — 분산 이벤트 스트리밍 플랫폼 ("Don't fear the filesystem!" + zero-copy + KRaft) | article | Apache Software Foundation + Confluent | 2026-04-28 | kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip |
 
 ## 개념 (Concepts)
 
@@ -113,6 +118,7 @@ updated: 2026-04-28 (15회차)
 | [[prompt-cache]] | Prompt Caching | prompt-cache, claude, anthropic, llm-api, 토큰경제, latency, optimization | 1 | 2026-04-27 |
 | [[pdep]] | PDEP (Pandas Enhancement Proposal) | pdep, pandas, governance, decision-record, proposal, open-source, roadmap | 1 | 2026-04-27 |
 | [[bdfl]] | BDFL (Benevolent Dictator For Life) | bdfl, governance, open-source, decision-making, pandas, python | 1 | 2026-04-27 |
+| [[lazy-evaluation]] | Lazy Evaluation (지연 평가) | lazy-evaluation, query-optimization, predicate-pushdown, projection-pushdown, dataframe, sql, polars, duckdb, spark | 2 | 2026-04-28 |
 
 ## 엔티티 (Entities)
 
@@ -159,6 +165,11 @@ updated: 2026-04-28 (15회차)
 | [[alembic]] | Alembic (sqlalchemy/alembic) | tool | alembic, migration, sqlalchemy, python, ddl, transactional-ddl, autogenerate, branch-merging, sql-script-output, batch-migration, sqlite-batch, mike-bayer, postgresql, offline-migration, cookbook | 1 | 2026-04-28 |
 | [[postgresql]] | PostgreSQL | tool | postgresql, postgres, sql, rdbms, oss, mailing-list-governance, github-mirror, sqlalchemy, c-language, object-relational, mvcc, fdw, jsonb, replication, pgdg, pgvector, timescaledb, postgis, extension-system, bsd-license, no-pull-requests, stonebraker | 1 | 2026-04-28 |
 | [[redis]] | Redis | tool | redis, cache, in-memory-database, key-value-store, data-structure-server, message-broker, vector-databases, vector-search, json, time-series, antirez, single-thread, manifesto, valkey, license-change-2024, rdb, aof, redis-cluster | 1 | 2026-04-28 |
+| [[polars]] | Polars | tool | polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3, immutable, pola-rs | 1 | 2026-04-28 |
+| [[duckdb]] | DuckDB | tool | duckdb, embedded, sql, analytical, columnar, vectorized, in-process, mit-license, c++17, olap, sqlite-for-olap, motherduck | 1 | 2026-04-28 |
+| [[pyarrow]] | PyArrow | tool | pyarrow, apache-arrow, columnar, in-memory, zero-copy, parquet, ipc, python, pandas-backend, adbc, gandiva | 1 | 2026-04-28 |
+| [[kafka]] | Apache Kafka | tool | kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip, confluent | 1 | 2026-04-28 |
+| [[parquet]] | Apache Parquet | tool | parquet, columnar, on-disk, file-format, dremel, thrift, compression, encoding, hadoop, asf, big-data | 1 | 2026-04-28 |
 
 ## 종합 분석 (Syntheses)
 
@@ -168,3 +179,5 @@ updated: 2026-04-28 (15회차)
 | [[career-timeline-seokgeun]] | 석근 커리어 타임라인 (2016-2026) | career, timeline, evolution | 2026-04-24 |
 | [[agent-stack-evolution]] | 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, github, google, openai, harness, BI, 개인비서, exec-plans, recent-learnings, self-adoption, 9-sop-skills, agents-md-claude-md-mirror | 2026-04-28 |
 | [[backend-fastapi-stack]] | Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존) | backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions | 2026-04-28 |
+| [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution, 16회차 | 2026-04-28 |
+| [[pandas-vs-polars-vs-duckdb]] | Pandas vs Polars vs DuckDB — 정량 비교 매트릭스 (의사결정 트리 + 마이그레이션 ROI) | comparison, pandas, polars, duckdb, dataframe, decision-matrix, 16회차 | 2026-04-28 |

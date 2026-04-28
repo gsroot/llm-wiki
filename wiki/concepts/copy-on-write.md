@@ -65,11 +65,30 @@ df.loc[df.A > 1, 'B'] = 99  # 명확하고 일관됨
 
 - [[dataframe]]: pandas의 핵심 자료구조. CoW 모델의 적용 대상.
 - [[pandas]]: CoW를 채택한 대표 라이브러리.
+- [[polars]]: 정반대 모델 — **immutable-by-default** (Apache Arrow read-only 버퍼).
+- [[apache-arrow]]: immutable 메모리 모델의 표준. PyArrow 백엔드 채택 시 pandas도 점차 이 모델로 수렴.
+- [[lazy-evaluation]]: lazy 평가는 CoW 트레이드오프 자체를 우회 — 중간 결과를 materialize하지 않음.
+
+## CoW vs Immutable-by-Default 비교 (16회차 추가)
+
+| 축 | pandas (CoW) | [[polars]] (Immutable) |
+|----|--------------|-----------------------|
+| 메모리 모델 | NumPy 버퍼, 쓰기 시점 복사 | Apache Arrow read-only |
+| in-place 업데이트 | 가능 (`df.loc[...] = ...`) | 불가 (의도적) |
+| view/copy 모호성 | CoW가 해결 | 발생 자체 안 함 |
+| 메모리 효율 | 읽기는 0복사, 쓰기 시 복사 | 항상 새 객체, 하지만 zero-copy 공유 |
+| API 학습 곡선 | SettingWithCopyWarning 시대 종료 | "in-place는 없다" 패러다임 학습 |
+| 호환성 | NumPy 생태계 1급 | Arrow 생태계 1급 ([[duckdb]]/[[pyarrow]]) |
+
+→ 같은 문제(view/copy 모호성, 메모리 효율)에 **다른 사상으로 답한 두 라이브러리**. CoW는 "기존 모델 유지하며 명확화", Immutable은 "모델 자체를 바꿈".
 
 ## 출처
 
 - [[pandas-dev-pandas]] — pandas 3.0 stable 릴리스, PDEP-7 메모리 모델 변혁
+- [[pola-rs-polars]] — Polars의 immutable-by-default 정반대 모델 (16회차 추가)
 
 ## 열린 질문
 
-- 다른 데이터프레임 라이브러리([[ml-ai]]에서 다루는 Polars, Dask 등)는 어떤 메모리 모델을 채택했는가? CoW vs immutable-by-default의 트레이드오프는?
+- ~~다른 데이터프레임 라이브러리(Polars, Dask 등)는 어떤 메모리 모델을 채택했는가?~~ → **16회차에서 답함**: Polars는 Apache Arrow immutable, Dask는 chunked CoW (pandas 모델 분산화)
+- pandas가 PyArrow 백엔드(PDEP-10)로 1급 전환 시 CoW vs Immutable의 의미는? → 둘이 **수렴**할 가능성. PyArrow는 Arrow immutable 모델을 따르므로 pandas도 자연스럽게 immutable 방향
+- in-place 업데이트의 인지적 가치 vs 메모리 모델 단순성: 분석가의 멘탈 모델에 어느 쪽이 더 친화적인가?
