@@ -2,11 +2,11 @@
 title: "Flutter"
 type: entity
 entity_type: tool
-tags: [flutter, dart, google, ui-toolkit, multiplatform, mobile, web, desktop, skia, impeller, hot-reload, material-design, cupertino, agent-skills, agentskills.io, vendor-neutral]
-related: [[dart]], [[google]], [[agent-skills]], [[harness]], [[github]], [[token-economy]], [[anthropics-skills]], [[github-spec-kit]], [[claude-code]]
+tags: [flutter, dart, google, ui-toolkit, multiplatform, mobile, web, desktop, skia, impeller, hot-reload, material-design, cupertino, agent-skills, agentskills.io, vendor-neutral, riverpod, mate-chat, 22회차]
+related: [[dart]], [[google]], [[agent-skills]], [[harness]], [[github]], [[token-economy]], [[anthropics-skills]], [[github-spec-kit]], [[claude-code]], [[riverpod]], [[mate-chat]], [[flutter-nextjs-fullstack-pattern]]
 source_count: 1
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 # Flutter

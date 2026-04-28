@@ -10,6 +10,75 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | Riverpod / Next.js / TanStack Query / Zustand / shadcn-ui 5개 신규 수집 — 프론트엔드 듀얼 클라이언트 + AGENTS.md 12단계 진화 (22회차 / Plan 20회차)
+
+- **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 20회차 — Frontend 5개 OSS. 21회차 운영 진영 AGENTS.md 채택률 60%를 발견한 후, 프론트엔드 진영도 같은 패턴이 진행 중인지 검증하고 모바일(Flutter)+웹(Next.js) 듀얼 클라이언트 표준을 정리하는 회차.
+
+### 수집 대상 (5개)
+
+- **rrousselGit/riverpod** — README 100줄 (AGENTS.md/CLAUDE.md ❌). MIT, 7.2K stars. Provider 후속작 (같은 저자 Remi Rousselet). Flutter Favorite 인정. 3종 패키지 (riverpod / flutter_riverpod / hooks_riverpod).
+- **vercel/next.js** — README 부재 (packages/next/ 안에 위치) + **AGENTS.md 446줄 22KB (= CLAUDE.md symlink)**. MIT, 139.2K stars. default branch `canary`. pnpm 모노레포 + Turbopack(Rust) + crates.
+- **TanStack/query** — README 105줄 + CONTRIBUTING.md 7.1KB (AGENTS.md/CLAUDE.md ❌). MIT, 49.2K stars. 5종 어댑터 (React/Solid/Svelte/Vue/Angular). TanStack 12 패키지 에코시스템.
+- **pmndrs/zustand** — README 512줄 (AGENTS.md/CLAUDE.md ❌). MIT, 57.9K stars. Poimandres collective. providerless hook 단일 API.
+- **shadcn-ui/ui** — README 17줄 (수집 OSS 중 최단) + CONTRIBUTING.md (AGENTS.md/CLAUDE.md ❌). MIT, 113.1K stars. CLI 코드 분배 (`npx shadcn add`).
+
+### 결정적 발견 5가지
+
+1. **AGENTS.md 12단계 진화 — Next.js 단일 OSS에서 양대 변종 동시 발견**
+   - 21회차 4가지 변종(PR-패턴/redirect/계층화/anti-fragmentation) 후 12단계 양대 변종 등장:
+     - **`$skill` 인덱싱 (skills hub)**: `$pr-status-triage` / `$flags` / `$dce-edge` / `$react-vendoring` / `$runtime-debug` / `$authoring-skills` 6개 SKILL.md를 `$<name>` syntax로 참조. AGENTS.md가 거대 hub로 진화하고 세부 SOP는 `.agents/skills/<name>/SKILL.md`로 분리.
+     - **HTML PR 마커**: `<!-- NEXT_JS_LLM_PR -->` PR 본문 의무 삽입. LLM 생성 PR 자동 식별·집계용 — AGENTS.md가 PR 봇/거버넌스 신호 발신기로 진화 첫 사례.
+   - 추가: Anti-pattern 명시 + Secret redaction 의무화 + Task 분해 검증 의무화.
+
+2. **AGENTS.md 양극화 가설 보강 — 프론트 진영 채택률 20%**
+   - 22회차 5개 중 Next.js만 채택 (1/5 = 20%) vs 21회차 운영 3/5 = 60%
+   - **프론트엔드 진영의 AGENTS.md 도입은 운영 진영의 1/3 수준**
+
+3. **10번째 OSS 거버넌스 모델 = "Open Code (코드 분배 플랫폼)"**
+   - shadcn-ui/ui (113K stars, 22회차 1위) `npx shadcn add` CLI로 컴포넌트 코드 직접 복사
+   - npm install 의존성 부재 → 사용자 코드베이스가 fork 결과 → 21회차 Sentry anti-fragmentation의 정반대 (의도적 fragmentation)
+   - 1~9 (Anthropic/OpenAI/Pydantic/Astral/커뮤니티/NumFOCUS/ASF/LangChain Inc./CNCF) + 10 = 10개 거버넌스 모델 공존
+
+4. **AGENTS.md = CLAUDE.md symlink 3번째 사례 (Next.js)**
+   - 이전: PydanticAI (18회차), FastMCP (19회차)
+   - 22KB / 446줄로 수집 OSS 중 최대 규모
+
+5. **React 진영 듀얼 채택 패턴 정립 + Flutter 진영 단일 통합**
+   - React 4-축 분리: 클라이언트 상태(Zustand) + 서버 상태(TanStack Query) + UI(shadcn-ui) + 풀스택(Next.js)
+   - Flutter 단일 통합: Riverpod (StateProvider+FutureProvider+DI 모두 한 라이브러리)
+   - "Flutter 단일 표준, React LEGO" 구도 — Mate Chat 프로젝트가 Flutter 측 실증 사례
+
+### 산출 페이지 (12개)
+
+- **소스 5개**: [[rrousselGit-riverpod]], [[vercel-next.js]], [[tanstack-query]], [[pmndrs-zustand]], [[shadcn-ui-ui]]
+- **엔티티 5개**: [[riverpod]], [[nextjs]], [[tanstack-query]], [[zustand]], [[shadcn-ui]]
+- **종합 1개**: [[flutter-nextjs-fullstack-pattern]] (6번째 종합 축 — 15 backend / 16 dataframe / 17~18 agent / 19 observability / 20 frontend)
+- **갱신 2개**: [[agent-skills]] (12단계 진화 추가, source_count 15→16), [[flutter]] (Riverpod 연계 추가)
+
+### 통계 변화
+
+- 153 → 164 페이지 (+11)
+- sources 58 → 63 (+5)
+- entities 60 → 65 (+5)
+- syntheses 10 → 11 (+1)
+- concepts 23 → 23 (변동 없음)
+
+### 부수 발견
+
+- **Next.js default branch = canary** (LangChain v1과 동일한 빠른 진화 OSS 패턴)
+- **shadcn-ui README 17줄** = 수집 OSS 중 최단 ("코드를 보라" 메시지)
+- **TanStack 12 패키지 모노레포** — query 단독 49K stars, 전체 합산 100K+ stars (단일 메인테이너 → 에코 진화)
+- **Zustand의 zombie child 해결** — Redux 메인테이너도 fix 못한 이슈
+- **shadcn 본인 → Vercel 채용** = 1인 표준 + 빅테크 후원 패턴 (CNCF graduated와 정반대 끝)
+
+### 다음 단서 (Plan 21회차 / 23회차 마무리)
+
+1. **seokgeun-stack-guide.md 작성**: 22회차 5개 도구가 React/Flutter 진영의 핵심 카탈로그로 들어감
+2. **9단계 점검 워크플로우**: 깨진 위키링크 검증 — `[[frontend-flutter-stack]]`, `[[frontend-react-stack]]`, `[[poimandres]]`, `[[radix-ui]]`, `[[tailwindcss]]`, `[[turbopack]]`, `[[tanstack]]`, `[[vercel]]` 등이 stub 또는 종합 페이지 redirect 필요
+3. **AGENTS.md 12단계 추적**: Vercel 다른 OSS (turbo, swr 등)에 `$skill` 인덱싱 + LLM PR 마커 확산 여부 모니터링
+
+---
+
 ## [2026-04-28] ingest | Docker / GitHub Actions / Prometheus / Grafana / Sentry 5개 신규 수집 — 운영/Observability 5단 스택 (21회차 / Plan 19회차)
 
 - **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 19회차 — Operations/Observability 5개 OSS. 13~20회차 LLM/데이터 진영의 AGENTS.md 표준화를 발견한 후, 운영 진영도 동일한 패턴이 진행 중인지 검증하는 회차.

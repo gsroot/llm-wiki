@@ -1,0 +1,66 @@
+---
+title: "Next.js"
+type: entity
+entity_type: tool
+related:
+  - "[[react]]"
+  - "[[vercel]]"
+  - "[[turbopack]]"
+  - "[[agent-skills]]"
+  - "[[frontend-react-stack]]"
+  - "[[shadcn-ui]]"
+  - "[[zustand]]"
+  - "[[tanstack-query]]"
+source_count: 1
+created: 2026-04-28
+updated: 2026-04-28
+tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, 22회차]
+---
+
+# Next.js
+
+## 개요
+
+Vercel이 만든 React 프레임워크. 22회차에서 `$skill` 인덱싱 + `<!-- NEXT_JS_LLM_PR -->` HTML 마커 등 **AGENTS.md 12단계 진화의 양대 변종**을 단독 OSS에서 발견. 22회차 프론트 5개 중 유일한 AGENTS.md 채택자.
+
+## 주요 특징
+
+| 측면 | 내용 |
+|---|---|
+| **운영 조직** | [[vercel]] (Vercel Inc.) |
+| **라이선스** | MIT |
+| **Stars** | 139.2K (22회차 5개 중 2위) |
+| **Default branch** | `canary` (main 아님 — 빠른 진화 OSS 패턴) |
+| **번들러** | Turbopack (Rust, 기본) → webpack 폴백 |
+| **모노레포** | pnpm workspace + crates (Rust) + turbopack subtree |
+| **AGENTS.md** | ✅ 22KB 채택 (= CLAUDE.md symlink, 3번째 사례) |
+| **`$skill` 인덱싱** | 6개 SKILL.md 참조 (`$pr-status-triage`, `$flags`, `$dce-edge`, `$react-vendoring`, `$runtime-debug`, `$authoring-skills`) |
+| **LLM PR 마커** | PR 본문 `<!-- NEXT_JS_LLM_PR -->` HTML 의무화 |
+
+## 22회차 AGENTS.md 12단계 진화 표
+
+| 단계 | 변종 | 발견 OSS | 회차 |
+|---|---|---|---|
+| 11-① | PR-패턴 가이드 | Prometheus | 21회차 |
+| 11-② | `@AGENTS.md` redirect CLAUDE.md | Grafana, Sentry | 21회차 |
+| 11-③ | 계층화 AGENTS.md | Grafana 2-tier, Sentry 4-tier | 21회차 |
+| 11-④ | Anti-fragmentation 명문화 | Sentry | 21회차 |
+| **12-①** | **`$skill` 인덱싱 (skills hub)** | **Next.js** | **22회차** |
+| **12-②** | **HTML PR 마커** | **Next.js** | **22회차** |
+
+## 관련 개념
+
+- [[react]] — 호스트 라이브러리
+- [[vercel]] — 운영 조직
+- [[turbopack]] — Rust 기반 번들러 (Next.js 기본)
+- [[agent-skills]] — 12단계 진화 사례
+- [[frontend-react-stack]] — React 진영 fullstack 표준 (22회차 신규)
+- [[shadcn-ui]], [[zustand]], [[tanstack-query]] — Next.js 상의 표준 React 스택
+
+## 출처
+
+- [[vercel-next.js]] — 본 OSS 저장소 (22회차 신규)
+
+## 메모
+
+22회차 (Plan 20회차 / Frontend) 신규 등록. Next.js는 React 진영의 사실상 표준 SSR/SSG 프레임워크. 21회차에서 정의된 양극화 가설("운영 진영 60% AGENTS.md 채택 vs 프론트 진영 20%")의 유일한 프론트 채택자로서 양극화 보강 데이터.
