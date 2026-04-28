@@ -2,9 +2,9 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]], [[scikit-learn]]
-source_count: 6
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, plans-md, exec-plans, living-document, 7-hour-task]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]], [[scikit-learn]], [[openai]], [[openai-cookbook]]
+source_count: 7
 created: 2026-04-15
 updated: 2026-04-27
 ---
@@ -136,6 +136,34 @@ project/
 
 특히 `docs/rules/` 4계층(rules_1k 799B → 4k 3.5K → 10k 9.4K → full 30K)이 **AI 도구 시장 매트릭스** (Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K)에 자동 매칭하는 패턴은 [[anthropics-skills]] progressive disclosure 3계층의 도구별 변종. 거대 OSS가 다중 AI 도구 환경에서 운영하는 첫 사례.
 
+### 제5의 축 — "PLANS.md / ExecPlans = 7시간+ 단일 작업 living document"
+
+[[openai-cookbook]] (★73K 4년차)이 박은 또 다른 거버넌스 변종:
+
+| 축 | openai-cookbook (PLANS.md / ExecPlans) |
+|----|----------------------------------------|
+| **지식** | `articles/codex_exec_plans.md` (16KB)에서 메타-규칙 정의 + `.agent/PLANS.md` 본체 (각 프로젝트 자체) |
+| **도구** | Codex CLI / `gpt-5.2-codex` 모델 + `python .github/scripts/check_notebooks.py` |
+| **패키지** | `AGENTS.md` 한 줄 (`When writing complex features, use an ExecPlan from .agent/PLANS.md`)이 자동 호출 트리거 |
+| **통제** | NON-NEGOTIABLE 5 요건: ① 자기완결 ② **살아있는 문서** ③ 초보자 구현 가능 ④ **관찰 가능한 동작** 결과물 ⑤ 모든 용어 본문 정의. 단일 fenced code block 강제, 산문 우선 |
+| **세계관** | **단일 LLM 작업 7시간+** 가능성이 차별 지표 — "기존 LLM이 완료 못 하던 규모"의 직접적 답 |
+
+→ [[github-spec-kit]] Constitution은 명세 → 구현 분리, [[anthropics-skills]] SKILL.md는 자동 호출 트리거 분리, [[scikit-learn]] SLEP는 표준 변경 분리, [[flutter]] `docs/rules/`는 토큰 예산 분리. **PLANS.md는 명세 + 진행 + 학습을 단일 파일에 합쳐 living document로 운영**.
+
+추가로 [[openai-cookbook]] `AGENTS.md` (5.5KB)의 `Recent Learnings` 섹션은 운영 중 발견된 함정·솔루션을 누적하는 **살아있는 운영 노트** — 다른 OSS의 정적 가이드(astral-sh/uv, scikit-learn, fastapi 등)와 본질적으로 다름. 6개 항목 형식: "현상 → 대응 → 이유". `agent-skills` 외부 채택 7단계 진화의 7번째이자 첫 살아있는 사례 (자세한 도식은 [[agent-skills]] 출처 섹션).
+
+5축 비교 요약:
+
+| 축 | 거버넌스 단위 | 시간 단위 | 산출물 | 변경 비용 |
+|---|---|---|---|---|
+| autoresearch (Karpathy) | 자율 메트릭 게임 | 분~시간 | `program.md` 단일 파일 | 즉시 |
+| spec-kit (GitHub) | 다중 에이전트 표준화 | 시간~일 | Constitution + 9 슬래시 명령 | 중간 |
+| scikit-learn (커뮤니티) | API 컨트랙트 영구성 | 19년 | SLEP 공식 문서 | 매우 높음 |
+| flutter (Google) | 다중 도구 토큰 매트릭스 | 11년 | rules-1k/4k/10k/full 4계층 | 높음 |
+| **openai-cookbook PLANS.md** | **단일 LLM 7시간+ 작업** | **시간~하루** | **자기완결 living document + AGENTS.md Recent Learnings** | **즉시 (살아있는 문서)** |
+
+회사 BI 적용 가설: c2spf-analytics의 분기/연간 대형 분석 작업(예: 게임 출시 전후 코호트 분석)에 PLANS.md ExecPlan 패턴을 적용하면, 단일 분석가가 LLM 협업으로 7시간+ 작업을 수행 가능. NON-NEGOTIABLE 5 요건의 "관찰 가능한 동작"은 BI 대시보드/보고서 산출물로 매핑 자연스러움.
+
 ## 극한 사례 1: autoresearch의 초경량 하네스
 
 [[autoresearch]] (Karpathy, 2026-03)는 **하네스를 어디까지 줄일 수 있는가**의 한 답변이다. 4층 레이어가 모두 최소화돼 있다:
@@ -176,6 +204,7 @@ project/
 - [[anthropics-claude-cookbooks]] — Anthropic 자기 정의 "bare-metal harness" 문장 출처 + claude_agent_sdk 6단계 튜토리얼이 하네스를 SW 외 도메인으로 푸는 reference
 - [[github-spec-kit]] — 하네스 스펙트럼의 **표준화 극단**. SDD 메소드론을 9개 슬래시 명령 + 5 템플릿 + 9 Articles 헌법으로 코드화. autoresearch의 최소 하네스와 정확히 반대 극단을 박음 → harness 개념의 양극 완성
 - [[scikit-learn]] — 하네스의 **제3축 "library-as-harness"** 사례. 19년 변하지 않은 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator)가 곧 작업 운영 패턴. SLEP(Scikit-Learn Enhancement Proposal)이 [[github-spec-kit]] SDD나 [[anthropics-skills]] SKILL.md의 19년 선배 — "표준화 → 구현" 분리 패턴의 원형. 30+ 호환 라이브러리 생태계가 컨트랙트 영구성의 결과
+- [[openai-openai-cookbook]] — 하네스의 **제5축 "PLANS.md / ExecPlans + 살아있는 AGENTS.md"** 사례. [[openai]] cookbook(★73K 4년차)이 박은 두 가지 거버넌스 패턴: (1) **PLANS.md / ExecPlans** — Codex `gpt-5.2-codex`가 단일 프롬프트로 7시간+ 작업하도록 만드는 living document. NON-NEGOTIABLE 5 요건(자기완결 / 살아있는 문서 / 초보자 구현 / 관찰 가능한 동작 / 본문 용어 정의) + 단일 fenced code block 형식 강제. `articles/codex_exec_plans.md` (16KB)에서 정의. (2) **AGENTS.md (5.5KB)의 "Recent Learnings" 섹션** — 운영 중 발견된 함정·솔루션 6개를 "현상 → 대응 → 이유" 형식으로 누적하는 살아있는 운영 노트. 다른 OSS의 정적 가이드(astral-sh/uv, scikit-learn, fastapi, flutter 등)와 본질적으로 다른 첫 메인스트림 사례. → 1~4축이 모두 정적 가이드라면 본 5축은 시간 기반 검증(7시간+) + 실시간 학습 누적의 살아있는 모드. [[agent-skills]] 외부 채택 7단계 진화의 7번째 단계와 동일 회차 반영
 - [[flutter-flutter]] — 하네스의 **제4축 "vendor-neutral asset + 토큰 예산 다층화"** 사례. `.agents/skills/` 표준 채택 + `.claude/skills` 심볼릭 링크 forwarding + `docs/rules/` 4계층(1k/4k/10k/full) 도구별 대응 + `agent-artifacts/` 격리. 11년차 거대 OSS가 다중 AI 도구 환경에서 거버넌스를 운영하는 첫 사례. [[anthropics-skills]] 표준의 두 번째 외부 채택([[github-spec-kit]] Codex 모드 첫 번째)이지만, **위치 컨벤션은 자체 결정**으로 표준 채택자가 정의자를 누른 모델
 
 ## 열린 질문

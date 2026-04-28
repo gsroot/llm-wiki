@@ -2,7 +2,7 @@
 title: "ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)"
 type: concept
 category: ai
-tags: [ml, ai, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, llm, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict]
+tags: [ml, ai, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, llm, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
@@ -10,7 +10,9 @@ related:
   - "[[mcp]]"
   - "[[pandas]]"
   - "[[scikit-learn]]"
-source_count: 5
+  - "[[openai]]"
+  - "[[openai-cookbook]]"
+source_count: 6
 created: 2026-04-24
 updated: 2026-04-27
 ---
@@ -39,6 +41,8 @@ updated: 2026-04-27
   - **트래블메이트** (Google Play 출시, 2025-10~11) — LangGraph 에이전트로 여행 일정 자동 생성, 1 Clover = 1,000 tokens 과금, 서버 측 영수증 검증.
   - **Mate Chat** (2025-08~) — OpenAI GPT 기반 커스텀 AI 챗봇("AI Mates"), WebSocket 실시간 메시징.
   - **MCP** ([[mcp]]) — Claude Code/Cowork 통합 활용.
+  - **OpenAI Cookbook 사례 검색** ([[openai-cookbook]]) — 4년차 ★73K 저장소(289 콘텐츠 / 115명 저자)가 회사 BI에서 OpenAI API 도입 의사결정의 1차 자료. registry.yaml 태그 분포가 정확한 진화 화석 (embeddings 99 / completions 94 / responses 32 / agents-sdk 16 / mcp 8 / gpt-oss 13). 후보 기능 도입 시 같은 태그 ipynb cherry-pick → 회사 데이터 재현 → AGENTS.md "Recent Learnings"의 함정 사전 확인이 표준 워크플로우. `articles/Prompt_Caching101.ipynb` + `Prompt_Caching_201.ipynb`은 [[prompt-cache]] 정량 데이터 보강 1차 자료, `examples/agents_sdk/session_memory.ipynb`은 [[context-engineering]] OpenAI Sessions API 사례.
+  - **gpt-oss + 한국어 fine-tuning** — `articles/gpt-oss/fine-tune-korean.ipynb` (45.9KB)이 한국어 task fine-tune 1차 자료. 한국어 BI 응용 ROI 평가 후속 후보.
 - **데이터 분석 도구**: [[pandas]], NumPy, [[scikit-learn]], Jupyter Notebook (지속적). pandas DataFrame이 scikit-learn의 first-class citizen이므로 학습 입력/예측 출력이 모두 DataFrame 표준. AutoML Tables는 BigQuery 직접 학습이지만 결과 검증·후처리는 [[pandas-dev-pandas]] 도구 레이어에서 수행.
 - **scikit-learn 직접 사용 가능성** (대안 검토): 현 AutoML Tables 의존도를 sklearn `RandomForestClassifier` + `Pipeline(StandardScaler, ...)` 직접 구성으로 전환 시 — (a) 학습 비용(GCP AutoML Tables 시간당 과금) 절감, (b) 모델 디버깅 가능 (트리 구조·feature importance 노출), (c) `sample_weight` 라우팅(Metadata Routing API, 1.3+)으로 신규/이탈 유저 가중치 차별화, (d) `model_persistence.rst` 5단 의사결정으로 ONNX/joblib/skops 옵션 평가. 트레이드오프는 AutoML이 자동 Feature Engineering·HPO를 다 해주는 부분을 직접 짜야 한다는 점.
 
@@ -61,6 +65,7 @@ updated: 2026-04-27
 - [[portfolio-resume-ko]] · [[portfolio-ko]] — 정량 지표(85%+ 정확도, Google Play 출시)
 - [[pandas-dev-pandas]] — ML 입력/출력의 도구 레이어 표준 (DataFrame), Pandera로 학습 데이터 검증, ecosystem.md의 skrub/Hamilton/Featuretools가 pandas → ML 다리
 - [[scikit-learn-scikit-learn]] — sklearn 자체 소스 페이지, 거버넌스(SLEP)·5단 영속성 의사결정·생태계 30개+ 호환 라이브러리·AGENTS.md 정책
+- [[openai-openai-cookbook]] — OpenAI 공식 4년차 cookbook (★73K, 289 콘텐츠 / 115명 저자, MIT). LLM API 도입 의사결정 시 검색 가능한 사례 데이터베이스. embeddings(99건)·agents-sdk(16건)·responses(32건)·gpt-oss(13건)·mcp(8건) 태그가 4년 진화 화석. AGENTS.md "Recent Learnings" 살아있는 운영 노트 + PLANS.md ExecPlans 7시간+ 단일 작업 패턴 거버넌스 사례
 
 ## 열린 질문
 

@@ -10,6 +10,36 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | openai/openai-cookbook — OpenAI API 4년차 cookbook + 살아있는 AGENTS.md (13회차)
+
+- **트리거**: 소유자 요청 — "https://github.com/openai/openai-cookbook 의 내용을 살펴보고 이 프로젝트의 적절한 경로에 원본 자료를 넣어두고 수집을 진행해줘."
+- **소스**: `raw/articles/openai-openai-cookbook/` (11개 파일, 약 100KB 보관)
+  - 루트 메타 7종: `README.md` (1.2KB), `AGENTS.md` (5.5KB ★ Recent Learnings 섹션 포함), `CONTRIBUTING.md` (425B), `LICENSE` (MIT), `authors.yaml` (19.9KB / 115명), `registry.yaml` (78.7KB / 289 콘텐츠), `.gitignore` (2KB)
+  - `articles/` 7편: `chatgpt-agents-sales-meeting-prep.md` (14KB, 2026-04-22 최신 ChatGPT Workspace Agents), `codex_exec_plans.md` (16KB ★ PLANS.md 메소드론), `how_to_work_with_large_language_models.md` (8KB, LLM 입문서 4 모드), `openai-harmony.md` (29KB, gpt-oss 5 roles + 3 channels), `related_resources.md` (9KB, LangChain/LlamaIndex/Outlines 등 외부 큐레이션), `techniques_to_improve_reliability.md` (42KB, CoT/Self-consistency/Tree of Thoughts), `what_makes_documentation_good.md` (9KB ★ 위키 운영 차용 가치)
+  - **제외**: `examples/` 243개 ipynb 본체 (수십 MB, 메소드론·거버넌스 자료에 집중), `images/`, `.github/`
+- **작업**: openai/openai-cookbook GitHub 저장소(2022-03-11 창설, MIT, 주 언어 Jupyter Notebook, ★73,042 / fork 12,325 / pushedAt 2026-04-26) 통합 수집. cookbook.openai.com 정적 사이트 source. raw 경로 결정: 기존 `<org>-<repo>` 컨벤션 따라 `raw/articles/openai-openai-cookbook/` 채택.
+- **생성된 파일** (3건):
+  - `wiki/sources/openai-openai-cookbook.md` — 소스 요약 (메타 / 7개 핵심 내용 단락 / 7개 인사이트 / AGENTS.md 7단계 진화 도식 / 인용 5개 / 후속 탐구 10건 / 회사 BI 적용 가설 2건)
+  - `wiki/entities/openai.md` — OpenAI organization 엔티티 (LLM 라인업 / API/SDK / 거버넌스 패턴 3축 / Anthropic 비교 표)
+  - `wiki/entities/openai-cookbook.md` — openai-cookbook project 엔티티 (콘텐츠 구조 / 거버넌스 3축 / 4년 진화 태그 분포 / articles 7편)
+- **업데이트된 파일** (5건):
+  - `wiki/concepts/agent-skills.md` — source_count 6→7, tags +openai/openai-cookbook/agents-md-living/recent-learnings/exec-plans, related +[[openai]]/[[openai-cookbook]]. **출처 섹션에 [[openai-openai-cookbook]] 7번째 사례로 박음 — agent-skills 외부 채택 7단계 진화 완성** (1~6번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter는 모두 정적 가이드, 7번째 OpenAI에서 처음으로 살아있는 운영 노트 모드)
+  - `wiki/concepts/harness.md` — source_count 6→7, tags +openai/openai-cookbook/plans-md/exec-plans/living-document/7-hour-task, related +[[openai]]/[[openai-cookbook]]. **신규 "제5의 축 — PLANS.md / ExecPlans" 섹션 신설** (5축 비교 표 — autoresearch/spec-kit/scikit-learn/flutter/openai-cookbook). 출처에 [[openai-openai-cookbook]] 5축 사례로 추가
+  - `wiki/concepts/ml-ai.md` — source_count 5→6, tags +openai-cookbook/embeddings/agents-sdk/prompt-caching/gpt-5/gpt-oss, related +[[openai]]/[[openai-cookbook]]. LLM 시대 단락에 **"OpenAI Cookbook 사례 검색"** 항목 추가 (회사 BI 의사결정 워크플로우 명문화). 출처에 [[openai-openai-cookbook]] 추가
+  - `wiki/concepts/agent-patterns.md` — source_count 2→3, tags +openai/openai-cookbook/agents-sdk/exec-plans, related +[[openai]]/[[openai-cookbook]]. 출처에 [[openai-openai-cookbook]] **Anthropic 5 패턴의 OpenAI 측 reference 구현** 사례 (parallel_agents.ipynb / evaluate_agents.ipynb / multi-agent-portfolio-collaboration / orchestrating_agents.ipynb 매핑) + PLANS.md = 6번째 거버넌스 패턴 명시
+  - `wiki/syntheses/agent-stack-evolution.md` — **5축 → 6축 확장**. title `"5축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google 비교"` → `"6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교"`. tags +github/google/openai/exec-plans/plans-md/recent-learnings/agents-md-living, sources +[[github-spec-kit]]/[[flutter-flutter]]/[[openai-openai-cookbook]] (4축·5축 후속 추가에서 본문 인용은 됐으나 frontmatter 미반영 일괄 정합). updated 2026-04-27→2026-04-28. 본문: 5축 표 → 6축 표 확장 (OpenAI 행 추가), "4·5축 추가의 의미" → "4·5·6축 추가의 의미"로 갱신, 결론 갱신("정적 가이드 5 사례 vs 살아있는 운영 노트 1 사례 갈림" + "시간 기반 검증의 등장" + 회사 BI 도입 가이드 보강 3건). 출처 소스(10→13)·엔티티(7→13) 표 확장
+  - `wiki/index.md` — 13회차 표기, 통계 88/31/32/21/3 → 91/32/34/21/3, 신규 3페이지 등록 (소스 1 + 엔티티 2), 갱신 4개 페이지 source_count·tags 동기화 (agent-skills/harness/ml-ai/agent-patterns), agent-stack-evolution 행 제목 6축으로 갱신, 헤더 코멘트 13회차 추가
+- **결정적 발견 2가지**:
+  1. **AGENTS.md 외부 채택 7단계 진화의 7번째 단계 — 첫 살아있는 사례**. 1~6번째 모두 정적 가이드(SKILL.md 패키지 / SLEP / Constitution / rules.md / .agents 자산)였으나, OpenAI는 `AGENTS.md` 안에 `Recent Learnings` 섹션을 두어 운영 중 발견을 즉시 누적 ("현상 → 대응 → 이유" 6개 항목). 변경 비용 0의 살아있는 작업기억 모드. Anthropic 진영도 같은 방향으로 따라올 가능성 신호.
+  2. **PLANS.md / ExecPlans = 6번째 거버넌스 축**. 단일 LLM 작업 7시간+를 가능케 하는 자기완결 living document. NON-NEGOTIABLE 5 요건 + 단일 fenced code block 형식 강제. autoresearch(분~시간) / spec-kit(시간~일) / scikit-learn(19년) / flutter(11년) / anthropics-skills(단발) 5축에 시간 기반 검증의 6번째 축 추가.
+- **회사 BI 적용 가설** (3건):
+  - **PLANS.md 도입 PoC**: c2spf-analytics 분기/연간 대형 분석(예: 게임 출시 전후 코호트 분석)에 ExecPlan 패턴 적용. 단일 분석가 + LLM 협업으로 7시간+ 작업 수행 가능. NON-NEGOTIABLE "관찰 가능한 동작" = BI 대시보드/보고서 산출물 매핑.
+  - **AGENTS.md "Recent Learnings" 본 위키 차용**: `wiki/AGENTS.md` 또는 CLAUDE.md에 Recent Learnings 섹션 신설. 13회차 누적 운영 메타 메모.
+  - **registry.yaml 차용**: `wiki/registry.yaml` 신설 후 `wiki/index.md` 자동 생성 PoC. `python .github/scripts/check_notebooks.py` 패턴을 `lint` 워크플로우에 차용 (등록 누락 자동 검출).
+- **메모**: 13회차에서 위키가 박은 결정적 발견 2가지가 [[agent-stack-evolution]] 종합 분석을 5축에서 6축으로 확장시킴 — 같은 종합 분석 페이지를 4번째(spec-kit), 5번째(flutter), 6번째(openai-cookbook) 회차에서 연속 갱신. 7번째 축 후보: Cursor/Cline IDE-에이전트, OpenAI Custom GPTs/AssistantsAPI, Microsoft Foundry. 다음 회차 후보로 [[anthropics-claude-cookbooks]] 14 디렉토리 본체 단독 수집 또는 OpenAI agents.md 별도 표준 저장소 수집(7번째 축 정의자 본체 1차 자료) 가능. 본 회차 raw 보관 100KB 가벼움 — examples/ 본체 cherry-pick은 회사 BI 적용 시점에 별도 회차로 분리.
+
+---
+
 ## [2026-04-27] lint-followup | 평가 우선순위 미완료 항목 반영 — 4개 페이지 신설 + raw_path 추적성 보강
 
 - **트리거**: 소유자 요청 — "지금 로컬에 변경사항들이 있는데 확인해보고 너가 말한 우선순위에서 아직 진행되지 않은 부분들은 진행해줘."
