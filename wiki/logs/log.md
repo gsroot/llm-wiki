@@ -10,6 +10,76 @@ type: log
 
 ---
 
+## [2026-04-28] lint+synthesis | 마무리 점검 + 석근 스택 가이드 — 4 stub 보강 + 6분류 카탈로그 + 의사결정 트리 (23회차 / Plan 21회차)
+
+- **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 21회차 (마무리). 15~22회차 8회차 동안 누적된 32개 신규 OSS + 8개 기존 도구를 (a) 깨진 링크 정합성, (b) 6분류 통합 카탈로그, (c) 사이드 프로젝트 의사결정 트리, (d) 회사 BI 적용 매핑으로 봉인하는 회차.
+
+### 산출 (1) 신규 엔티티 stub 4개
+
+22회차까지 4~11곳에서 참조되었으나 페이지 부재였던 핵심 stub 즉시 보강:
+
+| stub | 참조 빈도 | 사유 |
+|---|---|---|
+| [[mate-chat]] | 4곳 | 석근 개인 사이드 프로젝트, [[flutter]]/[[riverpod]]/[[backend-fastapi-stack]]/[[flutter-nextjs-fullstack-pattern]]에서 인용 |
+| [[vercel]] | 11곳 | Next.js 모회사, 22회차 핵심 발견자 |
+| [[react]] | 5곳 | 22회차 신규 5개 entity 모두 호스트 진영 |
+| [[python]] | ~30곳 | 위키 절반 이상 도구가 Python 기반, dart는 있는데 python 부재의 비대칭 해소 |
+
+### 산출 (2) 신규 종합: [[seokgeun-stack-guide]]
+
+- **6분류 카탈로그** (백엔드/데이터/ML/LLM/운영/프론트) — 32 신규 + 8 기존 = 40개 도구 표
+- **사이드 프로젝트 의사결정 트리** — 4 질문(모바일 vs 웹 / LLM 에이전트 / 분석 워크로드 / 운영 단계) → 시나리오 A/B/C
+- **30분 부트스트랩 명령** — Next.js+shadcn+Zustand+TanStack Query+FastAPI / Flutter+Riverpod+FastAPI
+- **회사 BI 적용 매핑** — 컴투스플랫폼 BigQuery 기반 분석 BI에 22회차까지 도구 매핑 12행
+- **8회차 누적 메타 결론** — 회차별 핵심 발견 1줄 요약 8행
+
+### 산출 (3) 점검 워크플로우 9단계 결과
+
+| # | 항목 | 결과 |
+|---|---|---|
+| 1 | 깨진 위키링크 | 25 → 19개 (24% 해소) |
+| 2 | 미등록 페이지 | 0개 (23회차 신규 5건 모두 등록 완료) |
+| 3 | 고아 페이지 | **0개 (훌륭)** |
+| 4 | 모순 | 수동 점검 미완 — 후속 작업 |
+| 5 | 미페이지화 개념 | 19개 stub 후보 (목록 아래) |
+| 6 | source_count≥3 빈약 페이지 | 6건 식별 (com2us-platform 56줄, xpla-platform 59줄, frontend-react 59줄, c2spf-analytics 68줄, microsoft 76줄, devops-cicd 77줄) |
+| 7 | 미반영 갱신 | 23회차에서 [[agent-skills]] 12단계 등 반영 완료 |
+| 8 | 데이터 공백 | turbopack/radix-ui 등 미수집 raw로 가설 검증 부족 |
+| 9 | 새 질문 제안 | (a) Mate Chat raw 1차 수집, (b) Web3/결제/SSO/검색 6번째 회차, (c) AGENTS.md 13단계 모니터링, (d) 빈약 6 페이지 보강 |
+
+### 잔여 깨진 링크 19개 (후속 회차 대상)
+
+`turbopack`, `radix-ui`, `tailwindcss`, `poimandres`, `tanstack`, `sqlite`, `lakehouse`, `streaming`, `zero-copy`, `append-only-log`, `predicate-pushdown`, `query-optimization`, `event-driven-architecture`, `oss-saas-dual`, `apache-foundation`, `code-reviewer`, `frontend-flutter-stack`, `frontend-react-stack`, `wikilink`
+
+→ 후속 회차에서 5~10개씩 stub 또는 redirect로 점진 해소.
+
+### 통계 변화
+
+| 영역 | 22회차 | 23회차 | 증가 |
+|---|---|---|---|
+| 총 페이지 | 164 | 169 | +5 |
+| 소스 | 63 | 63 | 0 |
+| 엔티티 | 65 | 69 | +4 (mate-chat / vercel / react / python) |
+| 개념 | 23 | 23 | 0 |
+| 종합 | 11 | 12 | +1 (seokgeun-stack-guide) |
+
+### 8회차 사이클 완료 회고
+
+- **15~22회차 = "수집 8회차"**: 백엔드(15) → 데이터(16) → ML+LLM 인프라(17) → 에이전트 프레임워크(18) → 운영(19=21회차 라벨) → 프론트(20=22회차 라벨)
+- **23회차 = "통합·점검 마무리"**: 9단계 점검 + 6분류 카탈로그 + 의사결정 트리
+- **위키 규모**: Plan 시작 시점 93페이지 → 종료 시점 169페이지 = **1.82배 확장** (목표 ~150페이지 초과 달성)
+- **메타 발견 누적**: AGENTS.md 12단계 진화 + 10개 OSS 거버넌스 모델 + 6번째 종합 축
+- **다음 사이클 후보**: Web3/결제/SSO/검색 6번째 회차 사이클 또는 [[mate-chat]] 1차 raw 수집 후 종합 페이지 분리
+
+### 다음 단서
+
+- [[mate-chat]] stub의 raw 수집 트리거 — 저장소 노출 시 `raw/articles/seokgeun-mate-chat/` 위치
+- 19개 잔여 깨진 링크 후속 stub — 5~10개씩 분할
+- AGENTS.md 13단계 변종 모니터링 — Vercel turbo/swr 또는 Anthropic-Claude-Code-skills 신규 도입 추적
+- 빈약 6 페이지 보강: com2us-platform / xpla-platform / frontend-react / c2spf-analytics / microsoft / devops-cicd
+
+---
+
 ## [2026-04-28] ingest | Riverpod / Next.js / TanStack Query / Zustand / shadcn-ui 5개 신규 수집 — 프론트엔드 듀얼 클라이언트 + AGENTS.md 12단계 진화 (22회차 / Plan 20회차)
 
 - **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 20회차 — Frontend 5개 OSS. 21회차 운영 진영 AGENTS.md 채택률 60%를 발견한 후, 프론트엔드 진영도 같은 패턴이 진행 중인지 검증하고 모바일(Flutter)+웹(Next.js) 듀얼 클라이언트 표준을 정리하는 회차.

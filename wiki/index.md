@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (22회차 / Plan 20회차 — 프론트엔드 5종 + AGENTS.md 12단계 진화)
+updated: 2026-04-28 (23회차 / Plan 21회차 — 마무리 점검 + 석근 스택 가이드)
 ---
 
 # 위키 인덱스
@@ -32,6 +32,8 @@ updated: 2026-04-28 (22회차 / Plan 20회차 — 프론트엔드 5종 + AGENTS.
 <!-- 수집일 2026-04-28 (17회차): 석근 프로필 수집 — 개인 프로필 원문을 raw/notes/personal에 보관하고, 소스 요약 1 + 엔티티 1(MateChat) + 종합 분석 1(석근 개인 운영 프로필) 추가, seokgeun-kim 엔티티 보강. 핵심 정리: 2026년 운영 병목은 기능 개발보다 MateChat 사용자 검증이며, 육아휴직 1년은 가족 시간 확보와 사업화 검증을 동시에 다루는 기간. 민감한 신상 정보는 raw 원문에만 두고 위키에는 전략/운영/AI 협업 관점으로 요약. AI 호칭은 회사 직급 호칭이 아니라 친구처럼 자연스러운 이름 호칭 선호 -->
 <!-- 수집일 2026-04-28 (18회차): mate-chat 프로젝트 위키 스냅샷 수집 — ../mate-chat/wiki 콘텐츠 68개 md 파일을 raw/notes/mate-chat-wiki-2026-04-28/에 보관(.obsidian 제외), 소스 요약 1 + 종합 분석 1(MateChat 프로젝트 지식 지도) 추가, MateChat 엔티티 보강. 핵심 결정: 프로젝트 위키를 llm-wiki에 개별 페이지로 복제하지 않고 원천 스냅샷으로 추적. 프로젝트 위키는 구현/출시/운영 지식, llm-wiki는 석근의 사업화/가족/AI 협업 맥락의 상위 해석을 담당 -->
 
+<!-- 점검 2026-04-28 (23회차 / Plan 21회차 — 마무리): 깨진 위키링크 정합성 보강 + 석근 스택 가이드 작성. 산출: (1) 신규 엔티티 4개 stub (mate-chat / vercel / react / python) — 22회차까지 4~11곳에서 참조하나 페이지 부재였던 핵심 stub. (2) 신규 종합 1개 (seokgeun-stack-guide) — 32개 OSS + 8개 기존 도구를 6분류 카탈로그 + 사이드 프로젝트 30분 부트스트랩 의사결정 트리 + 회사 BI 적용 매핑으로 통합. 8회차 누적 메타 결론(15~22회차) 정리표 포함. (3) 점검 9단계 결과: 깨진 위키링크 25 → 19개 (24% 해소), 고아 페이지 0개 (훌륭), index.md 누락 0개, source_count≥3 빈약 페이지 6건 식별 (com2us-platform / xpla-platform / frontend-react / c2spf-analytics / microsoft / devops-cicd). (4) 잔여 깨진 링크 19개는 후속 회차 stub 작성 대상으로 정리: turbopack/radix-ui/tailwindcss/poimandres/tanstack/sqlite/lakehouse/streaming/zero-copy/append-only-log/predicate-pushdown/query-optimization/event-driven-architecture/oss-saas-dual/apache-foundation/code-reviewer/frontend-flutter-stack/frontend-react-stack/wikilink. -->
+
 <!-- 수집일 2026-04-28 (22회차 / Plan 20회차 — 프론트엔드 5종): Riverpod / Next.js / TanStack Query / Zustand / shadcn-ui 5개 신규 수집 — 소스 5 + 엔티티 5 + 종합 1 (flutter-nextjs-fullstack-pattern) 추가, agent-skills / flutter 2개 페이지 갱신. 결정적 발견 5가지: (1) **AGENTS.md 12단계 진화 양대 변종 = Next.js 단일 OSS에서 동시 발견** — ① `$skill` 인덱싱 (`$pr-status-triage` / `$flags` / `$dce-edge` / `$react-vendoring` / `$runtime-debug` / `$authoring-skills` 6개 SKILL.md를 `$<name>` syntax로 참조, AGENTS.md가 거대 hub로 진화), ② `<!-- NEXT_JS_LLM_PR -->` HTML 마커 (PR 본문에 의무 삽입, LLM 생성 PR 자동 식별 — AGENTS.md가 PR 봇/거버넌스 신호 발신기로 진화). 21회차 4가지 변종 (PR-패턴/redirect/계층화/anti-fragmentation)에 이은 양대 변종. (2) **AGENTS.md 양극화 가설 보강** — 22회차 5개 중 Next.js만 채택 (1/5 = 20%) vs 21회차 운영 진영 3/5 = 60%. 프론트엔드 진영의 AGENTS.md 도입은 운영 진영의 1/3 수준. (3) **10번째 OSS 거버넌스 모델 = "Open Code (코드 분배 플랫폼)"** — shadcn-ui/ui (113K stars, 22회차 1위) `npx shadcn add` CLI로 컴포넌트 코드 직접 복사. npm install 의존성 부재 → 사용자 코드베이스가 fork 결과 → 21회차 Sentry anti-fragmentation의 정반대 (의도적 fragmentation). 1~9 + 10 = 10개 거버넌스 모델 공존. (4) **AGENTS.md = CLAUDE.md symlink 3번째 사례** — Next.js (이전: PydanticAI, FastMCP). 22KB / 446줄로 수집 OSS 중 최대 규모. (5) **React 진영 듀얼 채택 패턴 정립** — 클라이언트 상태(Zustand) + 서버 상태(TanStack Query) + UI 컴포넌트(shadcn-ui) + 풀스택(Next.js) 4-축 분리, Redux 단일 솔루션 시대 종료. Flutter 진영은 Riverpod 단일 통합 (StateProvider+FutureProvider+DI) → "Flutter 단일 표준, React LEGO" 구도. 부수: Next.js Turbopack(Rust) 기본 + canary default branch + Anti-pattern 명시 + Secret redaction 의무화. flutter-nextjs-fullstack-pattern.md가 6번째 종합 축 (15 backend / 16 dataframe / 17~18 agent / 19 observability / 20 frontend) -->
 <!-- 수집일 2026-04-28 (21회차 / Plan 19회차 — 운영/Observability 5단 스택): Docker(moby) / GitHub Actions / Prometheus / Grafana / Sentry 5개 신규 수집 — 소스 5 + 엔티티 5 + 개념 1 (observability) + 종합 1 (observability-and-cicd-stack) 추가, agent-skills / devops-cicd 2개 페이지 갱신. 결정적 발견 5가지: (1) **agent-skills 11단계 진화 = "운영 진영 확산 + 4가지 새 변종 동시 등장"** — Prometheus/Grafana/Sentry 3개 OSS가 동시에 AGENTS.md 채택. 4가지 변종: ① **PR-패턴 가이드** (Prometheus 148줄, "최근 merge된 PR로부터 maintainer 선호 패턴 추출"), ② **`@AGENTS.md` redirect CLAUDE.md** (Grafana/Sentry, CLAUDE.md 1줄로 축소해 SSOT 일원화), ③ **계층화 AGENTS.md** (Grafana 2-tier: docs/+alerting/, Sentry 4-tier: src/+tests/+static/), ④ **Anti-fragmentation 명문화** (Sentry "Do not add to CLAUDE.md or Cursor rules"). 추가로 **AGENTS.md 자체 버저닝** (Grafana `<!-- version: 2.0.0 -->`) 첫 도입. (2) **AGENTS.md 양극화** — 운영 진영 5개 중 3개 채택, Docker/Moby + GitHub Actions 2개 미채택. "애플리케이션 코드에 가까운 운영 OSS는 적극 채택, 인프라 코어 OSS는 신중" 패턴. CI/CD 진영 전체(Jenkins/CircleCI/GitLab CI)는 미채택. (3) **9번째 거버넌스 모델 = CNCF graduated** — Prometheus는 CNCF 두 번째 졸업 프로젝트(Kubernetes 다음). 16회차 ASF PMC와 함께 "vendor-neutral 재단" 양대 산맥(ASF=데이터/JVM, CNCF=클라우드 네이티브). 1~8 (Anthropic/OpenAI/Pydantic/Astral/커뮤니티/NumFOCUS/ASF/LangChain Inc.) + 9 = 9개 거버넌스 모델. (4) **5단 흐름 = Docker → GHA → Prometheus → Grafana → Sentry** — 빌드 → CI/CD → 메트릭 → 시각화 → 에러 추적. observability-and-cicd-stack.md가 5번째 종합 축 (15 backend / 16 dataframe / 17~18 agent / 19 observability). 사이드 프로젝트 30분 부트스트랩 가능. (5) **Sentry Feature Flag 5단계 + viewer_context contextvar** — c2spf-analytics 직접 응용 가능 패턴. "PR/commit/code 모두 anonymize" 룰은 PHI/PII 컴플라이언스 자동화 단서. 부수: Docker v29(2025-11) `github.com/docker/docker` deprecated → `github.com/moby/moby/v2` 8년 분리 완성, GHA OIDC 기반 클라우드 인증으로 정적 credential 제거 가능 -->
 <!-- 수집일 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장): DeepAgents / CrewAI / PandasAI / Pydantic AI 4개 신규 수집 — 소스 4 + 엔티티 4 추가, agent-frameworks-matrix.md 6×N으로 확장, openai-agents-python / pydantic / agent-skills / agent-patterns / ml-ai 5개 페이지 갱신. 결정적 발견 5가지: (1) **AGENTS.md=CLAUDE.md 동기화 6 OSS 표준화** = agent-skills 외부 채택 10단계 진화의 10번째 — 18회차 추가 DeepAgents (AGENTS.md 364줄) + Pydantic AI (10K byte-for-byte) 합류로 6 OSS (LangChain/LangGraph/DeepAgents/FastMCP/OpenAI Agents/Pydantic AI) 동시 채택 → "LLM 프레임워크 OSS 사실상 표준" 격상. CrewAI/PandasAI 미채택은 LangChain/OpenAI/Pydantic 진영 vs 독립 진영의 거버넌스 분기점 시사. (2) **5번째 OSS+SaaS 듀얼 모델 — Crew Control Plane** — Polars/DuckDB/LangChain/FastMCP/CrewAI 5개 사례. Pydantic Logfire는 6번째 (SaaS이나 별도 제품). (3) **12번째 패턴(durable execution) 양강 구도** — Pydantic AI가 README 11가지 강점 9번에서 durable execution 1급 명시 → LangGraph 단독 → LangGraph + Pydantic AI 양강. type-safety는 Pydantic AI ★★★ 압도적 우위. DeepAgents는 LangGraph 위 프리셋으로 12번째 패턴 자동 상속. (4) **YAML/JSON agent 정의 1급 = Pydantic AI 단독** — 코드 없는 agent 정의 — agent-skills SKILL.md 패키징 사상의 다음 진화 방향. (5) **CrewAI "학습 인증 → SaaS 깔때기"** — 100,000+ 인증 개발자 → app.crewai.com 직결, 다른 프레임워크에 없는 비즈니스 모델. 부수: Capability(Pydantic AI) vs harness(DeepAgents) 추상화 비교, A2A(Agent2Agent) 표준 첫 등장. agent-frameworks-matrix.md는 이제 6 프레임워크 + 2 직교 layer × ~22축 정량 비교 + 7-step 의사결정 트리 + 단계별 c2spf-analytics 마이그레이션 권장 (Stage 1 PandasAI / Stage 2 Pydantic AI / Stage 3 LangGraph) -->
@@ -44,11 +46,11 @@ updated: 2026-04-28 (22회차 / Plan 20회차 — 프론트엔드 5종 + AGENTS.
 
 ## 통계
 
-- 총 페이지 수: 164
+- 총 페이지 수: 169
 - 소스 요약: 63
-- 엔티티: 65
+- 엔티티: 69
 - 개념: 23
-- 종합 분석: 11
+- 종합 분석: 12
 
 ---
 
@@ -217,6 +219,10 @@ updated: 2026-04-28 (22회차 / Plan 20회차 — 프론트엔드 5종 + AGENTS.
 | [[tanstack-query]] | TanStack Query | tool | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 | 1 | 2026-04-28 |
 | [[zustand]] | Zustand | tool | zustand, react, state-management, hooks, flux, minimal, providerless, 22회차 | 1 | 2026-04-28 |
 | [[shadcn-ui]] | shadcn/ui | tool | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차 | 1 | 2026-04-28 |
+| [[mate-chat]] | Mate Chat | project | mate-chat, side-project, personal, flutter, riverpod, fastapi, ai-companion, 23회차 | 0 | 2026-04-28 |
+| [[vercel]] | Vercel | organization | vercel, organization, frontend, edge, nextjs, turbopack, ai-sdk, 23회차 | 1 | 2026-04-28 |
+| [[react]] | React | tool | react, javascript, ui-library, meta, frontend, hooks, jsx, 23회차 | 0 | 2026-04-28 |
+| [[python]] | Python | language | python, language, dynamic-typing, gil, asyncio, 23회차 | 0 | 2026-04-28 |
 
 ## 종합 분석 (Syntheses)
 
@@ -233,3 +239,4 @@ updated: 2026-04-28 (22회차 / Plan 20회차 — 프론트엔드 5종 + AGENTS.
 | [[agent-frameworks-matrix]] | Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장) | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp, 17회차, 18회차 | 2026-04-28 |
 | [[observability-and-cicd-stack]] | Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름 (AGENTS.md 11단계 진화 + 4가지 새 변종) | observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf, 19회차 | 2026-04-28 |
 | [[flutter-nextjs-fullstack-pattern]] | Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (AGENTS.md 12단계 진화 + Open Code 10번째 거버넌스 모델) | frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차 | 2026-04-28 |
+| [[seokgeun-stack-guide]] | 석근 스택 가이드 — 6분류 카탈로그 + 사이드 프로젝트 30분 부트스트랩 + 회사 BI 적용 (8회차 누적 메타 결론) | personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차 | 2026-04-28 |
