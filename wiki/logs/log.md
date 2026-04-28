@@ -10,6 +10,111 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | Mate Chat 본진 1차 수집 — 38 SKILL + 위키 발견 종합 실증 (24회차)
+
+- **트리거**: 23회차 마무리 후 사용자 지시 — "(a) Mate Chat 수집 → (c) 깨진 링크 정리" 순서. 23회차에서 [[mate-chat]] stub만 등록했던 본인 핵심 사이드 프로젝트의 raw 1차 수집으로 stub → 정식 격상 + 채팅 분석 모듈 종합 분리.
+
+### 수집 대상
+
+`/Users/sgkim/Projects/mate-chat/` 로컬 저장소 (private repo):
+- README.md (11KB) / AGENTS.md (2.8KB) / CLAUDE.md (22KB) / GEMINI.md (3.5KB) / TODO.md (3.1KB) / skills-lock.json (4.4KB)
+- `.agents/skills/` **38 SKILL.md** (총 7,566줄, 평균 200줄/SKILL)
+- `mate_chat_backend/` README + pyproject.toml + 3 docs (caching/logging/rate-limiting)
+- `mate_chat_flutter/` README + pubspec.yaml
+
+### 결정적 발견 5가지
+
+#### 1. 38 SKILL.md = 단일 OSS 최대 규모
+
+| 비교 | 개수 | 회차 |
+|---|---|---|
+| anthropics-skills (1차 정의) | ~12 | 4 |
+| OpenAI agents-python | 9 | 14 |
+| flutter (vendor-neutral) | 3 | 12 |
+| **Mate Chat (개인 사이드)** | **38** | **24** |
+
+- Flutter 본진 3 SKILL → 19개 fork·확장 (관리 상태 / 아키텍처 / 동시성 / 테스트 / 폼 / 국제화 / 라우팅 / HTTP·JSON / 캐싱 / DB / 테마 / 접근성 / 사이즈 / 임베딩 / 네이티브 API / 플러그인 / 홈 위젯 / 애니메이션 / 패턴)
+- 도메인 SOP 15개 (api-consistency / fastapi-testing / websocket-pattern / security-review / migration-safety / pre-deployment / feature-workflow / doc-management / skill-creator / theme-factory / ui-ux-pro-max / build-app-bundle / frontend-design / flutter-qa-audit / flutter-testing-apps)
+- Flutter 도구·환경 4개
+
+→ **개인 사이드 프로젝트가 메이저 OSS의 4배 SKILL** = agent-skills 표준 채택 깊이는 OSS 규모와 무관함을 입증.
+
+#### 2. AGENTS.md ↔ CLAUDE.md 분리형 = 13단계 진화 양분 가능성
+
+22회차까지의 8 OSS는 모두 **수렴형** (symlink / byte-for-byte / redirect):
+- Anthropic / spec-kit / fastapi / uv / scikit-learn / flutter / openai-cookbook / openai-agents-python (8 단계)
+- Next.js / shadcn-ui / Pydantic AI / FastMCP (12 단계 양대 변종)
+
+본 회차 발견 = **분리형**:
+- AGENTS.md (협업자용, 2.8KB, 일반 OSS 가이드)
+- CLAUDE.md (에이전트용, **22KB**, 프로젝트 컨텍스트 풍부판)
+- GEMINI.md (벤더 특화, 3.5KB)
+
+→ **13단계 진화 = "역할별 분리 (수렴 vs 분리)"** 양극 패턴 정립. [[agent-skills]] 후속 보강 대상.
+
+#### 3. 위키 15~22회차 발견의 종합 실증
+
+| 회차 | 발견 도구 | Mate Chat 적용 |
+|---|---|---|
+| 15 | FastAPI/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis | 100% 6단 채택 |
+| 15 | uv + ruff (Astral) | 100% (uv sync, uv run pytest, pip 금지 명문화) |
+| 17/18 | OpenAI Python | 100% (openai>=2.12) |
+| 19 (=21) | Sentry / Prometheus / structlog 트리플 | 100% (sentry-sdk + prometheus-client + structlog) |
+| 22 (=20) | Flutter + Riverpod | 100% (flutter_riverpod 2.5) |
+| 22 (=20) | shadcn-ui (React) | **shadcn_ui Flutter port 0.40.5 채택 — 진영 횡단** |
+
+→ [[seokgeun-stack-guide]] 권장 스택과 1:1 일치. 가이드의 신뢰도 강한 뒷받침 + 가이드가 외부 OSS 분석 결론이 아니라 본인 운영 경험의 사후 명문화일 가능성 시사.
+
+#### 4. shadcn-ui 진영 횡단 = React → Flutter 첫 위키 사례
+
+22회차 [[shadcn-ui]]의 "Open Code" 거버넌스 모델(10번째 OSS 거버넌스 모델)이 `shadcn_ui` Dart 패키지로 Flutter에 이식. 본 회차에서 Mate Chat 채택 확인. **개인 프로젝트가 진영 횡단 채택의 첫 위키 사례**.
+
+#### 5. 27 gstack 슬래시 커맨드 = 자체 생산성 시스템
+
+CLAUDE.md 첫 섹션에 명시:
+- **계획**: /plan-{ceo,eng,design}-review, /design-consultation, /autoplan, /office-hours
+- **출시**: /ship, /land-and-deploy, /canary, /document-release, /setup-deploy
+- **품질**: /qa, /qa-only, /design-review, /review, /benchmark, /careful, /freeze, /guard, /unfreeze, /retro
+- **운영 보조**: /investigate, /codex, /cso, /browse, /setup-browser-cookies, /gstack-upgrade
+
+→ 1인 사이드 프로젝트가 회사 운영 관행을 슬래시 패키지화. [[harness]] 6번째 축(PLANS.md ExecPlan)의 다음 단계 진화 — **개인이 운영 SOP를 슬래시 커맨드로 패키지화**. 컴투스플랫폼 BI 업무에 동일 패턴 적용 가능.
+
+### 산출
+
+| # | 페이지 | 위치 | 종류 |
+|---|---|---|---|
+| 1 | [[seokgeun-mate-chat]] | wiki/sources/ | 신규 source |
+| 2 | [[mate-chat]] | wiki/entities/ | stub → 정식 격상 (source_count 0→1) |
+| 3 | [[matechat-chat-analysis-module]] | wiki/syntheses/ | 신규 종합 (7축 + BigQuery 파이프라인 + 회사 BI 4축 차용) |
+
+### 부수 발견
+
+- **v1.0.0 Google Play 출시 + Android 9개 언어** / 백엔드 70%+ 비대칭 운영 = **사업화 우선·기능 후속 모델**
+- **형제 프로젝트 3개 발견**: `mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate` — 채팅 분석 모듈은 본진과 분리 운영. 25회차 raw 수집 후속 대상.
+- **규모**: 백엔드 83 API + 20 PostgreSQL 테이블 + 113 테스트 + 132 Dart 파일 51,960줄
+- **운영 트리플 100% 적용** — sentry-sdk + prometheus-client + structlog 백엔드 / sentry_flutter Flutter
+- **18회차 mate-chat-wiki 스냅샷**(소비자 wiki 68 md)과 본 24회차(코드·메타·SOP)가 보완 관계로 Mate Chat 1차 자료 완성
+
+### 통계 변화
+
+| 영역 | 23회차 | 24회차 | 증가 |
+|---|---|---|---|
+| 총 페이지 | 169 | 171 | +2 (source 1 + synthesis 1, entity는 격상이라 카운트 변동 없음) |
+| 소스 | 63 | 64 | +1 (seokgeun-mate-chat) |
+| 엔티티 | 69 | 69 | 0 (mate-chat 격상) |
+| 개념 | 23 | 23 | 0 |
+| 종합 | 12 | 13 | +1 (matechat-chat-analysis-module) |
+
+### 다음 단서
+
+- **25회차 raw 수집**: 3 형제 프로젝트 (mate-katok-analysis-backend / -flutter / data-mate) 1차 자료 → 본진 mate-chat과의 데이터 흐름 확정 또는 가설 폐기
+- **38 SKILL 1회독**: 9개 회사 BI 차용 1순위 (api-consistency / fastapi-testing / websocket-pattern / security-review / migration-safety / pre-deployment / feature-workflow / doc-management / skill-creator) → [[seokgeun-stack-guide]] "회사 BI 차용 SOP 후보" 섹션 추가
+- **agent-skills 13단계 정식화**: [[agent-skills]] 페이지에 분리형(AGENTS/CLAUDE/GEMINI) 13단계 진화 항목 추가
+- **shadcn-ui Flutter port 보강**: [[shadcn-ui]] 페이지에 진영 횡단 채택 사례 별도 섹션
+- **잔여 작업 (c)**: 23회차 잔여 깨진 링크 19개 stub 보강 작업 — 25회차에서 분석 형제 raw 수집 + 깨진 링크 stub 동시 진행 검토
+
+---
+
 ## [2026-04-28] lint+synthesis | 마무리 점검 + 석근 스택 가이드 — 4 stub 보강 + 6분류 카탈로그 + 의사결정 트리 (23회차 / Plan 21회차)
 
 - **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 21회차 (마무리). 15~22회차 8회차 동안 누적된 32개 신규 OSS + 8개 기존 도구를 (a) 깨진 링크 정합성, (b) 6분류 통합 카탈로그, (c) 사이드 프로젝트 의사결정 트리, (d) 회사 BI 적용 매핑으로 봉인하는 회차.

@@ -1,0 +1,141 @@
+[project]
+name = "mate_chat_backend"
+version = "0.1.0"
+description = "Mate Chat Backend API - FastAPI based global social messaging platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Proprietary"}
+authors = [
+    {name = "Mate Chat Team"}
+]
+
+dependencies = [
+    # FastAPI and ASGI server
+    "fastapi[standard]>=0.117.1",
+    "uvicorn[standard]>=0.27.0",
+    # Database
+    "sqlalchemy>=2.0.43",
+    "greenlet>=3.0.0",
+    "alembic>=1.16.5",
+    "asyncpg>=0.30.0",  # PostgreSQL async driver
+    # Redis
+    "redis>=5.0.1",
+    # Pydantic for validation
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.11.0",
+    "email-validator>=2.3.0",
+    # Authentication & Security
+    "python-jose[cryptography]>=3.5.0",  # JWT
+    "passlib[argon2]>=1.7.4",  # Password hashing
+    "python-multipart>=0.0.6",  # File uploads
+    # OAuth clients
+    "httpx>=0.28.1",  # HTTP client for OAuth
+    # OpenAI
+    "openai>=2.12.0",
+    # Push notifications
+    "firebase-admin>=6.6.0",
+    # File storage (MinIO/S3)
+    "boto3>=1.34.0",
+    # Logging
+    "structlog>=25.4.0",
+    "prometheus-client>=0.20.0",
+    "sentry-sdk[fastapi]>=2.39.0",
+    # Utilities
+    "python-dotenv>=1.0.0",
+    "google-auth>=2.0",
+    "google-api-python-client>=2.0",
+    "app-store-server-library>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Testing
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "pytest-cov>=7.0.0",
+    "httpx>=0.28.1",  # For TestClient
+    
+    # Code quality
+    "black>=24.1.0",
+    "isort>=5.13.2",
+    "mypy>=1.18.2",
+    "ruff>=0.13.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["app"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = false
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+plugins = ["pydantic.mypy"]
+# Ignore missing imports for third-party libraries
+ignore_missing_imports = true
+# Be more lenient with some common patterns
+no_implicit_optional = false
+
+[[tool.mypy.overrides]]
+module = [
+    "app.repositories.*",
+    "app.services.*",
+]
+# SQLAlchemy's dynamic types cause many false positives
+disable_error_code = ["arg-type", "assignment", "attr-defined", "misc"]
+
+[[tool.mypy.overrides]]
+module = ["app.api.*"]
+# FastAPI endpoints have complex type inference
+disable_error_code = ["arg-type", "assignment"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=app --cov-report=term-missing"
+filterwarnings = [
+    "ignore:coroutine 'Connection._cancel' was never awaited:RuntimeWarning",
+    "ignore:.*Connection._cancel.*:RuntimeWarning",
+    "ignore:Accessing argon2.__version__ is deprecated:DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+]
+ignore = [
+    "E501",  # line too long (handled by black)
+    "B008",  # do not perform function calls in argument defaults (FastAPI Depends pattern)
+    "E402",  # module level import not at top of file (test fixtures)
+    "E712",  # comparison to True/False (SQLAlchemy pattern)
+    "B904",  # raise without from inside except (too strict)
+    "B007",  # unused loop control variable (acceptable in some cases)
+]
