@@ -10,6 +10,59 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | mate-chat 프로젝트 위키 스냅샷 수집 — 프로젝트 전용 위키를 llm-wiki 원천 데이터로 편입 (18회차)
+
+- **트리거**: 소유자 요청 — 현재 폴더 `llm-wiki`의 형제 폴더 `mate-chat/wiki`는 MateChat 프로젝트 전용 Obsidian/LLM 위키이므로, 그 데이터를 `llm-wiki` 원천 데이터로 가져와 수집.
+- **판단**:
+  - `mate-chat/wiki`는 프로젝트 전용 위키이고 `llm-wiki`는 개인 전체 위키이므로, 68개 페이지를 `llm-wiki`에 개별 페이지로 중복 생성하지 않음.
+  - 대신 프로젝트 위키 전체를 날짜 스냅샷으로 `raw/`에 보관하고, `llm-wiki`에는 소스 요약 + MateChat 엔티티 보강 + 상위 종합 분석만 유지.
+- **원천 스냅샷**:
+  - `raw/notes/mate-chat-wiki-2026-04-28/`
+  - `.obsidian/` 설정은 제외.
+  - 보관 파일: 68개 마크다운 (`SCHEMA.md`, `index.md`, `log.md`, `sources/` 19개, `entities/` 22개, `concepts/` 22개, `synthesis/` 2개).
+- **생성된 파일** (2건):
+  - `wiki/sources/mate-chat-project-wiki-2026.md` — 프로젝트 위키 스냅샷 요약. 구조, 아키텍처, Hybrid AI Chat, Clover/IAP, 구현/출시 상태, 남은 과제, source conflict 기록.
+  - `wiki/syntheses/matechat-project-knowledge-map.md` — MateChat 프로젝트 지식 지도. 프로젝트 위키와 개인 운영 프로필의 역할 분리, 핵심 시스템 노드, 다음 수집 우선순위 정리.
+- **업데이트된 파일** (3건):
+  - `wiki/entities/matechat.md` — source_count 4→5, 프로젝트 위키 스냅샷 섹션 추가, 출시 상태 기록 차이 명시.
+  - `wiki/syntheses/seokgeun-operating-profile-2026.md` — sources에 프로젝트 위키 스냅샷 추가, 열린 질문에 출시 상태 차이 확인 항목 추가.
+  - `wiki/index.md` — 18회차 표기, 통계 121→123 / 소스 44→45 / 종합 7→8, 신규 페이지 2건 등록.
+- **핵심 발견**:
+  - `mate-chat/wiki`는 구현/아키텍처/출시/운영 지식이 충분히 축적된 프로젝트 전용 지식 베이스다.
+  - 프로젝트 위키는 v1.0.0 Google Play Store 출시 완료 및 운영 모드로 기록하지만, [[seokgeun-kim-profile-2026]]은 출시 직전 수준으로 기록한다. 최신 상태를 말할 때는 Play Console, 배포 태그, mate-chat 최신 문서로 확인 필요.
+  - 프로젝트 위키 `index.md`는 Entities 21개로 표기하지만 실제 스냅샷 파일은 22개다. `clover-system.md` 추가 후 카운트만 덜 갱신된 상태로 보인다.
+- **메모**: 이후 MateChat 관련 세부 구현 질문은 [[mate-chat-project-wiki-2026]]의 `raw_path` 아래 개별 프로젝트 위키 파일로 내려가고, 사업/육아휴직/AI 협업 맥락은 [[seokgeun-operating-profile-2026]]과 [[matechat-project-knowledge-map]]에서 본다.
+
+---
+
+## [2026-04-28] ingest | 석근 프로필 수집 — MateChat·육아휴직·AI 협업 운영 프로필 (17회차)
+
+- **트리거**: 소유자 요청 — "마크다운 형태로 적은 내 프로필 정보"를 적절한 경로에 원본 파일로 만들고 수집.
+- **소스**:
+  - `raw/notes/personal/seokgeun-kim-profile-2026-04-28.md` — 개인 기본 정보, 가족, 커리어, MateChat 비전/사업화, 육아휴직 계획, 생산성/건강, 커뮤니케이션 취향, AI에게 기대하는 역할까지 포함한 2026년 개인 프로필 원문.
+- **작업 방침**:
+  - 원문에는 민감한 개인 식별 정보가 포함되어 있으므로 `raw/`에 보존.
+  - 위키 페이지에는 정확한 주소·가족 세부 신상·출생 세부 정보 등을 반복하지 않고, 전략·운영·AI 협업에 필요한 구조화 정보만 반영.
+- **생성된 파일** (3건):
+  - `wiki/sources/seokgeun-kim-profile-2026.md` — 원문 소스 요약. MateChat 사업화, 육아휴직 운영, 커뮤니케이션 선호, 번아웃 리스크, AI 협업 기대를 요약.
+  - `wiki/entities/matechat.md` — MateChat 프로젝트 엔티티. "대화의 시작은 AI, 끝은 사람" 포지셔닝, 기술 스택, KPI, 리스크, closed alpha 우선순위 정리.
+  - `wiki/syntheses/seokgeun-operating-profile-2026.md` — 2026년 개인 운영 프로필 종합 분석. 가족 시간·경제적 독립·MateChat 검증·주 20~25시간 현실 예산·AI 협업 원칙 통합.
+- **업데이트된 파일** (2건):
+  - `wiki/entities/seokgeun-kim.md` — source_count 5→8, related에 MateChat/개인 운영 프로필 추가, 2026년 운영 키워드와 AI 협업 기대 반영.
+  - `wiki/index.md` — 17회차 표기, 통계 118→121 / 소스 43→44 / 엔티티 46→47 / 종합 6→7, 신규 페이지 3건 등록.
+- **핵심 판단**:
+  - MateChat은 기능이 부족한 앱이라기보다 사용자 검증이 부족한 앱이다.
+  - 2026년 육아휴직의 성공 기준은 "더 많이 개발"이 아니라, 작은 closed alpha로 실제 인간-인간 대화와 재방문/결제 가능성을 확인하는 것이다.
+  - 번아웃은 개인 컨디션 문제가 아니라 MateChat 사업화의 직접 리스크다. 작업 계획은 주 20~25시간 기준으로 보수적으로 잡는 것이 안전하다.
+- **메모**: 이 회차는 기존 커리어 중심 [[career-timeline-seokgeun]]에 이어, 석근의 2026-2027 개인 운영체계와 AI 협업 선호를 위키에 박은 첫 수집이다.
+
+### 호칭 정정
+
+- **후속 정정**: 원문에 들어간 "책임님" 호칭은 회사 직급 기반 AI 호칭 요청이 잘못 섞인 내용으로 확인됨.
+- **수정**: 원문과 위키 요약을 "석근 프로필"로 정리하고, AI가 회사 직급 호칭보다 친구처럼 자연스럽게 "석근" 또는 이름으로 부르는 것을 선호한다고 명시.
+
+---
+
 ## [2026-04-28] ingest | 데이터 레이어 5개 신규 수집 — Polars/DuckDB/PyArrow+Apache Arrow/Apache Kafka/Parquet (16회차)
 
 - **트리거**: 15회차 종료 직후 사용자 "계속 진행해줘" → Auto Mode에서 16회차(데이터 레이어) 즉시 실행. 계획 `cozy-swinging-donut.md` 16회차 명세 그대로 진행.

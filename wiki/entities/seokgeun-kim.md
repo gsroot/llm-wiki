@@ -2,14 +2,16 @@
 title: "김석근 (Seokgeun Kim)"
 type: entity
 entity_type: person
-tags: [석근, owner, 백엔드, 풀스택, BI, 게임데이터, 컴투스플랫폼]
+tags: [석근, owner, 백엔드, 풀스택, BI, 게임데이터, 컴투스플랫폼, matechat, 개인프로필]
 related:
   - "[[com2us-platform]]"
   - "[[c2spf-analytics]]"
   - "[[xpla-platform]]"
-source_count: 5
+  - "[[matechat]]"
+  - "[[seokgeun-operating-profile-2026]]"
+source_count: 8
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-28
 ---
 
 # 김석근 (Seokgeun Kim)
@@ -17,6 +19,8 @@ updated: 2026-04-24
 ## 개요
 
 이 위키의 소유자. 9년차 백엔드/풀스택 엔지니어로 컴투스플랫폼(Com2usPlatform)에서 게임 데이터 BI 서비스를 개발하고 있다. Python 백엔드 · 데이터 분석(BI) · ML/AI 서비스 · 블록체인 플랫폼 4개 영역을 동시에 다룬다.
+
+2026년 기준 개인 운영의 중심축은 [[matechat]] 사업화, 가족 시간 확보, AI 협업 기반 생산성 확장이다. 정확한 신상·가족 세부 정보는 민감 정보이므로 원문 소스에만 보관하고, 이 엔티티에는 커리어·전략·협업에 필요한 요약만 둔다.
 
 - 📧 gsr2732@gmail.com
 - GitHub: [@gsroot](https://github.com/gsroot)
@@ -35,6 +39,8 @@ updated: 2026-04-24
 - **관심 분야**: 파이썬, AI, 데이터 분석, 개인 비서 AI 서비스 개발.
 - **개발 환경**: 회사 맥북 / 집 윈도우, IDE는 Antigravity와 Claude Code.
 - **선호 스택**: Python, FastAPI, 바이브 코딩.
+- **현재 핵심 개인 프로젝트**: [[matechat]] — AI가 사람을 대체하는 것이 아니라 사람 간 연결을 돕는 소셜+AI 하이브리드 앱.
+- **2026년 운영 키워드**: 육아휴직, MateChat closed alpha, 사용자 검증, 수익화, 번아웃 방지, 가족 시간 확보.
 - **학력**: 인하대학교 컴퓨터공학과 (2007-03 ~ 2014-02).
 - **자격**: ADSP(2019), 정보처리기사(2018), MSP(2012-2013, Imagine Cup 데어즈대표상).
 
@@ -57,6 +63,7 @@ updated: 2026-04-24
 ## 종합 분석
 
 - [[career-timeline-seokgeun]] — 2016-2026 커리어 타임라인 (역할 진화 분석)
+- [[seokgeun-operating-profile-2026]] — 2026년 개인 운영 프로필 (MateChat, 육아휴직, AI 협업, 번아웃 리스크)
 
 ## 출처
 
@@ -66,6 +73,7 @@ updated: 2026-04-24
 - [[portfolio-method]] — portfolio 저장소 운영 방법론 (본인이 설계)
 - [[obsidian-guide]] — Obsidian 사용 가이드 (본인 작성)
 - [[using-llm-wiki-as-rag]] · [[slash-commands-vs-agent-skills]] — Claude Code 운영 노트 (본인 작성)
+- [[seokgeun-kim-profile-2026]] — 2026년 개인 프로필 원문 수집 요약 (MateChat 사업화, 육아휴직 계획, 커뮤니케이션 선호, AI 협업 기대)
 
 ## 논쟁/모순
 
@@ -76,3 +84,6 @@ updated: 2026-04-24
 - 위키 운영자. `raw/`에 새 자료를 추가하면 LLM이 이 위키를 갱신.
 - llm-wiki와 portfolio 두 저장소를 동시에 운영. 둘 다 "원천 → 요약 → 종합"의 동일한 3-Layer 패턴을 적용.
 - "로그를 결정으로 바꾸는 시스템을 만든다"가 자기 정체성의 캐치프레이즈.
+- AI에게 기대하는 역할은 개발 동료를 넘어 개인 비서, 사업 전략 파트너, 마케팅 파트너, 일정 관리자, 냉정한 피드백 제공자까지 확장된다.
+- AI 호칭은 회사 직급 호칭보다 친구처럼 자연스러운 "석근" 또는 이름 호칭을 선호한다.
+- MateChat 관련 의사결정에서는 기능 추가보다 실제 사용자 검증과 지속 가능한 운영 리듬을 우선한다.

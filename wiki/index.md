@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (16회차)
+updated: 2026-04-28 (18회차)
 ---
 
 # 위키 인덱스
@@ -29,6 +29,9 @@ updated: 2026-04-28 (16회차)
 
 <!-- 수집일 2026-04-28 (15회차): 백엔드 코어 6개 신규 수집 (Ruff/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis) — 소스 6 + 엔티티 6 + 종합 분석 1 (backend-fastapi-stack) 추가, fastapi/uv/astral 3개 엔티티 갱신. 결정적 발견 4가지: (1) **agent-skills 외부 채택 8단계 → 9번째 "회사 차원 표준화"** — astral-sh/ruff가 같은 회사 [[uv]] (10회차)와 동일한 `CLAUDE.md = @AGENTS.md` 1줄 import 패턴 채택 → 진정한 새 패턴은 "조직별 채택" → "조직 내 표준화" 진화. (2) **PEP 593 Annotated = 단일 타입 체인 사실상 표준** — Pydantic V2 / SQLAlchemy 2.0 / FastAPI DI가 같은 표현으로 통합 (Type-First Python Backend). (3) **PostgreSQL = 메일링 리스트 거버넌스 첫 사례 (6번째 모델)** — Pull Request 받지 않음, pgsql-hackers 메일링 + GitHub 미러 30년 보수파. (4) **Redis = MANIFESTO 철학 명문화 첫 사례 (7번째 모델)** — 10항목 ("DSL for Abstract Data Types" / "Memory storage is #1" / "We optimize for joy") + 2024 라이선스 변경 → Valkey fork. 단일 백엔드 도메인에 7개 거버넌스 모델 공존이 [[backend-fastapi-stack]]에 박힘 -->
 <!-- 수집일 2026-04-28 (16회차): 데이터 레이어 5개 신규 수집 (Polars/DuckDB/PyArrow+Apache Arrow/Apache Kafka/Parquet) — 소스 4 + 엔티티 5 + 개념 1 (lazy-evaluation) + 종합 2 (dataframe-ecosystem-evolution + pandas-vs-polars-vs-duckdb) 추가, pandas/copy-on-write 2개 페이지 갱신. 결정적 발견 5가지: (1) **"메모리 표준 = 디스크 표준" 통합** — Apache Arrow + Parquet의 단일 자료형 모델이 데이터 인프라 역사상 가장 성공적인 표준화. 변환 비용 0 보장 → pandas/Polars/DuckDB가 zero-copy 교환. (2) **8번째 거버넌스 모델 = ASF PMC** — Apache Software Foundation의 Project Management Committee 모델. 15회차의 7개 + ASF PMC = 8개 OSS 거버넌스 모델 공존 (Apache 산하는 단일 회사 흡수 불가 구조). (3) **CoW vs Immutable의 정반대 답** — pandas의 [[copy-on-write]]는 모델 유지 + 명확화, Polars/Arrow의 immutable-by-default는 모델 자체 교체. PDEP-10 통과 시 둘이 수렴. (4) **"디스크는 친구" Kafka 사상의 일반화** — design.md 511줄이 데이터 인프라 전체에 영향: PostgreSQL WAL / Kafka Topic / Redis AOF / Parquet column chunk / DuckDB mmap / Polars streaming 모두 sequential I/O + pagecache 위임. (5) **"쿼리 엔진" 정체성 부상** — Polars + DuckDB가 동시에 자기 정의 → DataFrame ↔ SQL 경계 무너짐. 회사 BI 적용: pandas → Polars(메인) + DuckDB(SQL 탐색) + pandas(ML 출력만) 3중 스택 권장 -->
+<!-- 수집일 2026-04-28 (17회차): 석근 프로필 수집 — 개인 프로필 원문을 raw/notes/personal에 보관하고, 소스 요약 1 + 엔티티 1(MateChat) + 종합 분석 1(석근 개인 운영 프로필) 추가, seokgeun-kim 엔티티 보강. 핵심 정리: 2026년 운영 병목은 기능 개발보다 MateChat 사용자 검증이며, 육아휴직 1년은 가족 시간 확보와 사업화 검증을 동시에 다루는 기간. 민감한 신상 정보는 raw 원문에만 두고 위키에는 전략/운영/AI 협업 관점으로 요약. AI 호칭은 회사 직급 호칭이 아니라 친구처럼 자연스러운 이름 호칭 선호 -->
+<!-- 수집일 2026-04-28 (18회차): mate-chat 프로젝트 위키 스냅샷 수집 — ../mate-chat/wiki 콘텐츠 68개 md 파일을 raw/notes/mate-chat-wiki-2026-04-28/에 보관(.obsidian 제외), 소스 요약 1 + 종합 분석 1(MateChat 프로젝트 지식 지도) 추가, MateChat 엔티티 보강. 핵심 결정: 프로젝트 위키를 llm-wiki에 개별 페이지로 복제하지 않고 원천 스냅샷으로 추적. 프로젝트 위키는 구현/출시/운영 지식, llm-wiki는 석근의 사업화/가족/AI 협업 맥락의 상위 해석을 담당 -->
+
 <!-- 수집일 2026-04-28 (14회차): openai/openai-agents-python 수집 — 소스 1 + 엔티티 1 (openai-agents-python tool) 추가, openai 엔티티 + agent-skills/harness/agent-patterns/ml-ai 4개 개념 + agent-stack-evolution 종합 분석 보강 (총 6개 페이지 갱신). ★25K 1년차 OpenAI 공식 멀티 에이전트 Python SDK (v0.14.6 / MIT / 1년 14 메이저 버전). 13회차 cookbook과 한 쌍 — cookbook이 메소드론 정의 단(가이드)이라면 본 SDK는 같은 회사가 자기 핵심 SDK 본체에 동일 패턴을 풀스택 적용한 **거버넌스 자기 채택 (self-adoption)** 직접 증거. 결정적 발견 3가지: (1) **AGENTS.md = CLAUDE.md byte-for-byte 동기화 패턴 (12,900B 양쪽 미러링)** = agent-skills 외부 채택 **8단계 진화의 8번째 사례** (1~7번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter/openai-cookbook의 끝, 가장 단순한 vendor-neutral 적응). (2) **`.agents/skills/` 9개 운영 SOP 스킬 + 스킬 간 호출 (skill chaining)** — `$skill-name` 명령형 호출 + 트리거/스킵 조건 명시. flutter 3개의 3배 규모, **첫 "9개 본격 운영 SOP" 사례**. (3) **examples/agent_patterns/ 16개 .py = Anthropic 5패턴 + OpenAI 6확장 (Guardrails 3종 / Human-in-the-loop 3종 / Forced tool use) = 11종 reference 구현** — [[agent-patterns]]에 OpenAI 확장 6패턴 명시 추가. 부수: PLANS.md 5,485B (cookbook 16KB 응축) + .codex/hooks.json Stop 훅 자동화 + Public API Positional Compatibility 정책 (dataclass 필드 순서 호환성 계약 격상) + uv+ruff+pyright 도구 스택 + llms.txt 표준 채택. 회사 BI 적용 가설 강화: 9개 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑, 13회차 PLANS.md 가설은 self-adoption 증거로 신뢰도 상승 -->
 
 
@@ -37,11 +40,11 @@ updated: 2026-04-28 (16회차)
 
 ## 통계
 
-- 총 페이지 수: 118
-- 소스 요약: 43
-- 엔티티: 46
+- 총 페이지 수: 123
+- 소스 요약: 45
+- 엔티티: 47
 - 개념: 22
-- 종합 분석: 6
+- 종합 분석: 8
 
 ---
 
@@ -56,6 +59,8 @@ updated: 2026-04-28 (16회차)
 | [[obsidian-guide]] | Obsidian 사용 가이드 | note | 석근 | 2026-04-15 | obsidian, 지식관리, 마크다운, notion |
 | [[using-llm-wiki-as-rag]] | 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법 | note | 석근 (Claude Code 세션) | 2026-04-16 | llm-wiki, RAG, claude-code, agent-skills, 운영가이드 |
 | [[slash-commands-vs-agent-skills]] | Claude Code: Slash Commands vs Agent Skills | note | 석근 (Claude Code 세션) | 2026-04-16 | claude-code, skills, slash-command, 자동호출 |
+| [[seokgeun-kim-profile-2026]] | 석근 프로필 (2026) | note | 석근 | 2026-04-28 | 개인프로필, seokgeun-kim, matechat, 육아휴직, 사업화, AI, fastapi, flutter, 가족, 생산성 |
+| [[mate-chat-project-wiki-2026]] | mate-chat 프로젝트 위키 스냅샷 (2026-04-28) | note | 석근 + LLM-maintained Mate Chat wiki | 2026-04-28 | matechat, project-wiki, obsidian, fastapi, flutter, launch, architecture, iap, websocket, i18n, clover |
 | [[portfolio-seed]] | 포트폴리오 시드 문서 | note | 석근 | 2026-04-24 | 포트폴리오, career, backend, data, ml, blockchain |
 | [[portfolio-resume-ko]] | 포트폴리오 — 이력서(한국어) | note | 석근 | 2026-04-24 | 포트폴리오, resume, career, 이직 |
 | [[portfolio-ko]] | 포트폴리오 — 상세 포트폴리오(한국어) | note | 석근 | 2026-04-24 | 포트폴리오, detailed-portfolio, selected-work |
@@ -133,7 +138,8 @@ updated: 2026-04-28 (16회차)
 | [[memex]] | 메멕스 (Memex) | project | 지식관리, 정보검색, 역사 | 1 | 2026-04-09 |
 | [[qmd]] | qmd | tool | 검색, 마크다운, CLI, MCP | 1 | 2026-04-09 |
 | [[obsidian-web-clipper]] | Obsidian Web Clipper | tool | obsidian, 웹클리핑, 소스수집 | 1 | 2026-04-09 |
-| [[seokgeun-kim]] | 김석근 (Seokgeun Kim) | person | 석근, owner, 백엔드, 풀스택, BI | 5 | 2026-04-24 |
+| [[seokgeun-kim]] | 김석근 (Seokgeun Kim) | person | 석근, owner, 백엔드, 풀스택, BI, matechat | 8 | 2026-04-28 |
+| [[matechat]] | MateChat | project | matechat, 메이트챗, AI, social, fastapi, flutter, project-wiki | 5 | 2026-04-28 |
 | [[com2us-platform]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
 | [[c2spf-analytics]] | c2spf 애널리틱스 (게임 데이터 BI) | service | analytics, c2spf, BI, 게임데이터, fastapi, react | 4 | 2026-04-24 |
 | [[xpla-platform]] | XPLA 플랫폼 (블록체인 통합 서비스) | service | xpla, blockchain, nft, smart-contract, c2spf | 3 | 2026-04-24 |
@@ -177,6 +183,8 @@ updated: 2026-04-28 (16회차)
 |------|------|------|-----------|
 | [[wiki-bootstrap-log]] | 위키 부트스트랩 기록 | 메타, 운영 | 2026-04-09 |
 | [[career-timeline-seokgeun]] | 석근 커리어 타임라인 (2016-2026) | career, timeline, evolution | 2026-04-24 |
+| [[seokgeun-operating-profile-2026]] | 석근 개인 운영 프로필 (2026) | personal-operating-profile, matechat, 육아휴직, 사업화, 가족, ai-collaboration | 2026-04-28 |
+| [[matechat-project-knowledge-map]] | MateChat 프로젝트 지식 지도 | matechat, project-knowledge-map, architecture, launch, user-validation, business-strategy | 2026-04-28 |
 | [[agent-stack-evolution]] | 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, github, google, openai, harness, BI, 개인비서, exec-plans, recent-learnings, self-adoption, 9-sop-skills, agents-md-claude-md-mirror | 2026-04-28 |
 | [[backend-fastapi-stack]] | Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존) | backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions | 2026-04-28 |
 | [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution, 16회차 | 2026-04-28 |
