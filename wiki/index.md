@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
+updated: 2026-04-28 (21회차 / Plan 19회차 — 운영/Observability 5단 스택)
 ---
 
 # 위키 인덱스
@@ -32,6 +32,7 @@ updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 <!-- 수집일 2026-04-28 (17회차): 석근 프로필 수집 — 개인 프로필 원문을 raw/notes/personal에 보관하고, 소스 요약 1 + 엔티티 1(MateChat) + 종합 분석 1(석근 개인 운영 프로필) 추가, seokgeun-kim 엔티티 보강. 핵심 정리: 2026년 운영 병목은 기능 개발보다 MateChat 사용자 검증이며, 육아휴직 1년은 가족 시간 확보와 사업화 검증을 동시에 다루는 기간. 민감한 신상 정보는 raw 원문에만 두고 위키에는 전략/운영/AI 협업 관점으로 요약. AI 호칭은 회사 직급 호칭이 아니라 친구처럼 자연스러운 이름 호칭 선호 -->
 <!-- 수집일 2026-04-28 (18회차): mate-chat 프로젝트 위키 스냅샷 수집 — ../mate-chat/wiki 콘텐츠 68개 md 파일을 raw/notes/mate-chat-wiki-2026-04-28/에 보관(.obsidian 제외), 소스 요약 1 + 종합 분석 1(MateChat 프로젝트 지식 지도) 추가, MateChat 엔티티 보강. 핵심 결정: 프로젝트 위키를 llm-wiki에 개별 페이지로 복제하지 않고 원천 스냅샷으로 추적. 프로젝트 위키는 구현/출시/운영 지식, llm-wiki는 석근의 사업화/가족/AI 협업 맥락의 상위 해석을 담당 -->
 
+<!-- 수집일 2026-04-28 (21회차 / Plan 19회차 — 운영/Observability 5단 스택): Docker(moby) / GitHub Actions / Prometheus / Grafana / Sentry 5개 신규 수집 — 소스 5 + 엔티티 5 + 개념 1 (observability) + 종합 1 (observability-and-cicd-stack) 추가, agent-skills / devops-cicd 2개 페이지 갱신. 결정적 발견 5가지: (1) **agent-skills 11단계 진화 = "운영 진영 확산 + 4가지 새 변종 동시 등장"** — Prometheus/Grafana/Sentry 3개 OSS가 동시에 AGENTS.md 채택. 4가지 변종: ① **PR-패턴 가이드** (Prometheus 148줄, "최근 merge된 PR로부터 maintainer 선호 패턴 추출"), ② **`@AGENTS.md` redirect CLAUDE.md** (Grafana/Sentry, CLAUDE.md 1줄로 축소해 SSOT 일원화), ③ **계층화 AGENTS.md** (Grafana 2-tier: docs/+alerting/, Sentry 4-tier: src/+tests/+static/), ④ **Anti-fragmentation 명문화** (Sentry "Do not add to CLAUDE.md or Cursor rules"). 추가로 **AGENTS.md 자체 버저닝** (Grafana `<!-- version: 2.0.0 -->`) 첫 도입. (2) **AGENTS.md 양극화** — 운영 진영 5개 중 3개 채택, Docker/Moby + GitHub Actions 2개 미채택. "애플리케이션 코드에 가까운 운영 OSS는 적극 채택, 인프라 코어 OSS는 신중" 패턴. CI/CD 진영 전체(Jenkins/CircleCI/GitLab CI)는 미채택. (3) **9번째 거버넌스 모델 = CNCF graduated** — Prometheus는 CNCF 두 번째 졸업 프로젝트(Kubernetes 다음). 16회차 ASF PMC와 함께 "vendor-neutral 재단" 양대 산맥(ASF=데이터/JVM, CNCF=클라우드 네이티브). 1~8 (Anthropic/OpenAI/Pydantic/Astral/커뮤니티/NumFOCUS/ASF/LangChain Inc.) + 9 = 9개 거버넌스 모델. (4) **5단 흐름 = Docker → GHA → Prometheus → Grafana → Sentry** — 빌드 → CI/CD → 메트릭 → 시각화 → 에러 추적. observability-and-cicd-stack.md가 5번째 종합 축 (15 backend / 16 dataframe / 17~18 agent / 19 observability). 사이드 프로젝트 30분 부트스트랩 가능. (5) **Sentry Feature Flag 5단계 + viewer_context contextvar** — c2spf-analytics 직접 응용 가능 패턴. "PR/commit/code 모두 anonymize" 룰은 PHI/PII 컴플라이언스 자동화 단서. 부수: Docker v29(2025-11) `github.com/docker/docker` deprecated → `github.com/moby/moby/v2` 8년 분리 완성, GHA OIDC 기반 클라우드 인증으로 정적 credential 제거 가능 -->
 <!-- 수집일 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장): DeepAgents / CrewAI / PandasAI / Pydantic AI 4개 신규 수집 — 소스 4 + 엔티티 4 추가, agent-frameworks-matrix.md 6×N으로 확장, openai-agents-python / pydantic / agent-skills / agent-patterns / ml-ai 5개 페이지 갱신. 결정적 발견 5가지: (1) **AGENTS.md=CLAUDE.md 동기화 6 OSS 표준화** = agent-skills 외부 채택 10단계 진화의 10번째 — 18회차 추가 DeepAgents (AGENTS.md 364줄) + Pydantic AI (10K byte-for-byte) 합류로 6 OSS (LangChain/LangGraph/DeepAgents/FastMCP/OpenAI Agents/Pydantic AI) 동시 채택 → "LLM 프레임워크 OSS 사실상 표준" 격상. CrewAI/PandasAI 미채택은 LangChain/OpenAI/Pydantic 진영 vs 독립 진영의 거버넌스 분기점 시사. (2) **5번째 OSS+SaaS 듀얼 모델 — Crew Control Plane** — Polars/DuckDB/LangChain/FastMCP/CrewAI 5개 사례. Pydantic Logfire는 6번째 (SaaS이나 별도 제품). (3) **12번째 패턴(durable execution) 양강 구도** — Pydantic AI가 README 11가지 강점 9번에서 durable execution 1급 명시 → LangGraph 단독 → LangGraph + Pydantic AI 양강. type-safety는 Pydantic AI ★★★ 압도적 우위. DeepAgents는 LangGraph 위 프리셋으로 12번째 패턴 자동 상속. (4) **YAML/JSON agent 정의 1급 = Pydantic AI 단독** — 코드 없는 agent 정의 — agent-skills SKILL.md 패키징 사상의 다음 진화 방향. (5) **CrewAI "학습 인증 → SaaS 깔때기"** — 100,000+ 인증 개발자 → app.crewai.com 직결, 다른 프레임워크에 없는 비즈니스 모델. 부수: Capability(Pydantic AI) vs harness(DeepAgents) 추상화 비교, A2A(Agent2Agent) 표준 첫 등장. agent-frameworks-matrix.md는 이제 6 프레임워크 + 2 직교 layer × ~22축 정량 비교 + 7-step 의사결정 트리 + 단계별 c2spf-analytics 마이그레이션 권장 (Stage 1 PandasAI / Stage 2 Pydantic AI / Stage 3 LangGraph) -->
 <!-- 수집일 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라): LightGBM / LangChain / LangGraph / FastMCP 4개 신규 수집 — 소스 4 + 엔티티 4 + 종합 1 (agent-frameworks-matrix) 추가, scikit-learn / ml-ai / agent-patterns / agent-skills 4개 페이지 갱신. 결정적 발견 5가지: (1) **agent-skills 9단계 진화 = "패턴 확산"** — LangChain/LangGraph/FastMCP 3개 OSS가 동시에 AGENTS.md=CLAUDE.md 동기화 채택 → OpenAI 사내 패턴이 다국적 OSS 협업 컨벤션으로 격상 (1~7 단발 사례, 8 OpenAI 미러링, 9 동시 채택). (2) **9번째 OSS 거버넌스 모델 = "회사 졸업 → 독립 조직"** — Microsoft/LightGBM → lightgbm-org/LightGBM (2026-03), 같은 메인테이너 유지하나 GitHub org 이전. ASF PMC와 다른 점: 법적 형태 그대로 (ASF는 법인 이전). 16회차의 8개 + 9번째 추가. (3) **9번째 거버넌스 모델 — "공식 SDK 흡수 → 다음 버전 재시작"** — FastMCP 1.0이 2024 공식 MCP Python SDK에 통합 → 2.0 standalone 재출시. fork/abandon이 아닌 자발적 표준화 후 재진입. (4) **12번째 agent 패턴 = State-Machine + Durable Execution** — LangGraph가 Pregel + Apache Beam + NetworkX 학술 계보로 정립한 12번째 패턴. checkpoint(Postgres/SQLite) 1급. Klarna/Replit/Elastic production 검증. Anthropic 5 + OpenAI 6 + LangGraph 1 = 12 패턴. (5) **EffVer 발견** — LightGBM이 SemVer 대신 채택한 사용자 영향 중심 버전 체계 (jacobtomlinson.dev/effver). uv/ruff의 0.x 빠른 반복, pandas/sklearn의 SemVer 변형과 함께 버전 정책 다양화. 부수: bot review 메타-가이던스(FastMCP) — CodeRabbit/Codex/claude-bot 시대 워크플로우 진화. agent-frameworks-matrix.md는 18회차에 DeepAgents/Crew AI/Pandas AI/Pydantic AI 추가 예정 -->
 <!-- 수집일 2026-04-28 (14회차): openai/openai-agents-python 수집 — 소스 1 + 엔티티 1 (openai-agents-python tool) 추가, openai 엔티티 + agent-skills/harness/agent-patterns/ml-ai 4개 개념 + agent-stack-evolution 종합 분석 보강 (총 6개 페이지 갱신). ★25K 1년차 OpenAI 공식 멀티 에이전트 Python SDK (v0.14.6 / MIT / 1년 14 메이저 버전). 13회차 cookbook과 한 쌍 — cookbook이 메소드론 정의 단(가이드)이라면 본 SDK는 같은 회사가 자기 핵심 SDK 본체에 동일 패턴을 풀스택 적용한 **거버넌스 자기 채택 (self-adoption)** 직접 증거. 결정적 발견 3가지: (1) **AGENTS.md = CLAUDE.md byte-for-byte 동기화 패턴 (12,900B 양쪽 미러링)** = agent-skills 외부 채택 **8단계 진화의 8번째 사례** (1~7번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter/openai-cookbook의 끝, 가장 단순한 vendor-neutral 적응). (2) **`.agents/skills/` 9개 운영 SOP 스킬 + 스킬 간 호출 (skill chaining)** — `$skill-name` 명령형 호출 + 트리거/스킵 조건 명시. flutter 3개의 3배 규모, **첫 "9개 본격 운영 SOP" 사례**. (3) **examples/agent_patterns/ 16개 .py = Anthropic 5패턴 + OpenAI 6확장 (Guardrails 3종 / Human-in-the-loop 3종 / Forced tool use) = 11종 reference 구현** — [[agent-patterns]]에 OpenAI 확장 6패턴 명시 추가. 부수: PLANS.md 5,485B (cookbook 16KB 응축) + .codex/hooks.json Stop 훅 자동화 + Public API Positional Compatibility 정책 (dataclass 필드 순서 호환성 계약 격상) + uv+ruff+pyright 도구 스택 + llms.txt 표준 채택. 회사 BI 적용 가설 강화: 9개 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑, 13회차 PLANS.md 가설은 self-adoption 증거로 신뢰도 상승 -->
@@ -42,11 +43,11 @@ updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 
 ## 통계
 
-- 총 페이지 수: 141
-- 소스 요약: 53
-- 엔티티: 55
-- 개념: 22
-- 종합 분석: 9
+- 총 페이지 수: 153
+- 소스 요약: 58
+- 엔티티: 60
+- 개념: 23
+- 종합 분석: 10
 
 ---
 
@@ -107,6 +108,11 @@ updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 | [[crewaiinc-crewai]] | crewAIInc/crewAI — LangChain 독립 멀티 에이전트 프레임워크 (Crews+Flows) + Crew Control Plane SaaS (★50K, 100K+ 인증) | article | CrewAI Inc. | 2026-04-28 | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차 |
 | [[sinaptik-ai-pandas-ai]] | sinaptik-ai/pandas-ai — DataFrame 자연어 대화 어댑터 (df.chat) + LiteLLM 다중 모델 (★23.5K) | article | Sinaptik AI | 2026-04-28 | pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차 |
 | [[pydantic-pydantic-ai]] | pydantic/pydantic-ai — Pydantic 팀의 type-safe agent framework + 11가지 강점 + AGENTS.md=CLAUDE.md 동기화 (★16.7K) | article | Pydantic Services Inc. (Samuel Colvin) | 2026-04-28 | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, 18회차 |
+| [[moby-moby]] | Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트 (Docker v29에서 8년 분리 완성) | article | Moby Project (Docker Inc. + 커뮤니티) | 2026-04-28 | docker, moby, container, devops, runtime, 19회차 |
+| [[github-actions-docs]] | GitHub Actions — Runner + Toolkit 양대 OSS + GHA 분산 생태계 | article | GitHub (actions/runner + actions/toolkit) | 2026-04-28 | github-actions, ci-cd, runner, toolkit, devops, 19회차 |
+| [[prometheus-prometheus]] | Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md (148줄) | article | Prometheus Authors (CNCF) | 2026-04-28 | prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차 |
+| [[grafana-grafana]] | Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md + `<!-- version: 2.0.0 -->` 버저닝 | article | Grafana Labs | 2026-04-28 | grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차 |
+| [[getsentry-sentry]] | Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT (4-tier hierarchy + "do not add to CLAUDE.md") | article | Sentry (Functional Software, Inc.) | 2026-04-28 | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차 |
 
 ## 개념 (Concepts)
 
@@ -134,6 +140,7 @@ updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 | [[pdep]] | PDEP (Pandas Enhancement Proposal) | pdep, pandas, governance, decision-record, proposal, open-source, roadmap | 1 | 2026-04-27 |
 | [[bdfl]] | BDFL (Benevolent Dictator For Life) | bdfl, governance, open-source, decision-making, pandas, python | 1 | 2026-04-27 |
 | [[lazy-evaluation]] | Lazy Evaluation (지연 평가) | lazy-evaluation, query-optimization, predicate-pushdown, projection-pushdown, dataframe, sql, polars, duckdb, spark | 2 | 2026-04-28 |
+| [[observability]] | Observability — 메트릭/로그/트레이스 + 에러 + RUM | observability, monitoring, metrics, logs, traces, error-tracking, sre, prometheus, grafana, sentry, otel, 19회차 | 3 | 2026-04-28 |
 
 ## 엔티티 (Entities)
 
@@ -194,6 +201,11 @@ updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 | [[crewai]] | CrewAI | tool | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차 | 1 | 2026-04-28 |
 | [[pandas-ai]] | PandasAI | tool | pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차 | 1 | 2026-04-28 |
 | [[pydantic-ai]] | Pydantic AI | tool | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차 | 1 | 2026-04-28 |
+| [[docker]] | Docker / Moby | tool | docker, moby, container, runtime, devops, 19회차 | 1 | 2026-04-28 |
+| [[github-actions]] | GitHub Actions | service | github-actions, ci-cd, runner, toolkit, devops, oidc, 19회차 | 1 | 2026-04-28 |
+| [[prometheus]] | Prometheus | tool | prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차 | 1 | 2026-04-28 |
+| [[grafana]] | Grafana | tool | grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차 | 1 | 2026-04-28 |
+| [[sentry]] | Sentry | tool | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차 | 1 | 2026-04-28 |
 
 ## 종합 분석 (Syntheses)
 
@@ -208,3 +220,4 @@ updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 | [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution, 16회차 | 2026-04-28 |
 | [[pandas-vs-polars-vs-duckdb]] | Pandas vs Polars vs DuckDB — 정량 비교 매트릭스 (의사결정 트리 + 마이그레이션 ROI) | comparison, pandas, polars, duckdb, dataframe, decision-matrix, 16회차 | 2026-04-28 |
 | [[agent-frameworks-matrix]] | Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장) | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp, 17회차, 18회차 | 2026-04-28 |
+| [[observability-and-cicd-stack]] | Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름 (AGENTS.md 11단계 진화 + 4가지 새 변종) | observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf, 19회차 | 2026-04-28 |

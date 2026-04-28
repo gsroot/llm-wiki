@@ -2,15 +2,22 @@
 title: "DevOps & CI/CD (Docker · Jenkins 멀티브랜치 · Loki/Grafana)"
 type: concept
 category: dev-tools
-tags: [devops, cicd, docker, docker-compose, jenkins, multi-branch, github-actions, nginx, loki, promtail, grafana, observability]
+tags: [devops, cicd, docker, docker-compose, jenkins, multi-branch, github-actions, nginx, loki, promtail, grafana, observability, prometheus, sentry, 19회차]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
   - "[[backend-python-fastapi]]"
   - "[[frontend-react]]"
-source_count: 3
+  - "[[docker]]"
+  - "[[github-actions]]"
+  - "[[prometheus]]"
+  - "[[grafana]]"
+  - "[[sentry]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+source_count: 8
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-28
 ---
 
 # DevOps & CI/CD (Docker · Jenkins 멀티브랜치 · Loki/Grafana)
@@ -54,6 +61,15 @@ c2spf 애널리틱스 팀의 표준 배포·운영 스택. Docker Compose로 빌
 - [[portfolio-seed]] — Docker/Jenkins/GitHub Actions 진화 타임라인
 - [[portfolio-ko]] — Selected Work 5선의 인프라 측면
 - [[c2spf-analytics-common]] — 가이드 4종 발행, 4환경 로깅 스택 구축
+- [[moby-moby]] — Docker/Moby OSS 업스트림 (19회차 신규)
+- [[github-actions-docs]] — GHA runner + toolkit (19회차 신규)
+- [[prometheus-prometheus]] — CNCF graduated 메트릭 OSS (19회차 신규)
+- [[grafana-grafana]] — 통합 시각화 (19회차 신규)
+- [[getsentry-sentry]] — 에러/RUM 추적 (19회차 신규)
+
+## 19회차 종합 (Observability + CI/CD 5단)
+
+자세한 흐름은 [[observability-and-cicd-stack]] 참조: Docker → GHA → Prometheus → Grafana → Sentry 5단 OSS 통합. 19회차에서 발견된 [[agent-skills]] 11단계 진화 — 운영 진영 3 OSS(Prometheus/Grafana/Sentry) AGENTS.md 동시 채택 + 4가지 새 변종(PR-패턴/redirect/계층화/anti-fragmentation)이 본 회차의 핵심 메타 결론.
 
 ## 열린 질문
 

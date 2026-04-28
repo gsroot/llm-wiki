@@ -10,6 +10,85 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | Docker / GitHub Actions / Prometheus / Grafana / Sentry 5개 신규 수집 — 운영/Observability 5단 스택 (21회차 / Plan 19회차)
+
+- **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 19회차 — Operations/Observability 5개 OSS. 13~20회차 LLM/데이터 진영의 AGENTS.md 표준화를 발견한 후, 운영 진영도 동일한 패턴이 진행 중인지 검증하는 회차.
+
+### 수집 대상 (5개)
+
+- **Moby (Docker Engine 업스트림)** ([moby/moby](https://github.com/moby/moby)) — README 102줄 + CONTRIBUTING.md. Apache-2.0, 71.5K stars. Docker v29(2025-11)에서 `github.com/docker/docker` deprecated → `github.com/moby/moby/v2` 8년 분리 완성. AGENTS.md 미채택.
+- **GitHub Actions** ([actions/runner](https://github.com/actions/runner) + [actions/toolkit](https://github.com/actions/toolkit)) — runner README 39줄 (.NET Core C#) + toolkit README 250줄 (TypeScript SDK). 분산 OSS 생태계. AGENTS.md 미채택.
+- **Prometheus** ([prometheus/prometheus](https://github.com/prometheus/prometheus)) — README 229줄 + **AGENTS.md 148줄 (PR 패턴 가이드)**. Apache-2.0, 63.8K stars. CNCF graduated (2018, Kubernetes 다음 두 번째). DCO 강제.
+- **Grafana** ([grafana/grafana](https://github.com/grafana/grafana)) — README 51줄 + **AGENTS.md 161줄 (계층화 + redirect, `<!-- version: 2.0.0 -->`)** + **CLAUDE.md = `@AGENTS.md` 1줄**. AGPL-3.0, 73.5K stars. 디렉토리별 AGENTS.md (docs/, alerting/).
+- **Sentry** ([getsentry/sentry](https://github.com/getsentry/sentry)) — README 62줄 + **AGENTS.md 256줄 (8927B, 19회차 OSS 중 최장)** + **CLAUDE.md = `@AGENTS.md` 1줄**. BSL → Apache-2.0(3년), 43.7K stars. 4-tier 계층화 + "Do not add to CLAUDE.md or Cursor rules" 명문화.
+
+### 결정적 발견 5가지
+
+1. **agent-skills 11단계 진화 = 운영 진영 확산 + 4가지 새 변종 동시 등장**
+   - 운영 진영 5개 중 3개(Prometheus/Grafana/Sentry) AGENTS.md 동시 채택 — LLM 프레임워크 진영을 넘어 운영 진영으로 표준 확산
+   - 4가지 새 변종:
+     - **PR-패턴 가이드** (Prometheus): "최근 merge된 PR로부터 maintainer 선호 패턴 추출" — 가장 데이터 기반, 가장 유지비 낮음
+     - **`@AGENTS.md` redirect CLAUDE.md** (Grafana/Sentry): CLAUDE.md = 1줄로 축소 → SSOT 일원화
+     - **계층화 AGENTS.md** (Grafana 2-tier, Sentry 4-tier): 모노레포 영역별 분산
+     - **Anti-fragmentation 명문화** (Sentry): "Do not add to CLAUDE.md or Cursor rules" — AI agent별 룰 파일 drift 방지
+   - 추가: **AGENTS.md 자체 버저닝** (Grafana `<!-- version: 2.0.0 -->`) 첫 도입
+
+2. **AGENTS.md 양극화 (애플리케이션 vs 인프라)**
+   - 채택: Prometheus / Grafana / Sentry (애플리케이션 코드에 가까운 운영 OSS)
+   - 미채택: Docker/Moby / GitHub Actions (인프라 코어 OSS)
+   - CI/CD 진영 전체(Jenkins/CircleCI/GitLab CI)도 미채택과 일치 → "상업/정치적 이유로 신중" 가설
+
+3. **9번째 거버넌스 모델 = CNCF graduated**
+   - Prometheus = CNCF 두 번째 졸업 프로젝트 (Kubernetes 다음, 2018)
+   - 1~8 (Anthropic/OpenAI/Pydantic Foundation/Astral/커뮤니티/NumFOCUS/ASF PMC/LangChain Inc.) + 9 = 9개 거버넌스 모델 공존
+   - 16회차 ASF PMC와 함께 vendor-neutral 재단 양대 산맥: ASF=데이터/JVM, CNCF=클라우드 네이티브 인프라/런타임
+   - Linux Foundation 우산 아래 vendor-neutrality
+
+4. **5단 흐름 = Docker → GHA → Prometheus → Grafana → Sentry**
+   - 빌드 → CI/CD → 메트릭 → 시각화 → 에러 추적
+   - `observability-and-cicd-stack.md` = 본 회차의 종합 산출 (5번째 종합 축: 15 backend / 16 dataframe / 17~18 agent / 19 observability)
+   - 사이드 프로젝트 30분 부트스트랩: FastAPI에 prometheus-fastapi-instrumentator + sentry-sdk + Grafana Cloud 무료 티어
+   - 5축 관측 데이터(metrics/logs/traces/errors/RUM) 중 3축 30분 만에 확보
+
+5. **Sentry Feature Flag 5단계 + viewer_context contextvar — c2spf-analytics 직접 응용**
+   - Feature Flag 5단계: register → Python check → Frontend check → Test → Rollout
+   - "PR/commit/code 모두 anonymize" 룰 = PHI/PII 컴플라이언스 자동화 단서
+   - viewer_context contextvar = FastAPI dependency injection 패턴과 결합 가능
+   - `prek run -q` (pre-commit fork) = 단일 CLI lint/format/typecheck 통합
+
+### 산출 페이지
+
+- **소스 5개**: [[moby-moby]] / [[github-actions-docs]] / [[prometheus-prometheus]] / [[grafana-grafana]] / [[getsentry-sentry]]
+- **엔티티 5개**: [[docker]] / [[github-actions]] / [[prometheus]] / [[grafana]] / [[sentry]]
+- **개념 1개 신규**: [[observability]] — 5축 관측 데이터(metrics/logs/traces/errors/RUM) + AGENTS.md 양극화 분석
+- **종합 1개**: [[observability-and-cicd-stack]] — 5단 흐름 + 11단계 진화 + 9번째 거버넌스 모델 + BI 적용 매핑
+- **갱신 2개**: [[agent-skills]] (11단계 진화 추가, source_count 12→15) / [[devops-cicd]] (19회차 source 5개 + 종합 1개 추가, source_count 3→8)
+
+### 통계 변화
+
+- 페이지: 141 → 153 (+12: source +5 + entity +5 + concept +1 + synthesis +1)
+- 소스: 53 → 58
+- 엔티티: 55 → 60
+- 개념: 22 → 23 (observability 신규)
+- 종합: 9 → 10 (observability-and-cicd-stack 신규)
+
+### 부수 발견
+
+- Docker → Moby 분리(2017~2025)의 8년 여정 = OSS와 상업 분리 운영 케이스 스터디
+- GHA OIDC 기반 클라우드 인증 (AWS STS / GCP Workload Identity) — 정적 credential 제거
+- Grafana AGPL-3.0 라이선스 주의 — SaaS 제공 시 소스 공개 의무, Grafana Cloud는 다른 트랙
+- Sentry BSL → Apache-2.0 (3년 후 자동 전환) 라이선스 트랙
+- OpenTelemetry 통합 layer 가능성 — Prometheus/Grafana/Sentry 모두 OTLP 입력 지원
+
+### 다음 단서
+
+- **22회차 / Plan 20회차** — 프론트엔드 (Riverpod / Next.js / Tanstack Query / Zustand / Shadcn/ui)
+- **23회차 / Plan 21회차** — 마무리 (seokgeun-stack-guide.md + 9단계 점검 워크플로우 + 최종 종합)
+- 22회차 시점에 Docker/GHA AGENTS.md 재확인 (양극화 추적)
+- 21회차 점검 시 "AGENTS.md 채택자별 fragmentation 룰 비교 매트릭스" 작성 (Sentry strict / Grafana silent / Pydantic AI byte-sync / Prometheus PR-only 4가지 모드)
+
+---
+
 ## [2026-04-28] ingest | DeepAgents / CrewAI / PandasAI / Pydantic AI 4개 신규 수집 — LLM Agent Frameworks 확장 (20회차 / Plan 18회차)
 
 - **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 18회차 — LLM 에이전트 프레임워크 확장. 19회차 (Plan 17회차) LangGraph + OpenAI Agents SDK 비교를 6 프레임워크로 확장하여 agent-frameworks-matrix.md를 결정 가능한 도구로 격상.
