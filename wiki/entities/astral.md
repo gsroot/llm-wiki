@@ -3,10 +3,10 @@ title: "Astral"
 type: entity
 entity_type: organization
 tags: [astral, charlie-marsh, ruff, uv, ty, python, rust, dev-tools, open-source, vc-backed]
-related: [[uv]], [[python-packaging]], [[github]]
-source_count: 1
+related: [[uv]], [[ruff]], [[python-packaging]], [[github]], [[fastapi]], [[pydantic]]
+source_count: 2
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 # Astral

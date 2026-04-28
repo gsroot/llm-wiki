@@ -21,9 +21,14 @@ related:
   - "[[agent-skills]]"
   - "[[c2spf-analytics]]"
   - "[[seokgeun-kim]]"
+  - "[[pydantic]]"
+  - "[[sqlalchemy]]"
+  - "[[postgresql]]"
+  - "[[ruff]]"
+  - "[[uv]]"
 source_count: 1
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 # FastAPI
@@ -102,3 +107,4 @@ updated: 2026-04-27
 - 8회차 ingest의 결정적 발견은 **`.agents/skills/fastapi/SKILL.md`** — agent-stack-evolution 분석의 "표준-구현 분리(Anthropic축)" 명제를 강화하는 정량적 증거.
 - 석근의 c2spf `analytics-common-api`가 SKILL.md 권장과 어디서 일치/충돌하는지 점검하는 후속 작업이 가치 있음 — 특히 `Annotated`, `response_model`, `def` vs `async def` 사용 분포.
 - "Tiangolo Default Stack"(fastapi + fastapi-cli + Asyncer + SQLModel + Typer + HTTPX + Pydantic + Starlette + uv + Ruff + ty)을 별도 종합 페이지로 정리할 가치.
+- **15회차 (2026-04-28)**: 백엔드 코어 6개 신규 수집으로 FastAPI 의존성 라이브러리들이 위키에 박힘 — [[pydantic]] (검증, 디폴트 의존성), [[sqlalchemy]]/[[alembic]] (DB ORM/마이그레이션, SQLModel 통합), [[postgresql]] (1순위 dialect), [[ruff]]/[[uv]] (Astral 도구 스택). 종합 페이지 [[backend-fastapi-stack]]에서 전체 흐름 분석.

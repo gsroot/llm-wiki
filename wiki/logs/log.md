@@ -10,6 +10,50 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | 백엔드 코어 6개 신규 수집 — Ruff/Pydantic/SQLAlchemy/Alembic/PostgreSQL/Redis (15회차)
+
+- **트리거**: 소유자 요청 — "다음 기술 스택에 대해 원천 데이터를 추출하고 수집해서 위키를 더 풍부하게 만드려고 하는데 그렇게 하기 위한 계획을 세워줘. 백엔드: UV, Ruff, FastAPI, Pydantic, SQLAlchemy, Alembic, PostgreSQL, Redis [데이터/ML/LLM/운영/프론트 32개 추가]" → 6회차 분할 (15~21회차) 표준 깊이 계획 수립 → Auto Mode 승인 → 15회차 백엔드 코어 즉시 실행.
+- **소스** (6개 신규 raw 폴더, 약 712KB 보관):
+  - `raw/articles/astral-sh-ruff/` (12개 파일, 232KB) — README.md 39KB / **AGENTS.md 4.2KB** ★ 14항목 개발 가이드라인 + ty mdtest + Salsa incrementality / **CLAUDE.md 12B = `@AGENTS.md`** ★ uv 10회차 패턴 답습 / Cargo.toml / pyproject.toml / mkdocs.yml / docs (configuration / linter / formatter / preview)
+  - `raw/articles/pydantic-pydantic/` (10개 파일, 168KB) — README.md / **HISTORY** / **docs_why.md** / **docs_migration.md** / **docs_version-policy.md** ★ 명시 버전 정책 / pyproject.toml / mkdocs.yml / CITATION.cff
+  - `raw/articles/sqlalchemy-sqlalchemy/` (12개 파일, 148KB) — README.rst 4.5KB / README.dialects.rst / pyproject.toml / AUTHORS / CHANGES / docs (index / intro / contents / glossary / faq / tutorial)
+  - `raw/articles/sqlalchemy-alembic/` (10개 파일, 232KB) — README.rst 4KB / pyproject.toml / docs (index / tutorial / **autogenerate** ★ / **branches** / **cookbook** / batch / **offline** ★ / ops)
+  - `raw/articles/postgres-postgres/` (6개 파일, 24KB) — README.md / COPYRIGHT / HISTORY / doc_TODO / doc_MISSING_FEATURES / doc_KNOWN_BUGS (GitHub 미러 한계로 양적 적음)
+  - `raw/articles/redis-redis/` (6개 파일, 68KB) — README.md 39KB / **MANIFESTO 6.9KB** ★ 10항목 철학 / CONTRIBUTING.md / RELEASENOTES / SECURITY.md / TLS.md
+- **작업**: 6개 GitHub 저장소 메타데이터 + README + AGENTS.md/MANIFESTO/핵심 docs 1차 수집. 본 회차 **3개 결정적 발견 + 1개 단일 타입 체인 패턴**으로 위키의 백엔드 도메인이 풀스택으로 박힘.
+- **생성된 파일** (13건):
+  - `wiki/sources/astral-sh-ruff.md` — Ruff 소스 요약 (Astral 회사 차원 표준화 발견)
+  - `wiki/sources/pydantic-pydantic.md` — Pydantic 소스 요약 (V2 ground-up + Annotated)
+  - `wiki/sources/sqlalchemy-sqlalchemy.md` — SQLAlchemy 소스 요약 (Core/ORM 이중 + 21년 BDFL)
+  - `wiki/sources/sqlalchemy-alembic.md` — Alembic 소스 요약 (autogenerate + Offline Mode)
+  - `wiki/sources/postgres-postgres.md` — PostgreSQL 소스 요약 (메일링 리스트 거버넌스)
+  - `wiki/sources/redis-redis.md` — Redis 소스 요약 (MANIFESTO 10항목)
+  - `wiki/entities/ruff.md` — Ruff tool 엔티티 (8개 주요 특징)
+  - `wiki/entities/pydantic.md` — Pydantic tool 엔티티 (8개 주요 특징, 자매 제품 일체화)
+  - `wiki/entities/sqlalchemy.md` — SQLAlchemy tool 엔티티 (8개 주요 특징)
+  - `wiki/entities/alembic.md` — Alembic tool 엔티티 (7개 주요 특징)
+  - `wiki/entities/postgresql.md` — PostgreSQL tool 엔티티 (8개 주요 특징, 첫 메일링 거버넌스)
+  - `wiki/entities/redis.md` — Redis tool 엔티티 (8개 주요 특징, 첫 MANIFESTO/라이선스 변경)
+  - `wiki/syntheses/backend-fastapi-stack.md` — Python 백엔드 표준 스택 종합 분석 (9개 단락 / 7개 거버넌스 모델 / Annotated 통합 / Rust 가속 / 결정 트리)
+- **업데이트된 파일** (4건):
+  - `wiki/entities/fastapi.md` — related +[[pydantic]]/[[sqlalchemy]]/[[postgresql]]/[[ruff]]/[[uv]] (5개 추가), updated 2026-04-27→2026-04-28. 메모 섹션에 15회차 백엔드 의존성 통합 단락 추가
+  - `wiki/entities/uv.md` — related +[[ruff]]/[[fastapi]]/[[pydantic]] (3개 추가), updated 2026-04-27→2026-04-28
+  - `wiki/entities/astral.md` — related +[[ruff]]/[[fastapi]]/[[pydantic]] (3개 추가), source_count 1→2 (astral-sh-ruff 출처 추가), updated 2026-04-27→2026-04-28
+  - `wiki/index.md` — 15회차 표기, 통계 93/33/35/21/3 → 106/39/41/21/4, 신규 13페이지 등록 (소스 6 + 엔티티 6 + 종합 1), 갱신 2개 페이지 source_count·tags·updated 동기화 (fastapi/astral), 헤더 코멘트 15회차 추가 (4개 결정적 발견 명시)
+- **결정적 발견 4가지**:
+  1. **agent-skills 외부 채택 8단계 → 9번째 "회사 차원 표준화"** — astral-sh/ruff의 `CLAUDE.md = @AGENTS.md` 12바이트 1줄이 같은 회사 [[uv]] (10회차 발견)와 정확히 동일. 즉 새 패턴이 아닌 **같은 회사의 또 다른 제품**. 진정한 새 패턴은 "조직 외부 채택" → "조직 내 표준화"로 한 단계 진화. Astral의 uv·ruff·ty 3제품 모두 같은 컨벤션 채택. 향후 회차에서 같은 회사 여러 제품 수집 시 (Pydantic 진영 / OpenAI / Google 등) 추가 검증 가설.
+  2. **PEP 593 Annotated = 단일 타입 체인 사실상 표준** — Pydantic V2 (`Annotated[float, Gt(0)]`) / SQLAlchemy 2.0 (`Mapped[int] = mapped_column(...)`) / FastAPI DI (`Annotated[AsyncSession, Depends(get_db)]`)가 **같은 표현으로 통합**. SQLModel (Tiangolo)이 한 클래스로 합성. **Type-First Python Backend**의 결정적 패턴.
+  3. **PostgreSQL = 메일링 리스트 거버넌스 첫 사례 (위키 6번째 거버넌스 모델)** — Pull Request 받지 않음, 패치는 pgsql-hackers 메일링 리스트 + .patch 파일 첨부. GitHub은 단순 미러 (공식 명시). 30년 보수파 거버넌스와 agent-skills 모던파의 **정반대 극단**. 회사 BI 도구 선택 시 **거버넌스 모델 매칭** 추가 변수.
+  4. **Redis = MANIFESTO 철학 명문화 첫 사례 (위키 7번째 거버넌스 모델)** — 10항목 ("DSL for Abstract Data Types" / "Memory storage is #1" / "Single-threaded core" / "Code is like a poem" / "Against complexity" / "We optimize for joy" / "Two levels of API" / "Opportunistic programming") + 2024 라이선스 변경 (BSD 3-Clause → RSAL/SSPL dual) → **AWS fork Valkey 출시**. 8번째 거버넌스 모델 = "라이선스 변경 + Fork 사례" 추가 박힘.
+- **단일 백엔드 도메인에 7개 거버넌스 모델 공존** — BDFL (fastapi/pydantic/sqlalchemy/alembic) / 회사 차원 표준화 (Astral) / 표준+구현 분리 (anthropics-skills) / 명시 버전 정책 (Pydantic V2) / 메일링 리스트 보수파 (PostgreSQL ★) / MANIFESTO 철학 명문화 (Redis ★) / 라이선스 변경+Fork (Redis 2024 ★).
+- **회사 BI 적용 가설** (3건, [[backend-fastapi-stack]]에 통합):
+  - **c2spf-analytics ruff/uv 마이그레이션** — pylint+black+isort 분리 → ruff 통합으로 CI 53s → 3s (15~20x 단축)
+  - **pgvector로 위키 RAG 자체 구현** — 본 위키 (~106 페이지) PostgreSQL + pgvector 적재 → 별도 벡터 DB 회피
+  - **Alembic Offline Mode = c2spf-platform 결제 DB 마이그레이션 표준** — DBA 권한 분리 환경 자동화
+- **메모**: 15회차는 백엔드 코어 6개 + 기존 fastapi/uv 종합으로 위키 첫 풀스택 도메인 종합 페이지 [[backend-fastapi-stack]] 산출. 16회차 (데이터 레이어: Polars/DuckDB/PyArrow/Parquet/Kafka)에서 Pandas와 묶이며 비교 매트릭스 페이지 신설 예정. 21회차 마무리에서 [[seokgeun-stack-guide]] (석근님 개인 스택 통합 가이드) 산출 예정. 본 회차 4개 결정적 패턴이 다음 회차 데이터/LLM/운영/프론트에서 반복 검증될지 추적.
+
+---
+
 ## [2026-04-28] ingest | openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬 (14회차)
 
 - **트리거**: 소유자 요청 — "https://github.com/openai/openai-agents-python 의 내용을 살펴보고 이 프로젝트의 적절한 경로에 원본 자료를 넣어두고 수집을 진행해줘."
