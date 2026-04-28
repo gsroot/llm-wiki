@@ -3,7 +3,13 @@ title: "Pydantic (pydantic/pydantic)"
 type: entity
 entity_type: tool
 tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, pydantic-core, rust-extension, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, logfire, pydantic-ai, annotated, pep-593, 18회차]
-related: [[[fastapi]], [[openai-agents-python]], [[python-packaging]], [[uv]], [[sqlalchemy]], [[pydantic-ai]]]
+related:
+  - "[[fastapi]]"
+  - "[[openai-agents-python]]"
+  - "[[python-packaging]]"
+  - "[[uv]]"
+  - "[[sqlalchemy]]"
+  - "[[pydantic-ai]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

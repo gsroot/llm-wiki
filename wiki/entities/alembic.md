@@ -3,7 +3,12 @@ title: "Alembic (sqlalchemy/alembic)"
 type: entity
 entity_type: tool
 tags: [alembic, migration, sqlalchemy, python, ddl, transactional-ddl, autogenerate, branch-merging, sql-script-output, batch-migration, sqlite-batch, mike-bayer, postgresql, mysql, sqlite, oracle, mssql, offline-migration, cookbook]
-related: [[[sqlalchemy]], [[postgresql]], [[fastapi]], [[python-packaging]], [[uv]]]
+related:
+  - "[[sqlalchemy]]"
+  - "[[postgresql]]"
+  - "[[fastapi]]"
+  - "[[python-packaging]]"
+  - "[[uv]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

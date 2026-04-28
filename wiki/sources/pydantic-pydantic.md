@@ -8,7 +8,13 @@ author: "Samuel Colvin (Pydantic team)"
 date_published: 2017-05-03
 date_ingested: 2026-04-28
 tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, logfire, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, pydantic-core, rust-extension]
-related: [[[fastapi]], [[openai-agents-python]], [[python-packaging]], [[uv]], [[scikit-learn]], [[agent-stack-evolution]]]
+related:
+  - "[[fastapi]]"
+  - "[[openai-agents-python]]"
+  - "[[python-packaging]]"
+  - "[[uv]]"
+  - "[[scikit-learn]]"
+  - "[[agent-stack-evolution]]"
 confidence: high
 ---
 

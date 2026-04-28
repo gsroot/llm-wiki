@@ -8,7 +8,16 @@ author: "Astral (Charlie Marsh 외)"
 date_published: 2022-08-09
 date_ingested: 2026-04-28
 tags: [ruff, astral, python, linter, formatter, rust, pep8, static-analysis, ty, type-checker, agents-md, agent-skills, claude-md-import, monorepo, 800-rules, 10-100x, fastapi, pandas, scipy, airflow, superset, hugging-face]
-related: [[[astral]], [[uv]], [[fastapi]], [[pandas]], [[scikit-learn]], [[python-packaging]], [[agent-skills]], [[harness]], [[agent-stack-evolution]]]
+related:
+  - "[[astral]]"
+  - "[[uv]]"
+  - "[[fastapi]]"
+  - "[[pandas]]"
+  - "[[scikit-learn]]"
+  - "[[python-packaging]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[agent-stack-evolution]]"
 confidence: high
 ---
 

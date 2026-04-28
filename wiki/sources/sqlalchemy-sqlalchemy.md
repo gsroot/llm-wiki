@@ -8,7 +8,14 @@ author: "Mike Bayer (zzzeek) + SQLAlchemy team"
 date_published: 2018-11-27
 date_ingested: 2026-04-28
 tags: [sqlalchemy, python, sql, orm, core, unit-of-work, identity-map, data-mapper, declarative, async, sqlmodel, alembic, mike-bayer, postgresql, mysql, sqlite, dialect, dbapi, type-coercion, connection-pool, 2-0-style, annotated-mapped]
-related: [[[fastapi]], [[postgresql]], [[alembic]], [[pydantic]], [[python-packaging]], [[uv]], [[scikit-learn]]]
+related:
+  - "[[fastapi]]"
+  - "[[postgresql]]"
+  - "[[alembic]]"
+  - "[[pydantic]]"
+  - "[[python-packaging]]"
+  - "[[uv]]"
+  - "[[scikit-learn]]"
 confidence: high
 ---
 

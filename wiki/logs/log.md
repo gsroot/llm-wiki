@@ -10,6 +10,73 @@ type: log
 
 ---
 
+## [2026-04-28] cleanup | Claude 재평가 후속 P0 4건 정리 (27회차)
+
+- **트리거**: 26회차 codex 권고 처리 직후, 사용자가 같은 평가 프롬프트를 Claude에게 재요청. Claude가 6기준 재평가 보고서를 작성하면서 P0(30분 내 처리 가능) 4건을 식별. 사용자 지시 "P0 작업을 실행해줘"에 따라 일괄 처리.
+
+### 산출
+
+#### (1) portfolio-seed ↔ matechat 양방향 연결
+
+- `wiki/sources/portfolio-seed.md` frontmatter `related:`에 `[[matechat]]` 추가
+- 본문 line 33 "개인 프로젝트 — Mate Chat" → `[[matechat|Mate Chat]]` alias wikilink
+- 효과: 포트폴리오 ↔ 핵심 프로젝트 양방향 연결 부재 결함 해소
+
+#### (2) matechat 출처 섹션에 [[seokgeun-matechat-validation]] 추가
+
+- `wiki/entities/matechat.md` frontmatter `related:`에 `[[seokgeun-matechat-validation]]` 추가
+- 본문 "출처" 섹션에 명시적 인용 + 한 줄 설명
+- 효과: 26회차 신규 검증 source의 인바운드 0 → 2 (matechat + portfolio-seed 둘 다 인용)
+
+#### (3) seokgeun-stack-guide의 4핵심축 백링크 추가
+
+- frontmatter `related:`에 `[[seokgeun-kim]]` / `[[c2spf-analytics]]` / `[[com2us-platform]]` 3개 추가
+- 본문 "회사 BI 적용 매핑" 헤더에 `[[com2us-platform|컴투스플랫폼]] / [[c2spf-analytics]] — 사용 주체: [[seokgeun-kim]]` 백링크 삽입
+- 효과: 기술 스택 종합 페이지가 4핵심축 중 프로필·포트폴리오 축에 명시 연결
+
+#### (4) 잔여 깨진 wikilink 9 → 0 (100% 해소)
+
+- (a) **18개 파일의 frontmatter inline-list YAML 자동 변환**: `KEY: [ [[a]], [[b]], [[c]] ]` → 블록 리스트 (`KEY:\n  - "[[a]]"\n  - "[[b]]"\n  - "[[c]]"`). 26회차 변환 스크립트가 처리하지 못한 inline 형태 잔여 케이스. 대상: astral-sh-ruff, openai-openai-agents-python, openai-openai-cookbook, pydantic-pydantic, sqlalchemy-sqlalchemy, postgres-postgres, redis-redis, sqlalchemy-alembic 8 sources + alembic, openai, openai-cookbook, openai-agents-python, postgresql, redis, pydantic, sqlalchemy, ruff 9 entities + backend-fastapi-stack 1 synthesis = 18개.
+- (b) **index.md HTML comment 안 회고 텍스트** `[[frontend-flutter-stack]] / [[frontend-react-stack]]` → 백틱 처리. 25회차 회고 문서 안의 historical reference이므로 텍스트로 격하.
+
+### 결정적 발견 — 6기준 재평가 등급 변화
+
+| 기준 | codex (26회차 직전) | Claude (26회차 종료) | 27회차 종료 (예상) |
+|---|---|---|---|
+| 정보 유용성 | A− | A | A |
+| 핵심 축 선명도 | A | A | A |
+| 축 간 연결성 | B+ | B+ | **A−** ↑ |
+| Obsidian 볼트 품질 | B− | A− | **A** ↑ |
+| LLM RAG 활용성 | B+ | A− | A− |
+| 장기 운영성 | B | B+ | B+ |
+
+→ "내용 품질 ≫ 구조 품질" 진단이 26+27회차 누적으로 **거의 균형 도달** (콘텐츠 A · 구조 A−).
+
+### 통계 변화
+
+| 영역 | 26회차 | 27회차 | 증가 |
+|---|---|---|---|
+| 깨진 wikilink | 9 | **0** | -9 (100% 해소) |
+| YAML invalid | 0 | 0 | 유지 |
+| portfolio-seed → matechat wikilink | 0 | 1 | +1 |
+| matechat-validation 인바운드 | 0 | 2 | +2 |
+| seokgeun-stack-guide 본문 백링크(4핵심축) | 0 | 3 | +3 |
+
+### 결정적 메타 발견
+
+- **숨은 5번째 축 식별**: 인바운드 분포 측정에서 agent-skills(131) / harness(121) / mcp(90) / claude-code(81) 4개가 위키의 1~4위 hub로 자랐음 발견. 합산 423 인바운드. 석근의 가설 4축(프로필 / 포트폴리오 / 기술 스택 / MateChat) 외에 "LLM 인프라 메타 패턴"이 의도하지 않게 자란 5번째 척추. 후속 회차에서 이 5번째 축의 명시적 종합 페이지 후보.
+- **빈약 페이지의 RAG 함정**: c2spf-analytics 인바운드 80(5위)인데 본문 빈약 → RAG 라우팅 종착지가 정보 빈곤. 28회차 우선 후보.
+
+### 다음 단서
+
+- **P1**: 빈약 페이지 6개 본문 보강 (c2spf-analytics 우선 — 인바운드 80)
+- **P1**: 38 SKILL 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 추가 (24회차 후속)
+- **P1**: 형제 분석 프로젝트 raw 수집 (mate-katok-analysis-{backend, flutter} + data-mate)
+- **P2**: v1.0.0 출시 후 30/60/90일 시점 실측 KPI source (codex 권고 5번 25% 잔여분)
+- **신규 후보**: `llm-infra-meta-cluster` 종합 페이지 (가칭) — 5번째 축 명시화
+
+---
+
 ## [2026-04-28] cleanup+ingest | codex 평가 후속 5대 작업 (26회차)
 
 - **트리거**: codex가 작성한 위키 평가 보고서 5건 권고 — (1) matechat/mate-chat canonical 정리, (2) invalid YAML frontmatter 일괄 정리, (3) 중복 basename 제거, (4) 예시/실제 wikilink 구분, (5) MateChat 사용자 검증 로그 source 추가. codex가 1번 작업을 시작하다 중단된 상태에서 이어서 5건 일괄 처리.

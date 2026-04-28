@@ -8,7 +8,12 @@ author: "Mike Bayer (zzzeek) + SQLAlchemy team"
 date_published: 2018-11-27
 date_ingested: 2026-04-28
 tags: [alembic, migration, sqlalchemy, python, ddl, transactional-ddl, autogenerate, branch-merging, sql-script-output, batch-migration, sqlite-batch, mike-bayer, postgresql, mysql, sqlite, oracle, mssql, offline-migration, cookbook]
-related: [[[sqlalchemy]], [[postgresql]], [[fastapi]], [[python-packaging]], [[uv]]]
+related:
+  - "[[sqlalchemy]]"
+  - "[[postgresql]]"
+  - "[[fastapi]]"
+  - "[[python-packaging]]"
+  - "[[uv]]"
 confidence: high
 ---
 

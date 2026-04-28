@@ -3,7 +3,22 @@ title: "openai-agents-python (OpenAI Agents SDK)"
 type: entity
 entity_type: tool
 tags: [openai-agents-python, openai-agents, openai, agents-sdk, python, multi-agent, agent-framework, mit-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version, 18회차]
-related: [[[openai]], [[openai-cookbook]], [[agent-skills]], [[harness]], [[agent-patterns]], [[mcp]], [[uv]], [[python-packaging]], [[claude-agent-sdk]], [[agent-stack-evolution]], [[langgraph]], [[deepagents]], [[crewai]], [[pydantic-ai]], [[fastmcp]]]
+related:
+  - "[[openai]]"
+  - "[[openai-cookbook]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[agent-patterns]]"
+  - "[[mcp]]"
+  - "[[uv]]"
+  - "[[python-packaging]]"
+  - "[[claude-agent-sdk]]"
+  - "[[agent-stack-evolution]]"
+  - "[[langgraph]]"
+  - "[[deepagents]]"
+  - "[[crewai]]"
+  - "[[pydantic-ai]]"
+  - "[[fastmcp]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

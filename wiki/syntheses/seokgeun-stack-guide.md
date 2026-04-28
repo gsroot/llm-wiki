@@ -19,6 +19,9 @@ related:
   - "[[flutter]]"
   - "[[nextjs]]"
   - "[[matechat]]"
+  - "[[seokgeun-kim]]"
+  - "[[c2spf-analytics]]"
+  - "[[com2us-platform]]"
 created: 2026-04-28
 updated: 2026-04-28
 tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]
@@ -167,7 +170,7 @@ flutter pub add --dev riverpod_generator build_runner
 # 백엔드는 시나리오 B의 backend 부분과 동일
 ```
 
-## 회사 BI 적용 매핑 (컴투스플랫폼)
+## 회사 BI 적용 매핑 ([[com2us-platform|컴투스플랫폼]] / [[c2spf-analytics]] — 사용 주체: [[seokgeun-kim]])
 
 | 영역 | 22회차까지 도구 | 적용 사례 |
 |---|---|---|

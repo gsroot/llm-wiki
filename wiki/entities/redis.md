@@ -3,7 +3,9 @@ title: "Redis"
 type: entity
 entity_type: tool
 tags: [redis, cache, in-memory-database, key-value-store, data-structure-server, message-broker, vector-databases, vector-search, json, time-series, antirez, single-thread, manifesto, valkey, license-change-2024, rdb, aof, redis-cluster]
-related: [[[fastapi]], [[python-packaging]]]
+related:
+  - "[[fastapi]]"
+  - "[[python-packaging]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

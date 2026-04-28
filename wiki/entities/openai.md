@@ -3,7 +3,14 @@ title: "OpenAI"
 type: entity
 entity_type: organization
 tags: [openai, AI, AI연구소, 샌프란시스코, gpt, chatgpt, dall-e, codex, gpt-oss, agents-sdk, responses-api, harmony-format, openai-cookbook]
-related: [[[openai-cookbook]], [[karpathy]], [[anthropic]], [[ml-ai]], [[mcp]], [[agent-skills]], [[harness]]]
+related:
+  - "[[openai-cookbook]]"
+  - "[[karpathy]]"
+  - "[[anthropic]]"
+  - "[[ml-ai]]"
+  - "[[mcp]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

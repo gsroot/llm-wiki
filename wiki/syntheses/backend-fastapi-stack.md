@@ -3,7 +3,15 @@ title: "Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Ale
 type: synthesis
 category: analysis
 tags: [backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions]
-sources: [[[fastapi-fastapi]], [[pydantic-pydantic]], [[sqlalchemy-sqlalchemy]], [[sqlalchemy-alembic]], [[postgres-postgres]], [[redis-redis]], [[astral-sh-uv]], [[astral-sh-ruff]]]
+sources:
+  - "[[fastapi-fastapi]]"
+  - "[[pydantic-pydantic]]"
+  - "[[sqlalchemy-sqlalchemy]]"
+  - "[[sqlalchemy-alembic]]"
+  - "[[postgres-postgres]]"
+  - "[[redis-redis]]"
+  - "[[astral-sh-uv]]"
+  - "[[astral-sh-ruff]]"
 created: 2026-04-28
 updated: 2026-04-28
 ---

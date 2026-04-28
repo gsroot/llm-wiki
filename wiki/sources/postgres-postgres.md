@@ -8,7 +8,10 @@ author: "PostgreSQL Global Development Group (PGDG)"
 date_published: 2010-09-21
 date_ingested: 2026-04-28
 tags: [postgresql, postgres, sql, rdbms, oss, mailing-list-governance, github-mirror, sqlalchemy, c-language, object-relational, transactional, mvcc, fdw, jsonb, replication, pgdg, default-branch-master, no-pull-requests, pgvector, timescaledb]
-related: [[[sqlalchemy]], [[alembic]], [[fastapi]]]
+related:
+  - "[[sqlalchemy]]"
+  - "[[alembic]]"
+  - "[[fastapi]]"
 confidence: high
 ---
 

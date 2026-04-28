@@ -3,7 +3,11 @@ title: "PostgreSQL"
 type: entity
 entity_type: tool
 tags: [postgresql, postgres, sql, rdbms, oss, mailing-list-governance, github-mirror, sqlalchemy, c-language, object-relational, transactional, mvcc, fdw, jsonb, replication, pgdg, pgvector, timescaledb, postgis, extension-system, bsd-license, no-pull-requests, stonebraker]
-related: [[[sqlalchemy]], [[alembic]], [[fastapi]], [[python-packaging]]]
+related:
+  - "[[sqlalchemy]]"
+  - "[[alembic]]"
+  - "[[fastapi]]"
+  - "[[python-packaging]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

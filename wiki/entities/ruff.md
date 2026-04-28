@@ -3,7 +3,13 @@ title: "Ruff (astral-sh/ruff)"
 type: entity
 entity_type: tool
 tags: [ruff, astral, python, linter, formatter, rust, pep8, black-compatible, flake8-replacement, isort-replacement, ty, mdtest, salsa-incrementality, agents-md, claude-md-import, monorepo-cascading, 800-rules, preview-mode]
-related: [[[astral]], [[uv]], [[fastapi]], [[python-packaging]], [[agent-skills]], [[harness]]]
+related:
+  - "[[astral]]"
+  - "[[uv]]"
+  - "[[fastapi]]"
+  - "[[python-packaging]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

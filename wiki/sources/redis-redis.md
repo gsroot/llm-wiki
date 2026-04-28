@@ -8,7 +8,9 @@ author: "Salvatore Sanfilippo (antirez 원저자) + Redis Labs"
 date_published: 2009-03-21
 date_ingested: 2026-04-28
 tags: [redis, cache, in-memory-database, key-value-store, data-structure-server, message-broker, message-queue, no-sql, real-time, vector-databases, vector-search, json, time-series, distributed-systems, antirez, rdb, aof, redis-cluster, single-thread, manifesto, valkey, license-change-2024]
-related: [[[fastapi]], [[python-packaging]]]
+related:
+  - "[[fastapi]]"
+  - "[[python-packaging]]"
 confidence: high
 ---
 

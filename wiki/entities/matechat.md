@@ -10,6 +10,7 @@ related:
   - "[[mate-chat-project-wiki-2026]]"
   - "[[matechat-project-knowledge-map]]"
   - "[[seokgeun-mate-chat]]"
+  - "[[seokgeun-matechat-validation]]"
   - "[[backend-python-fastapi]]"
   - "[[backend-fastapi-stack]]"
   - "[[ml-ai]]"
@@ -174,6 +175,7 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 - [[seokgeun-kim-profile-2026]] — 제품 비전, 사업화 목표, KPI, 리스크, 육아휴직 기간 운영 계획의 1차 소스
 - [[mate-chat-project-wiki-2026]] — 프로젝트 전용 위키 스냅샷. 구현, 아키텍처, 출시 준비, 운영 지식의 세부 소스
 - [[seokgeun-mate-chat]] — MateChat 본진 저장소 24회차 raw 수집. README/AGENTS.md/CLAUDE.md/GEMINI.md/TODO.md, 38 SKILL.md, 백엔드/Flutter 메타 자료
+- [[seokgeun-matechat-validation]] — 26회차 사업화·검증 1차 자료 (비전 / 구현 현황 2,084줄 / 출시 체크리스트 / 글로벌 출시 진단 / 경쟁 분석 / 매출 예측 702줄). KPI 4개와 1:1 매칭되는 정량 모델 + "Do Not Ship If" 출시 거버넌스
 - [[portfolio-seed]] — 개인 프로젝트로서 Mate Chat 언급
 - [[portfolio-resume-ko]] — 이력서의 Mate Chat 요약
 - [[portfolio-ko]] — 상세 포트폴리오의 Mate Chat 기술 스택 요약
