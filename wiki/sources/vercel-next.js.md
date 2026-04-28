@@ -12,7 +12,7 @@ related:
   - "[[vercel]]"
   - "[[agent-skills]]"
   - "[[react]]"
-  - "[[frontend-react-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, llm-pr-marker, 22회차]
 confidence: high
 ---
@@ -50,7 +50,7 @@ Vercel이 만든 React 프레임워크. 22회차에서 22KB짜리 AGENTS.md(=CLA
 - [[vercel]] — 운영 조직 (Vercel Inc.)
 - [[react]] — 호스트 라이브러리
 - [[agent-skills]] — AGENTS.md 12단계 진화 (`$skill` 인덱싱 + LLM PR 마커)
-- [[frontend-react-stack]] — React 진영 fullstack 표준
+- [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 fullstack 표준
 
 ## 인용할 만한 구절
 

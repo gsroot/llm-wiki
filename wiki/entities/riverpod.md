@@ -6,7 +6,7 @@ related:
   - "[[flutter]]"
   - "[[mate-chat]]"
   - "[[seokgeun-kim]]"
-  - "[[frontend-flutter-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]]"
   - "[[zustand]]"
   - "[[tanstack-query]]"
 source_count: 1
@@ -39,7 +39,7 @@ Flutter/Dart 진영의 reactive caching + dependency injection 프레임워크. 
 - [[flutter]] — 호스트 프레임워크
 - [[mate-chat]] — Riverpod 기반 사이드 프로젝트
 - [[seokgeun-kim]] — 사용자 (석근님 Flutter 사이드 프로젝트 핵심 라이브러리)
-- [[frontend-flutter-stack]] — Flutter 진영 표준 상태관리 (22회차 신규 종합)
+- [[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]] — Flutter 진영 표준 상태관리 (22회차 신규 종합)
 - [[zustand]] — React 진영 동등 위치 라이브러리
 - [[tanstack-query]] — Riverpod의 비동기 fetch+cache 기능과 유사 영역
 

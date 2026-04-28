@@ -10,6 +10,84 @@ type: log
 
 ---
 
+## [2026-04-28] lint | 잔여 깨진 링크 stub 보강 — 84% 해소 (25회차)
+
+- **트리거**: 24회차 마무리 후 사용자 지시 — "(c) 잔여 깨진 링크 19개 stub 보강 진행". 23회차 9단계 점검에서 식별된 잔여 깨진 위키링크 19개 중 의도적·예시 텍스트 4개 제외, 15개 stub 보강 + 10개 redirect 일괄 처리.
+
+### 산출
+
+#### (1) entity stub 7개
+
+| 파일 | 카테고리 | 인용 회차 |
+|---|---|---|
+| [[turbopack]] | Vercel Rust 번들러 | 22 |
+| [[radix-ui]] | shadcn-ui 기반 React primitives | 22 |
+| [[tailwindcss]] | utility-first CSS | 22 / 24 |
+| [[poimandres]] | OSS Collective (Zustand 등) | 22 |
+| [[tanstack]] | TanStack 12+ 패키지 조직 | 22 |
+| [[sqlite]] | DuckDB 비교 대조군 | 16 |
+| [[apache-foundation]] | ASF PMC 8번째 거버넌스 | 16 |
+
+#### (2) concept stub 8개
+
+| 파일 | 카테고리 |
+|---|---|
+| [[lakehouse]] | data-architecture (Delta/Iceberg/Hudi) |
+| [[streaming]] | data-architecture (Kafka + 분석 엔진 streaming 모드) |
+| [[zero-copy]] | data-architecture (Arrow/Parquet 변환 0) |
+| [[append-only-log]] | data-architecture (Kafka/WAL/AOF) |
+| [[predicate-pushdown]] | query-optimization (WHERE pushdown) |
+| [[query-optimization]] | database (5대 표준 룰) |
+| [[event-driven-architecture]] | system-architecture (EDA + CQRS) |
+| [[oss-saas-dual]] | oss-governance (5+1 사례) |
+
+#### (3) redirect 처리 (10개 파일)
+
+`[[frontend-flutter-stack]]` / `[[frontend-react-stack]]` 인용을 [[flutter-nextjs-fullstack-pattern|진영 종합]] alias로 일괄 치환:
+- source 5개: rrousselGit-riverpod / vercel-next.js / shadcn-ui-ui / tanstack-query / pmndrs-zustand
+- entity 5개: shadcn-ui / zustand / nextjs / riverpod / tanstack-query
+
+→ frontmatter `related` 배열 + 본문 인용 모두 처리. log.md (회고 보존) + flutter-nextjs-fullstack-pattern.md (자기 참조 메모)는 의도적 잔여.
+
+### 정량 결과
+
+| 항목 | 23회차 시작 | 25회차 종료 | 해소율 |
+|---|---|---|---|
+| 깨진 위키링크 (false positive 제외) | 25 | 4 | **84%** |
+
+#### 의도적 잔여 4개
+
+- `frontend-flutter-stack` / `frontend-react-stack`: log.md 회고 텍스트 + flutter-nextjs-fullstack-pattern.md "후속 작업" 메모 (의도적 보존)
+- `code-reviewer`: jlowin-fastmcp.md 단일 인용 (Bot 리뷰 워크플로우 메타-가이던스 맥락 — 일반 단어로 작동)
+- `wikilink`: obsidian-guide.md 예시 텍스트 (정상 — 위키링크 사용법 설명)
+
+→ **실질 깨진 링크 0개** 달성.
+
+### 통계 변화
+
+| 영역 | 24회차 | 25회차 | 증가 |
+|---|---|---|---|
+| 총 페이지 | 171 | 188 | +17 |
+| 소스 | 64 | 64 | 0 |
+| 엔티티 | 69 | 76 | +7 |
+| 개념 | 23 | 31 | +8 |
+| 종합 | 13 | 13 | 0 |
+
+### 메타 메모
+
+- 본 회차는 **신규 발견 0건의 순수 정합성 작업** — 22회차까지의 발견을 그래프로 박는 단계
+- 위키가 "발견 도구"에서 "탐색 가능한 그래프"로 격상 — 모든 노드 간 클릭 신뢰도 84% → 100% 근접
+- 향후 stub들의 정식 페이지 격상은 raw 수집 시 발생 (Turbopack 1.0 / Iceberg 별도 수집 / SQLite 깊이 등)
+
+### 다음 단서
+
+- **25회차 형제 프로젝트 raw 수집** (24회차에서 식별): `mate-katok-analysis-backend` / `-flutter` / `data-mate` 1차 자료 수집 → [[matechat-chat-analysis-module]] BigQuery 파이프라인 가설 검증
+- **의도적 잔여 4개의 처리**: log.md / synthesis 자기 참조는 손대지 말고, code-reviewer는 jlowin-fastmcp.md에서 평이 텍스트로 변경하는 옵션 검토
+- **빈약 6 페이지 보강** (23회차에서 식별): com2us-platform / xpla-platform / frontend-react / c2spf-analytics / microsoft / devops-cicd 본문 확장
+- **15 신규 stub의 후속 정식 격상**: turbopack/radix-ui/tailwindcss는 22회차 source 페이지에서 확장 가능
+
+---
+
 ## [2026-04-28] ingest | Mate Chat 본진 1차 수집 — 38 SKILL + 위키 발견 종합 실증 (24회차)
 
 - **트리거**: 23회차 마무리 후 사용자 지시 — "(a) Mate Chat 수집 → (c) 깨진 링크 정리" 순서. 23회차에서 [[mate-chat]] stub만 등록했던 본인 핵심 사이드 프로젝트의 raw 1차 수집으로 stub → 정식 격상 + 채팅 분석 모듈 종합 분리.

@@ -11,7 +11,7 @@ related:
   - "[[zustand]]"
   - "[[poimandres]]"
   - "[[react]]"
-  - "[[frontend-react-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [zustand, react, state-management, hooks, flux, minimal, 22회차]
 confidence: high
 ---
@@ -53,7 +53,7 @@ confidence: high
 - [[zustand]] — 본 도구
 - [[poimandres]] — 운영 collective
 - [[react]] — 호스트 라이브러리
-- [[frontend-react-stack]] — React 진영 클라이언트 상태 표준
+- [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 클라이언트 상태 표준
 - [[tanstack-query]] — 서버 상태 보완 도구
 
 ## 인용할 만한 구절

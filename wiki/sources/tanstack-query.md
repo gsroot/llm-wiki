@@ -11,7 +11,7 @@ related:
   - "[[tanstack-query]]"
   - "[[tanstack]]"
   - "[[react]]"
-  - "[[frontend-react-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 22회차]
 confidence: high
 ---
@@ -45,7 +45,7 @@ confidence: high
 - [[tanstack-query]] — 본 도구
 - [[tanstack]] — 운영 조직
 - [[react]] — 주요 호스트
-- [[frontend-react-stack]] — React 진영 표준 fetcher
+- [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 표준 fetcher
 
 ## 인용할 만한 구절
 

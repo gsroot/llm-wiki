@@ -5,7 +5,7 @@ entity_type: tool
 related:
   - "[[react]]"
   - "[[tanstack]]"
-  - "[[frontend-react-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
   - "[[zustand]]"
   - "[[nextjs]]"
   - "[[riverpod]]"
@@ -37,7 +37,7 @@ tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 
 
 - [[react]] — 주요 호스트
 - [[tanstack]] — 운영 조직
-- [[frontend-react-stack]] — React 진영 표준 (22회차 신규)
+- [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 표준 (22회차 신규)
 - [[zustand]] — 클라이언트 상태 (보완 관계)
 - [[nextjs]] — TanStack Query를 SSR과 결합 (Hydration 패턴)
 - [[riverpod]] — Flutter 진영 동등 위치 (비동기 caching)

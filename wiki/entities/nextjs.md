@@ -7,7 +7,7 @@ related:
   - "[[vercel]]"
   - "[[turbopack]]"
   - "[[agent-skills]]"
-  - "[[frontend-react-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
   - "[[shadcn-ui]]"
   - "[[zustand]]"
   - "[[tanstack-query]]"
@@ -54,7 +54,7 @@ Vercel이 만든 React 프레임워크. 22회차에서 `$skill` 인덱싱 + `<!-
 - [[vercel]] — 운영 조직
 - [[turbopack]] — Rust 기반 번들러 (Next.js 기본)
 - [[agent-skills]] — 12단계 진화 사례
-- [[frontend-react-stack]] — React 진영 fullstack 표준 (22회차 신규)
+- [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 fullstack 표준 (22회차 신규)
 - [[shadcn-ui]], [[zustand]], [[tanstack-query]] — Next.js 상의 표준 React 스택
 
 ## 출처

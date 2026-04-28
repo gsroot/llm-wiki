@@ -12,7 +12,7 @@ related:
   - "[[radix-ui]]"
   - "[[tailwindcss]]"
   - "[[react]]"
-  - "[[frontend-react-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차]
 confidence: high
 ---
@@ -45,7 +45,7 @@ confidence: high
 - [[radix-ui]] — headless 컴포넌트 기반
 - [[tailwindcss]] — 스타일 시스템
 - [[react]] — 호스트 라이브러리
-- [[frontend-react-stack]] — React 진영 UI 표준
+- [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 UI 표준
 - [[agent-skills]] — 10번째 거버넌스 모델 (Open Code) 추가
 
 ## 인용할 만한 구절

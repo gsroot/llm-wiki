@@ -11,7 +11,7 @@ related:
   - "[[riverpod]]"
   - "[[flutter]]"
   - "[[mate-chat]]"
-  - "[[frontend-flutter-stack]]"
+  - "[[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]]"
 tags: [riverpod, flutter, dart, state-management, reactive, dependency-injection, 22회차]
 confidence: high
 ---
@@ -43,7 +43,7 @@ Flutter 공식 Favorite 패키지로 인정받은 reactive caching + dependency 
 - [[flutter]] — 호스트 프레임워크
 - [[mate-chat]] — Riverpod 기반 사이드 프로젝트
 - [[agent-skills]] — AGENTS.md 미채택 사례 12단계 진화
-- [[frontend-flutter-stack]] — Flutter 진영 표준 상태관리
+- [[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]] — Flutter 진영 표준 상태관리
 
 ## 인용할 만한 구절
 

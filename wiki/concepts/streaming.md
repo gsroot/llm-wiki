@@ -1,0 +1,53 @@
+---
+title: "Streaming (데이터 스트리밍)"
+type: concept
+category: data-architecture
+tags: [streaming, kafka, polars, pubsub, real-time, 25회차]
+related: [[kafka]], [[polars]], [[duckdb]], [[redis]]
+source_count: 0
+created: 2026-04-28
+updated: 2026-04-28
+---
+
+# Streaming
+
+## 정의
+
+**Streaming** = 무한 데이터 흐름을 작은 단위(마이크로배치 또는 이벤트별)로 처리. 배치(batch, 유한 데이터 일괄 처리)의 반대. 본 위키에서는 (a) 메시지 스트리밍 ([[kafka]]) + (b) 분석 엔진 스트리밍 모드 ([[polars]] / [[duckdb]]) 두 의미로 사용.
+
+본 페이지는 **stub** — 16회차 [[dataframe-ecosystem-evolution]] / [[kafka]] 등에서 인용되므로 정합성 stub.
+
+## 두 가지 streaming 의미
+
+### (a) 메시지 스트리밍 (인프라)
+
+| 도구 | 정체성 | 위키 회차 |
+|---|---|---|
+| [[kafka]] | 분산 이벤트 로그 | 16 |
+| [[redis]] Streams | Redis 5+ 내장 | 15 |
+| Pulsar / RabbitMQ | 대안 | (미수집) |
+
+### (b) 분석 엔진 스트리밍 모드 (in-memory)
+
+| 도구 | 사용 | 위키 회차 |
+|---|---|---|
+| [[polars]] | `scan_csv().collect(streaming=True)` — 메모리 부족 데이터 처리 | 16 |
+| [[duckdb]] | 큰 Parquet/CSV 자동 streaming | 16 |
+| [[pyarrow]] | Dataset.scan() | 16 |
+
+## 회사 BI 응용
+
+- (a) 게임 이벤트 → Kafka → BigQuery 적재 (실시간 분석)
+- (b) BigQuery 결과 다운로드 후 Polars streaming으로 메모리 절약
+
+## 관련 개념
+
+- [[kafka]] — 분산 메시지 스트리밍 표준
+- [[polars]] / [[duckdb]] — 분석 엔진 streaming 모드
+- [[redis]] Streams — 경량 대안
+- [[append-only-log]] — Kafka의 핵심 자료구조
+
+## 메모
+
+- 25회차 stub 사유: 23회차 점검에서 `[[streaming]]` 깨진 링크 발견.
+- "디스크는 친구" 16회차 사상의 streaming 변종 — sequential I/O + 페이지 캐시 활용으로 메모리 한계 회피.
