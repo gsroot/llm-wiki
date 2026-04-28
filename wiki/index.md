@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라)
+updated: 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장)
 ---
 
 # 위키 인덱스
@@ -32,6 +32,7 @@ updated: 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라)
 <!-- 수집일 2026-04-28 (17회차): 석근 프로필 수집 — 개인 프로필 원문을 raw/notes/personal에 보관하고, 소스 요약 1 + 엔티티 1(MateChat) + 종합 분석 1(석근 개인 운영 프로필) 추가, seokgeun-kim 엔티티 보강. 핵심 정리: 2026년 운영 병목은 기능 개발보다 MateChat 사용자 검증이며, 육아휴직 1년은 가족 시간 확보와 사업화 검증을 동시에 다루는 기간. 민감한 신상 정보는 raw 원문에만 두고 위키에는 전략/운영/AI 협업 관점으로 요약. AI 호칭은 회사 직급 호칭이 아니라 친구처럼 자연스러운 이름 호칭 선호 -->
 <!-- 수집일 2026-04-28 (18회차): mate-chat 프로젝트 위키 스냅샷 수집 — ../mate-chat/wiki 콘텐츠 68개 md 파일을 raw/notes/mate-chat-wiki-2026-04-28/에 보관(.obsidian 제외), 소스 요약 1 + 종합 분석 1(MateChat 프로젝트 지식 지도) 추가, MateChat 엔티티 보강. 핵심 결정: 프로젝트 위키를 llm-wiki에 개별 페이지로 복제하지 않고 원천 스냅샷으로 추적. 프로젝트 위키는 구현/출시/운영 지식, llm-wiki는 석근의 사업화/가족/AI 협업 맥락의 상위 해석을 담당 -->
 
+<!-- 수집일 2026-04-28 (20회차 / Plan 18회차 — LLM Agent Frameworks 확장): DeepAgents / CrewAI / PandasAI / Pydantic AI 4개 신규 수집 — 소스 4 + 엔티티 4 추가, agent-frameworks-matrix.md 6×N으로 확장, openai-agents-python / pydantic / agent-skills / agent-patterns / ml-ai 5개 페이지 갱신. 결정적 발견 5가지: (1) **AGENTS.md=CLAUDE.md 동기화 6 OSS 표준화** = agent-skills 외부 채택 10단계 진화의 10번째 — 18회차 추가 DeepAgents (AGENTS.md 364줄) + Pydantic AI (10K byte-for-byte) 합류로 6 OSS (LangChain/LangGraph/DeepAgents/FastMCP/OpenAI Agents/Pydantic AI) 동시 채택 → "LLM 프레임워크 OSS 사실상 표준" 격상. CrewAI/PandasAI 미채택은 LangChain/OpenAI/Pydantic 진영 vs 독립 진영의 거버넌스 분기점 시사. (2) **5번째 OSS+SaaS 듀얼 모델 — Crew Control Plane** — Polars/DuckDB/LangChain/FastMCP/CrewAI 5개 사례. Pydantic Logfire는 6번째 (SaaS이나 별도 제품). (3) **12번째 패턴(durable execution) 양강 구도** — Pydantic AI가 README 11가지 강점 9번에서 durable execution 1급 명시 → LangGraph 단독 → LangGraph + Pydantic AI 양강. type-safety는 Pydantic AI ★★★ 압도적 우위. DeepAgents는 LangGraph 위 프리셋으로 12번째 패턴 자동 상속. (4) **YAML/JSON agent 정의 1급 = Pydantic AI 단독** — 코드 없는 agent 정의 — agent-skills SKILL.md 패키징 사상의 다음 진화 방향. (5) **CrewAI "학습 인증 → SaaS 깔때기"** — 100,000+ 인증 개발자 → app.crewai.com 직결, 다른 프레임워크에 없는 비즈니스 모델. 부수: Capability(Pydantic AI) vs harness(DeepAgents) 추상화 비교, A2A(Agent2Agent) 표준 첫 등장. agent-frameworks-matrix.md는 이제 6 프레임워크 + 2 직교 layer × ~22축 정량 비교 + 7-step 의사결정 트리 + 단계별 c2spf-analytics 마이그레이션 권장 (Stage 1 PandasAI / Stage 2 Pydantic AI / Stage 3 LangGraph) -->
 <!-- 수집일 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라): LightGBM / LangChain / LangGraph / FastMCP 4개 신규 수집 — 소스 4 + 엔티티 4 + 종합 1 (agent-frameworks-matrix) 추가, scikit-learn / ml-ai / agent-patterns / agent-skills 4개 페이지 갱신. 결정적 발견 5가지: (1) **agent-skills 9단계 진화 = "패턴 확산"** — LangChain/LangGraph/FastMCP 3개 OSS가 동시에 AGENTS.md=CLAUDE.md 동기화 채택 → OpenAI 사내 패턴이 다국적 OSS 협업 컨벤션으로 격상 (1~7 단발 사례, 8 OpenAI 미러링, 9 동시 채택). (2) **9번째 OSS 거버넌스 모델 = "회사 졸업 → 독립 조직"** — Microsoft/LightGBM → lightgbm-org/LightGBM (2026-03), 같은 메인테이너 유지하나 GitHub org 이전. ASF PMC와 다른 점: 법적 형태 그대로 (ASF는 법인 이전). 16회차의 8개 + 9번째 추가. (3) **9번째 거버넌스 모델 — "공식 SDK 흡수 → 다음 버전 재시작"** — FastMCP 1.0이 2024 공식 MCP Python SDK에 통합 → 2.0 standalone 재출시. fork/abandon이 아닌 자발적 표준화 후 재진입. (4) **12번째 agent 패턴 = State-Machine + Durable Execution** — LangGraph가 Pregel + Apache Beam + NetworkX 학술 계보로 정립한 12번째 패턴. checkpoint(Postgres/SQLite) 1급. Klarna/Replit/Elastic production 검증. Anthropic 5 + OpenAI 6 + LangGraph 1 = 12 패턴. (5) **EffVer 발견** — LightGBM이 SemVer 대신 채택한 사용자 영향 중심 버전 체계 (jacobtomlinson.dev/effver). uv/ruff의 0.x 빠른 반복, pandas/sklearn의 SemVer 변형과 함께 버전 정책 다양화. 부수: bot review 메타-가이던스(FastMCP) — CodeRabbit/Codex/claude-bot 시대 워크플로우 진화. agent-frameworks-matrix.md는 18회차에 DeepAgents/Crew AI/Pandas AI/Pydantic AI 추가 예정 -->
 <!-- 수집일 2026-04-28 (14회차): openai/openai-agents-python 수집 — 소스 1 + 엔티티 1 (openai-agents-python tool) 추가, openai 엔티티 + agent-skills/harness/agent-patterns/ml-ai 4개 개념 + agent-stack-evolution 종합 분석 보강 (총 6개 페이지 갱신). ★25K 1년차 OpenAI 공식 멀티 에이전트 Python SDK (v0.14.6 / MIT / 1년 14 메이저 버전). 13회차 cookbook과 한 쌍 — cookbook이 메소드론 정의 단(가이드)이라면 본 SDK는 같은 회사가 자기 핵심 SDK 본체에 동일 패턴을 풀스택 적용한 **거버넌스 자기 채택 (self-adoption)** 직접 증거. 결정적 발견 3가지: (1) **AGENTS.md = CLAUDE.md byte-for-byte 동기화 패턴 (12,900B 양쪽 미러링)** = agent-skills 외부 채택 **8단계 진화의 8번째 사례** (1~7번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter/openai-cookbook의 끝, 가장 단순한 vendor-neutral 적응). (2) **`.agents/skills/` 9개 운영 SOP 스킬 + 스킬 간 호출 (skill chaining)** — `$skill-name` 명령형 호출 + 트리거/스킵 조건 명시. flutter 3개의 3배 규모, **첫 "9개 본격 운영 SOP" 사례**. (3) **examples/agent_patterns/ 16개 .py = Anthropic 5패턴 + OpenAI 6확장 (Guardrails 3종 / Human-in-the-loop 3종 / Forced tool use) = 11종 reference 구현** — [[agent-patterns]]에 OpenAI 확장 6패턴 명시 추가. 부수: PLANS.md 5,485B (cookbook 16KB 응축) + .codex/hooks.json Stop 훅 자동화 + Public API Positional Compatibility 정책 (dataclass 필드 순서 호환성 계약 격상) + uv+ruff+pyright 도구 스택 + llms.txt 표준 채택. 회사 BI 적용 가설 강화: 9개 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑, 13회차 PLANS.md 가설은 self-adoption 증거로 신뢰도 상승 -->
 
@@ -41,9 +42,9 @@ updated: 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라)
 
 ## 통계
 
-- 총 페이지 수: 132
-- 소스 요약: 49
-- 엔티티: 51
+- 총 페이지 수: 141
+- 소스 요약: 53
+- 엔티티: 55
 - 개념: 22
 - 종합 분석: 9
 
@@ -102,6 +103,10 @@ updated: 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라)
 | [[langchain-ai-langchain]] | langchain-ai/langchain — The agent engineering platform (monorepo + AGENTS.md=CLAUDE.md + partners/ 모델) | article | LangChain Inc. (Harrison Chase 외) | 2026-04-28 | langchain, llm-framework, agent, monorepo, langchain-inc, langsmith, agents-md, claude-md, 17회차 |
 | [[langchain-ai-langgraph]] | langchain-ai/langgraph — Pregel + Apache Beam + NetworkX 영감의 stateful agent 그래프 (Klarna/Replit/Elastic production) | article | LangChain Inc. | 2026-04-28 | langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, 17회차 |
 | [[jlowin-fastmcp]] | jlowin/fastmcp — MCP 사실 표준 (70% 점유, 일일 100만 다운로드) + 1.0 SDK 흡수 → 2.0 standalone | article | Jeremiah Lowin (Prefect) | 2026-04-28 | fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, 17회차 |
+| [[langchain-ai-deepagents]] | langchain-ai/deepagents — batteries-included agent harness (LangGraph Native + 4종 도구 빌트인 + Deep Agents CLI) | article | LangChain Inc. | 2026-04-28 | deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차 |
+| [[crewaiinc-crewai]] | crewAIInc/crewAI — LangChain 독립 멀티 에이전트 프레임워크 (Crews+Flows) + Crew Control Plane SaaS (★50K, 100K+ 인증) | article | CrewAI Inc. | 2026-04-28 | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차 |
+| [[sinaptik-ai-pandas-ai]] | sinaptik-ai/pandas-ai — DataFrame 자연어 대화 어댑터 (df.chat) + LiteLLM 다중 모델 (★23.5K) | article | Sinaptik AI | 2026-04-28 | pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차 |
+| [[pydantic-pydantic-ai]] | pydantic/pydantic-ai — Pydantic 팀의 type-safe agent framework + 11가지 강점 + AGENTS.md=CLAUDE.md 동기화 (★16.7K) | article | Pydantic Services Inc. (Samuel Colvin) | 2026-04-28 | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, 18회차 |
 
 ## 개념 (Concepts)
 
@@ -185,6 +190,10 @@ updated: 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라)
 | [[langchain]] | LangChain | tool | langchain, llm-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md, 17회차 | 1 | 2026-04-28 |
 | [[langgraph]] | LangGraph | tool | langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, checkpoint, 17회차 | 1 | 2026-04-28 |
 | [[fastmcp]] | FastMCP | tool | fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, oss-evolution, 17회차 | 1 | 2026-04-28 |
+| [[deepagents]] | DeepAgents | tool | deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차 | 1 | 2026-04-28 |
+| [[crewai]] | CrewAI | tool | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차 | 1 | 2026-04-28 |
+| [[pandas-ai]] | PandasAI | tool | pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차 | 1 | 2026-04-28 |
+| [[pydantic-ai]] | Pydantic AI | tool | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차 | 1 | 2026-04-28 |
 
 ## 종합 분석 (Syntheses)
 
@@ -198,4 +207,4 @@ updated: 2026-04-28 (19회차 / Plan 17회차 — ML 클래식 + LLM 인프라)
 | [[backend-fastapi-stack]] | Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존) | backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions | 2026-04-28 |
 | [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution, 16회차 | 2026-04-28 |
 | [[pandas-vs-polars-vs-duckdb]] | Pandas vs Polars vs DuckDB — 정량 비교 매트릭스 (의사결정 트리 + 마이그레이션 ROI) | comparison, pandas, polars, duckdb, dataframe, decision-matrix, 16회차 | 2026-04-28 |
-| [[agent-frameworks-matrix]] | Agent Frameworks Matrix — LangGraph vs OpenAI Agents SDK (1차) | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, decision-matrix, durable-execution, state-machine, mcp, 17회차 | 2026-04-28 |
+| [[agent-frameworks-matrix]] | Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장) | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp, 17회차, 18회차 | 2026-04-28 |

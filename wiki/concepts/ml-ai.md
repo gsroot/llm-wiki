@@ -2,7 +2,7 @@
 title: "ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)"
 type: concept
 category: ai
-tags: [ml, ai, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, llm, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop]
+tags: [ml, ai, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, llm, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop, deepagents, crewai, pydantic-ai, pandas-ai, 18회차]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
@@ -13,7 +13,11 @@ related:
   - "[[openai]]"
   - "[[openai-cookbook]]"
   - "[[openai-agents-python]]"
-source_count: 7
+  - "[[deepagents]]"
+  - "[[crewai]]"
+  - "[[pydantic-ai]]"
+  - "[[pandas-ai]]"
+source_count: 15
 created: 2026-04-24
 updated: 2026-04-28
 ---
@@ -90,6 +94,10 @@ updated: 2026-04-28
 - [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo (17회차)
 - [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립 (17회차)
 - [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway (17회차)
+- [[langchain-ai-deepagents]] — LangChain Inc.의 batteries-included agent harness. `create_deep_agent()` 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 빌트인. LangGraph Native (compiled graph 반환)이라 durable execution 자동 상속. Deep Agents CLI는 Claude Code/Cursor 직접 경쟁 (18회차)
+- [[crewaiinc-crewai]] — LangChain 명시적 독립 멀티 에이전트 프레임워크 (★50K, MIT). Crews(role-playing) + Flows(enterprise event-driven) 듀얼 메타포. **Crew Control Plane SaaS = 5번째 OSS+SaaS 듀얼 모델**. 100,000+ 인증 개발자 학습 깔때기 (18회차)
+- [[pydantic-pydantic-ai]] — Pydantic 팀이 직접 출시한 type-safe agent framework (★16.7K). 11가지 자기 강점 (durable execution + graph support 포함) → **12번째 패턴 양강 합류**. 25개 provider model-agnostic, A2A 1급, YAML/JSON agent 정의, AGENTS.md=CLAUDE.md byte-for-byte 동기화 (18회차)
+- [[sinaptik-ai-pandas-ai]] — DataFrame을 자연어로 대화하는 어댑터 (★23.5K). `df.chat(...)` 한 줄로 NL2DataFrame. LiteLLM 경유 다중 모델. 16회차 데이터 레이어(Polars/DuckDB/Parquet/PyArrow)의 **자연어 인터페이스 어댑터**. BI 챗봇 PoC 1순위 (18회차)
 - [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK(★25K, v0.14.6, MIT). cookbook이 사례 데이터베이스라면 본 SDK는 **다중 에이전트 시스템 구축의 reference 라이브러리**. 회사 BI에 LLM 에이전트 적용 시 (예: BigQuery NL2SQL / 게임 데이터 분석 자동 보고 / 자율 모니터링 알림 트리아주) 본 SDK가 1차 후보. 핵심 가치: (1) **`examples/agent_patterns/` 16개 .py — 11종 패턴 reference 구현** (Anthropic 5 + OpenAI 6확장: Guardrails 3종 + Human-in-the-loop 3종 + Forced tool use), (2) **`docs/tools.md` 37.9KB** — 도구 시스템 전체 가이드 (BI 함수 호출 패턴 차용 가능), (3) **`mcp>=1.19.0` 디폴트 의존성** — MCP 서버를 BI 도메인 도구로 wrap 가능, (4) **RunState `CURRENT_SCHEMA_VERSION`** — BI 세션·캐시 직렬화 패턴 차용. 9개 운영 SOP 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑
 
 ## 열린 질문

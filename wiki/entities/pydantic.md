@@ -2,8 +2,8 @@
 title: "Pydantic (pydantic/pydantic)"
 type: entity
 entity_type: tool
-tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, pydantic-core, rust-extension, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, logfire, pydantic-ai, annotated, pep-593]
-related: [[[fastapi]], [[openai-agents-python]], [[python-packaging]], [[uv]], [[sqlalchemy]]]
+tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, pydantic-core, rust-extension, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, logfire, pydantic-ai, annotated, pep-593, 18회차]
+related: [[[fastapi]], [[openai-agents-python]], [[python-packaging]], [[uv]], [[sqlalchemy]], [[pydantic-ai]]]
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -13,7 +13,15 @@ updated: 2026-04-28
 
 ## 개요
 
-9년차 ★27.6K Python 데이터 검증 라이브러리. **타입 힌트만으로 스키마 정의 + 자동 검증 + JSON Schema 생성** 패턴을 정착시킨 사실상 표준 — [[fastapi]] / [[openai-agents-python]] 모두 디폴트 의존성. V2(2023) ground-up rewrite로 `pydantic-core` Rust 확장 분리 + 5~50배 성능 개선 + V1 빌트인 `from pydantic import v1`로 점진적 마이그레이션 보장. 자매 제품 — Pydantic Logfire (관측성) / Pydantic AI (LLM 에이전트, 18회차 예정).
+9년차 ★27.6K Python 데이터 검증 라이브러리. **타입 힌트만으로 스키마 정의 + 자동 검증 + JSON Schema 생성** 패턴을 정착시킨 사실상 표준 — [[fastapi]] / [[openai-agents-python]] 모두 디폴트 의존성. V2(2023) ground-up rewrite로 `pydantic-core` Rust 확장 분리 + 5~50배 성능 개선 + V1 빌트인 `from pydantic import v1`로 점진적 마이그레이션 보장. 자매 제품 — Pydantic Logfire (관측성) / **[[pydantic-ai]] (LLM 에이전트, 18회차 수집 완료)**.
+
+## Pydantic AI 연계 (18회차)
+
+[[pydantic-ai]]는 README에서 본인을 "validation layer 원천"으로 명시:
+
+> "Pydantic Validation is the validation layer of the OpenAI SDK, the Google ADK, the Anthropic SDK, LangChain, LlamaIndex, AutoGPT, Transformers, CrewAI, Instructor and many more."
+
+→ Pydantic의 영향력 범위가 **LLM 프레임워크 전체로 확산**. Pydantic AI는 이 layer를 만든 팀이 직접 agent SDK로 위로 올라온 결과.
 
 ## 메타
 

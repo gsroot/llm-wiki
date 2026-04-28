@@ -2,8 +2,8 @@
 title: "openai-agents-python (OpenAI Agents SDK)"
 type: entity
 entity_type: tool
-tags: [openai-agents-python, openai-agents, openai, agents-sdk, python, multi-agent, agent-framework, mit-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version]
-related: [[[openai]], [[openai-cookbook]], [[agent-skills]], [[harness]], [[agent-patterns]], [[mcp]], [[uv]], [[python-packaging]], [[claude-agent-sdk]], [[agent-stack-evolution]]]
+tags: [openai-agents-python, openai-agents, openai, agents-sdk, python, multi-agent, agent-framework, mit-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version, 18회차]
+related: [[[openai]], [[openai-cookbook]], [[agent-skills]], [[harness]], [[agent-patterns]], [[mcp]], [[uv]], [[python-packaging]], [[claude-agent-sdk]], [[agent-stack-evolution]], [[langgraph]], [[deepagents]], [[crewai]], [[pydantic-ai]], [[fastmcp]]]
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -115,9 +115,24 @@ dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `
 - [[claude-agent-sdk]]: Anthropic 측 평행 제품 (비교 대상)
 - [[claude-managed-agents]]: Anthropic의 hosted 변형 vs OpenAI agents-python의 self-hosted
 
+## 18회차 형제 프레임워크 비교 (cross-reference)
+
+| 프레임워크 | 메타포 | OpenAI Agents SDK 대비 |
+|------------|--------|------------------------|
+| [[langgraph]] | state graph + Pregel | durable execution 1급, 모델-agnostic |
+| [[deepagents]] | "harness" + LangGraph 위 프리셋 | 4종 빌트인 도구 (Claude Code 패턴) |
+| [[crewai]] | Crews + Flows 듀얼 | role-playing 자연스러움, LangChain 독립 |
+| [[pydantic-ai]] | type-safe agent + 11 강점 | type-safety 압도적, model-agnostic |
+| [[fastmcp]] | MCP 서버 빌드 | 직교 (SDK가 아닌 도구 layer) |
+
+→ OpenAI Agents SDK는 **11종 패턴 reference + OpenAI 락인 + RunState 직렬화**가 차별점. 18회차에서 6×N agent-frameworks-matrix.md로 정량 비교.
+
 ## 출처
 
 - [[openai-openai-agents-python]] — 본 SDK 저장소 1차 수집 (14회차, 2026-04-28)
+- [[langchain-ai-deepagents]] — 18회차 비교 대상 추가
+- [[crewaiinc-crewai]] — 18회차 비교 대상 추가
+- [[pydantic-pydantic-ai]] — 18회차 비교 대상 추가
 
 ## 논쟁/모순
 
