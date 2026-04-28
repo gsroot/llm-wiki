@@ -22,6 +22,7 @@ related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
   - "[[com2us-platform]]"
+  - "[[portfolio-seed]]"
 created: 2026-04-28
 updated: 2026-04-28
 tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]

@@ -10,9 +10,11 @@ related:
   - "[[frontend-react]]"
   - "[[data-pipeline-bigquery]]"
   - "[[devops-cicd]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
 source_count: 4
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-28
 ---
 
 # c2spf 애널리틱스 (게임 데이터 BI)
@@ -41,15 +43,62 @@ updated: 2026-04-24
   - DevOps: Docker Compose, Jenkins Multi-branch, Promtail/Loki/Grafana 4환경
   - 인증: HIVE OAuth (사내 인증 시스템) 8개 엔드포인트 통합
 
+## 9년차 운영 시스템의 누적 자산
+
+c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 + API 계약 + 운영 가이드 + 도메인 지식이 함께 누적된 복합 자산**이다. 신규 개발자가 코드만 받아 운영하기 어려운 이유는 이 5계층 자산이 분리되어 보존되지 않기 때문이다. 본 위키의 [[seokgeun-stack-guide]]가 권장하는 38개 SOP SKILL.md 패턴([[matechat]] 본진 채택)은 이 5계층 자산을 동기화하는 후보 메커니즘이다.
+
+### 자기 커밋 분포 (포트폴리오 기준)
+
+- `c2spf` 조직 본인 커밋 누계: **1,111건**
+- `analytics-common-api` 단독 유지보수: 231/251 커밋 (~92%)
+- `analytics-frontend` React 리뉴얼: 476커밋 (~24%, 팀 최초 React 도입)
+- ML 유저 예측: AutoML 기반 평균 정확도 85%+
+
+### 횡단 계약 4종 (2024-08 공통 모듈 리뉴얼 산출)
+
+| 계약 | 역할 | 적용 모듈 |
+|---|---|---|
+| `APIResponse` | 표준 응답 envelope | analytics-common-api 모든 endpoint |
+| `APICode` | 에러/상태 코드 카탈로그 | 프론트/백 공통 |
+| `ProcessedData` | 시각화·다운로드 공통 데이터 모델 | 차트/퍼널/리텐션/대시보드 |
+| HIVE OAuth 8 endpoint | 사내 인증 통합 | 모든 c2spf 서비스 |
+
+→ 2024-08 이후 모든 리포트·대시보드 기능이 이 4 계약 위에 구축. 회사 내 개발 표준의 사실상 SSOT.
+
+## 위키 안에서의 위상
+
+c2spf-analytics는 본 위키에서 **인바운드 4위(43)**의 hub다. agent-skills(58) / harness(49) / ml-ai(44) 다음 위치이며, c2spf-analytics보다 인바운드 높은 페이지는 모두 LLM 인프라 메타 개념이다. 즉 **회사 BI 운영 시스템이 위키의 5번째로 큰 hub**이며, 이는 본 위키가 직장인의 위키임을 그래프 측면에서 자연스럽게 입증한다.
+
+[[seokgeun-stack-guide]]의 "회사 BI 적용 매핑" 표는 22회차까지 수집된 32개 OSS를 c2spf 운영에 적용하는 시나리오를 다룬다. 본 페이지는 그 매핑의 적용 대상 시스템.
+
+## MateChat 38 SKILL → c2spf 역수입 후보
+
+[[matechat]] 본진 raw 수집(24회차)에서 발견된 38개 SKILL.md 중 **c2spf 운영에 직접 차용 가능한 후보 9개**:
+
+| MateChat SKILL | c2spf 적용 시나리오 |
+|---|---|
+| `fastapi-testing` | analytics-common-api 113 테스트 패턴 표준화 |
+| `api-consistency` | APIResponse/APICode 계약 검증 자동화 |
+| `migration-safety` | analytics 데이터베이스 alembic 변경 검증 (현 Jenkins 의존 → 자동화) |
+| `pre-deployment` | 4환경(dev/qa/staging/prod) 배포 전 체크리스트 표준화 |
+| `feature-workflow` | 차트/퍼널/리텐션 신규 분석 기능 추가 SOP |
+| `doc-management` | 9년차 운영 SOP 누적 문서 관리 |
+| `security-review` | HIVE OAuth + BigQuery 권한 점검 |
+| `code-change-verification` | PR 단위 변경 영향 분석 자동화 |
+| `runtime-behavior-probe` | 운영 환경 이슈 재현 SOP |
+
+→ 28회차 P1 후속 후보: 38 SKILL 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 추가.
+
 ## 관련 개념
 
 - [[com2us-platform]] — 운영 회사
-- [[seokgeun-kim]] — 주축 개발자
-- [[backend-python-fastapi]] — 공통 API 스택
-- [[frontend-react]] — 2025-06 리뉴얼 표준
+- [[seokgeun-kim]] — 주축 개발자, 1,111커밋 누계
+- [[backend-python-fastapi]] — 공통 API 스택, [[matechat]] 백엔드와 동일 6단
+- [[frontend-react]] — 2025-06 리뉴얼 표준, [[tanstack-query]] + [[zustand]] 22회차 발견과 일치
 - [[data-pipeline-bigquery]] — BI 데이터 파이프라인
-- [[devops-cicd]] — Jenkins + Docker 표준화
-- [[ml-ai]] — analytics-prediction 모듈
+- [[devops-cicd]] — Jenkins + Docker 표준화, [[github-actions]] 마이그레이션 후보
+- [[ml-ai]] — analytics-prediction 모듈, [[scikit-learn]] / [[lightgbm]] 17회차 수집과 일치
+- [[matechat]] — 38 SKILL 역수입 원천 + 동일 6단 백엔드 스택의 사이드 프로젝트 검증
 
 ## 출처
 
@@ -57,6 +106,7 @@ updated: 2026-04-24
 - [[portfolio-ko]] — Selected Work 5선 중 3개가 애널리틱스 관련
 - [[c2spf-analytics-common]] — 공통 모듈 & 배포 프로세스 (2024-08~)
 - [[c2spf-analytics-renewal]] — Airbridge API + React 리뉴얼 (2025)
+- [[seokgeun-stack-guide]] — 22회차까지 수집한 32개 OSS의 c2spf 적용 매핑
 
 ## 논쟁/모순
 
@@ -66,3 +116,5 @@ updated: 2026-04-24
 
 - 9년차 운영 중인 장기 시스템 — 단순 코드 외에 데이터 모델, API 계약, 운영 가이드가 함께 누적된 복합 자산.
 - 2024-08 공통 모듈 리뉴얼이 이후 모든 리포트·대시보드 기능의 기반이 됨. APIResponse·APICode·ProcessedData 계약이 횡단.
+- 본 페이지는 28회차에 인바운드 4위 hub로서의 위상을 본문에 명시하고 [[matechat]] / [[seokgeun-stack-guide]] 양방향 백링크 추가, MateChat 38 SKILL 역수입 9개 후보 표 박힘. 23/27회차에서 식별된 "빈약 페이지" 결함 해소.
+- 향후 보강 후보: 분석 도메인별 KPI 카탈로그(차트/퍼널/리텐션/대시보드 별 표준 지표), HIVE OAuth 8 endpoint 카탈로그, ML 예측 모델 영속성 의사결정 트리(skops/ONNX/joblib).

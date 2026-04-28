@@ -30,6 +30,8 @@ related:
   - "[[shadcn-ui]]"
   - "[[agent-skills]]"
   - "[[seokgeun-stack-guide]]"
+  - "[[c2spf-analytics]]"
+  - "[[com2us-platform]]"
   - "[[token-economy]]"
 source_count: 6
 created: 2026-04-28
@@ -107,7 +109,7 @@ updated: 2026-04-28
 
 MateChat은 [[seokgeun-stack-guide]]가 정리한 백엔드 6단, Flutter+Riverpod 모바일, 관측성 트리플, OpenAI 통합, agent-skills 운영 패턴이 실제 개인 프로젝트에 적용된 사례다. 이 점에서 MateChat은 단순 사이드 프로젝트가 아니라, 이 위키가 15~22회차에 수집한 기술 판단의 실증 프로젝트다.
 
-특히 38개 SKILL.md는 개인 프로젝트 규모에서는 과하다 싶을 정도로 깊은 SOP 체계다. 하지만 이 덕분에 `fastapi-testing`, `api-consistency`, `websocket-pattern`, `security-review`, `migration-safety`, `pre-deployment`, `feature-workflow`, `doc-management`, `skill-creator` 같은 운영 지식을 회사 BI 쪽으로 역수입할 후보가 생긴다.
+특히 38개 SKILL.md는 개인 프로젝트 규모에서는 과하다 싶을 정도로 깊은 SOP 체계다. 하지만 이 덕분에 `fastapi-testing`, `api-consistency`, `websocket-pattern`, `security-review`, `migration-safety`, `pre-deployment`, `feature-workflow`, `doc-management`, `skill-creator` 같은 운영 지식을 [[c2spf-analytics|회사 BI]] 쪽으로 역수입할 후보가 생긴다 — 9개 SKILL의 c2spf 적용 시나리오는 [[c2spf-analytics]] 본문 "MateChat 38 SKILL → c2spf 역수입 후보" 표 참고.
 
 ### 주요 기능
 

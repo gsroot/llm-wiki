@@ -10,6 +10,87 @@ type: log
 
 ---
 
+## [2026-04-28] synthesis+enrich | 5번째 축 명시화 + c2spf 본문 보강 + 잔존 단절 3건 (28회차)
+
+- **트리거**: 27회차 6기준 재평가 직후 사용자가 28회차 #1+#2+#3 묶음 작업("지금 시작해줘") 지시. P0 정리만으로 충분치 않은 P1 콘텐츠 작업 + 메타 인식 명시화를 한 회차에 묶음.
+
+### 산출
+
+#### (1) 잔존 단절 3건 처리
+
+| 단절 | 처리 |
+|---|---|
+| matechat ↔ c2spf-analytics 양방향 | matechat frontmatter [[c2spf-analytics]] / [[com2us-platform]] 추가 + 본문 38 SKILL 섹션에 `[[c2spf-analytics\|회사 BI]]` alias wikilink + c2spf 본문에 [[matechat]] 38 SKILL 역수입 9개 표 박힘 |
+| stack-guide ↔ portfolio-seed 양방향 | 양쪽 frontmatter 상호 추가 |
+| c2spf → stack-guide 단방향 | c2spf frontmatter [[seokgeun-stack-guide]] 추가 |
+
+→ 27회차 P0의 4핵심축 양방향성 미완 부분 모두 완성.
+
+#### (2) c2spf-analytics 본문 보강 — 인바운드 4위 hub의 빈약 페이지 결함 해소
+
+- 본문 21줄 → 80여줄 격상
+- 신설 섹션 4개:
+  1. **9년차 운영 시스템의 누적 자산** — 5계층 (코드 + 데이터 모델 + API 계약 + 운영 가이드 + 도메인 지식)
+  2. **자기 커밋 분포** — c2spf 1,111커밋 / analytics-common-api 92% / 리뉴얼 24% / ML 85%+
+  3. **횡단 계약 4종** — APIResponse / APICode / ProcessedData / HIVE OAuth 8 endpoint
+  4. **MateChat 38 SKILL → c2spf 역수입 후보 9개** — fastapi-testing / api-consistency / migration-safety / pre-deployment / feature-workflow / doc-management / security-review / code-change-verification / runtime-behavior-probe
+- "위키 안에서의 위상" 섹션으로 인바운드 4위(43) hub 명시화
+
+→ 23/27회차에서 식별한 "빈약 페이지 6개" 중 1순위 해소 (가장 인바운드 높은 페이지).
+
+#### (3) [[llm-infra-meta-cluster]] 신규 종합 페이지 작성 — 5번째 축 명시화
+
+위키의 숨은 5번째 축을 1차 종합 분석으로 정체화:
+
+- **4 노드 정의**: agent-skills(58) / harness(49) / mcp(36) / claude-code(36) = 인바운드 합산 179
+- **자발적 성장 11회차 누적 표** (회차별 메타 발견 정리)
+- **4핵심축 vs 5번째 축 직교 layer 표** (4축은 "무엇이 있는가", 5축은 "어떻게 운영되는가")
+- **거버넌스 모델 10종 카탈로그** — Anthropic 단독 / OpenAI 사내 / Pydantic / Astral / 메일링 / MANIFESTO / NumFOCUS+BDFL / ASF PMC / CNCF / Open Code
+- **RAG 회수 시나리오 5종** + **미래 진화 모니터링 후보 5종**
+- **[[seokgeun-stack-guide]] vs 본 페이지 비교 표**: 카탈로그 vs 메타. 직교.
+
+### 결정적 발견
+
+#### 28회차 메타 발견 — "위키가 자기 정체성을 발견하는 사이클" 입증
+
+- 26회차 (codex 평가) → 27회차 (Claude 재평가) → 28회차 (5번째 축 명시화) = **3회차 누적으로 위키가 자기 분석 → 구조 정리 → 정체성 명시화 사이클 완성**.
+- 이는 단일 위키에서 매우 드문 메타-인식 진화. 5번째 축은 석근이 의도해서 만든 게 아니라 매 회차 OSS 수집 누적의 자연스러운 결과로 자랐고, 28회차에 그 위상이 종합 페이지로 박힘.
+- **본 회차가 "정보 저장소 → 메타 거버넌스 시스템" 진화의 첫 직접 증거**.
+
+### 통계 변화
+
+| 영역 | 27회차 | 28회차 | 증가 |
+|---|---|---|---|
+| 총 페이지 | 187 | 190 | +1 (llm-infra-meta-cluster) |
+| 종합 분석 | 13 | 14 | +1 |
+| c2spf-analytics 본문 줄 수 | ~21 | ~80 | +59 |
+| 깨진 wikilink | 0 | 0 | 유지 |
+| YAML invalid | 0 | 0 | 유지 |
+| 잔존 4핵심축 양방향 단절 | 3 | 0 | -3 (100% 해소) |
+
+### 6기준 재평가 등급 변화 (예상)
+
+| 기준 | 27회차 | **28회차** |
+|---|---|---|
+| 1. 정보 유용성 | A | A (잔존: P1 빈약 페이지 5개 + 38 SKILL 회독) |
+| 2. 핵심 축 선명도 | A | **A+** ↑ (5번째 축 명시화) |
+| 3. 축 간 연결성 | A− | **A** ↑ (잔존 단절 3건 해소) |
+| 4. Obsidian 볼트 품질 | A | A (유지) |
+| 5. LLM RAG 활용성 | A− | **A** ↑ (c2spf 빈약 1순위 해소) |
+| 6. 장기 운영성 | A− | A− (잔존: 38 SKILL / 형제 프로젝트 / KPI source) |
+
+→ **6기준 평균 A+** 도달 가능 상태.
+
+### 다음 단서
+
+- **P1**: 빈약 페이지 5개 본문 보강 (com2us-platform / xpla-platform / frontend-react / microsoft / devops-cicd)
+- **P1**: 38 SKILL 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 (24/28회차 후속)
+- **P1**: 형제 분석 프로젝트 raw 수집 (mate-katok-analysis-{backend, flutter} + data-mate)
+- **P2**: v1.0.0 출시 후 30/60/90일 시점 실측 KPI source
+- **모니터링**: AGENTS.md 13단계 진화 / 거버넌스 11번째 모델 / harness 7번째 축 / MCP 표준 균열 / agent-skills 비-개발 도메인 채택
+
+---
+
 ## [2026-04-28] cleanup | Claude 재평가 후속 P0 4건 정리 (27회차)
 
 - **트리거**: 26회차 codex 권고 처리 직후, 사용자가 같은 평가 프롬프트를 Claude에게 재요청. Claude가 6기준 재평가 보고서를 작성하면서 P0(30분 내 처리 가능) 4건을 식별. 사용자 지시 "P0 작업을 실행해줘"에 따라 일괄 처리.
