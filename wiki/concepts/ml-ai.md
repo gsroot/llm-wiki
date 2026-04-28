@@ -53,12 +53,27 @@ updated: 2026-04-28
 - **AI 에이전트에서 모바일 앱 수익화로**: LangGraph 워크플로 + 토큰 과금 + 인앱결제 결합.
 - **Pandas 데이터 처리**: 카카오톡 대화 분석 앱 등 개인 프로젝트에서 Plotly 시각화와 결합.
 
+## 17회차 추가 — LLM 인프라 + 클래식 ML 보강
+
+| 영역 | 17회차 추가 | 의미 |
+|------|------------|------|
+| **GBDT 1순위** | [[lightgbm]] | sklearn-compatible API + Pipeline 통합. 게임 BI에서 churn/LTV/매출 예측 표준 알고리즘 |
+| **LLM 프레임워크** | [[langchain]] | "agent engineering platform" 재포지셔닝, partners/ 모델 — 벤더 락인 회피 |
+| **Agent 그래프** | [[langgraph]] | Pregel + Apache Beam + NetworkX 영감, durable execution = 12번째 agent 패턴 |
+| **MCP 표준** | [[fastmcp]] | MCP 서버 70% 점유, 1.0이 공식 SDK 흡수 → 2.0 standalone (OSS 9번째 거버넌스 모델) |
+
+→ ML/AI는 이제 **클래식 ML (sklearn + LightGBM)** + **LLM Agent (LangChain/LangGraph + OpenAI Agents) + MCP (FastMCP)**의 3-layer 스택. [[c2spf-analytics]] 게임 BI에서 chatbot 분석 자동화 시 12번째 패턴 (durable + checkpoint) + Guardrails 3종 + LightGBM (피처 후처리) 합성이 reference.
+
 ## 관련 개념
 
 - [[data-pipeline-bigquery]] — ML 학습 데이터 소스
 - [[backend-python-fastapi]] — ML 서비스 백엔드 (Flask에서 FastAPI로)
-- [[mcp]] — LLM 도구 호출 프로토콜
+- [[mcp]] — LLM 도구 호출 프로토콜 ([[fastmcp]]가 사실 표준 구현)
 - [[scikit-learn]] — Python ML 사실상 표준 라이브러리, 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator)
+- [[lightgbm]] — sklearn-compatible GBDT, 회사 BI 모델 1순위 (17회차)
+- [[langchain]] / [[langgraph]] — agent platform + state-machine orchestration (17회차)
+- [[fastmcp]] — MCP 사실 표준, Prefect Horizon enterprise gateway (17회차)
+- [[agent-patterns]] — 12번째 패턴 (State-Machine + Durable Execution) 추가
 
 ## 출처
 
@@ -67,6 +82,14 @@ updated: 2026-04-28
 - [[pandas-dev-pandas]] — ML 입력/출력의 도구 레이어 표준 (DataFrame), Pandera로 학습 데이터 검증, ecosystem.md의 skrub/Hamilton/Featuretools가 pandas → ML 다리
 - [[scikit-learn-scikit-learn]] — sklearn 자체 소스 페이지, 거버넌스(SLEP)·5단 영속성 의사결정·생태계 30개+ 호환 라이브러리·AGENTS.md 정책
 - [[openai-openai-cookbook]] — OpenAI 공식 4년차 cookbook (★73K, 289 콘텐츠 / 115명 저자, MIT). LLM API 도입 의사결정 시 검색 가능한 사례 데이터베이스. embeddings(99건)·agents-sdk(16건)·responses(32건)·gpt-oss(13건)·mcp(8건) 태그가 4년 진화 화석. AGENTS.md "Recent Learnings" 살아있는 운영 노트 + PLANS.md ExecPlans 7시간+ 단일 작업 패턴 거버넌스 사례
+- [[microsoft-lightgbm]] — Microsoft → lightgbm-org 졸업한 GBDT 프레임워크 (2017 NIPS). sklearn-compatible API로 Pipeline 통합 + Optuna LightGBM Tuner. EffVer 버전 체계 채택. 25+ 외부 통합 (Spark/Ray/SHAP/AutoML). 회사 BI 모델 1순위 (17회차)
+- [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo (17회차)
+- [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립 (17회차)
+- [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway (17회차)
+- [[microsoft-lightgbm]] — Microsoft → lightgbm-org 졸업한 GBDT 프레임워크 (2017 NIPS). sklearn-compatible API로 Pipeline 통합 + Optuna LightGBM Tuner. EffVer 버전 체계 채택. 25+ 외부 통합 (Spark/Ray/SHAP/AutoML). 회사 BI 모델 1순위 (17회차)
+- [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo (17회차)
+- [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립 (17회차)
+- [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway (17회차)
 - [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK(★25K, v0.14.6, MIT). cookbook이 사례 데이터베이스라면 본 SDK는 **다중 에이전트 시스템 구축의 reference 라이브러리**. 회사 BI에 LLM 에이전트 적용 시 (예: BigQuery NL2SQL / 게임 데이터 분석 자동 보고 / 자율 모니터링 알림 트리아주) 본 SDK가 1차 후보. 핵심 가치: (1) **`examples/agent_patterns/` 16개 .py — 11종 패턴 reference 구현** (Anthropic 5 + OpenAI 6확장: Guardrails 3종 + Human-in-the-loop 3종 + Forced tool use), (2) **`docs/tools.md` 37.9KB** — 도구 시스템 전체 가이드 (BI 함수 호출 패턴 차용 가능), (3) **`mcp>=1.19.0` 디폴트 의존성** — MCP 서버를 BI 도메인 도구로 wrap 가능, (4) **RunState `CURRENT_SCHEMA_VERSION`** — BI 세션·캐시 직렬화 패턴 차용. 9개 운영 SOP 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑
 
 ## 열린 질문

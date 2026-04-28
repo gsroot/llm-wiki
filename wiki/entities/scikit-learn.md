@@ -101,6 +101,36 @@ scikit-learn 컨트랙트를 따르면 자동 호환:
 
 - [[scikit-learn-scikit-learn]] — 이 엔티티의 자체 소스 페이지 (메타·거버넌스·API·생태계 종합)
 - [[microsoft-ml-for-beginners]] — sklearn 위에 만들어진 26 lesson 입문 커리큘럼
+- [[microsoft-lightgbm]] — sklearn-compatible GBDT 라이브러리, Pipeline 1급 통합 (17회차)
+- [[microsoft-lightgbm]] — sklearn-compatible GBDT 라이브러리, Pipeline 1급 통합 (17회차)
+
+## sklearn vs LightGBM — 보완 관계 (17회차 추가)
+
+scikit-learn에는 자체 `GradientBoostingClassifier`/`HistGradientBoostingClassifier`가 있으나, 실무에서는 **[[lightgbm]]**이 GBDT 1순위. 이유와 통합 패턴:
+
+| 축 | sklearn 내장 GBM | [[lightgbm]] |
+|----|------------------|---------------|
+| **속도** | 단일 스레드 기본 | Multi-threaded + GPU + 분산 |
+| **메모리** | 보통 | Histogram-based + EFB로 절감 |
+| **categorical** | 0.21+에서 부분 지원 | 1급 지원 (`category_feature`) |
+| **API** | `BaseEstimator` 컨트랙트 | sklearn-compatible (`LGBMClassifier`) |
+| **튜닝** | scikit-learn `GridSearchCV` | + Optuna LightGBM Tuner |
+
+**통합 패턴**: LightGBM이 **sklearn 컨트랙트를 따르므로** Pipeline에 직접 삽입 가능. 즉 sklearn은 framework, LightGBM은 algorithm — 경쟁이 아닌 보완.
+
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+import lightgbm as lgb
+
+pipe = Pipeline([
+    ("scaler", StandardScaler()),
+    ("clf", lgb.LGBMClassifier(n_estimators=500, learning_rate=0.05)),
+])
+pipe.fit(X_train, y_train)  # sklearn 표준 컨트랙트 그대로
+```
+
+→ **5가지 API 컨트랙트의 19년 안정성**이 LightGBM·CatBoost·XGBoost 같은 외부 알고리즘이 1급으로 통합되는 이유.
 
 ## 메모
 

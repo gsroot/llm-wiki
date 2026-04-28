@@ -10,6 +10,41 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | LightGBM / LangChain / LangGraph / FastMCP 4개 신규 수집 — ML 클래식 + LLM 인프라 (19회차 / Plan 17회차)
+
+- **트리거**: `/Users/sgkim/.claude/plans/cozy-swinging-donut.md` Plan 17회차 — ML 클래식 + LLM 인프라 (LightGBM / LangChain / LangGraph / FastMCP). 14회차 OpenAI Agents Python에서 발견된 패턴이 여러 OSS에 확산되었는지 검증 + LangGraph state machine 패턴이 [[agent-patterns]]에 추가될 가치 있는지 평가.
+- **수집된 raw 폴더 4개**:
+  - `raw/articles/microsoft-LightGBM/` — README + MAINTAINING.md + CONTRIBUTING.md (총 280줄)
+  - `raw/articles/langchain-ai-langchain/` — README + AGENTS.md (376줄)
+  - `raw/articles/langchain-ai-langgraph/` — README + AGENTS.md (139줄)
+  - `raw/articles/jlowin-fastmcp/` — README + AGENTS.md (288줄)
+- **생성된 파일 (9건)**:
+  - sources 4개: `microsoft-lightgbm.md` / `langchain-ai-langchain.md` / `langchain-ai-langgraph.md` / `jlowin-fastmcp.md`
+  - entities 4개: `lightgbm.md` / `langchain.md` / `langgraph.md` / `fastmcp.md`
+  - synthesis 1개: `agent-frameworks-matrix.md` (1차, 18회차에 6×N 확장 예정)
+- **업데이트된 파일 (4건)**:
+  - `wiki/entities/scikit-learn.md` — sklearn vs LightGBM 보완 관계 표 추가, related에 [[lightgbm]]/[[pandas]]/[[polars]] 추가
+  - `wiki/concepts/ml-ai.md` — source_count 7→11, "17회차 추가 — LLM 인프라 + 클래식 ML 보강" 섹션 신설, 4개 출처 추가
+  - `wiki/concepts/agent-patterns.md` — source_count 4→5, "12번째 패턴: State-Machine + Durable Execution" 섹션 신설 (Anthropic 5 + OpenAI 6 + LangGraph 1)
+  - `wiki/concepts/agent-skills.md` — source_count 8→11, "9단계 진화" 항목 추가 (LangChain/LangGraph/FastMCP 동시 채택 = 패턴 확산)
+- **핵심 발견 5가지**:
+  1. **agent-skills 9단계 진화 = "패턴 확산"** — LangChain/LangGraph/FastMCP 3개 OSS가 동시에 `AGENTS.md = CLAUDE.md` 동기화 채택. 1~7 단발 사례, 8 OpenAI byte-for-byte 미러링, 9 동시 채택. → **OpenAI 사내 패턴이 다국적 OSS 협업 컨벤션으로 격상**.
+  2. **OSS 거버넌스 9번째 모델 = "회사 졸업 → 독립 조직"** — Microsoft/LightGBM → lightgbm-org/LightGBM (2026-03). 같은 메인테이너 유지 + GitHub org 이전. ASF PMC와 차이: 법적 형태 그대로 (ASF는 법인 이전).
+  3. **OSS 거버넌스 모델 후보 — "공식 SDK 흡수 → 다음 버전 재시작"** — FastMCP 1.0이 2024 공식 MCP Python SDK에 통합 → 2.0 standalone 재출시. 일일 100만 다운로드, MCP 서버 70% 점유.
+  4. **12번째 agent 패턴 = State-Machine + Durable Execution** — LangGraph가 Pregel + Apache Beam + NetworkX 학술 계보로 정립. checkpoint(Postgres/SQLite) 1급. Klarna/Replit/Elastic production 검증. Anthropic 5 + OpenAI 6 + LangGraph 1 = 12 패턴.
+  5. **EffVer 발견** — LightGBM이 SemVer 대신 채택한 사용자 영향 중심 버전 체계 (jacobtomlinson.dev/effver). uv/ruff의 0.x 빠른 반복, pandas/sklearn의 SemVer 변형과 함께 버전 정책 다양화.
+- **부수 발견**:
+  - **Bot review 시대 메타-가이던스** — FastMCP AGENTS.md "Be constructively skeptical of bot review comments on your own PRs" — CodeRabbit/Codex/claude-bot 일상화 시대의 워크플로우 진화.
+  - **OSS+SaaS 듀얼 패턴 4번째 사례 확정** — Polars/Polars Cloud, DuckDB/MotherDuck, LangChain/LangSmith, FastMCP/Prefect Horizon.
+  - **"agent engineering platform" 슬로건** — LangChain이 2024-2025년 "framework for LLM apps"에서 "agent engineering platform"으로 재포지셔닝.
+- **회사 BI 적용 (석근님 c2spf-analytics)**:
+  - 게임 데이터 BI 챗봇 = **LangGraph state machine + FastMCP BI 도구 + LangChain 모델 추상화** 3-layer 권장. checkpoint-postgres로 대화 영속성, MCP로 BigQuery/Grafana 연결, init_chat_model로 OpenAI/Anthropic 동시 실험.
+  - LightGBM은 churn/LTV/매출 예측 모델 1순위. sklearn Pipeline 통합 가능.
+- **위키 통계 변화**: 123 → **132 페이지** (+9). 소스 45→49 (+4) / 엔티티 47→51 (+4) / 개념 22 (변경 없음, 갱신만) / 종합 8→9 (+1).
+- **다음 회차 예정**: 18회차 LLM Agent Frameworks 확장 (DeepAgents / Crew AI / Pandas AI / Pydantic AI) → agent-frameworks-matrix.md 6×N 확장.
+
+---
+
 ## [2026-04-28] ingest | mate-chat 프로젝트 위키 스냅샷 수집 — 프로젝트 전용 위키를 llm-wiki 원천 데이터로 편입 (18회차)
 
 - **트리거**: 소유자 요청 — 현재 폴더 `llm-wiki`의 형제 폴더 `mate-chat/wiki`는 MateChat 프로젝트 전용 Obsidian/LLM 위키이므로, 그 데이터를 `llm-wiki` 원천 데이터로 가져와 수집.
