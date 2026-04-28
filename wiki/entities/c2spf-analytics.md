@@ -71,9 +71,9 @@ c2spf-analytics는 본 위키에서 **인바운드 4위(43)**의 hub다. agent-s
 
 [[seokgeun-stack-guide]]의 "회사 BI 적용 매핑" 표는 22회차까지 수집된 32개 OSS를 c2spf 운영에 적용하는 시나리오를 다룬다. 본 페이지는 그 매핑의 적용 대상 시스템.
 
-## MateChat 38 SKILL → c2spf 역수입 후보
+## MateChat 자작 SKILL → c2spf 역수입 후보 (28회차 검증 정정)
 
-[[matechat]] 본진 raw 수집(24회차)에서 발견된 38개 SKILL.md 중 **c2spf 운영에 직접 차용 가능한 후보 9개**:
+[[matechat]] 본진 raw 수집(24회차)에서 발견된 `.agents/skills/` 39 SKILL.md 중 **자작 11개 (외부 설치 28개 제외)** → 그중 **c2spf 운영에 직접 차용 가능한 9개** (build-app-bundle은 Android Flutter 전용 / flutter-qa-audit는 Flutter QA 전용이라 c2spf 부적합):
 
 | MateChat SKILL | c2spf 적용 시나리오 |
 |---|---|
@@ -87,7 +87,7 @@ c2spf-analytics는 본 위키에서 **인바운드 4위(43)**의 hub다. agent-s
 | `code-change-verification` | PR 단위 변경 영향 분석 자동화 |
 | `runtime-behavior-probe` | 운영 환경 이슈 재현 SOP |
 
-→ 28회차 P1 후속 후보: 38 SKILL 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 추가.
+→ 후속 후보: 39 SKILL 중 자작 11개 본문 1회독 후 [[seokgeun-stack-guide]]에 "회사 BI 차용 SOP 후보" 섹션 추가.
 
 ## 관련 개념
 

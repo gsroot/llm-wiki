@@ -26,7 +26,7 @@ tags: [mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, o
 
 ## 한줄 요약
 
-석근이 개발·운영 중인 글로벌 소셜 메시징 플랫폼 (v1.0.0 Google Play Store 출시 완료). FastAPI 백엔드 + Flutter 모바일 + OpenAI GPT-4 + WebSocket 실시간 채팅 + 가상화폐(클로버) IAP. **위키 15~22회차에서 발견한 6분류 도구 대부분이 단일 프로젝트에 집약된 실증 사례** + agent-skills 표준의 **38 SKILL.md 운영 SOP**(단일 OSS 최대 규모) + **27개 gstack 슬래시 커맨드** 자체 생산성 시스템.
+석근이 개발·운영 중인 글로벌 소셜 메시징 플랫폼 (v1.0.0 Google Play Store 출시 완료). FastAPI 백엔드 + Flutter 모바일 + OpenAI GPT-4 + WebSocket 실시간 채팅 + 가상화폐(클로버) IAP. **위키 15~22회차에서 발견한 6분류 도구 대부분이 단일 프로젝트에 집약된 실증 사례** + agent-skills 표준의 **`.agents/skills/` 39개 SKILL.md 통합 운영** (자작 11 + Flutter 공식 22 + Claude Code marketplace/npx 설치 6) + **외부 gstack 저장소 vendor + 자체 12개 슬래시 커맨드** (`.claude/commands/`). (28회차 검증 정정: 24회차 본문의 "38 SKILL = 단일 OSS 최대 규모, 메이저 OSS 4~12배 초과" 가설은 자작 11개 기준으로는 anthropics/skills(~12)·openai-agents-python(9)와 비슷한 규모로 약화. 진짜 가치는 **외부 28개 + 자작 11개 통합 운영의 사이드 프로젝트 깊이**.)
 
 ## 핵심 내용
 
@@ -51,8 +51,10 @@ mate-chat/
 ├── mate_chat_backend/    (FastAPI, 백엔드 70%+)
 ├── mate_chat_flutter/    (Flutter, 출시 완료)
 ├── docs/                 (18개 설계 문서 — 12 system / 13 db / 14 api / 15 auth / 16 websocket 등)
-├── .agents/skills/       (38 SKILL.md 운영 SOP)
-├── .gstack/              (자체 생산성 시스템 27 슬래시 커맨드)
+├── .agents/skills/       (39 SKILL.md = 자작 11 + 외부 설치 28)
+├── .claude/skills/gstack/ (외부 gstack 저장소 vendor)
+├── .claude/commands/     (12개 자체 슬래시 커맨드)
+├── .gstack/              (운영 로그 4개 — 슬래시 디렉토리 아님)
 ├── AGENTS.md (2.8KB)     (간단 OSS 가이드)
 ├── CLAUDE.md (22KB)      (프로젝트 컨텍스트, AGENTS.md와 분리)
 ├── GEMINI.md (3.5KB)     (Gemini용 별도 가이드)
@@ -103,21 +105,24 @@ mocktail + fake_async + network_image_mock  # 테스트
 
 → **22회차 React 진영의 [[shadcn-ui]]가 Flutter용 shadcn_ui 0.40.5로 진영 횡단 채택**된 첫 위키 사례. Riverpod 2.5 단일 통합 모델 검증.
 
-### `.agents/skills/` — 38 SKILL.md 운영 SOP (단일 OSS 최대)
+### `.agents/skills/` — 39 SKILL.md 통합 운영 (28회차 정밀 분류)
 
-| 카테고리 | 개수 | 예시 |
+`skills-lock.json` 검증 + frontmatter description 분석 + 사용자 확인으로 28회차에 정확한 분포 박힘:
+
+| 분류 | 카운트 | 출처 / 명세 |
 |---|---|---|
-| Flutter 공식 패턴 forking | 19 | flutter-managing-state, flutter-architecting-apps, flutter-handling-concurrency, flutter-testing, flutter-building-forms, flutter-localizing-apps, flutter-implementing-navigation-and-routing, flutter-handling-http-and-json, flutter-caching-data, flutter-working-with-databases, flutter-theming-apps, flutter-improving-accessibility, flutter-reducing-app-size, flutter-embedding-native-views, flutter-interoperating-with-native-apis, flutter-building-plugins, flutter-adding-home-screen-widgets, flutter-animating-apps, flutter-patterns |
-| Flutter 도구·환경 | 4 | flutter-setting-up-on-{linux,macos,windows}, flutter-artifacts-builder |
-| 프로젝트 도메인 SOP | 15 | api-consistency, build-app-bundle, doc-management, fastapi-testing, feature-workflow, frontend-design, migration-safety, pre-deployment, security-review, skill-creator, theme-factory, ui-ux-pro-max, websocket-pattern, flutter-qa-audit, flutter-testing-apps |
+| **외부 설치: Flutter 공식** | **22** | `flutter/skills` GitHub 저장소 (skills-lock.json에 source/sourceType/computedHash 박힘) — flutter-managing-state / flutter-architecting-apps / flutter-handling-concurrency / flutter-building-forms / flutter-localizing-apps / flutter-implementing-navigation-and-routing / flutter-handling-http-and-json / flutter-caching-data / flutter-working-with-databases / flutter-theming-apps / flutter-improving-accessibility / flutter-reducing-app-size / flutter-embedding-native-views / flutter-interoperating-with-native-apis / flutter-building-plugins / flutter-adding-home-screen-widgets / flutter-animating-apps / flutter-setting-up-on-{linux,macos,windows} / flutter-testing-apps |
+| **외부 설치: Claude Code marketplace / npx** | **6** | flutter-artifacts-builder / flutter-patterns / flutter-testing / frontend-design / theme-factory / ui-ux-pro-max (사용자 확인 — Claude Code marketplace plugin 또는 npx 설치) |
+| **자작: c2spf 역수입 후보 9개** | **9** | api-consistency / fastapi-testing / websocket-pattern / security-review / migration-safety / pre-deployment / feature-workflow / doc-management / skill-creator |
+| **자작: mate-chat 도메인 특화 2개** | **2** | build-app-bundle (Android Flutter .aab 빌드 전용) / flutter-qa-audit (Flutter QA 전용) |
 
-총 7,566줄 (평균 200줄/SKILL). **OpenAI agents-python 9개의 4배** 규모로 단일 OSS 최대.
+총 7,566줄 (평균 200줄/SKILL). **자작 11 + 외부 설치 28 = 39**. 24회차에 박힌 "38 SKILL = 단일 OSS 최대, 메이저 OSS 4~12배 초과" 가설은 28회차 검증으로 약화 — 자작 11개로는 anthropics/skills(~12)·openai-agents-python(9)와 비슷한 규모. 진짜 가치는 **외부 22 Flutter + 6 marketplace + 자작 11 통합 운영의 사이드 프로젝트 깊이**.
 
 특이점:
 - `.agents/skills/` 위치는 **22회차 [[flutter]] 본진의 vendor-neutral 채택 패턴 100% 동일** (석근이 Flutter 본진 컨벤션을 자기 프로젝트에 적용)
-- `flutter-*` 19개는 **Flutter 본진 SKILL fork 가능성** — 본진 3개 SKILL을 19개로 확장
-- `theme-factory/`에 별도 `theme-showcase.pdf + LICENSE.txt` 포함 (디자인 자산)
-- `skills-lock.json` 4.4KB 별도 잠금 파일 — npm package-lock 패턴
+- Flutter 공식 22 SKILL을 그대로 vendor한 것은 [[flutter]] 본진의 vendor-neutral 채택의 **반대 방향 채택 (정의자 → 사용자)**의 첫 위키 사례
+- `theme-factory/`에 별도 `theme-showcase.pdf + LICENSE.txt` 포함 (디자인 자산) — 외부 marketplace 설치의 흔적
+- `skills-lock.json` 4.4KB 별도 잠금 파일 — npm package-lock 패턴, 외부 22개 Flutter SKILL의 hash 검증
 
 ### `.gstack/` — 27개 자체 슬래시 커맨드
 
@@ -203,16 +208,29 @@ CLAUDE.md 첫 섹션에 명시된 사용 가능 커맨드:
 
 → **위키가 카탈로그를 넘어 "사용자가 검증한 의사결정 도구"임이 단일 프로젝트로 입증**. [[seokgeun-stack-guide]] 권장 스택과 1:1 일치.
 
-### 2. **38 SKILL.md = 단일 OSS 최대 규모**
+### 2. **39 SKILL.md = 자작 11 + 외부 설치 28의 통합 운영** (28회차 정정)
 
-| 비교 | 개수 | 회차 |
+**자작 SKILL 비교** (24회차 가설의 정정 후 비교):
+
+| 비교 | 자작 개수 | 회차 |
 |---|---|---|
 | anthropics-skills (1차 정의) | ~12 | 4회차 |
 | flutter (vendor-neutral) | 3 | 12회차 |
 | OpenAI agents-python | 9 | 14회차 |
-| **Mate Chat (개인 사이드)** | **38** | **24회차** |
+| **Mate Chat 자작 (석근)** | **11** | **24/28회차** |
 
-→ "개인 사이드 프로젝트가 메이저 OSS의 4배 SKILL 운영 SOP를 보유" — agent-skills 표준의 채택 깊이는 OSS 규모와 무관함을 입증. 19개 Flutter SKILL은 본진의 3개에서 fork 후 도메인 특화 확장된 패턴.
+**전체 운영 비교** (외부 설치 포함):
+
+| 비교 | 자작 + 설치 | 회차 |
+|---|---|---|
+| **Mate Chat (개인 사이드)** | **자작 11 + 외부 22 Flutter + 6 marketplace = 39** | **24/28회차** |
+
+→ 24회차 본문의 "**38 SKILL = 단일 OSS 최대, 메이저 OSS 4배 초과**" 가설은 28회차에 자작 11개 기준으로 약화 (anthropics/skills·openai-agents-python과 비슷한 규모). **진짜 가치는 "자작 + 외부 설치 39개의 통합 운영"** — 사이드 프로젝트로서 매우 인상적인 깊이이지만 "단일 OSS 최대 규모"는 부정확.
+
+검증 흔적:
+- `skills-lock.json`에 22개 외부 의존성이 source/sourceType/computedHash 박힘 (Flutter 공식)
+- 6개는 Claude Code marketplace plugin / npx 설치로 lock 파일에 미박힘 (사용자 확인)
+- 11개는 자작 (frontmatter description에 "for the mate-chat project" 또는 한국어 작성 등)
 
 ### 3. **AGENTS.md ↔ CLAUDE.md 분리 = 13단계 진화 양분 가능성**
 
@@ -231,9 +249,15 @@ CLAUDE.md 첫 섹션에 명시된 사용 가능 커맨드:
 - 22회차 "10번째 거버넌스 모델 (Open Code)"의 진영 횡단 검증
 - 향후 [[shadcn-ui]] 페이지에 Flutter port 별도 섹션 추가 후속
 
-### 5. **gstack 27 슬래시 커맨드 = 회사 BI SOP 패키지화 직접 영감**
+### 5. **gstack 외부 vendor + 자체 12 슬래시 커맨드 = 회사 BI SOP 패키지화 영감** (28회차 정정)
 
-석근의 사이드 프로젝트가 자체 생산성 슬래시 커맨드 시스템을 빌드. 이는 19회차에서 발견한 [[harness]] 6번째 축(PLANS.md ExecPlan)의 다음 단계 진화 — **"개인이 운영 SOP를 슬래시 커맨드로 패키지화"**. 컴투스플랫폼 BI 업무에서 반복되는 분석·리포트·점검을 동일 패턴으로 슬래시화 가능.
+24회차에 박힌 "27 gstack 슬래시 커맨드 = 자체 생산성 시스템"은 28회차 검증으로 정정:
+
+- **`.gstack/`** (루트): 운영 로그 4개 파일 (browse-network.log / browse-console.log / qa-reports/) — **슬래시 커맨드 디렉토리 아님**
+- **`.claude/skills/gstack/`**: gstack 외부 저장소 vendor (자체 LICENSE / CLAUDE.md / package.json / node_modules 포함). 35~40개 슬래시 명령 제공 (autoplan / benchmark / browse / canary / ship / qa / land-and-deploy / office-hours 등) — **본인이 만든 게 아니라 외부 도구 채택**
+- **`.claude/commands/`**: 12개 자체 슬래시 (api / commit / debug / deploy / explain / flutter / migrate / refactor / review / test-gen / test / ui)
+
+→ 24회차 박힌 "1인 사이드 프로젝트가 회사 운영 관행을 슬래시 패키지화"는 정확히는 **"외부 gstack 도구를 채택하고 자체 12개 슬래시 추가"**. [[harness]] 6번째 축의 다음 진화 발견은 **여전히 유효** — 외부 gstack 자체가 SOP 패키지화의 사실상 표준 도구이며, 이를 사이드 프로젝트에 채택한 것은 회사 BI 업무에 동일 패턴 차용 가능 시사.
 
 ### 6. **백엔드 미완성 30%·Flutter 출시 완료 = 비대칭 운영**
 
@@ -248,7 +272,7 @@ CLAUDE.md "기능 구현 70% 수준" + "v1.0.0 Google Play Store 출시" → 백
 - [[flutter]], [[riverpod]] — 22회차 Flutter 진영
 - [[shadcn-ui]] — 22회차 Open Code의 Flutter port
 - [[openai-agents-python]] — OpenAI 직접 통합
-- [[agent-skills]] — 38 SKILL = 단일 OSS 최대 규모, 13단계 진화 후보
+- [[agent-skills]] — 39 SKILL = 자작 11 + 외부 설치 28 통합 운영 (28회차 검증), 13단계 진화 후보
 - [[backend-fastapi-stack]], [[flutter-nextjs-fullstack-pattern]], [[seokgeun-stack-guide]], [[observability-and-cicd-stack]] — 종합 페이지 실증
 
 ## 인용할 만한 구절

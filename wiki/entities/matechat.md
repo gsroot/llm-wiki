@@ -90,7 +90,7 @@ updated: 2026-04-28
 
 ### 본진 raw 수집 결과
 
-24회차에는 `/Users/sgkim/Projects/mate-chat/` 저장소의 README, AGENTS.md, CLAUDE.md, GEMINI.md, TODO.md, skills-lock.json, `.agents/skills/` 38개 SKILL.md, 백엔드 README/pyproject/docs, Flutter README/pubspec.yaml을 raw로 수집했다.
+24회차에는 `/Users/sgkim/Projects/mate-chat/` 저장소의 README, AGENTS.md, CLAUDE.md, GEMINI.md, TODO.md, skills-lock.json, `.agents/skills/` 39개 SKILL.md, 백엔드 README/pyproject/docs, Flutter README/pubspec.yaml을 raw로 수집했다. (24회차 본문에 박힌 "38개"는 28회차 검증에서 1개 누락 측정 오차로 정정.)
 
 핵심 규모:
 
@@ -101,15 +101,24 @@ updated: 2026-04-28
 | 백엔드 테스트 | 113 테스트, 커버리지 약 61% |
 | Flutter Dart | 132 파일 / 51,960줄 |
 | 백엔드 docs | 18 설계 문서 |
-| `.agents/skills/` | 38 SKILL.md |
-| `.gstack/` | 27 슬래시 커맨드 |
+| `.agents/skills/` | **39 SKILL.md** (자작 11 + 외부 설치 28) |
+| `.claude/skills/gstack/` | gstack 외부 저장소 vendor (자체 LICENSE/CLAUDE.md/package.json 포함) |
+| `.claude/commands/` | 12개 자체 슬래시 커맨드 (api/commit/debug/deploy/explain/flutter/migrate/refactor/review/test-gen/test/ui) |
+| `.gstack/` | 운영 로그 4개 파일 (browse-network.log/browse-console.log/qa-reports/) — 슬래시 커맨드 디렉토리 아님 |
 | 국제화 | 9개 언어 ARB |
 
 ### 위키 발견의 종합 실증
 
 MateChat은 [[seokgeun-stack-guide]]가 정리한 백엔드 6단, Flutter+Riverpod 모바일, 관측성 트리플, OpenAI 통합, agent-skills 운영 패턴이 실제 개인 프로젝트에 적용된 사례다. 이 점에서 MateChat은 단순 사이드 프로젝트가 아니라, 이 위키가 15~22회차에 수집한 기술 판단의 실증 프로젝트다.
 
-특히 38개 SKILL.md는 개인 프로젝트 규모에서는 과하다 싶을 정도로 깊은 SOP 체계다. 하지만 이 덕분에 `fastapi-testing`, `api-consistency`, `websocket-pattern`, `security-review`, `migration-safety`, `pre-deployment`, `feature-workflow`, `doc-management`, `skill-creator` 같은 운영 지식을 [[c2spf-analytics|회사 BI]] 쪽으로 역수입할 후보가 생긴다 — 9개 SKILL의 c2spf 적용 시나리오는 [[c2spf-analytics]] 본문 "MateChat 38 SKILL → c2spf 역수입 후보" 표 참고.
+28회차 검증으로 정확한 분포가 박혔다 — `.agents/skills/` 39 SKILL = **자작 11개 + 외부 설치 28개**:
+
+- **자작 11개**: `api-consistency` / `fastapi-testing` / `websocket-pattern` / `security-review` / `migration-safety` / `pre-deployment` / `feature-workflow` / `doc-management` / `skill-creator` / `build-app-bundle` / `flutter-qa-audit`
+- **외부 설치 28개**: Flutter 공식 22개 (`flutter/skills` GitHub, `skills-lock.json`에 hash 박힘) + Claude Code marketplace plugin / npx 설치 6개 (`flutter-artifacts-builder`, `flutter-patterns`, `flutter-testing`, `frontend-design`, `theme-factory`, `ui-ux-pro-max`)
+
+이 분포가 [[c2spf-analytics|회사 BI]] 쪽으로 역수입할 후보를 정확히 좁힌다 — **자작 11개 중 mate-chat 도메인 특화 2개(`build-app-bundle`은 Android Flutter 전용, `flutter-qa-audit`는 Flutter QA 전용) 제외 9개가 c2spf 직접 적용 가능**. 9개 c2spf 적용 시나리오는 [[c2spf-analytics]] 본문 "MateChat 자작 SKILL → c2spf 역수입 후보" 표 참고.
+
+→ 24회차에 박힌 "38 SKILL = 단일 OSS 최대 규모, 메이저 OSS 4~12배 초과" 가설은 28회차 검증으로 부분 약화: **자작 11개로는 anthropics/skills(~12) / openai-agents-python(9) 자작과 비슷한 규모**. 진짜 가치는 **외부 28개 설치 + 자작 11개의 통합 운영 39개**라는 사이드 프로젝트로는 매우 인상적인 깊이.
 
 ### 주요 기능
 

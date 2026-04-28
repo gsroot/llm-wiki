@@ -50,7 +50,7 @@ tags: [meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code
 - **정의**: SKILL.md 패키지 형태로 에이전트 운영 지식을 progressive disclosure하는 표준 (Anthropic 정의)
 - **외부 채택 12단계 진화**: anthropics-skills → spec-kit → fastapi → uv → scikit-learn → flutter → openai-cookbook → openai-agents-python → langchain/langgraph/fastmcp 동시 → deepagents/pydantic-ai 합류 → prometheus/grafana/sentry 4가지 변종 → next.js `$skill` hub + LLM PR HTML 마커
 - **15회차 발견**: astral-sh가 ruff·uv 양쪽에 같은 `CLAUDE.md = @AGENTS.md` 1줄 import 패턴 채택 → 조직 차원 표준화
-- **24회차 발견**: [[matechat]] 38 SKILL.md = 단일 OSS 최대 규모, 개인 사이드 프로젝트가 메이저 OSS의 4배 SKILL 운영 SOP
+- **24회차 발견 (28회차 정정)**: [[matechat]] `.agents/skills/` 39 SKILL.md = **자작 11 + 외부 설치 28** (Flutter 공식 22 + Claude Code marketplace 6) 통합 운영. 24회차 본문의 "단일 OSS 최대 규모" 가설은 자작 11개 기준 약화되나, **외부 + 자작 통합 운영의 사이드 프로젝트 깊이**는 여전히 인상적
 
 ### ② [[harness]] (인바운드 49, 2위)
 
@@ -92,7 +92,7 @@ tags: [meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code
 | 19~21 (운영 5) | 9번째 거버넌스 CNCF + 4가지 AGENTS.md 변종 동시 등장 |
 | 20~22 (프론트 5) | 10번째 거버넌스 "Open Code" + Next.js 양대 변종 |
 | 23 (마무리) | [[seokgeun-stack-guide]] = 8회차 누적 32 OSS 6분류 정리 |
-| 24 (MateChat 본진) | 38 SKILL.md 단일 OSS 최대 + AGENTS.md ↔ CLAUDE.md 분리형 13단계 양분 |
+| 24 (MateChat 본진) | 39 SKILL.md (자작 11 + 외부 28) 통합 운영 + AGENTS.md ↔ CLAUDE.md 분리형 13단계 양분 |
 
 → 11~24회차 14회차 동안 누적된 메타 패턴이 본 5번째 축의 1차 자료.
 
@@ -133,7 +133,7 @@ tags: [meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code
 
 - "AGENTS.md 진화 단계는?" → 본 페이지 12단계 표
 - "OSS 거버넌스 모델 10가지는?" → 본 페이지 카탈로그
-- "MateChat 38 SKILL이 회사 BI에 어떻게 차용 가능한가?" → [[matechat]] + [[c2spf-analytics]] + 본 페이지 ① 노드 chained
+- "MateChat 자작 SKILL 11개 중 c2spf 회사 BI에 차용 가능한 9개는?" → [[matechat]] + [[c2spf-analytics]] + 본 페이지 ① 노드 chained
 - "LLM 에이전트 harness 종류는?" → 본 페이지 6축 + [[agent-frameworks-matrix]]
 - "내 위키의 5축은?" → 본 페이지 4핵심축 vs 5번째 축 표
 

@@ -10,6 +10,84 @@ type: log
 
 ---
 
+## [2026-04-28] verify+correct | 38 SKILL 가설 raw 측정 검증 + 5개 페이지 정정 (28회차-2)
+
+- **트리거**: 사용자가 38 SKILL 가설 의심 ("9개만 자작이고 27개는 gstack일 뿐 아닐까?"). 26→27→28 외부 평가 사이클에 더해 **"raw 측정 vs 위키 본문 자동 대조"가 4번째 운영 사이클**로 격상.
+
+### 검증 절차 (5단계)
+
+1. **raw `.agents-skills/` 디렉토리** ls → 39개 파일 확인 (위키 박힌 38개와 1개 차이)
+2. **`skills-lock.json`** 분석 → 22개가 `flutter/skills` GitHub 외부 의존성으로 잠금 (source/sourceType/computedHash 박힘)
+3. **각 SKILL frontmatter description** 분석 → mate-chat 도메인 특화·한국어 작성 → 자작 후보 식별
+4. **`.gstack/` 디렉토리 직접 검사** → 운영 로그 4개 파일 (browse-network.log/browse-console.log/qa-reports/baseline.json)뿐 — **슬래시 커맨드 디렉토리 아님**
+5. **사용자 확인**: lock에 없는 17개 중 자작 11개 + 외부 marketplace/npx 설치 6개로 정밀 분류
+
+### 산출 — 39 SKILL.md 정밀 분류
+
+| 분류 | 카운트 | 명세 |
+|---|---|---|
+| **자작 (c2spf 역수입 후보 9개)** | 9 | api-consistency / fastapi-testing / websocket-pattern / security-review / migration-safety / pre-deployment / feature-workflow / doc-management / skill-creator |
+| **자작 (mate-chat 도메인 특화 2개)** | 2 | build-app-bundle (Android Flutter .aab) / flutter-qa-audit (Flutter QA) |
+| **외부 설치: Flutter 공식** | 22 | `flutter/skills` GitHub (skills-lock.json hash 검증) |
+| **외부 설치: Claude Code marketplace / npx** | 6 | flutter-artifacts-builder / flutter-patterns / flutter-testing / frontend-design / theme-factory / ui-ux-pro-max |
+| **합계** | **39** | |
+
+### 24회차 핵심 명제 정정
+
+24회차에 박힌 **"38 SKILL = 단일 OSS 최대 규모, 메이저 OSS 4~12배 초과"** 가설:
+
+| 비교 (자작 기준) | 자작 SKILL | 회차 |
+|---|---|---|
+| anthropics-skills | ~12 | 4 |
+| openai-agents-python | 9 | 14 |
+| **MateChat (석근 자작)** | **11** | 28회차 정정 |
+
+→ **자작 11개 기준으로는 anthropics/skills·openai-agents-python과 비슷한 규모**. 진짜 가치는 **외부 22 Flutter + 6 marketplace + 자작 11 통합 운영 39개**라는 사이드 프로젝트 깊이 — "단일 OSS 최대"는 부정확.
+
+### `.gstack/` vs `.claude/skills/gstack/` vs `.claude/commands/` 구분 정정
+
+24회차에 박힌 **"27 gstack 슬래시 커맨드 = 자체 생산성 시스템"**:
+
+| 위치 | 실제 정체 |
+|---|---|
+| `.gstack/` (루트) | 운영 로그 4개 파일 — 슬래시 커맨드 디렉토리 아님 |
+| `.claude/skills/gstack/` | gstack 외부 저장소 vendor (LICENSE/CLAUDE.md/package.json/node_modules 포함) — 35~40개 슬래시 명령 (autoplan/benchmark/browse/canary/ship/qa/...). **본인 자작 아님, 외부 도구 채택** |
+| `.claude/commands/` | 12개 자체 슬래시 (api/commit/debug/deploy/explain/flutter/migrate/refactor/review/test-gen/test/ui) |
+
+→ "1인 사이드 프로젝트가 회사 운영 관행을 슬래시 패키지화"는 **외부 gstack 도구 채택 + 자체 12개 추가**가 정확한 표현.
+
+### 정정 페이지 5개
+
+1. [[matechat]] entity — 38→39 + 통합 운영 표 + 자작/설치 분류 박힘
+2. [[seokgeun-mate-chat]] source — 한줄 요약 + `.agents/skills/` 39 SKILL 표 + 결정적 발견 2번/5번 정정
+3. [[llm-infra-meta-cluster]] — 24회차 누적 표 + ① 노드 + RAG 시나리오 3곳
+4. [[c2spf-analytics]] — 역수입 표 도입 문장 정정 ("자작 11 중 9개")
+5. wiki/index.md — 카탈로그 행 2개 정정 + header + 28회차-2 HTML comment 추가
+
+### 결정적 발견 — 위키 운영 4번째 사이클 입증
+
+26회차 (codex 외부 평가) → 27회차 (Claude 재평가) → 28회차 (5번째 축 명시화) → **28회차-2 (사용자 의심으로 raw 측정 vs 위키 본문 자동 대조)** = 4단계 사이클.
+
+본 회차의 진짜 가치는 정정 자체가 아니라 **"위키 박힌 정량 주장이 raw 측정과 자동 대조되어야 한다"는 메타 운영 원칙 입증**. 이는 LLM 위키의 환각 위험을 구조적으로 차단하는 첫 SOP 후보.
+
+### 통계 변화
+
+| 영역 | 28회차 | 28회차-2 | 증가 |
+|---|---|---|---|
+| 깨진 wikilink | 0 | 0 | 유지 |
+| YAML invalid | 0 | 0 | 유지 |
+| 위키 박힌 정량 검증 SOP | 0건 | 1건 (38→39, 27 gstack 정정) | +1 |
+| 28회차-2 정정 페이지 | — | 5 | +5 |
+
+### 다음 단서
+
+- **28회차-3 후보**: 자작 11 SKILL 본문 1회독 → [[seokgeun-stack-guide]] "회사 BI 차용 SOP 후보" 섹션 추가 (24/28회차 후속의 정확한 실행)
+- **위키 운영 SOP**: 매 회차 끝에 raw 측정 vs 위키 본문 자동 대조 (38 → 39 같은 1개 측정 오차 자동 검출)
+- **gstack 외부 저장소 별도 source 후보**: 가능하면 `gstack` entity / source 추가 (외부 vendor의 정체 명시)
+- **자작 SKILL과 외부 설치 SKILL의 구분 거버넌스**: agent-skills 표준이 아직 다루지 않은 영역 (lock 파일 vs frontmatter author 명시 vs 디렉토리 분리)
+
+---
+
 ## [2026-04-28] synthesis+enrich | 5번째 축 명시화 + c2spf 본문 보강 + 잔존 단절 3건 (28회차)
 
 - **트리거**: 27회차 6기준 재평가 직후 사용자가 28회차 #1+#2+#3 묶음 작업("지금 시작해줘") 지시. P0 정리만으로 충분치 않은 P1 콘텐츠 작업 + 메타 인식 명시화를 한 회차에 묶음.
