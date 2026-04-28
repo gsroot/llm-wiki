@@ -2,11 +2,11 @@
 title: "하네스 (Harness)"
 type: concept
 category: ai
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, plans-md, exec-plans, living-document, 7-hour-task]
-related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]], [[scikit-learn]], [[openai]], [[openai-cookbook]]
-source_count: 7
+tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-sdk, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, openai-agents-python, plans-md, exec-plans, living-document, 7-hour-task, 9-sop-skills, skill-chaining]
+related: [[claude-code]], [[claude-agent-sdk]], [[anthropic]], [[agent-patterns]], [[context-engineering]], [[token-economy]], [[llm-wiki-pattern]], [[autonomous-research-loop]], [[autoresearch]], [[agent-skills]], [[spec-kit]], [[spec-driven-development]], [[github]], [[scikit-learn]], [[openai]], [[openai-cookbook]], [[openai-agents-python]]
+source_count: 8
 created: 2026-04-15
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 # 하네스 (Harness)
@@ -206,6 +206,7 @@ project/
 - [[scikit-learn]] — 하네스의 **제3축 "library-as-harness"** 사례. 19년 변하지 않은 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator)가 곧 작업 운영 패턴. SLEP(Scikit-Learn Enhancement Proposal)이 [[github-spec-kit]] SDD나 [[anthropics-skills]] SKILL.md의 19년 선배 — "표준화 → 구현" 분리 패턴의 원형. 30+ 호환 라이브러리 생태계가 컨트랙트 영구성의 결과
 - [[openai-openai-cookbook]] — 하네스의 **제5축 "PLANS.md / ExecPlans + 살아있는 AGENTS.md"** 사례. [[openai]] cookbook(★73K 4년차)이 박은 두 가지 거버넌스 패턴: (1) **PLANS.md / ExecPlans** — Codex `gpt-5.2-codex`가 단일 프롬프트로 7시간+ 작업하도록 만드는 living document. NON-NEGOTIABLE 5 요건(자기완결 / 살아있는 문서 / 초보자 구현 / 관찰 가능한 동작 / 본문 용어 정의) + 단일 fenced code block 형식 강제. `articles/codex_exec_plans.md` (16KB)에서 정의. (2) **AGENTS.md (5.5KB)의 "Recent Learnings" 섹션** — 운영 중 발견된 함정·솔루션 6개를 "현상 → 대응 → 이유" 형식으로 누적하는 살아있는 운영 노트. 다른 OSS의 정적 가이드(astral-sh/uv, scikit-learn, fastapi, flutter 등)와 본질적으로 다른 첫 메인스트림 사례. → 1~4축이 모두 정적 가이드라면 본 5축은 시간 기반 검증(7시간+) + 실시간 학습 누적의 살아있는 모드. [[agent-skills]] 외부 채택 7단계 진화의 7번째 단계와 동일 회차 반영
 - [[flutter-flutter]] — 하네스의 **제4축 "vendor-neutral asset + 토큰 예산 다층화"** 사례. `.agents/skills/` 표준 채택 + `.claude/skills` 심볼릭 링크 forwarding + `docs/rules/` 4계층(1k/4k/10k/full) 도구별 대응 + `agent-artifacts/` 격리. 11년차 거대 OSS가 다중 AI 도구 환경에서 거버넌스를 운영하는 첫 사례. [[anthropics-skills]] 표준의 두 번째 외부 채택([[github-spec-kit]] Codex 모드 첫 번째)이지만, **위치 컨벤션은 자체 결정**으로 표준 채택자가 정의자를 누른 모델
+- [[openai-openai-agents-python]] — 하네스의 **제5축 "PLANS.md / ExecPlans"의 본체 단 풀스택 적용** 사례. [[openai]]의 1년차 멀티 에이전트 SDK(★25K, v0.14.6)가 cookbook 13회차에서 정의된 ExecPlan 메소드론을 **자기 핵심 SDK 운영에 풀스택 채택**: (1) `PLANS.md`(5,485B) — cookbook의 `articles/codex_exec_plans.md`(16KB)를 응축, NON-NEGOTIABLE 4 + Living Sections 4(Progress / Surprises & Discoveries / Decision Log / Outcomes & Retrospective) + 단일 fenced code block 강제. (2) `AGENTS.md` "ExecPlans" 섹션이 `Use an ExecPlan when work is multi-step, spans several files, involves new features or refactors, or is likely to take more than about an hour` 한 줄로 PLANS.md 자동 호출. (3) `.codex/hooks.json` Stop 훅 → `uv run python stop_repo_tidy.py` 자동 정리. (4) **9개 운영 SOP 스킬 (`.agents/skills/`)** — `$code-change-verification`/`$implementation-strategy`/`$pr-draft-summary`/`$runtime-behavior-probe`(13.4KB ★)/`$docs-sync`/`$examples-auto-run`/`$final-release-review`/`$openai-knowledge`/`$test-coverage-improver` — 각자 trigger·skip·workflow 정책 명시 + **스킬 간 호출 (skill chaining)** 명시. 5축은 "표준 정의 (autoresearch 최소 / spec-kit 중간 / scikit-learn library-as-harness / flutter vendor-neutral asset / cookbook PLANS.md)"의 메소드론 단이라면, 본 사례는 **메소드론 정의자가 자기 본체에 동일 패턴을 풀스택 적용**한 **거버넌스 자기 채택 (self-adoption)** 직접 증거. 회사 BI 적용 가설 보강 — 9개 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑
 
 ## 열린 질문
 

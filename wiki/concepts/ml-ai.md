@@ -2,7 +2,7 @@
 title: "ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)"
 type: concept
 category: ai
-tags: [ml, ai, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, llm, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss]
+tags: [ml, ai, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, llm, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
@@ -12,9 +12,10 @@ related:
   - "[[scikit-learn]]"
   - "[[openai]]"
   - "[[openai-cookbook]]"
-source_count: 6
+  - "[[openai-agents-python]]"
+source_count: 7
 created: 2026-04-24
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 # ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)
@@ -66,6 +67,7 @@ updated: 2026-04-27
 - [[pandas-dev-pandas]] — ML 입력/출력의 도구 레이어 표준 (DataFrame), Pandera로 학습 데이터 검증, ecosystem.md의 skrub/Hamilton/Featuretools가 pandas → ML 다리
 - [[scikit-learn-scikit-learn]] — sklearn 자체 소스 페이지, 거버넌스(SLEP)·5단 영속성 의사결정·생태계 30개+ 호환 라이브러리·AGENTS.md 정책
 - [[openai-openai-cookbook]] — OpenAI 공식 4년차 cookbook (★73K, 289 콘텐츠 / 115명 저자, MIT). LLM API 도입 의사결정 시 검색 가능한 사례 데이터베이스. embeddings(99건)·agents-sdk(16건)·responses(32건)·gpt-oss(13건)·mcp(8건) 태그가 4년 진화 화석. AGENTS.md "Recent Learnings" 살아있는 운영 노트 + PLANS.md ExecPlans 7시간+ 단일 작업 패턴 거버넌스 사례
+- [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK(★25K, v0.14.6, MIT). cookbook이 사례 데이터베이스라면 본 SDK는 **다중 에이전트 시스템 구축의 reference 라이브러리**. 회사 BI에 LLM 에이전트 적용 시 (예: BigQuery NL2SQL / 게임 데이터 분석 자동 보고 / 자율 모니터링 알림 트리아주) 본 SDK가 1차 후보. 핵심 가치: (1) **`examples/agent_patterns/` 16개 .py — 11종 패턴 reference 구현** (Anthropic 5 + OpenAI 6확장: Guardrails 3종 + Human-in-the-loop 3종 + Forced tool use), (2) **`docs/tools.md` 37.9KB** — 도구 시스템 전체 가이드 (BI 함수 호출 패턴 차용 가능), (3) **`mcp>=1.19.0` 디폴트 의존성** — MCP 서버를 BI 도메인 도구로 wrap 가능, (4) **RunState `CURRENT_SCHEMA_VERSION`** — BI 세션·캐시 직렬화 패턴 차용. 9개 운영 SOP 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑
 
 ## 열린 질문
 

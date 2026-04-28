@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-28 (13회차)
+updated: 2026-04-28 (14회차)
 ---
 
 # 위키 인덱스
@@ -27,15 +27,17 @@ updated: 2026-04-28 (13회차)
 <!-- 점검 후속 2026-04-27: 이전 평가 우선순위 미완료 항목 반영 — agent-stack-evolution 중복 섹션 제거 및 제목 5축으로 정정, BDFL/NumFOCUS/PDEP/CMA 4개 페이지 신설, 모든 source 페이지에 raw_path 추가, source 템플릿/CLAUDE.md raw_path 규칙 반영. 위키 페이지 84 → 88개 -->
 <!-- 수집일 2026-04-28 (13회차): openai/openai-cookbook 수집 — 소스 1 + 엔티티 2 (openai 조직 + openai-cookbook 프로젝트) 추가, agent-skills/harness/ml-ai/agent-patterns/agent-stack-evolution 5개 페이지 보강. ★73K 4년차 cookbook (289 콘텐츠 / 115명 저자 / MIT). 결정적 발견 2가지: (1) **AGENTS.md "Recent Learnings" 섹션 — 살아있는 운영 노트 패턴** = AGENTS.md 외부 채택 7단계 진화의 7번째이자 첫 살아있는 사례 (1~6번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter는 모두 정적 가이드, 7번째 OpenAI에서 처음으로 운영 중 발견을 즉시 반영). (2) **PLANS.md / ExecPlans = 6번째 거버넌스 축** — 단일 LLM 작업 7시간+를 가능케 하는 자기완결 living document. NON-NEGOTIABLE 5 요건(자기완결 / 살아있는 / 초보자 구현 / 관찰 가능한 동작 / 본문 용어 정의). [[harness]] 5축에 6번째로 추가, [[agent-stack-evolution]] 5축 → 6축 확장. 부수: registry.yaml 3,180줄 + authors.yaml 583줄 + check_notebooks.py 콘텐츠 거버넌스 자동화는 본 위키 index.md 자동 생성 PoC 후속 후보. 회사 BI 적용 가설: c2spf-analytics 분기/연간 대형 분석에 PLANS.md ExecPlan 패턴 적용 시 7시간+ 단일 작업 가능 -->
 
+<!-- 수집일 2026-04-28 (14회차): openai/openai-agents-python 수집 — 소스 1 + 엔티티 1 (openai-agents-python tool) 추가, openai 엔티티 + agent-skills/harness/agent-patterns/ml-ai 4개 개념 + agent-stack-evolution 종합 분석 보강 (총 6개 페이지 갱신). ★25K 1년차 OpenAI 공식 멀티 에이전트 Python SDK (v0.14.6 / MIT / 1년 14 메이저 버전). 13회차 cookbook과 한 쌍 — cookbook이 메소드론 정의 단(가이드)이라면 본 SDK는 같은 회사가 자기 핵심 SDK 본체에 동일 패턴을 풀스택 적용한 **거버넌스 자기 채택 (self-adoption)** 직접 증거. 결정적 발견 3가지: (1) **AGENTS.md = CLAUDE.md byte-for-byte 동기화 패턴 (12,900B 양쪽 미러링)** = agent-skills 외부 채택 **8단계 진화의 8번째 사례** (1~7번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter/openai-cookbook의 끝, 가장 단순한 vendor-neutral 적응). (2) **`.agents/skills/` 9개 운영 SOP 스킬 + 스킬 간 호출 (skill chaining)** — `$skill-name` 명령형 호출 + 트리거/스킵 조건 명시. flutter 3개의 3배 규모, **첫 "9개 본격 운영 SOP" 사례**. (3) **examples/agent_patterns/ 16개 .py = Anthropic 5패턴 + OpenAI 6확장 (Guardrails 3종 / Human-in-the-loop 3종 / Forced tool use) = 11종 reference 구현** — [[agent-patterns]]에 OpenAI 확장 6패턴 명시 추가. 부수: PLANS.md 5,485B (cookbook 16KB 응축) + .codex/hooks.json Stop 훅 자동화 + Public API Positional Compatibility 정책 (dataclass 필드 순서 호환성 계약 격상) + uv+ruff+pyright 도구 스택 + llms.txt 표준 채택. 회사 BI 적용 가설 강화: 9개 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑, 13회차 PLANS.md 가설은 self-adoption 증거로 신뢰도 상승 -->
+
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
 > LLM은 질의 시 이 파일을 먼저 읽어서 관련 페이지를 찾습니다.
 
 ## 통계
 
-- 총 페이지 수: 91
-- 소스 요약: 32
-- 엔티티: 34
+- 총 페이지 수: 93
+- 소스 요약: 33
+- 엔티티: 35
 - 개념: 21
 - 종합 분석: 3
 
@@ -77,6 +79,7 @@ updated: 2026-04-28 (13회차)
 | [[scikit-learn-scikit-learn]] | scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~) | article | scikit-learn community (David Cournapeau / INRIA / NumFOCUS / probabl.ai) | 2026-04-27 | scikit-learn, sklearn, machine-learning, python, classic-ml, fit-predict-transform, pipeline, estimator-api, slep, governance, numfocus, probabl, agents-md, ai-disclosure |
 | [[flutter-flutter]] | flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준 | article | Google (Flutter Team) | 2026-04-27 | flutter, dart, google, multiplatform, ui-toolkit, mobile, web, desktop, skia, impeller, hot-reload, agent-skills, agentskills.io, vendor-neutral, progressive-disclosure, token-budget |
 | [[openai-openai-cookbook]] | openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음 + 살아있는 AGENTS.md | article | OpenAI (community resource) | 2026-04-27 | openai-cookbook, openai, openai-api, prompt-engineering, embeddings, fine-tuning, agents-sdk, codex, gpt-5, gpt-oss, harmony, evals, agents-md, plans-md, exec-plans, registry-yaml, recent-learnings |
+| [[openai-openai-agents-python]] | openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬 | article | OpenAI (Agents Team) | 2026-04-28 | openai-agents-python, openai, agents-sdk, python, multi-agent, agent-framework, agent-skills, agents-md, plans-md, exec-plans, vendor-neutral, codex, mcp, uv, pyright, agent-patterns, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy |
 
 ## 개념 (Concepts)
 
@@ -84,19 +87,19 @@ updated: 2026-04-28 (13회차)
 |------|------|------|---------|-----------|
 | [[llm-wiki-pattern]] | LLM 위키 패턴 | 지식관리, LLM, 위키, RAG, 하네스 | 3 | 2026-04-15 |
 | [[mcp]] | MCP (Model Context Protocol) | MCP, LLM, 도구, 프로토콜, agentic-protocols, claude-cookbooks | 6 | 2026-04-27 |
-| [[harness]] | 하네스 (Harness) | 하네스, 에이전트, 작업운영, 자율연구, bare-metal-harness, meta-harness, claude-cookbooks, spec-kit, library-as-harness, scikit-learn, slep, flutter, vendor-neutral, token-budget-tiers, openai-cookbook, plans-md, exec-plans, living-document | 7 | 2026-04-27 |
+| [[harness]] | 하네스 (Harness) | 하네스, 에이전트, 작업운영, 자율연구, bare-metal-harness, meta-harness, claude-cookbooks, spec-kit, library-as-harness, scikit-learn, slep, flutter, vendor-neutral, token-budget-tiers, openai-cookbook, openai-agents-python, plans-md, exec-plans, living-document, 9-sop-skills, skill-chaining | 8 | 2026-04-28 |
 | [[token-economy]] | 토큰 경제학 (Token Economy) | 토큰, 비용, 컨텍스트, prompt-caching, claude-cookbooks | 2 | 2026-04-27 |
 | [[context-engineering]] | 컨텍스트 엔지니어링 | 컨텍스트엔지니어링, 프롬프트엔지니어링, 자율연구, memory-cookbook, claude-cookbooks | 4 | 2026-04-27 |
 | [[autonomous-research-loop]] | 자율 연구 루프 (Autonomous Research Loop) | 자율연구, agent, 메트릭주도, 시간예산, harness, gpt2-speedrun | 2 | 2026-04-27 |
-| [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills, library-self-hosted-skill, fastapi, flutter, vendor-neutral, dart-skills-lint, token-budget-tiers, openai, openai-cookbook, agents-md-living, recent-learnings, exec-plans | 7 | 2026-04-27 |
-| [[agent-patterns]] | Building Effective Agents — 5 패턴 | agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, spec-kit, sdd, openai, openai-cookbook, agents-sdk, exec-plans | 3 | 2026-04-27 |
+| [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills, library-self-hosted-skill, fastapi, flutter, vendor-neutral, dart-skills-lint, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror | 8 | 2026-04-28 |
+| [[agent-patterns]] | Building Effective Agents — 5 패턴 | agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, spec-kit, sdd, openai, openai-cookbook, openai-agents-python, agents-sdk, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns | 4 | 2026-04-28 |
 | [[spec-driven-development]] | Spec-Driven Development (SDD) | spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology | 1 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot, tiangolo, agent-skills, annotated, pydantic2 | 6 | 2026-04-27 |
 | [[frontend-react]] | 프론트엔드 (React + TS + Vite + TanStack) | frontend, react, typescript, vite, tanstack, ag-grid | 4 | 2026-04-24 |
 | [[data-pipeline-bigquery]] | 데이터 파이프라인 (BigQuery 중심 BI) | data-pipeline, bigquery, mysql, BI, mmp, pandas, pandas-gbq, bigframes, pyarrow | 5 | 2026-04-27 |
 | [[devops-cicd]] | DevOps & CI/CD (Docker · Jenkins · Loki) | devops, cicd, docker, jenkins, loki, grafana | 3 | 2026-04-24 |
 | [[blockchain-xpla]] | 블록체인 (XPLA · Rust · NFT) | blockchain, xpla, nft, smart-contract, rust, gas-fee | 3 | 2026-04-24 |
-| [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss | 6 | 2026-04-27 |
+| [[ml-ai]] | ML/AI (AutoML · LangGraph · OpenAI) | ml, ai, automl, langgraph, openai, llm, mlops, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop | 7 | 2026-04-28 |
 | [[python-packaging]] | Python 패키징 (Python Packaging) | python-packaging, pip, poetry, uv, pyproject-toml, lockfile, pep-517, pep-518, pep-621, pep-723, pep-735, virtualenv, pyenv, pipx, dependency-resolution, supply-chain | 1 | 2026-04-27 |
 | [[copy-on-write]] | Copy-on-Write (CoW) | copy-on-write, cow, pandas, 메모리관리, 성능, optimization | 1 | 2026-04-27 |
 | [[dataframe]] | DataFrame | dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data | 1 | 2026-04-27 |
@@ -140,8 +143,9 @@ updated: 2026-04-28 (13회차)
 | [[dart]] | Dart | tool | dart, programming-language, google, flutter, aot, jit, javascript-compile, wasm, sound-null-safety, isolates | 1 | 2026-04-27 |
 | [[google]] | Google | organization | google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, ai | 1 | 2026-04-27 |
 | [[scikit-learn]] | scikit-learn (sklearn) | tool | scikit-learn, sklearn, machine-learning, python, library, classic-ml, fit-predict-transform, pipeline, BSD-3, numfocus, probabl, slep, agents-md | 2 | 2026-04-27 |
-| [[openai]] | OpenAI | organization | openai, AI, AI연구소, 샌프란시스코, gpt, chatgpt, dall-e, codex, gpt-oss, agents-sdk, responses-api, harmony-format, openai-cookbook | 1 | 2026-04-27 |
+| [[openai]] | OpenAI | organization | openai, AI, AI연구소, 샌프란시스코, gpt, chatgpt, dall-e, codex, gpt-oss, agents-sdk, responses-api, harmony-format, openai-cookbook, openai-agents-python, openai-agents | 2 | 2026-04-28 |
 | [[openai-cookbook]] | openai-cookbook (OpenAI Cookbook) | project | openai-cookbook, openai, cookbook, mit, jupyter-notebook, registry-yaml, authors-yaml, agents-md, plans-md, exec-plans, recent-learnings, embeddings, agents-sdk, evals, codex | 1 | 2026-04-27 |
+| [[openai-agents-python]] | openai-agents-python (OpenAI Agents SDK) | tool | openai-agents-python, openai-agents, openai, agents-sdk, python, multi-agent, agent-framework, mit-license, mcp, uv, pyright, agents-md, plans-md, exec-plans, agent-skills, codex, runtime-behavior-probe, implementation-strategy | 1 | 2026-04-28 |
 
 ## 종합 분석 (Syntheses)
 
@@ -149,4 +153,4 @@ updated: 2026-04-28 (13회차)
 |------|------|------|-----------|
 | [[wiki-bootstrap-log]] | 위키 부트스트랩 기록 | 메타, 운영 | 2026-04-09 |
 | [[career-timeline-seokgeun]] | 석근 커리어 타임라인 (2016-2026) | career, timeline, evolution | 2026-04-24 |
-| [[agent-stack-evolution]] | 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, github, google, openai, harness, BI, 개인비서, exec-plans, recent-learnings | 2026-04-28 |
+| [[agent-stack-evolution]] | 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, github, google, openai, harness, BI, 개인비서, exec-plans, recent-learnings, self-adoption, 9-sop-skills, agents-md-claude-md-mirror | 2026-04-28 |

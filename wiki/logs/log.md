@@ -10,6 +10,47 @@ type: log
 
 ---
 
+## [2026-04-28] ingest | openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬 (14회차)
+
+- **트리거**: 소유자 요청 — "https://github.com/openai/openai-agents-python 의 내용을 살펴보고 이 프로젝트의 적절한 경로에 원본 자료를 넣어두고 수집을 진행해줘."
+- **소스**: `raw/articles/openai-openai-agents-python/` (36개 파일, 약 250KB 보관)
+  - 루트 메타 9종: `README.md` (6.0KB), `AGENTS.md` (12.9KB ★ 9개 스킬 + ExecPlan + Public API Positional 정책), `CLAUDE.md` (12.9KB ← AGENTS.md와 byte-for-byte 동일), `PLANS.md` (5.5KB ★ NON-NEGOTIABLE 4 + Skeleton), `LICENSE` (MIT), `Makefile` (1.8KB), `pyproject.toml` (5.7KB), `pyrightconfig.json` (469B, mypy 아닌 pyright), `mkdocs.yml` (15.4KB)
+  - `docs/` 14개 핵심 문서: agents.md (16.9KB), tools.md (37.9KB ★ 가장 큼), running_agents.md (27.1KB), mcp.md (18.8KB), index.md, quickstart.md, handoffs.md, guardrails.md, tracing.md, context.md, multi_agent.md, sandbox_agents.md, llms.txt (6.8KB ★ llms.txt 표준 채택)
+  - `.codex/` (Codex CLI 통합): config.toml (codex_hooks=true), hooks.json (Stop 훅 → uv run python stop_repo_tidy.py)
+  - `.agents-skills/` 9개 SKILL.md (통합 46.3KB): runtime-behavior-probe (13.4KB ★ 가장 큼) / final-release-review (8.0KB) / pr-draft-summary (5.7KB) / implementation-strategy (4.5KB) / docs-sync (4.3KB) / examples-auto-run (3.2KB) / test-coverage-improver (2.7KB) / code-change-verification (2.5KB) / openai-knowledge (1.9KB)
+  - `examples-readmes/agent_patterns_README.md` (4.5KB) + `src_agents__init__.py` (15KB, public surface)
+  - **제외**: `examples/agent_patterns/` 16개 .py 본체 (매핑 표만 보관), `tests/`, `docs/scripts/`, `site/`, 9개 스킬 각각의 `agents/`·`scripts/`·`references/` 서브디렉토리, `uv.lock` (831KB), `src/agents/` 본체 (`run_state.py` 129KB / `run.py` 92KB / `tool.py` 72KB / `agent.py` 42KB 등 50+ 파일)
+- **작업**: openai/openai-agents-python GitHub 저장소 (2025-03-11 창설, MIT, Python, ★25,440 / fork 3,883 / pushedAt 2026-04-27, PyPI 패키지 `openai-agents` v0.14.6 — 1년 사이 14 메이저 버전, 28.7MB 저장소) 통합 수집. openai.github.io/openai-agents-python/ 공식 문서. raw 경로: 기존 `<org>-<repo>` 컨벤션 따라 `raw/articles/openai-openai-agents-python/` 채택.
+- **생성된 파일** (2건):
+  - `wiki/sources/openai-openai-agents-python.md` — 소스 요약 (메타 / raw 파일 구조 / 7개 핵심 내용 단락 / 7개 인사이트 / 5개 인용 / 10개 후속 탐구 / 3개 회사 BI 적용 가설 / 메모)
+  - `wiki/entities/openai-agents-python.md` — openai-agents-python tool 엔티티 (8개 주요 특징 / 관련 개념·엔티티 / 메모 + 다음 수집 후보)
+- **업데이트된 파일** (7건):
+  - `wiki/entities/openai.md` — source_count 1→2, tags +openai-agents-python/openai-agents, related +[[openai-agents-python]]/[[agent-patterns]], updated 2026-04-27→2026-04-28. 출처에 [[openai-openai-agents-python]] 추가 (cookbook 메소드론 정의 단 ↔ 본 SDK 본체 단 self-adoption 직접 증거). 후속 수집 후보 4번을 "수집 완료(14회차) → [[openai-agents-python]]"로 갱신
+  - `wiki/concepts/agent-skills.md` — source_count 7→8, tags +openai-agents-python/9-sop-skills/skill-chaining/agents-md-claude-md-mirror, related +[[openai-agents-python]]. **8단계 진화 도식 완성** ([[openai-openai-agents-python]] 8번째 사례로 출처 섹션 추가) — anthropics-skills(1) → spec-kit(2) → fastapi(3) → uv(4) → scikit-learn(5) → flutter(6) → openai-cookbook(7, 살아있는 운영 노트) → openai-agents-python(8, **9개 본격 운영 SOP + AGENTS.md=CLAUDE.md 미러링 + 스킬 체이닝**)
+  - `wiki/concepts/harness.md` — source_count 7→8, tags +openai-agents-python/9-sop-skills/skill-chaining, related +[[openai-agents-python]]. **5축 PLANS.md를 본체 단 풀스택 적용** 사례로 출처 섹션 추가 — 메소드론 정의자가 자기 본체에 동일 패턴을 풀스택 채택 (PLANS.md 5,485B + AGENTS.md ExecPlan 자동 호출 + .codex/hooks.json + 9개 운영 SOP 스킬). 회사 BI 적용 가설 보강
+  - `wiki/concepts/agent-patterns.md` — source_count 3→4, tags +openai-agents-python/guardrails/human-in-the-loop/forced-tool-use/11-patterns, related +[[openai-agents-python]]. **Anthropic 5패턴 + OpenAI 6확장 = 11종 reference 구현** 사례 출처 섹션 추가 — Anthropic 5(deterministic/routing/parallelization/agents_as_tools 4종/llm_as_a_judge) + OpenAI 6확장(Guardrails 3종 + Human-in-the-loop 3종 + Forced tool use). 회사 BI 응용 가설 (Guardrails는 BigQuery 비용 검증, HITL은 BI 승인 워크플로우)
+  - `wiki/concepts/ml-ai.md` — source_count 6→7, tags +openai-agents-python/multi-agent-framework/guardrails/human-in-the-loop, related +[[openai-agents-python]]. 출처에 [[openai-openai-agents-python]] 추가 (회사 BI에 LLM 에이전트 적용 시 1차 후보 SDK)
+  - `wiki/syntheses/agent-stack-evolution.md` — sources +[[openai-openai-agents-python]], tags +self-adoption/9-sop-skills/agents-md-claude-md-mirror. **6축 표 OpenAI 행 보강** ("openai-cookbook + openai-agents-python" 묶음으로 가이드 단 + 본체 단 명시), "OpenAI agents-python (6번째 축 보강, 14회차)" 단락 신설 (4중 풀스택 채택 사례), "### 소스 (13)" → "(14)" + 출처 리스트에 [[openai-openai-agents-python]] 1행 추가 (메소드론 ↔ 본체 한 묶음 self-adoption 본체 적용 단)
+  - `wiki/index.md` — 14회차 표기, 통계 91/32/34/21/3 → 93/33/35/21/3, 신규 2페이지 등록 (소스 1 + 엔티티 1), 갱신 5개 페이지 source_count·tags 동기화 (openai/agent-skills/harness/agent-patterns/ml-ai), agent-stack-evolution 행 태그 보강, 헤더 코멘트 14회차 추가
+- **결정적 발견 3가지**:
+  1. **AGENTS.md = CLAUDE.md byte-for-byte 동기화 패턴** — 12,900B 양쪽 미러링이 [[uv]]의 `@AGENTS.md` import (1줄)와 [[flutter]]의 `.agents/` 심볼릭 링크의 중간 형태. **agent-skills 외부 채택 8단계 진화의 8번째 사례** (1~7번째 anthropics-skills/spec-kit/fastapi/uv/scikit-learn/flutter/openai-cookbook의 끝, 가장 단순한 vendor-neutral 적응). Claude Code/Codex/vendor-neutral 도구 어느 쪽이든 100% 동일 정보 보장.
+  2. **`.agents/skills/` 9개 운영 SOP 스킬 + 스킬 간 호출 (skill chaining)** — `code-change-verification` / `openai-knowledge` / `implementation-strategy` / `pr-draft-summary` / `runtime-behavior-probe` (13.4KB ★) / `docs-sync` / `examples-auto-run` / `final-release-review` / `test-coverage-improver`. AGENTS.md "Mandatory Skill Usage" 섹션이 각 스킬을 `$skill-name` 명령형으로 호출 + 트리거/스킵 조건 명시 + 스킬 간 체이닝(예: `$implementation-strategy`가 내부에서 `$final-release-review/scripts/find_latest_release_tag.sh` 호출). flutter 3개의 3배 규모, **첫 "9개 본격 운영 SOP" 사례** — 실무 운영 워크플로우 전체를 SKILL.md로 풀스택 명문화.
+  3. **examples/agent_patterns/ 16개 .py = Anthropic 5패턴 + OpenAI 6확장 = 11종 reference 구현** — Anthropic 5: deterministic(prompt-chaining)/routing/parallelization/agents_as_tools 4종(orchestrator-workers + 변형)/llm_as_a_judge(evaluator-optimizer). OpenAI 6확장: Guardrails 3종(input/output/streaming, tripwire 메커니즘) + Human-in-the-loop 3종(승인/거절/스트림, RunState 일시정지·재개) + Forced tool use(tool_choice 강제). cookbook의 sample 노트북과 달리 SDK 본체와 한 묶음으로 박혀 **API 안정성 보장된 reference 구현**. [[agent-patterns]]에 OpenAI 확장 6패턴 명시 추가.
+- **부수 발견**:
+  - **PLANS.md 5,485B** — cookbook `articles/codex_exec_plans.md` (16KB)를 본 SDK 운영용으로 응축. 같은 NON-NEGOTIABLE 4 + Living Sections 4 + 단일 fenced code block 강제. AGENTS.md "ExecPlans" 섹션이 자동 호출.
+  - **`.codex/hooks.json` Stop 훅 자동화** — `uv run python "$(git rev-parse --show-toplevel)/.codex/hooks/stop_repo_tidy.py"`. Codex가 자체 SDK 개발 운영에 사용되는 첫 명시 사례.
+  - **Public API Positional Compatibility** — dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `RunConfig`/`FunctionTool`/`AgentHookContext`. 1년 14 메이저 버전(약 26일에 1 버전) 빠른 반복을 가능케 하는 호환성 boundary.
+  - **uv + ruff + pyright 도구 스택** — uv.lock 831KB, Makefile 모든 명령이 `uv` 기반 (`uv sync`/`uv run`). pyright (mypy 아님). [[fastapi]] 디폴트 스택과 동일 방향.
+  - **`docs/llms.txt` (6.8KB) + `docs/llms-full.txt` (15KB)** — llms.txt 표준 채택 (llmstxt.org). MkDocs 사람용 사이트와 LLM용 색인 양쪽 운영.
+  - **RunState `CURRENT_SCHEMA_VERSION` + `SCHEMA_VERSION_SUMMARIES`** — 직렬화 스키마 버전 관리. AGENTS.md가 변경 시 두 상수 동시 갱신 의무화.
+- **회사 BI 적용 가설 (3건)**:
+  - **9개 스킬 중 4개를 c2spf-analytics에 차용**: `$code-change-verification`(BigQuery SQL 변경 시 dbt test+pytest+linter 자동), `$docs-sync`(대시보드 변경 시 README/Confluence 자동 갱신), `$runtime-behavior-probe`(BigQuery 쿼리 배포 전 dry-run+EXPLAIN+샘플 검증 매트릭스), `$pr-draft-summary`(BI PR 작성 시 결과 메트릭 변화 자동 요약). 도입 ROI: PR 작성·코드 검증·문서 동기화 시간 50%↓ 추정.
+  - **PLANS.md ExecPlan을 분기 대형 분석에 적용 (cookbook 13회차 가설 보강)**: 13회차 가설이 OpenAI 자체 SDK self-adoption 증거(본 회차)로 신뢰도 상승. c2spf-analytics 분기 코호트 분석 1건에 ExecPlan 양식 적용 PoC.
+  - **API Positional Compatibility를 Analytics API에 적용**: c2spf-analytics가 외부에 노출하는 dataclass·Pydantic 모델 필드 순서를 release 이후 호환성 계약으로 명시. 게임 데이터 BI 외부 소비자 보호 + 빠른 반복 양립.
+- **메모**: 본 회차는 13회차 [[openai-openai-cookbook]]의 후속이자 한 쌍. cookbook이 "OpenAI는 살아있는 운영 노트 + PLANS.md 메소드론 도입"이라고 박았다면, 본 회차는 **그 정의자가 자기 핵심 SDK 본체에 풀스택 적용한 직접 증거**. 두 회차로 OpenAI의 거버넌스 통합이 명확해짐 — (가이드 단) cookbook + (본체 단) agents-python의 한 묶음 거버넌스. 같은 [[agent-stack-evolution]] 종합 분석을 4번째(spec-kit), 5번째(flutter), 6번째(openai-cookbook), 6번째 보강(agents-python) 4회 연속 갱신 — 위키 내 같은 종합 페이지 단기 반복 확장의 두 번째 사례. 다음 회차 후보: [[anthropics-claude-cookbooks]] 14 디렉토리 본체 단독 (Claude SDK 측 reference) / 9개 sub-agent prompts 단독 수집 / openai/agents.md 표준 자체 / agentskills.io 표준 정의자 본체.
+
+---
+
 ## [2026-04-28] ingest | openai/openai-cookbook — OpenAI API 4년차 cookbook + 살아있는 AGENTS.md (13회차)
 
 - **트리거**: 소유자 요청 — "https://github.com/openai/openai-cookbook 의 내용을 살펴보고 이 프로젝트의 적절한 경로에 원본 자료를 넣어두고 수집을 진행해줘."
