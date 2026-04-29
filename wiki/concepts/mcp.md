@@ -2,6 +2,7 @@
 title: "MCP (Model Context Protocol)"
 type: concept
 category: ai
+aliases: [Model Context Protocol, mcp, 모델 컨텍스트 프로토콜, MCP, mcp-server]
 tags: [mcp, model-context-protocol, LLM, 도구, tool-use, 프로토콜, a2a, nlweb, agentic-protocols, claude-cookbooks, claude-agent-SDK, json-rpc-subprocess]
 related:
   - "[[llm-wiki-pattern]]"
@@ -20,6 +21,8 @@ updated: 2026-04-29
 ---
 
 # MCP (Model Context Protocol)
+
+> 한국어 표기: **모델 컨텍스트 프로토콜**(Model Context Protocol).
 
 ## 정의
 

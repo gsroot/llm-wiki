@@ -2,13 +2,14 @@
 title: "석근 스택 가이드 — 23회차 마무리 종합"
 type: synthesis
 category: personal-stack-guide
+aliases: [석근 스택 가이드, seokgeun-stack-guide, 32 OSS 카탈로그, 30분 부트스트랩, stack-guide]
 sources:
   - "[[backend-fastapi-stack]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[agent-frameworks-matrix]]"
   - "[[observability-and-cicd-stack]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
-sources_count: 5
+source_count: 5
 related:
   - "[[python]]"
   - "[[fastapi]]"
@@ -36,6 +37,8 @@ verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 
 
 > [!info] 3축 hub — 스택 의사결정 트리
 > 32 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩. [[seokgeun-kim|석근 (이 위키 owner)]]의 9년 경험과 [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]] 양 프로젝트에서 검증된 스택만 수록. 새 프로젝트 시작 시 1-hop 진입점. OSS 버전·신규 도구 출현은 `verification_required: true` (33회차).
+> 
+> 한국어 표기: **석근 스택 가이드** 또는 **32 OSS 카탈로그**.
 
 ## 한줄 요약
 

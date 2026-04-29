@@ -79,6 +79,14 @@ llm-wiki/
 - lint 검증: `last_verified` 가 90일 초과 시 경고 (결함 아님, 정보 보고).
 - 적용 대상 예시: `matechat` (Google Play 출시 상태), `seokgeun-stack-guide` (OSS 라이브러리 버전), `c2spf-analytics` (회사 시스템 운영 상태), `seokgeun-mate-chat` (39 SKILL 분류).
 
+#### `aliases` (48회차 신설 — 외부 평가 합집합 P0, Obsidian 표준 alias)
+- 표기 변종이 다수 존재하는 hub·고유명사 페이지에 적용. Obsidian의 `Cmd+O` 빠른 열기·자동완성·역링크 alias 그래프 활성화.
+- 형식: `aliases: [표기1, 표기2, ...]` (YAML 리스트). 한국어·영어·약어 변종 모두 가능.
+- 예: `matechat.md` → `aliases: [MateChat, 메이트챗, mate-chat, 메트챗]` / `c2spf-analytics.md` → `aliases: [c2spf-analytics, c2spf 게임 데이터 BI, 컴투스플랫폼 BI]` / `seokgeun-stack-guide.md` → `aliases: [석근 스택 가이드, 32 OSS 카탈로그]`.
+- 적용 대상 (48회차 P0 마이그레이션): 5축 hub 5개(`seokgeun-kim`·`portfolio`·`seokgeun-stack-guide`·`matechat`·`llm-infra-meta-cluster`) + 5축 sub-hub 4개(`agent-skills`·`harness`·`mcp`·`claude-code`) + 변동성 높은 entity(`c2spf-analytics`·`com2us-platform` 등).
+- 운영 원칙: tags에 표기 변종을 박아 우회하던 패턴은 **deprecated**. tags는 검색 vocabulary, aliases는 표기 변종 — 역할 분리.
+- redirect stub 페이지는 여전히 유지(canonical 병합 이력 보존). aliases는 redirect와 보완 관계, 대체 관계 아님.
+
 ### Redirect / RAG 제외 규칙
 
 #### redirect alias 페이지

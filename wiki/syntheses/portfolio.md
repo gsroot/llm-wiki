@@ -2,6 +2,7 @@
 title: "포트폴리오 (Portfolio Hub)"
 type: synthesis
 category: guide
+aliases: [포트폴리오, portfolio, 석근 포트폴리오, portfolio-hub, 9년 커리어 의사결정 지도]
 tags: [포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, 33회차]
 sources:
   - "[[portfolio-seed]]"
@@ -13,6 +14,15 @@ sources:
   - "[[c2spf-nft-market]]"
   - "[[c2spf-xpla-platform]]"
   - "[[mate-chat-project-wiki-2026]]"
+related:
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[mcp]]"
+  - "[[claude-code]]"
 created: 2026-04-29
 updated: 2026-04-29
 ---
@@ -48,7 +58,7 @@ updated: 2026-04-29
 1. **백엔드/풀스택** — Python·FastAPI·Node.js·React. [[c2spf-analytics-renewal]](2025 React 리뉴얼)에서 풀스택 단독 운영 사례.
 2. **게임 데이터 BI** — pandas·BigQuery·MMP. [[c2spf-analytics|c2spf 게임 데이터 BI]] 본진 + [[c2spf-analytics-common]](공통 모듈)이 핵심 자산.
 3. **블록체인** — Rust·NestJS·XPLA. [[c2spf-nft-market]](가스비 절감)·[[c2spf-xpla-platform]](SDK)가 검증.
-4. **AI/Agent 운영** — [[matechat|MateChat 사이드 프로젝트]] 사이드 프로젝트(39 SKILL 통합) + [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 메타 운영 체계.
+4. **AI/Agent 운영** — [[matechat|MateChat 사이드 프로젝트]] 사이드 프로젝트(39 SKILL 통합) + [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 메타 운영 체계. 1-hop 직결 도구: [[agent-skills|Claude Agent Skills]](39 skill 운영 표준) · [[harness|Agent Harness]](settings/hooks/output-styles 묶음) · [[mcp|Model Context Protocol]](외부 자원 연결 표준) · [[claude-code|Claude Code]](메인 IDE).
 
 ### Layer 3: STAR 스토리 + 증거 기반 metric ([[portfolio-method]])
 

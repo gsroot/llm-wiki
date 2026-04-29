@@ -2,6 +2,7 @@
 title: "c2spf 애널리틱스 (게임 데이터 BI)"
 type: entity
 entity_type: service
+aliases: [c2spf-analytics, c2spf 게임 데이터 BI, 컴투스플랫폼 BI, c2spf BI, analytics]
 tags: [analytics, c2spf, 애널리틱스, BI, 게임데이터, fastapi, react, bigquery, ag-grid]
 related:
   - "[[com2us-platform]]"
@@ -27,6 +28,8 @@ verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행
 
 > [!info] 2축 hub — 회사 본진
 > [[com2us-platform|컴투스플랫폼 c2spf]]의 게임 데이터 BI 본진 시스템. FastAPI + React + BigQuery + pandas + Airbridge MMP. [[c2spf-analytics-common]](2024-08 공통 모듈)과 [[c2spf-analytics-renewal]](2025 React 리뉴얼)이 핵심 자산. [[matechat|MateChat 사이드 프로젝트]] 사이드에서 검증된 패턴이 회사로 역수입되는 단방향 펌프 형성. 운영 상태는 `verification_required: true` (33회차).
+> 
+> 한국어 표기: **c2spf 게임 데이터 BI** 또는 **컴투스플랫폼 BI**(c2spf-analytics).
 
 ## 개요
 

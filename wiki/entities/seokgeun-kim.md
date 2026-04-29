@@ -2,6 +2,7 @@
 title: "김석근 (Seokgeun Kim)"
 type: entity
 entity_type: person
+aliases: [석근, 김석근, Seokgeun Kim, seokgeun-kim, owner]
 tags: [석근, owner, 백엔드, 풀스택, BI, 게임데이터, 컴투스플랫폼, matechat, 개인프로필, backend]
 related:
   - "[[com2us-platform]]"
@@ -12,6 +13,10 @@ related:
   - "[[seokgeun-stack-guide]]"
   - "[[portfolio]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[mcp]]"
+  - "[[claude-code]]"
 source_count: 8
 observed_source_refs: 21
 inbound_count: 58
@@ -67,6 +72,15 @@ updated: 2026-04-29
 - [[c2spf-analytics|c2spf 게임 데이터 BI]] — 주된 업무 시스템
 - [[xpla-platform]] — 블록체인 통합 플랫폼 (NFT 마켓에서 XPLA로 이어짐)
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]] — 주요 기술 영역
+
+## AI 협업 도구 (1축↔5축 직결)
+
+2026 운영 키워드 "AI 협업 기반 생산성 확장"은 다음 4개 도구를 1-hop 거리에서 직접 운영함을 의미한다. 5축 [[llm-infra-meta-cluster|LLM 인프라 메타]] hub를 거치지 않고도 정체성 페이지에서 바로 도달 가능하도록 직결.
+
+- [[agent-skills|Claude Agent Skills]] — `.claude/skills/`에 자작 11개 + 외부 28개 합계 39 skill 운영. MateChat 자작 skill의 c2spf 역수입 후보가 위키 운영 자동화의 1차 대상.
+- [[harness|Agent Harness]] — `.claude/` settings·hooks·output styles·status line 묶음. 위키 lint·자동 갱신·세션 관리 SOP가 여기서 enforce됨.
+- [[mcp|Model Context Protocol]] — Claude Code↔외부 자원(Notion·GitHub·Playwright 등) 연결의 표준. c2spf BI 데이터 연결 검토 중.
+- [[claude-code|Claude Code]] — 일상 IDE 및 위키 운영의 메인 환경. Antigravity와 병행 사용.
 
 ## 종합 분석
 

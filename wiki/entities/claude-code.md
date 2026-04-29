@@ -2,6 +2,7 @@
 title: "Claude Code"
 type: entity
 entity_type: tool
+aliases: [Claude Code, claude-code, 클로드 코드, Anthropic CLI, cc]
 tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-SDK, bare-metal-harness, spec-kit]
 related:
   - "[[anthropic]]"
@@ -25,6 +26,8 @@ updated: 2026-04-29
 ---
 
 # Claude Code
+
+> 한국어 표기: **클로드 코드**(Anthropic의 공식 CLI).
 
 ## 개요
 
