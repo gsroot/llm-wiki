@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (31회차 / 평가 후속 P1 3건 — 태그 규칙 명확화 + index 회고 분리)
+updated: 2026-04-29 (32회차 / lint 자동화 + source_count 정의 명문화)
 ---
 
 # 위키 인덱스
