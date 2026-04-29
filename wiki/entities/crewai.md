@@ -8,6 +8,7 @@ related:
   - "[[pydantic-ai]]"
   - "[[agent-patterns]]"
   - "[[oss-saas-dual]]"
+  - "[[crewaiinc-crewai]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -111,6 +112,13 @@ result = crew.kickoff()
 ```
 
 → **role-playing이 명시적**. LangGraph는 노드/엣지로, CrewAI는 사람 팀 메타포로 작성.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "CrewAI is a lean, lightning-fast Python framework built entirely from scratch—completely independent of LangChain or other agent frameworks. Role-playing 협업 메타포 + Flows enterprise 아키텍처 + Crew Control Plane SaaS. 50K+ stars, MIT, 100,000+ 인증 개발자."
+> — [[crewaiinc-crewai]] 한줄 요약
+
+[[seokgeun-stack-guide]] multi-agent 프레임워크 영역. [[matechat]] AI 채팅 분석 multi-agent 후보 (역할 분담 시나리오). [[langchain]]·[[langgraph]]·[[deepagents]]와 [[agent-frameworks-matrix]] 6 프레임워크 비교. **Role-playing + OSS+SaaS dual 모델**은 [[llm-infra-meta-cluster]] 5축의 [[harness]] 진화 + 거버넌스 dual 사례 — [[oss-saas-dual]] 종합 분석 참조.
 
 ## 출처
 

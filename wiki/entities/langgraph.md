@@ -9,6 +9,7 @@ related:
   - "[[agent-patterns]]"
   - "[[ml-ai]]"
   - "[[postgresql]]"
+  - "[[langchain-ai-langgraph]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -72,6 +73,13 @@ libs/
 - [[postgresql]] / [[redis]]: Checkpoint backend (durable execution)
 - [[mcp]]: LangChain partners 경유 MCP 통합
 - [[fastapi]]: LangGraph Server API의 백엔드
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Pregel + Apache Beam + NetworkX 영감의 low-level agent orchestration. Klarna/Replit/Elastic 등이 production에서 사용하는 상태 기반 LLM 에이전트 그래프 프레임워크."
+> — [[langchain-ai-langgraph]] 한줄 요청
+
+[[seokgeun-stack-guide]] stateful agent 프레임워크 영역. [[matechat]] 채팅 분석 모듈의 multi-step orchestration 후보. [[langchain]] 산하 + [[deepagents]]가 LangGraph Native로 빌드. **상태 기반 그래프 + durable execution** 패턴은 [[llm-infra-meta-cluster]] 5축의 [[harness]] 진화 사례 — [[crewai]]·[[pydantic-ai]]와 함께 6 프레임워크 매트릭스 비교됨([[agent-frameworks-matrix]]).
 
 ## 출처
 

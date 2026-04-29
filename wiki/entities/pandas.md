@@ -10,6 +10,7 @@ related:
   - "[[data-pipeline-bigquery]]"
   - "[[ml-ai]]"
   - "[[c2spf-analytics]]"
+  - "[[pandas-dev-pandas]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27
@@ -110,6 +111,13 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 | Lock-in | NumPy, 풍부한 통합 | Apache Arrow | Apache Arrow + SQL 표준 |
 
 → 셋은 경쟁이 아니라 **워크플로우 단계별 도구**. 자세한 비교는 [[dataframe-ecosystem-evolution]] / [[pandas-vs-polars-vs-duckdb]] 참조.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "2008년 AQR 헤지펀드에서 Wes McKinney가 시작 → 2009 OSS → 2015 NumFOCUS 후원 → 2026-04 v3.0 stable. BDFL+Core Team+NumFOCUS Subcommittee 3축 거버넌스, PDEP(Pandas Enhancement Proposal)으로 운영. 150만+ DataFrame, 101개 공개 API. 석근의 BI 직무에서 BigQuery·Airbridge MMP·React 대시보드를 잇는 데이터 핸들링 단일 진실 공급원."
+> — [[pandas-dev-pandas]] 한줄 요약
+
+[[seokgeun-stack-guide]] 데이터 핸들링 본진 + [[c2spf-analytics]] BI 단일 진실 공급원. [[copy-on-write]]·[[bdfl]]·[[pdep]]·[[dataframe]]의 출처 페이지. **3축 거버넌스 + PDEP**는 [[llm-infra-meta-cluster]] 5축의 OSS 거버넌스 카탈로그 7번째 모델. [[polars]]·[[duckdb]]·[[pyarrow]]와 [[dataframe-ecosystem-evolution]] 비교 매트릭스에서 함께 평가됨.
 
 ## 출처
 

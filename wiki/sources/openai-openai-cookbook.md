@@ -7,7 +7,7 @@ raw_path: "raw/articles/openai-openai-cookbook/"
 author: "OpenAI (community resource)"
 date_published: 2022-03-11
 date_ingested: 2026-04-27
-tags: [openai-cookbook, openai, openai-api, prompt-engineering, embeddings, fine-tuning, agents-sdk, codex, gpt-5, gpt-oss, harmony, evals, agents-md, plans-md, exec-plans, registry-yaml, jupyter-notebook, mit-license, recent-learnings]
+tags: [openai-cookbook, openai, openai-api, prompt-engineering, embeddings, fine-tuning, agents-SDK, codex, gpt-5, gpt-oss, harmony, evals, agents-md, plans-md, exec-plans, registry-yaml, jupyter-notebook, MIT-license, recent-learnings]
 related:
   - "[[openai]]"
   - "[[openai-cookbook]]"

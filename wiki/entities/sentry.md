@@ -9,6 +9,7 @@ related:
   - "[[observability-and-cicd-stack]]"
   - "[[agent-skills]]"
   - "[[devops-cicd]]"
+  - "[[getsentry-sentry]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -68,6 +69,13 @@ Sentry AGENTS.md 서두는 다른 어떤 OSS보다 강력한 명문화:
 ### Customer 정보 보호 자동화 단서
 
 "PR/commit/code 모두 anonymize" 명시 + `org-slug`/`user@example.com` 같은 anonymized 예시만 사용. Pre-commit hook/CI lint로 자동 검증 가능 → PHI/PII 컴플라이언스에 응용.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Sentry는 developer-first 에러 트래킹/성능 모니터링 플랫폼이며, AGENTS.md를 'AI agent instruction의 single source of truth'로 강제 선언한 첫 OSS — 'CLAUDE.md/Cursor rules에 추가하지 말라'는 **반-fragmentation 룰**이 핵심."
+> — [[getsentry-sentry]] 한줄 요약
+
+[[seokgeun-stack-guide]] DevOps 5단 5단(에러 트래킹). [[matechat]] v1.0.0 출시 시 채택. **반-fragmentation 룰**은 [[llm-infra-meta-cluster]] 5축의 운영 원칙 — 위키 자체도 CLAUDE.md를 SSOT로 두고 다른 곳에 분산하지 않는 동일 원칙 적용. SSOT 패턴은 [[agent-skills]]·[[harness]] 운영에 직접 영향.
 
 ## 출처
 

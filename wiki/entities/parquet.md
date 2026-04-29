@@ -133,6 +133,13 @@ File
 - [[pandas]]: `pd.read_parquet()` (PyArrow 백엔드)
 - [[apache-foundation]]: 거버넌스 주체
 
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Parquet은 온디스크 컬럼 포맷 표준. Apache Arrow(인메모리)와 합쳐 '디스크 → 메모리 → 네트워크'의 모든 데이터 이동에서 zero-copy 보장 — 2010년대 데이터 인프라의 가장 성공적인 표준화 프로젝트."
+> — [[apache-arrow]] 한줄 요약
+
+[[seokgeun-stack-guide]] 온디스크 컬럼 포맷 표준. [[c2spf-analytics]] BigQuery 데이터 export 표준 + [[matechat]] 분석 모듈 데이터 lake 후보. **Dremel 알고리즘 영감 + thrift 메타데이터**가 빅데이터 시대 사실상 표준. [[duckdb]] CSV/Parquet 직접 SELECT + [[polars]]·[[pyarrow]] 백엔드. [[pyarrow]]와 함께 인메모리/온디스크 컬럼 표준 짝.
+
 ## 출처
 
 - [[apache-arrow]] — apache/parquet-format README + Encodings 명세 통합 수집

@@ -10,6 +10,7 @@ related:
   - "[[grafana]]"
   - "[[sentry]]"
   - "[[observability-and-cicd-stack]]"
+  - "[[moby-moby]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -52,6 +53,13 @@ Docker는 컨테이너화 개념을 대중화한 회사이자 제품 브랜드, 
 | GitHub Actions | ❌ | GitHub (Microsoft) | 분산 OSS |
 
 → **AGENTS.md 채택률: 운영 진영 5개 중 3개 (60%)**.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Moby는 Docker가 만든 오픈소스 컨테이너 툴킷으로, 'Docker Engine의 업스트림'이자 '컨테이너 시스템 조립용 레고 세트' 두 정체성을 동시에 가진다."
+> — [[moby-moby]] 한줄 요약
+
+[[seokgeun-stack-guide]] DevOps 5단(Docker → GHA → Prometheus → Grafana → Sentry) 1단. **이중 정체성** — Docker Engine 업스트림 + 외부 컨트리뷰터 빌드 블록. Docker v29(2026)에서 Moby 분리 8년 만에 완성. [[c2spf-analytics]] 회사 시스템·[[matechat]] 사이드 양쪽에서 동일 패턴 채택.
 
 ## 출처
 

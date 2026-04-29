@@ -16,6 +16,7 @@ related:
   - "[[riverpod]]"
   - "[[matechat]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[flutter-flutter]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-28
@@ -112,6 +113,13 @@ agent-artifacts/.gitignore (AI 산출물 격리)
 - [[token-economy]]: rules_1k → 4k → 10k → full 4계층은 토큰 예산 차별화의 첫 대규모 OSS 사례
 - [[github-spec-kit]]: agent-skills 표준의 다른 외부 채택 사례 — 두 모델 비교 가능 (메소드론 vs 자산)
 - [[anthropics-skills]]: 표준의 정의자. Flutter는 그 표준을 채택하면서도 위치 컨벤션은 자체 결정
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Google의 멀티플랫폼 UI SDK(★176K). iOS·Android·Web·Windows·macOS·Linux를 단일 Dart 코드베이스로 처리. 위키적으로 가장 중요한 발견은 저장소 자체가 agent-skills 표준의 vendor-neutral 채택 사례 — `.agents/skills/` (agentskills.io 표준)에 3개 SKILL.md + `.claude/skills` 심볼릭 링크. `docs/rules/` 4계층 토큰 예산 룰(rules_1k → rules_4k → rules_10k → rules.md 30K)이 도구별 한계를 매트릭스로 명시 — Anthropic의 progressive disclosure를 토큰 단위로 더 세분화."
+> — [[flutter-flutter]] 한줄 요약
+
+[[seokgeun-stack-guide]] 모바일·멀티플랫폼 UI 표준. [[matechat]] Google Play 출시(v1.0.0) 본진 채택 — 39 SKILL 운영의 클라이언트 진영. **vendor-neutral agentskills.io 표준 + 4계층 토큰 예산**은 [[llm-infra-meta-cluster]] 5축의 [[agent-skills]] 8단계 진화 핵심 사례. [[riverpod]] 상태관리 + [[dart]] 언어 + Skia/Impeller 그래픽.
 
 ## 출처
 

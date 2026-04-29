@@ -9,6 +9,7 @@ related:
   - "[[agent-skills]]"
   - "[[openai-agents-python]]"
   - "[[langchain]]"
+  - "[[jlowin-fastmcp]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -96,6 +97,13 @@ src/fastmcp/
 - [[agent-skills]]: AGENTS.md=CLAUDE.md 패턴 5번째 적용
 - [[ruff]]: prek 통한 통합 (Ruff + Prettier + ty)
 - [[uv]]: 의존성 관리
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "MCP 서버 70%가 사용하는 표준 프레임워크. 1.0이 2024년 공식 MCP Python SDK에 통합 완료 후, 2.0으로 standalone 재시작한 OSS 진화 패턴. Prefect가 후원."
+> — [[jlowin-fastmcp]] 한줄 요약
+
+[[seokgeun-stack-guide]] [[mcp]] 프로토콜 영역의 사실상 표준. [[matechat]] 39 SKILL 운영에서 외부 도구 통합 후보. **공식 SDK 흡수 후 standalone 재시작**은 OSS 진화의 드문 패턴 — [[llm-infra-meta-cluster]] 5축의 mcp 진화 사례 (claude-cookbooks·spec-kit과 함께 [[agent-skills]] 외부 도구 표준화의 한 축).
 
 ## 출처
 

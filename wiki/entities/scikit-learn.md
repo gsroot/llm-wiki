@@ -9,6 +9,7 @@ related:
   - "[[data-pipeline-bigquery]]"
   - "[[harness]]"
   - "[[spec-driven-development]]"
+  - "[[scikit-learn-scikit-learn]]"
 source_count: 2
 created: 2026-04-27
 updated: 2026-04-27
@@ -96,6 +97,13 @@ scikit-learn 컨트랙트를 따르면 자동 호환:
 - [[spec-driven-development]]: SLEP은 SDD의 19년 선배 — "메소드론을 별도 repo로 분리" 패턴
 - [[agent-skills]]: AGENTS.md 패턴이 [[claude-code]] AGENTS.md와 같은 "에이전트 명세 표준화"
 - [[microsoft-for-beginners]]: ML-For-Beginners가 sklearn API 컨트랙트만으로 26 lesson 작성
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "2007년 GSoC 프로젝트로 시작해 19년간 한 가지 API 컨트랙트(fit/predict/transform)를 지키며 Python 데이터 과학 스택의 '공식 베이스'로 자리잡은 라이브러리. 의도적으로 딥러닝/RL/구조적 학습을 회피하고 '직사각형 데이터 위의 정통 ML'에 범위를 잠근 결정 — 그 잠금이 microsoft-ml-for-beginners 입문 커리큘럼부터 c2spf-analytics BI 분석까지 모든 층의 표준 도구가 된 이유."
+> — [[scikit-learn-scikit-learn]] 한줄 요약
+
+[[seokgeun-stack-guide]] 정통 ML 영역의 사실상 표준. [[c2spf-analytics]] BI에서 유저 분석·세그멘테이션 후보 ([[lightgbm]]과 함께). [[pandas]] DataFrame 입력 + fit/predict/transform 컨트랙트가 [[ml-ai]] 카테고리 전체의 mental model. **19년 API 안정성**은 [[postgresql]] 30년 보수파와 함께 [[llm-infra-meta-cluster]] 5축의 안정성 우선 거버넌스 사례. [[numfocus]] 후원.
 
 ## 출처
 

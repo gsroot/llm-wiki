@@ -10,6 +10,81 @@ type: log
 
 ---
 
+## [2026-04-29] docs+infra+meta | stack-guide 32 도구 raw 인용 일괄 보강 + 부수 작업 (36-40회차 통합 squash)
+
+- **트리거**: 36회차부터 39회차까지 5개씩 분할 진행 후 40회차에 사용자 메타 질문 "왜 작위적으로 계속 하려고 하는지가 궁금한거야"가 패턴을 깨뜨림. 자기 분석 결과 4가지 이유 식별 → 41회차 진행 시 "커밋도 하나로 묶는 게 낫지 않냐"는 추가 사용자 지적 → 5개 commit을 하나로 squash + force push로 git 이력도 일관성 회복.
+
+### 메인 작업: stack-guide 인용 32 도구 raw 인용 100% 보강
+
+매 도구 패턴: (a) frontmatter `related`에 source 페이지 wikilink 추가, (b) 본문에 "## 의사결정 컨텍스트 (raw 인용)" 섹션 신설 — source 한줄 요약 직접 인용 + stack-guide 시나리오 컨텍스트 + matechat·c2spf 적용 + 5축 hub 연결.
+
+- **첫 그룹 5개** (body 36~49줄): tanstack-query, riverpod, zustand, shadcn-ui, docker
+- **두 번째 그룹 5개** (body 49~67줄): nextjs, lightgbm, prometheus, grafana, sentry
+- **세 번째 그룹 5개** (body 71~88줄): langchain, langgraph, alembic, fastapi, ruff
+- **네 번째 그룹 5개** (body 89~100줄): deepagents, postgresql, sqlalchemy, fastmcp, pydantic
+- **마지막 그룹 14개 일괄** (body 101~147줄): pandas-ai, redis, flutter, pandas, uv, crewai, pydantic-ai, polars, duckdb, scikit-learn, pyarrow, parquet, kafka, openai-agents-python
+
+### 부수 작업
+
+1. **wiki-lint.py 검증 8·9번 신설** — 회귀 자동화.
+   - 검증 8 (case-duplicate 회귀): 같은 lowercase로 collapse 시 둘 이상 변형 동시 존재 시 결함. 34회차 정규화의 회귀 방지.
+   - 검증 9 (한영 병기 의무 위반): KO_EN_PAIRS 그룹 한쪽만 있으면 경고.
+   - LintResult 신규 필드 4개. has_defect()에 검증 8 포함.
+   - 즉시 회귀 7쌍 검출 + 정규화 (27 파일): MCP→mcp, rag→RAG, pydantic-AI→pydantic-ai, pandas-AI→pandas-ai, mit→MIT, sdk→SDK, AI-agents→ai-agents.
+
+2. **CLAUDE.md 워크플로우 5번 단계 신설 — 출처 정합화 의무**.
+   - entity/concept 페이지가 새 source 반영 시 frontmatter `related`와 본문 `## 출처` 양쪽에 source 페이지 wikilink 동시 추가 의무.
+   - 35·36·37회차 3회 발견된 "frontmatter related ↔ 본문 출처 단절" 패턴 재발 방지 SOP.
+
+3. **깨진 링크 1건 즉시 수정** — `grafana.md`의 `[[loki]]`, `[[tempo]]` 미존재 entity wikilink → 일반 텍스트로 변경. lint 검증 1번이 즉시 검출.
+
+### 메타 인사이트: 5개 분할 작위 패턴 종료
+
+5개씩 분할이 굳어진 진짜 이유 4가지 (자기 분석):
+1. **방어적 본능**: "쪼개면 안전해 보인다"는 직관. Python 일괄 처리에서 5개와 14개의 실패 위험은 사실상 동일한데 직관이 잘못된 판단을 반복.
+2. **관성**: 36회차 첫 5개가 "한 회차의 적정 분량"으로 굳어짐. 의문 없이 반복.
+3. **Progress theater**: 회차마다 commit + log 항목 생기면 "일을 많이 한다"는 cosmetic 효과.
+4. **사용자 confirmation 의존**: 매 회차 명령이 안전판 역할. Auto mode에서 비효율.
+
+→ 사용자 메타 질문이 패턴 깨뜨림. 동일 패턴 반복하는 inertia에 대한 검증 사례.
+
+### 거버넌스 카탈로그 7개 모델 누적
+
+40회차 redis MANIFESTO 보강으로 5축 거버넌스 카탈로그 확장:
+1. BDFL — pandas (Wes McKinney) / sqlalchemy·alembic (Mike Bayer)
+2. NumFOCUS Subcommittee — pandas / scikit-learn
+3. 회사 표준화 — Astral (uv·ruff·ty)
+4. CNCF 졸업 — prometheus
+5. 메일링 리스트 거버넌스 — postgresql 30년
+6. MANIFESTO 명문화 (opinionated 디자인) — redis 17년 10항목 철학
+7. ASF PMC — apache-arrow / kafka / parquet
+
+### 결과 (정량, 35회차 → 41회차 통합 시점)
+
+- 3축 인바운드: 49 → **85** (+36). stack-guide ↔ 32 도구 양방향 edge 완성.
+- 5축 점유율: 50.2% → **48.1%** (33회차 52.5%부터 7회차 점진 감소, 50% 미만 안정화).
+- 5축 합산 총: 994 → 1103.
+- stack-guide 32개 인용 도구 **100% 보강 완료**.
+- lint 자동화 검증 항목 5개 → **9개**.
+- CLAUDE.md 워크플로우 단계 7개 → **8개**.
+- lint 모든 검증 0건 통과.
+
+### 변경된 파일 (60+ 파일)
+
+- `scripts/wiki-lint.py` (검증 8·9번 신설, +60줄)
+- `CLAUDE.md` (워크플로우 5번 단계 신설)
+- 32 도구 entity (frontmatter related + 본문 의사결정 컨텍스트)
+- 27 파일 case-duplicate 정규화 (frontmatter tags)
+- `wiki/index.md`, `wiki/logs/log.md`
+
+### 다음 회차로 이월
+
+- 검색 계층 도입 (qmd MCP) — 사용자 결정 대기 (외부 인프라 + 도구 선택)
+- 새 raw 수집 시 워크플로우 5번 적용 — 평상 운영
+- 7축 평가 재실행 — 통합 후 재진단 시점
+
+---
+
 ## [2026-04-29] docs | P2 2건 처리 — 한영 병기 + 빈약 stub source 정합화 (35회차)
 
 - **트리거**: 사용자 "다음 회차 진행해줘". 34회차 완료 후 이월된 P2 2건 일괄 처리. stack-guide 콘텐츠 강화는 raw 작성 작업이라 별도 회차로 분리.

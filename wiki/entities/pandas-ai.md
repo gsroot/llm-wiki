@@ -8,10 +8,11 @@ related:
   - "[[duckdb]]"
   - "[[langchain]]"
   - "[[langgraph]]"
+  - "[[sinaptik-ai-pandas-ai]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
-tags: [pandas-AI, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차]
+tags: [pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차]
 ---
 
 # PandasAI
@@ -103,6 +104,13 @@ result = pai.chat([sales, users], "Which user segment spent the most this quarte
 ```
 
 → 석근님 c2spf-analytics에서 **여러 테이블 join 자연어 질의** PoC에 적합.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Chat with your database or your datalake (SQL, CSV, parquet) — pandas DataFrame에 .chat('질문') 메서드를 추가하는 어댑터. LiteLLM으로 다중 모델 지원."
+> — [[sinaptik-ai-pandas-ai]] 한줄 요약
+
+[[seokgeun-stack-guide]] BI 자연어 인터페이스 영역. [[c2spf-analytics]] BigQuery 기반 분석에서 비개발자 셀프서비스 후보 (df.chat 패턴). [[matechat]] 채팅 분석 모듈에서 BigQuery 결과 자연어 질의 후보. [[pandas]] 본진 + [[langchain]] 위에 빌드. NL2SQL의 사실상 표준이자 [[llm-infra-meta-cluster]] 5축의 BI ↔ LLM 브리지 사례.
 
 ## 출처
 

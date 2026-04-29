@@ -10,6 +10,7 @@ related:
   - "[[pydantic]]"
   - "[[python-packaging]]"
   - "[[uv]]"
+  - "[[sqlalchemy-sqlalchemy]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -93,6 +94,13 @@ Mike Bayer 21년 1인 lead. NumFOCUS 같은 후원 없이 순수 OSS + 컨설팅
 - [[postgresql]]: 1순위 dialect
 - [[fastapi]]: 의존성 주입 통합 (`Annotated[AsyncSession, Depends(get_db)]`)
 - [[pydantic]]: SQLModel로 통합 가능
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "21년차 ★11.8K Python SQL 툴킷·ORM. Core(SQL 구성/DBAPI 추상)와 ORM(Unit of Work · Identity Map · Data Mapper) 이중 레이어 구조로 raw SQL 자유와 객체 ORM 자동화를 양립시킨 사실상 표준 — Mike Bayer 1인 BDFL 거버넌스 + Python 표준 진영의 fastapi / SQLModel / alembic와 묶이는 백엔드 표준 의존성."
+> — [[sqlalchemy-sqlalchemy]] 한줄 요약
+
+[[seokgeun-stack-guide]] Python 백엔드 5단의 ORM 축. [[matechat]] backend + [[c2spf-analytics]] 후보. **Core/ORM 이중 레이어**가 raw SQL 성능 추구와 객체 추상화 생산성 양쪽 시나리오 대응. [[alembic]]과 같은 Mike Bayer 1인 BDFL 거버넌스 — [[postgresql]]의 메일링 리스트 거버넌스와 대비되는 또 다른 보수적 모델.
 
 ## 출처
 

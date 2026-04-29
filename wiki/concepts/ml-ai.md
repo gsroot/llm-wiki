@@ -2,7 +2,7 @@
 title: "ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)"
 type: concept
 category: ai
-tags: [ml, AI, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, LLM, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-sdk, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop, deepagents, crewai, pydantic-ai, pandas-ai, 18회차]
+tags: [ml, AI, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, LLM, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-SDK, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop, deepagents, crewai, pydantic-ai, pandas-ai, 18회차]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"

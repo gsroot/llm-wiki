@@ -9,6 +9,7 @@ related:
   - "[[zustand]]"
   - "[[nextjs]]"
   - "[[riverpod]]"
+  - "[[tanstack-tanstack-query]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-29
@@ -41,6 +42,13 @@ tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 
 - [[zustand]] — 클라이언트 상태 (보완 관계)
 - [[nextjs]] — TanStack Query를 SSR과 결합 (Hydration 패턴)
 - [[riverpod]] — Flutter 진영 동등 위치 (비동기 caching)
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "비동기/서버 상태 관리를 위한 React Query 후속작. 49.2K stars · MIT · 멀티 프레임워크(React/Solid/Svelte/Vue/Angular) 지원하며 TanStack 에코시스템 12개 패키지 중 핵심."
+> — [[tanstack-tanstack-query]] 한줄 요약
+
+[[seokgeun-stack-guide]]에서 React 진영 표준 스택 선정 시 **"서버 상태 vs 클라이언트 상태" 분리 원칙**의 서버 측 축. [[zustand]]와 듀얼 채택. SSR/Hydration 시 [[nextjs]]와 결합. Flutter 진영 동등 위치는 [[riverpod]].
 
 ## 출처
 

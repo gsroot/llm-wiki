@@ -2,7 +2,7 @@
 title: "qmd"
 type: entity
 entity_type: tool
-tags: [검색, search, 마크다운, markdown, CLI, MCP]
+tags: [검색, search, 마크다운, markdown, CLI, mcp]
 related:
   - "[[llm-wiki-pattern]]"
   - "[[mcp]]"

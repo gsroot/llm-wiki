@@ -2,7 +2,7 @@
 title: "블록체인 (XPLA · Rust 스마트 컨트랙트 · NFT)"
 type: concept
 category: web-dev
-tags: [blockchain, xpla, nft, smart-contract, rust, cosmos-sdk, web3, nestjs, discord-bot, gas-fee]
+tags: [blockchain, xpla, nft, smart-contract, rust, cosmos-SDK, web3, nestjs, discord-bot, gas-fee]
 related:
   - "[[seokgeun-kim]]"
   - "[[xpla-platform]]"

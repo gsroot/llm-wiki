@@ -2,7 +2,7 @@
 title: "openai-agents-python (OpenAI Agents SDK)"
 type: entity
 entity_type: tool
-tags: [openai-agents-python, openai-agents, openai, agents-sdk, python, multi-agent, agent-framework, mit-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version, 18회차]
+tags: [openai-agents-python, openai-agents, openai, agents-SDK, python, multi-agent, agent-framework, MIT-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version, 18회차]
 related:
   - "[[openai]]"
   - "[[openai-cookbook]]"
@@ -19,6 +19,7 @@ related:
   - "[[crewai]]"
   - "[[pydantic-ai]]"
   - "[[fastmcp]]"
+  - "[[openai-openai-agents-python]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -141,6 +142,13 @@ dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `
 | [[fastmcp]] | MCP 서버 빌드 | 직교 (SDK가 아닌 도구 layer) |
 
 → OpenAI Agents SDK는 **11종 패턴 reference + OpenAI 락인 + RunState 직렬화**가 차별점. 18회차에서 6×N agent-frameworks-matrix.md로 정량 비교.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "OpenAI 공식 1년차 ★25K 멀티 에이전트 Python SDK(v0.14.6, MIT). AGENTS.md = CLAUDE.md 동기화 + .agents/skills/ 9개 운영 SOP 스킬 + examples/agent_patterns/ 16개 패턴 매핑의 3중 채택을 통해 openai-cookbook에서 권한 거버넌스 패턴을 자기 핵심 SDK 저장소에 풀스택 적용한 증거 — agent-skills 외부 채택 8단계 진화의 8번째이자 첫 '9개 본격 운영 SOP' 사례."
+> — [[openai-openai-agents-python]] 한줄 요약
+
+[[seokgeun-stack-guide]] OpenAI agent 본진. [[pydantic]] 디폴트 + [[mcp]]·[[uv]]·[[ruff]] 채택. [[matechat]] 39 SKILL 운영의 OpenAI 진영 multi-agent 후보. **9개 운영 SOP 스킬 + AGENTS.md=CLAUDE.md + 16개 패턴 매핑 3중 채택**은 [[llm-infra-meta-cluster]] 5축의 [[agent-skills]] 8단계 진화 정점 사례 — [[langchain]]·[[crewai]]·[[pydantic-ai]]와 함께 [[agent-frameworks-matrix]] 비교됨.
 
 ## 출처
 

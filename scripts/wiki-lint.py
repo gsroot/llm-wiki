@@ -21,7 +21,11 @@ CHECKS:
     6. source_scope 부재 결함 (33회차): source_url=="" 인데 source_scope 누락 시 결함
     7. last_verified 신선도 경고 (33회차): verification_required=true 페이지의 last_verified가
        90일 초과 시 경고 (결함 아닌 정보 보고)
-    8. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
+    8. 태그 case-duplicate 회귀 검출 (36회차): 같은 태그의 대소문자 변형이 동시 존재
+       (예: Anthropic + anthropic, llm + LLM). 34회차 정규화의 회귀 방지.
+    9. 한영 병기 의무 위반 검출 (36회차): CLAUDE.md 31회차 4단계 규칙의 "개념·도메인 태그"
+       카테고리(agent/에이전트 등) 한쪽만 있으면 경고.
+    10. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
 
 EXIT CODES:
     0   결함 없음 (또는 --report 단독 모드)
@@ -45,6 +49,20 @@ import yaml
 
 STALE_VERIFICATION_DAYS = 90  # last_verified 경고 임계
 VALID_SOURCE_SCOPES = frozenset({"local", "private", "public"})
+
+# 36회차 신설: 한국어+영어 병기 의무 그룹 (CLAUDE.md 31회차 4단계 규칙 中 "개념·도메인" 카테고리)
+KO_EN_PAIRS: tuple[tuple[str, str], ...] = (
+    ("agent", "에이전트"),
+    ("data-analysis", "데이터분석"),
+    ("backend", "백엔드"),
+    ("frontend", "프론트엔드"),
+)
+
+# 36회차 신설: case-duplicate 검증에서 정상 케이스(영어 단독 약어)는 제외
+# 이 화이트리스트의 태그는 대소문자 변형이 있어도 정상 (예: AI는 약어로 영어 단독)
+CASE_DUPLICATE_WHITELIST: frozenset[str] = frozenset({
+    # 현재는 비어있음. 회귀 발생 시 의도된 케이스만 등록.
+})
 
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent / "wiki"
@@ -175,6 +193,9 @@ class LintResult:
     source_scope_invalid: list[tuple[str, str]] = field(default_factory=list)
     stale_verification: list[tuple[str, str, int]] = field(default_factory=list)
     verification_malformed: list[tuple[str, str]] = field(default_factory=list)
+    # 36회차 신설
+    tag_case_duplicates: list[tuple[str, str, int, int]] = field(default_factory=list)
+    tag_pair_violations: list[tuple[str, str, list[str]]] = field(default_factory=list)
     inbound: dict[str, int] = field(default_factory=dict)
 
     def has_defect(self) -> bool:
@@ -184,12 +205,14 @@ class LintResult:
         # (정의 B, 객관 측정). 두 정의가 다르므로 부정합을 결함으로 판정하지 않는다.
         # --update 모드는 정의 B로 일괄 갱신하므로 사용 시 주의 (CLAUDE.md 참조).
         # last_verified 신선도(90일 초과)도 정보 보고. source_scope 부재/이상은 결함.
+        # 36회차: tag_case_duplicates도 결함 (회귀 방지). tag_pair_violations는 경고(정보).
         return bool(
             self.broken_links
             or self.yaml_invalid
             or self.source_scope_missing
             or self.source_scope_invalid
             or self.verification_malformed
+            or self.tag_case_duplicates
         )
 
 
@@ -376,6 +399,53 @@ def lint(update: bool = False) -> LintResult:
             if days_old > STALE_VERIFICATION_DAYS:
                 result.stale_verification.append((rel_path, str(lv_date), days_old))
 
+    # 36회차 신설:
+    # 8. 태그 case-duplicate 회귀 검출 (전역 vocabulary 기준)
+    # 9. 한영 병기 의무 위반 검출 (페이지별)
+    from collections import Counter, defaultdict
+    tag_count: Counter[str] = Counter()
+    file_tags: dict[str, set[str]] = {}
+    for page in pages:
+        if page.yaml_invalid or page.is_log_file:
+            continue
+        fm = page.frontmatter or {}
+        tags = fm.get("tags", [])
+        if not isinstance(tags, list):
+            continue
+        page_tags = {t for t in tags if isinstance(t, str)}
+        file_tags[str(page.path.relative_to(WIKI_ROOT.parent))] = page_tags
+        tag_count.update(page_tags)
+
+    # 검증 8: 같은 lowercase로 collapse 시 둘 이상의 변형이 동시 존재
+    by_lower: dict[str, list[str]] = defaultdict(list)
+    for tag in tag_count:
+        if tag in CASE_DUPLICATE_WHITELIST:
+            continue
+        by_lower[tag.lower()].append(tag)
+    for lower, variants in by_lower.items():
+        if len(variants) <= 1:
+            continue
+        # 정렬: 사용 빈도 내림차순
+        variants_sorted = sorted(variants, key=lambda t: -tag_count[t])
+        canonical = variants_sorted[0]
+        for variant in variants_sorted[1:]:
+            result.tag_case_duplicates.append(
+                (canonical, variant, tag_count[canonical], tag_count[variant])
+            )
+
+    # 검증 9: 한영 병기 의무 위반 (한쪽만 있으면 경고)
+    for rel_path, page_tags in file_tags.items():
+        missing: list[str] = []
+        for en, ko in KO_EN_PAIRS:
+            has_en = en in page_tags
+            has_ko = ko in page_tags
+            if has_en and not has_ko:
+                missing.append(f"{ko} (짝: {en})")
+            elif has_ko and not has_en:
+                missing.append(f"{en} (짝: {ko})")
+        if missing:
+            result.tag_pair_violations.append((rel_path, "병기 누락", missing))
+
     return result
 
 
@@ -482,6 +552,26 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     if not result.verification_malformed and not result.stale_verification:
         if not quiet:
             print("✓ 0건 (모든 verification 페이지 신선)")
+
+    print("--- 8. 태그 case-duplicate 회귀 (lowercase 통합 시 충돌) ---")
+    if result.tag_case_duplicates:
+        print(f"❌ {len(result.tag_case_duplicates)}쌍 동의어 분산:")
+        for canon, variant, c_count, v_count in result.tag_case_duplicates[:15]:
+            print(f"    canonical={canon!r}({c_count}) ↔ 회귀={variant!r}({v_count})")
+    else:
+        if not quiet:
+            print("✓ 0건 (전체 태그 vocabulary 정규화 유지)")
+
+    print("--- 9. 한영 병기 의무 위반 (개념·도메인 카테고리) ---")
+    if result.tag_pair_violations:
+        print(f"⚠ {len(result.tag_pair_violations)}건 병기 누락:")
+        for path, _, missing in result.tag_pair_violations[:15]:
+            print(f"    {path}")
+            for m in missing:
+                print(f"        + 추가 필요: {m}")
+    else:
+        if not quiet:
+            print("✓ 0건 (4개 그룹 모두 100% 병기)")
 
 
 def report_full(result: LintResult) -> None:

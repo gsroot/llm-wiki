@@ -2,7 +2,7 @@
 title: "Agent Skills (SKILL.md 패키지)"
 type: concept
 category: ai
-tags: [agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, skill-creator, harness, 패키지레이어, claude-cookbooks, custom-skills, spec-kit, codex-skills, multi-agent-adoption, library-self-hosted-skill, fastapi, vendor-neutral, dart-skills-lint, flutter, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror, pydantic-AI, prometheus, grafana, sentry, anti-fragmentation, hierarchical-agents-md, pr-pattern-agents-md, nextjs, vercel, skill-indexing, LLM-pr-marker, open-code, code-distribution, 18회차, 19회차, 22회차]
+tags: [agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, skill-creator, harness, 패키지레이어, claude-cookbooks, custom-skills, spec-kit, codex-skills, multi-agent-adoption, library-self-hosted-skill, fastapi, vendor-neutral, dart-skills-lint, flutter, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror, pydantic-ai, prometheus, grafana, sentry, anti-fragmentation, hierarchical-agents-md, pr-pattern-agents-md, nextjs, vercel, skill-indexing, LLM-pr-marker, open-code, code-distribution, 18회차, 19회차, 22회차]
 related:
   - "[[claude-code]]"
   - "[[claude-agent-sdk]]"

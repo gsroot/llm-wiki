@@ -12,10 +12,11 @@ related:
   - "[[deepagents]]"
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
+  - "[[pydantic-pydantic-ai]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
-tags: [pydantic-AI, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차]
+tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차]
 ---
 
 # Pydantic AI
@@ -125,6 +126,13 @@ print(result.output.temp_c)
 ```
 
 → **structured output이 1급**. dict/JSON 파싱 코드 없이 즉시 BaseModel 인스턴스.
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "GenAI Agent Framework, the Pydantic way — Pydantic Validation을 만든 팀이 직접 출시한 type-safe agent framework. 16.7K+ stars, MIT, AGENTS.md = CLAUDE.md byte-for-byte 동기화 (10K), 11가지 자체 강점 명시."
+> — [[pydantic-pydantic-ai]] 한줄 요약
+
+[[seokgeun-stack-guide]] type-safe agent 영역. [[pydantic]] 본진 팀 + [[fastapi]]와 같은 타입 힌트 우선 패턴. [[matechat]] 39 SKILL 운영에서 type-safe orchestration 후보. **AGENTS.md=CLAUDE.md byte-for-byte 동기화**는 [[llm-infra-meta-cluster]] 5축의 [[agent-skills]] 8단계 진화 핵심 사례 — [[ruff]]·[[uv]]·[[langchain]]·[[fastmcp]]와 같은 동기화 모델.
 
 ## 출처
 

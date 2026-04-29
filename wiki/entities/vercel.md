@@ -2,7 +2,7 @@
 title: "Vercel"
 type: entity
 entity_type: organization
-tags: [vercel, organization, frontend, edge, nextjs, turbopack, AI-sdk, 23회차, 프론트엔드]
+tags: [vercel, organization, frontend, edge, nextjs, turbopack, AI-SDK, 23회차, 프론트엔드]
 related:
   - "[[nextjs]]"
   - "[[turbopack]]"

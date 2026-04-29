@@ -7,7 +7,7 @@ raw_path: "raw/articles/openai-openai-agents-python/"
 author: "OpenAI (Agents Team)"
 date_published: 2025-03-11
 date_ingested: 2026-04-28
-tags: [openai-agents-python, openai, openai-agents, agents-sdk, python, multi-agent, agent-framework, agent-skills, agents-md, plans-md, exec-plans, vendor-neutral, codex, mcp, uv, pyright, mit-license, agent-patterns, guardrails, human-in-the-loop, handoffs, streaming, runtime-behavior-probe, implementation-strategy]
+tags: [openai-agents-python, openai, openai-agents, agents-SDK, python, multi-agent, agent-framework, agent-skills, agents-md, plans-md, exec-plans, vendor-neutral, codex, mcp, uv, pyright, MIT-license, agent-patterns, guardrails, human-in-the-loop, handoffs, streaming, runtime-behavior-probe, implementation-strategy]
 related:
   - "[[openai]]"
   - "[[openai-agents-python]]"

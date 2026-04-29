@@ -132,6 +132,13 @@ IPC = "임시 빠른 직렬화", Parquet = "영구 효율 저장". 둘 다 PyArr
 - [[fastapi]]: API 응답 시 PyArrow IPC 직렬화 → 클라이언트 zero-copy 가능 (gRPC + Arrow Flight)
 - [[c2spf-analytics]]: 데이터 파이프라인의 메모리 다리
 
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Apache Arrow는 언어 횡단 인메모리 컬럼 포맷 표준. 둘이 합쳐 '디스크 → 메모리 → 네트워크'의 모든 데이터 이동에서 zero-copy 보장 — 2010년대 데이터 인프라의 가장 성공적인 표준화 프로젝트."
+> — [[apache-arrow]] 한줄 요약
+
+[[seokgeun-stack-guide]] 컬럼 데이터 인메모리 표준. [[c2spf-analytics]] BigQuery → pandas/polars 변환 시 zero-copy 백엔드. **언어 횡단 표준**(11+ 언어)은 [[llm-infra-meta-cluster]] 5축의 ASF PMC 거버넌스 사례 — [[pandas]]·[[polars]]·[[duckdb]] 모두 디폴트 백엔드 채택. [[parquet]]과 함께 인메모리/온디스크 컬럼 표준 짝.
+
 ## 출처
 
 - [[apache-arrow]] — apache/arrow + apache/parquet-format 통합 수집

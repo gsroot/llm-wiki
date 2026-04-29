@@ -9,6 +9,7 @@ related:
   - "[[ml-ai]]"
   - "[[mcp]]"
   - "[[uv]]"
+  - "[[langchain-ai-langchain]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -72,6 +73,13 @@ libs/
 - [[agent-skills]]: AGENTS.md=CLAUDE.md 패턴 — LLM 협업 표준
 - [[ml-ai]]: LLM-powered application의 핵심 추상화 계층
 - [[uv]]: monorepo 의존성 관리 표준
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "2022년 10월 출범 후 LLM 프레임워크의 사실상 표준으로 자리잡은 monorepo. 'agent engineering platform' 슬로건과 함께 v1 출시 + AGENTS.md=CLAUDE.md 동기화로 LLM 협업 표준 패턴 채택."
+> — [[langchain-ai-langchain]] 한줄 요약
+
+[[seokgeun-stack-guide]] LLM 프레임워크 영역의 사실상 표준. [[matechat]] AI 채팅 분석 모듈에서 후보 검토. [[langgraph]] 산하 + [[deepagents]] 직접 종속. **AGENTS.md=CLAUDE.md 동기화 패턴**은 [[llm-infra-meta-cluster]] 5축의 운영 표준 — [[ruff]]·[[uv]]·[[fastmcp]] 등과 같은 동기화 모델 채택.
 
 ## 출처
 

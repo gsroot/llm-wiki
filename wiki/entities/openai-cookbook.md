@@ -2,7 +2,7 @@
 title: "openai-cookbook (OpenAI Cookbook)"
 type: entity
 entity_type: project
-tags: [openai-cookbook, openai, cookbook, mit, jupyter-notebook, registry-yaml, authors-yaml, agents-md, plans-md, exec-plans, recent-learnings, embeddings, agents-sdk, evals, codex, gpt-5, gpt-oss]
+tags: [openai-cookbook, openai, cookbook, MIT, jupyter-notebook, registry-yaml, authors-yaml, agents-md, plans-md, exec-plans, recent-learnings, embeddings, agents-SDK, evals, codex, gpt-5, gpt-oss]
 related:
   - "[[openai]]"
   - "[[agent-skills]]"

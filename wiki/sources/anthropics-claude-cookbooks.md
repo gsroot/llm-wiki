@@ -7,7 +7,7 @@ raw_path: "raw/articles/anthropics-claude-cookbooks/"
 author: "Anthropic"
 date_published: 2026-04
 date_ingested: 2026-04-27
-tags: [claude-cookbooks, anthropic, claude-api, claude-agent-sdk, managed-agents, agent-patterns, prompt-caching, memory, tool-use, rag, multimodal, jupyter, notebook, mcp, skills]
+tags: [claude-cookbooks, anthropic, claude-api, claude-agent-SDK, managed-agents, agent-patterns, prompt-caching, memory, tool-use, RAG, multimodal, jupyter, notebook, mcp, skills]
 related:
   - "[[claude-code]]"
   - "[[agent-skills]]"

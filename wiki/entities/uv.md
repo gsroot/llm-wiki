@@ -11,6 +11,7 @@ related:
   - "[[ruff]]"
   - "[[fastapi]]"
   - "[[pydantic]]"
+  - "[[astral-sh-uv]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-28
@@ -100,6 +101,13 @@ CHANGELOG v0.11.6 (2026-04-09): wheel RECORD 파싱 취약점 advisory(GHSA-pjjw
 - [[karpathy]]: 단일 파일 철학 공명 (`uv run` + PEP 723)
 - [[c2spf-analytics]]: FastAPI + Python 환경, uv 채택 가능성 검토 대상
 - [[github-spec-kit]]: 다축 통합 vs uv 재구현 통합 — 정반대 극단
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "uv는 pip · pip-tools · pipx · poetry · pyenv · twine · virtualenv 7가지 도구를 단일 Rust 바이너리로 통합하고, pip 대비 10–100배 빠른 성능과 universal lockfile을 제공하는 Astral의 Python 도구체인."
+> — [[astral-sh-uv]] 한줄 요약
+
+[[seokgeun-stack-guide]] Python 패키지 관리 표준. [[matechat]] backend + [[c2spf-analytics]] 후보. [[ruff]]와 함께 Astral 회사 표준 (CLAUDE.md = @AGENTS.md 1줄 import 패턴). **7개 도구 통합 + universal lockfile**이 Python 생태 fragmentation 해소 사례 — [[python-packaging]] 개념 페이지의 출처. **Rust-in-Python** 트렌드는 [[ruff]]·[[polars]]·[[pydantic]]과 함께 5축 LLM 인프라 메타에 등록.
 
 ## 출처
 

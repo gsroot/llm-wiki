@@ -2,7 +2,7 @@
 title: "Claude Agent SDK"
 type: entity
 entity_type: tool
-tags: [claude-agent-sdk, anthropic, sdk, agent, claude-code, mcp, hooks, plan-mode, output-styles, subagent, 에이전트]
+tags: [claude-agent-SDK, anthropic, SDK, agent, claude-code, mcp, hooks, plan-mode, output-styles, subagent, 에이전트]
 related:
   - "[[claude-code]]"
   - "[[anthropic]]"

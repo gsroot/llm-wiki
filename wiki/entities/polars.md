@@ -12,6 +12,7 @@ related:
   - "[[dataframe]]"
   - "[[lazy-evaluation]]"
   - "[[c2spf-analytics]]"
+  - "[[pola-rs-polars]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -117,6 +118,13 @@ Rust crate `polars` → 5개 프론트엔드:
 - [[scikit-learn]]: ML 입력으로는 `df.to_numpy()` 변환 필요. 직접 호환은 미흡
 - [[fastapi]]: API 응답 DataFrame을 Polars로 처리 후 dict/JSON 직렬화 패턴 가능
 - [[c2spf-analytics]]: BI 워크로드 마이그레이션 후보 (잠재 채택자)
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Rust로 작성된 분석 쿼리 엔진. Lazy + Eager + Streaming 3중 실행 모델과 Apache Arrow 컬럼 포맷 in-memory로 pandas 대비 임포트 7배·연산 10~100배 가속 — DataFrame 추상을 '표현식 + 컨텍스트' DSL로 재정의."
+> — [[pola-rs-polars]] 한줄 요약
+
+[[seokgeun-stack-guide]] DataFrame 영역에서 [[pandas]] 대안. [[c2spf-analytics]] 대규모 분석 시 마이그레이션 후보 ([[pandas-vs-polars-vs-duckdb]] 결정 매트릭스 참조). **Lazy + Eager + Streaming 3중 모델**·**Apache Arrow immutable**은 [[copy-on-write]] CoW와 정반대 메모리 모델. [[apache-arrow]]·[[duckdb]]와 함께 컬럼 진영 표준 — [[dataframe-ecosystem-evolution]] 종합 분석 참조.
 
 ## 출처
 

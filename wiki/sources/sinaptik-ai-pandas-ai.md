@@ -14,7 +14,7 @@ related:
   - "[[duckdb]]"
   - "[[langchain]]"
 confidence: medium
-tags: [pandas-AI, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차]
+tags: [pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차]
 ---
 
 # PandasAI — DataFrame을 자연어로 대화하는 라이브러리

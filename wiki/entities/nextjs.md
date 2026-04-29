@@ -11,6 +11,7 @@ related:
   - "[[shadcn-ui]]"
   - "[[zustand]]"
   - "[[tanstack-query]]"
+  - "[[vercel-next.js]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
@@ -56,6 +57,13 @@ Vercel이 만든 React 프레임워크. 22회차에서 `$skill` 인덱싱 + `<!-
 - [[agent-skills]] — 12단계 진화 사례
 - [[flutter-nextjs-fullstack-pattern|React 진영 종합]] — React 진영 fullstack 표준 (22회차 신규)
 - [[shadcn-ui]], [[zustand]], [[tanstack-query]] — Next.js 상의 표준 React 스택
+
+## 의사결정 컨텍스트 (raw 인용)
+
+> "Vercel이 만든 React 프레임워크. 22회차에서 22KB짜리 AGENTS.md(=CLAUDE.md symlink)에서 `$skill` 인덱싱 + `<!-- NEXT_JS_LLM_PR -->` HTML 마커 등 **AGENTS.md 12단계 진화의 핵심 변종 2개**를 발견."
+> — [[vercel-next.js]] 한줄 요약
+
+[[seokgeun-stack-guide]] React 진영 풀스택 표준. App Router + Turbopack + SSR/RSC가 [[matechat]]·[[c2spf-analytics]]·[[portfolio]] 양쪽 채택 후보. **AGENTS.md 운영 패턴 학습 자료**로서 [[llm-infra-meta-cluster]] 5축에도 기여 — `$skill` 인덱싱은 [[agent-skills]] 자동 라우팅의 표준화 사례.
 
 ## 출처
 

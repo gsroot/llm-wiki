@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (35회차 / P2 2건 — 한영 병기 4그룹 + 빈약 stub 5개 source 정합화)
+updated: 2026-04-29 (36-40회차 통합 / stack-guide 32 도구 100% 보강 + lint 검증 8·9 + 워크플로우 5번 + 5분할 패턴 종료, squash 정리)
 ---
 
 # 위키 인덱스
