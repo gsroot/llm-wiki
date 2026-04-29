@@ -23,6 +23,7 @@ inbound_count: 58
 created: 2026-04-24
 updated: 2026-04-29
 cited_by:
+  - "[[agent-skills]]"
   - "[[astral]]"
   - "[[astral-sh-uv]]"
   - "[[backend-python-fastapi]]"
@@ -34,16 +35,20 @@ cited_by:
   - "[[c2spf-nft-market]]"
   - "[[c2spf-xpla-platform]]"
   - "[[career-timeline-seokgeun]]"
+  - "[[claude-code]]"
   - "[[com2us-platform]]"
   - "[[data-pipeline-bigquery]]"
   - "[[devops-cicd]]"
   - "[[fastapi]]"
   - "[[fastapi-fastapi]]"
   - "[[frontend-react]]"
+  - "[[harness]]"
   - "[[kpi-recovery-loop]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[matechat]]"
   - "[[matechat-30day-validation-loop]]"
+  - "[[matechat-business-validation]]"
+  - "[[mcp]]"
   - "[[ml-ai]]"
   - "[[obsidian-guide]]"
   - "[[parental-leave-2026-operating-plan]]"

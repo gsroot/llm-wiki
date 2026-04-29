@@ -19,6 +19,7 @@ cited_by:
   - "[[agent-frameworks-matrix]]"
   - "[[agent-skills]]"
   - "[[langchain]]"
+  - "[[mcp]]"
   - "[[ml-ai]]"
   - "[[oss-saas-dual]]"
 ---

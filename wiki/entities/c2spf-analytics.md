@@ -15,8 +15,8 @@ related:
   - "[[matechat]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 4
-observed_source_refs: 26
-inbound_count: 130
+observed_source_refs: 42
+inbound_count: 158
 created: 2026-04-24
 updated: 2026-04-29
 verification_required: true
@@ -123,10 +123,12 @@ c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 
 
 ### 자기 커밋 분포 (포트폴리오 기준)
 
-- `c2spf` 조직 본인 커밋 누계: **1,111건**
-- `analytics-common-api` 단독 유지보수: 231/251 커밋 (~92%)
-- `analytics-frontend` React 리뉴얼: 476커밋 (~24%, 팀 최초 React 도입)
-- ML 유저 예측: AutoML 기반 평균 정확도 85%+
+- `c2spf` 조직 본인 커밋 누계: **1,111건** [재현: `git log --author='석근' --oneline | wc -l` (c2spf 조직 전체 리포지토리 합)]
+- `analytics-common-api` 단독 유지보수: 231/251 커밋 (~92%) [재현: `git shortlog -sn` in `analytics-common-api`]
+- `analytics-frontend` React 리뉴얼: 476커밋 (~24%, 팀 최초 React 도입) [재현: `git shortlog -sn --since=2025-06-01` in `analytics-frontend`]
+- ML 유저 예측: AutoML 기반 평균 정확도 85%+ [재현: GCP AutoML `evaluation_dashboard` 또는 `model_evaluation.json`]
+
+> 본 정량 주장의 마지막 측정 시점은 frontmatter `last_verified` 필드로 추적된다. 이후 변동은 `verification_required: true`에 따라 분기별 재산출 권장 — `verification_notes` 참조.
 
 ### 횡단 계약 4종 (2024-08 공통 모듈 리뉴얼 산출)
 
@@ -141,7 +143,9 @@ c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 
 
 ## 위키 안에서의 위상
 
-c2spf-analytics는 본 위키에서 **인바운드 4위(43)**의 hub다. agent-skills(58) / harness(49) / ml-ai(44) 다음 위치이며, c2spf-analytics보다 인바운드 높은 페이지는 모두 LLM 인프라 메타 개념이다. 즉 **회사 BI 운영 시스템이 위키의 5번째로 큰 hub**이며, 이는 본 위키가 직장인의 위키임을 그래프 측면에서 자연스럽게 입증한다.
+c2spf-analytics는 본 위키에서 인바운드 상위권 hub다. **28회차 시점 스냅샷**으로는 4위(43)였고, agent-skills(58) / harness(49) / ml-ai(44) 다음 위치였다. 이후 회차에 5축 LLM 인프라 메타 개념들의 인바운드는 더 자랐지만, c2spf-analytics 자신도 함께 자라 인바운드 상위 hub 위치를 유지한다. 즉 **회사 BI 운영 시스템이 위키의 핵심 hub 중 하나**이며, 이는 본 위키가 직장인의 위키임을 그래프 측면에서 자연스럽게 입증한다.
+
+> 본문의 인바운드 수치는 28회차 시점 스냅샷이다. 현재 측정은 `python3 scripts/wiki-lint.py --report`로 재산출 가능 — 자동 필드(`inbound_count`, `cited_by`)가 source-of-truth.
 
 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]의 "회사 BI 적용 매핑" 표는 22회차까지 수집된 32개 OSS를 c2spf 운영에 적용하는 시나리오를 다룬다. 본 페이지는 그 매핑의 적용 대상 시스템.
 

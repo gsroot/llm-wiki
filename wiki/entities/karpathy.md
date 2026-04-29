@@ -10,7 +10,7 @@ related:
   - "[[nanochat]]"
 source_count: 3
 observed_source_refs: 15
-inbound_count: 31
+inbound_count: 32
 created: 2026-04-27
 updated: 2026-04-27
 ---

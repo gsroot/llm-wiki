@@ -34,6 +34,7 @@ verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 
 cited_by:
   - "[[alembic]]"
   - "[[c2spf-analytics]]"
+  - "[[com2us-platform]]"
   - "[[crewai]]"
   - "[[deepagents]]"
   - "[[docker]]"

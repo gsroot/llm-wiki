@@ -16,6 +16,7 @@ related:
 confidence: high
 cited_by:
   - "[[agent-stack-evolution]]"
+  - "[[harness]]"
   - "[[karpathy]]"
   - "[[nanogpt]]"
 ---

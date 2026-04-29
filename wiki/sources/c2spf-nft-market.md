@@ -20,6 +20,7 @@ cited_by:
   - "[[career-timeline-seokgeun]]"
   - "[[com2us-platform]]"
   - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
   - "[[xpla-platform]]"
 ---
 

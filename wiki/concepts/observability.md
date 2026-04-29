@@ -13,7 +13,7 @@ related:
   - "[[docker]]"
 source_count: 3
 observed_source_refs: 3
-inbound_count: 9
+inbound_count: 10
 created: 2026-04-28
 updated: 2026-04-28
 ---

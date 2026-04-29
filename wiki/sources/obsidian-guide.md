@@ -17,6 +17,7 @@ confidence: high
 cited_by:
   - "[[claude-code-master-guide]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
   - "[[obsidian]]"
   - "[[seokgeun-kim]]"
 ---

@@ -31,6 +31,7 @@ cited_by:
   - "[[astral-sh-uv]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
   - "[[ml-ai]]"
   - "[[openai]]"
   - "[[openai-agents-python]]"

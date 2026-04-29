@@ -19,6 +19,7 @@ confidence: high
 cited_by:
   - "[[agent-stack-evolution]]"
   - "[[autonomous-research-loop]]"
+  - "[[harness]]"
   - "[[karpathy]]"
   - "[[nanochat]]"
 ---

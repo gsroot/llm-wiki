@@ -20,6 +20,7 @@ cited_by:
   - "[[anthropics-skills]]"
   - "[[autonomous-research-loop]]"
   - "[[claude-code]]"
+  - "[[harness]]"
   - "[[karpathy-autoresearch]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[seokgeun-kim]]"

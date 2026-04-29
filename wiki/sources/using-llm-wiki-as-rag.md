@@ -19,6 +19,7 @@ confidence: high
 cited_by:
   - "[[claude-code]]"
   - "[[claude-code-master-guide]]"
+  - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[llm-wiki-pattern]]"
   - "[[mcp]]"

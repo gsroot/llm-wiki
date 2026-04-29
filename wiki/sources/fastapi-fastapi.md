@@ -31,11 +31,13 @@ cited_by:
   - "[[anthropics-skills]]"
   - "[[backend-fastapi-stack]]"
   - "[[backend-python-fastapi]]"
+  - "[[c2spf-analytics]]"
   - "[[fastapi]]"
   - "[[github-spec-kit]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[openai-openai-cookbook]]"
   - "[[python]]"
+  - "[[seokgeun-kim]]"
   - "[[tiangolo]]"
 ---
 

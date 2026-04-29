@@ -16,8 +16,10 @@ related:
   - "[[agent-skills]]"
 confidence: high
 cited_by:
+  - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
   - "[[microsoft]]"
   - "[[microsoft-ai-agents-for-beginners]]"
   - "[[microsoft-for-beginners]]"

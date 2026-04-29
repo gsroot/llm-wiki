@@ -25,6 +25,8 @@ cited_by:
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
   - "[[anthropics-skills]]"
+  - "[[c2spf-analytics]]"
+  - "[[claude-code]]"
   - "[[dart]]"
   - "[[flutter]]"
   - "[[flutter-nextjs-fullstack-pattern]]"

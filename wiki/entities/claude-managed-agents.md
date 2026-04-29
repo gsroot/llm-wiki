@@ -14,7 +14,7 @@ related:
   - "[[token-economy]]"
 source_count: 1
 observed_source_refs: 5
-inbound_count: 12
+inbound_count: 15
 created: 2026-04-27
 updated: 2026-04-27
 ---

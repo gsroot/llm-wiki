@@ -29,6 +29,7 @@ cited_by:
   - "[[microsoft-web-dev-for-beginners]]"
   - "[[pandas-dev-pandas]]"
   - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
 ---
 
 # 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)

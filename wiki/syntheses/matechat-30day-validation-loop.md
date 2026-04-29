@@ -9,6 +9,7 @@ sources:
   - "[[mate-chat-project-wiki-2026]]"
 related:
   - "[[matechat]]"
+  - "[[matechat-business-validation]]"
   - "[[seokgeun-kim]]"
   - "[[seokgeun-operating-profile-2026]]"
   - "[[parental-leave-2026-operating-plan]]"

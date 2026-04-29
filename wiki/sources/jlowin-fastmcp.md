@@ -18,6 +18,7 @@ cited_by:
   - "[[agent-frameworks-matrix]]"
   - "[[agent-skills]]"
   - "[[fastmcp]]"
+  - "[[mcp]]"
   - "[[ml-ai]]"
   - "[[oss-saas-dual]]"
 ---

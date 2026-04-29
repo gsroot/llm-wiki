@@ -23,6 +23,7 @@ cited_by:
   - "[[kpi-recovery-loop]]"
   - "[[matechat]]"
   - "[[matechat-30day-validation-loop]]"
+  - "[[matechat-business-validation]]"
   - "[[matechat-project-knowledge-map]]"
   - "[[parental-leave-2026-operating-plan]]"
   - "[[portfolio]]"

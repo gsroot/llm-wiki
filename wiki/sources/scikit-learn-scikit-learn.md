@@ -16,7 +16,11 @@ related:
 confidence: high
 cited_by:
   - "[[anthropics-skills]]"
+  - "[[c2spf-analytics]]"
+  - "[[claude-code]]"
+  - "[[com2us-platform]]"
   - "[[github-spec-kit]]"
+  - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[microsoft-ml-for-beginners]]"
   - "[[ml-ai]]"

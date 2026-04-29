@@ -23,8 +23,8 @@ related:
   - "[[openai-cookbook]]"
   - "[[openai-agents-python]]"
 source_count: 8
-observed_source_refs: 40
-inbound_count: 138
+observed_source_refs: 58
+inbound_count: 168
 created: 2026-04-15
 updated: 2026-04-29
 cited_by:

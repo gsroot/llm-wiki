@@ -16,6 +16,7 @@ related:
 confidence: high
 cited_by:
   - "[[backend-python-fastapi]]"
+  - "[[c2spf-analytics]]"
   - "[[career-timeline-seokgeun]]"
   - "[[com2us-platform]]"
   - "[[frontend-react]]"

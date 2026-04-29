@@ -13,7 +13,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 11
-inbound_count: 42
+inbound_count: 47
 created: 2026-04-28
 updated: 2026-04-28
 verification_required: true

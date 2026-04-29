@@ -12,7 +12,7 @@ related:
   - "[[agent-patterns]]"
 source_count: 2
 observed_source_refs: 24
-inbound_count: 50
+inbound_count: 52
 created: 2026-04-15
 updated: 2026-04-27
 ---

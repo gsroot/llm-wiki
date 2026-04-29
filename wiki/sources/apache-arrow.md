@@ -19,6 +19,7 @@ confidence: high
 cited_by:
   - "[[apache-foundation]]"
   - "[[append-only-log]]"
+  - "[[c2spf-analytics]]"
   - "[[copy-on-write]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[duckdb]]"

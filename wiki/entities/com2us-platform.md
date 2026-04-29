@@ -9,8 +9,8 @@ related:
   - "[[c2spf-analytics]]"
   - "[[xpla-platform]]"
 source_count: 6
-observed_source_refs: 15
-inbound_count: 29
+observed_source_refs: 23
+inbound_count: 42
 created: 2026-04-24
 updated: 2026-04-24
 cited_by:

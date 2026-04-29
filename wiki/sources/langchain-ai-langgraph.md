@@ -19,6 +19,7 @@ cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
   - "[[langgraph]]"
+  - "[[mcp]]"
   - "[[ml-ai]]"
 ---
 

@@ -142,6 +142,28 @@ AXES: dict[str, list[str]] = {
     ],
 }
 
+# 49회차 P0-5 신설: 본문 정량 stale 경고
+# 본문에 박힌 `[[페이지명]](N)` 또는 `[[페이지명]](N, 1위)` 패턴이
+# 자동 측정 inbound와 delta가 크면 stale 가능성. 결함 아닌 정보 보고.
+BODY_STALE_INBOUND_RE = re.compile(
+    r"\[\[([a-z0-9][a-z0-9-]*)(?:\|[^\]]+)?\]\]\((\d+)(?:,\s*\d+위)?\)"
+)
+# 시점 라벨이 있는 줄은 의도된 역사 기록 — 검사 제외.
+SNAPSHOT_LABEL_KEYS: tuple[str, ...] = (
+    "회차 시점",
+    "회차 측정",
+    "당시",
+    "스냅샷",
+    "역사 기록",
+    "시점 인바운드",
+    "시점 스냅샷",
+)
+# delta 임계 — 이 이상 차이나면 정보 보고.
+BODY_STALE_DELTA_THRESHOLD: int = 5
+# 인바운드 통계 추정 상한 — body_value가 이보다 크면 연도·금액 등으로 간주, 검사 제외.
+# 위키 인바운드 현실적 최대값은 200대(agent-skills 등). 500 상한이면 충분한 안전 마진.
+BODY_STALE_VALUE_CEILING: int = 500
+
 
 @dataclass
 class WikiPage:
@@ -211,6 +233,11 @@ class LintResult:
     inbound: dict[str, int] = field(default_factory=dict)
     # 43회차 신설: 메타 페이지 rag_exclude 누락 결함
     meta_rag_exclude_missing: list[tuple[str, str]] = field(default_factory=list)
+    # 49회차 P0-5 신설: 본문 정량 stale 경고 (정보 보고, 결함 아님)
+    # (page_stem, target_stem, body_value, observed_value, delta)
+    body_stale_numbers: list[tuple[str, str, int, int, int]] = field(
+        default_factory=list
+    )
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
@@ -511,6 +538,36 @@ def lint(update: bool = False) -> LintResult:
         if not bool(fm.get("rag_exclude", False)):
             result.meta_rag_exclude_missing.append((rel_path, ptype))
 
+    # 49회차 P0-5 신설:
+    # 검증 11: 본문 정량 stale 경고
+    # `[[페이지명]](N)` 또는 `[[페이지명]](N, 1위)` 패턴이 본문에 있고
+    # 시점 라벨("28회차 시점", "당시", "스냅샷" 등)이 같은 줄에 없을 때
+    # 그 페이지의 자동 측정 inbound와 |delta| >= 5 이면 stale 가능성 정보 보고.
+    # 결함 아님 — has_defect()에 추가하지 않는다.
+    for page in pages:
+        if page.yaml_invalid or page.is_rag_excluded:
+            continue
+        for line in page.body.split("\n"):
+            if any(label in line for label in SNAPSHOT_LABEL_KEYS):
+                continue
+            for match in BODY_STALE_INBOUND_RE.finditer(line):
+                target_stem = match.group(1)
+                try:
+                    body_value = int(match.group(2))
+                except ValueError:
+                    continue
+                # 인바운드 통계 범위 밖이면 연도·금액 등 다른 숫자로 간주, 검사 제외.
+                if body_value > BODY_STALE_VALUE_CEILING:
+                    continue
+                observed = result.inbound.get(target_stem)
+                if observed is None or observed > BODY_STALE_VALUE_CEILING:
+                    continue
+                delta = observed - body_value
+                if abs(delta) >= BODY_STALE_DELTA_THRESHOLD:
+                    result.body_stale_numbers.append(
+                        (page.stem, target_stem, body_value, observed, delta)
+                    )
+
     return result
 
 
@@ -742,6 +799,29 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건 (모든 메타 페이지 rag_exclude:true)")
+
+    print(
+        "--- 11. 본문 정량 stale 경고 "
+        "(49회차 신설, 정보 보고 — 결함 아님) ---"
+    )
+    if result.body_stale_numbers:
+        print(
+            f"ℹ️ {len(result.body_stale_numbers)}건 "
+            f"(|delta| >= {BODY_STALE_DELTA_THRESHOLD}, 시점 라벨 없는 줄):"
+        )
+        for page_stem, target_stem, body_value, observed, delta in result.body_stale_numbers[:20]:
+            print(
+                f"    {page_stem}.md: [[{target_stem}]]({body_value}) "
+                f"— 자동 측정 {observed}, delta {delta:+d}"
+            )
+        if len(result.body_stale_numbers) > 20:
+            remainder = len(result.body_stale_numbers) - 20
+            print(f"    ... (생략 {remainder}건)")
+    else:
+        if not quiet:
+            print(
+                "✓ 0건 (본문 정량 단언이 자동 측정값과 정합 또는 시점 라벨 박힘)"
+            )
 
 
 def report_full(result: LintResult) -> None:

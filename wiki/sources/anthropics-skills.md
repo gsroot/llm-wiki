@@ -33,6 +33,7 @@ cited_by:
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[llm-wiki-pattern]]"
+  - "[[mcp]]"
   - "[[openai-openai-cookbook]]"
   - "[[pandas-dev-pandas]]"
   - "[[scikit-learn]]"

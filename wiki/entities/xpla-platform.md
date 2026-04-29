@@ -9,7 +9,7 @@ related:
   - "[[blockchain-xpla]]"
 source_count: 3
 observed_source_refs: 11
-inbound_count: 19
+inbound_count: 21
 created: 2026-04-24
 updated: 2026-04-24
 ---

@@ -12,7 +12,7 @@ related:
   - "[[nanogpt]]"
 source_count: 1
 observed_source_refs: 15
-inbound_count: 42
+inbound_count: 44
 created: 2026-04-27
 updated: 2026-04-27
 ---

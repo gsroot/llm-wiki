@@ -12,7 +12,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 2
-inbound_count: 19
+inbound_count: 25
 created: 2026-04-28
 updated: 2026-04-28
 tags: [deepagents, langchain-AI, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]

@@ -17,7 +17,7 @@ related:
   - "[[observability-and-cicd-stack]]"
 source_count: 8
 observed_source_refs: 17
-inbound_count: 40
+inbound_count: 43
 created: 2026-04-24
 updated: 2026-04-28
 ---

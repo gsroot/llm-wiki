@@ -16,6 +16,7 @@ related:
 tags: [shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차]
 confidence: high
 cited_by:
+  - "[[agent-skills]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[radix-ui]]"
   - "[[react]]"

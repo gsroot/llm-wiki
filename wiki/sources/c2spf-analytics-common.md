@@ -26,6 +26,7 @@ cited_by:
   - "[[data-pipeline-bigquery]]"
   - "[[devops-cicd]]"
   - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
 ---
 
 # 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)

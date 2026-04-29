@@ -20,7 +20,9 @@ related:
   - "[[agent-stack-evolution]]"
 confidence: high
 cited_by:
+  - "[[agent-skills]]"
   - "[[backend-fastapi-stack]]"
+  - "[[harness]]"
   - "[[python]]"
   - "[[ruff]]"
 ---

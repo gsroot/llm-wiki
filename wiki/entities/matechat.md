@@ -40,17 +40,20 @@ related:
   - "[[portfolio-seed]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 6
-observed_source_refs: 20
-inbound_count: 121
+observed_source_refs: 28
+inbound_count: 152
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "현재 v1.0.0 출시 직전 QA 단계 (44회차 owner 자기보고로 확정), QA 완료 후 Google Play 출시 예정. 39 SKILL 자작/외부 분류는 lock.json 재검증."
 cited_by:
+  - "[[agent-skills]]"
   - "[[alembic]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
   - "[[c2spf-analytics]]"
+  - "[[claude-code]]"
+  - "[[com2us-platform]]"
   - "[[crewai]]"
   - "[[deepagents]]"
   - "[[docker]]"
@@ -61,6 +64,7 @@ cited_by:
   - "[[flutter]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[grafana]]"
+  - "[[harness]]"
   - "[[kafka]]"
   - "[[kpi-recovery-loop]]"
   - "[[langchain]]"
@@ -69,8 +73,10 @@ cited_by:
   - "[[llm-infra-meta-cluster]]"
   - "[[mate-chat-project-wiki-2026]]"
   - "[[matechat-30day-validation-loop]]"
+  - "[[matechat-business-validation]]"
   - "[[matechat-chat-analysis-module]]"
   - "[[matechat-project-knowledge-map]]"
+  - "[[mcp]]"
   - "[[nextjs]]"
   - "[[openai-agents-python]]"
   - "[[pandas-ai]]"

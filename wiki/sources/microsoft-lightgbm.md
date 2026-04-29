@@ -15,6 +15,7 @@ related:
 confidence: high
 cited_by:
   - "[[apache-arrow]]"
+  - "[[c2spf-analytics]]"
   - "[[lightgbm]]"
   - "[[ml-ai]]"
   - "[[scikit-learn]]"

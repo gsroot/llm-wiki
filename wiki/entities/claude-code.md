@@ -19,8 +19,8 @@ related:
   - "[[spec-kit]]"
   - "[[spec-driven-development]]"
 source_count: 8
-observed_source_refs: 27
-inbound_count: 95
+observed_source_refs: 39
+inbound_count: 119
 created: 2026-04-09
 updated: 2026-04-29
 cited_by:

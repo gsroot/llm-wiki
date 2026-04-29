@@ -9,7 +9,7 @@ related:
   - "[[backend-python-fastapi]]"
 source_count: 3
 observed_source_refs: 10
-inbound_count: 16
+inbound_count: 17
 created: 2026-04-24
 updated: 2026-04-24
 ---

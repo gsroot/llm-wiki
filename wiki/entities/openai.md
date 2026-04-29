@@ -13,7 +13,7 @@ related:
   - "[[harness]]"
 source_count: 1
 observed_source_refs: 6
-inbound_count: 28
+inbound_count: 32
 created: 2026-04-27
 updated: 2026-04-27
 verification_required: true

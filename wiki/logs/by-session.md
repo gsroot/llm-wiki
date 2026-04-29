@@ -21,6 +21,9 @@ rag_exclude_reason: "회차 색인은 메타 운영 기록의 라우터. RAG 답
 
 | 회차 | 날짜 | 제목 | 직접 링크 |
 |---:|---|---|---|
+| **49** | 2026-04-29 | eval+feat | 외부+자체 평가 합집합 P0 5건 (5축 역방향 edge·정량 stale 정리·검증 경로·MateChat 사업검증·lint #11) | [[log#[2026-04-29] eval+feat | 49회차 P0 — 외부+자체 평가 합집합 P0 5건\|점프 →]] |
+| **48** | 2026-04-29 | feat+P0+P1 | P0+P1 통합본 (1·2축↔5축 sub-hub 8 edge / aliases 11 hub / 5축 hub 진입 / 실행형 synthesis 4건 / cited_by 11 확장) | (commit 916d81d / ae68f8e — P0+P1 squash 정책으로 log.md 별도 항목 미작성) |
+| **47** | 2026-04-29 | feat+infra | cited_by 자동 갱신 — citation chain 양방향화 | [[log#[2026-04-29] feat+infra | cited_by 자동 갱신 — citation chain 양방향화 (47회차)\|점프 →]] |
 | **44** | 2026-04-29 | docs+fix | MateChat 출시 상태 사실 정정 — 위키 전체 13곳 | [[log#[2026-04-29] docs+fix | MateChat 출시 상태 사실 정정 — 위키 전체 13곳 (44회차)\|점프 →]] |
 | **43** | 2026-04-29 | docs+infra+audit | Codex+자체 합집합 P0 5건 + P1 1건 | [[log#[2026-04-29] docs+infra+audit | Codex+자체 합집합 P0 5건 + P1 1건 (43회차)\|점프 →]] |
 | **42** | 2026-04-29 | docs+audit | stack-guide 32 도구 통일성 결함 보강 | [[log#[2026-04-29] docs+audit | stack-guide 32 도구 통일성 결함 보강 (42회차)\|점프 →]] |

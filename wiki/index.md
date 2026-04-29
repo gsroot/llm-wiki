@@ -2,8 +2,8 @@
 title: "위키 인덱스"
 type: index
 updated: 2026-04-29
-session: 48
-session_note: "P0+P1 통합본 — 1·2축↔5축 sub-hub 8 edge / aliases schema 11 hub / 한글 동의어 8건 / 5축 hub 진입 안내 / 실행형 synthesis 4건 신설 / long-tail 약자 풀이 잔여 31 / callout 14 / TL;DR 2 hub / cited_by hub 11 확장. 5축 우점 47.5%→44.7%."
+session: 49
+session_note: "외부+자체 평가 합집합 P0 5건 — 5축 hub 역방향 cross-axis 4 edge·hub 본문 정량 자동 필드 우선 참조·portfolio·c2spf 검증 경로 footnote·MateChat 사업 검증 sub-cluster 신설(matechat-business-validation)·wiki-lint 본문 정량 stale 경고 체크 #11. 5축 합산 690 (45.2%)."
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
 ---
@@ -17,11 +17,11 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 195 (48회차 +4 실행형 synthesis 신설)
+- 총 페이지 수: 196 (49회차 +1 사업 검증 synthesis 신설)
 - 소스 요약: 65
 - 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
 - 개념: 31
-- 종합 분석: 19 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]])
+- 종합 분석: 20 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]] / 49회차 [[matechat-business-validation]])
 
 ---
 

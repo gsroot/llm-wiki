@@ -12,7 +12,7 @@ related:
   - "[[pydantic]]"
 source_count: 2
 observed_source_refs: 10
-inbound_count: 25
+inbound_count: 29
 created: 2026-04-27
 updated: 2026-04-28
 ---

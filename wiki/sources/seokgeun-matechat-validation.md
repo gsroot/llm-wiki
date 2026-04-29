@@ -19,7 +19,9 @@ tags: [matechat, validation, kpi, release-checklist, competitive-analysis, reven
 cited_by:
   - "[[matechat]]"
   - "[[matechat-30day-validation-loop]]"
+  - "[[matechat-business-validation]]"
   - "[[seokgeun-mate-chat]]"
+  - "[[seokgeun-stack-guide]]"
 ---
 
 # MateChat v1.0 검증·출시 자료 (26회차 보강 수집)

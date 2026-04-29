@@ -19,6 +19,7 @@ related:
 confidence: high
 cited_by:
   - "[[apache-arrow]]"
+  - "[[c2spf-analytics]]"
   - "[[copy-on-write]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[lakehouse]]"

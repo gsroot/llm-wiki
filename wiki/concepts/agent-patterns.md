@@ -24,7 +24,7 @@ related:
   - "[[pydantic-ai]]"
 source_count: 7
 observed_source_refs: 22
-inbound_count: 63
+inbound_count: 66
 created: 2026-04-27
 updated: 2026-04-28
 ---

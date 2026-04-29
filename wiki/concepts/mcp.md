@@ -14,8 +14,8 @@ related:
   - "[[context-engineering]]"
   - "[[agent-patterns]]"
 source_count: 6
-observed_source_refs: 39
-inbound_count: 105
+observed_source_refs: 53
+inbound_count: 131
 created: 2026-04-09
 updated: 2026-04-29
 cited_by:

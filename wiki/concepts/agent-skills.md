@@ -37,8 +37,8 @@ related:
   - "[[shadcn-ui]]"
   - "[[vercel]]"
 source_count: 16
-observed_source_refs: 47
-inbound_count: 152
+observed_source_refs: 70
+inbound_count: 188
 created: 2026-04-27
 updated: 2026-04-29
 cited_by:

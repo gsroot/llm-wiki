@@ -17,6 +17,7 @@ confidence: high
 cited_by:
   - "[[apache-foundation]]"
   - "[[append-only-log]]"
+  - "[[c2spf-analytics]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[event-driven-architecture]]"
   - "[[kafka]]"

@@ -14,7 +14,7 @@ related:
   - "[[anthropics-skills]]"
 source_count: 1
 observed_source_refs: 5
-inbound_count: 22
+inbound_count: 25
 created: 2026-04-27
 updated: 2026-04-27
 ---

@@ -15,7 +15,9 @@ related:
 tags: [riverpod, flutter, dart, state-management, reactive, dependency-injection, 22회차]
 confidence: high
 cited_by:
+  - "[[agent-skills]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[matechat]]"
   - "[[react]]"
   - "[[riverpod]]"
 ---

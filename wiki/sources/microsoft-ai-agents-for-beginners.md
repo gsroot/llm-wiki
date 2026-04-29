@@ -19,6 +19,7 @@ confidence: high
 cited_by:
   - "[[agent-stack-evolution]]"
   - "[[context-engineering]]"
+  - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[mcp]]"
   - "[[microsoft]]"

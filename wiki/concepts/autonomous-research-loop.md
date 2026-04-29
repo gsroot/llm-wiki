@@ -13,7 +13,7 @@ related:
   - "[[karpathy]]"
 source_count: 2
 observed_source_refs: 19
-inbound_count: 56
+inbound_count: 58
 created: 2026-04-27
 updated: 2026-04-27
 ---

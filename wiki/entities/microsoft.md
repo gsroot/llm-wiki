@@ -10,7 +10,7 @@ related:
   - "[[agent-skills]]"
 source_count: 5
 observed_source_refs: 15
-inbound_count: 35
+inbound_count: 38
 created: 2026-04-27
 updated: 2026-04-27
 ---

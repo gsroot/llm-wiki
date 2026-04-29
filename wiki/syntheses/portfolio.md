@@ -26,12 +26,20 @@ related:
 created: 2026-04-29
 updated: 2026-04-29
 cited_by:
+  - "[[agent-skills]]"
+  - "[[c2spf-analytics]]"
   - "[[c2spf-analytics-common]]"
   - "[[c2spf-analytics-renewal]]"
   - "[[c2spf-nft-market]]"
   - "[[c2spf-xpla-platform]]"
+  - "[[claude-code]]"
+  - "[[harness]]"
   - "[[kpi-recovery-loop]]"
+  - "[[llm-infra-meta-cluster]]"
   - "[[mate-chat-project-wiki-2026]]"
+  - "[[matechat]]"
+  - "[[matechat-business-validation]]"
+  - "[[mcp]]"
   - "[[nextjs]]"
   - "[[parental-leave-2026-operating-plan]]"
   - "[[portfolio-ko]]"
@@ -40,6 +48,7 @@ cited_by:
   - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
   - "[[seokgeun-operating-profile-2026]]"
+  - "[[seokgeun-stack-guide]]"
 ---
 
 # 포트폴리오 (Portfolio Hub)
@@ -84,7 +93,15 @@ cited_by:
 
 ### Layer 3: STAR 스토리 + 증거 기반 metric ([[portfolio-method]])
 
-`portfolio/40-stories/`의 모든 스토리는 STAR(Situation/Task/Action/Result) 프레임워크로 기록되며, Result에 반드시 정량 metric이 들어간다 (예: "1,111 누계 커밋", "39 SKILL 통합", "85% ML 정확도"). `frontmatter.sources{}` 필드가 각 주장의 원천 증거 링크를 강제하여 "근거 없는 주장" 방지.
+`portfolio/40-stories/`의 모든 스토리는 STAR(Situation/Task/Action/Result) 프레임워크로 기록되며, Result에 반드시 정량 metric이 들어간다. 핵심 정량 주장 3건은 다음과 같은 검증 경로를 가진다 (49회차 P0-3 명시화):
+
+| 주장 | 값 | 재현 경로 |
+|---|---|---|
+| c2spf 조직 본인 커밋 누계 | 1,111건 | `git log --author='석근' --oneline \| wc -l` (c2spf 조직 모든 리포지토리 합) |
+| MateChat 통합 SKILL | 39개 (자작 11 + 외부 28) | `find mate-chat/.agents/skills -name 'SKILL.md' \| wc -l` 또는 `skills-lock.json § dependencies` |
+| ML 유저 예측 평균 정확도 | 85%+ | GCP AutoML `evaluation_dashboard` 또는 `model_evaluation.json` |
+
+`frontmatter.sources{}` 필드가 각 주장의 원천 증거 링크를 강제하여 "근거 없는 주장" 방지. RAG 답변 시 위 명령/경로를 함께 인용하면 사용자가 즉시 재현 가능.
 
 ### Layer 4: c2spf(회사) ↔ MateChat(사이드) 쌍 검증
 

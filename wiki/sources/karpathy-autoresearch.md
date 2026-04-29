@@ -22,6 +22,7 @@ cited_by:
   - "[[astral-sh-uv]]"
   - "[[autonomous-research-loop]]"
   - "[[autoresearch]]"
+  - "[[claude-code]]"
   - "[[context-engineering]]"
   - "[[harness]]"
   - "[[karpathy]]"

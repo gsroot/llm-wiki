@@ -13,7 +13,7 @@ related:
   - "[[microsoft]]"
 source_count: 4
 observed_source_refs: 10
-inbound_count: 50
+inbound_count: 54
 created: 2026-04-27
 updated: 2026-04-27
 ---
