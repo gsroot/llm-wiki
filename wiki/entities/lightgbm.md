@@ -61,7 +61,7 @@ updated: 2026-04-28
 > "2017년 NeurIPS 논문이 표준이 된 GBDT 프레임워크. C++로 구현된 코어 + 다국어 바인딩 + 2026년 3월 Microsoft에서 lightgbm-org로 조직 졸업한 거버넌스 사례."
 > — [[microsoft-lightgbm]] 한줄 요약
 
-[[seokgeun-stack-guide]] ML 영역의 GBDT 표준. [[c2spf-analytics]] BI 시스템에서 유저 예측 모델 후보(현재는 GCP AutoML 사용, 자체 제어 필요 시 LightGBM 차용 후보). **EffVer 버전 체계 + Microsoft 졸업**이 OSS 거버넌스 9번째 모델로 위키에 등록 — [[bdfl]]·[[pdep]]와 함께 거버넌스 카탈로그.
+[[seokgeun-stack-guide]] ML 영역의 GBDT 표준. [[c2spf-analytics]] BI 시스템에서 유저 예측 모델 후보(현재는 GCP AutoML 사용, 자체 제어 필요 시 LightGBM 차용 후보). [[matechat]] 사이드의 채팅 분석 모듈 ML 후보 ([[scikit-learn]]·[[pandas]]와 함께 데이터 분석 본진). **EffVer 버전 체계 + Microsoft 졸업**은 [[llm-infra-meta-cluster]] 5축의 OSS 거버넌스 카탈로그 9번째 모델 — [[bdfl]]·[[pdep]] 등과 함께 거버넌스 다양성 사례.
 
 ## 출처
 

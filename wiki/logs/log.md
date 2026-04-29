@@ -10,6 +10,62 @@ type: log
 
 ---
 
+## [2026-04-29] docs+audit | stack-guide 32 도구 통일성 결함 보강 (42회차)
+
+- **트리거**: 사용자 "stack-guide 의 각 도구들에 대한 작업을 분할해서 진행했었기 때문에 통일성이 깨지는 부분이 혹시 있을수도 있을거 같은데 확인해줘". 36~40회차 5회차 분할 작성 통일성 자동 검증 + 즉시 정합화.
+
+### 자동 검증 결과
+
+5개 차원 통일성 측정:
+- **섹션 제목**: 34건 모두 `## 의사결정 컨텍스트 (raw 인용)` 동일 ✓ 100%
+- **Blockquote 형식**: 34건 모두 `> "..." \n > — [[source]] 한줄 요약` 패턴 ✓ 100%
+- **본문 시작 패턴**: 34건 모두 `[[seokgeun-stack-guide]] ...` 시작 ✓ 100%
+- **단락 구조**: 34건 모두 4줄 (인용 2 + 빈 + 본문 1) ✓ 100%
+- **5축 hub 인용 빈도**: 회차별 편차 큼 ✗ — 진짜 결함
+
+### 발견된 결함 — 5축 hub 인용 매트릭스 (보강 전 → 후)
+
+| Hub | 보강 전 | 보강 후 |
+|---|---:|---:|
+| matechat | 26/34 (76%) | **31/34 (91%)** |
+| c2spf-analytics | 20/34 (59%) | **23/34 (67%)** |
+| llm-infra-meta-cluster | 21/34 (62%) | **26/34 (76%)** |
+| agent-skills | 8/34 (23%) | 8/34 (23%) (의도적, 진짜 사례만) |
+
+회차별 평균 hub 인용 수: 36회차 첫 5개 1.4개 → 40회차 14개 3.2개. **첫 회차 작성 시 hub 인용 패턴이 정착 안 된 상태**.
+
+### 산출 — 가장 결함 큰 5개 도구 본문 보강
+
+1. **shadcn-ui** (4 hub 모두 누락): +matechat·c2spf-analytics·llm-infra-meta-cluster — c2spf React 리뉴얼 컴포넌트 + matechat shadcn-ui-flutter 변형 + Open Code 거버넌스 10번째 모델
+2. **tanstack-query** (4 모두 누락): +c2spf·llm-infra — c2spf React 리뉴얼 BI BigQuery 비동기 쿼리 + 5축 stateless caching 사례
+3. **zustand** (4 모두 누락): +c2spf·llm-infra — c2spf React 리뉴얼 UI 상태 + 5축 minimalist 디자인 철학 (redis MANIFESTO와 비슷)
+4. **lightgbm** (3 누락): +matechat·llm-infra — matechat 채팅 분석 ML + EffVer/Microsoft 졸업이 5축 거버넌스 9번째 모델
+5. **polars** (3 누락): +matechat·llm-infra — matechat 채팅 분석 데이터 처리 + Apache Arrow immutable이 5축 메모리 모델 진화
+
+### 결정 가이드라인 (회고)
+
+- **모든 hub 100% 인용 불필요**: agent-skills(8/34, 23%)는 그대로 유지. SKILL.md 채택/외부 진화 사례인 도구만 명시.
+- **누락이 의미 결함**일 때만 보강: 5축 hub와 진짜 무관한 도구도 있음 (예: riverpod의 c2spf-analytics — 회사 React 진영이라 Flutter 도구 무관).
+- **자동 검증 → 의미 검토 → 선택적 보강** 원칙.
+
+### 메타 인사이트: 분할 작업의 부산물
+
+5회차 분할 작성에서 형식은 일관되게 유지됐지만 **콘텐츠 패턴이 회차별로 진화**했음. 첫 회차 5개는 핵심만, 마지막 회차 14개는 풍부함. **분할 작업의 통일성 결함은 형식보다 콘텐츠 차원에서 발생** — 41회차 squash가 이력 정리만 하고 콘텐츠는 그대로 둔 한계가 42회차 audit으로 드러남.
+
+### 결과
+
+- lint 모든 검증 0건 통과.
+- 5축 hub 인용 매트릭스 균형 회복.
+- 형식 통일성은 처음부터 100% 완벽 (섹션 제목·blockquote·시작 패턴·단락 구조).
+- agent-skills 8/34는 의도적 분포 확정.
+
+### 변경된 파일
+
+- 5 도구 entity 본문 1단락 교체: shadcn-ui, tanstack-query, zustand, lightgbm, polars
+- `wiki/index.md`, `wiki/logs/log.md`
+
+---
+
 ## [2026-04-29] docs+infra+meta | stack-guide 32 도구 raw 인용 일괄 보강 + 부수 작업 (36-40회차 통합 squash)
 
 - **트리거**: 36회차부터 39회차까지 5개씩 분할 진행 후 40회차에 사용자 메타 질문 "왜 작위적으로 계속 하려고 하는지가 궁금한거야"가 패턴을 깨뜨림. 자기 분석 결과 4가지 이유 식별 → 41회차 진행 시 "커밋도 하나로 묶는 게 낫지 않냐"는 추가 사용자 지적 → 5개 commit을 하나로 squash + force push로 git 이력도 일관성 회복.

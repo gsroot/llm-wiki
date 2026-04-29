@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (36-40회차 통합 / stack-guide 32 도구 100% 보강 + lint 검증 8·9 + 워크플로우 5번 + 5분할 패턴 종료, squash 정리)
+updated: 2026-04-29 (42회차 / 5분할 작성 통일성 결함 5개 도구 hub 인용 정합화 — shadcn-ui·tanstack-query·zustand·lightgbm·polars)
 ---
 
 # 위키 인덱스
