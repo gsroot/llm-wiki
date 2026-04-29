@@ -48,69 +48,7 @@ updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "현재 v1.0.0 출시 직전 QA 단계 (44회차 owner 자기보고로 확정), QA 완료 후 Google Play 출시 예정. 39 SKILL 자작/외부 분류는 lock.json 재검증."
-cited_by:
-  - "[[agent-skills]]"
-  - "[[alembic]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[c2spf-analytics]]"
-  - "[[claude-code]]"
-  - "[[com2us-platform]]"
-  - "[[crewai]]"
-  - "[[deepagents]]"
-  - "[[docker]]"
-  - "[[duckdb]]"
-  - "[[event-driven-architecture]]"
-  - "[[fastapi]]"
-  - "[[fastmcp]]"
-  - "[[flutter]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[grafana]]"
-  - "[[harness]]"
-  - "[[kafka]]"
-  - "[[kpi-recovery-loop]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[lightgbm]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[matechat-business-validation]]"
-  - "[[matechat-chat-analysis-module]]"
-  - "[[matechat-project-knowledge-map]]"
-  - "[[mcp]]"
-  - "[[nextjs]]"
-  - "[[openai-agents-python]]"
-  - "[[pandas-ai]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[parquet]]"
-  - "[[polars]]"
-  - "[[portfolio]]"
-  - "[[portfolio-ko]]"
-  - "[[portfolio-resume-ko]]"
-  - "[[portfolio-seed]]"
-  - "[[postgresql]]"
-  - "[[prometheus]]"
-  - "[[pydantic]]"
-  - "[[pydantic-ai]]"
-  - "[[redis]]"
-  - "[[riverpod]]"
-  - "[[rrousselGit-riverpod]]"
-  - "[[ruff]]"
-  - "[[sentry]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-matechat-validation]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[shadcn-ui]]"
-  - "[[sqlalchemy]]"
-  - "[[sqlite]]"
-  - "[[tailwindcss]]"
-  - "[[tanstack-query]]"
-  - "[[uv]]"
-  - "[[zustand]]"
+cited_by_count: 63
 ---
 
 # MateChat
@@ -292,3 +230,70 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 - 포지셔닝 문장은 "AI 친구 앱"보다 "AI가 사람 친구를 만들어주는 앱" 쪽이 핵심 가설과 더 잘 맞는다.
 - 사업화가 가족 시간 확보 전략과 직접 연결되어 있으므로, 운영 계획에는 개발뿐 아니라 마케팅·QA·지표 분석·번아웃 방지 루틴이 함께 들어가야 한다.
 - `mate-chat` slug는 이 페이지로 병합 완료. 앞으로 새 링크는 `[[matechat]]`을 사용한다.
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-skills]]
+- [[alembic]]
+- [[backend-fastapi-stack]]
+- [[c2spf-ai-agent-adoption-candidates]]
+- [[c2spf-analytics]]
+- [[claude-code]]
+- [[com2us-platform]]
+- [[crewai]]
+- [[deepagents]]
+- [[docker]]
+- [[duckdb]]
+- [[event-driven-architecture]]
+- [[fastapi]]
+- [[fastmcp]]
+- [[flutter]]
+- [[flutter-nextjs-fullstack-pattern]]
+- [[grafana]]
+- [[harness]]
+- [[kafka]]
+- [[kpi-recovery-loop]]
+- [[langchain]]
+- [[langgraph]]
+- [[lightgbm]]
+- [[llm-infra-meta-cluster]]
+- [[mate-chat-project-wiki-2026]]
+- [[matechat-30day-validation-loop]]
+- [[matechat-business-validation]]
+- [[matechat-chat-analysis-module]]
+- [[matechat-launch-metrics-ledger]]
+- [[matechat-project-knowledge-map]]
+- [[mcp]]
+- [[nextjs]]
+- [[openai-agents-python]]
+- [[pandas-ai]]
+- [[parental-leave-2026-operating-plan]]
+- [[parquet]]
+- [[polars]]
+- [[portfolio]]
+- [[portfolio-ko]]
+- [[portfolio-resume-ko]]
+- [[portfolio-seed]]
+- [[postgresql]]
+- [[prometheus]]
+- [[pydantic]]
+- [[pydantic-ai]]
+- [[redis]]
+- [[riverpod]]
+- [[rrousselGit-riverpod]]
+- [[ruff]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-kim-profile-2026]]
+- [[seokgeun-mate-chat]]
+- [[seokgeun-matechat-validation]]
+- [[seokgeun-operating-profile-2026]]
+- [[seokgeun-stack-guide]]
+- [[shadcn-ui]]
+- [[sqlalchemy]]
+- [[sqlite]]
+- [[tailwindcss]]
+- [[tanstack-query]]
+- [[uv]]
+- [[zustand]]
+

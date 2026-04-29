@@ -36,77 +36,18 @@ related:
   - "[[nextjs]]"
   - "[[shadcn-ui]]"
   - "[[vercel]]"
+  - "[[seokgeun-kim]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 16
 observed_source_refs: 70
 inbound_count: 188
 created: 2026-04-27
 updated: 2026-04-29
-cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[anthropic]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[astral]]"
-  - "[[astral-sh-ruff]]"
-  - "[[astral-sh-uv]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[claude-agent-sdk]]"
-  - "[[claude-code]]"
-  - "[[deepagents]]"
-  - "[[devops-cicd]]"
-  - "[[fastapi]]"
-  - "[[fastapi-fastapi]]"
-  - "[[fastmcp]]"
-  - "[[flutter]]"
-  - "[[flutter-flutter]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[getsentry-sentry]]"
-  - "[[github]]"
-  - "[[github-spec-kit]]"
-  - "[[grafana]]"
-  - "[[grafana-grafana]]"
-  - "[[harness]]"
-  - "[[jlowin-fastmcp]]"
-  - "[[langchain]]"
-  - "[[langchain-ai-deepagents]]"
-  - "[[langchain-ai-langchain]]"
-  - "[[langchain-ai-langgraph]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[matechat]]"
-  - "[[mcp]]"
-  - "[[microsoft]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
-  - "[[nextjs]]"
-  - "[[observability]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[openai]]"
-  - "[[openai-agents-python]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[portfolio]]"
-  - "[[prometheus]]"
-  - "[[prometheus-prometheus]]"
-  - "[[pydantic-ai]]"
-  - "[[pydantic-pydantic-ai]]"
-  - "[[rrousselGit-riverpod]]"
-  - "[[ruff]]"
-  - "[[scikit-learn]]"
-  - "[[sentry]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[shadcn-ui]]"
-  - "[[shadcn-ui-ui]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[spec-driven-development]]"
-  - "[[spec-kit]]"
-  - "[[tiangolo]]"
-  - "[[uv]]"
-  - "[[vercel]]"
-  - "[[vercel-next.js]]"
+cited_by_count: 65
 ---
 
 # Agent Skills (SKILL.md 패키지)
@@ -350,3 +291,72 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - **Skill 자동 진화**: skill-creator의 description 최적화 루프를 본문(body)까지 확장 가능한가? 아니면 본문 변경은 사람이 검토해야 하는가?
 - **위키와의 양방향성**: SKILL.md가 위키 페이지를 Read하는 건 가능. 위키 페이지가 SKILL.md를 참조 인용하는 건? (지금 이 페이지가 그 첫 시도)
 - **Cross-skill composition**: 한 스킬이 다른 스킬을 호출하는 패턴은 표준에 정의되어 있는가? skill-creator는 자기 안에서 grader·comparator·analyzer 서브에이전트를 spawn하는데, 이게 일반화되는가?
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-stack-evolution]]
+- [[anthropic]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[astral]]
+- [[astral-sh-ruff]]
+- [[astral-sh-uv]]
+- [[backend-fastapi-stack]]
+- [[c2spf-ai-agent-adoption-candidates]]
+- [[claude-agent-sdk]]
+- [[claude-code]]
+- [[deepagents]]
+- [[devops-cicd]]
+- [[fastapi]]
+- [[fastapi-fastapi]]
+- [[fastmcp]]
+- [[flutter]]
+- [[flutter-flutter]]
+- [[flutter-nextjs-fullstack-pattern]]
+- [[getsentry-sentry]]
+- [[github]]
+- [[github-spec-kit]]
+- [[grafana]]
+- [[grafana-grafana]]
+- [[harness]]
+- [[jlowin-fastmcp]]
+- [[langchain]]
+- [[langchain-ai-deepagents]]
+- [[langchain-ai-langchain]]
+- [[langchain-ai-langgraph]]
+- [[llm-infra-meta-cluster]]
+- [[llm-wiki-pattern]]
+- [[matechat]]
+- [[mcp]]
+- [[microsoft]]
+- [[microsoft-generative-ai-for-beginners]]
+- [[nextjs]]
+- [[observability]]
+- [[observability-and-cicd-stack]]
+- [[openai]]
+- [[openai-agents-python]]
+- [[openai-cookbook]]
+- [[openai-openai-agents-python]]
+- [[openai-openai-cookbook]]
+- [[portfolio]]
+- [[prometheus]]
+- [[prometheus-prometheus]]
+- [[pydantic-ai]]
+- [[pydantic-pydantic-ai]]
+- [[rrousselGit-riverpod]]
+- [[ruff]]
+- [[scikit-learn]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-mate-chat]]
+- [[seokgeun-operating-profile-2026]]
+- [[shadcn-ui]]
+- [[shadcn-ui-ui]]
+- [[slash-commands-vs-agent-skills]]
+- [[spec-driven-development]]
+- [[spec-kit]]
+- [[tiangolo]]
+- [[uv]]
+- [[vercel]]
+- [[vercel-next.js]]
+

@@ -22,50 +22,7 @@ observed_source_refs: 35
 inbound_count: 91
 created: 2026-04-24
 updated: 2026-04-29
-cited_by:
-  - "[[agent-skills]]"
-  - "[[astral]]"
-  - "[[astral-sh-uv]]"
-  - "[[backend-python-fastapi]]"
-  - "[[blockchain-xpla]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[c2spf-analytics]]"
-  - "[[c2spf-analytics-common]]"
-  - "[[c2spf-analytics-renewal]]"
-  - "[[c2spf-nft-market]]"
-  - "[[c2spf-xpla-platform]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[claude-code]]"
-  - "[[com2us-platform]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[devops-cicd]]"
-  - "[[fastapi]]"
-  - "[[fastapi-fastapi]]"
-  - "[[frontend-react]]"
-  - "[[harness]]"
-  - "[[kpi-recovery-loop]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[matechat]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[matechat-business-validation]]"
-  - "[[mcp]]"
-  - "[[ml-ai]]"
-  - "[[obsidian-guide]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[portfolio]]"
-  - "[[portfolio-ko]]"
-  - "[[portfolio-method]]"
-  - "[[portfolio-resume-ko]]"
-  - "[[portfolio-seed]]"
-  - "[[python-packaging]]"
-  - "[[riverpod]]"
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[using-llm-wiki-as-rag]]"
-  - "[[uv]]"
-  - "[[xpla-platform]]"
+cited_by_count: 44
 ---
 
 # 김석근 (Seokgeun Kim)
@@ -160,3 +117,51 @@ cited_by:
 - AI에게 기대하는 역할은 개발 동료를 넘어 개인 비서, 사업 전략 파트너, 마케팅 파트너, 일정 관리자, 냉정한 피드백 제공자까지 확장된다.
 - AI 호칭은 회사 직급 호칭보다 친구처럼 자연스러운 "석근" 또는 이름 호칭을 선호한다.
 - MateChat 관련 의사결정에서는 기능 추가보다 실제 사용자 검증과 지속 가능한 운영 리듬을 우선한다.
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-skills]]
+- [[astral]]
+- [[astral-sh-uv]]
+- [[backend-python-fastapi]]
+- [[blockchain-xpla]]
+- [[c2spf-ai-agent-adoption-candidates]]
+- [[c2spf-analytics]]
+- [[c2spf-analytics-common]]
+- [[c2spf-analytics-renewal]]
+- [[c2spf-nft-market]]
+- [[c2spf-xpla-platform]]
+- [[career-timeline-seokgeun]]
+- [[claude-code]]
+- [[com2us-platform]]
+- [[data-pipeline-bigquery]]
+- [[devops-cicd]]
+- [[fastapi]]
+- [[fastapi-fastapi]]
+- [[frontend-react]]
+- [[harness]]
+- [[kpi-recovery-loop]]
+- [[llm-infra-meta-cluster]]
+- [[matechat]]
+- [[matechat-30day-validation-loop]]
+- [[matechat-business-validation]]
+- [[matechat-launch-metrics-ledger]]
+- [[mcp]]
+- [[ml-ai]]
+- [[obsidian-guide]]
+- [[parental-leave-2026-operating-plan]]
+- [[portfolio]]
+- [[portfolio-ko]]
+- [[portfolio-method]]
+- [[portfolio-resume-ko]]
+- [[portfolio-seed]]
+- [[python-packaging]]
+- [[riverpod]]
+- [[seokgeun-kim-profile-2026]]
+- [[seokgeun-operating-profile-2026]]
+- [[seokgeun-stack-guide]]
+- [[slash-commands-vs-agent-skills]]
+- [[using-llm-wiki-as-rag]]
+- [[uv]]
+- [[xpla-platform]]
+

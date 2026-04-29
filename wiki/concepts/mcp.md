@@ -13,53 +13,20 @@ related:
   - "[[microsoft-for-beginners]]"
   - "[[context-engineering]]"
   - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[seokgeun-kim]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 6
 observed_source_refs: 53
 inbound_count: 131
 created: 2026-04-09
 updated: 2026-04-29
-cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropic]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[claude-agent-sdk]]"
-  - "[[claude-code]]"
-  - "[[claude-code-master-guide]]"
-  - "[[claude-code-overview]]"
-  - "[[claude-managed-agents]]"
-  - "[[context-engineering]]"
-  - "[[fastapi]]"
-  - "[[fastmcp]]"
-  - "[[harness]]"
-  - "[[jlowin-fastmcp]]"
-  - "[[langchain]]"
-  - "[[langchain-ai-langchain]]"
-  - "[[langchain-ai-langgraph]]"
-  - "[[langgraph]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[llm-wiki-idea-doc]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[matechat]]"
-  - "[[microsoft]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[obsidian-guide]]"
-  - "[[openai]]"
-  - "[[openai-agents-python]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[portfolio]]"
-  - "[[qmd]]"
-  - "[[seokgeun-kim]]"
-  - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 41
 ---
 
 # MCP (Model Context Protocol)
@@ -168,3 +135,48 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 ## 열린 질문
 
 - MCP 서버를 직접 만들어 위키 전용 도구(페이지 생성, 링크 체크 등)를 노출하면 수집 워크플로우를 더 자동화할 수 있을까?
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-frameworks-matrix]]
+- [[agent-patterns]]
+- [[agent-skills]]
+- [[agent-stack-evolution]]
+- [[anthropic]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[backend-fastapi-stack]]
+- [[claude-agent-sdk]]
+- [[claude-code]]
+- [[claude-code-master-guide]]
+- [[claude-code-overview]]
+- [[claude-managed-agents]]
+- [[context-engineering]]
+- [[fastapi]]
+- [[fastmcp]]
+- [[harness]]
+- [[jlowin-fastmcp]]
+- [[langchain]]
+- [[langchain-ai-langchain]]
+- [[langchain-ai-langgraph]]
+- [[langgraph]]
+- [[llm-infra-meta-cluster]]
+- [[llm-wiki-idea-doc]]
+- [[llm-wiki-pattern]]
+- [[matechat]]
+- [[microsoft]]
+- [[microsoft-ai-agents-for-beginners]]
+- [[microsoft-for-beginners]]
+- [[microsoft-generative-ai-for-beginners]]
+- [[ml-ai]]
+- [[obsidian-guide]]
+- [[openai]]
+- [[openai-agents-python]]
+- [[openai-cookbook]]
+- [[openai-openai-agents-python]]
+- [[openai-openai-cookbook]]
+- [[portfolio]]
+- [[qmd]]
+- [[seokgeun-kim]]
+- [[using-llm-wiki-as-rag]]
+

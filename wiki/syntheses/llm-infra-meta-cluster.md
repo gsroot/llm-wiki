@@ -35,63 +35,7 @@ created: 2026-04-28
 updated: 2026-04-28
 aliases: [LLM 인프라 메타 클러스터, llm-infra-meta-cluster, 5축 hub, LLM 인프라 메타, agent infra meta]
 tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis]
-cited_by:
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[astral-sh-uv]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[c2spf-analytics]]"
-  - "[[claude-code]]"
-  - "[[crewai]]"
-  - "[[deepagents]]"
-  - "[[fastapi]]"
-  - "[[fastapi-fastapi]]"
-  - "[[fastmcp]]"
-  - "[[flutter]]"
-  - "[[flutter-flutter]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[github-spec-kit]]"
-  - "[[harness]]"
-  - "[[kafka]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[lightgbm]]"
-  - "[[matechat]]"
-  - "[[matechat-business-validation]]"
-  - "[[mcp]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
-  - "[[nextjs]]"
-  - "[[obsidian-guide]]"
-  - "[[openai-agents-python]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[pandas]]"
-  - "[[pandas-ai]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[polars]]"
-  - "[[portfolio]]"
-  - "[[portfolio-seed]]"
-  - "[[postgresql]]"
-  - "[[prometheus]]"
-  - "[[pyarrow]]"
-  - "[[pydantic]]"
-  - "[[pydantic-ai]]"
-  - "[[redis]]"
-  - "[[ruff]]"
-  - "[[scikit-learn]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[sentry]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[shadcn-ui]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[tanstack-query]]"
-  - "[[using-llm-wiki-as-rag]]"
-  - "[[zustand]]"
+cited_by_count: 57
 ---
 
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
@@ -258,3 +202,64 @@ cited_by:
 - 본 페이지는 27회차 6기준 재평가에서 식별된 5번째 축을 28회차 #3에서 명시화한 산출.
 - 향후 OSS 수집 시 본 페이지의 12단계 진화 / 6 harness 축 / 10 거버넌스 모델 매트릭스에 신규 OSS를 매핑하는 것이 매 회차 표준 절차로 격상 권장.
 - 본 페이지의 인바운드는 28회차 신설 직후 0에서 자라 49회차 P0-1 직후 84로 도달했고, 이는 본 위키가 "메타 거버넌스 시스템"으로 진화했다는 직접 증거다. 현재 측정은 `python3 scripts/wiki-lint.py --report`로 재산출 가능.
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-skills]]
+- [[agent-stack-evolution]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[astral-sh-uv]]
+- [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
+- [[claude-code]]
+- [[crewai]]
+- [[deepagents]]
+- [[fastapi]]
+- [[fastapi-fastapi]]
+- [[fastmcp]]
+- [[flutter]]
+- [[flutter-flutter]]
+- [[flutter-nextjs-fullstack-pattern]]
+- [[github-spec-kit]]
+- [[harness]]
+- [[kafka]]
+- [[langchain]]
+- [[langgraph]]
+- [[lightgbm]]
+- [[matechat]]
+- [[matechat-business-validation]]
+- [[matechat-launch-metrics-ledger]]
+- [[mcp]]
+- [[microsoft-ai-agents-for-beginners]]
+- [[microsoft-generative-ai-for-beginners]]
+- [[nextjs]]
+- [[obsidian-guide]]
+- [[openai-agents-python]]
+- [[openai-openai-agents-python]]
+- [[openai-openai-cookbook]]
+- [[pandas]]
+- [[pandas-ai]]
+- [[pandas-dev-pandas]]
+- [[polars]]
+- [[portfolio]]
+- [[portfolio-seed]]
+- [[postgresql]]
+- [[prometheus]]
+- [[pyarrow]]
+- [[pydantic]]
+- [[pydantic-ai]]
+- [[redis]]
+- [[ruff]]
+- [[scikit-learn]]
+- [[scikit-learn-scikit-learn]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-operating-profile-2026]]
+- [[seokgeun-stack-guide]]
+- [[shadcn-ui]]
+- [[slash-commands-vs-agent-skills]]
+- [[tanstack-query]]
+- [[using-llm-wiki-as-rag]]
+- [[zustand]]
+

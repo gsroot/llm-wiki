@@ -28,7 +28,13 @@ CHECKS:
        카테고리(agent/에이전트 등) 한쪽만 있으면 경고.
     10. 메타 페이지 rag_exclude 누락 결함 (43회차): type=index 또는 type=log 페이지에
         rag_exclude:true가 없으면 결함. RAG 답변 근거로 메타 페이지가 혼입되는 위험 차단.
-    11. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
+    11. 본문 정량 stale 경고 (49회차): 본문 [[페이지]](N) 패턴이 자동 측정 inbound와
+        |delta| >= 5 이고 시점 라벨(28회차/스냅샷/당시 등)이 같은 줄에 없을 때 정보 보고.
+    12. stub entity 결함 검출 (51회차 신설 — 평가 P0-5 채택): type=entity 인데 본문<25줄
+        AND source_count==0 AND inbound>0 AND entity_type!=redirect 이면 결함.
+        canonical 충돌 stub(예: 표기 변종) 회귀 차단. mate-chat 같은 redirect 후보가
+        entity_type=tool 또는 project로 남아 있는 위험 검출.
+    13. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
 
 SCHEMA (43회차 — source_count 3분리):
     - source_count: 운영자 수동 정의 (정의 A, frontmatter)
@@ -58,6 +64,12 @@ import yaml
 
 STALE_VERIFICATION_DAYS = 90  # last_verified 경고 임계
 VALID_SOURCE_SCOPES = frozenset({"local", "private", "public"})
+
+# 51회차 P0-3 신설: cited_by 비대화 완화 임계값
+# cited_by 항목 수가 이 값 이상이면 frontmatter list 대신 본문 ## 인용한 페이지 섹션으로
+# 이동하고 frontmatter에는 `cited_by_count: N`만 박는다. RAG 첫 청크의 의미 신호 손실 방지.
+CITED_BY_FRONTMATTER_THRESHOLD = 40
+CITED_BY_BODY_HEADER = "## 인용한 페이지 (cited_by — 51회차 자동 갱신)"
 
 # 36회차 신설: 한국어+영어 병기 의무 그룹 (CLAUDE.md 31회차 4단계 규칙 中 "개념·도메인" 카테고리)
 KO_EN_PAIRS: tuple[tuple[str, str], ...] = (
@@ -238,6 +250,9 @@ class LintResult:
     body_stale_numbers: list[tuple[str, str, int, int, int]] = field(
         default_factory=list
     )
+    # 51회차 P0-5 신설: stub entity 결함
+    # (rel_path, body_lines, source_count, inbound)
+    stub_entities: list[tuple[str, int, int, int]] = field(default_factory=list)
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
@@ -246,6 +261,7 @@ class LintResult:
         # last_verified 신선도(90일 초과)도 정보 보고. source_scope 부재/이상은 결함.
         # 36회차: tag_case_duplicates도 결함 (회귀 방지). tag_pair_violations는 경고(정보).
         # 43회차: meta_rag_exclude_missing 결함 (RAG 답변 근거 노이즈 차단).
+        # 51회차: stub_entities 결함 (canonical 충돌 stub 회귀 차단).
         return bool(
             self.broken_links
             or self.yaml_invalid
@@ -254,6 +270,7 @@ class LintResult:
             or self.verification_malformed
             or self.tag_case_duplicates
             or self.meta_rag_exclude_missing
+            or self.stub_entities
         )
 
 
@@ -568,6 +585,31 @@ def lint(update: bool = False) -> LintResult:
                         (page.stem, target_stem, body_value, observed, delta)
                     )
 
+    # 51회차 P0-5 신설:
+    # 검증 12: stub entity 결함 검출
+    # type=entity AND body<25 AND source_count==0 AND inbound>0 AND entity_type!=redirect.
+    # canonical 충돌 stub (예: mate-chat이 redirect로 마이그레이션 안 된 채 entity로 남는 케이스)
+    # 또는 stub 등록만 되고 콘텐츠가 없는 entity의 회귀 차단.
+    for page in pages:
+        if page.yaml_invalid or page.is_redirect or page.is_log_file:
+            continue
+        if page.page_type != "entity":
+            continue
+        fm = page.frontmatter or {}
+        if str(fm.get("entity_type", "")) == "redirect":
+            continue
+        sc = page.declared_source_count or 0
+        if sc != 0:
+            continue
+        body_lines = page.body_line_count
+        if body_lines >= 25:
+            continue
+        inbound = result.inbound.get(page.stem, 0)
+        if inbound <= 0:
+            continue
+        rel_path = str(page.path.relative_to(WIKI_ROOT.parent))
+        result.stub_entities.append((rel_path, body_lines, sc, inbound))
+
     return result
 
 
@@ -618,14 +660,16 @@ def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
     """source 페이지 frontmatter의 cited_by 필드를 in-place 갱신.
 
     47회차 신설 (Codex 평가 P1 권고 — citation chain 양방향화).
+    51회차 갱신 (평가 P0-3 채택): cited_by 항목이
+    `CITED_BY_FRONTMATTER_THRESHOLD` 이상이면 frontmatter cited_by 리스트 대신
+    `cited_by_count: N`만 박고 본문 섹션으로 이동. RAG 첫 청크 의미 신호 손실 방지.
 
     cited_by는 자동 측정 필드:
-    - source 페이지를 wikilink로 인용한 모든 비-메타 페이지 stem 리스트
+    - 페이지를 wikilink로 인용한 모든 비-메타 페이지 stem 리스트
     - 운영자 수동 입력 금지, --update가 갱신
-    - 빈 list면 cited_by 키 제거 (orphan source의 깔끔한 표시)
+    - 빈 list면 cited_by/cited_by_count 키 모두 제거 (orphan의 깔끔한 표시)
 
     구현: frontmatter 파싱 없이 정규식 + 라인 단위 안전 업서트.
-    cited_by 블록을 찾아 새 리스트로 교체. 없으면 frontmatter 끝에 삽입.
     """
     raw = page.raw
     fm_match = FRONTMATTER_RE.match(raw)
@@ -633,47 +677,123 @@ def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
         return
     fm_text = fm_match.group(1)
     body_after = raw[fm_match.end():]
-
     fm_lines = fm_text.split("\n")
 
     # 기존 cited_by 블록 위치 탐색
-    start = None
-    end = len(fm_lines)
+    cb_start = None
+    cb_end = len(fm_lines)
     for i, ln in enumerate(fm_lines):
         if ln.strip() == "cited_by:":
-            start = i
+            cb_start = i
             break
-    if start is not None:
-        for j in range(start + 1, len(fm_lines)):
+    if cb_start is not None:
+        for j in range(cb_start + 1, len(fm_lines)):
             ln = fm_lines[j]
-            # 다음 top-level 키(들여쓰기 없음) 또는 빈 줄에서 cited_by 블록 종료
             if ln and not ln.startswith(" ") and not ln.startswith("\t") and not ln.startswith("-"):
-                end = j
+                cb_end = j
                 break
             if ln == "":
-                end = j
+                cb_end = j
                 break
 
+    # 기존 cited_by_count 라인 위치 탐색
+    cnt_idx = None
+    for i, ln in enumerate(fm_lines):
+        if ln.startswith("cited_by_count:"):
+            cnt_idx = i
+            break
+
+    use_body = len(citing_stems) >= CITED_BY_FRONTMATTER_THRESHOLD
+    new_lines = list(fm_lines)
+
+    # 기존 cited_by 블록 제거
+    if cb_start is not None:
+        new_lines = new_lines[:cb_start] + new_lines[cb_end:]
+        # 인덱스 갱신
+        if cnt_idx is not None and cnt_idx >= cb_end:
+            cnt_idx -= cb_end - cb_start
+        elif cnt_idx is not None and cb_start <= cnt_idx < cb_end:
+            cnt_idx = None  # cited_by_count가 cited_by 블록 안이었음 — 비정상이지만 안전 처리
+
+    # 기존 cited_by_count 라인 제거 (재삽입 또는 조건부 삽입)
+    if cnt_idx is not None:
+        new_lines = new_lines[:cnt_idx] + new_lines[cnt_idx + 1:]
+
     if not citing_stems:
-        # 빈 list — cited_by 키 자체를 제거
-        if start is None:
-            return  # 이미 없음
-        new_lines = fm_lines[:start] + fm_lines[end:]
+        # 빈 list — frontmatter에 cited_by/cited_by_count 모두 박지 않음.
+        # 본문 섹션도 제거.
+        new_body = _strip_cited_by_body_section(body_after)
+    elif use_body:
+        # 임계값 이상: frontmatter cited_by_count: N + 본문 섹션
+        # frontmatter 끝의 빈 라인 제거 후 cited_by_count 삽입
+        while new_lines and new_lines[-1] == "":
+            new_lines.pop()
+        new_lines.append(f"cited_by_count: {len(citing_stems)}")
+        new_body = _replace_cited_by_body_section(body_after, citing_stems)
     else:
-        new_block = ["cited_by:"] + [f'  - "[[{s}]]"' for s in citing_stems]
-        if start is None:
-            # frontmatter 끝에 삽입 (빈 라인이 끝에 있으면 그 전에)
-            new_lines = list(fm_lines)
-            while new_lines and new_lines[-1] == "":
-                new_lines.pop()
-            new_lines = new_lines + new_block
-        else:
-            new_lines = fm_lines[:start] + new_block + fm_lines[end:]
+        # 임계값 미만: frontmatter cited_by list (47회차 기존 동작)
+        cb_block = ["cited_by:"] + [f'  - "[[{s}]]"' for s in citing_stems]
+        while new_lines and new_lines[-1] == "":
+            new_lines.pop()
+        new_lines = new_lines + cb_block
+        new_body = _strip_cited_by_body_section(body_after)
 
     new_fm = "\n".join(new_lines)
-    new_raw = f"---\n{new_fm}\n---\n" + body_after
+    new_raw = f"---\n{new_fm}\n---\n" + new_body
     if new_raw != raw:
         page.path.write_text(new_raw, encoding="utf-8")
+
+
+def _replace_cited_by_body_section(body: str, citing_stems: list[str]) -> str:
+    """본문에서 ## 인용한 페이지 섹션을 새 리스트로 교체. 없으면 끝에 추가."""
+    header = CITED_BY_BODY_HEADER
+    block_lines = [header, ""] + [f"- [[{s}]]" for s in citing_stems] + [""]
+    block_text = "\n".join(block_lines)
+
+    lines = body.split("\n")
+    start = None
+    for i, ln in enumerate(lines):
+        if ln.strip() == header:
+            start = i
+            break
+    if start is None:
+        # 끝에 추가. 본문이 줄바꿈으로 끝나는지 정규화
+        body_clean = body.rstrip() + "\n\n"
+        return body_clean + block_text + "\n"
+
+    # 다음 H2(## ) 또는 파일 끝까지 블록 종료
+    end = len(lines)
+    for j in range(start + 1, len(lines)):
+        if lines[j].startswith("## ") or lines[j].startswith("# "):
+            end = j
+            break
+    # 끝의 빈 라인 흡수
+    while end < len(lines) and lines[end] == "":
+        end += 1
+    new_lines = lines[:start] + block_lines + lines[end:]
+    return "\n".join(new_lines)
+
+
+def _strip_cited_by_body_section(body: str) -> str:
+    """본문에서 ## 인용한 페이지 섹션을 제거. 없으면 그대로."""
+    header = CITED_BY_BODY_HEADER
+    lines = body.split("\n")
+    start = None
+    for i, ln in enumerate(lines):
+        if ln.strip() == header:
+            start = i
+            break
+    if start is None:
+        return body
+    end = len(lines)
+    for j in range(start + 1, len(lines)):
+        if lines[j].startswith("## ") or lines[j].startswith("# "):
+            end = j
+            break
+    while end < len(lines) and lines[end] == "":
+        end += 1
+    new_lines = lines[:start] + lines[end:]
+    return "\n".join(new_lines)
 
 
 def report(result: LintResult, *, quiet: bool = False) -> None:
@@ -822,6 +942,24 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
             print(
                 "✓ 0건 (본문 정량 단언이 자동 측정값과 정합 또는 시점 라벨 박힘)"
             )
+
+    print(
+        "--- 12. stub entity 결함 (51회차 신설 — type=entity AND body<25 "
+        "AND source_count==0 AND inbound>0) ---"
+    )
+    if result.stub_entities:
+        print(f"❌ {len(result.stub_entities)}건:")
+        for rel_path, body_lines, sc, inbound in result.stub_entities[:10]:
+            print(
+                f"    {rel_path}: body={body_lines}줄, source_count={sc}, "
+                f"inbound={inbound}"
+            )
+        if len(result.stub_entities) > 10:
+            remainder = len(result.stub_entities) - 10
+            print(f"    ... (생략 {remainder}건)")
+    else:
+        if not quiet:
+            print("✓ 0건 (canonical 충돌 stub 또는 영양실조 entity 없음)")
 
 
 def report_full(result: LintResult) -> None:

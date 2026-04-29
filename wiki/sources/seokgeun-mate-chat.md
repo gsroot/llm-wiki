@@ -33,6 +33,7 @@ cited_by:
   - "[[matechat-30day-validation-loop]]"
   - "[[matechat-business-validation]]"
   - "[[matechat-chat-analysis-module]]"
+  - "[[matechat-launch-metrics-ledger]]"
   - "[[seokgeun-matechat-validation]]"
   - "[[seokgeun-stack-guide]]"
 ---

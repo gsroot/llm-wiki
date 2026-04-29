@@ -24,6 +24,7 @@ cited_by:
   - "[[matechat]]"
   - "[[matechat-30day-validation-loop]]"
   - "[[matechat-business-validation]]"
+  - "[[matechat-launch-metrics-ledger]]"
   - "[[matechat-project-knowledge-map]]"
   - "[[parental-leave-2026-operating-plan]]"
   - "[[portfolio]]"

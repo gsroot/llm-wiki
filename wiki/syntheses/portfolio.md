@@ -41,6 +41,7 @@ cited_by:
   - "[[mate-chat-project-wiki-2026]]"
   - "[[matechat]]"
   - "[[matechat-business-validation]]"
+  - "[[matechat-launch-metrics-ledger]]"
   - "[[mcp]]"
   - "[[nextjs]]"
   - "[[parental-leave-2026-operating-plan]]"

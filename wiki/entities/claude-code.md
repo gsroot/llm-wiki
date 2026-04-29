@@ -18,52 +18,18 @@ related:
   - "[[context-engineering]]"
   - "[[spec-kit]]"
   - "[[spec-driven-development]]"
+  - "[[seokgeun-kim]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 8
 observed_source_refs: 39
 inbound_count: 119
 created: 2026-04-09
 updated: 2026-04-29
-cited_by:
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropic]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[autonomous-research-loop]]"
-  - "[[autoresearch]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[claude-agent-sdk]]"
-  - "[[claude-code-master-guide]]"
-  - "[[claude-code-overview]]"
-  - "[[claude-code-quickstart]]"
-  - "[[claude-managed-agents]]"
-  - "[[context-engineering]]"
-  - "[[cowork]]"
-  - "[[deepagents]]"
-  - "[[flutter]]"
-  - "[[flutter-flutter]]"
-  - "[[github]]"
-  - "[[github-spec-kit]]"
-  - "[[harness]]"
-  - "[[karpathy-autoresearch]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[matechat]]"
-  - "[[mcp]]"
-  - "[[microsoft]]"
-  - "[[obsidian]]"
-  - "[[openai]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[portfolio]]"
-  - "[[prompt-cache]]"
-  - "[[scikit-learn]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[seokgeun-kim]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[spec-driven-development]]"
-  - "[[spec-kit]]"
-  - "[[token-economy]]"
-  - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 40
 ---
 
 # Claude Code
@@ -186,3 +152,47 @@ irm https://claude.ai/install.ps1 | iex
 - 석근님의 주요 개발 도구 중 하나. 회사 맥북에서 사용.
 - LLM 위키에서의 역할: Obsidian이 IDE, Claude Code가 프로그래머, 위키가 코드베이스.
 - Cowork도 위키 에이전트로 병행 사용 가능 (외출 시).
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-patterns]]
+- [[agent-skills]]
+- [[agent-stack-evolution]]
+- [[anthropic]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[autonomous-research-loop]]
+- [[autoresearch]]
+- [[backend-fastapi-stack]]
+- [[claude-agent-sdk]]
+- [[claude-code-master-guide]]
+- [[claude-code-overview]]
+- [[claude-code-quickstart]]
+- [[claude-managed-agents]]
+- [[context-engineering]]
+- [[cowork]]
+- [[deepagents]]
+- [[flutter]]
+- [[flutter-flutter]]
+- [[github]]
+- [[github-spec-kit]]
+- [[harness]]
+- [[karpathy-autoresearch]]
+- [[llm-infra-meta-cluster]]
+- [[matechat]]
+- [[mcp]]
+- [[microsoft]]
+- [[obsidian]]
+- [[openai]]
+- [[openai-openai-cookbook]]
+- [[portfolio]]
+- [[prompt-cache]]
+- [[scikit-learn]]
+- [[scikit-learn-scikit-learn]]
+- [[seokgeun-kim]]
+- [[slash-commands-vs-agent-skills]]
+- [[spec-driven-development]]
+- [[spec-kit]]
+- [[token-economy]]
+- [[using-llm-wiki-as-rag]]
+

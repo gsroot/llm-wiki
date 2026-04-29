@@ -22,69 +22,19 @@ related:
   - "[[openai]]"
   - "[[openai-cookbook]]"
   - "[[openai-agents-python]]"
+  - "[[mcp]]"
+  - "[[seokgeun-kim]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 8
 observed_source_refs: 58
 inbound_count: 168
 created: 2026-04-15
 updated: 2026-04-29
-cited_by:
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropic]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[astral]]"
-  - "[[astral-sh-ruff]]"
-  - "[[astral-sh-uv]]"
-  - "[[autonomous-research-loop]]"
-  - "[[autoresearch]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[claude-agent-sdk]]"
-  - "[[claude-code]]"
-  - "[[claude-code-master-guide]]"
-  - "[[claude-managed-agents]]"
-  - "[[context-engineering]]"
-  - "[[cowork]]"
-  - "[[crewai]]"
-  - "[[deepagents]]"
-  - "[[fastapi]]"
-  - "[[flutter]]"
-  - "[[flutter-flutter]]"
-  - "[[github-spec-kit]]"
-  - "[[karpathy]]"
-  - "[[karpathy-autoresearch]]"
-  - "[[karpathy-nanochat]]"
-  - "[[karpathy-nanogpt]]"
-  - "[[langgraph]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[matechat]]"
-  - "[[mcp]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[nanochat]]"
-  - "[[nanogpt]]"
-  - "[[openai]]"
-  - "[[openai-agents-python]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[portfolio]]"
-  - "[[python-packaging]]"
-  - "[[ruff]]"
-  - "[[scikit-learn]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[sentry]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[spec-driven-development]]"
-  - "[[spec-kit]]"
-  - "[[token-economy]]"
-  - "[[using-llm-wiki-as-rag]]"
-  - "[[uv]]"
+cited_by_count: 57
 ---
 
 # 하네스 (Harness)
@@ -305,3 +255,64 @@ project/
 
 - BI 업무에서 쿼리 에이전트용 최소 하네스는 어떤 모양인가? (SQL 스키마·샘플 쿼리·검증 SELECT·승인 규칙)
 - Cowork와 Claude Code 사이 하네스를 공유할 때의 경계는? (CLAUDE.md는 공유, 권한은 분리?)
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-patterns]]
+- [[agent-skills]]
+- [[agent-stack-evolution]]
+- [[anthropic]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[astral]]
+- [[astral-sh-ruff]]
+- [[astral-sh-uv]]
+- [[autonomous-research-loop]]
+- [[autoresearch]]
+- [[backend-fastapi-stack]]
+- [[claude-agent-sdk]]
+- [[claude-code]]
+- [[claude-code-master-guide]]
+- [[claude-managed-agents]]
+- [[context-engineering]]
+- [[cowork]]
+- [[crewai]]
+- [[deepagents]]
+- [[fastapi]]
+- [[flutter]]
+- [[flutter-flutter]]
+- [[github-spec-kit]]
+- [[karpathy]]
+- [[karpathy-autoresearch]]
+- [[karpathy-nanochat]]
+- [[karpathy-nanogpt]]
+- [[langgraph]]
+- [[llm-infra-meta-cluster]]
+- [[llm-wiki-pattern]]
+- [[matechat]]
+- [[mcp]]
+- [[microsoft-ai-agents-for-beginners]]
+- [[nanochat]]
+- [[nanogpt]]
+- [[openai]]
+- [[openai-agents-python]]
+- [[openai-cookbook]]
+- [[openai-openai-agents-python]]
+- [[openai-openai-cookbook]]
+- [[pandas-dev-pandas]]
+- [[portfolio]]
+- [[python-packaging]]
+- [[ruff]]
+- [[scikit-learn]]
+- [[scikit-learn-scikit-learn]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-mate-chat]]
+- [[seokgeun-operating-profile-2026]]
+- [[slash-commands-vs-agent-skills]]
+- [[spec-driven-development]]
+- [[spec-kit]]
+- [[token-economy]]
+- [[using-llm-wiki-as-rag]]
+- [[uv]]
+

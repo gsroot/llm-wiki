@@ -11,6 +11,7 @@ sources:
 related:
   - "[[matechat]]"
   - "[[matechat-30day-validation-loop]]"
+  - "[[matechat-launch-metrics-ledger]]"
   - "[[seokgeun-mate-chat]]"
   - "[[seokgeun-kim]]"
   - "[[seokgeun-operating-profile-2026]]"

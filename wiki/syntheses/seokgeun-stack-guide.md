@@ -32,58 +32,7 @@ tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
-cited_by:
-  - "[[alembic]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[c2spf-analytics]]"
-  - "[[com2us-platform]]"
-  - "[[crewai]]"
-  - "[[deepagents]]"
-  - "[[docker]]"
-  - "[[duckdb]]"
-  - "[[fastapi]]"
-  - "[[fastmcp]]"
-  - "[[flutter]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[github-actions]]"
-  - "[[grafana]]"
-  - "[[kafka]]"
-  - "[[kpi-recovery-loop]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[lightgbm]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[matechat]]"
-  - "[[matechat-chat-analysis-module]]"
-  - "[[nextjs]]"
-  - "[[openai-agents-python]]"
-  - "[[pandas]]"
-  - "[[pandas-ai]]"
-  - "[[parquet]]"
-  - "[[polars]]"
-  - "[[portfolio]]"
-  - "[[portfolio-seed]]"
-  - "[[postgresql]]"
-  - "[[prometheus]]"
-  - "[[pyarrow]]"
-  - "[[pydantic]]"
-  - "[[pydantic-ai]]"
-  - "[[redis]]"
-  - "[[riverpod]]"
-  - "[[ruff]]"
-  - "[[scikit-learn]]"
-  - "[[sentry]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-matechat-validation]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[shadcn-ui]]"
-  - "[[sqlalchemy]]"
-  - "[[tailwindcss]]"
-  - "[[tanstack]]"
-  - "[[tanstack-query]]"
-  - "[[uv]]"
-  - "[[zustand]]"
+cited_by_count: 55
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합
@@ -307,3 +256,62 @@ flutter pub add --dev riverpod_generator build_runner
 - [[agent-frameworks-matrix]] (17~18회차) — LLM 에이전트 비교
 - [[observability-and-cicd-stack]] (21회차) — 운영 5단
 - [[flutter-nextjs-fullstack-pattern]] (22회차) — 듀얼 클라이언트
+
+## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+
+- [[agent-skills]]
+- [[alembic]]
+- [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
+- [[claude-code]]
+- [[com2us-platform]]
+- [[crewai]]
+- [[deepagents]]
+- [[docker]]
+- [[duckdb]]
+- [[fastapi]]
+- [[fastmcp]]
+- [[flutter]]
+- [[flutter-nextjs-fullstack-pattern]]
+- [[github-actions]]
+- [[grafana]]
+- [[harness]]
+- [[kafka]]
+- [[kpi-recovery-loop]]
+- [[langchain]]
+- [[langgraph]]
+- [[lightgbm]]
+- [[llm-infra-meta-cluster]]
+- [[matechat]]
+- [[matechat-chat-analysis-module]]
+- [[mcp]]
+- [[nextjs]]
+- [[openai-agents-python]]
+- [[pandas]]
+- [[pandas-ai]]
+- [[parquet]]
+- [[polars]]
+- [[portfolio]]
+- [[portfolio-seed]]
+- [[postgresql]]
+- [[prometheus]]
+- [[pyarrow]]
+- [[pydantic]]
+- [[pydantic-ai]]
+- [[redis]]
+- [[riverpod]]
+- [[ruff]]
+- [[scikit-learn]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-mate-chat]]
+- [[seokgeun-matechat-validation]]
+- [[seokgeun-operating-profile-2026]]
+- [[shadcn-ui]]
+- [[sqlalchemy]]
+- [[tailwindcss]]
+- [[tanstack]]
+- [[tanstack-query]]
+- [[uv]]
+- [[zustand]]
+
