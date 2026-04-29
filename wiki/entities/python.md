@@ -14,9 +14,9 @@ related:
   - "[[scikit-learn]]"
   - "[[langchain]]"
   - "[[openai-agents-python]]"
-source_count: 0
+source_count: 8
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Python
@@ -57,8 +57,19 @@ updated: 2026-04-28
 - [[backend-fastapi-stack]] — Python 백엔드 6단 표준
 - [[agent-frameworks-matrix]] — Python LLM 에이전트 프레임워크 6×N 비교
 
+## 출처
+
+- [[fastapi-fastapi]] — Python ASGI 백엔드 표준
+- [[pydantic-pydantic]] — Python type/validation 체인
+- [[sqlalchemy-sqlalchemy]] — Python ORM/SQL toolkit
+- [[astral-sh-uv]] — Python 패키징/환경 관리
+- [[astral-sh-ruff]] — Python lint/format 도구 체인
+- [[pandas-dev-pandas]] — Python 데이터프레임 표준
+- [[scikit-learn-scikit-learn]] — Python ML 표준 API
+- [[openai-openai-agents-python]] — Python LLM agent SDK
+
 ## 메모
 
-- 23회차 stub 사유: 위키 ~30개 엔티티가 Python 위에 빌드되어 `[[python]]` 참조. dart 엔티티는 있지만 python이 없는 비대칭을 마무리 점검에서 해소.
+- 23회차 stub 사유: 위키 ~30개 엔티티가 Python 위에 빌드되어 `[[python]]` 참조. 29회차에 백엔드/데이터/ML/LLM source 8개 기반으로 1차 보강.
 - 위키 안에서 Python의 위치 = "보이지 않는 호스트". 모든 백엔드/데이터/ML/LLM 페이지가 암묵적으로 Python을 가정.
 - 후속 작업: Python 3.13 GIL 옵션화(PEP 703) + free-threaded build의 본 위키 도구 영향 추적.

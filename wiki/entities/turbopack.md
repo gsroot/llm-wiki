@@ -7,9 +7,9 @@ related:
   - "[[vercel]]"
   - "[[nextjs]]"
   - "[[react]]"
-source_count: 0
+source_count: 1
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Turbopack
@@ -42,7 +42,11 @@ updated: 2026-04-28
 - [[nextjs]] — 주된 채택자
 - [[ruff]] / [[uv]] — Rust 기반 도구 체인의 다른 사례
 
+## 출처
+
+- [[vercel-next.js]] — Next.js AGENTS.md와 빌드/테스트 명령에서 Turbopack/webpack 비교 모드 확인
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[turbopack]]` 깨진 링크 발견. 정합성 보강.
+- 25회차 stub 사유: 23회차 점검에서 `[[turbopack]]` 깨진 링크 발견. 29회차에 Next.js source 기반으로 1차 보강.
 - 후속 트리거: Turbopack 별도 AGENTS.md 또는 1.0 안정화 시 raw 수집 → 1차 source 등록.

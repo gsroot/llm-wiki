@@ -10,6 +10,41 @@ type: log
 
 ---
 
+## [2026-04-29] cleanup | stub source-backed 보강 + 고아 페이지 연결 (29회차)
+
+- **트리거**: 재평가 후 남은 리스크 2건 처리 요청 — (1) `source_count: 0` stub 18개가 RAG 착지점이 될 수 있음, (2) 고아 페이지 6개 중 [[llm-infra-meta-cluster]] 같은 핵심 종합 페이지가 index 외 진입점이 부족함.
+
+### 산출
+
+1. **redirect RAG 제외 규칙 도입**
+   - [[mate-chat]] redirect stub frontmatter에 `rag_exclude: true` 추가.
+   - `CLAUDE.md`에 redirect/RAG 제외 규칙 추가: `entity_type: redirect` + `canonical` + `rag_exclude: true`, 질의 답변 근거로 사용 금지, lint 시 source_count 0 / 고아 집계에서 별도 처리.
+
+2. **비-redirect source_count 0 stub 17개를 기존 source 기반으로 1차 보강**
+   - 데이터/아키텍처 개념 8개: [[append-only-log]](4), [[streaming]](4), [[zero-copy]](4), [[predicate-pushdown]](3), [[query-optimization]](3), [[lakehouse]](3), [[event-driven-architecture]](4), [[oss-saas-dual]](5).
+   - 엔티티 9개: [[apache-foundation]](2), [[radix-ui]](1), [[tailwindcss]](2), [[turbopack]](1), [[tanstack]](1), [[poimandres]](1), [[react]](5), [[python]](8), [[sqlite]](3).
+   - 새 raw 수집 없이 이미 수집된 source를 출처 섹션에 연결했다. 이 작업의 목적은 깊은 신규 연구가 아니라 RAG가 얕은 정합성 stub에 멈추지 않도록 최소 source-backed 착지점을 만드는 것.
+
+3. **고아 페이지 연결**
+   - [[llm-infra-meta-cluster]]를 [[seokgeun-stack-guide]], [[agent-stack-evolution]], [[agent-skills]], [[harness]], [[mcp]], [[claude-code]] 본문에서 연결.
+   - [[observability]]를 [[observability-and-cicd-stack]] 본문에서 연결.
+   - [[tanstack-tanstack-query]]를 [[tanstack-query]] 출처 섹션에서 연결.
+   - [[sqlite]]를 [[duckdb]] 본문/비교표에서 연결.
+   - [[wiki-bootstrap-log]]를 [[llm-wiki-pattern]] 본문 관련 개념에 연결.
+
+### 결과
+
+- 비-redirect `source_count: 0` stub: 17 → 0.
+- 의도적 `source_count: 0`은 [[mate-chat]] redirect 1개만 남김.
+- [[llm-infra-meta-cluster]]는 index-only 종합 페이지에서 핵심 허브 6곳이 참조하는 메타 진입점으로 승격.
+- index.md 통계와 카탈로그 source_count를 29회차 기준으로 갱신.
+
+### 후속
+
+- [[lakehouse]]는 Delta Lake / Iceberg / Hudi 직접 source 미수집 상태라 추후 별도 수집 가치가 큼.
+- [[oss-saas-dual]]은 기존 사례 기반 1차 보강은 됐지만, Confluent/Databricks/LangChain Inc 등 비즈니스 모델 자료를 수집하면 synthesis로 승격 가능.
+- redirect 제외, source_count 0, 고아 페이지 집계를 자동화하는 lint script 후보가 남음.
+
 ## [2026-04-28] verify+correct | 38 SKILL 가설 raw 측정 검증 + 5개 페이지 정정 (28회차-2)
 
 - **트리거**: 사용자가 38 SKILL 가설 의심 ("9개만 자작이고 27개는 gstack일 뿐 아닐까?"). 26→27→28 외부 평가 사이클에 더해 **"raw 측정 vs 위키 본문 자동 대조"가 4번째 운영 사이클**로 격상.

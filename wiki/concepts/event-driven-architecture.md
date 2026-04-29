@@ -8,9 +8,9 @@ related:
   - "[[redis]]"
   - "[[append-only-log]]"
   - "[[matechat]]"
-source_count: 0
+source_count: 4
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Event-driven Architecture (EDA)
@@ -50,7 +50,14 @@ updated: 2026-04-28
 - [[redis]] Pub/Sub — 경량 EDA
 - [[matechat]] — WebSocket EDA 실증
 
+## 출처
+
+- [[apache-kafka]] — 분산 이벤트 로그와 replay 가능한 메시징 백본
+- [[redis-redis]] — Pub/Sub과 Streams 기반 경량 이벤트 처리
+- [[seokgeun-mate-chat]] — MateChat WebSocket/Redis PubSub 실증
+- [[getsentry-sentry]] — 이벤트 수집 → 이슈/알림으로 이어지는 운영 EDA 변종
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[event-driven-architecture]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[event-driven-architecture]]` 깨진 링크 발견. 29회차에 Kafka/Redis/MateChat/Sentry source 기반으로 1차 보강.
 - 후속: Event Sourcing + CQRS는 별도 종합 페이지 가치 — DDD 패턴과 결합.

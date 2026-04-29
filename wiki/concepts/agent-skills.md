@@ -37,7 +37,7 @@ related:
   - "[[vercel]]"
 source_count: 16
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Agent Skills (SKILL.md 패키지)
@@ -58,6 +58,8 @@ updated: 2026-04-28
 2. **자동 호출**이 RAG의 본질에 가까움 — 사용자가 "관련 위키 있어?"라고 묻기 전에 LLM이 알아서 위키를 봄 ([[llm-wiki-pattern]] 발전형)
 3. **progressive disclosure**가 컨텍스트 윈도우 압박을 구조적으로 푸는 첫 표준 — 17개 스킬 메타가 26K 토큰만 점유
 4. [[harness]]의 4층 레이어 중 "패키지 레이어"의 단일 표준 구현
+
+이 개념은 [[harness]], [[mcp]], [[claude-code]]와 함께 위키의 숨은 5번째 축을 이룬다. 네 노드를 한 번에 비교해야 할 때는 [[llm-infra-meta-cluster]]를 진입점으로 쓴다.
 
 ## 핵심 내용
 

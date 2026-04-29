@@ -7,9 +7,9 @@ related:
   - "[[kafka]]"
   - "[[parquet]]"
   - "[[pyarrow]]"
-source_count: 0
+source_count: 2
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Apache Software Foundation (ASF)
@@ -64,7 +64,12 @@ updated: 2026-04-28
 - [[kafka]], [[parquet]], [[pyarrow]] — ASF 산하 본 위키 OSS 3종
 - [[dataframe-ecosystem-evolution]] — ASF PMC 8번째 거버넌스 발견의 종합 페이지
 
+## 출처
+
+- [[apache-kafka]] — Apache Kafka와 ASF PMC 거버넌스 맥락
+- [[apache-arrow]] — Apache Arrow/Parquet와 ASF 데이터 표준 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[apache-foundation]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[apache-foundation]]` 깨진 링크 발견. 29회차에 기존 Apache Kafka/Arrow source 기반으로 1차 보강.
 - 후속: ASF Way (메일링 리스트 / 위원회 / 의장 순환 / brand neutral) 운영 모델을 회사 BI OSS 기여 시 차용 가능 — 단, ASF 가입은 까다롭고 시간 소요.

@@ -7,9 +7,9 @@ related:
   - "[[shadcn-ui]]"
   - "[[react]]"
   - "[[tailwindcss]]"
-source_count: 0
+source_count: 1
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Radix UI
@@ -41,7 +41,11 @@ updated: 2026-04-28
 - [[react]] — 호스트 라이브러리
 - [[tailwindcss]] — 스타일링 보조
 
+## 출처
+
+- [[shadcn-ui-ui]] — shadcn/ui의 Open Code 모델과 Radix Primitive 기반 컴포넌트 분배 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[radix-ui]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[radix-ui]]` 깨진 링크 발견. 29회차에 shadcn-ui source 기반으로 1차 보강.
 - shadcn-ui와의 관계: shadcn은 Radix를 강제하지 않지만 사실상 표준 의존. 다른 headless 라이브러리(Headless UI / Ariakit)도 가능.

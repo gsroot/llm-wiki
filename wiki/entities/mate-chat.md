@@ -7,8 +7,9 @@ related:
   - "[[matechat]]"
 canonical: "[[matechat]]"
 source_count: 0
+rag_exclude: true
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Mate Chat → [[matechat]]
@@ -18,3 +19,5 @@ updated: 2026-04-28
 **canonical 페이지**: [[matechat]]
 
 본진 raw 출처와 24회차 본문 내용은 모두 [[matechat]]에 흡수됐습니다. 새 인용은 `[[matechat]]`을 사용하세요.
+
+RAG/검색에서는 이 페이지를 답변 근거로 쓰지 말고 canonical 페이지인 [[matechat]]으로 이동합니다.

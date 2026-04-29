@@ -10,9 +10,9 @@ related:
   - "[[duckdb]]"
   - "[[fastmcp]]"
   - "[[crewai]]"
-source_count: 0
+source_count: 5
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # OSS+SaaS 듀얼 모델
@@ -60,7 +60,15 @@ updated: 2026-04-28
 - [[langchain]] / [[langgraph]] / [[polars]] / [[duckdb]] / [[fastmcp]] / [[crewai]] — 듀얼 모델 사례
 - [[agent-frameworks-matrix]] — 18회차 듀얼 모델 식별 종합 페이지
 
+## 출처
+
+- [[langchain-ai-langchain]] — LangChain OSS와 LangSmith/LangGraph Platform의 회사형 듀얼 모델
+- [[pola-rs-polars]] — Polars OSS와 Polars Cloud
+- [[duckdb-duckdb]] — DuckDB Foundation/Labs와 MotherDuck 분리
+- [[jlowin-fastmcp]] — FastMCP OSS와 FastMCP Cloud
+- [[crewaiinc-crewai]] — CrewAI OSS와 Crew Control Plane
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[oss-saas-dual]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[oss-saas-dual]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
 - 후속: 듀얼 모델 매출 비교 데이터 수집 (Confluent / Databricks / LangChain Inc 등 IPO 자료) → 비즈니스 모델 평가 종합 페이지.

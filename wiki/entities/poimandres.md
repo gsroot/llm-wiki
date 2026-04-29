@@ -6,9 +6,9 @@ tags: [poimandres, collective, react, three-fiber, zustand, jotai, valtio, 25회
 related:
   - "[[zustand]]"
   - "[[react]]"
-source_count: 0
+source_count: 1
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Poimandres
@@ -39,7 +39,11 @@ updated: 2026-04-28
 - [[zustand]] — Poimandres의 대표 상태관리 OSS
 - [[react]] — 호스트 진영
 
+## 출처
+
+- [[pmndrs-zustand]] — Zustand와 Poimandres collective 운영 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[poimandres]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[poimandres]]` 깨진 링크 발견. 29회차에 Zustand source 기반으로 1차 보강.
 - 후속 작업: Jotai / Valtio 별도 entity 또는 비교 페이지 (3대 상태관리 매트릭스) 검토 — Zustand만 위키에 박힌 비대칭 해소 필요.

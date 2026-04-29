@@ -7,9 +7,9 @@ related:
   - "[[kafka]]"
   - "[[postgresql]]"
   - "[[redis]]"
-source_count: 0
+source_count: 4
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Append-only Log
@@ -51,7 +51,14 @@ updated: 2026-04-28
 - [[event-driven-architecture]] — append-only가 메시지 자료구조
 - [[zero-copy]] — sendfile() = append-only log → consumer 직접 전송
 
+## 출처
+
+- [[apache-kafka]] — Kafka design 문서의 append-only log, pagecache, sequential I/O 설계
+- [[postgres-postgres]] — WAL 기반 트랜잭션 로그와 MVCC 맥락
+- [[redis-redis]] — AOF(Append-Only File) 지속화 모드
+- [[apache-arrow]] — Parquet/Arrow 계열의 append-friendly 컬럼 저장 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[append-only-log]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[append-only-log]]` 깨진 링크 발견. 29회차에 기존 16/15회차 source 기반으로 1차 보강.
 - LSM-Tree (Cassandra/RocksDB/SQLite WAL): append-only + compaction = 다른 변종.

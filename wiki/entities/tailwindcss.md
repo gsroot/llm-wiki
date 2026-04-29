@@ -8,9 +8,9 @@ related:
   - "[[react]]"
   - "[[radix-ui]]"
   - "[[nextjs]]"
-source_count: 0
+source_count: 2
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Tailwind CSS
@@ -43,7 +43,12 @@ updated: 2026-04-28
 - [[react]] — 주된 호스트 진영
 - [[nextjs]] — 통합 표준
 
+## 출처
+
+- [[shadcn-ui-ui]] — Tailwind class 기반 Open Code 컴포넌트 분배
+- [[vercel-next.js]] — Next.js 부트스트랩과 Tailwind 통합 옵션
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[tailwindcss]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[tailwindcss]]` 깨진 링크 발견. 29회차에 shadcn-ui/Next.js source 기반으로 1차 보강.
 - v4 (2025+) 변화: Rust 기반 Lightning CSS 통합, `@import "tailwindcss"` 단일 줄 설정. [[ruff]] / [[uv]] / [[turbopack]]과 함께 "Rust 가속" 흐름의 일부.

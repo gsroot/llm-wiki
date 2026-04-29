@@ -8,9 +8,9 @@ related:
   - "[[duckdb]]"
   - "[[polars]]"
   - "[[pyarrow]]"
-source_count: 0
+source_count: 3
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Lakehouse
@@ -47,7 +47,13 @@ updated: 2026-04-28
 - [[duckdb]] / [[polars]] — lakehouse 읽기 엔진
 - [[pyarrow]] — 메모리 표준
 
+## 출처
+
+- [[apache-arrow]] — Parquet/Arrow가 lakehouse 포맷의 공통 저장·메모리 기반이 되는 맥락
+- [[duckdb-duckdb]] — Parquet/S3/Iceberg 계열을 로컬 SQL로 읽는 Lakehouse Lite 패턴
+- [[pola-rs-polars]] — Delta Lake/Parquet scan과 Lazy execution 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[lakehouse]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[lakehouse]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강했지만, Delta Lake / Iceberg / Hudi 직접 source는 아직 미수집.
 - 후속: Iceberg / Delta Lake 별도 entity 또는 비교 종합 페이지 — 회사 BI 마이그레이션 검토 시 가치 큼.

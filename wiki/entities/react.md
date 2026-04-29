@@ -9,9 +9,9 @@ related:
   - "[[tanstack-query]]"
   - "[[shadcn-ui]]"
   - "[[radix-ui]]"
-source_count: 0
+source_count: 5
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # React
@@ -46,7 +46,15 @@ updated: 2026-04-28
 - [[zustand]], [[tanstack-query]], [[shadcn-ui]] — React 진영 표준 3축
 - [[flutter]] — 대안 진영 (단일 통합 모델)
 
+## 출처
+
+- [[vercel-next.js]] — React 풀스택 프레임워크 축
+- [[tanstack-tanstack-query]] — React 서버 상태 축
+- [[pmndrs-zustand]] — React 클라이언트 상태 축
+- [[shadcn-ui-ui]] — React UI 컴포넌트/Open Code 축
+- [[rrousselGit-riverpod]] — Flutter/Riverpod과 React 진영 대비 맥락
+
 ## 메모
 
-- 23회차 stub 사유: 22회차 신규 5개 엔티티 페이지가 모두 `[[react]]` 참조. 마무리 정합성을 위해 등록.
+- 23회차 stub 사유: 22회차 신규 5개 엔티티 페이지가 모두 `[[react]]` 참조. 29회차에 22회차 프론트엔드 source 5개 기반으로 1차 보강.
 - 후속 수집 트리거: React 19 (서버 컴포넌트 안정화) 또는 React 자체 AGENTS.md 도입 시 raw 수집으로 1차 소스 등록.

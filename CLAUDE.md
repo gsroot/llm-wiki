@@ -60,6 +60,11 @@ llm-wiki/
   - `synthesis`: `category`, `sources`, `created`, `updated`
 - 자세한 형식은 `templates/{entity,concept,source,synthesis}.md` 참조
 
+### Redirect / RAG 제외 규칙
+- canonical 병합 때문에 남기는 alias 페이지는 `entity_type: redirect`, `canonical: "[[대상]]"`, `rag_exclude: true`를 함께 둔다.
+- `rag_exclude: true` 페이지는 Obsidian 링크 호환용으로만 유지한다. 질의 답변의 근거 페이지로 사용하지 말고 `canonical` 대상 페이지로 이동한다.
+- lint에서 `source_count: 0`과 고아 페이지를 셀 때는 `rag_exclude: true` redirect 페이지를 별도 집계한다.
+
 ## 워크플로우
 
 ### 세션 시작 시
@@ -97,10 +102,11 @@ llm-wiki/
 3. 다른 페이지에서 한 번도 링크되지 않은 고아 페이지
 4. 2개 이상의 페이지에서 서로 모순되는 주장
 5. 언급은 되지만 자체 페이지가 없는 주요 개념
-6. `source_count`가 3 이상인데 요약이 1문단 이하인 빈약한 페이지
-7. 최근 수집된 소스가 기존 주장을 업데이트했어야 하는데 반영 안 된 곳
-8. 웹 검색으로 보완할 수 있는 데이터 공백
-9. 탐색할 새로운 질문이나 찾아볼 새로운 소스 제안
+6. `source_count`가 0인 비-redirect stub. 단, `rag_exclude: true` redirect는 제외
+7. `source_count`가 3 이상인데 요약이 1문단 이하인 빈약한 페이지
+8. 최근 수집된 소스가 기존 주장을 업데이트했어야 하는데 반영 안 된 곳
+9. 웹 검색으로 보완할 수 있는 데이터 공백
+10. 탐색할 새로운 질문이나 찾아볼 새로운 소스 제안
 
 결과를 보고하고, 소유자와 논의 후 수정한다.
 

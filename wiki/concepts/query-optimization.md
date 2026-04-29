@@ -7,9 +7,9 @@ related:
   - "[[postgresql]]"
   - "[[duckdb]]"
   - "[[polars]]"
-source_count: 0
+source_count: 3
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Query Optimization
@@ -50,7 +50,13 @@ updated: 2026-04-28
 - [[postgresql]] / [[duckdb]] / [[polars]] — 본 위키 옵티마이저 엔진
 - [[parquet]] — 컬럼 메타데이터로 옵티마이저 보조
 
+## 출처
+
+- [[postgres-postgres]] — cost-based optimizer와 PostgreSQL query planner 맥락
+- [[duckdb-duckdb]] — OLAP vectorized executor와 SQL optimizer
+- [[pola-rs-polars]] — LazyFrame logical plan optimizer
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[query-optimization]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[query-optimization]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
 - 후속: BigQuery slot 기반 분산 실행과 Postgres genetic 옵티마이저 비교 종합 페이지 검토.

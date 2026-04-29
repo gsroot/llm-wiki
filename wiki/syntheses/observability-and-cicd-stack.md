@@ -12,7 +12,7 @@ sources:
   - "[[backend-fastapi-stack]]"
   - "[[agent-skills]]"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름
@@ -20,6 +20,8 @@ updated: 2026-04-28
 ## 본문
 
 19회차에서 수집한 운영/Observability 진영 5개 OSS — [[docker]] / [[github-actions]] / [[prometheus]] / [[grafana]] / [[sentry]] — 를 단일 흐름으로 묶는다. 빌드/패키징(Docker)부터 자동화(GHA), 메트릭(Prometheus), 시각화(Grafana), 에러 추적(Sentry)까지 5단을 통합하면 사이드 프로젝트와 컴투스플랫폼 BI 양쪽에 직접 응용 가능한 OSS-only 운영 스택이 된다.
+
+개념 레벨의 관측성 정의와 metrics/logs/traces/errors/RUM 5축은 [[observability]]에 정리하고, 본 페이지는 그 개념을 Docker/GitHub Actions/Prometheus/Grafana/Sentry 운영 스택으로 구체화한다.
 
 또한 이 회차의 핵심 메타 발견은 **AGENTS.md 진화 11단계** — 운영 진영 3개 OSS(Prometheus/Grafana/Sentry)가 동시에 AGENTS.md를 채택하면서 **4가지 새 변종**(PR-패턴 가이드 / `@AGENTS.md` redirect / 계층화 / anti-fragmentation 명문화)을 등장시켰다. [[agent-skills]] 11단계로 정리된 이 발견은 [[backend-fastapi-stack]](15회차)·[[dataframe-ecosystem-evolution]](16회차)·[[agent-frameworks-matrix]](17~18회차)에 이은 5번째 종합 축이다.
 

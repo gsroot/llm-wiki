@@ -23,8 +23,9 @@ related:
   - "[[c2spf-analytics]]"
   - "[[com2us-platform]]"
   - "[[portfolio-seed]]"
+  - "[[llm-infra-meta-cluster]]"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]
 ---
 
@@ -217,6 +218,10 @@ flutter pub add --dev riverpod_generator build_runner
 2. **의사결정 시**: 본 페이지의 의사결정 트리 → 시나리오 B/C → 30분 부트스트랩
 3. **종합 비교 필요 시**: [[agent-frameworks-matrix]] / [[pandas-vs-polars-vs-duckdb]] / [[flutter-nextjs-fullstack-pattern]]
 4. **회사 BI 적용 시**: 본 페이지 "회사 BI 적용 매핑" 표 + 라이선스 주의
+
+## 관련 메타 운영 축
+
+도구 선택 자체는 본 페이지가 담당하지만, LLM과 함께 일하는 운영 방식은 [[llm-infra-meta-cluster]]가 담당한다. 신규 OSS나 프로젝트를 평가할 때는 **본 페이지로 도구 분류 → [[llm-infra-meta-cluster]]로 agent-skills/harness/MCP/거버넌스 모델 위치 확인** 순서가 가장 안정적이다.
 
 ## 미래 작업
 

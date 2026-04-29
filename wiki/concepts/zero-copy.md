@@ -8,9 +8,9 @@ related:
   - "[[parquet]]"
   - "[[duckdb]]"
   - "[[polars]]"
-source_count: 0
+source_count: 4
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Zero-copy
@@ -45,7 +45,14 @@ updated: 2026-04-28
 - [[duckdb]] / [[polars]] — Arrow 메모리 직접 사용 엔진
 - [[append-only-log]] — Kafka의 zero-copy sendfile 시스템콜
 
+## 출처
+
+- [[apache-arrow]] — Arrow/Parquet의 메모리·디스크 표준과 zero-copy 교환
+- [[duckdb-duckdb]] — Arrow/pandas/Polars 통합과 Parquet 직접 scan
+- [[pola-rs-polars]] — Arrow 기반 컬럼 메모리 모델과 Lazy execution
+- [[apache-kafka]] — sendfile/pagecache 기반 네트워크 zero-copy 설계
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[zero-copy]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[zero-copy]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
 - 16회차 발견 = 1990년대 Linux sendfile() 시스템콜의 Apache Arrow 일반화.

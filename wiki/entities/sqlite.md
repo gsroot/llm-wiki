@@ -7,9 +7,9 @@ related:
   - "[[postgresql]]"
   - "[[duckdb]]"
   - "[[redis]]"
-source_count: 0
+source_count: 3
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # SQLite
@@ -49,7 +49,13 @@ updated: 2026-04-28
 - [[postgresql]] — 다중 사용자 OLTP 대안
 - [[redis]] — 키-값 캐시·세션 저장 대안 (트랜잭션 없음)
 
+## 출처
+
+- [[duckdb-duckdb]] — "분석용 SQLite" 포지셔닝과 embedded OLAP 비교
+- [[sqlalchemy-sqlalchemy]] — SQLite dialect/DBAPI 지원 맥락
+- [[sqlalchemy-alembic]] — SQLite batch migration 제약과 마이그레이션 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[sqlite]]` 깨진 링크 발견. [[pandas-vs-polars-vs-duckdb]] 비교 페이지의 사실상 표준 대조군.
+- 25회차 stub 사유: 23회차 점검에서 `[[sqlite]]` 깨진 링크 발견. 29회차에 DuckDB/SQLAlchemy/Alembic source 기반으로 1차 보강.
 - 본 위키에서 SQLite 본격 페이지가 부재하지만, [[duckdb]] / [[matechat]] (Flutter Hive 사용) / [[backend-fastapi-stack]] 운영 시 PostgreSQL 부재 환경의 대안으로 자주 호출됨.

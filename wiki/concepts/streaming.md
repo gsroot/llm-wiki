@@ -8,9 +8,9 @@ related:
   - "[[polars]]"
   - "[[duckdb]]"
   - "[[redis]]"
-source_count: 0
+source_count: 4
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Streaming
@@ -51,7 +51,14 @@ updated: 2026-04-28
 - [[redis]] Streams — 경량 대안
 - [[append-only-log]] — Kafka의 핵심 자료구조
 
+## 출처
+
+- [[apache-kafka]] — event streaming과 append-only topic 설계
+- [[pola-rs-polars]] — LazyFrame/streaming execution의 데이터프레임 맥락
+- [[duckdb-duckdb]] — 대용량 Parquet/CSV scan과 vectorized execution
+- [[redis-redis]] — Redis Streams와 Pub/Sub의 경량 스트리밍 맥락
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[streaming]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[streaming]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
 - "디스크는 친구" 16회차 사상의 streaming 변종 — sequential I/O + 페이지 캐시 활용으로 메모리 한계 회피.

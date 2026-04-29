@@ -11,7 +11,7 @@ related:
   - "[[riverpod]]"
 source_count: 1
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 22회차]
 ---
 
@@ -44,7 +44,7 @@ tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 
 
 ## 출처
 
-- [[tanstack-query]] — 본 OSS 저장소 (22회차 신규)
+- [[tanstack-tanstack-query]] — 본 OSS 저장소 (22회차 신규)
 
 ## 메모
 

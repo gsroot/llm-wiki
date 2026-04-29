@@ -6,9 +6,9 @@ tags: [tanstack, tanner-linsley, react, query, table, router, form, 25회차]
 related:
   - "[[tanstack-query]]"
   - "[[react]]"
-source_count: 0
+source_count: 1
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # TanStack
@@ -43,7 +43,11 @@ updated: 2026-04-28
 - [[tanstack-query]] — 본 조직 대표 OSS
 - [[react]] — 주된 호스트 (멀티 프레임워크 어댑터로 진영 횡단)
 
+## 출처
+
+- [[tanstack-tanstack-query]] — TanStack Query와 TanStack 12+ 패키지 생태계
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[tanstack]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[tanstack]]` 깨진 링크 발견. 29회차에 TanStack Query source 기반으로 1차 보강.
 - 후속: TanStack Router (타입 안전 라우팅) 또는 TanStack Form은 [[seokgeun-stack-guide]] React 진영 부트스트랩에 추가 검토 가치.

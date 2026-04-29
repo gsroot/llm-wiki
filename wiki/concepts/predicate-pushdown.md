@@ -8,9 +8,9 @@ related:
   - "[[polars]]"
   - "[[parquet]]"
   - "[[pyarrow]]"
-source_count: 0
+source_count: 3
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Predicate Pushdown
@@ -51,7 +51,13 @@ SELECT user_id, revenue FROM 'data.parquet' WHERE date = '2026-04-28';
 - [[duckdb]] / [[polars]] — pushdown 표준 지원 엔진
 - [[query-optimization]] — 상위 개념
 
+## 출처
+
+- [[duckdb-duckdb]] — Parquet/CSV scan과 SQL optimizer의 pushdown 맥락
+- [[pola-rs-polars]] — LazyFrame logical plan 최적화와 scan 단계 pushdown
+- [[apache-arrow]] — Parquet row group metadata와 columnar scan 기반
+
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[predicate-pushdown]]` 깨진 링크 발견.
+- 25회차 stub 사유: 23회차 점검에서 `[[predicate-pushdown]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
 - Projection pushdown(불필요한 컬럼 제거)과 함께 columnar 쿼리 최적화의 양대 축.
