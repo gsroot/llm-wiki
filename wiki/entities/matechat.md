@@ -33,9 +33,11 @@ related:
   - "[[c2spf-analytics]]"
   - "[[com2us-platform]]"
   - "[[token-economy]]"
+  - "[[portfolio-seed]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 6
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # MateChat

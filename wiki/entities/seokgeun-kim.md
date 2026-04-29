@@ -9,9 +9,10 @@ related:
   - "[[xpla-platform]]"
   - "[[matechat]]"
   - "[[seokgeun-operating-profile-2026]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 8
 created: 2026-04-24
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # 김석근 (Seokgeun Kim)

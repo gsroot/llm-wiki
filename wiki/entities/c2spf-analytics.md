@@ -12,9 +12,10 @@ related:
   - "[[devops-cicd]]"
   - "[[seokgeun-stack-guide]]"
   - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
 source_count: 4
 created: 2026-04-24
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # c2spf 애널리틱스 (게임 데이터 BI)

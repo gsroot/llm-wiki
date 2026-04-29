@@ -10,6 +10,83 @@ type: log
 
 ---
 
+## [2026-04-29] cleanup | 평가 후속 P1 3건 — 태그 규칙 명확화 + index 회고 분리 (31회차)
+
+- **트리거**: 30회차 완료 직후 사용자 요청 "P1 처리를 이어가줘". 평가 보고서 P1 권고 6건 중 인프라 자동화(7~9번)을 제외한 3건(4·5·6)을 즉시 처리.
+
+### 산출
+
+1. **P1-6 — wiki/templates/ 디렉토리 코드화 (이미 처리됨)**
+   - 평가 보고서의 Obsidian agent가 `wiki/templates/`만 확인해서 "미존재"로 진단했으나, **실제로 `templates/`은 루트에 존재하고 5개 파일(concept.md / entity.md / lesson.md / source.md / synthesis.md) 모두 정상 코드화 상태**.
+   - CLAUDE.md 32~37행 디렉토리 구조도가 templates/ 위치를 루트로 정확히 명시 → agent의 false negative.
+   - 별도 작업 불필요. 평가 보고서 D축 시각적 품질에 -15점 페널티는 무효화 가능.
+
+2. **P1-5 — CLAUDE.md 태그 일관성 규칙 명확화**
+   - 49행 H1 규칙에 영어 우선 허용 케이스 명시 (Microsoft / DevOps & CI/CD).
+   - 51행 단일 라인 태그 규칙 → 4단계 명문화:
+     - **개념·도메인 태그**: 한국어 + 영어 병기 의무
+     - **제품·라이브러리·도구·약어 태그**: 영어 단독 허용
+     - **고유명사 태그**: 한국어 단독 허용
+     - **회차 / 메타 태그**: 자유 사용
+   - 평가 보고서 D축 "태그 한영 병기 60% 회색지대" 결함 해소 — 영어 단독 태그(uv / zustand / nextjs 등)가 모두 정당한 "제품·라이브러리" 케이스로 분류됨.
+
+3. **P1-4 — index.md HTML 회고 주석 분리**
+   - 9~53행 HTML 회고 주석(43줄, ~1,500 토큰)을 신규 [[index-history]]로 통째로 분리.
+   - index.md 본문에 한 줄 안내 추가: "회차별 누적 회고는 [[index-history]]로 분리되었다 (31회차 분리, ~1500 토큰 절감). 시간순 활동 기록은 [[log]]를 참조한다."
+   - 결과: index.md 274줄 → 244줄, HTML 주석 0개, 5축 표·통계·카탈로그 모든 섹션 보존.
+   - [[index-history]] 신규 파일: 66줄, type:log, 9~30회차 누적 회고 보존. 30회차 이후는 [[log]]에만 기록 (중복 방지 명시).
+
+### 메타
+
+- **수정 파일 3개 + 신규 1개**: CLAUDE.md / wiki/index.md / wiki/logs/log.md(본 파일) + wiki/logs/index-history.md(신규).
+- **신규 위키링크**: index.md → [[index-history]], [[log]] 각 1개씩 신설 (안내 한 줄에 2개).
+- **토큰 절감**: index.md ~30줄 단축 → RAG 회수 시 첫 페이지 토큰 ~1,500 절감 (평가 보고서 E축 권고 정확히 반영).
+- **재평가 등급 격상 예상**:
+  - D축 Obsidian 볼트 품질 A− → A (태그 규칙 명확화 + 템플릿 false negative 정정)
+  - E축 RAG 적합성 A → A+ (index 토큰 효율 개선)
+- **잔여 P1 6건 중 처리 완료 3건** (P1-4 / P1-5 / P1-6), **남은 3건은 P2 인프라 영역**:
+  - P1-7: lint 자동화 스크립트 (`scripts/wiki-lint.py`)
+  - P1-8: 인바운드 카운트 / source_count 자동 갱신
+  - P1-9: 위키 공개/공유 정책 결정 (5번째 축의 일반 가치 활용 여부)
+
+---
+
+## [2026-04-29] cleanup | 평가 후속 P0 3건 — 5축 진입점 + 양방향 백링크 (30회차)
+
+- **트리거**: 사용자 요청으로 위키 7축 재평가 보고서 작성. 종합 등급 A (콘텐츠 A− / 구조 A− / 메타 인식 A+). 보고서가 식별한 P0 3건(1시간 내 무위험)을 사용자가 즉시 처리 지시.
+
+### 산출
+
+1. **P0-1 — index.md 진입점에 "5개 핵심 축" 요약표 신설**
+   - 통계 섹션과 소스 카탈로그 사이에 신규 H2 섹션 `## 이 위키의 5개 핵심 축` 삽입.
+   - 5축 × 인바운드 × hub 페이지 × 역할 매트릭스 + 읽기 순서 가이드 4단계.
+   - 인바운드 측정 기준: 1축 92 / 2축 176 / 3축 42 / 4축 119 / 5축 477 (총 906 / 5축 53% 점유).
+   - 효과: 신규 방문자가 index.md 한 페이지에서 3분 내 5축 식별 가능 (이전엔 [[llm-infra-meta-cluster]] 별도 학습 필요).
+
+2. **P0-2 — [[matechat]] → [[portfolio-seed]] 역링크**
+   - matechat entity frontmatter `related`에 `[[portfolio-seed]]` 추가.
+   - 27회차에 portfolio-seed → matechat 단방향만 완성된 결함 (재평가 보고서 C축 지적) 해소.
+   - 효과: 4축 (MateChat) ↔ 2축 (포트폴리오) 양방향 완전 연결.
+
+3. **P0-3 — 4핵심축 hub 4개에 [[llm-infra-meta-cluster]] 백링크**
+   - 4개 파일 frontmatter `related` 마지막에 `- "[[llm-infra-meta-cluster]]"` 1줄 추가:
+     - [[seokgeun-kim]] (1축 인물 hub, 인바운드 52)
+     - [[portfolio-seed]] (2축 포트폴리오 hub, 인바운드 19)
+     - [[c2spf-analytics]] (2축 시스템 hub, 인바운드 97 — 위키 4위)
+     - [[matechat]] (4축 MateChat hub, 인바운드 84)
+   - 28회차에 [[seokgeun-stack-guide]] → llm-infra-meta-cluster만 명시 백링크였던 결함 (재평가 C축 지적) 해소.
+   - 효과: 4핵심축 모두 5번째 축으로 직접 진입 가능 — 재평가 보고서 C축 등급 A− → A 격상 가능.
+
+### 메타
+
+- **수정 파일 5개**: index.md / matechat.md / seokgeun-kim.md / portfolio-seed.md / c2spf-analytics.md.
+- **신규 위키링크**: 5축 표 17개 + portfolio-seed→matechat 1개 + 4핵심축→llm-infra-meta-cluster 4개 = 22개 신규 wikilink.
+- **인바운드 변화 예상**: llm-infra-meta-cluster 19 → 23 (+4, 4핵심축 백링크), portfolio-seed 17 → 18 (+1, matechat 역링크), 5축 표 안 위키링크는 기존 hub들 대부분 +1.
+- **재평가 보고서 등급 격상 예상**: B축 핵심 축 선명도 A → A+ (5축 진입점 명시화) / C축 축 간 연결성 A− → A (4↔5축 부분 백링크 → 완전 연결).
+- **남은 권고**: P1 6건 (index 회고 분리 / 태그 규칙 명확화 / templates 디렉토리 코드화 / lint 자동화 / 인바운드 자동 갱신 / 공개 정책 결정), P2~P3 6건은 후속 회차 대상.
+
+---
+
 ## [2026-04-29] cleanup | stub source-backed 보강 + 고아 페이지 연결 (29회차)
 
 - **트리거**: 재평가 후 남은 리스크 2건 처리 요청 — (1) `source_count: 0` stub 18개가 RAG 착지점이 될 수 있음, (2) 고아 페이지 6개 중 [[llm-infra-meta-cluster]] 같은 핵심 종합 페이지가 index 외 진입점이 부족함.
