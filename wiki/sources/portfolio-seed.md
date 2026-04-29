@@ -19,6 +19,24 @@ related:
   - "[[seokgeun-stack-guide]]"
   - "[[llm-infra-meta-cluster]]"
 confidence: high
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[blockchain-xpla]]"
+  - "[[c2spf-analytics]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[devops-cicd]]"
+  - "[[frontend-react]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[matechat]]"
+  - "[[ml-ai]]"
+  - "[[portfolio]]"
+  - "[[portfolio-method]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[xpla-platform]]"
 ---
 
 # 포트폴리오 시드 문서 (old-portfolio.md)

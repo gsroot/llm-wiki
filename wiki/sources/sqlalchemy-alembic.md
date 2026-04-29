@@ -15,6 +15,10 @@ related:
   - "[[python-packaging]]"
   - "[[uv]]"
 confidence: high
+cited_by:
+  - "[[alembic]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[sqlite]]"
 ---
 
 # sqlalchemy/alembic — 데이터베이스 마이그레이션 도구

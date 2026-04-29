@@ -14,6 +14,10 @@ related:
   - "[[llm-wiki-pattern]]"
   - "[[obsidian-web-clipper]]"
 confidence: high
+cited_by:
+  - "[[llm-infra-meta-cluster]]"
+  - "[[obsidian]]"
+  - "[[seokgeun-kim]]"
 ---
 
 # Obsidian 사용 가이드

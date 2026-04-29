@@ -15,6 +15,8 @@ related:
   - "[[microsoft-ai-agents-for-beginners]]"
   - "[[anthropics-claude-cookbooks]]"
 source_count: 4
+observed_source_refs: 26
+inbound_count: 62
 created: 2026-04-15
 updated: 2026-04-27
 ---

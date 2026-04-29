@@ -21,6 +21,12 @@ confidence: high
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인"
+cited_by:
+  - "[[mate-chat-project-wiki-2026]]"
+  - "[[matechat]]"
+  - "[[matechat-project-knowledge-map]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-operating-profile-2026]]"
 ---
 
 # 석근 프로필 (2026)

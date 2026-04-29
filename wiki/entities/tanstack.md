@@ -7,6 +7,8 @@ related:
   - "[[tanstack-query]]"
   - "[[react]]"
 source_count: 1
+observed_source_refs: 2
+inbound_count: 9
 created: 2026-04-28
 updated: 2026-04-29
 ---

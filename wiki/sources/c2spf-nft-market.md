@@ -15,6 +15,12 @@ related:
   - "[[seokgeun-kim]]"
   - "[[blockchain-xpla]]"
 confidence: high
+cited_by:
+  - "[[blockchain-xpla]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[portfolio]]"
+  - "[[xpla-platform]]"
 ---
 
 # 컴투스플랫폼 NFT 마켓 (2022-05-nft-market.md)

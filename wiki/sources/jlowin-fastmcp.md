@@ -14,6 +14,12 @@ related:
   - "[[ml-ai]]"
   - "[[agent-skills]]"
 confidence: high
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-skills]]"
+  - "[[fastmcp]]"
+  - "[[ml-ai]]"
+  - "[[oss-saas-dual]]"
 ---
 
 # jlowin/fastmcp — The standard framework for MCP

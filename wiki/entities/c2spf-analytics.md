@@ -14,6 +14,8 @@ related:
   - "[[matechat]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 4
+observed_source_refs: 26
+inbound_count: 130
 created: 2026-04-24
 updated: 2026-04-29
 verification_required: true

@@ -8,6 +8,8 @@ related:
   - "[[harness]]"
   - "[[llm-wiki-pattern]]"
 source_count: 1
+observed_source_refs: 3
+inbound_count: 6
 created: 2026-04-15
 updated: 2026-04-15
 ---

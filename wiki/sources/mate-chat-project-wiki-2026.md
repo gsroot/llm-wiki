@@ -19,6 +19,11 @@ related:
   - "[[flutter]]"
   - "[[token-economy]]"
 confidence: high
+cited_by:
+  - "[[matechat]]"
+  - "[[matechat-project-knowledge-map]]"
+  - "[[portfolio]]"
+  - "[[seokgeun-operating-profile-2026]]"
 ---
 
 # mate-chat 프로젝트 위키 스냅샷 (2026-04-28)

@@ -17,6 +17,18 @@ related:
   - "[[parquet]]"
   - "[[sqlite]]"
 confidence: high
+cited_by:
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[duckdb]]"
+  - "[[lakehouse]]"
+  - "[[lazy-evaluation]]"
+  - "[[oss-saas-dual]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[predicate-pushdown]]"
+  - "[[query-optimization]]"
+  - "[[sqlite]]"
+  - "[[streaming]]"
+  - "[[zero-copy]]"
 ---
 
 # duckdb/duckdb (DuckDB 저장소)

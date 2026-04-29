@@ -21,6 +21,16 @@ related:
   - "[[mcp]]"
   - "[[agent-stack-evolution]]"
 confidence: high
+cited_by:
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[ml-ai]]"
+  - "[[openai]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-openai-agents-python]]"
 ---
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음

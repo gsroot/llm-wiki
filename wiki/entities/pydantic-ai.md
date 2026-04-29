@@ -15,6 +15,8 @@ related:
   - "[[pydantic-pydantic-ai]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 1
+inbound_count: 24
 created: 2026-04-28
 updated: 2026-04-28
 tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차]

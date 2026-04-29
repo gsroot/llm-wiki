@@ -8,6 +8,8 @@ related:
   - "[[xpla-platform]]"
   - "[[backend-python-fastapi]]"
 source_count: 3
+observed_source_refs: 7
+inbound_count: 13
 created: 2026-04-24
 updated: 2026-04-24
 ---

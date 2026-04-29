@@ -16,6 +16,25 @@ related:
   - "[[duckdb]]"
   - "[[apache-foundation]]"
 confidence: high
+cited_by:
+  - "[[apache-foundation]]"
+  - "[[append-only-log]]"
+  - "[[copy-on-write]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[duckdb]]"
+  - "[[duckdb-duckdb]]"
+  - "[[kafka]]"
+  - "[[lakehouse]]"
+  - "[[lazy-evaluation]]"
+  - "[[lightgbm]]"
+  - "[[microsoft-lightgbm]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[parquet]]"
+  - "[[pola-rs-polars]]"
+  - "[[polars]]"
+  - "[[predicate-pushdown]]"
+  - "[[pyarrow]]"
+  - "[[zero-copy]]"
 ---
 
 # apache/arrow + apache/parquet-format

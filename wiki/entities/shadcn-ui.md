@@ -13,6 +13,8 @@ related:
   - "[[shadcn-ui-ui]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 8
+inbound_count: 38
 created: 2026-04-28
 updated: 2026-04-28
 tags: [shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차]

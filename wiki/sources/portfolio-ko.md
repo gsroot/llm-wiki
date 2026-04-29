@@ -15,6 +15,18 @@ related:
   - "[[c2spf-analytics]]"
   - "[[portfolio-resume-ko]]"
 confidence: high
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[c2spf-analytics]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[devops-cicd]]"
+  - "[[frontend-react]]"
+  - "[[matechat]]"
+  - "[[ml-ai]]"
+  - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
 ---
 
 # 포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)

@@ -17,6 +17,13 @@ related:
   - "[[agent-skills]]"
 confidence: high
 tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, 18회차]
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[ml-ai]]"
+  - "[[openai-agents-python]]"
+  - "[[pydantic-ai]]"
 ---
 
 # Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점

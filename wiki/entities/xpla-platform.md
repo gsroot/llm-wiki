@@ -8,6 +8,8 @@ related:
   - "[[seokgeun-kim]]"
   - "[[blockchain-xpla]]"
 source_count: 3
+observed_source_refs: 8
+inbound_count: 16
 created: 2026-04-24
 updated: 2026-04-24
 ---

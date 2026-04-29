@@ -14,6 +14,16 @@ related:
   - "[[com2us-platform]]"
   - "[[portfolio-seed]]"
 confidence: high
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[frontend-react]]"
+  - "[[matechat]]"
+  - "[[ml-ai]]"
+  - "[[portfolio]]"
+  - "[[portfolio-ko]]"
+  - "[[seokgeun-kim]]"
 ---
 
 # 포트폴리오 — 이력서(한국어, resume-ko.md)

@@ -15,6 +15,13 @@ related:
   - "[[agent-patterns]]"
 confidence: high
 tags: [langchain, langgraph, deepagents, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[deepagents]]"
+  - "[[ml-ai]]"
+  - "[[openai-agents-python]]"
 ---
 
 # DeepAgents — LangGraph 위의 batteries-included agent harness

@@ -13,6 +13,8 @@ related:
   - "[[agent-patterns]]"
   - "[[anthropics-skills]]"
 source_count: 1
+observed_source_refs: 3
+inbound_count: 20
 created: 2026-04-27
 updated: 2026-04-27
 ---

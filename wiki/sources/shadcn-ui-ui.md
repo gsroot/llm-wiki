@@ -15,6 +15,12 @@ related:
   - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차]
 confidence: high
+cited_by:
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[radix-ui]]"
+  - "[[react]]"
+  - "[[shadcn-ui]]"
+  - "[[tailwindcss]]"
 ---
 
 # shadcn-ui/ui 소스

@@ -11,6 +11,8 @@ related:
   - "[[anthropic]]"
   - "[[agent-patterns]]"
 source_count: 2
+observed_source_refs: 22
+inbound_count: 48
 created: 2026-04-15
 updated: 2026-04-27
 ---

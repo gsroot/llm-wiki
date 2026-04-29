@@ -11,6 +11,8 @@ related:
   - "[[pandas]]"
   - "[[pandas-dev]]"
 source_count: 5
+observed_source_refs: 18
+inbound_count: 42
 created: 2026-04-24
 updated: 2026-04-27
 ---

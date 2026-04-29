@@ -17,6 +17,22 @@ related:
   - "[[anthropics-claude-cookbooks]]"
   - "[[github-spec-kit]]"
 confidence: high
+cited_by:
+  - "[[bdfl]]"
+  - "[[copy-on-write]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[dataframe]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[ml-ai]]"
+  - "[[numfocus]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas]]"
+  - "[[pandas-dev]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[pdep]]"
+  - "[[python]]"
 ---
 
 # pandas-dev/pandas — Python 데이터 분석 표준 라이브러리

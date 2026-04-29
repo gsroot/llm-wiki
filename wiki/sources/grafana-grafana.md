@@ -14,6 +14,12 @@ related:
   - "[[observability-and-cicd-stack]]"
   - "[[agent-skills]]"
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
+  - "[[grafana]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
 ---
 
 # Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md

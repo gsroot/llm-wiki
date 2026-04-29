@@ -15,6 +15,10 @@ related:
   - "[[langchain]]"
 confidence: medium
 tags: [pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차]
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[ml-ai]]"
+  - "[[pandas-ai]]"
 ---
 
 # PandasAI — DataFrame을 자연어로 대화하는 라이브러리

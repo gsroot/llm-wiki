@@ -14,6 +14,16 @@ related:
   - "[[harness]]"
   - "[[context-engineering]]"
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[anthropic]]"
+  - "[[anthropics-skills]]"
+  - "[[autonomous-research-loop]]"
+  - "[[claude-code]]"
+  - "[[karpathy-autoresearch]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[seokgeun-kim]]"
+  - "[[using-llm-wiki-as-rag]]"
 ---
 
 # Claude Code: Slash Commands vs Agent Skills

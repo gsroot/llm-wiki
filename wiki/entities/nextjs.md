@@ -14,6 +14,8 @@ related:
   - "[[vercel-next.js]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 2
+inbound_count: 33
 created: 2026-04-28
 updated: 2026-04-28
 tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, 22회차]

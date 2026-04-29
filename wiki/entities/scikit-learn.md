@@ -12,6 +12,8 @@ related:
   - "[[scikit-learn-scikit-learn]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 2
+observed_source_refs: 25
+inbound_count: 57
 created: 2026-04-27
 updated: 2026-04-27
 ---

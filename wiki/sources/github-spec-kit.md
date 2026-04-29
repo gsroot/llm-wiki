@@ -22,6 +22,27 @@ related:
   - "[[anthropics-claude-cookbooks]]"
   - "[[context-engineering]]"
 confidence: high
+cited_by:
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[astral-sh-uv]]"
+  - "[[claude-code]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[github]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[pdep]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[spec-driven-development]]"
+  - "[[spec-kit]]"
+  - "[[uv]]"
 ---
 
 # github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)

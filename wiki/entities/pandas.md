@@ -13,6 +13,8 @@ related:
   - "[[pandas-dev-pandas]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 14
+inbound_count: 75
 created: 2026-04-27
 updated: 2026-04-27
 ---

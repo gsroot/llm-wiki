@@ -14,6 +14,15 @@ related:
   - "[[ml-ai]]"
   - "[[data-pipeline-bigquery]]"
 confidence: high
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[microsoft]]"
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[pandas]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
 ---
 
 # microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML

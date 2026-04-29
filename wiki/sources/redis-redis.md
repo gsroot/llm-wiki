@@ -12,6 +12,12 @@ related:
   - "[[fastapi]]"
   - "[[python-packaging]]"
 confidence: high
+cited_by:
+  - "[[append-only-log]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[event-driven-architecture]]"
+  - "[[redis]]"
+  - "[[streaming]]"
 ---
 
 # redis/redis — In-Memory Data Structure Server

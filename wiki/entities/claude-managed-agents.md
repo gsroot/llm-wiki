@@ -13,6 +13,8 @@ related:
   - "[[context-engineering]]"
   - "[[token-economy]]"
 source_count: 1
+observed_source_refs: 4
+inbound_count: 11
 created: 2026-04-27
 updated: 2026-04-27
 ---

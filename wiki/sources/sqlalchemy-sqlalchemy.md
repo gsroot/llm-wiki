@@ -17,6 +17,11 @@ related:
   - "[[uv]]"
   - "[[scikit-learn]]"
 confidence: high
+cited_by:
+  - "[[backend-fastapi-stack]]"
+  - "[[python]]"
+  - "[[sqlalchemy]]"
+  - "[[sqlite]]"
 ---
 
 # sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM

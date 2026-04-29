@@ -21,6 +21,16 @@ related:
   - "[[context-engineering]]"
   - "[[github]]"
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[dart]]"
+  - "[[flutter]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[google]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[openai-openai-cookbook]]"
 ---
 
 # flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준

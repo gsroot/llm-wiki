@@ -13,6 +13,11 @@ related:
   - "[[mcp]]"
   - "[[llm-wiki-pattern]]"
 confidence: high
+cited_by:
+  - "[[anthropic]]"
+  - "[[claude-code]]"
+  - "[[claude-code-quickstart]]"
+  - "[[mcp]]"
 ---
 
 # Claude Code 개요

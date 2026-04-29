@@ -7,6 +7,8 @@ related:
   - "[[obsidian]]"
   - "[[llm-wiki-pattern]]"
 source_count: 1
+observed_source_refs: 4
+inbound_count: 11
 created: 2026-04-09
 updated: 2026-04-09
 ---

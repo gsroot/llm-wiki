@@ -22,6 +22,17 @@ related:
   - "[[uv]]"
   - "[[python-packaging]]"
 confidence: high
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[ml-ai]]"
+  - "[[openai]]"
+  - "[[openai-agents-python]]"
+  - "[[python]]"
 ---
 
 # openai/openai-agents-python — OpenAI Agents SDK 본체

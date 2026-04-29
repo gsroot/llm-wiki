@@ -11,6 +11,8 @@ related:
   - "[[data-pipeline-bigquery]]"
   - "[[frontend-react]]"
 source_count: 5
+observed_source_refs: 13
+inbound_count: 25
 created: 2026-04-27
 updated: 2026-04-27
 ---

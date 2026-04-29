@@ -14,6 +14,10 @@ related:
   - "[[nanochat]]"
   - "[[autoresearch]]"
 confidence: high
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[karpathy]]"
+  - "[[nanogpt]]"
 ---
 
 # karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)

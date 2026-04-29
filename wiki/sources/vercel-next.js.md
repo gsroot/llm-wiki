@@ -15,6 +15,14 @@ related:
   - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, LLM-pr-marker, 22회차]
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[nextjs]]"
+  - "[[react]]"
+  - "[[tailwindcss]]"
+  - "[[turbopack]]"
+  - "[[vercel]]"
 ---
 
 # vercel/next.js 소스

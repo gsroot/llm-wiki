@@ -16,6 +16,14 @@ related:
   - "[[harness]]"
   - "[[autonomous-research-loop]]"
 confidence: high
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[context-engineering]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
 ---
 
 # microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문

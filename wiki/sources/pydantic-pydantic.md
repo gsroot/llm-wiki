@@ -16,6 +16,10 @@ related:
   - "[[scikit-learn]]"
   - "[[agent-stack-evolution]]"
 confidence: high
+cited_by:
+  - "[[backend-fastapi-stack]]"
+  - "[[pydantic]]"
+  - "[[python]]"
 ---
 
 # pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준

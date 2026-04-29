@@ -8,6 +8,8 @@ related:
   - "[[duckdb]]"
   - "[[redis]]"
 source_count: 3
+observed_source_refs: 1
+inbound_count: 7
 created: 2026-04-28
 updated: 2026-04-29
 ---

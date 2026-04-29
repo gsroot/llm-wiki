@@ -14,6 +14,11 @@ related:
   - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [zustand, react, state-management, hooks, flux, minimal, 22회차]
 confidence: high
+cited_by:
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[poimandres]]"
+  - "[[react]]"
+  - "[[zustand]]"
 ---
 
 # pmndrs/zustand 소스

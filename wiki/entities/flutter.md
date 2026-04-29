@@ -19,6 +19,8 @@ related:
   - "[[flutter-flutter]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 13
+inbound_count: 46
 created: 2026-04-27
 updated: 2026-04-28
 ---

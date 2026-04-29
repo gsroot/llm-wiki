@@ -13,6 +13,13 @@ related:
   - "[[observability-and-cicd-stack]]"
   - "[[agent-skills]]"
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
+  - "[[event-driven-architecture]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[sentry]]"
 ---
 
 # Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT

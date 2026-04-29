@@ -16,6 +16,14 @@ related:
   - "[[qmd]]"
   - "[[slash-commands-vs-agent-skills]]"
 confidence: high
+cited_by:
+  - "[[claude-code]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[mcp]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
+  - "[[seokgeun-kim]]"
+  - "[[slash-commands-vs-agent-skills]]"
 ---
 
 # 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법

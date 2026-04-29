@@ -81,6 +81,7 @@ FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 SOURCE_COUNT_LINE_RE = re.compile(r"^source_count:\s*\d+\s*$", re.MULTILINE)
 OBSERVED_REFS_LINE_RE = re.compile(r"^observed_source_refs:\s*\d+\s*$", re.MULTILINE)
 INBOUND_COUNT_LINE_RE = re.compile(r"^inbound_count:\s*\d+\s*$", re.MULTILINE)
+CITED_BY_KEY_RE = re.compile(r"^cited_by:\s*$", re.MULTILINE)
 
 # 의도된 예시 텍스트로 위키링크 형태를 사용한 케이스 (깨진 링크 false positive 제외)
 EXAMPLE_TARGETS: frozenset[str] = frozenset(
@@ -287,6 +288,9 @@ def lint(update: bool = False) -> LintResult:
 
     inbound: dict[str, int] = {p.stem: 0 for p in pages}
     source_count_observed: dict[str, int] = {p.stem: 0 for p in pages}
+    # 47회차 신설: cited_by_map[source_stem] = sorted list of citing page stems
+    sources_set = {p.stem for p in pages if p.page_type == "source"}
+    cited_by_map: dict[str, set[str]] = {s: set() for s in sources_set}
 
     for page in pages:
         if page.yaml_invalid:
@@ -311,6 +315,16 @@ def lint(update: bool = False) -> LintResult:
                     source_count_observed[target] = (
                         source_count_observed.get(target, 0) + 1
                     )
+                # 47회차 cited_by 측정: target이 source 페이지면 누가 인용했는지 누적
+                # log·history·redirect 페이지의 인용은 cited_by에 포함하지 않음
+                # (메타 페이지가 답변 근거 출처 추적에 들어가면 안 됨)
+                if (
+                    target in sources_set
+                    and not page.is_log_file
+                    and page.stem not in {"log", "index", "index-history", "by-session"}
+                    and not page.is_redirect
+                ):
+                    cited_by_map[target].add(page.stem)
             else:
                 if is_history:
                     continue
@@ -342,6 +356,16 @@ def lint(update: bool = False) -> LintResult:
                 observed_source_refs=observed,
                 inbound_count=inbound.get(page.stem, 0),
             )
+
+    # 47회차 신설: source 페이지에 cited_by 자동 갱신
+    if update:
+        for page in pages:
+            if page.yaml_invalid or page.is_redirect or page.is_log_file:
+                continue
+            if page.page_type != "source":
+                continue
+            citing_stems = sorted(cited_by_map.get(page.stem, set()))
+            _update_cited_by(page, citing_stems)
 
     # 고아 페이지: 인바운드 0 (단, redirect/index/log 제외)
     for stem, cnt in inbound.items():
@@ -522,6 +546,68 @@ def _update_auto_fields(
 
     if raw != page.raw:
         page.path.write_text(raw, encoding="utf-8")
+
+
+def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
+    """source 페이지 frontmatter의 cited_by 필드를 in-place 갱신.
+
+    47회차 신설 (Codex 평가 P1 권고 — citation chain 양방향화).
+
+    cited_by는 자동 측정 필드:
+    - source 페이지를 wikilink로 인용한 모든 비-메타 페이지 stem 리스트
+    - 운영자 수동 입력 금지, --update가 갱신
+    - 빈 list면 cited_by 키 제거 (orphan source의 깔끔한 표시)
+
+    구현: frontmatter 파싱 없이 정규식 + 라인 단위 안전 업서트.
+    cited_by 블록을 찾아 새 리스트로 교체. 없으면 frontmatter 끝에 삽입.
+    """
+    raw = page.raw
+    fm_match = FRONTMATTER_RE.match(raw)
+    if not fm_match:
+        return
+    fm_text = fm_match.group(1)
+    body_after = raw[fm_match.end():]
+
+    fm_lines = fm_text.split("\n")
+
+    # 기존 cited_by 블록 위치 탐색
+    start = None
+    end = len(fm_lines)
+    for i, ln in enumerate(fm_lines):
+        if ln.strip() == "cited_by:":
+            start = i
+            break
+    if start is not None:
+        for j in range(start + 1, len(fm_lines)):
+            ln = fm_lines[j]
+            # 다음 top-level 키(들여쓰기 없음) 또는 빈 줄에서 cited_by 블록 종료
+            if ln and not ln.startswith(" ") and not ln.startswith("\t") and not ln.startswith("-"):
+                end = j
+                break
+            if ln == "":
+                end = j
+                break
+
+    if not citing_stems:
+        # 빈 list — cited_by 키 자체를 제거
+        if start is None:
+            return  # 이미 없음
+        new_lines = fm_lines[:start] + fm_lines[end:]
+    else:
+        new_block = ["cited_by:"] + [f'  - "[[{s}]]"' for s in citing_stems]
+        if start is None:
+            # frontmatter 끝에 삽입 (빈 라인이 끝에 있으면 그 전에)
+            new_lines = list(fm_lines)
+            while new_lines and new_lines[-1] == "":
+                new_lines.pop()
+            new_lines = new_lines + new_block
+        else:
+            new_lines = fm_lines[:start] + new_block + fm_lines[end:]
+
+    new_fm = "\n".join(new_lines)
+    new_raw = f"---\n{new_fm}\n---\n" + body_after
+    if new_raw != raw:
+        page.path.write_text(new_raw, encoding="utf-8")
 
 
 def report(result: LintResult, *, quiet: bool = False) -> None:
@@ -709,14 +795,18 @@ def main(argv: list[str] | None = None) -> int:
         report_full(result)
 
     if args.update:
+        print()
+        print(
+            "✓ 자동 필드 갱신 완료: observed_source_refs / inbound_count "
+            "(entity/concept), cited_by (source). "
+            "source_count(수동)는 보존됨."
+        )
         if result.source_count_mismatch:
-            print()
             print(
-                f"✓ source_count 부정합 {len(result.source_count_mismatch)}건 자동 수정 완료"
+                f"  ※ source_count vs observed_source_refs 부정합 "
+                f"{len(result.source_count_mismatch)}건은 정의 차이 정보 보고 "
+                f"(결함 아님, CLAUDE.md schema 3분리 참조)"
             )
-        else:
-            print()
-            print("✓ source_count 부정합 없음 (수정 사항 없음)")
 
     if (do_check or args.update) and result.has_defect() and not args.update:
         return 1

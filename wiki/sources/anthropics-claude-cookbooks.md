@@ -18,6 +18,27 @@ related:
   - "[[token-economy]]"
   - "[[karpathy-autoresearch]]"
 confidence: high
+cited_by:
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropic]]"
+  - "[[astral-sh-uv]]"
+  - "[[claude-agent-sdk]]"
+  - "[[claude-code]]"
+  - "[[claude-managed-agents]]"
+  - "[[context-engineering]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[prompt-cache]]"
+  - "[[spec-driven-development]]"
+  - "[[token-economy]]"
 ---
 
 # anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음

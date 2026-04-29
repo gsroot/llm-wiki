@@ -13,6 +13,10 @@ related:
   - "[[devops-cicd]]"
   - "[[observability-and-cicd-stack]]"
 confidence: high
+cited_by:
+  - "[[devops-cicd]]"
+  - "[[docker]]"
+  - "[[observability-and-cicd-stack]]"
 ---
 
 # Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트

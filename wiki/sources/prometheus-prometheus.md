@@ -14,6 +14,12 @@ related:
   - "[[observability-and-cicd-stack]]"
   - "[[agent-skills]]"
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[prometheus]]"
 ---
 
 # Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md

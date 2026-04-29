@@ -17,6 +17,27 @@ related:
   - "[[context-engineering]]"
   - "[[token-economy]]"
 confidence: high
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropic]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[claude-code]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[github]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[spec-kit]]"
 ---
 
 # anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스

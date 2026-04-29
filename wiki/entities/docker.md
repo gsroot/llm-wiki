@@ -13,6 +13,8 @@ related:
   - "[[moby-moby]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 3
+inbound_count: 19
 created: 2026-04-28
 updated: 2026-04-28
 ---

@@ -17,6 +17,15 @@ related:
   - "[[pandas]]"
   - "[[pandas-dev-pandas]]"
 confidence: high
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas]]"
+  - "[[pandas-dev-pandas]]"
 ---
 
 # microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문

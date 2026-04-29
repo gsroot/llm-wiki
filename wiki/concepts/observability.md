@@ -12,6 +12,8 @@ related:
   - "[[github-actions]]"
   - "[[docker]]"
 source_count: 3
+observed_source_refs: 0
+inbound_count: 6
 created: 2026-04-28
 updated: 2026-04-28
 ---

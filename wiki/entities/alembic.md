@@ -12,6 +12,8 @@ related:
   - "[[sqlalchemy-alembic]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 7
+inbound_count: 24
 created: 2026-04-28
 updated: 2026-04-28
 ---

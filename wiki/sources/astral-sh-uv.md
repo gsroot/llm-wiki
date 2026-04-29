@@ -15,6 +15,16 @@ related:
   - "[[seokgeun-kim]]"
   - "[[backend-python-fastapi]]"
 confidence: high
+cited_by:
+  - "[[astral]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[openai-agents-python]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[python]]"
+  - "[[python-packaging]]"
+  - "[[uv]]"
 ---
 
 # astral-sh/uv — Rust로 작성된 초고속 Python 패키지·프로젝트 관리자

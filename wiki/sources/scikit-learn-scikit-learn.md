@@ -14,6 +14,12 @@ related:
   - "[[data-pipeline-bigquery]]"
   - "[[com2us-platform]]"
 confidence: high
+cited_by:
+  - "[[llm-infra-meta-cluster]]"
+  - "[[ml-ai]]"
+  - "[[numfocus]]"
+  - "[[python]]"
+  - "[[scikit-learn]]"
 ---
 
 # scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)

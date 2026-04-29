@@ -11,6 +11,8 @@ related:
   - "[[fastapi]]"
   - "[[pydantic]]"
 source_count: 2
+observed_source_refs: 9
+inbound_count: 24
 created: 2026-04-27
 updated: 2026-04-28
 ---

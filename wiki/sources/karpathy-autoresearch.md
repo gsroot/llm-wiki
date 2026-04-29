@@ -16,6 +16,16 @@ related:
   - "[[context-engineering]]"
   - "[[claude-code]]"
 confidence: high
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[astral-sh-uv]]"
+  - "[[autonomous-research-loop]]"
+  - "[[autoresearch]]"
+  - "[[context-engineering]]"
+  - "[[harness]]"
+  - "[[karpathy]]"
+  - "[[uv]]"
 ---
 
 # karpathy/autoresearch — 자율 LLM 실험 루프

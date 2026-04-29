@@ -13,6 +13,10 @@ related:
   - "[[scikit-learn]]"
   - "[[ml-ai]]"
 confidence: high
+cited_by:
+  - "[[lightgbm]]"
+  - "[[ml-ai]]"
+  - "[[scikit-learn]]"
 ---
 
 # lightgbm-org/LightGBM — Light Gradient Boosting Machine

@@ -11,6 +11,8 @@ related:
   - "[[fastapi]]"
   - "[[tiangolo]]"
 source_count: 6
+observed_source_refs: 18
+inbound_count: 47
 created: 2026-04-24
 updated: 2026-04-27
 ---

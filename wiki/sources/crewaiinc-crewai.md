@@ -15,6 +15,13 @@ related:
   - "[[oss-saas-dual]]"
 confidence: high
 tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차]
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[crewai]]"
+  - "[[ml-ai]]"
+  - "[[openai-agents-python]]"
+  - "[[oss-saas-dual]]"
 ---
 
 # CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS

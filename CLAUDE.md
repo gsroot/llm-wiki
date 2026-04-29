@@ -163,7 +163,23 @@ python3 scripts/wiki-lint.py --update      # observed_source_refs / inbound_coun
 1. **운영자는 `source_count`만 수동 관리**한다. 빈약 페이지 검사는 이 값 기준.
 2. `observed_source_refs`·`inbound_count`는 **자동 갱신 전용** — 수동 입력 금지.
 3. lint check 4번(`source_count` 부정합)은 정의 A vs 정의 B 차이 보고 — **결함이 아닌 정보 보고**. delta가 큰 경우(±10 이상) 운영자가 의미 재검토.
-4. `--update` 모드는 `observed_source_refs`·`inbound_count` 두 자동 필드만 갱신한다. **`source_count`는 절대 자동 덮어쓰지 않는다**(32회차의 "의미 손실" 위험 제거).
+4. `--update` 모드는 `observed_source_refs`·`inbound_count`·`cited_by` 자동 필드만 갱신한다. **`source_count`는 절대 자동 덮어쓰지 않는다**(32회차의 "의미 손실" 위험 제거).
+
+#### `cited_by` (source 페이지 전용 — 47회차 신설, Codex P1 권고 채택)
+
+source 페이지 frontmatter에 자동으로 박히는 역참조 리스트. RAG 답변 시 사용자가 "이 source가 위키 어디에서 인용됐는지"를 추적 가능하게 한다 (citation chain 양방향화).
+
+```yaml
+cited_by:
+  - "[[matechat]]"
+  - "[[matechat-chat-analysis-module]]"
+  - "[[seokgeun-matechat-validation]]"
+```
+
+- **자동 갱신 전용**: `wiki-lint.py --update`가 측정·갱신. 운영자 수동 입력 금지.
+- **포함 대상**: source 페이지를 wikilink로 인용한 모든 비-메타 페이지(entity/concept/synthesis/source). 메타 페이지(log, index, index-history, by-session, redirect)의 인용은 제외 — 메타 페이지가 답변 근거 출처로 추적되면 안 됨.
+- **빈 list**: cited_by 키 자체를 frontmatter에서 제거 (orphan source의 깔끔한 표시).
+- **정렬**: 알파벳순 (재현 가능한 갱신).
 
 #### 수동 점검 (소유자와 논의 필요)
 

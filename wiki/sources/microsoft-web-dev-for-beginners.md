@@ -13,6 +13,10 @@ related:
   - "[[microsoft-for-beginners]]"
   - "[[frontend-react]]"
 confidence: high
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
 ---
 
 # microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문

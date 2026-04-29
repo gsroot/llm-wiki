@@ -19,6 +19,8 @@ related:
   - "[[backend-python-fastapi]]"
   - "[[agent-skills]]"
 source_count: 1
+observed_source_refs: 1
+inbound_count: 9
 created: 2026-04-27
 updated: 2026-04-27
 ---

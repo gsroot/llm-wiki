@@ -11,6 +11,8 @@ related:
   - "[[copy-on-write]]"
   - "[[dataframe]]"
 source_count: 2
+observed_source_refs: 2
+inbound_count: 11
 created: 2026-04-28
 updated: 2026-04-28
 ---

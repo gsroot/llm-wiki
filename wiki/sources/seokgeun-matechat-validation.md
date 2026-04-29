@@ -16,6 +16,8 @@ related:
   - "[[seokgeun-stack-guide]]"
 confidence: high
 tags: [matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision, side-project, 26회차]
+cited_by:
+  - "[[matechat]]"
 ---
 
 # MateChat v1.0 검증·출시 자료 (26회차 보강 수집)

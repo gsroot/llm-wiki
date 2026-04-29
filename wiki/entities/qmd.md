@@ -7,6 +7,8 @@ related:
   - "[[llm-wiki-pattern]]"
   - "[[mcp]]"
 source_count: 1
+observed_source_refs: 6
+inbound_count: 15
 created: 2026-04-09
 updated: 2026-04-09
 ---

@@ -14,6 +14,14 @@ related:
   - "[[postgresql]]"
   - "[[apache-foundation]]"
 confidence: high
+cited_by:
+  - "[[apache-foundation]]"
+  - "[[append-only-log]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[event-driven-architecture]]"
+  - "[[kafka]]"
+  - "[[streaming]]"
+  - "[[zero-copy]]"
 ---
 
 # apache/kafka (Kafka 저장소)

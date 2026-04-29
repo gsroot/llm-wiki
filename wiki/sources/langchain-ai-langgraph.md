@@ -14,6 +14,12 @@ related:
   - "[[agent-patterns]]"
   - "[[ml-ai]]"
 confidence: high
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[langgraph]]"
+  - "[[ml-ai]]"
 ---
 
 # langchain-ai/langgraph — Stateful agent orchestration framework

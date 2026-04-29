@@ -15,6 +15,12 @@ related:
   - "[[agent-skills]]"
   - "[[mcp]]"
 confidence: high
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-skills]]"
+  - "[[langchain]]"
+  - "[[ml-ai]]"
+  - "[[oss-saas-dual]]"
 ---
 
 # langchain-ai/langchain — The agent engineering platform

@@ -15,6 +15,8 @@ related:
   - "[[pola-rs-polars]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 12
+inbound_count: 74
 created: 2026-04-28
 updated: 2026-04-28
 ---

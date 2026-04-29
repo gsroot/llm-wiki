@@ -17,6 +17,17 @@ related:
   - "[[backend-python-fastapi]]"
   - "[[data-pipeline-bigquery]]"
 confidence: high
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[c2spf-analytics]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[frontend-react]]"
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[microsoft-web-dev-for-beginners]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[portfolio]]"
 ---
 
 # 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)

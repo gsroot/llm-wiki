@@ -18,6 +18,8 @@ related:
   - "[[pydantic-ai]]"
   - "[[pandas-ai]]"
 source_count: 15
+observed_source_refs: 33
+inbound_count: 76
 created: 2026-04-24
 updated: 2026-04-28
 ---

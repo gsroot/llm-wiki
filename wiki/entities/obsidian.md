@@ -8,6 +8,8 @@ related:
   - "[[llm-wiki-pattern]]"
   - "[[claude-code]]"
 source_count: 1
+observed_source_refs: 2
+inbound_count: 8
 created: 2026-04-15
 updated: 2026-04-15
 ---

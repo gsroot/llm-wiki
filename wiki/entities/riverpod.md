@@ -12,6 +12,8 @@ related:
   - "[[rrousselGit-riverpod]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 4
+inbound_count: 23
 created: 2026-04-28
 updated: 2026-04-28
 tags: [riverpod, flutter, dart, state-management, dependency-injection, reactive, 22회차]

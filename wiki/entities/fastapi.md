@@ -29,6 +29,8 @@ related:
   - "[[fastapi-fastapi]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
+observed_source_refs: 19
+inbound_count: 72
 created: 2026-04-27
 updated: 2026-04-28
 ---
