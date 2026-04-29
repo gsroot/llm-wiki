@@ -25,12 +25,20 @@ cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
+  - "[[astral-sh-uv]]"
+  - "[[fastapi-fastapi]]"
+  - "[[flutter-flutter]]"
+  - "[[github-spec-kit]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[microsoft-data-science-for-beginners]]"
   - "[[ml-ai]]"
   - "[[openai]]"
   - "[[openai-cookbook]]"
   - "[[openai-openai-agents-python]]"
+  - "[[pandas-dev-pandas]]"
 ---
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음

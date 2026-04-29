@@ -2,8 +2,8 @@
 title: "위키 인덱스"
 type: index
 updated: 2026-04-29
-session: 43
-session_note: "Codex 합집합 P0 — rag_exclude / 3축 leaf 보강 / cross-axis 단방향 해소 / verification 확대 / schema 3분리"
+session: 48
+session_note: "P0+P1 통합본 — 1·2축↔5축 sub-hub 8 edge / aliases schema 11 hub / 한글 동의어 8건 / 5축 hub 진입 안내 / 실행형 synthesis 4건 신설 / long-tail 약자 풀이 잔여 31 / callout 14 / TL;DR 2 hub / cited_by hub 11 확장. 5축 우점 47.5%→44.7%."
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
 ---
@@ -17,11 +17,11 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 189
+- 총 페이지 수: 195 (48회차 +4 실행형 synthesis 신설)
 - 소스 요약: 65
 - 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
 - 개념: 31
-- 종합 분석: 15 (28회차: [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 신규: [[portfolio]])
+- 종합 분석: 19 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]])
 
 ---
 

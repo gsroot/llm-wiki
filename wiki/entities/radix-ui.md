@@ -8,8 +8,8 @@ related:
   - "[[react]]"
   - "[[tailwindcss]]"
 source_count: 1
-observed_source_refs: 2
-inbound_count: 14
+observed_source_refs: 3
+inbound_count: 15
 created: 2026-04-28
 updated: 2026-04-29
 ---

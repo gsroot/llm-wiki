@@ -18,6 +18,7 @@ related:
 confidence: high
 cited_by:
   - "[[claude-code]]"
+  - "[[claude-code-master-guide]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[llm-wiki-pattern]]"
   - "[[mcp]]"

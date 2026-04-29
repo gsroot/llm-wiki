@@ -12,8 +12,8 @@ related:
   - "[[harness]]"
   - "[[context-engineering]]"
 source_count: 3
-observed_source_refs: 15
-inbound_count: 39
+observed_source_refs: 19
+inbound_count: 43
 created: 2026-04-09
 updated: 2026-04-15
 ---

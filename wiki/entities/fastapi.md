@@ -29,8 +29,8 @@ related:
   - "[[fastapi-fastapi]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 19
-inbound_count: 72
+observed_source_refs: 22
+inbound_count: 75
 created: 2026-04-27
 updated: 2026-04-28
 ---
@@ -107,7 +107,7 @@ updated: 2026-04-28
 > "OpenAPI · JSON Schema · OAuth2 표준을 1급 시민으로 두고 Python 타입힌트를 입력으로 삼는 웹 프레임워크. v0.136.1 기준 자체 .agents/skills/fastapi/SKILL.md를 번들링하여 메인스트림 OSS가 LLM 에이전트에게 자기 사용법을 가르치는 첫 사례를 남겼다."
 > — [[fastapi-fastapi]] 한줄 요약
 
-[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] Python 백엔드 5단의 진입축. [[matechat|MateChat 사이드 프로젝트]] backend + [[c2spf-analytics]] 본진 양쪽 채택 ([[seokgeun-kim|석근 (이 위키 owner)]]의 표준 선호 스택). **번들된 SKILL.md** 패턴은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 vendor-neutral [[agent-skills]] 채택 첫 사례 — 라이브러리 자체가 LLM 협업을 1급으로 다루는 거버넌스 신호.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] Python 백엔드 5단의 진입축. [[matechat|MateChat 사이드 프로젝트]] backend + [[c2spf-analytics|c2spf 게임 데이터 BI]] 본진 양쪽 채택 ([[seokgeun-kim|석근 (이 위키 owner)]]의 표준 선호 스택). **번들된 SKILL.md** 패턴은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 vendor-neutral [[agent-skills]] 채택 첫 사례 — 라이브러리 자체가 LLM 협업을 1급으로 다루는 거버넌스 신호.
 
 ## 출처
 

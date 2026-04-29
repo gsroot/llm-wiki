@@ -226,7 +226,7 @@ ROI:
 - **Polars**: 메인 변환 (lazy DSL, streaming)
 - **Pandas**: ML 출력 + 시각화 (생태계 호환)
 
-석근님의 [[c2spf-analytics]] BI 워크로드 권장: **세 도구 모두 학습 + 단계별 사용**. 학습 우선순위:
+석근님의 [[c2spf-analytics|c2spf 게임 데이터 BI]] BI 워크로드 권장: **세 도구 모두 학습 + 단계별 사용**. 학습 우선순위:
 
 1. DuckDB SQL — 즉시 도입 가능, 학습 곡선 낮음
 2. Polars Expression DSL — 2-3일 투자로 productivity 큰 향상

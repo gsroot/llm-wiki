@@ -12,8 +12,8 @@ related:
   - "[[langchain-ai-langgraph]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 8
-inbound_count: 48
+observed_source_refs: 9
+inbound_count: 49
 created: 2026-04-28
 updated: 2026-04-28
 ---

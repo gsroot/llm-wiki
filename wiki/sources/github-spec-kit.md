@@ -26,6 +26,8 @@ cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
   - "[[astral-sh-uv]]"
   - "[[claude-code]]"
   - "[[fastapi]]"

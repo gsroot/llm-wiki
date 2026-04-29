@@ -22,6 +22,7 @@ cited_by:
   - "[[microsoft-ai-agents-for-beginners]]"
   - "[[microsoft-for-beginners]]"
   - "[[microsoft-web-dev-for-beginners]]"
+  - "[[using-llm-wiki-as-rag]]"
 ---
 
 # microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문

@@ -10,8 +10,8 @@ related:
   - "[[microsoft]]"
   - "[[anthropic]]"
 source_count: 1
-observed_source_refs: 2
-inbound_count: 11
+observed_source_refs: 3
+inbound_count: 12
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -71,5 +71,5 @@ updated: 2026-04-27
 ## 메모
 
 - 위키 진영 분류상 Google은 [[microsoft]]·[[anthropic]]·[[github]]와 동격 organization. 향후 Google 단일 자료(예: Vertex AI 문서, BigQuery 문서, Gemini API 문서, AI Studio) 수집 시 본 페이지에 collation
-- 석근의 회사 BI([[c2spf-analytics]])가 Google Cloud BigQuery에 의존 — Google과의 직접 접점. 그러나 위키 단계에서는 BigQuery를 별도 도구로 등록 ([[data-pipeline-bigquery]] 개념 페이지가 이미 존재)
+- 석근의 회사 BI([[c2spf-analytics|c2spf 게임 데이터 BI]])가 Google Cloud BigQuery에 의존 — Google과의 직접 접점. 그러나 위키 단계에서는 BigQuery를 별도 도구로 등록 ([[data-pipeline-bigquery]] 개념 페이지가 이미 존재)
 - 후속 탐구: (a) Google의 AI 도구 스택(Gemini Code Assist, Antigravity, Vertex AI Agent Builder, NotebookLM) 종합 비교, (b) [[microsoft]]·[[anthropic]] 페이지와의 균형 점검 — Google이 organization 페이지 신설된 첫 회차이므로 후속 자료 누적 필요

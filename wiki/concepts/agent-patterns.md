@@ -23,8 +23,8 @@ related:
   - "[[crewai]]"
   - "[[pydantic-ai]]"
 source_count: 7
-observed_source_refs: 14
-inbound_count: 55
+observed_source_refs: 22
+inbound_count: 63
 created: 2026-04-27
 updated: 2026-04-28
 ---

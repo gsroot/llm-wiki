@@ -22,6 +22,68 @@ updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행도) — 회사 인프라 재확인"
+cited_by:
+  - "[[alembic]]"
+  - "[[apache-arrow]]"
+  - "[[apache-kafka]]"
+  - "[[astral]]"
+  - "[[astral-sh-uv]]"
+  - "[[backend-python-fastapi]]"
+  - "[[c2spf-ai-agent-adoption-candidates]]"
+  - "[[c2spf-analytics-common]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[devops-cicd]]"
+  - "[[docker]]"
+  - "[[duckdb]]"
+  - "[[duckdb-duckdb]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[frontend-react]]"
+  - "[[google]]"
+  - "[[kafka]]"
+  - "[[kpi-recovery-loop]]"
+  - "[[lazy-evaluation]]"
+  - "[[lightgbm]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[matechat]]"
+  - "[[matechat-chat-analysis-module]]"
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[microsoft-lightgbm]]"
+  - "[[ml-ai]]"
+  - "[[nextjs]]"
+  - "[[pandas]]"
+  - "[[pandas-ai]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[parquet]]"
+  - "[[pola-rs-polars]]"
+  - "[[polars]]"
+  - "[[portfolio]]"
+  - "[[portfolio-ko]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[portfolio-seed]]"
+  - "[[postgresql]]"
+  - "[[prometheus]]"
+  - "[[pyarrow]]"
+  - "[[pydantic]]"
+  - "[[python-packaging]]"
+  - "[[redis]]"
+  - "[[ruff]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[shadcn-ui]]"
+  - "[[sqlalchemy]]"
+  - "[[tanstack-query]]"
+  - "[[uv]]"
+  - "[[zustand]]"
 ---
 
 # c2spf 애널리틱스 (게임 데이터 BI)
@@ -57,7 +119,7 @@ verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행
 
 ## 9년차 운영 시스템의 누적 자산
 
-c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 + API 계약 + 운영 가이드 + 도메인 지식이 함께 누적된 복합 자산**이다. 신규 개발자가 코드만 받아 운영하기 어려운 이유는 이 5계층 자산이 분리되어 보존되지 않기 때문이다. 본 위키의 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]가 권장하는 38개 SOP SKILL.md 패턴([[matechat]] 본진 채택)은 이 5계층 자산을 동기화하는 후보 메커니즘이다.
+c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 + API 계약 + 운영 가이드 + 도메인 지식이 함께 누적된 복합 자산**이다. 신규 개발자가 코드만 받아 운영하기 어려운 이유는 이 5계층 자산이 분리되어 보존되지 않기 때문이다. 본 위키의 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]가 권장하는 38개 SOP SKILL.md 패턴([[matechat|MateChat 사이드 프로젝트]] 본진 채택)은 이 5계층 자산을 동기화하는 후보 메커니즘이다.
 
 ### 자기 커밋 분포 (포트폴리오 기준)
 
@@ -81,7 +143,7 @@ c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 
 
 c2spf-analytics는 본 위키에서 **인바운드 4위(43)**의 hub다. agent-skills(58) / harness(49) / ml-ai(44) 다음 위치이며, c2spf-analytics보다 인바운드 높은 페이지는 모두 LLM 인프라 메타 개념이다. 즉 **회사 BI 운영 시스템이 위키의 5번째로 큰 hub**이며, 이는 본 위키가 직장인의 위키임을 그래프 측면에서 자연스럽게 입증한다.
 
-[[seokgeun-stack-guide]]의 "회사 BI 적용 매핑" 표는 22회차까지 수집된 32개 OSS를 c2spf 운영에 적용하는 시나리오를 다룬다. 본 페이지는 그 매핑의 적용 대상 시스템.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]의 "회사 BI 적용 매핑" 표는 22회차까지 수집된 32개 OSS를 c2spf 운영에 적용하는 시나리오를 다룬다. 본 페이지는 그 매핑의 적용 대상 시스템.
 
 ## MateChat 자작 SKILL → c2spf 역수입 후보 (28회차 검증 정정)
 

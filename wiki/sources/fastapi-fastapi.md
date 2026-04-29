@@ -28,9 +28,11 @@ related:
 confidence: high
 cited_by:
   - "[[agent-skills]]"
+  - "[[anthropics-skills]]"
   - "[[backend-fastapi-stack]]"
   - "[[backend-python-fastapi]]"
   - "[[fastapi]]"
+  - "[[github-spec-kit]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[openai-openai-cookbook]]"
   - "[[python]]"

@@ -25,6 +25,7 @@ cited_by:
   - "[[context-engineering]]"
   - "[[harness]]"
   - "[[karpathy]]"
+  - "[[slash-commands-vs-agent-skills]]"
   - "[[uv]]"
 ---
 

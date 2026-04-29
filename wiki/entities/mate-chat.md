@@ -16,7 +16,7 @@ updated: 2026-04-29
 
 이 페이지는 redirect stub입니다. 24회차 raw 수집 시 `mate-chat` slug로 신규 노드가 생겨 23회차 stub과 24회차 정식 격상 페이지가 분기됐던 것을 26회차에 정리했습니다.
 
-**canonical 페이지**: [[matechat]]
+**canonical 페이지**: [[matechat|MateChat 사이드 프로젝트]]
 
 본진 raw 출처와 24회차 본문 내용은 모두 [[matechat]]에 흡수됐습니다. 새 인용은 `[[matechat]]`을 사용하세요.
 

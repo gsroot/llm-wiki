@@ -13,6 +13,21 @@ observed_source_refs: 15
 inbound_count: 29
 created: 2026-04-24
 updated: 2026-04-24
+cited_by:
+  - "[[c2spf-ai-agent-adoption-candidates]]"
+  - "[[c2spf-analytics]]"
+  - "[[c2spf-analytics-common]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[c2spf-nft-market]]"
+  - "[[c2spf-xpla-platform]]"
+  - "[[matechat]]"
+  - "[[portfolio-ko]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[portfolio-seed]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[xpla-platform]]"
 ---
 
 # 컴투스플랫폼 (Com2usPlatform, c2spf)
@@ -35,7 +50,7 @@ updated: 2026-04-24
 
 ## 관련 개념
 
-- [[c2spf-analytics]] — 회사의 핵심 BI 서비스
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 회사의 핵심 BI 서비스
 - [[xpla-platform]] — 블록체인 통합 플랫폼
 - [[seokgeun-kim|석근 (이 위키 owner)]] — 재직자, 위키 소유자
 - [[backend-python-fastapi]] · [[devops-cicd]] · [[data-pipeline-bigquery]] · [[blockchain-xpla]] — 회사에서 활용되는 핵심 기술

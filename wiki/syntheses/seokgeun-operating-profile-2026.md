@@ -16,6 +16,10 @@ related:
   - "[[c2spf-analytics]]"
   - "[[agent-skills]]"
   - "[[harness]]"
+  - "[[parental-leave-2026-operating-plan]]"
+  - "[[matechat-30day-validation-loop]]"
+  - "[[c2spf-ai-agent-adoption-candidates]]"
+  - "[[kpi-recovery-loop]]"
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true

@@ -24,9 +24,11 @@ confidence: high
 cited_by:
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
+  - "[[anthropics-skills]]"
   - "[[dart]]"
   - "[[flutter]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[github-spec-kit]]"
   - "[[google]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"

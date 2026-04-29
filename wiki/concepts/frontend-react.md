@@ -8,8 +8,8 @@ related:
   - "[[c2spf-analytics]]"
   - "[[backend-python-fastapi]]"
 source_count: 4
-observed_source_refs: 9
-inbound_count: 18
+observed_source_refs: 13
+inbound_count: 22
 created: 2026-04-24
 updated: 2026-04-24
 ---

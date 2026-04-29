@@ -13,8 +13,8 @@ related:
   - "[[c2spf-analytics]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 7
-inbound_count: 42
+observed_source_refs: 8
+inbound_count: 43
 created: 2026-04-28
 updated: 2026-04-28
 ---
@@ -133,7 +133,7 @@ IPC = "임시 빠른 직렬화", Parquet = "영구 효율 저장". 둘 다 PyArr
 - [[duckdb]]: PyArrow zero-copy 통합. ADBC 자체 지원
 - [[parquet]]: PyArrow가 Python 측 표준 reader/writer
 - [[fastapi]]: API 응답 시 PyArrow IPC 직렬화 → 클라이언트 zero-copy 가능 (gRPC + Arrow Flight)
-- [[c2spf-analytics]]: 데이터 파이프라인의 메모리 다리
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: 데이터 파이프라인의 메모리 다리
 
 ## 의사결정 컨텍스트 (raw 인용)
 
@@ -148,10 +148,12 @@ IPC = "임시 빠른 직렬화", Parquet = "영구 효율 저장". 둘 다 PyArr
 
 ## 논쟁/모순
 
-- **Wheel 크기 ~80MB**: C++ 바이너리 동봉으로 Lambda/컨테이너에 무거움. `pyarrow-stubs` 같은 type-only 패키지로 분리 시도 있음
-- **NumPy 호환성 vs Arrow 모델**: pandas가 NumPy → PyArrow로 옮겨가는 과정에서 일부 NumPy-only 라이브러리 호환성 깨짐. PDEP-10 통과 시점이 분기점
-- **ADBC vs JDBC/ODBC**: ADBC는 분석 워크로드 최적이지만 transactional 워크로드에서 JDBC만큼 성숙하지 않음. 도입 시점 검토 필요
-- **Compute 함수 vs Polars**: PyArrow.compute는 200+ 함수, Polars는 더 많고 expression DSL 친화. 단순 변환은 PyArrow, 복잡 분석은 Polars
+> [!warning] 논쟁/모순
+> - **Wheel 크기 ~80MB**: C++ 바이너리 동봉으로 Lambda/컨테이너에 무거움. `pyarrow-stubs` 같은 type-only 패키지로 분리 시도 있음
+> - **NumPy 호환성 vs Arrow 모델**: pandas가 NumPy → PyArrow로 옮겨가는 과정에서 일부 NumPy-only 라이브러리 호환성 깨짐. PDEP-10 통과 시점이 분기점
+> - **ADBC vs JDBC/ODBC**: ADBC는 분석 워크로드 최적이지만 transactional 워크로드에서 JDBC만큼 성숙하지 않음. 도입 시점 검토 필요
+> - **Compute 함수 vs Polars**: PyArrow.compute는 200+ 함수, Polars는 더 많고 expression DSL 친화. 단순 변환은 PyArrow, 복잡 분석은 Polars
+
 
 ## 메모
 

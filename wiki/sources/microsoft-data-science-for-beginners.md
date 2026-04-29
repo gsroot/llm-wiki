@@ -19,6 +19,7 @@ related:
 confidence: high
 cited_by:
   - "[[agent-stack-evolution]]"
+  - "[[c2spf-analytics-renewal]]"
   - "[[data-pipeline-bigquery]]"
   - "[[microsoft]]"
   - "[[microsoft-for-beginners]]"

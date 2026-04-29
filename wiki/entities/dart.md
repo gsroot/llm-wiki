@@ -8,8 +8,8 @@ related:
   - "[[google]]"
   - "[[github]]"
 source_count: 1
-observed_source_refs: 2
-inbound_count: 12
+observed_source_refs: 3
+inbound_count: 13
 created: 2026-04-27
 updated: 2026-04-27
 ---

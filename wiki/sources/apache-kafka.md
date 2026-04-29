@@ -160,6 +160,6 @@ Kafka는 Java 17/25 + Scala 2.13 — JVM 무거움이 단점. 하지만:
 
 - **KRaft 전환**: ZooKeeper 의존 제거가 KIP-500부터 시작 → 3.x stable. 신규 도입 시 KRaft 모드 권장
 - **Confluent vs Open Source Apache Kafka**: 라이센스 구조가 [[redis]] 2024 변경처럼 충돌 가능성 — Confluent의 일부 기능은 별도 라이센스. 추적 가치
-- **회사 BI 적용**: [[c2spf-analytics]] 게임 서버 이벤트 → Kafka → BigQuery 패턴이 일반적. 현재 도입 여부 확인 후 위키에 반영
+- **회사 BI 적용**: [[c2spf-analytics|c2spf 게임 데이터 BI]] 게임 서버 이벤트 → Kafka → BigQuery 패턴이 일반적. 현재 도입 여부 확인 후 위키에 반영
 - **Java 17/25 양립**: Java 25 LTS 채택 진행 중 — 2026 시점 신규 클러스터는 25 권장
 - **design.md 직접 읽기 권장**: 511줄, 약 30분 → 분산 시스템 면접/학습의 표준 reading. 책 한 권 분량을 압축

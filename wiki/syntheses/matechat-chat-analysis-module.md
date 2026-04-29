@@ -101,7 +101,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 
 → **위키 22회차까지의 거의 모든 도구가 단일 분석 파이프라인 내에 매핑 가능**.
 
-## 회사 BI ([[c2spf-analytics]]) 직접 차용 가능 패턴
+## 회사 BI ([[c2spf-analytics|c2spf 게임 데이터 BI]]) 직접 차용 가능 패턴
 
 7축 중 회사 게임 데이터 BI에 거의 그대로 적용 가능한 4개:
 
@@ -116,7 +116,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 
 ## 23회차 stub 가설과의 차이
 
-23회차 [[matechat]] stub에서 다음과 같이 적었음:
+23회차 [[matechat|MateChat 사이드 프로젝트]] stub에서 다음과 같이 적었음:
 
 > **추정 스택 — 분석**: (가설) BigQuery 파이프라인, ML 분석 레이어
 

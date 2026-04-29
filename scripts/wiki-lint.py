@@ -290,7 +290,15 @@ def lint(update: bool = False) -> LintResult:
     source_count_observed: dict[str, int] = {p.stem: 0 for p in pages}
     # 47회차 신설: cited_by_map[source_stem] = sorted list of citing page stems
     sources_set = {p.stem for p in pages if p.page_type == "source"}
-    cited_by_map: dict[str, set[str]] = {s: set() for s in sources_set}
+    # 48회차 P1-6: cited_by 자동 갱신 대상을 5축 hub 11개로 확장
+    # entity/concept 전체에 박으면 frontmatter 폭증 → hub만 선별 적용
+    HUB_CITED_BY_TARGETS = {
+        "seokgeun-kim", "portfolio", "seokgeun-stack-guide", "matechat",
+        "llm-infra-meta-cluster", "agent-skills", "harness", "mcp",
+        "claude-code", "c2spf-analytics", "com2us-platform",
+    }
+    cited_by_targets = sources_set | (HUB_CITED_BY_TARGETS & {p.stem for p in pages})
+    cited_by_map: dict[str, set[str]] = {s: set() for s in cited_by_targets}
 
     for page in pages:
         if page.yaml_invalid:
@@ -315,11 +323,11 @@ def lint(update: bool = False) -> LintResult:
                     source_count_observed[target] = (
                         source_count_observed.get(target, 0) + 1
                     )
-                # 47회차 cited_by 측정: target이 source 페이지면 누가 인용했는지 누적
+                # 47회차 cited_by 측정 + 48회차 hub 11개 확장
                 # log·history·redirect 페이지의 인용은 cited_by에 포함하지 않음
                 # (메타 페이지가 답변 근거 출처 추적에 들어가면 안 됨)
                 if (
-                    target in sources_set
+                    target in cited_by_targets
                     and not page.is_log_file
                     and page.stem not in {"log", "index", "index-history", "by-session"}
                     and not page.is_redirect
@@ -357,12 +365,13 @@ def lint(update: bool = False) -> LintResult:
                 inbound_count=inbound.get(page.stem, 0),
             )
 
-    # 47회차 신설: source 페이지에 cited_by 자동 갱신
+    # 47회차 신설 + 48회차 hub 확장: cited_by 자동 갱신
+    # source 페이지 전체 + 5축 hub 11개
     if update:
         for page in pages:
             if page.yaml_invalid or page.is_redirect or page.is_log_file:
                 continue
-            if page.page_type != "source":
+            if page.stem not in cited_by_targets:
                 continue
             citing_stems = sorted(cited_by_map.get(page.stem, set()))
             _update_cited_by(page, citing_stems)

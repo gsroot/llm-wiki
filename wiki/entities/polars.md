@@ -15,8 +15,8 @@ related:
   - "[[pola-rs-polars]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 12
-inbound_count: 74
+observed_source_refs: 14
+inbound_count: 76
 created: 2026-04-28
 updated: 2026-04-28
 ---
@@ -120,7 +120,7 @@ Rust crate `polars` → 5개 프론트엔드:
 - [[pyarrow]]: Polars의 메모리 표현 표준. PyArrow Table ↔ Polars DataFrame zero-copy
 - [[scikit-learn]]: ML 입력으로는 `df.to_numpy()` 변환 필요. 직접 호환은 미흡
 - [[fastapi]]: API 응답 DataFrame을 Polars로 처리 후 dict/JSON 직렬화 패턴 가능
-- [[c2spf-analytics]]: BI 워크로드 마이그레이션 후보 (잠재 채택자)
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: BI 워크로드 마이그레이션 후보 (잠재 채택자)
 
 ## 의사결정 컨텍스트 (raw 인용)
 
@@ -135,10 +135,12 @@ Rust crate `polars` → 5개 프론트엔드:
 
 ## 논쟁/모순
 
-- **Pandas 호환 API 부재**: 의도적 결정. pandas 사용자에게는 학습 비용 — DSL/index 모델 다름. Modin/cuDF가 pandas API 호환을 목표로 하는 것과 정반대 전략
-- **Streaming engine 성숙도**: README는 stable처럼 보이지만 v1.x 시점 일부 연산(특정 group_by, window) streaming 미지원. 운영 도입 시 query별 검증 필수
-- **Arrow lock-in**: [[apache-arrow]] 위에 강하게 묶임 → Arrow 명세 변경 시 영향. 반대로 다른 Arrow 도구(DuckDB/pandas-pyarrow)와 무손실 교환은 강점
-- **Cloud SaaS 전환 위험**: Polars Cloud 상용 모델. [[redis]] 2024 라이센스 변경처럼 향후 OSS 라이센스 변경 가능성 (현재 MIT 유지)
+> [!warning] 논쟁/모순
+> - **Pandas 호환 API 부재**: 의도적 결정. pandas 사용자에게는 학습 비용 — DSL/index 모델 다름. Modin/cuDF가 pandas API 호환을 목표로 하는 것과 정반대 전략
+> - **Streaming engine 성숙도**: README는 stable처럼 보이지만 v1.x 시점 일부 연산(특정 group_by, window) streaming 미지원. 운영 도입 시 query별 검증 필수
+> - **Arrow lock-in**: [[apache-arrow]] 위에 강하게 묶임 → Arrow 명세 변경 시 영향. 반대로 다른 Arrow 도구(DuckDB/pandas-pyarrow)와 무손실 교환은 강점
+> - **Cloud SaaS 전환 위험**: Polars Cloud 상용 모델. [[redis]] 2024 라이센스 변경처럼 향후 OSS 라이센스 변경 가능성 (현재 MIT 유지)
+
 
 ## 메모
 

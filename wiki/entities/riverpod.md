@@ -12,8 +12,8 @@ related:
   - "[[rrousselGit-riverpod]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 4
-inbound_count: 23
+observed_source_refs: 5
+inbound_count: 24
 created: 2026-04-28
 updated: 2026-04-28
 tags: [riverpod, flutter, dart, state-management, dependency-injection, reactive, 22회차]
@@ -52,7 +52,7 @@ Flutter/Dart 진영의 reactive caching + dependency injection 프레임워크. 
 > "Flutter 공식 Favorite 패키지로 인정받은 reactive caching + dependency injection 프레임워크. Provider의 후속작이며 @riverpod 코드 생성 어노테이션과 AsyncValue 패턴으로 비동기 로딩/에러 상태를 패턴매칭으로 처리한다."
 > — [[rrousselGit-riverpod]] 한줄 요약
 
-[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]에서 Flutter 진영 상태관리 표준. [[matechat]] (4축 hub) 실제 채택 — 39 SKILL 운영 SOP의 한 축. React 진영의 [[tanstack-query]](서버) + [[zustand]](클라이언트) 듀얼을 단일 라이브러리로 처리.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]에서 Flutter 진영 상태관리 표준. [[matechat|MateChat 사이드 프로젝트]] (4축 hub) 실제 채택 — 39 SKILL 운영 SOP의 한 축. React 진영의 [[tanstack-query]](서버) + [[zustand]](클라이언트) 듀얼을 단일 라이브러리로 처리.
 
 ## 출처
 

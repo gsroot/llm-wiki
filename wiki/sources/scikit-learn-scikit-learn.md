@@ -15,7 +15,10 @@ related:
   - "[[com2us-platform]]"
 confidence: high
 cited_by:
+  - "[[anthropics-skills]]"
+  - "[[github-spec-kit]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[microsoft-ml-for-beginners]]"
   - "[[ml-ai]]"
   - "[[numfocus]]"
   - "[[python]]"

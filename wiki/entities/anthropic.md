@@ -12,8 +12,8 @@ related:
   - "[[karpathy]]"
   - "[[microsoft]]"
 source_count: 4
-observed_source_refs: 6
-inbound_count: 46
+observed_source_refs: 10
+inbound_count: 50
 created: 2026-04-27
 updated: 2026-04-27
 ---

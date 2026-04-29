@@ -11,8 +11,8 @@ related:
   - "[[ml-ai]]"
   - "[[anthropics-claude-cookbooks]]"
 source_count: 1
-observed_source_refs: 7
-inbound_count: 28
+observed_source_refs: 9
+inbound_count: 30
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -94,7 +94,9 @@ updated: 2026-04-27
 
 ## 논쟁/모순
 
-- (없음)
+> [!warning] 논쟁/모순
+> - (없음)
+
 
 ## 메모
 

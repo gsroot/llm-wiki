@@ -13,8 +13,8 @@ related:
   - "[[pandas-dev-pandas]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 14
-inbound_count: 75
+observed_source_refs: 17
+inbound_count: 78
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -120,7 +120,7 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 > "2008년 AQR 헤지펀드에서 Wes McKinney가 시작 → 2009 OSS → 2015 NumFOCUS 후원 → 2026-04 v3.0 stable. BDFL+Core Team+NumFOCUS Subcommittee 3축 거버넌스, PDEP(Pandas Enhancement Proposal)으로 운영. 150만+ DataFrame, 101개 공개 API. 석근의 BI 직무에서 BigQuery·Airbridge MMP·React 대시보드를 잇는 데이터 핸들링 단일 진실 공급원."
 > — [[pandas-dev-pandas]] 한줄 요약
 
-[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 데이터 핸들링 본진 + [[c2spf-analytics]] BI 단일 진실 공급원. [[copy-on-write]]·[[bdfl]]·[[pdep]]·[[dataframe]]의 출처 페이지. **3축 거버넌스 + PDEP**는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 OSS 거버넌스 카탈로그 7번째 모델. [[polars]]·[[duckdb]]·[[pyarrow]]와 [[dataframe-ecosystem-evolution]] 비교 매트릭스에서 함께 평가됨.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 데이터 핸들링 본진 + [[c2spf-analytics|c2spf 게임 데이터 BI]] BI 단일 진실 공급원. [[copy-on-write]]·[[bdfl]]·[[pdep]]·[[dataframe]]의 출처 페이지. **3축 거버넌스 + PDEP**는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 OSS 거버넌스 카탈로그 7번째 모델. [[polars]]·[[duckdb]]·[[pyarrow]]와 [[dataframe-ecosystem-evolution]] 비교 매트릭스에서 함께 평가됨.
 
 ## 출처
 

@@ -14,6 +14,7 @@ related:
   - "[[ml-ai]]"
 confidence: high
 cited_by:
+  - "[[apache-arrow]]"
   - "[[lightgbm]]"
   - "[[ml-ai]]"
   - "[[scikit-learn]]"

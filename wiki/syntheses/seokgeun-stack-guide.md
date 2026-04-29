@@ -31,6 +31,56 @@ tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
+cited_by:
+  - "[[alembic]]"
+  - "[[c2spf-analytics]]"
+  - "[[crewai]]"
+  - "[[deepagents]]"
+  - "[[docker]]"
+  - "[[duckdb]]"
+  - "[[fastapi]]"
+  - "[[fastmcp]]"
+  - "[[flutter]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[github-actions]]"
+  - "[[grafana]]"
+  - "[[kafka]]"
+  - "[[kpi-recovery-loop]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[lightgbm]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[matechat]]"
+  - "[[matechat-chat-analysis-module]]"
+  - "[[nextjs]]"
+  - "[[openai-agents-python]]"
+  - "[[pandas]]"
+  - "[[pandas-ai]]"
+  - "[[parquet]]"
+  - "[[polars]]"
+  - "[[portfolio]]"
+  - "[[portfolio-seed]]"
+  - "[[postgresql]]"
+  - "[[prometheus]]"
+  - "[[pyarrow]]"
+  - "[[pydantic]]"
+  - "[[pydantic-ai]]"
+  - "[[redis]]"
+  - "[[riverpod]]"
+  - "[[ruff]]"
+  - "[[scikit-learn]]"
+  - "[[sentry]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-mate-chat]]"
+  - "[[seokgeun-matechat-validation]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[shadcn-ui]]"
+  - "[[sqlalchemy]]"
+  - "[[tailwindcss]]"
+  - "[[tanstack]]"
+  - "[[tanstack-query]]"
+  - "[[uv]]"
+  - "[[zustand]]"
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합
@@ -40,9 +90,17 @@ verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 
 > 
 > 한국어 표기: **석근 스택 가이드** 또는 **32 OSS 카탈로그**.
 
+## 언제 읽어야 하는가
+
+- "새 사이드 프로젝트를 30분 안에 시작하고 싶다" — "30분 부트스트랩 명령" 섹션 직행.
+- "OSS 도구를 평가해야 하는데 어느 카테고리에 속하는가?" — 6분류 카탈로그 진입.
+- "사이드와 회사 BI 양쪽에서 검증된 스택만 알고 싶다" — "회사 BI 적용 매핑" 섹션.
+- "라이선스가 변동성 있는 OSS는 무엇인가?" — "라이선스 주의 표" 직행.
+- "신규 OSS 출현이 카탈로그에 영향이 있나?" — `verification_required: true` (분기별 재카탈로그).
+
 ## 한줄 요약
 
-15~22회차 8회차에 걸쳐 수집한 32개 OSS + 기존 8개를 **6분류 카탈로그** + **시나리오별 의사결정 트리**로 재정리. 사이드 프로젝트(개인 비서, [[matechat]] 등) 30분 부트스트랩과 회사 BI(컴투스플랫폼 게임 데이터) 적용 매핑 동시 제공.
+15~22회차 8회차에 걸쳐 수집한 32개 OSS + 기존 8개를 **6분류 카탈로그** + **시나리오별 의사결정 트리**로 재정리. 사이드 프로젝트(개인 비서, [[matechat|MateChat 사이드 프로젝트]] 등) 30분 부트스트랩과 회사 BI(컴투스플랫폼 게임 데이터) 적용 매핑 동시 제공.
 
 ## 6분류 카탈로그
 
@@ -181,7 +239,7 @@ flutter pub add --dev riverpod_generator build_runner
 # 백엔드는 시나리오 B의 backend 부분과 동일
 ```
 
-## 회사 BI 적용 매핑 ([[com2us-platform|컴투스플랫폼]] / [[c2spf-analytics]] — 사용 주체: [[seokgeun-kim]])
+## 회사 BI 적용 매핑 ([[com2us-platform|컴투스플랫폼]] / [[c2spf-analytics|c2spf 게임 데이터 BI]] — 사용 주체: [[seokgeun-kim|석근 (이 위키 owner)]])
 
 | 영역 | 22회차까지 도구 | 적용 사례 |
 |---|---|---|
@@ -230,7 +288,7 @@ flutter pub add --dev riverpod_generator build_runner
 
 ## 관련 메타 운영 축
 
-도구 선택 자체는 본 페이지가 담당하지만, LLM과 함께 일하는 운영 방식은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]]가 담당한다. 신규 OSS나 프로젝트를 평가할 때는 **본 페이지로 도구 분류 → [[llm-infra-meta-cluster]]로 agent-skills/harness/MCP/거버넌스 모델 위치 확인** 순서가 가장 안정적이다.
+도구 선택 자체는 본 페이지가 담당하지만, LLM과 함께 일하는 운영 방식은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]]가 담당한다. 신규 OSS나 프로젝트를 평가할 때는 **본 페이지로 도구 분류 → [[llm-infra-meta-cluster|LLM 인프라 메타 5축]]로 agent-skills/harness/MCP/거버넌스 모델 위치 확인** 순서가 가장 안정적이다.
 
 ## 미래 작업
 

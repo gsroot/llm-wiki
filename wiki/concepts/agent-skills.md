@@ -41,11 +41,87 @@ observed_source_refs: 47
 inbound_count: 152
 created: 2026-04-27
 updated: 2026-04-29
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[anthropic]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
+  - "[[astral]]"
+  - "[[astral-sh-ruff]]"
+  - "[[astral-sh-uv]]"
+  - "[[c2spf-ai-agent-adoption-candidates]]"
+  - "[[claude-agent-sdk]]"
+  - "[[claude-code]]"
+  - "[[deepagents]]"
+  - "[[devops-cicd]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[fastmcp]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[getsentry-sentry]]"
+  - "[[github]]"
+  - "[[github-spec-kit]]"
+  - "[[grafana]]"
+  - "[[grafana-grafana]]"
+  - "[[harness]]"
+  - "[[jlowin-fastmcp]]"
+  - "[[langchain]]"
+  - "[[langchain-ai-deepagents]]"
+  - "[[langchain-ai-langchain]]"
+  - "[[langchain-ai-langgraph]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[matechat]]"
+  - "[[mcp]]"
+  - "[[microsoft]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
+  - "[[nextjs]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[openai]]"
+  - "[[openai-agents-python]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[portfolio]]"
+  - "[[prometheus]]"
+  - "[[prometheus-prometheus]]"
+  - "[[pydantic-ai]]"
+  - "[[pydantic-pydantic-ai]]"
+  - "[[rrousselGit-riverpod]]"
+  - "[[ruff]]"
+  - "[[scikit-learn]]"
+  - "[[sentry]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-mate-chat]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[shadcn-ui]]"
+  - "[[shadcn-ui-ui]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[spec-driven-development]]"
+  - "[[spec-kit]]"
+  - "[[tiangolo]]"
+  - "[[uv]]"
+  - "[[vercel]]"
+  - "[[vercel-next.js]]"
 ---
 
 # Agent Skills (SKILL.md 패키지)
 
 > 한국어 표기: **에이전트 스킬** 또는 **Claude 스킬**(Claude Agent Skills).
+
+## TL;DR (요약·판단·근거·히스토리 4단)
+
+| 단 | 내용 | 본문 위치 |
+|---|---|---|
+| **요약** | `SKILL.md` 1개 + 옵션 자원으로 묶인 LLM 에이전트 작업 패키지. 자동 호출 + progressive disclosure + 재사용성. agentskills.io 오픈 표준. | 정의 / 왜 중요한가 |
+| **판단** | Skill vs Slash Command 분기 / 4가지 SKILL 패턴 / 안티패턴 4가지 | Skill vs Slash Command / SKILL.md 패턴 4가지 / 안티패턴 |
+| **근거** | description 작성 원칙 (Anthropic skill-creator 기준) / 핵심 내용 (frontmatter·자동 호출·progressive disclosure·재사용성) / 실전 적용 (석근 시나리오) | 핵심 내용 / description 작성 원칙 / 실전 적용 |
+| **히스토리** | Anthropic Custom Commands → 2026 Skills 공식 통합 / MateChat 자작 11 + 외부 28 = 39 SKILL / c2spf 차용 9건 (P0-3 시점) | 관련 개념 / 출처 / 열린 질문 |
+
+이 4단 분리는 Codex 평가 P1 권고("장문 hub의 히스토리 노이즈 분리")에 따른 navigation aid.
 
 ## 정의
 

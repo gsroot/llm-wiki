@@ -37,6 +37,7 @@ cited_by:
   - "[[pandas-dev-pandas]]"
   - "[[scikit-learn]]"
   - "[[scikit-learn-scikit-learn]]"
+  - "[[slash-commands-vs-agent-skills]]"
   - "[[spec-kit]]"
 ---
 

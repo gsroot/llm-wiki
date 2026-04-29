@@ -13,8 +13,8 @@ related:
   - "[[c2spf-analytics]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 5
-inbound_count: 42
+observed_source_refs: 6
+inbound_count: 43
 created: 2026-04-28
 updated: 2026-04-28
 ---
@@ -141,7 +141,7 @@ File
 > "Parquet은 온디스크 컬럼 포맷 표준. Apache Arrow(인메모리)와 합쳐 '디스크 → 메모리 → 네트워크'의 모든 데이터 이동에서 zero-copy 보장 — 2010년대 데이터 인프라의 가장 성공적인 표준화 프로젝트."
 > — [[apache-arrow]] 한줄 요약
 
-[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 온디스크 컬럼 포맷 표준. [[c2spf-analytics]] BigQuery 데이터 export 표준 + [[matechat|MateChat 사이드 프로젝트]] 분석 모듈 데이터 lake 후보. **Dremel 알고리즘 영감 + thrift 메타데이터**가 빅데이터 시대 사실상 표준. [[duckdb]] CSV/Parquet 직접 SELECT + [[polars]]·[[pyarrow]] 백엔드. [[pyarrow]]와 함께 인메모리/온디스크 컬럼 표준 짝.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 온디스크 컬럼 포맷 표준. [[c2spf-analytics|c2spf 게임 데이터 BI]] BigQuery 데이터 export 표준 + [[matechat|MateChat 사이드 프로젝트]] 분석 모듈 데이터 lake 후보. **Dremel 알고리즘 영감 + thrift 메타데이터**가 빅데이터 시대 사실상 표준. [[duckdb]] CSV/Parquet 직접 SELECT + [[polars]]·[[pyarrow]] 백엔드. [[pyarrow]]와 함께 인메모리/온디스크 컬럼 표준 짝.
 
 ## 출처
 
@@ -149,10 +149,12 @@ File
 
 ## 논쟁/모순
 
-- **Compression vs Encoding 우선순위**: 인코딩이 먼저, 압축은 나중. Dictionary + Snappy 조합이 대부분에 최적이지만 데이터 분포 따라 다름
-- **Footer 위치 = 스트리밍 어려움**: 파일 끝에 footer라 streaming write 시 buffering 필요. Iceberg가 metadata 별도로 분리하는 이유
-- **Row Group 크기 선택**: 너무 작으면 메타데이터 오버헤드, 너무 크면 메모리 압박. 기본 128MB~1GB 권장
-- **Apache vs proprietary 변종**: Snowflake/BigQuery 내부 포맷은 Parquet 변종이지만 호환 X. Iceberg/Delta가 표준 Parquet 위에 메타데이터를 더해 "vendor-neutral lakehouse" 시도
+> [!warning] 논쟁/모순
+> - **Compression vs Encoding 우선순위**: 인코딩이 먼저, 압축은 나중. Dictionary + Snappy 조합이 대부분에 최적이지만 데이터 분포 따라 다름
+> - **Footer 위치 = 스트리밍 어려움**: 파일 끝에 footer라 streaming write 시 buffering 필요. Iceberg가 metadata 별도로 분리하는 이유
+> - **Row Group 크기 선택**: 너무 작으면 메타데이터 오버헤드, 너무 크면 메모리 압박. 기본 128MB~1GB 권장
+> - **Apache vs proprietary 변종**: Snowflake/BigQuery 내부 포맷은 Parquet 변종이지만 호환 X. Iceberg/Delta가 표준 Parquet 위에 메타데이터를 더해 "vendor-neutral lakehouse" 시도
+
 
 ## 메모
 

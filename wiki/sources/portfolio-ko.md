@@ -26,6 +26,7 @@ cited_by:
   - "[[matechat]]"
   - "[[ml-ai]]"
   - "[[portfolio]]"
+  - "[[portfolio-resume-ko]]"
   - "[[seokgeun-kim]]"
 ---
 

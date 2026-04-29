@@ -18,6 +18,8 @@ confidence: high
 tags: [matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision, side-project, 26회차]
 cited_by:
   - "[[matechat]]"
+  - "[[matechat-30day-validation-loop]]"
+  - "[[seokgeun-mate-chat]]"
 ---
 
 # MateChat v1.0 검증·출시 자료 (26회차 보강 수집)
@@ -89,7 +91,7 @@ CRITICAL / HIGH / MEDIUM / OK로 출시 차단 / 품질 / UX / 완료 영역 분
 - **시장 포지셔닝**: "AI ↔ 사람" 양극 사이의 비어있는 좌표
 - **수익 모델 벤치마크**: 가상 화폐(클로버) IAP의 경쟁 앱 사례
 
-→ MateChat 차별화의 정량적 근거. [[matechat]] "왜 대체 불가능한가" 설명의 1차 자료.
+→ MateChat 차별화의 정량적 근거. [[matechat|MateChat 사이드 프로젝트]] "왜 대체 불가능한가" 설명의 1차 자료.
 
 ### 6. 구현 현황 보고서 (`19-implementation-status.md`) — 2,084줄
 

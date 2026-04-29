@@ -32,12 +32,73 @@ created: 2026-04-28
 updated: 2026-04-28
 aliases: [LLM 인프라 메타 클러스터, llm-infra-meta-cluster, 5축 hub, LLM 인프라 메타, agent infra meta]
 tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis]
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
+  - "[[astral-sh-uv]]"
+  - "[[c2spf-analytics]]"
+  - "[[claude-code]]"
+  - "[[crewai]]"
+  - "[[deepagents]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[fastmcp]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[kafka]]"
+  - "[[langchain]]"
+  - "[[langgraph]]"
+  - "[[lightgbm]]"
+  - "[[matechat]]"
+  - "[[mcp]]"
+  - "[[microsoft-ai-agents-for-beginners]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
+  - "[[nextjs]]"
+  - "[[obsidian-guide]]"
+  - "[[openai-agents-python]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas]]"
+  - "[[pandas-ai]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[polars]]"
+  - "[[portfolio]]"
+  - "[[portfolio-seed]]"
+  - "[[postgresql]]"
+  - "[[prometheus]]"
+  - "[[pyarrow]]"
+  - "[[pydantic]]"
+  - "[[pydantic-ai]]"
+  - "[[redis]]"
+  - "[[ruff]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[sentry]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[shadcn-ui]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[tanstack-query]]"
+  - "[[using-llm-wiki-as-rag]]"
+  - "[[zustand]]"
 ---
 
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
 
 > [!important] 5축 hub — 자발 발견 메타 layer
 > 28회차에 명시화된 위키의 5번째 축. [[agent-skills]](141) + [[harness]](129) + [[mcp]](100) + [[claude-code]](91) 4개 노드가 인바운드 합산 489로 전체 52.5% 점유. 4핵심축에 직교하는 "AI 협업 운영" 메타 지식이며, [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 의사결정의 근거이자 [[matechat|MateChat 사이드 프로젝트]] 39 SKILL 운영의 표준.
+
+## 언제 읽어야 하는가
+
+- "Claude Code·MCP·Agent Skills·Harness가 어떻게 맞물리는가?" — 5축 메타 클러스터 정의 + 4 sub-hub 직결.
+- "어떤 OSS가 어떤 거버넌스 모델로 운영되는가?" — 10개 OSS 거버넌스 모델 카탈로그.
+- "owner가 자작 11개 SKILL을 어떻게 c2spf로 차용 검토하는가?" — [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]] 쌍 검증으로 연결.
+- "AI 협업 도구 채택 의사결정에 무엇이 필요한가?" — autoresearch/spec-kit/scikit-learn/flutter/PLANS.md 5축 거버넌스 비교.
 
 ## 한줄 요약
 
@@ -95,7 +156,7 @@ tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code
 | 17~18 (LLM 8) | 12 agent 패턴 + 6 OSS AGENTS.md=CLAUDE.md 동기화 표준 |
 | 19~21 (운영 5) | 9번째 거버넌스 CNCF + 4가지 AGENTS.md 변종 동시 등장 |
 | 20~22 (프론트 5) | 10번째 거버넌스 "Open Code" + Next.js 양대 변종 |
-| 23 (마무리) | [[seokgeun-stack-guide]] = 8회차 누적 32 OSS 6분류 정리 |
+| 23 (마무리) | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] = 8회차 누적 32 OSS 6분류 정리 |
 | 24 (MateChat 본진) | 39 SKILL.md (자작 11 + 외부 28) 통합 운영 + AGENTS.md ↔ CLAUDE.md 분리형 13단계 양분 |
 
 → 11~24회차 14회차 동안 누적된 메타 패턴이 본 5번째 축의 1차 자료.
@@ -104,7 +165,7 @@ tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code
 
 | 축 | 정체 | 인바운드 합 | 본질 |
 |---|---|---|---|
-| 1. 프로필 | [[seokgeun-kim]] | 30 | 정적 / 1인 |
+| 1. 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] | 30 | 정적 / 1인 |
 | 2. 포트폴리오 | [[portfolio-seed]] + [[c2spf-analytics]] | 15 + 43 = 58 | 누적 / 회사 + 개인 |
 | 3. 기술 스택 | [[seokgeun-stack-guide]] + 32 OSS entities | 9 + ~200 = ~209 | 카탈로그 / 의사결정 |
 | 4. MateChat | [[matechat]] + 6 sources | 20 + ~30 = ~50 | 검증 / 사이드 |

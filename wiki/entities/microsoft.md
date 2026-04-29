@@ -9,8 +9,8 @@ related:
   - "[[mcp]]"
   - "[[agent-skills]]"
 source_count: 5
-observed_source_refs: 10
-inbound_count: 30
+observed_source_refs: 15
+inbound_count: 35
 created: 2026-04-27
 updated: 2026-04-27
 ---

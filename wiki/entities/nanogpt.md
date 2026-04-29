@@ -9,8 +9,8 @@ related:
   - "[[autoresearch]]"
   - "[[ml-ai]]"
 source_count: 1
-observed_source_refs: 6
-inbound_count: 14
+observed_source_refs: 7
+inbound_count: 15
 created: 2026-04-27
 updated: 2026-04-27
 ---

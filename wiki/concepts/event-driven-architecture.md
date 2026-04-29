@@ -9,8 +9,8 @@ related:
   - "[[append-only-log]]"
   - "[[matechat]]"
 source_count: 4
-observed_source_refs: 0
-inbound_count: 7
+observed_source_refs: 4
+inbound_count: 11
 created: 2026-04-28
 updated: 2026-04-29
 ---
@@ -27,7 +27,7 @@ updated: 2026-04-29
 
 | 패턴 | 설명 | 본 위키 사례 |
 |---|---|---|
-| **Event Notification** | "X가 일어났다" 단순 알림 | [[matechat]] FCM 푸시 / Sentry 알림 |
+| **Event Notification** | "X가 일어났다" 단순 알림 | [[matechat|MateChat 사이드 프로젝트]] FCM 푸시 / Sentry 알림 |
 | **Event-carried State Transfer** | 이벤트가 상태 데이터 포함 | [[kafka]] Topic message |
 | **Event Sourcing** | 이벤트 로그 자체가 진실원, 상태는 derived | (미수집, [[append-only-log]] 기반) |
 

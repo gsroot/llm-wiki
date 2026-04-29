@@ -14,8 +14,8 @@ related:
   - "[[grafana-grafana]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 5
-inbound_count: 26
+observed_source_refs: 6
+inbound_count: 27
 created: 2026-04-28
 updated: 2026-04-28
 ---

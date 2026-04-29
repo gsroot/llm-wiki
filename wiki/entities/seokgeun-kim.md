@@ -22,6 +22,45 @@ observed_source_refs: 21
 inbound_count: 58
 created: 2026-04-24
 updated: 2026-04-29
+cited_by:
+  - "[[astral]]"
+  - "[[astral-sh-uv]]"
+  - "[[backend-python-fastapi]]"
+  - "[[blockchain-xpla]]"
+  - "[[c2spf-ai-agent-adoption-candidates]]"
+  - "[[c2spf-analytics]]"
+  - "[[c2spf-analytics-common]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[c2spf-nft-market]]"
+  - "[[c2spf-xpla-platform]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[devops-cicd]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[frontend-react]]"
+  - "[[kpi-recovery-loop]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[matechat]]"
+  - "[[matechat-30day-validation-loop]]"
+  - "[[ml-ai]]"
+  - "[[obsidian-guide]]"
+  - "[[parental-leave-2026-operating-plan]]"
+  - "[[portfolio]]"
+  - "[[portfolio-ko]]"
+  - "[[portfolio-method]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[portfolio-seed]]"
+  - "[[python-packaging]]"
+  - "[[riverpod]]"
+  - "[[seokgeun-kim-profile-2026]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[using-llm-wiki-as-rag]]"
+  - "[[uv]]"
+  - "[[xpla-platform]]"
 ---
 
 # 김석근 (Seokgeun Kim)
@@ -29,11 +68,18 @@ updated: 2026-04-29
 > [!info] 1축 hub — 개인 정체성
 > 9년차 백엔드/풀스택 + 게임 데이터 BI 개발자. 4개 강점축([[backend-python-fastapi]] · [[data-pipeline-bigquery]] · [[ml-ai]] · [[blockchain-xpla]])과 [[matechat|MateChat 사이드 프로젝트]] 사이드 사업화를 동시 운영. 2026 운영 프레임은 [[seokgeun-operating-profile-2026]], 9년 커리어 의사결정 지도는 [[portfolio]], 32 OSS 카탈로그는 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]].
 
+## 언제 읽어야 하는가
+
+- "석근이 누구이고 어떤 강점이 있는가?" — 신규 LLM 세션이나 외부인이 owner를 1-hop으로 파악해야 할 때.
+- "이 위키 owner의 일·삶 우선순위는?" — 의사결정 지원 시 owner의 가족·번아웃·시간예산 컨텍스트가 필요할 때 → [[seokgeun-operating-profile-2026]]로 연결.
+- "owner가 어떤 AI 도구를 일상으로 쓰는가?" — 5축 직결 4개 ([[agent-skills]]·[[harness]]·[[mcp]]·[[claude-code]]) 진입점.
+- "9년 커리어 의사결정 지도가 보고 싶다" → [[portfolio]]로 1-hop.
+
 ## 개요
 
 이 위키의 소유자. 9년차 백엔드/풀스택 엔지니어로 컴투스플랫폼(Com2usPlatform)에서 게임 데이터 BI 서비스를 개발하고 있다. Python 백엔드 · 데이터 분석(BI) · ML/AI 서비스 · 블록체인 플랫폼 4개 영역을 동시에 다룬다.
 
-2026년 기준 개인 운영의 중심축은 [[matechat]] 사업화, 가족 시간 확보, AI 협업 기반 생산성 확장이다. 정확한 신상·가족 세부 정보는 민감 정보이므로 원문 소스에만 보관하고, 이 엔티티에는 커리어·전략·협업에 필요한 요약만 둔다.
+2026년 기준 개인 운영의 중심축은 [[matechat|MateChat 사이드 프로젝트]] 사업화, 가족 시간 확보, AI 협업 기반 생산성 확장이다. 정확한 신상·가족 세부 정보는 민감 정보이므로 원문 소스에만 보관하고, 이 엔티티에는 커리어·전략·협업에 필요한 요약만 둔다.
 
 - 📧 gsr2732@gmail.com
 - GitHub: [@gsroot](https://github.com/gsroot)
@@ -51,7 +97,7 @@ updated: 2026-04-29
   - 블록체인 (XPLA · Rust 스마트 컨트랙트 · NestJS/TypeORM)
 - **관심 분야**: 파이썬, AI, 데이터 분석, 개인 비서 AI 서비스 개발.
 - **개발 환경**: 회사 맥북 / 집 윈도우, IDE는 Antigravity와 Claude Code.
-- **선호 스택**: Python, FastAPI, 바이브 코딩. 32 OSS 6분류 카탈로그와 30분 부트스트랩 시나리오는 [[seokgeun-stack-guide]]에 정형화됨. 9년 커리어 의사결정 지도는 [[portfolio]] hub에서 1-hop 도달.
+- **선호 스택**: Python, FastAPI, 바이브 코딩. 32 OSS 6분류 카탈로그와 30분 부트스트랩 시나리오는 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]에 정형화됨. 9년 커리어 의사결정 지도는 [[portfolio]] hub에서 1-hop 도달.
 - **현재 핵심 개인 프로젝트**: [[matechat]] — AI가 사람을 대체하는 것이 아니라 사람 간 연결을 돕는 소셜+AI 하이브리드 앱.
 - **2026년 운영 키워드**: 육아휴직, MateChat closed alpha, 사용자 검증, 수익화, 번아웃 방지, 가족 시간 확보.
 - **학력**: 인하대학교 컴퓨터공학과 (2007-03 ~ 2014-02).

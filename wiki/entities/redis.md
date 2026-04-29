@@ -9,8 +9,8 @@ related:
   - "[[redis-redis]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 11
-inbound_count: 46
+observed_source_refs: 12
+inbound_count: 48
 created: 2026-04-28
 updated: 2026-04-28
 verification_required: true

@@ -9,8 +9,8 @@ related:
   - "[[nanogpt]]"
   - "[[nanochat]]"
 source_count: 3
-observed_source_refs: 12
-inbound_count: 28
+observed_source_refs: 15
+inbound_count: 31
 created: 2026-04-27
 updated: 2026-04-27
 ---

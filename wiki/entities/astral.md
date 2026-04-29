@@ -11,8 +11,8 @@ related:
   - "[[fastapi]]"
   - "[[pydantic]]"
 source_count: 2
-observed_source_refs: 9
-inbound_count: 24
+observed_source_refs: 10
+inbound_count: 25
 created: 2026-04-27
 updated: 2026-04-28
 ---
@@ -94,8 +94,10 @@ Python 생태계는 역사적으로 도구가 분산되어 있었다 (pip, virtu
 
 ## 논쟁/모순
 
-- **VC-backed 오픈소스 지속가능성**: 무료 오픈소스 + VC 펀딩의 결합은 향후 라이센스 변경(Hashicorp/Elastic 사례) 위험을 내포한다는 비판이 일부 커뮤니티에서 제기. 현재 Astral은 일관되게 OSS 이력 유지 중이지만, 5년 후 비즈니스 모델은 미공개.
-- **PSF/PyPA와의 거리**: uv는 PEP을 따르지만 일부 기능(PEP 723 빠른 채택, `tool.uv.sources` 같은 비표준 확장)은 PyPA 공식 도구보다 앞서나간다. 표준 fork 위험 vs 표준 견인 효과 둘 다 있음.
+> [!warning] 논쟁/모순
+> - **VC-backed 오픈소스 지속가능성**: 무료 오픈소스 + VC 펀딩의 결합은 향후 라이센스 변경(Hashicorp/Elastic 사례) 위험을 내포한다는 비판이 일부 커뮤니티에서 제기. 현재 Astral은 일관되게 OSS 이력 유지 중이지만, 5년 후 비즈니스 모델은 미공개.
+> - **PSF/PyPA와의 거리**: uv는 PEP을 따르지만 일부 기능(PEP 723 빠른 채택, `tool.uv.sources` 같은 비표준 확장)은 PyPA 공식 도구보다 앞서나간다. 표준 fork 위험 vs 표준 견인 효과 둘 다 있음.
+
 
 ## 메모
 

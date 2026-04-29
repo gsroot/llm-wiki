@@ -27,11 +27,79 @@ observed_source_refs: 40
 inbound_count: 138
 created: 2026-04-15
 updated: 2026-04-29
+cited_by:
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropic]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
+  - "[[astral]]"
+  - "[[astral-sh-ruff]]"
+  - "[[astral-sh-uv]]"
+  - "[[autonomous-research-loop]]"
+  - "[[autoresearch]]"
+  - "[[claude-agent-sdk]]"
+  - "[[claude-code]]"
+  - "[[claude-code-master-guide]]"
+  - "[[claude-managed-agents]]"
+  - "[[context-engineering]]"
+  - "[[cowork]]"
+  - "[[crewai]]"
+  - "[[deepagents]]"
+  - "[[fastapi]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[github-spec-kit]]"
+  - "[[karpathy]]"
+  - "[[karpathy-autoresearch]]"
+  - "[[karpathy-nanochat]]"
+  - "[[karpathy-nanogpt]]"
+  - "[[langgraph]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[matechat]]"
+  - "[[mcp]]"
+  - "[[microsoft-ai-agents-for-beginners]]"
+  - "[[nanochat]]"
+  - "[[nanogpt]]"
+  - "[[openai]]"
+  - "[[openai-agents-python]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[portfolio]]"
+  - "[[python-packaging]]"
+  - "[[ruff]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[sentry]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-mate-chat]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[spec-driven-development]]"
+  - "[[spec-kit]]"
+  - "[[token-economy]]"
+  - "[[using-llm-wiki-as-rag]]"
+  - "[[uv]]"
 ---
 
 # 하네스 (Harness)
 
 > 한국어 표기: **에이전트 하네스** 또는 **AI 하네스**(Agent Harness).
+
+## TL;DR (요약·판단·근거·히스토리 4단)
+
+| 단 | 내용 | 본문 위치 |
+|---|---|---|
+| **요약** | AI 에이전트 작업장 전체 구조. 프롬프트 한 줄이 아니라 읽을 자료·도구·중지 조건을 묶어둔 운영 환경. | 정의 / 왜 중요한가 |
+| **판단** | 4층 레이어 (모델 / 프롬프트+컨텍스트 / 하네스 / 검증) / 양극 스펙트럼 (autoresearch 초경량 vs spec-kit 풀패키지) / 회사·사이드 적용 분기 | 4층 레이어 / 하네스 스펙트럼 / 실전 적용 |
+| **근거** | 하네스 vs 프롬프트/컨텍스트 엔지니어링 차이 / autoresearch·spec-kit·scikit-learn·flutter·PLANS.md 5축 거버넌스 비교 / Anthropic 자기 정의 (claude-cookbooks 인용) | 하네스 vs 프롬프트... / 극한 사례 1 / Anthropic의 자기 정의 |
+| **히스토리** | 모델 경쟁 → 작업 구조·하네스·검증 습관 경쟁으로 이동 / 하네스 엔지니어링이 새 직무로 부상 / MateChat 39 SKILL이 하네스 사례 | 관련 개념 / 출처 / 열린 질문 |
+
+이 4단 분리는 Codex 평가 P1 권고("장문 hub의 히스토리 노이즈 분리")에 따른 navigation aid.
 
 ## 정의
 

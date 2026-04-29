@@ -22,8 +22,8 @@ related:
   - "[[openai-openai-agents-python]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 19
-inbound_count: 58
+observed_source_refs: 24
+inbound_count: 63
 created: 2026-04-28
 updated: 2026-04-28
 ---
@@ -162,7 +162,9 @@ dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `
 
 ## 논쟁/모순
 
-- (없음)
+> [!warning] 논쟁/모순
+> - (없음)
+
 
 ## 메모
 

@@ -11,8 +11,8 @@ related:
   - "[[sinaptik-ai-pandas-ai]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 1
-inbound_count: 13
+observed_source_refs: 2
+inbound_count: 14
 created: 2026-04-28
 updated: 2026-04-28
 tags: [pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차]

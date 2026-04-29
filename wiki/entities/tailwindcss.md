@@ -9,8 +9,8 @@ related:
   - "[[radix-ui]]"
   - "[[nextjs]]"
 source_count: 2
-observed_source_refs: 2
-inbound_count: 14
+observed_source_refs: 4
+inbound_count: 16
 created: 2026-04-28
 updated: 2026-04-29
 ---

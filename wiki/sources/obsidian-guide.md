@@ -15,6 +15,7 @@ related:
   - "[[obsidian-web-clipper]]"
 confidence: high
 cited_by:
+  - "[[claude-code-master-guide]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[obsidian]]"
   - "[[seokgeun-kim]]"

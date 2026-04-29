@@ -12,8 +12,8 @@ related:
   - "[[agent-skills]]"
   - "[[harness]]"
 source_count: 1
-observed_source_refs: 4
-inbound_count: 25
+observed_source_refs: 6
+inbound_count: 28
 created: 2026-04-27
 updated: 2026-04-27
 verification_required: true
@@ -83,7 +83,9 @@ OpenAI는 2015-12 샌프란시스코에서 설립된 AI 연구·개발 회사로
 
 ## 논쟁/모순
 
-- (없음)
+> [!warning] 논쟁/모순
+> - (없음)
+
 
 ## 메모
 

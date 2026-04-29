@@ -27,11 +27,14 @@ cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[astral-sh-uv]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[ml-ai]]"
   - "[[openai]]"
   - "[[openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
   - "[[python]]"
 ---
 

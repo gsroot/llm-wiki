@@ -11,8 +11,8 @@ related:
   - "[[nanochat]]"
   - "[[nanogpt]]"
 source_count: 1
-observed_source_refs: 14
-inbound_count: 41
+observed_source_refs: 15
+inbound_count: 42
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -90,7 +90,9 @@ autoresearch가 발견한 개선이 nanochat master로 머지되는 구조 — *
 
 ## 논쟁/모순
 
-(현재 단일 소스 — 모순 없음)
+> [!warning] 논쟁/모순
+> (현재 단일 소스 — 모순 없음)
+
 
 ## 메모
 

@@ -22,9 +22,11 @@ verification_required: true
 last_verified: 2026-04-29
 verification_notes: "육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인"
 cited_by:
+  - "[[kpi-recovery-loop]]"
   - "[[mate-chat-project-wiki-2026]]"
   - "[[matechat]]"
   - "[[matechat-project-knowledge-map]]"
+  - "[[parental-leave-2026-operating-plan]]"
   - "[[seokgeun-kim]]"
   - "[[seokgeun-operating-profile-2026]]"
 ---
@@ -83,7 +85,7 @@ AI에게 기대하는 역할은 친구, 개인 비서, 개발 동료, 사업 전
 ## 관련 엔티티/개념
 
 - [[seokgeun-kim|석근 (이 위키 owner)]]: 이 프로필의 주체이자 위키 소유자
-- [[matechat]]: 2026년 육아휴직 기간의 핵심 사업화 프로젝트
+- [[matechat|MateChat 사이드 프로젝트]]: 2026년 육아휴직 기간의 핵심 사업화 프로젝트
 - [[seokgeun-operating-profile-2026]]: 이 원문을 바탕으로 만든 2026년 개인 운영 종합 분석
 - [[career-timeline-seokgeun]]: 기존 커리어 타임라인과 이 프로필의 커리어 방향 연결
 - [[backend-python-fastapi]]: MateChat 백엔드 및 선호 개발 스택

@@ -14,6 +14,7 @@ related:
 confidence: high
 cited_by:
   - "[[claude-code]]"
+  - "[[claude-code-overview]]"
 ---
 
 # Claude Code 빠른 시작

@@ -11,8 +11,8 @@ related:
   - "[[fastmcp]]"
   - "[[crewai]]"
 source_count: 5
-observed_source_refs: 1
-inbound_count: 8
+observed_source_refs: 6
+inbound_count: 13
 created: 2026-04-28
 updated: 2026-04-29
 ---

@@ -17,6 +17,7 @@ confidence: high
 cited_by:
   - "[[career-timeline-seokgeun]]"
   - "[[portfolio]]"
+  - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
 ---
 

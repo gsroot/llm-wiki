@@ -10,8 +10,8 @@ related:
   - "[[pandas-dev-pandas]]"
   - "[[pola-rs-polars]]"
 source_count: 2
-observed_source_refs: 5
-inbound_count: 25
+observed_source_refs: 8
+inbound_count: 28
 created: 2026-04-27
 updated: 2026-04-27
 ---

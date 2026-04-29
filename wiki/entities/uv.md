@@ -14,8 +14,8 @@ related:
   - "[[astral-sh-uv]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 18
-inbound_count: 72
+observed_source_refs: 21
+inbound_count: 75
 created: 2026-04-27
 updated: 2026-04-28
 ---
@@ -102,7 +102,7 @@ CHANGELOG v0.11.6 (2026-04-09): wheel RECORD 파싱 취약점 advisory(GHSA-pjjw
 - [[anthropic]]: AGENTS.md 표준 발행자, uv는 채택자
 - [[seokgeun-kim|석근 (이 위키 owner)]]: 잠재 채택자 — 회사 BI [[c2spf-analytics|c2spf 게임 데이터 BI]] 마이그레이션 후보
 - [[karpathy]]: 단일 파일 철학 공명 (`uv run` + PEP 723)
-- [[c2spf-analytics]]: FastAPI + Python 환경, uv 채택 가능성 검토 대상
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: FastAPI + Python 환경, uv 채택 가능성 검토 대상
 - [[github-spec-kit]]: 다축 통합 vs uv 재구현 통합 — 정반대 극단
 
 ## 의사결정 컨텍스트 (raw 인용)
@@ -118,9 +118,11 @@ CHANGELOG v0.11.6 (2026-04-09): wheel RECORD 파싱 취약점 advisory(GHSA-pjjw
 
 ## 논쟁/모순
 
-- **PEP 723 빠른 채택 vs 표준 안정성**: uv는 PEP 723 인라인 metadata를 빠르게 prod-ready로 채택했지만, 표준이 정착하기 전 채택은 향후 incompatibility 위험이 있다는 우려가 일부 PyPA 진영에 있음.
-- **`tool.uv.sources` vs PEP 표준**: uv 고유 확장 (git/path/index alternative source). 다른 도구로의 마이그레이션 시 lockfile 호환성 깨짐. Astral은 PEP 표준화 추진 중이라 함.
-- **Rust 의존도**: uv는 Python 도구이지만 본체는 Rust. Python 코어 컨트리뷰터 충원 채널은 별개. 일부 Python 커뮤니티에서 "Python의 미래가 Rust에 의존하는가" 논쟁 진행 중.
+> [!warning] 논쟁/모순
+> - **PEP 723 빠른 채택 vs 표준 안정성**: uv는 PEP 723 인라인 metadata를 빠르게 prod-ready로 채택했지만, 표준이 정착하기 전 채택은 향후 incompatibility 위험이 있다는 우려가 일부 PyPA 진영에 있음.
+> - **`tool.uv.sources` vs PEP 표준**: uv 고유 확장 (git/path/index alternative source). 다른 도구로의 마이그레이션 시 lockfile 호환성 깨짐. Astral은 PEP 표준화 추진 중이라 함.
+> - **Rust 의존도**: uv는 Python 도구이지만 본체는 Rust. Python 코어 컨트리뷰터 충원 채널은 별개. 일부 Python 커뮤니티에서 "Python의 미래가 Rust에 의존하는가" 논쟁 진행 중.
+
 
 ## 메모
 

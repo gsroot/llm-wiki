@@ -13,8 +13,8 @@ related:
   - "[[context-engineering]]"
   - "[[token-economy]]"
 source_count: 1
-observed_source_refs: 4
-inbound_count: 11
+observed_source_refs: 5
+inbound_count: 12
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -54,7 +54,9 @@ updated: 2026-04-27
 
 ## 논쟁/모순
 
-현재 위키 안에서 CMA에 대한 상충 정보는 없음. 다만 hosted runtime이므로 비용·데이터 보안·사내망 접근성은 실제 도입 전에 별도 검토가 필요하다.
+> [!warning] 논쟁/모순
+> 현재 위키 안에서 CMA에 대한 상충 정보는 없음. 다만 hosted runtime이므로 비용·데이터 보안·사내망 접근성은 실제 도입 전에 별도 검토가 필요하다.
+
 
 ## 메모
 

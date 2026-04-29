@@ -11,8 +11,8 @@ related:
   - "[[microsoft-lightgbm]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 2
-inbound_count: 15
+observed_source_refs: 4
+inbound_count: 17
 created: 2026-04-28
 updated: 2026-04-28
 ---
@@ -72,7 +72,7 @@ updated: 2026-04-28
 
 ## 메모
 
-- **석근님 BI 적용**: 게임 데이터 BI에서 churn / LTV / 매출 예측에 가장 흔한 모델. [[c2spf-analytics]] 스택의 ML 1순위.
+- **석근님 BI 적용**: 게임 데이터 BI에서 churn / LTV / 매출 예측에 가장 흔한 모델. [[c2spf-analytics|c2spf 게임 데이터 BI]] 스택의 ML 1순위.
 - **vs XGBoost**: 정확도는 비슷, LightGBM이 학습 속도·메모리 면에서 우위 (큰 데이터셋). XGBoost는 R 생태계에서 여전히 강함.
 - **vs CatBoost**: CatBoost는 categorical 자동 처리·overfitting 안정성 우위, LightGBM은 다양한 통합 우위.
 - **EffVer**: 향후 위키에서 [[uv]]/[[ruff]]/[[pandas]]/[[polars]]의 버전 정책과 비교 매트릭스 작성 가치.

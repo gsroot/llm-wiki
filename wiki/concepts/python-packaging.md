@@ -8,8 +8,8 @@ related:
   - "[[astral]]"
   - "[[backend-python-fastapi]]"
 source_count: 1
-observed_source_refs: 8
-inbound_count: 28
+observed_source_refs: 9
+inbound_count: 29
 created: 2026-04-27
 updated: 2026-04-27
 ---
@@ -195,5 +195,5 @@ members = ["packages/*"]
 2. **"Python의 미래는 Rust인가?"** Astral 3제품 (ruff/uv/ty) + Pydantic v2의 Rust 코어 + numpy/pandas의 C 구현이 모두 동일한 문제 해법으로 수렴 중. Python core 자체가 Rust로 이주하는 시나리오는 어디까지 현실적인가? CPython의 GIL 제거 + nogil 빌드 + `freethreaded` 변종 흐름과 어떻게 상호작용하는가?
 3. **`conda`와의 관계**: uv는 PyPI 중심. conda 생태계 (특히 ML/과학 계산)는 별개로 남아있다. 이 분리가 합리적인가, 아니면 향후 통합 가능한가?
 4. **Lockfile 표준화**: 각 도구의 lockfile 포맷이 모두 다르다. PEP 751 같은 표준 lockfile 시도가 있지만 채택은 미미. universal lockfile 표준이 가능한가, 아니면 도구별 fork가 영구적인가?
-5. **회사 BI 적용 ROI**: pip → uv 전환 시 [[c2spf-analytics]] CI 시간/lockfile 일관성/dev 만족도의 실제 측정. 이 위키의 후속 실험 후보.
+5. **회사 BI 적용 ROI**: pip → uv 전환 시 [[c2spf-analytics|c2spf 게임 데이터 BI]] CI 시간/lockfile 일관성/dev 만족도의 실제 측정. 이 위키의 후속 실험 후보.
 6. **위키 자기 적용**: 향후 위키 자동화 스크립트는 PEP 723 + uv run으로 작성하는 것이 답인가? `/wiki-ingest`, `/wiki-lint` 슬래시 커맨드의 Python 구현은 PEP 723 헤더만 박으면 의존성 명시도 함께 끝난다.

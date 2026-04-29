@@ -13,8 +13,8 @@ related:
   - "[[pydantic-pydantic]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 4
-inbound_count: 34
+observed_source_refs: 5
+inbound_count: 35
 created: 2026-04-28
 updated: 2026-04-28
 ---

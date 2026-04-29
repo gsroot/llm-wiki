@@ -18,13 +18,18 @@ related:
   - "[[github-spec-kit]]"
 confidence: high
 cited_by:
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
   - "[[bdfl]]"
+  - "[[c2spf-analytics-renewal]]"
   - "[[copy-on-write]]"
   - "[[data-pipeline-bigquery]]"
   - "[[dataframe]]"
   - "[[dataframe-ecosystem-evolution]]"
+  - "[[github-spec-kit]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[microsoft-data-science-for-beginners]]"
+  - "[[microsoft-ml-for-beginners]]"
   - "[[ml-ai]]"
   - "[[numfocus]]"
   - "[[openai-openai-cookbook]]"

@@ -18,6 +18,7 @@ related:
   - "[[sqlite]]"
 confidence: high
 cited_by:
+  - "[[apache-arrow]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[duckdb]]"
   - "[[lakehouse]]"
@@ -147,7 +148,7 @@ DuckDB-Wasm은 데이터를 서버로 보내지 않고 브라우저에서 직접
 ## 메모
 
 - **MotherDuck**: DuckDB Labs의 클라우드 SaaS. "DuckDB + 협업/지속성/공유" 추가 — 추적 대상
-- **회사 BI 적용**: [[c2spf-analytics]]에서 BigQuery 비용 절감 워크로드 후보 — "탐색은 DuckDB on local Parquet으로, 운영은 BQ로" 분리
+- **회사 BI 적용**: [[c2spf-analytics|c2spf 게임 데이터 BI]]에서 BigQuery 비용 절감 워크로드 후보 — "탐색은 DuckDB on local Parquet으로, 운영은 BQ로" 분리
 - **C++17 + CMake**: [[redis]]/[[postgresql]]의 C에 비하면 모던. 컨트리뷰션 진입장벽이 비교적 낮음
 - **Python 통합 깊이**: pandas/polars/pyarrow를 모두 zero-copy 인식 — 데이터 사이언스 스택의 "허브" 역할
 - **CHANGELOG 부재**: 루트에 CHANGELOG.md 없음 → 릴리스 노트는 GitHub Releases + duckdb.org/news로 분산. 추적 채널 명시 필요

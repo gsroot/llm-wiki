@@ -25,9 +25,31 @@ related:
   - "[[claude-code]]"
 created: 2026-04-29
 updated: 2026-04-29
+cited_by:
+  - "[[c2spf-analytics-common]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[c2spf-nft-market]]"
+  - "[[c2spf-xpla-platform]]"
+  - "[[kpi-recovery-loop]]"
+  - "[[mate-chat-project-wiki-2026]]"
+  - "[[nextjs]]"
+  - "[[parental-leave-2026-operating-plan]]"
+  - "[[portfolio-ko]]"
+  - "[[portfolio-method]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[portfolio-seed]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-operating-profile-2026]]"
 ---
 
 # 포트폴리오 (Portfolio Hub)
+
+## 언제 읽어야 하는가
+
+- "석근의 9년 커리어를 한 화면에 보고 싶다" — 이력서·면접·외부 소개에 인용할 때.
+- "회사 c2spf와 사이드 MateChat이 어떻게 기술 스택을 검증하는가?" — 쌍 검증 매트릭스 표 (Layer 4) 진입.
+- "포트폴리오 저장소(2개)와 위키가 어떻게 동기화되는가?" — 3-Layer 구조 (Layer 1) 진입.
+- "다음 1인 사업화 의사결정에 어떤 입력이 필요한가?" → 열린 질문 + [[seokgeun-operating-profile-2026]] 연결.
 
 > 33회차 신설 — "포트폴리오란?" 질의에 1-hop으로 도달하는 진입점. 4개 source 페이지(seed/resume/ko/method) + 5개 프로젝트 source를 통합한다.
 
@@ -98,8 +120,8 @@ updated: 2026-04-29
 - [[c2spf-nft-market]] — 2022-05 NFT 마켓 가스비 절감
 - [[c2spf-xpla-platform]] — 2024-04 XPLA SDK
 - [[mate-chat-project-wiki-2026]] — MateChat 2026-04-28 스냅샷
-- [[seokgeun-kim]] — 본인 정체성 hub (1축)
-- [[seokgeun-stack-guide]] — 32 OSS 스택 의사결정 트리 (3축)
-- [[matechat]] — MateChat canonical (4축)
-- [[c2spf-analytics]] — 회사 BI 본진 entity
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 본인 정체성 hub (1축)
+- [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] — 32 OSS 스택 의사결정 트리 (3축)
+- [[matechat|MateChat 사이드 프로젝트]] — MateChat canonical (4축)
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 회사 BI 본진 entity
 - [[seokgeun-operating-profile-2026]] — 2026 운영 프레임 (1축)

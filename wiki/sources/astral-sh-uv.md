@@ -16,8 +16,11 @@ related:
   - "[[backend-python-fastapi]]"
 confidence: high
 cited_by:
+  - "[[anthropics-claude-cookbooks]]"
   - "[[astral]]"
   - "[[backend-fastapi-stack]]"
+  - "[[github-spec-kit]]"
+  - "[[karpathy-autoresearch]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[openai-agents-python]]"
   - "[[openai-openai-agents-python]]"

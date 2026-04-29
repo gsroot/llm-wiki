@@ -11,8 +11,8 @@ related:
   - "[[ml-ai]]"
   - "[[harness]]"
 source_count: 1
-observed_source_refs: 9
-inbound_count: 25
+observed_source_refs: 10
+inbound_count: 26
 created: 2026-04-27
 updated: 2026-04-27
 ---

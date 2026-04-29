@@ -11,8 +11,8 @@ related:
   - "[[crewaiinc-crewai]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 1
-inbound_count: 18
+observed_source_refs: 2
+inbound_count: 19
 created: 2026-04-28
 updated: 2026-04-28
 tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차]

@@ -23,6 +23,7 @@ cited_by:
   - "[[ml-ai]]"
   - "[[portfolio]]"
   - "[[portfolio-ko]]"
+  - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
 ---
 

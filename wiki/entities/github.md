@@ -10,8 +10,8 @@ related:
   - "[[anthropic]]"
   - "[[agent-skills]]"
 source_count: 1
-observed_source_refs: 3
-inbound_count: 31
+observed_source_refs: 5
+inbound_count: 33
 created: 2026-04-27
 updated: 2026-04-27
 ---

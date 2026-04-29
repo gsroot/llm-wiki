@@ -20,9 +20,13 @@ related:
   - "[[token-economy]]"
 confidence: high
 cited_by:
+  - "[[kpi-recovery-loop]]"
   - "[[matechat]]"
+  - "[[matechat-30day-validation-loop]]"
   - "[[matechat-project-knowledge-map]]"
+  - "[[parental-leave-2026-operating-plan]]"
   - "[[portfolio]]"
+  - "[[seokgeun-kim-profile-2026]]"
   - "[[seokgeun-operating-profile-2026]]"
 ---
 

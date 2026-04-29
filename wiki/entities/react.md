@@ -10,8 +10,8 @@ related:
   - "[[shadcn-ui]]"
   - "[[radix-ui]]"
 source_count: 5
-observed_source_refs: 8
-inbound_count: 30
+observed_source_refs: 13
+inbound_count: 35
 created: 2026-04-28
 updated: 2026-04-29
 ---
