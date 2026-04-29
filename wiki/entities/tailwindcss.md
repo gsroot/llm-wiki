@@ -2,7 +2,8 @@
 title: "Tailwind CSS"
 type: entity
 entity_type: tool
-tags: [tailwindcss, css, utility-first, atomic-css, shadcn-ui-foundation, 25회차]
+aliases: [Tailwind CSS, Tailwind, tailwindcss, 테일윈드, utility-first CSS]
+tags: [tailwindcss, css, utility-first, atomic-css, shadcn-ui-foundation, 25회차, 50회차]
 related:
   - "[[shadcn-ui]]"
   - "[[react]]"
@@ -10,7 +11,7 @@ related:
   - "[[nextjs]]"
 source_count: 2
 observed_source_refs: 4
-inbound_count: 18
+inbound_count: 20
 created: 2026-04-28
 updated: 2026-04-29
 ---

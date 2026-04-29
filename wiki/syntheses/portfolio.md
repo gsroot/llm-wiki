@@ -27,12 +27,14 @@ created: 2026-04-29
 updated: 2026-04-29
 cited_by:
   - "[[agent-skills]]"
+  - "[[backend-fastapi-stack]]"
   - "[[c2spf-analytics]]"
   - "[[c2spf-analytics-common]]"
   - "[[c2spf-analytics-renewal]]"
   - "[[c2spf-nft-market]]"
   - "[[c2spf-xpla-platform]]"
   - "[[claude-code]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[harness]]"
   - "[[kpi-recovery-loop]]"
   - "[[llm-infra-meta-cluster]]"

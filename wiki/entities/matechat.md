@@ -37,6 +37,7 @@ related:
   - "[[c2spf-analytics]]"
   - "[[com2us-platform]]"
   - "[[token-economy]]"
+  - "[[portfolio]]"
   - "[[portfolio-seed]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 6
@@ -50,6 +51,7 @@ verification_notes: "현재 v1.0.0 출시 직전 QA 단계 (44회차 owner 자�
 cited_by:
   - "[[agent-skills]]"
   - "[[alembic]]"
+  - "[[backend-fastapi-stack]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
   - "[[c2spf-analytics]]"
   - "[[claude-code]]"

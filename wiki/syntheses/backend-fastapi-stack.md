@@ -2,7 +2,8 @@
 title: "Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존)"
 type: synthesis
 category: analysis
-tags: [backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions]
+aliases: [백엔드 FastAPI 6단, FastAPI 스택, backend-fastapi-stack, backend-python-stack, 3축 백엔드 sub-hub, Python 백엔드 표준 스택]
+tags: [backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions, 3축-sub-hub, 50회차]
 sources:
   - "[[fastapi-fastapi]]"
   - "[[pydantic-pydantic]]"
@@ -12,11 +13,32 @@ sources:
   - "[[redis-redis]]"
   - "[[astral-sh-uv]]"
   - "[[astral-sh-ruff]]"
+related:
+  - "[[seokgeun-stack-guide]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[matechat]]"
+  - "[[fastapi]]"
+  - "[[pydantic]]"
+  - "[[sqlalchemy]]"
+  - "[[alembic]]"
+  - "[[postgresql]]"
+  - "[[redis]]"
+  - "[[uv]]"
+  - "[[ruff]]"
+  - "[[backend-python-fastapi]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[llm-infra-meta-cluster]]"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis
+
+> [!important] 3축 백엔드 sub-hub — 50회차 P1-1 격상
+> 본 페이지는 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 6분류 중 **① 백엔드 코어**의 sub-hub로 격상되었다. 5축 [[llm-infra-meta-cluster]]가 [[agent-skills]]·[[harness]]·[[mcp]]·[[claude-code]] 4 sub-hub를 갖는 패턴을 3축에도 도입 — 본 페이지는 백엔드 영역, [[flutter-nextjs-fullstack-pattern]]은 프론트·모바일 영역을 담당한다.
+>
+> 회사 BI [[c2spf-analytics|c2spf 게임 데이터 BI]]와 사이드 [[matechat|MateChat]] 양쪽이 동일한 6단을 사용하므로 **"양쪽이 검증한 동일 스택"**이라는 정체성. 신규 백엔드 의사결정 시 본 페이지가 1-hop 진입점.
 
 ## 요약
 

@@ -2,6 +2,7 @@
 title: "Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (22회차 종합)"
 type: synthesis
 category: frontend-architecture
+aliases: [Flutter Next.js 듀얼 클라이언트, 듀얼 클라이언트 풀스택 패턴, frontend-fullstack-pattern, 3축 프론트 sub-hub, 프론트엔드·모바일 sub-hub]
 sources:
   - "[[rrousselGit-riverpod]]"
   - "[[vercel-next.js]]"
@@ -12,21 +13,33 @@ sources:
   - "[[matechat]]"
 sources_count: 7
 related:
+  - "[[seokgeun-stack-guide]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[matechat]]"
   - "[[riverpod]]"
   - "[[nextjs]]"
   - "[[tanstack-query]]"
   - "[[zustand]]"
   - "[[shadcn-ui]]"
   - "[[flutter]]"
+  - "[[tailwindcss]]"
+  - "[[radix-ui]]"
+  - "[[turbopack]]"
   - "[[agent-skills]]"
   - "[[backend-fastapi-stack]]"
-  - "[[matechat]]"
+  - "[[llm-infra-meta-cluster]]"
 created: 2026-04-28
-updated: 2026-04-28
-tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차, 프론트엔드]
+updated: 2026-04-29
+tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차, 프론트엔드, 3축-sub-hub, 50회차]
 ---
 
 # Flutter + Next.js 듀얼 클라이언트 풀스택 패턴
+
+> [!important] 3축 프론트·모바일 sub-hub — 50회차 P1-1 격상
+> 본 페이지는 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 6분류 중 **⑥ 프론트엔드·모바일**의 sub-hub로 격상되었다. 5축 [[llm-infra-meta-cluster]]의 4 sub-hub 패턴을 3축에 도입한 두 번째 노드 — 백엔드 영역은 [[backend-fastapi-stack]]가, 본 페이지는 프론트·모바일을 담당한다.
+>
+> 모바일=[[flutter|Flutter]]+[[riverpod|Riverpod]] / 웹=[[nextjs|Next.js]]+([[zustand|Zustand]]+[[tanstack-query|TanStack Query]]+[[shadcn-ui|shadcn-ui]]+[[tailwindcss|Tailwind CSS]]) 듀얼 클라이언트. [[matechat|MateChat]] 사이드(Flutter)와 [[c2spf-analytics|c2spf 게임 데이터 BI]] 회사(React) 양쪽이 본 패턴 안에서 검증.
 
 ## 한줄 요약
 

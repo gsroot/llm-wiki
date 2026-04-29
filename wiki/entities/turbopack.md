@@ -2,14 +2,15 @@
 title: "Turbopack"
 type: entity
 entity_type: tool
-tags: [turbopack, vercel, rust, bundler, nextjs, build-tool, 25회차]
+aliases: [Turbopack, turbopack, 터보팩, Rust 번들러, Next.js bundler]
+tags: [turbopack, vercel, rust, bundler, nextjs, build-tool, 25회차, 50회차]
 related:
   - "[[vercel]]"
   - "[[nextjs]]"
   - "[[react]]"
 source_count: 1
 observed_source_refs: 1
-inbound_count: 12
+inbound_count: 13
 created: 2026-04-28
 updated: 2026-04-29
 ---

@@ -26,6 +26,7 @@ cited_by:
   - "[[anthropic]]"
   - "[[anthropics-claude-cookbooks]]"
   - "[[anthropics-skills]]"
+  - "[[backend-fastapi-stack]]"
   - "[[claude-agent-sdk]]"
   - "[[claude-code]]"
   - "[[claude-code-master-guide]]"

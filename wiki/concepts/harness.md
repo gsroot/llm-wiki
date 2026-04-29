@@ -39,6 +39,7 @@ cited_by:
   - "[[astral-sh-uv]]"
   - "[[autonomous-research-loop]]"
   - "[[autoresearch]]"
+  - "[[backend-fastapi-stack]]"
   - "[[claude-agent-sdk]]"
   - "[[claude-code]]"
   - "[[claude-code-master-guide]]"

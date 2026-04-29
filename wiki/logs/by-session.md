@@ -21,6 +21,7 @@ rag_exclude_reason: "회차 색인은 메타 운영 기록의 라우터. RAG 답
 
 | 회차 | 날짜 | 제목 | 직접 링크 |
 |---:|---|---|---|
+| **50** | 2026-04-29 | feat | 외부+자체 평가 합집합 P1 5건 (3축 sub-hub 격상·2↔3·4↔2 cross-edge·stub aliases 4건·AGENTS 13-14단계·GitHub Actions wiki-lint) | [[log#[2026-04-29] feat | 50회차 P1 — 외부+자체 평가 합집합 P1 5건\|점프 →]] |
 | **49** | 2026-04-29 | eval+feat | 외부+자체 평가 합집합 P0 5건 (5축 역방향 edge·정량 stale 정리·검증 경로·MateChat 사업검증·lint #11) | [[log#[2026-04-29] eval+feat | 49회차 P0 — 외부+자체 평가 합집합 P0 5건\|점프 →]] |
 | **48** | 2026-04-29 | feat+P0+P1 | P0+P1 통합본 (1·2축↔5축 sub-hub 8 edge / aliases 11 hub / 5축 hub 진입 / 실행형 synthesis 4건 / cited_by 11 확장) | (commit 916d81d / ae68f8e — P0+P1 squash 정책으로 log.md 별도 항목 미작성) |
 | **47** | 2026-04-29 | feat+infra | cited_by 자동 갱신 — citation chain 양방향화 | [[log#[2026-04-29] feat+infra | cited_by 자동 갱신 — citation chain 양방향화 (47회차)\|점프 →]] |

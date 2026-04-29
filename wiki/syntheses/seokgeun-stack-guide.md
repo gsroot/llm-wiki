@@ -23,6 +23,7 @@ related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
   - "[[com2us-platform]]"
+  - "[[portfolio]]"
   - "[[portfolio-seed]]"
   - "[[llm-infra-meta-cluster]]"
 created: 2026-04-28
@@ -33,6 +34,7 @@ last_verified: 2026-04-29
 verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
 cited_by:
   - "[[alembic]]"
+  - "[[backend-fastapi-stack]]"
   - "[[c2spf-analytics]]"
   - "[[com2us-platform]]"
   - "[[crewai]]"
@@ -118,7 +120,7 @@ cited_by:
 | [[uv]] | 패키지·환경 관리 | Apache-2.0/MIT | 도구 |
 | [[ruff]] | 린터·포매터 | MIT | 도구 |
 
-→ **종합 페이지**: [[backend-fastapi-stack]] (6단 흐름)
+→ **3축 백엔드 sub-hub**: [[backend-fastapi-stack]] (6단 흐름 — 50회차 P1-1로 sub-hub 격상)
 
 ### ② 데이터 레이어 (16회차 기반)
 
@@ -178,7 +180,7 @@ cited_by:
 | React | [[tanstack-query]] | 서버 상태 | MIT |
 | React | [[shadcn-ui]] | UI 컴포넌트 (Open Code) | MIT |
 
-→ **종합 페이지**: [[flutter-nextjs-fullstack-pattern]] (듀얼 클라이언트)
+→ **3축 프론트·모바일 sub-hub**: [[flutter-nextjs-fullstack-pattern]] (듀얼 클라이언트 — 50회차 P1-1로 sub-hub 격상)
 
 ## 사이드 프로젝트 의사결정 트리
 

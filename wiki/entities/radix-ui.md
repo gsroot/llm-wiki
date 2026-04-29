@@ -2,14 +2,15 @@
 title: "Radix UI"
 type: entity
 entity_type: tool
-tags: [radix-ui, react, primitives, accessibility, headless, shadcn-ui-foundation, 25회차]
+aliases: [Radix UI, Radix, radix-ui, 라딕스 UI, headless React primitives]
+tags: [radix-ui, react, primitives, accessibility, headless, shadcn-ui-foundation, 25회차, 50회차]
 related:
   - "[[shadcn-ui]]"
   - "[[react]]"
   - "[[tailwindcss]]"
 source_count: 1
 observed_source_refs: 3
-inbound_count: 15
+inbound_count: 16
 created: 2026-04-28
 updated: 2026-04-29
 ---

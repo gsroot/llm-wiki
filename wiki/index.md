@@ -2,8 +2,8 @@
 title: "위키 인덱스"
 type: index
 updated: 2026-04-29
-session: 49
-session_note: "외부+자체 평가 합집합 P0 5건 — 5축 hub 역방향 cross-axis 4 edge·hub 본문 정량 자동 필드 우선 참조·portfolio·c2spf 검증 경로 footnote·MateChat 사업 검증 sub-cluster 신설(matechat-business-validation)·wiki-lint 본문 정량 stale 경고 체크 #11. 5축 합산 690 (45.2%)."
+session: 50
+session_note: "외부+자체 평가 합집합 P1 5건 — 3축 sub-hub 2개 격상(backend-fastapi-stack·flutter-nextjs-fullstack-pattern)·2↔3·4↔2 cross-edge·stub entity 4건 aliases 추가·AGENTS.md 13-14단계 명시화·wiki-lint GitHub Actions workflow 신설."
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
 ---

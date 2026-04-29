@@ -1,0 +1,55 @@
+name: wiki-lint
+
+# 50회차 P1-5 신설 — wiki/scripts 변경 시 자동 정합성 검증.
+# wiki-lint.py의 has_defect()가 true면 PR 차단 + main push 실패.
+# 정보 보고(체크 #4 source_count 부정합, 체크 #11 본문 정량 stale)는 stdout만, exit 0.
+
+on:
+  pull_request:
+    paths:
+      - "wiki/**/*.md"
+      - "CLAUDE.md"
+      - "AGENTS.md"
+      - "scripts/wiki-lint.py"
+      - ".github/workflows/wiki-lint.yml"
+  push:
+    branches: [main]
+    paths:
+      - "wiki/**/*.md"
+      - "CLAUDE.md"
+      - "AGENTS.md"
+      - "scripts/wiki-lint.py"
+      - ".github/workflows/wiki-lint.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet pyyaml
+
+      - name: Run wiki-lint --check
+        run: python3 scripts/wiki-lint.py --check
+
+      - name: Append wiki-lint --report to step summary
+        if: always()
+        run: |
+          {
+            echo "## wiki-lint 5축 인바운드 분포"
+            echo '```'
+            python3 scripts/wiki-lint.py --report
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

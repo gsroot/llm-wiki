@@ -2,7 +2,8 @@
 title: "TanStack"
 type: entity
 entity_type: organization
-tags: [tanstack, tanner-linsley, react, query, table, router, form, 25회차]
+aliases: [TanStack, tanstack, 탄스택, Tanner Linsley, TanStack 진영]
+tags: [tanstack, tanner-linsley, react, query, table, router, form, 25회차, 50회차]
 related:
   - "[[tanstack-query]]"
   - "[[react]]"

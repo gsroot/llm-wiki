@@ -13,7 +13,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 3
-inbound_count: 30
+inbound_count: 31
 created: 2026-04-28
 updated: 2026-04-28
 tags: [zustand, react, state-management, hooks, flux, minimal, providerless, 22회차]

@@ -32,6 +32,7 @@ cited_by:
   - "[[anthropics-skills]]"
   - "[[autonomous-research-loop]]"
   - "[[autoresearch]]"
+  - "[[backend-fastapi-stack]]"
   - "[[claude-agent-sdk]]"
   - "[[claude-code-master-guide]]"
   - "[[claude-code-overview]]"
