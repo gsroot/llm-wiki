@@ -1,5 +1,5 @@
 ---
-title: "Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 Google Play 출시)"
+title: "Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 출시 직전 QA 단계)"
 type: source
 source_type: project
 source_url: "(private repo, /Users/sgkim/Projects/mate-chat)"
@@ -29,7 +29,7 @@ verification_notes: "39 SKILL 분류(자작 11 / 외부 28) — flutter/skills l
 
 ## 한줄 요약
 
-석근이 개발·운영 중인 글로벌 소셜 메시징 플랫폼 (v1.0.0 Google Play Store 출시 완료). FastAPI 백엔드 + Flutter 모바일 + OpenAI GPT-4 + WebSocket 실시간 채팅 + 가상화폐(클로버) IAP. **위키 15~22회차에서 발견한 6분류 도구 대부분이 단일 프로젝트에 집약된 실증 사례** + agent-skills 표준의 **`.agents/skills/` 39개 SKILL.md 통합 운영** (자작 11 + Flutter 공식 22 + Claude Code marketplace/npx 설치 6) + **외부 gstack 저장소 vendor + 자체 12개 슬래시 커맨드** (`.claude/commands/`). (28회차 검증 정정: 24회차 본문의 "38 SKILL = 단일 OSS 최대 규모, 메이저 OSS 4~12배 초과" 가설은 자작 11개 기준으로는 anthropics/skills(~12)·openai-agents-python(9)와 비슷한 규모로 약화. 진짜 가치는 **외부 28개 + 자작 11개 통합 운영의 사이드 프로젝트 깊이**.)
+석근이 개발 중인 글로벌 소셜 메시징 플랫폼 (v1.0.0 출시 직전 QA 단계 — 44회차 owner 자기보고로 정정). FastAPI 백엔드 + Flutter 모바일 + OpenAI GPT-4 + WebSocket 실시간 채팅 + 가상화폐(클로버) IAP. **위키 15~22회차에서 발견한 6분류 도구 대부분이 단일 프로젝트에 집약된 실증 사례** + agent-skills 표준의 **`.agents/skills/` 39개 SKILL.md 통합 운영** (자작 11 + Flutter 공식 22 + Claude Code marketplace/npx 설치 6) + **외부 gstack 저장소 vendor + 자체 12개 슬래시 커맨드** (`.claude/commands/`). (28회차 검증 정정: 24회차 본문의 "38 SKILL = 단일 OSS 최대 규모, 메이저 OSS 4~12배 초과" 가설은 자작 11개 기준으로는 anthropics/skills(~12)·openai-agents-python(9)와 비슷한 규모로 약화. 진짜 가치는 **외부 28개 + 자작 11개 통합 운영의 사이드 프로젝트 깊이**.)
 
 ## 핵심 내용
 
@@ -37,7 +37,7 @@ verification_notes: "39 SKILL 분류(자작 11 / 외부 28) — flutter/skills l
 
 | 항목 | 값 |
 |---|---|
-| 상태 | v1.0.0 Google Play 출시 (Android), iOS App Store 대기 |
+| 상태 | v1.0.0 출시 직전 QA 단계 (Android), QA 완료 후 Google Play 정식 출시 예정. iOS App Store는 이후 단계 (44회차 정정) |
 | 백엔드 | FastAPI 0.117 + Python 3.13 + PostgreSQL 15 + Redis 7 |
 | 프론트엔드 | Flutter (Dart 3.10.1+) + Riverpod 2.5 |
 | AI | OpenAI GPT-4 (커스텀 챗봇 + 하이브리드 채팅) |
@@ -52,7 +52,7 @@ verification_notes: "39 SKILL 분류(자작 11 / 외부 28) — flutter/skills l
 ```
 mate-chat/
 ├── mate_chat_backend/    (FastAPI, 백엔드 70%+)
-├── mate_chat_flutter/    (Flutter, 출시 완료)
+├── mate_chat_flutter/    (Flutter, 출시 직전 QA 단계)
 ├── docs/                 (18개 설계 문서 — 12 system / 13 db / 14 api / 15 auth / 16 websocket 등)
 ├── .agents/skills/       (39 SKILL.md = 자작 11 + 외부 설치 28)
 ├── .claude/skills/gstack/ (외부 gstack 저장소 vendor)
@@ -262,9 +262,9 @@ CLAUDE.md 첫 섹션에 명시된 사용 가능 커맨드:
 
 → 24회차 박힌 "1인 사이드 프로젝트가 회사 운영 관행을 슬래시 패키지화"는 정확히는 **"외부 gstack 도구를 채택하고 자체 12개 슬래시 추가"**. [[harness]] 6번째 축의 다음 진화 발견은 **여전히 유효** — 외부 gstack 자체가 SOP 패키지화의 사실상 표준 도구이며, 이를 사이드 프로젝트에 채택한 것은 회사 BI 업무에 동일 패턴 차용 가능 시사.
 
-### 6. **백엔드 미완성 30%·Flutter 출시 완료 = 비대칭 운영**
+### 6. **백엔드 미완성 30%·Flutter 출시 직전 QA = 비대칭 운영 (정정 — 44회차)**
 
-CLAUDE.md "기능 구현 70% 수준" + "v1.0.0 Google Play Store 출시" → 백엔드는 v1.1 항목(Apple OAuth, iOS, 모더레이션, Pub/Sub 분산) 미완 상태에서 안드로이드 단일 플랫폼으로 선출시한 패턴. **사업화 우선·기능 후속 모델**의 직접적 사례.
+CLAUDE.md "기능 구현 70% 수준" + 안드로이드 단일 플랫폼 선출시 전략 → 백엔드는 v1.1 항목(Apple OAuth, iOS, 모더레이션, Pub/Sub 분산) 미완 상태에서 안드로이드 v1.0.0 QA를 마치고 정식 출시할 계획. **사업화 우선·기능 후속 모델**의 직접적 사례. (24회차 raw에 박힌 "Google Play Store 출시 완료" 표현은 잘못된 기록이며, 44회차에 owner 자기보고로 "출시 직전 QA 단계"로 정정.)
 
 ## 관련 엔티티/개념
 

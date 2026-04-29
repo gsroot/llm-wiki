@@ -50,7 +50,7 @@ tags: [matechat, validation, kpi, release-checklist, competitive-analysis, reven
 
 ### 2. 글로벌 출시 진단 (`26-global-launch-readiness.md`) — 4단계 평가
 
-CRITICAL / HIGH / MEDIUM / OK로 출시 차단 / 품질 / UX / 완료 영역 분류. 24회차 CLAUDE.md 메타 (v1.0.0 출시 완료) vs 본 진단 보고서의 미해결 항목 분포가 **사업화 우선·기능 후속 모델**의 직접 증거.
+CRITICAL / HIGH / MEDIUM / OK로 출시 차단 / 품질 / UX / 완료 영역 분류. 24회차 CLAUDE.md raw 메타에 "v1.0.0 출시 완료"로 잘못 기록되어 있던 표현 vs 본 진단 보고서의 미해결 항목 분포가 **사업화 우선·기능 후속 모델**의 직접 증거. (44회차 정정 — 실제는 출시 직전 QA 단계, owner 자기보고 기준.)
 
 특이점:
 - **백엔드 예시 코드 인용**(notification_service.py)이 진단 docs에 직접 박혀 있음 — 진단이 추상적 체크리스트가 아니라 코드 라인 단위
@@ -119,7 +119,7 @@ CRITICAL / HIGH / MEDIUM / OK로 출시 차단 / 품질 / UX / 완료 영역 분
 
 ### 3. 사업화 우선·기능 후속 모델의 정량 증거
 
-24회차 CLAUDE.md "v1.0.0 출시 완료"와 본 26번 docs "출시 차단 CRITICAL 이슈" 사이의 **시점 격차**가 **출시 우선 + 결함 후처리** 모델의 직접 증거. [[matechat]] entity의 "비대칭 운영" 메모를 정량 자료로 뒷받침.
+24회차 CLAUDE.md raw에 박혀있던 "v1.0.0 출시 완료" 잘못된 표현과 본 26번 docs "출시 차단 CRITICAL 이슈" 사이의 모순이 **사업화 우선·기능 후속 모델**의 정황 증거. [[matechat]] entity의 "비대칭 운영" 메모를 정량 자료로 뒷받침. (44회차 정합 — 실제는 출시 직전 QA 단계로 정정됨. CRITICAL 항목들은 QA 단계에서 해소 중.)
 
 ### 4. 본 source ≠ 실제 사용자 검증 로그
 

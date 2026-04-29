@@ -34,7 +34,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | 1 | 개인 프로필 | [[seokgeun-kim]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] | 103 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
 | 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[c2spf-analytics]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 237 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
 | 3 | 스택 가이드 | [[seokgeun-stack-guide]] | 122 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
-| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 157 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 / 39 SKILL 운영 SOP) |
+| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 157 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
 | 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 535 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer (43회차: 47.9% → 46.6% 편중 완화) |
 
 > **읽기 순서 가이드**: (1) 5축 식별 → 본 표 / (2) 본인 정체성 → [[seokgeun-operating-profile-2026]] / (3) 기술 의사결정 → [[seokgeun-stack-guide]] / (4) 메타 인식 → [[llm-infra-meta-cluster]]
@@ -108,7 +108,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[tanstack-tanstack-query]] | TanStack/query — 서버 상태 관리 사실상 표준 (멀티 프레임워크 어댑터, TanStack 12 패키지) | article | Tanner Linsley + TanStack Team | 2026-04-28 | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 |
 | [[pmndrs-zustand]] | pmndrs/zustand — React 클라이언트 상태 미니멀 챔피언 ("Bear necessities", providerless) | article | Daishi Kato + Poimandres | 2026-04-28 | zustand, react, state-management, hooks, flux, minimal, 22회차 |
 | [[shadcn-ui-ui]] | shadcn-ui/ui — Open Code 패러다임 (코드 분배 플랫폼, 10번째 OSS 거버넌스 모델, 113K stars 22회차 1위) | article | shadcn | 2026-04-28 | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차 |
-| [[seokgeun-mate-chat]] | Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 Google Play 출시, 39 SKILL = 자작 11 + 외부 설치 28, 28회차 검증) | project | 석근 (Mate Chat Team) | 2026-04-28 | mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, 24회차, 28회차 |
+| [[seokgeun-mate-chat]] | Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 출시 직전 QA 단계, 39 SKILL = 자작 11 + 외부 설치 28, 28회차 검증) | project | 석근 (Mate Chat Team) | 2026-04-29 | mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, 24회차, 28회차, 44회차 |
 | [[seokgeun-matechat-validation]] | MateChat v1.0 검증·출시 자료 (비전 / 구현 / 체크리스트 / 경쟁 / 매출 / 출시 진단 6 docs) | project | 석근 (Mate Chat Team) | 2026-04-28 | matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision, 26회차 |
 
 ## 개념 (Concepts)
@@ -161,7 +161,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[qmd]] | qmd | tool | 검색, 마크다운, CLI, MCP | 1 | 2026-04-09 |
 | [[obsidian-web-clipper]] | Obsidian Web Clipper | tool | obsidian, 웹클리핑, 소스수집 | 1 | 2026-04-09 |
 | [[seokgeun-kim]] | 김석근 (Seokgeun Kim) | person | 석근, owner, 백엔드, 풀스택, BI, matechat | 8 | 2026-04-28 |
-| [[matechat]] | MateChat (canonical) — v1.0.0 Google Play 출시 + 39 SKILL (자작 11 + 외부 28) + 위키 발견 종합 실증 | project | matechat, mate-chat, 메이트챗, AI, social, fastapi, flutter, riverpod, openai, websocket, iap, clover, sentry, prometheus, agent-skills, gstack, v1.0.0, project-wiki, 24회차, 26회차, 28회차 | 6 | 2026-04-28 |
+| [[matechat]] | MateChat (canonical) — v1.0.0 출시 직전 QA 단계 + 39 SKILL (자작 11 + 외부 28) + 위키 발견 종합 실증 | project | matechat, mate-chat, 메이트챗, AI, social, fastapi, flutter, riverpod, openai, websocket, iap, clover, sentry, prometheus, agent-skills, gstack, v1.0.0, project-wiki, 24회차, 26회차, 28회차, 44회차 | 6 | 2026-04-29 |
 | [[mate-chat]] | (redirect → [[matechat]]) | redirect | redirect, alias, matechat | 0 | 2026-04-28 |
 | [[com2us-platform]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
 | [[c2spf-analytics]] | c2spf 애널리틱스 (게임 데이터 BI) | service | analytics, c2spf, BI, 게임데이터, fastapi, react | 4 | 2026-04-24 |

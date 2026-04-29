@@ -52,7 +52,7 @@ updated: 2026-04-29
 
 ### Layer 3: STAR 스토리 + 증거 기반 metric ([[portfolio-method]])
 
-`portfolio/40-stories/`의 모든 스토리는 STAR(Situation/Task/Action/Result) 프레임워크로 기록되며, Result에 반드시 정량 metric이 들어간다 (예: "1,111 누계 커밋", "39 SKILL 통합", "v1.0.0 출시"). `frontmatter.sources{}` 필드가 각 주장의 원천 증거 링크를 강제하여 "근거 없는 주장" 방지.
+`portfolio/40-stories/`의 모든 스토리는 STAR(Situation/Task/Action/Result) 프레임워크로 기록되며, Result에 반드시 정량 metric이 들어간다 (예: "1,111 누계 커밋", "39 SKILL 통합", "85% ML 정확도"). `frontmatter.sources{}` 필드가 각 주장의 원천 증거 링크를 강제하여 "근거 없는 주장" 방지.
 
 ### Layer 4: c2spf(회사) ↔ MateChat(사이드) 쌍 검증
 

@@ -12,6 +12,29 @@ rag_exclude_reason: "활동 로그(2,000+줄)는 회차별 메타 기록이라 R
 
 ---
 
+## [2026-04-29] docs+fix | MateChat 출시 상태 사실 정정 — 위키 전체 13곳 (44회차)
+
+- **트리거**: 사용자 "44회차 작업 진행해줘. 어느 것을 먼저 치리할지에 대한 판단은 너가 해줘". 직후 사용자 정정: "4월 7일에 출시 완료하지 않았어. 현재 출시 직전 단계로 QA 진행중이고 완료되면 출시할 예정이야". 이어 "raw 인용 자체도 보존하지 말고 수정해줘".
+- **우선순위 판단(자체)**: 43회차 평가에서 "matechat hub 간 출시 상태 충돌"이 가장 시급한 검증가능성 결함이었으나, **사실 자체가 잘못**임을 owner가 확정 → 위키 전체 표현을 사실(출시 직전 QA 단계)에 맞춰 일괄 정정.
+- **정정 방침**: source 페이지의 raw 인용까지도 owner 자기보고에 맞춰 정합 표현으로 교체. raw 자체는 불변(`raw/` 디렉토리)이지만 wiki 내 인용·요약은 사실에 맞춰 갱신.
+- **수정 대상 (13곳, 9개 파일)**:
+  - `wiki/entities/matechat.md`: callout 메타·현재 상태·주의사항·리스크·논쟁/모순·verification_notes (총 6곳)
+  - `wiki/syntheses/seokgeun-operating-profile-2026.md`: 2번 섹션·열린 질문 (2곳)
+  - `wiki/sources/mate-chat-project-wiki-2026.md`: 출시 상태 본문·핵심 인사이트·인용 블록 (3곳)
+  - `wiki/sources/seokgeun-mate-chat.md`: title·본문 한줄 요약·상태 표·디렉토리 트리·비대칭 운영 섹션 (5곳)
+  - `wiki/sources/seokgeun-matechat-validation.md`: 글로벌 출시 진단·시점 격차 메모 (2곳)
+  - `wiki/syntheses/matechat-project-knowledge-map.md`: 현재 상태 해석·열린 질문 (2곳)
+  - `wiki/syntheses/matechat-chat-analysis-module.md`: 한줄 요약 (1곳)
+  - `wiki/syntheses/portfolio.md`: STAR metric 예시 ("v1.0.0 출시" → "85% ML 정확도")
+  - `wiki/index.md`: 5축 표·sources 행·entities 행 (3곳)
+- **표현 통일**: 모든 hub에서 *"v1.0.0 출시 직전 QA 단계, QA 완료 후 Google Play 정식 출시 예정"* 단정형 채택. 이전 "출시 완료" 표현은 한때 raw 일부 문서에 잘못 기록되어 있던 것으로 메모.
+- **남은 정정 잔존**: `entities/matechat.md` line 100 "Google Play Store, 배포 파이프라인, 글로벌 출시 준비를 다룬다" — 프로젝트 위키의 다루는 영역 나열이라 사실 정합. `entities/sentry.md` line 82 "matechat v1.0.0 출시 시 채택" — 시점 표현 정합 (출시 직전~출시 시 채택).
+- **lint 결과**: 9개 자동 검증 모두 0건 통과. source_count 부정합 99건은 정의 차이 정보 보고(결함 아님).
+- **연기된 P0/P1**:
+  - **P0 log.md 분할 + 회차별 색인** — 침투적 리팩토링이라 45회차로 미룸. log.md는 이미 `rag_exclude: true`라 RAG 영향 없음.
+  - **P1 약자 풀이 (hub 5개)** — 자기서술성 강화 작업, 45회차로 미룸.
+- **다음 회차 후보**: 45회차 — log.md 분할(log-archive.md 신설 + by-session.md 색인) 또는 hub 5개 약자 풀이 적용. 사용자 선택.
+
 ## [2026-04-29] docs+infra+audit | Codex+자체 합집합 P0 5건 + P1 1건 (43회차)
 
 - **트리거**: 사용자 "43회차 작업 진행해줘. 어느 것을 먼저 치리할지에 대한 판단은 너가 해줘". 직전에 자체 평가(72.5/B+) vs Codex 외부 평가(88/A-) 격차를 분석한 비평을 산출, 두 평가의 합집합 P0~P1 7건 도출.

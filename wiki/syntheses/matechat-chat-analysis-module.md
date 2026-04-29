@@ -26,7 +26,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 
 ## 한줄 요약
 
-[[matechat]] 본진(v1.0.0 출시) 외에 석근이 운영 중인 **3개 형제 분석 프로젝트**(`mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate`)와 메모리 컨텍스트(2026-04-27 S442/S443)에 박혀있는 **7가지 채팅 분석 축 + BigQuery 파이프라인** 설계 메모를 한 페이지로 통합. 회사 BI([[c2spf-analytics]]) 게임 데이터 분석에 직접 적용 가능한 패턴 정리.
+[[matechat]] 본진(v1.0.0 출시 직전 QA 단계) 외에 석근이 운영 중인 **3개 형제 분석 프로젝트**(`mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate`)와 메모리 컨텍스트(2026-04-27 S442/S443)에 박혀있는 **7가지 채팅 분석 축 + BigQuery 파이프라인** 설계 메모를 한 페이지로 통합. 회사 BI([[c2spf-analytics]]) 게임 데이터 분석에 직접 적용 가능한 패턴 정리.
 
 ## 형제 프로젝트 3개 (24회차 발견)
 
