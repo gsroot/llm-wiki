@@ -3,6 +3,7 @@ title: "MateChat 30일 검증 루프"
 type: synthesis
 category: guide
 aliases: [MateChat 30일 검증, matechat-30day-validation-loop, 30일 알파 검증, MateChat 알파 KPI]
+tags: [matechat, 30일검증, alpha-validation, kpi, 검증루프, retention, conversion, post-launch, 48회차]
 sources:
   - "[[seokgeun-mate-chat]]"
   - "[[seokgeun-matechat-validation]]"

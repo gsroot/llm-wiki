@@ -3,6 +3,7 @@ title: "c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매
 type: synthesis
 category: guide
 aliases: [c2spf AI agent 도입, c2spf-ai-agent-adoption-candidates, MateChat SKILL 차용 후보, c2spf 차용 매트릭스]
+tags: [c2spf, agent-adoption, matechat, agent-skills, skill, 차용매트릭스, poc, company-bi, 48회차]
 sources:
   - "[[seokgeun-mate-chat]]"
   - "[[c2spf-analytics-renewal]]"

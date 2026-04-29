@@ -2,8 +2,8 @@
 title: "위키 인덱스"
 type: index
 updated: 2026-04-29
-session: 55
-session_note: "54회차 종합 평가(자체 4축 84.5/A- + Codex 외부 88/A-) 후 합집합 P0+P1 7건 squash — E0 index.md stale·P1-6 career-timeline related·P1-7 aliases tags 변종·P1-8 변동성 entity aliases 9건·P1-9 lint --update 백필·P1-10 태그 vocabulary 정규화·P1-11 memex·qmd 보강. 자체 P1-1·2·3·4·5는 변경 범위 큼 → P2 보류."
+session: 56
+session_note: "55회차 종합 평가 후속 — synthesis 4건 tags 필드 누락 보강 + 태그 vocabulary 감사 리포트 신설. 태그 과밀은 즉시 삭제가 아니라 역할 분리(tags/aliases/logs/wikilinks) 정책으로 관리."
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
 ---
@@ -17,11 +17,11 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 198 (53회차 +1 [[rag]] concept 신설 — 54회차 시점 stale 정정)
+- 총 페이지 수: 199 (56회차 [[tag-vocabulary-audit-2026-04-29]] synthesis 신설)
 - 소스 요약: 65
 - 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
 - 개념: 32 (53회차 [[rag]] 신설로 31→32)
-- 종합 분석: 21 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]] / 49회차 [[matechat-business-validation]] / 50회차 [[matechat-launch-metrics-ledger]])
+- 종합 분석: 22 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]] / 49회차 [[matechat-business-validation]] / 50회차 [[matechat-launch-metrics-ledger]] / 56회차 [[tag-vocabulary-audit-2026-04-29]])
 
 ---
 
@@ -247,9 +247,10 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[matechat-chat-analysis-module]] | Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인 (3 형제 프로젝트 발견 + 회사 BI 4축 차용) | matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-project, c2spf-bi-applicable, 24회차 | 2026-04-28 |
 | [[llm-infra-meta-cluster]] | LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축 (agent-skills 58 + harness 49 + mcp 36 + claude-code 36 = 인바운드 179) | meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis | 2026-04-28 |
 | [[portfolio]] | 포트폴리오 (Portfolio Hub) — 4개 source + 5개 프로젝트를 통합한 1-hop 진입점 (33회차 신설, 2축 hub) | 포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, 33회차 | 2026-04-29 |
-| [[parental-leave-2026-operating-plan]] | 2026 육아휴직 1년 운영 계획 (월간 회고로 갱신 + verification_required) | 육아휴직, 운영계획, 가족, matechat, 사업화, 시간예산, 48회차 | 2026-04-29 |
-| [[matechat-30day-validation-loop]] | MateChat 30일 검증 루프 — 알파 KPI 회수 SOP | matechat, 30일검증, 알파, KPI, 검증루프, 48회차 | 2026-04-29 |
-| [[c2spf-ai-agent-adoption-candidates]] | c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매트릭스 | c2spf, agent-adoption, matechat, skill, 차용매트릭스, 48회차 | 2026-04-29 |
-| [[kpi-recovery-loop]] | KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP | kpi, 측정, 회수루프, sop, 의사결정, 48회차 | 2026-04-29 |
+| [[parental-leave-2026-operating-plan]] | 2026 육아휴직 1년 운영 계획 (월간 회고로 갱신 + verification_required) | 육아휴직, 운영계획, 가족, matechat, 사업화, 시간예산, burnout-risk, operating-plan, 48회차 | 2026-04-29 |
+| [[matechat-30day-validation-loop]] | MateChat 30일 검증 루프 — 알파 KPI 회수 SOP | matechat, 30일검증, alpha-validation, kpi, 검증루프, retention, conversion, post-launch, 48회차 | 2026-04-29 |
+| [[c2spf-ai-agent-adoption-candidates]] | c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매트릭스 | c2spf, agent-adoption, matechat, agent-skills, skill, 차용매트릭스, poc, company-bi, 48회차 | 2026-04-29 |
+| [[kpi-recovery-loop]] | KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP | kpi, 측정, 회수루프, sop, 의사결정, verification-required, matechat, c2spf, 48회차 | 2026-04-29 |
 | [[matechat-business-validation]] | MateChat 사업 검증 카탈로그 (4축 sub-cluster) | matechat, 사업검증, business-validation, 4축, 출시후, post-launch, retention, conversion, marketing, 49회차 | 2026-04-29 |
 | [[matechat-launch-metrics-ledger]] | MateChat 출시 후 실측 ledger (D+1/D+7/D+30 KPI 회수) | matechat, 실측, ledger, post-launch, retention, conversion, funnel, 인터뷰, 50회차, 4축, raw-metrics | 2026-04-29 |
+| [[tag-vocabulary-audit-2026-04-29]] | 태그 vocabulary 감사 — 2026-04-29 | tag-audit, vocabulary, obsidian, RAG, metadata, governance, 55회차 | 2026-04-29 |

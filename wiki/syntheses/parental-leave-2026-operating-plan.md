@@ -3,6 +3,7 @@ title: "2026 육아휴직 1년 운영 계획"
 type: synthesis
 category: guide
 aliases: [육아휴직 운영 계획, parental-leave-2026, 2026 운영 계획, 1년 휴직 계획]
+tags: [육아휴직, 운영계획, 가족, matechat, 사업화, 시간예산, burnout-risk, operating-plan, 48회차]
 sources:
   - "[[seokgeun-kim-profile-2026]]"
   - "[[mate-chat-project-wiki-2026]]"
