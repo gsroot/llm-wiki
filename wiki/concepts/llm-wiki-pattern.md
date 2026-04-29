@@ -13,7 +13,7 @@ related:
   - "[[context-engineering]]"
 source_count: 3
 observed_source_refs: 19
-inbound_count: 46
+inbound_count: 51
 created: 2026-04-09
 updated: 2026-04-15
 ---

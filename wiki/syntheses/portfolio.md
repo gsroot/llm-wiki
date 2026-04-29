@@ -1,9 +1,9 @@
 ---
 title: "포트폴리오 (Portfolio Hub)"
 type: synthesis
-category: guide
+category: hub
 aliases: [포트폴리오, portfolio, 석근 포트폴리오, portfolio-hub, 9년 커리어 의사결정 지도]
-tags: [포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, 33회차]
+tags: [포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, guide, 33회차, 53회차]
 sources:
   - "[[portfolio-seed]]"
   - "[[portfolio-resume-ko]]"
@@ -14,6 +14,7 @@ sources:
   - "[[c2spf-nft-market]]"
   - "[[c2spf-xpla-platform]]"
   - "[[mate-chat-project-wiki-2026]]"
+  - "[[seokgeun-kim-profile-2026]]"
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"
@@ -51,20 +52,38 @@ cited_by:
   - "[[portfolio-resume-ko]]"
   - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
+  - "[[seokgeun-kim-profile-2026]]"
   - "[[seokgeun-operating-profile-2026]]"
   - "[[seokgeun-stack-guide]]"
 ---
 
 # 포트폴리오 (Portfolio Hub)
 
+> [!info] 2축 hub — 9년 커리어 의사결정 지도
+> *포트폴리오(Portfolio Hub)*. [[seokgeun-kim]]의 9년 커리어를 4개 강점 축으로 구조화한 의사결정형 진입점. 단순 이력 나열이 아니라 "다음 무엇을 할지" 판단 가능한 자료. **2개 저장소 동기화 모델**(portfolio/ git + llm-wiki/ Obsidian)이 독자적 자산. **회사([[c2spf-analytics]])↔ 사이드([[matechat]])** 쌍 검증 펌프가 작동.
+> 
+> 한국어 표기: **포트폴리오** 또는 **9년 커리어 의사결정 지도**.
+
 ## 언제 읽어야 하는가
 
 - "석근의 9년 커리어를 한 화면에 보고 싶다" — 이력서·면접·외부 소개에 인용할 때.
 - "회사 c2spf와 사이드 MateChat이 어떻게 기술 스택을 검증하는가?" — 쌍 검증 매트릭스 표 (Layer 4) 진입.
 - "포트폴리오 저장소(2개)와 위키가 어떻게 동기화되는가?" — 3-Layer 구조 (Layer 1) 진입.
+- "정량 주장(1,111커밋 / 39 SKILL / 85% 정확도)의 검증 경로는?" — Layer 3 STAR 표.
 - "다음 1인 사업화 의사결정에 어떤 입력이 필요한가?" → 열린 질문 + [[seokgeun-operating-profile-2026]] 연결.
 
-> 33회차 신설 — "포트폴리오란?" 질의에 1-hop으로 도달하는 진입점. 4개 source 페이지(seed/resume/ko/method) + 5개 프로젝트 source를 통합한다.
+## 1-hop 진입 (5축 hub 직결)
+
+| 축 | hub 페이지 | 본 hub와의 관계 |
+|---|---|---|
+| 1축 | [[seokgeun-kim]] (석근, 이 위키 owner) | 본인 정체성 — 포트폴리오의 주체 |
+| 2축A (메타) | **본 페이지** | 9년 커리어 의사결정 지도 |
+| 2축B (본진) | [[c2spf-analytics]] (c2spf 게임 데이터 BI) | 회사 BI 본진 entity (양방향 — 52회차 P0-2) |
+| 3축 | [[seokgeun-stack-guide]] (32 OSS 스택 카탈로그) | 4개 축에서 검증된 스택의 카탈로그화 |
+| 4축 | [[matechat]] (MateChat 사이드 프로젝트) | 사이드 프로젝트 + 사업화 검증 환경 |
+| 5축 | [[llm-infra-meta-cluster]] (LLM 인프라 메타 5축) | AI/Agent 운영 메타 (4번째 강점 축의 토대) |
+
+> 33회차 신설 — "포트폴리오란?" 질의에 1-hop으로 도달하는 진입점. 9개 source 페이지(seed/resume/ko/method/c2spf 5개/mate-chat) + 5개 프로젝트 source를 통합한다. 52회차에 c2spf-analytics 양방향 link 보강.
 
 ## 요약
 
@@ -109,14 +128,31 @@ cited_by:
 
 ### Layer 4: c2spf(회사) ↔ MateChat(사이드) 쌍 검증
 
-| 영역 | 회사 (c2spf) | 사이드 (MateChat) | 시너지 |
+| 영역 | 회사 ([[c2spf-analytics]]) | 사이드 ([[matechat]]) | 시너지 |
 |---|---|---|---|
 | 백엔드 | FastAPI + PostgreSQL + Redis | 동일 스택 | 양방향 검증 (사이드가 더 민첩하게 신기능 검증 → 회사 차용) |
-| AI/Agent | 미적용 (보수적) | 39 SKILL + 11 자작 | MateChat 자작 SKILL 9개가 c2spf 차용 후보 |
+| AI/Agent | 미적용 (보수적) | 39 SKILL + 11 자작 | MateChat 자작 SKILL 9개가 c2spf 차용 후보 — [[c2spf-ai-agent-adoption-candidates]] 차용 매트릭스 참조 |
 | 데이터 | BigQuery + pandas | SQLite + DuckDB | 규모 차이로 ETL 패턴 분기 |
-| 출시 | B2B 내부 사용 | B2C Google Play v1.0.0 | 사용자 검증 SOP 학습 |
+| 출시 | B2B 내부 사용 | B2C Google Play v1.0.0 (출시 직전 QA) | 사용자 검증 SOP 학습 — [[matechat-30day-validation-loop]] |
+| 프론트엔드 | React + TypeScript + Vite + ag-grid | Flutter + Riverpod | 듀얼 클라이언트 패턴 — [[flutter-nextjs-fullstack-pattern]] |
+| 관측성 | Promtail + Loki + Grafana 4환경 | Sentry + Prometheus | 동일 사상(메트릭/로그/트레이스 + 에러), 도구 다양성 |
 
 **핵심 발견**: 회사 시스템과 사이드 프로젝트가 **기술 스택 검증의 쌍**으로 동작한다. 사이드에서 검증된 패턴(예: agent-skills 통합)이 회사로 역수입되는 단방향 펌프가 형성됨.
+
+> [[c2spf-analytics]] 본문에는 본 hub의 4축 강점 매핑이 인용되어 있다(역참조 `cited_by`로 추적). [[matechat]] 자작 SKILL 차용 후보 9건은 [[c2spf-ai-agent-adoption-candidates]]에서 별도 카탈로그화된다.
+
+### Layer 5: 회차 진화 (33→48→52회차)
+
+본 hub의 진화 이력은 그래프 연결성 개선 회차와 직결된다:
+
+| 회차 | 작업 | 효과 |
+|---|---|---|
+| 33회차 | hub 신설 | "포트폴리오란?" 1-hop 답변 가능. 4 source 통합. |
+| 48회차 | aliases 표준 도입 | `aliases: [포트폴리오, 9년 커리어 의사결정 지도, ...]` Obsidian Cmd+O 직결. |
+| 50회차 P1 | sub-hub 4개(agent-skills·harness·mcp·claude-code) forward edge | 5축 메타 layer와 직결 (1-hop). |
+| 52회차 P0 | c2spf-analytics 양방향 보강 | 매트릭스 ✗ 1쌍 해소. 본 hub와 회사 본진 entity가 frontmatter 양방향. |
+
+> 본 hub의 인바운드 측정값은 frontmatter `cited_by` 26개 (자동 갱신, 47회차 신설). 본문 정량 수치(1,111커밋/39 SKILL/85%)는 측정 시점 라벨링되어 있고 재현 명령은 Layer 3 표 참조.
 
 ## 결론
 

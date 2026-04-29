@@ -2,13 +2,15 @@
 title: "메멕스 (Memex)"
 type: entity
 entity_type: project
-tags: [지식관리, knowledge-management, 정보검색, information-retrieval, 역사]
+tags: [지식관리, knowledge-management, 정보검색, information-retrieval, 역사, historical-stub, 53회차]
 related: [[llm-wiki-pattern]]
 source_count: 1
 observed_source_refs: 4
 inbound_count: 7
+page_intent: historical-stub
+page_intent_note: "1945년 부시 개념의 역사적 stub. 더 확장할 의도 없음 — 본질적으로 짧은 노드. RAG 청크 적합성 검증에서 제외 후보."
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-29
 ---
 
 # 메멕스 (Memex)

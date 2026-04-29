@@ -26,10 +26,10 @@ related:
   - "[[llm-infra-meta-cluster]]"
 source_count: 8
 observed_source_refs: 39
-inbound_count: 119
+inbound_count: 128
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 42
+cited_by_count: 43
 ---
 
 # Claude Code
@@ -188,6 +188,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[openai-openai-cookbook]]
 - [[portfolio]]
 - [[prompt-cache]]
+- [[rag]]
 - [[scikit-learn]]
 - [[scikit-learn-scikit-learn]]
 - [[seokgeun-kim]]

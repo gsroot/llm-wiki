@@ -209,6 +209,20 @@ cited_by:
 - **빈 list**: cited_by 키 자체를 frontmatter에서 제거 (orphan source의 깔끔한 표시).
 - **정렬**: 알파벳순 (재현 가능한 갱신).
 
+#### `cited_by_count` (모든 비-메타 페이지 — 53회차 명문화)
+
+`cited_by` 리스트의 길이를 단일 정수로 캐싱한 보조 자동 필드. hub 페이지·entity·concept·synthesis 모두 적용 가능. RAG 답변 시 인바운드 강도를 정수 한 번 읽기로 비교 가능하게 한다 (`cited_by` 리스트 전체를 파싱하지 않아도 됨).
+
+```yaml
+cited_by_count: 67
+```
+
+- **자동 갱신 전용**: `wiki-lint.py --update`가 `cited_by` 측정 시 함께 캐싱. 운영자 수동 입력 금지 (수동값은 `--update` 시 덮어씀).
+- **`cited_by` 리스트 vs `cited_by_count`**: `cited_by`는 source 페이지 전용(자동 양방향 추적), `cited_by_count`는 모든 비-메타 페이지에서 가능(정수 캐시). 실제로 hub 페이지·entity·concept·synthesis frontmatter에 일관 적용된다.
+- **사용 처**: RAG 답변 정책 §1 "수치 비교" 시 `inbound_count`(전체 인바운드)·`observed_source_refs`(source 페이지에서의 인바운드)·`cited_by_count`(메타 제외 인바운드) 셋 중 가장 적합한 것을 선택. 일반적으로 hub 라우팅 신뢰도 가중치는 `inbound_count`·`cited_by_count` 사용.
+- **`source_count`와의 관계**: `source_count`(정의 A 운영자 의미)와 무관한 자동 필드. delta가 누적돼도 결함이 아니다.
+- **lint 검증 (53회차 신설 — check #13 정보 보고)**: 비-메타 페이지에서 `cited_by_count`가 frontmatter에 존재하지 않으면 정보 보고 (결함 아님 — 빈 cited_by인 경우 키 생략 정책과 정합).
+
 #### 수동 점검 (소유자와 논의 필요)
 
 7. 2개 이상의 페이지에서 서로 모순되는 주장

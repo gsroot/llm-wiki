@@ -16,7 +16,7 @@ related:
   - "[[anthropics-claude-cookbooks]]"
 source_count: 4
 observed_source_refs: 30
-inbound_count: 69
+inbound_count: 72
 created: 2026-04-15
 updated: 2026-04-27
 ---

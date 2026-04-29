@@ -42,7 +42,7 @@ related:
   - "[[llm-infra-meta-cluster]]"
 source_count: 6
 observed_source_refs: 28
-inbound_count: 152
+inbound_count: 169
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true

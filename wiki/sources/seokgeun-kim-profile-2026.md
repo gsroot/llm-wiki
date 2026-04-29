@@ -27,6 +27,7 @@ cited_by:
   - "[[matechat]]"
   - "[[matechat-project-knowledge-map]]"
   - "[[parental-leave-2026-operating-plan]]"
+  - "[[portfolio]]"
   - "[[seokgeun-kim]]"
   - "[[seokgeun-operating-profile-2026]]"
 ---

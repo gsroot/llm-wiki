@@ -39,6 +39,7 @@ cited_by:
   - "[[openai-openai-cookbook]]"
   - "[[pandas-dev-pandas]]"
   - "[[prompt-cache]]"
+  - "[[rag]]"
   - "[[spec-driven-development]]"
   - "[[token-economy]]"
 ---

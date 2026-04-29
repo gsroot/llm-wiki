@@ -2,10 +2,12 @@
 title: "위키 부트스트랩 기록"
 type: synthesis
 category: guide
-tags: [메타, 운영, meta, setup]
+tags: [메타, 운영, meta, setup, archive, 53회차]
 sources: [[llm-wiki-idea-doc]]
+page_intent: archive
+page_intent_note: "2026-04-09 부트스트랩 시점 기록. 더 이상 갱신하지 않는 역사 기록 (synthesis 카테고리지만 archive 의도). 본문은 부트스트랩 의사결정 추적 자료로 보존."
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-29
 ---
 
 # 위키 부트스트랩 기록

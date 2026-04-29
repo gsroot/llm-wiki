@@ -31,10 +31,10 @@ related:
   - "[[llm-infra-meta-cluster]]"
 source_count: 8
 observed_source_refs: 58
-inbound_count: 168
+inbound_count: 178
 created: 2026-04-15
 updated: 2026-04-29
-cited_by_count: 59
+cited_by_count: 60
 ---
 
 # 하네스 (Harness)
@@ -303,6 +303,7 @@ project/
 - [[pandas-dev-pandas]]
 - [[portfolio]]
 - [[python-packaging]]
+- [[rag]]
 - [[ruff]]
 - [[scikit-learn]]
 - [[scikit-learn-scikit-learn]]

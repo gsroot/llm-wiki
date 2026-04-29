@@ -1,7 +1,7 @@
 ---
 title: "석근 스택 가이드 — 23회차 마무리 종합"
 type: synthesis
-category: personal-stack-guide
+category: hub
 aliases: [석근 스택 가이드, seokgeun-stack-guide, 32 OSS 카탈로그, 30분 부트스트랩, stack-guide]
 sources:
   - "[[backend-fastapi-stack]]"
@@ -32,11 +32,11 @@ related:
   - "[[claude-code]]"
 created: 2026-04-28
 updated: 2026-04-29
-tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]
+tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, hub, personal-stack-guide, 23회차, 53회차]
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
-cited_by_count: 55
+cited_by_count: 56
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합
@@ -302,6 +302,7 @@ flutter pub add --dev riverpod_generator build_runner
 - [[pyarrow]]
 - [[pydantic]]
 - [[pydantic-ai]]
+- [[rag]]
 - [[redis]]
 - [[riverpod]]
 - [[ruff]]

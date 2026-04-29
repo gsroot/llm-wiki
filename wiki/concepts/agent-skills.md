@@ -44,10 +44,10 @@ related:
   - "[[llm-infra-meta-cluster]]"
 source_count: 16
 observed_source_refs: 70
-inbound_count: 188
+inbound_count: 200
 created: 2026-04-27
 updated: 2026-04-29
-cited_by_count: 67
+cited_by_count: 68
 ---
 
 # Agent Skills (SKILL.md 패키지)
@@ -344,6 +344,7 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[prometheus-prometheus]]
 - [[pydantic-ai]]
 - [[pydantic-pydantic-ai]]
+- [[rag]]
 - [[rrousselGit-riverpod]]
 - [[ruff]]
 - [[scikit-learn]]

@@ -23,10 +23,10 @@ related:
   - "[[llm-infra-meta-cluster]]"
 source_count: 6
 observed_source_refs: 53
-inbound_count: 131
+inbound_count: 143
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 43
+cited_by_count: 44
 ---
 
 # MCP (Model Context Protocol)
@@ -178,6 +178,7 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[openai-openai-cookbook]]
 - [[portfolio]]
 - [[qmd]]
+- [[rag]]
 - [[seokgeun-kim]]
 - [[seokgeun-stack-guide]]
 - [[using-llm-wiki-as-rag]]

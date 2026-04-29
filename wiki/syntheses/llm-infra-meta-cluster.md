@@ -1,7 +1,7 @@
 ---
 title: "LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축"
 type: synthesis
-category: meta-cluster
+category: hub
 sources:
   - "[[anthropics-skills]]"
   - "[[anthropics-claude-cookbooks]]"
@@ -34,8 +34,8 @@ related:
 created: 2026-04-28
 updated: 2026-04-28
 aliases: [LLM 인프라 메타 클러스터, llm-infra-meta-cluster, 5축 hub, LLM 인프라 메타, agent infra meta]
-tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis]
-cited_by_count: 57
+tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, hub, 28회차, hidden-axis, 53회차]
+cited_by_count: 58
 ---
 
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
@@ -249,6 +249,7 @@ cited_by_count: 57
 - [[pyarrow]]
 - [[pydantic]]
 - [[pydantic-ai]]
+- [[rag]]
 - [[redis]]
 - [[ruff]]
 - [[scikit-learn]]

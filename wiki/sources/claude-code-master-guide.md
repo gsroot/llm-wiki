@@ -26,6 +26,7 @@ cited_by:
   - "[[llm-wiki-pattern]]"
   - "[[mcp]]"
   - "[[obsidian-guide]]"
+  - "[[rag]]"
   - "[[token-economy]]"
   - "[[using-llm-wiki-as-rag]]"
 ---
