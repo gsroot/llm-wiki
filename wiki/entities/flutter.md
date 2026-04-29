@@ -17,6 +17,7 @@ related:
   - "[[matechat]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[flutter-flutter]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-28

@@ -12,6 +12,7 @@ related:
   - "[[fastapi]]"
   - "[[pydantic]]"
   - "[[astral-sh-uv]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-28

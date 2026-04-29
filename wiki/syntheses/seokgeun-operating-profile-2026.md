@@ -9,8 +9,15 @@ sources:
   - "[[matechat]]"
   - "[[mate-chat-project-wiki-2026]]"
   - "[[career-timeline-seokgeun]]"
+related:
+  - "[[seokgeun-stack-guide]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "2026 운영 프레임 (육아휴직·AI 협업 비중·생산성 metric) — 분기별 재검토"

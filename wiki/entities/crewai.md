@@ -9,6 +9,7 @@ related:
   - "[[agent-patterns]]"
   - "[[oss-saas-dual]]"
   - "[[crewaiinc-crewai]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

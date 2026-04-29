@@ -12,6 +12,7 @@ related:
   - "[[parquet]]"
   - "[[c2spf-analytics]]"
   - "[[duckdb-duckdb]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-29

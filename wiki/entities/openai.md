@@ -14,6 +14,9 @@ related:
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27
+verification_required: true
+last_verified: 2026-04-29
+verification_notes: "OpenAI 모델 릴리스(GPT-5/codex/gpt-oss/agents-sdk) 빠르게 변동 — 분기별 모델 라인업 재검증"
 ---
 
 # OpenAI

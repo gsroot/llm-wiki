@@ -1,7 +1,11 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (42회차 / 5분할 작성 통일성 결함 5개 도구 hub 인용 정합화 — shadcn-ui·tanstack-query·zustand·lightgbm·polars)
+updated: 2026-04-29
+session: 43
+session_note: "Codex 합집합 P0 — rag_exclude / 3축 leaf 보강 / cross-axis 단방향 해소 / verification 확대 / schema 3분리"
+rag_exclude: true
+rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
 ---
 
 # 위키 인덱스
@@ -27,11 +31,11 @@ updated: 2026-04-29 (42회차 / 5분할 작성 통일성 결함 5개 도구 hub 
 
 | # | 축 | 핵심 hub 페이지 | 인바운드 합산 | 역할 |
 |---|---|---|---:|---|
-| 1 | 개인 프로필 | [[seokgeun-kim]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] | 92 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
-| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[c2spf-analytics]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 176 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
-| 3 | 스택 가이드 | [[seokgeun-stack-guide]] | 42 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 |
-| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 119 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 / 39 SKILL 운영 SOP) |
-| 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 477 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer, 인바운드 53% 점유 |
+| 1 | 개인 프로필 | [[seokgeun-kim]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] | 103 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
+| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[c2spf-analytics]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 237 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
+| 3 | 스택 가이드 | [[seokgeun-stack-guide]] | 122 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
+| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 157 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 / 39 SKILL 운영 SOP) |
+| 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 535 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer (43회차: 47.9% → 46.6% 편중 완화) |
 
 > **읽기 순서 가이드**: (1) 5축 식별 → 본 표 / (2) 본인 정체성 → [[seokgeun-operating-profile-2026]] / (3) 기술 의사결정 → [[seokgeun-stack-guide]] / (4) 메타 인식 → [[llm-infra-meta-cluster]]
 

@@ -10,9 +10,13 @@ related:
   - "[[agent-skills]]"
   - "[[devops-cicd]]"
   - "[[getsentry-sentry]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
+verification_required: true
+last_verified: 2026-04-29
+verification_notes: "Sentry BSL-1.1 → Apache-2.0 전환 시점(4년 후 자동) + AGENTS.md hierarchy 변경 — 분기별 재검증"
 ---
 
 # Sentry

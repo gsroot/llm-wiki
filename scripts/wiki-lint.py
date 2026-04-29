@@ -17,6 +17,7 @@ CHECKS:
     2. 고아 페이지 (rag_exclude redirect 별도 집계)
     3. frontmatter YAML invalid (PyYAML 파싱 실패)
     4. source_count 부정합 (frontmatter source_count vs 실제 wiki/sources/ 인용 카운트)
+       — 정보 보고. delta ±10 이상이면 운영자 의미 재검토 권장.
     5. 빈약 페이지 (source_count >= 3 인데 본문 < 30줄)
     6. source_scope 부재 결함 (33회차): source_url=="" 인데 source_scope 누락 시 결함
     7. last_verified 신선도 경고 (33회차): verification_required=true 페이지의 last_verified가
@@ -25,7 +26,15 @@ CHECKS:
        (예: Anthropic + anthropic, llm + LLM). 34회차 정규화의 회귀 방지.
     9. 한영 병기 의무 위반 검출 (36회차): CLAUDE.md 31회차 4단계 규칙의 "개념·도메인 태그"
        카테고리(agent/에이전트 등) 한쪽만 있으면 경고.
-    10. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
+    10. 메타 페이지 rag_exclude 누락 결함 (43회차): type=index 또는 type=log 페이지에
+        rag_exclude:true가 없으면 결함. RAG 답변 근거로 메타 페이지가 혼입되는 위험 차단.
+    11. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
+
+SCHEMA (43회차 — source_count 3분리):
+    - source_count: 운영자 수동 정의 (정의 A, frontmatter)
+    - observed_source_refs: source 페이지가 wikilink로 인용한 횟수 (정의 B, --update가 갱신)
+    - inbound_count: 모든 페이지가 wikilink로 인용한 횟수 (정의 C, --update가 갱신)
+    --update 모드는 자동 필드 두 개만 갱신하고 source_count는 절대 덮어쓰지 않는다.
 
 EXIT CODES:
     0   결함 없음 (또는 --report 단독 모드)
@@ -70,6 +79,8 @@ WIKI_ROOT = Path(__file__).resolve().parent.parent / "wiki"
 WIKILINK_RE = re.compile(r"\[\[([^]|#]+?)(?:\||#|\])")
 FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 SOURCE_COUNT_LINE_RE = re.compile(r"^source_count:\s*\d+\s*$", re.MULTILINE)
+OBSERVED_REFS_LINE_RE = re.compile(r"^observed_source_refs:\s*\d+\s*$", re.MULTILINE)
+INBOUND_COUNT_LINE_RE = re.compile(r"^inbound_count:\s*\d+\s*$", re.MULTILINE)
 
 # 의도된 예시 텍스트로 위키링크 형태를 사용한 케이스 (깨진 링크 false positive 제외)
 EXAMPLE_TARGETS: frozenset[str] = frozenset(
@@ -197,15 +208,16 @@ class LintResult:
     tag_case_duplicates: list[tuple[str, str, int, int]] = field(default_factory=list)
     tag_pair_violations: list[tuple[str, str, list[str]]] = field(default_factory=list)
     inbound: dict[str, int] = field(default_factory=dict)
+    # 43회차 신설: 메타 페이지 rag_exclude 누락 결함
+    meta_rag_exclude_missing: list[tuple[str, str]] = field(default_factory=list)
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
-        # frontmatter source_count의 운영 정의는 "이 페이지 정보의 출처 source 수"
-        # (정의 A, 수동 입력)인데, 자동 측정 가능한 건 "이 페이지를 인용한 source 페이지 수"
-        # (정의 B, 객관 측정). 두 정의가 다르므로 부정합을 결함으로 판정하지 않는다.
-        # --update 모드는 정의 B로 일괄 갱신하므로 사용 시 주의 (CLAUDE.md 참조).
+        # 43회차에 source_count(정의 A, 수동) / observed_source_refs(정의 B, 자동) /
+        # inbound_count(정의 C, 자동) 3분리로 의미 충돌 해소 (CLAUDE.md 참조).
         # last_verified 신선도(90일 초과)도 정보 보고. source_scope 부재/이상은 결함.
         # 36회차: tag_case_duplicates도 결함 (회귀 방지). tag_pair_violations는 경고(정보).
+        # 43회차: meta_rag_exclude_missing 결함 (RAG 답변 근거 노이즈 차단).
         return bool(
             self.broken_links
             or self.yaml_invalid
@@ -213,6 +225,7 @@ class LintResult:
             or self.source_scope_invalid
             or self.verification_malformed
             or self.tag_case_duplicates
+            or self.meta_rag_exclude_missing
         )
 
 
@@ -310,21 +323,25 @@ def lint(update: bool = False) -> LintResult:
     result.inbound = inbound
 
     # source_count 부정합 검출 (entity/concept만 — source/synthesis는 source_count 없음)
+    # 43회차: --update는 source_count를 덮어쓰지 않고, observed_source_refs / inbound_count
+    # 두 자동 필드만 갱신한다 (운영자 수동 의미 보존).
     for page in pages:
         if page.yaml_invalid or page.is_redirect or page.is_log_file:
             continue
         if page.page_type not in ("entity", "concept"):
             continue
         declared = page.declared_source_count
-        if declared is None:
-            continue
         observed = source_count_observed.get(page.stem, 0)
-        if declared != observed:
+        if declared is not None and declared != observed:
             result.source_count_mismatch.append(
                 (str(page.path.relative_to(WIKI_ROOT.parent)), declared, observed)
             )
-            if update:
-                _update_source_count(page, observed)
+        if update:
+            _update_auto_fields(
+                page,
+                observed_source_refs=observed,
+                inbound_count=inbound.get(page.stem, 0),
+            )
 
     # 고아 페이지: 인바운드 0 (단, redirect/index/log 제외)
     for stem, cnt in inbound.items():
@@ -446,16 +463,65 @@ def lint(update: bool = False) -> LintResult:
         if missing:
             result.tag_pair_violations.append((rel_path, "병기 누락", missing))
 
+    # 43회차 신설:
+    # 검증 10: 메타 페이지 rag_exclude 누락 결함
+    # type: index 또는 type: log 페이지에 rag_exclude:true 가 없으면 결함.
+    # RAG 답변 근거로 카탈로그(인덱스)나 메타 활동 로그가 혼입되면 stale 정보 노출.
+    for page in pages:
+        if page.yaml_invalid:
+            continue
+        ptype = page.page_type
+        if ptype not in ("index", "log"):
+            continue
+        rel_path = str(page.path.relative_to(WIKI_ROOT.parent))
+        fm = page.frontmatter or {}
+        if not bool(fm.get("rag_exclude", False)):
+            result.meta_rag_exclude_missing.append((rel_path, ptype))
+
     return result
 
 
-def _update_source_count(page: WikiPage, observed: int) -> None:
-    """frontmatter의 source_count 필드를 in-place로 갱신."""
-    new_text = SOURCE_COUNT_LINE_RE.sub(
-        f"source_count: {observed}", page.raw, count=1
-    )
-    if new_text != page.raw:
-        page.path.write_text(new_text, encoding="utf-8")
+def _update_auto_fields(
+    page: WikiPage, *, observed_source_refs: int, inbound_count: int
+) -> None:
+    """frontmatter의 자동 필드(observed_source_refs, inbound_count)를 in-place 갱신.
+
+    43회차 정책 (CLAUDE.md 참조):
+    - source_count(정의 A, 수동)는 절대 덮어쓰지 않는다.
+    - 두 자동 필드가 frontmatter에 없으면 source_count 라인 바로 다음에 삽입한다.
+    - source_count 라인이 없으면 자동 필드도 삽입하지 않는다 (entity/concept만 대상).
+    """
+    raw = page.raw
+    if not SOURCE_COUNT_LINE_RE.search(raw):
+        return  # source_count가 없는 페이지는 자동 필드 삽입 대상 아님
+
+    # observed_source_refs 갱신 또는 삽입
+    if OBSERVED_REFS_LINE_RE.search(raw):
+        raw = OBSERVED_REFS_LINE_RE.sub(
+            f"observed_source_refs: {observed_source_refs}", raw, count=1
+        )
+    else:
+        raw = SOURCE_COUNT_LINE_RE.sub(
+            lambda m: m.group(0)
+            + f"\nobserved_source_refs: {observed_source_refs}",
+            raw,
+            count=1,
+        )
+
+    # inbound_count 갱신 또는 삽입
+    if INBOUND_COUNT_LINE_RE.search(raw):
+        raw = INBOUND_COUNT_LINE_RE.sub(
+            f"inbound_count: {inbound_count}", raw, count=1
+        )
+    else:
+        raw = OBSERVED_REFS_LINE_RE.sub(
+            lambda m: m.group(0) + f"\ninbound_count: {inbound_count}",
+            raw,
+            count=1,
+        )
+
+    if raw != page.raw:
+        page.path.write_text(raw, encoding="utf-8")
 
 
 def report(result: LintResult, *, quiet: bool = False) -> None:
@@ -572,6 +638,15 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건 (4개 그룹 모두 100% 병기)")
+
+    print("--- 10. 메타 페이지 rag_exclude 누락 (type=index/log, 43회차 신설) ---")
+    if result.meta_rag_exclude_missing:
+        print(f"❌ {len(result.meta_rag_exclude_missing)}건:")
+        for path, ptype in result.meta_rag_exclude_missing[:10]:
+            print(f"    {path} (type={ptype})")
+    else:
+        if not quiet:
+            print("✓ 0건 (모든 메타 페이지 rag_exclude:true)")
 
 
 def report_full(result: LintResult) -> None:

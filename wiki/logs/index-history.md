@@ -2,6 +2,8 @@
 title: "위키 인덱스 회차 회고 (history)"
 type: log
 created: 2026-04-29
+rag_exclude: true
+rag_exclude_reason: "회차 회고는 메타 운영 기록이라 RAG 답변 근거로 부적절 (43회차)."
 ---
 
 # 위키 인덱스 회차 회고

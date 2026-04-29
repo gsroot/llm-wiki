@@ -20,6 +20,7 @@ related:
   - "[[pydantic-ai]]"
   - "[[fastmcp]]"
   - "[[openai-openai-agents-python]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

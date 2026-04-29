@@ -9,6 +9,7 @@ related:
   - "[[fastapi]]"
   - "[[python-packaging]]"
   - "[[postgres-postgres]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28

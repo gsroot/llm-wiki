@@ -1,6 +1,8 @@
 ---
 title: "활동 로그"
 type: log
+rag_exclude: true
+rag_exclude_reason: "활동 로그(2,000+줄)는 회차별 메타 기록이라 RAG 답변 근거로 부적절. 시간순 회고는 사람 열람용이며, 사실 답변은 hub/synthesis 페이지를 사용해야 함 (43회차)."
 ---
 
 # 활동 로그
@@ -9,6 +11,29 @@ type: log
 > 각 항목은 `## [날짜] 유형 | 제목` 형식을 따릅니다.
 
 ---
+
+## [2026-04-29] docs+infra+audit | Codex+자체 합집합 P0 5건 + P1 1건 (43회차)
+
+- **트리거**: 사용자 "43회차 작업 진행해줘. 어느 것을 먼저 치리할지에 대한 판단은 너가 해줘". 직전에 자체 평가(72.5/B+) vs Codex 외부 평가(88/A-) 격차를 분석한 비평을 산출, 두 평가의 합집합 P0~P1 7건 도출.
+- **우선순위 판단(자체 결정)**: schema 변경(P0-2)을 먼저 처리해 다른 작업 기반 마련 → 저비용 고효과 차단(P0-1) → 구조 결함 해소(P0-3·P0-4) → 검증 확대(P0-5) → 운영 표준화(P1-1).
+- **P0-1 메타 페이지 rag_exclude (3 파일)**: `wiki/index.md`, `wiki/logs/log.md`, `wiki/logs/index-history.md`에 `rag_exclude: true` + `rag_exclude_reason` 추가. RAG가 카탈로그 통계나 활동 로그를 답변 근거로 쓰지 못하도록 차단.
+- **P0-2 source_count schema 3분리 (CLAUDE.md)**: Codex 권고 채택. `source_count`(정의 A, 수동) / `observed_source_refs`(정의 B, 자동) / `inbound_count`(정의 C, 자동)로 의미 분리. `--update`는 자동 필드 두 개만 갱신, `source_count`는 절대 덮어쓰지 않음.
+- **P0-3 3축 leaf-less 보강 (35 OSS entity)**: `seokgeun-stack-guide.md`가 32+a 개 OSS를 카탈로그하지만 역참조가 없던 결함을 해소. 35개 OSS entity의 frontmatter `related`에 `[[seokgeun-stack-guide]]` 일괄 추가 (Python 스크립트). 인바운드 86 → **121 (+40.7%)**.
+- **P0-4 cross-axis 단방향 해소 (2 hub)**: `matechat.md`(4축) frontmatter related에 `[[harness]]`, `[[mcp]]`, `[[claude-code]]` 추가 → 4↔5 양방향. `seokgeun-operating-profile-2026.md`(1축)에 `related:` 신규 키와 `[[seokgeun-stack-guide]]`, `[[llm-infra-meta-cluster]]`, `[[portfolio]]`, `[[c2spf-analytics]]`, `[[agent-skills]]`, `[[harness]]` 6항목 → 1↔3, 1↔5 양방향.
+- **P0-5 verification 대상 확대 (5 entity)**: Codex 권고. `openai`, `langchain`, `redis`, `sentry`, `fastmcp` 5개 페이지에 `verification_required: true` + `last_verified: 2026-04-29` + `verification_notes` 추가. 33회차 6개 → 43회차 11개.
+- **P0-6 wiki-lint.py schema 3분리 + 검증 10번 (코드)**: `_update_source_count()`를 `_update_auto_fields()`로 대체 (source_count 절대 비파괴). 신규 정규식 `OBSERVED_REFS_LINE_RE`, `INBOUND_COUNT_LINE_RE`. 검증 10번 신설: type=index/log 페이지에 rag_exclude:true 누락 결함 검출. 0건 통과.
+- **P1-1 약자 풀이 의무 (CLAUDE.md)**: 자체 평가에서 발견된 RAG 자기서술성 결함 — 약자 첫 등장 풀이 의무 명문화. 적용 대상: `c2spf-analytics`, `matechat`, `seokgeun-stack-guide` 등 owner 컨텍스트 약자. 산업 표준(LLM/AI/RAG 등)은 비적용.
+- **5축 분포 변화**: 시작(43회차 진입) → 종료
+  - 1축: 9.2% → 8.9%
+  - 2축: 21.1% → 20.4%
+  - **3축: 7.7% → 10.5% (+36% 증가, 가장 큰 변화)**
+  - 4축: 14.1% → 13.5%
+  - 5축: 47.9% → 46.6% (편중 완화)
+  - 5축 인바운드 합산: 1117 → 1160 (+43)
+- **lint 결과 (변경 후)**: 깨진 링크 0, 고아 0, YAML invalid 0, 빈약 0, source_scope 0, verification stale 0, 태그 case-dup 0, 한영 병기 위반 0, **메타 rag_exclude 누락 0 (43회차 신설 검증)**. source_count 부정합 99건은 정의 차이 정보 보고(결함 아님).
+- **연기된 P1**: log.md 분할 + 회차별 색인 신설(P1-2) — 침투적 리팩토링이라 44회차로 미룸. qmd/MCP 검색 계층(P2)은 페이지 300개 미달로 보류.
+- **남은 결함**: matechat 출시 상태 hub 간 충돌(matechat=완료 vs operating-profile=직전), 35 OSS entity 본문 약자 풀이 적용은 점진 진행. RAG 단일 청크 자기서술성은 P1-1 규칙 명문화로 향후 작성 시 강제.
+- **다음 회차 후보**: 44회차 — log.md 분할 + 회차별 색인, 35개 OSS entity 본문에 약자 풀이 점진 적용, MateChat 출시 상태 정합화.
 
 ## [2026-04-29] docs+audit | stack-guide 32 도구 통일성 결함 보강 (42회차)
 

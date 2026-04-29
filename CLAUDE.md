@@ -80,9 +80,16 @@ llm-wiki/
 - 적용 대상 예시: `matechat` (Google Play 출시 상태), `seokgeun-stack-guide` (OSS 라이브러리 버전), `c2spf-analytics` (회사 시스템 운영 상태), `seokgeun-mate-chat` (39 SKILL 분류).
 
 ### Redirect / RAG 제외 규칙
+
+#### redirect alias 페이지
 - canonical 병합 때문에 남기는 alias 페이지는 `entity_type: redirect`, `canonical: "[[대상]]"`, `rag_exclude: true`를 함께 둔다.
 - `rag_exclude: true` 페이지는 Obsidian 링크 호환용으로만 유지한다. 질의 답변의 근거 페이지로 사용하지 말고 `canonical` 대상 페이지로 이동한다.
 - lint에서 `source_count: 0`과 고아 페이지를 셀 때는 `rag_exclude: true` redirect 페이지를 별도 집계한다.
+
+#### 메타 페이지 RAG 제외 (43회차 신설 — Codex+자체 합집합 P0)
+- `wiki/index.md` (카탈로그·라우터)와 `wiki/logs/*.md` (활동 로그·회차 회고)는 `rag_exclude: true` + `rag_exclude_reason:` 의무.
+- 이유: 인덱스의 통계 숫자(페이지 수, 인바운드 합산)나 로그의 회차별 메타 기록을 RAG 답변 근거로 사용하면 stale 정보가 노출된다. 사실 답변은 hub/concept/entity/synthesis 페이지를 직접 인용해야 한다.
+- lint 검증 (43회차 신설): `type: index` 또는 `type: log` 페이지에 `rag_exclude: true`가 없으면 결함.
 
 ## 워크플로우
 
@@ -101,13 +108,18 @@ llm-wiki/
    - 기존 페이지가 있으면 → 새 정보를 반영하여 업데이트
    - 기존 페이지가 없으면 → 새 페이지 생성
    - 기존 내용과 모순이 있으면 → `## 논쟁/모순` 섹션에 기록
-5. **출처 정합화 의무 (37회차 명문화)**: entity/concept 페이지가 새 source를 반영할 때, **frontmatter `related` 와 본문 `## 출처` 섹션 양쪽 모두에 source 페이지 wikilink를 동시에** 추가해야 한다.
+5. **약자 풀이 의무 (43회차 명문화 — 자체 평가 P1)**: hub 페이지의 첫 단락(요약 또는 정의 섹션)에서 위키 내 약자·고유명사가 처음 등장할 때 **한 번 이상 풀어쓰기**를 한다.
+   - 적용 대상: `c2spf-analytics`, `c2spf`, `matechat`, `MateChat`, `seokgeun-stack-guide`, `llm-infra-meta-cluster` 등 owner 컨텍스트 약자.
+   - 형식 예: "*c2spf-analytics(컴투스플랫폼 게임 데이터 BI 시스템, 2017~)*" 또는 "MateChat(석근의 사이드 프로젝트 AI 소셜 메시징 앱, v1.0.0 출시)".
+   - 이유: RAG가 단일 페이지를 컨텍스트에 로드했을 때 약자만 보고 LLM이 "이게 무엇이고 왜 owner에게 중요한지"를 추론 가능해야 한다. 약자가 위키 다른 페이지에 링크돼 있어도 단일 청크 컨텍스트에서는 보이지 않는다.
+   - 비적용: 산업 표준 약자(LLM, AI, RAG, MCP, OSS, BI, CI/CD 등)는 풀어쓰기 강제하지 않음.
+6. **출처 정합화 의무 (37회차 명문화)**: entity/concept 페이지가 새 source를 반영할 때, **frontmatter `related` 와 본문 `## 출처` 섹션 양쪽 모두에 source 페이지 wikilink를 동시에** 추가해야 한다.
    - 35·36회차에 두 번 발견된 결함 패턴: 본문 `## 출처`만 작성하고 frontmatter `related`에서 source 페이지를 누락하면 자동화 도구(wiki-lint.py·RAG)가 출처를 추적하지 못한다.
    - frontmatter `related`는 자동 추적의 source-of-truth, 본문 `## 출처`는 사람의 가독성을 위한 표시. 두 곳이 같은 source 페이지 목록을 가져야 한다.
    - 가능하면 entity 본문에도 raw에서 직접 가져온 인용 블록(quote) 1개 이상을 두어 "개념 ↔ raw" 추적을 명시화한다 (36·37회차 stack-guide 도구 보강에서 채택한 "## 의사결정 컨텍스트 (raw 인용)" 섹션 패턴).
-6. **종합 분석 업데이트**: 관련 종합 분석 페이지가 있으면 새 소스를 반영하여 업데이트한다.
-7. **인덱스 업데이트**: `wiki/index.md`에 새 페이지를 등록하고, 변경된 페이지의 요약을 갱신한다.
-8. **로그 기록**: `wiki/logs/log.md`에 수집 기록을 추가한다.
+7. **종합 분석 업데이트**: 관련 종합 분석 페이지가 있으면 새 소스를 반영하여 업데이트한다.
+8. **인덱스 업데이트**: `wiki/index.md`에 새 페이지를 등록하고, 변경된 페이지의 요약을 갱신한다.
+9. **로그 기록**: `wiki/logs/log.md`에 수집 기록을 추가한다.
 
 ### 질의 (Query) 워크플로우
 소유자가 위키에 대해 질문했을 때:
@@ -125,23 +137,33 @@ llm-wiki/
 ```bash
 python3 scripts/wiki-lint.py --check       # 결함 발견 시 exit 1
 python3 scripts/wiki-lint.py --report      # 인바운드 분포 + 5축 통계
-python3 scripts/wiki-lint.py --update      # source_count 자동 갱신 (정의 B 기준)
+python3 scripts/wiki-lint.py --update      # observed_source_refs / inbound_count 자동 갱신 (43회차: source_count는 자동 갱신 안 함)
 ```
 
 자동 검증 항목 (스크립트가 처리):
 1. **깨진 위키링크** — 의도된 예시는 `EXAMPLE_TARGETS` 화이트리스트에 등록
 2. **고아 페이지** (인바운드 0) — `rag_exclude: true` redirect / `index` / `log` 별도 집계
 3. **frontmatter YAML invalid** — PyYAML 파싱 실패 케이스
-4. **source_count 부정합** — `정의 A` (수동) vs `정의 B` (객관) 차이 보고. **결함이 아닌 정보 보고**
+4. **source_count 부정합** — `정의 A` (수동 `source_count`) vs `정의 B` (자동 `observed_source_refs`) 차이 보고. **결함이 아닌 정보 보고** (delta ±10 이상이면 운영자 의미 재검토 권장)
 5. **빈약 페이지** — `source_count` >= 3 인데 본문 < 30줄
-6. **인바운드 분포 / 5축 hub 합산** — `--report` 모드
+6. **메타 페이지 rag_exclude 누락** (43회차 신설) — `type: index/log` 페이지에 `rag_exclude: true`가 없으면 결함
+7. **인바운드 분포 / 5축 hub 합산** — `--report` 모드
 
-#### `source_count` 두 가지 정의 (32회차 명문화)
+#### `source_count` 세 가지 의미 분리 (43회차 명문화 — Codex 권고 채택)
 
-- **정의 A (운영 컨벤션, 수동 입력)**: 이 페이지의 정보 출처가 된 source 페이지 수. frontmatter 작성 시 운영자가 수동 결정. 본문에 위키링크가 박히지 않아도 정보 출처로 간주 가능.
-- **정의 B (객관 측정, 자동 갱신 가능)**: 이 페이지를 `[[위키링크]]`로 인용한 source 페이지 수. lint가 측정하는 값.
+32회차에 운영자 수동 정의(A)와 자동 측정값(B) 두 가지가 충돌한다는 것이 발견됐다. 43회차에 외부(Codex) 평가가 "필드명 분리가 LLM의 숫자 신뢰도 문제를 해소한다"고 권고했고, 이를 채택해 **세 가지 의미를 명시적으로 구분**한다.
 
-기본 운영은 **정의 A**를 따른다. `--update`는 정의 B로 일괄 갱신하므로 의미 손실이 발생할 수 있어 신중히 사용한다.
+| 필드 | 의미 | 입력 방식 | 보존 |
+|---|---|---|---|
+| `source_count` | **정의 A**: 이 페이지의 정보 출처가 된 source 페이지 수 (운영자 의미 판단). 본문에 위키링크가 박히지 않아도 정보 출처로 간주 가능. | 수동 (frontmatter) | **유지** |
+| `observed_source_refs` | **정의 B**: 이 페이지를 `[[위키링크]]`로 인용한 source 페이지 수 (자동 측정값). | 자동 (`wiki-lint.py --update`가 갱신, 운영자는 수동 입력 안 함) | 도입 (43회차) |
+| `inbound_count` | **정의 C**: 이 페이지를 인용한 모든 페이지 수 (entity·concept·synthesis·source 무관). 그래프 인바운드 총량. | 자동 (`--update`로 갱신) | 도입 (43회차) |
+
+운영 원칙:
+1. **운영자는 `source_count`만 수동 관리**한다. 빈약 페이지 검사는 이 값 기준.
+2. `observed_source_refs`·`inbound_count`는 **자동 갱신 전용** — 수동 입력 금지.
+3. lint check 4번(`source_count` 부정합)은 정의 A vs 정의 B 차이 보고 — **결함이 아닌 정보 보고**. delta가 큰 경우(±10 이상) 운영자가 의미 재검토.
+4. `--update` 모드는 `observed_source_refs`·`inbound_count` 두 자동 필드만 갱신한다. **`source_count`는 절대 자동 덮어쓰지 않는다**(32회차의 "의미 손실" 위험 제거).
 
 #### 수동 점검 (소유자와 논의 필요)
 

@@ -10,6 +10,7 @@ related:
   - "[[harness]]"
   - "[[spec-driven-development]]"
   - "[[scikit-learn-scikit-learn]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 2
 created: 2026-04-27
 updated: 2026-04-27

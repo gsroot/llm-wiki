@@ -11,6 +11,7 @@ related:
   - "[[python-packaging]]"
   - "[[uv]]"
   - "[[sqlalchemy-sqlalchemy]]"
+  - "[[seokgeun-stack-guide]]"
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
