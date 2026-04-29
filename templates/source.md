@@ -3,6 +3,7 @@ title: "소스 제목"
 type: source
 source_type: article | paper | note | video | podcast
 source_url: ""
+# source_scope: local | private | public  # source_url=="" 인 경우 필수 (33회차)
 raw_path: ""
 author: ""
 date_published: YYYY-MM-DD

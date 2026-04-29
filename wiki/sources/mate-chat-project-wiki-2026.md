@@ -3,6 +3,7 @@ title: "mate-chat 프로젝트 위키 스냅샷 (2026-04-28)"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/mate-chat-wiki-2026-04-28/"
 author: "석근 + LLM-maintained Mate Chat wiki"
 date_published: 2026-04-07

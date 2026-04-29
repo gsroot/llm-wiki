@@ -38,6 +38,9 @@ related:
 source_count: 6
 created: 2026-04-28
 updated: 2026-04-29
+verification_required: true
+last_verified: 2026-04-29
+verification_notes: "Google Play v1.0.0 출시 상태 + 39 SKILL 자작/외부 분류 — Play Console / lock.json 재검증"
 ---
 
 # MateChat

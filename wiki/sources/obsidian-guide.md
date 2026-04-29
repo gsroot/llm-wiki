@@ -3,6 +3,7 @@ title: "Obsidian 사용 가이드"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/OBSIDIAN_GUIDE.md"
 author: "석근 (개인 정리)"
 date_published: 2026-04-07

@@ -16,6 +16,9 @@ related:
 source_count: 4
 created: 2026-04-24
 updated: 2026-04-29
+verification_required: true
+last_verified: 2026-04-29
+verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행도) — 회사 인프라 재확인"
 ---
 
 # c2spf 애널리틱스 (게임 데이터 BI)

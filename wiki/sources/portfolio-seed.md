@@ -3,12 +3,14 @@ title: "포트폴리오 시드 문서 (old-portfolio.md)"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/portfolio/old-portfolio.md"
 author: "석근"
 date_published: 2025-11-01
 date_ingested: 2026-04-24
 tags: [포트폴리오, career, portfolio, backend, data, ml, blockchain]
 related:
+  - "[[portfolio]]"
   - "[[seokgeun-kim]]"
   - "[[com2us-platform]]"
   - "[[c2spf-analytics]]"

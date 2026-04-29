@@ -3,6 +3,7 @@ title: "컴투스플랫폼 NFT 마켓 (2022-05-nft-market.md)"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/2022-05-nft-market.md"
 author: "석근"
 date_published: 2026-04-24

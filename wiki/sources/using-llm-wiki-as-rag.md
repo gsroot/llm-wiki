@@ -3,6 +3,7 @@ title: "이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/using-llm-wiki-as-rag.md"
 author: "석근 (Claude Code Opus 4.6 세션 대화 정리)"
 date_published: 2026-04-15

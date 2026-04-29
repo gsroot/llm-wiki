@@ -64,6 +64,21 @@ llm-wiki/
   - `synthesis`: `category`, `sources`, `created`, `updated`
 - 자세한 형식은 `templates/{entity,concept,source,synthesis}.md` 참조
 
+### 선택 필드 (33회차 신설 — 외부 평가 합집합 P0)
+
+#### `source_scope` (source 페이지 전용)
+- `source_url: ""` 인 source 페이지는 `source_scope` 필드 의무.
+- 값 도메인: `local` (석근 본인 작성 노트) / `private` (외부 자료지만 공식 URL 없음, 예: PDF 책) / `public` (URL 있는 공개 자료, 생략 가능 — 명시 시는 검증 강도 ↑).
+- 목적: `source_url` 빈 문자열이 "공개 자료인데 URL 누락"인지 "본질적으로 비공개 로컬 자료"인지 구분.
+- lint 검증: `source_url == ""` 인데 `source_scope` 부재면 결함.
+
+#### `verification_required` / `last_verified` (변동성 높은 페이지 전용)
+- 외부 상태가 변할 수 있는 주장(출시 상태, OSS 버전, 회사 시스템 상태 등)에 적용.
+- `verification_required: true` 와 `last_verified: YYYY-MM-DD` 를 함께 둔다.
+- `verification_notes:` 로 무엇을 어떻게 재검증해야 하는지 명시 (선택).
+- lint 검증: `last_verified` 가 90일 초과 시 경고 (결함 아님, 정보 보고).
+- 적용 대상 예시: `matechat` (Google Play 출시 상태), `seokgeun-stack-guide` (OSS 라이브러리 버전), `c2spf-analytics` (회사 시스템 운영 상태), `seokgeun-mate-chat` (39 SKILL 분류).
+
 ### Redirect / RAG 제외 규칙
 - canonical 병합 때문에 남기는 alias 페이지는 `entity_type: redirect`, `canonical: "[[대상]]"`, `rag_exclude: true`를 함께 둔다.
 - `rag_exclude: true` 페이지는 Obsidian 링크 호환용으로만 유지한다. 질의 답변의 근거 페이지로 사용하지 말고 `canonical` 대상 페이지로 이동한다.

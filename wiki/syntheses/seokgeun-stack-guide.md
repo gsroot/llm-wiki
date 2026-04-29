@@ -27,6 +27,9 @@ related:
 created: 2026-04-28
 updated: 2026-04-29
 tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]
+verification_required: true
+last_verified: 2026-04-29
+verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합

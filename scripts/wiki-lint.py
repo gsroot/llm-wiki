@@ -18,7 +18,10 @@ CHECKS:
     3. frontmatter YAML invalid (PyYAML 파싱 실패)
     4. source_count 부정합 (frontmatter source_count vs 실제 wiki/sources/ 인용 카운트)
     5. 빈약 페이지 (source_count >= 3 인데 본문 < 30줄)
-    6. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
+    6. source_scope 부재 결함 (33회차): source_url=="" 인데 source_scope 누락 시 결함
+    7. last_verified 신선도 경고 (33회차): verification_required=true 페이지의 last_verified가
+       90일 초과 시 경고 (결함 아닌 정보 보고)
+    8. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
 
 EXIT CODES:
     0   결함 없음 (또는 --report 단독 모드)
@@ -34,9 +37,14 @@ import argparse
 import re
 import sys
 from dataclasses import dataclass, field
+from datetime import date, datetime
 from pathlib import Path
 
 import yaml
+
+
+STALE_VERIFICATION_DAYS = 90  # last_verified 경고 임계
+VALID_SOURCE_SCOPES = frozenset({"local", "private", "public"})
 
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent / "wiki"
@@ -162,6 +170,11 @@ class LintResult:
     yaml_invalid: list[tuple[str, str]] = field(default_factory=list)
     source_count_mismatch: list[tuple[str, int, int]] = field(default_factory=list)
     thin_pages: list[tuple[str, int, int]] = field(default_factory=list)
+    # 33회차 신설
+    source_scope_missing: list[str] = field(default_factory=list)
+    source_scope_invalid: list[tuple[str, str]] = field(default_factory=list)
+    stale_verification: list[tuple[str, str, int]] = field(default_factory=list)
+    verification_malformed: list[tuple[str, str]] = field(default_factory=list)
     inbound: dict[str, int] = field(default_factory=dict)
 
     def has_defect(self) -> bool:
@@ -170,7 +183,14 @@ class LintResult:
         # (정의 A, 수동 입력)인데, 자동 측정 가능한 건 "이 페이지를 인용한 source 페이지 수"
         # (정의 B, 객관 측정). 두 정의가 다르므로 부정합을 결함으로 판정하지 않는다.
         # --update 모드는 정의 B로 일괄 갱신하므로 사용 시 주의 (CLAUDE.md 참조).
-        return bool(self.broken_links or self.yaml_invalid)
+        # last_verified 신선도(90일 초과)도 정보 보고. source_scope 부재/이상은 결함.
+        return bool(
+            self.broken_links
+            or self.yaml_invalid
+            or self.source_scope_missing
+            or self.source_scope_invalid
+            or self.verification_malformed
+        )
 
 
 def discover_pages() -> list[Path]:
@@ -307,6 +327,55 @@ def lint(update: bool = False) -> LintResult:
                 (str(page.path.relative_to(WIKI_ROOT.parent)), sc, body_lines)
             )
 
+    # 33회차 신설:
+    # 6. source_scope 부재 결함 (source_url=="" 인데 source_scope 누락)
+    # 7. last_verified 신선도 (verification_required=true 페이지의 last_verified 90일 초과)
+    today = date.today()
+    for page in pages:
+        if page.yaml_invalid or page.is_redirect or page.is_log_file:
+            continue
+        fm = page.frontmatter or {}
+        rel_path = str(page.path.relative_to(WIKI_ROOT.parent))
+
+        # source 페이지의 source_scope 검증
+        if page.page_type == "source":
+            url = fm.get("source_url", None)
+            scope = fm.get("source_scope", None)
+            if url == "" or url is None:
+                if scope is None:
+                    result.source_scope_missing.append(rel_path)
+                elif scope not in VALID_SOURCE_SCOPES:
+                    result.source_scope_invalid.append((rel_path, str(scope)))
+            elif scope is not None and scope not in VALID_SOURCE_SCOPES:
+                result.source_scope_invalid.append((rel_path, str(scope)))
+
+        # verification_required 페이지의 last_verified 신선도
+        if fm.get("verification_required") is True:
+            lv = fm.get("last_verified")
+            if lv is None:
+                result.verification_malformed.append(
+                    (rel_path, "last_verified 누락")
+                )
+                continue
+            if isinstance(lv, str):
+                try:
+                    lv_date = datetime.strptime(lv, "%Y-%m-%d").date()
+                except ValueError:
+                    result.verification_malformed.append(
+                        (rel_path, f"last_verified 형식 오류: {lv!r}")
+                    )
+                    continue
+            elif isinstance(lv, date):
+                lv_date = lv
+            else:
+                result.verification_malformed.append(
+                    (rel_path, f"last_verified 타입 오류: {type(lv).__name__}")
+                )
+                continue
+            days_old = (today - lv_date).days
+            if days_old > STALE_VERIFICATION_DAYS:
+                result.stale_verification.append((rel_path, str(lv_date), days_old))
+
     return result
 
 
@@ -383,6 +452,36 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건")
+
+    print("--- 6. source_scope 부재/이상 (source_url 빈 페이지) ---")
+    if result.source_scope_missing or result.source_scope_invalid:
+        if result.source_scope_missing:
+            print(f"❌ source_scope 누락 {len(result.source_scope_missing)}건:")
+            for path in result.source_scope_missing[:10]:
+                print(f"    {path}")
+        if result.source_scope_invalid:
+            print(f"❌ source_scope 값 이상 {len(result.source_scope_invalid)}건:")
+            for path, scope in result.source_scope_invalid[:10]:
+                print(f"    {path}: {scope!r}")
+    else:
+        if not quiet:
+            print("✓ 0건")
+
+    print("--- 7. last_verified 신선도 (verification_required 페이지) ---")
+    if result.verification_malformed:
+        print(f"❌ verification 형식 오류 {len(result.verification_malformed)}건:")
+        for path, err in result.verification_malformed[:10]:
+            print(f"    {path}: {err}")
+    if result.stale_verification:
+        print(
+            f"⚠ {len(result.stale_verification)}건 신선도 경과 "
+            f"(>{STALE_VERIFICATION_DAYS}일):"
+        )
+        for path, lv, days in result.stale_verification[:10]:
+            print(f"    {path}: last_verified={lv} ({days}일 전)")
+    if not result.verification_malformed and not result.stale_verification:
+        if not quiet:
+            print("✓ 0건 (모든 verification 페이지 신선)")
 
 
 def report_full(result: LintResult) -> None:

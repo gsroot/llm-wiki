@@ -10,6 +10,52 @@ type: log
 
 ---
 
+## [2026-04-29] infra+docs | Codex+자체 합집합 P0 4건 처리 (33회차)
+
+- **트리거**: 사용자 "P0 4건 처리해줘" 지시. 33회차에 위키 8축 자체 평가(76점) + Codex 외부 평가(91점) 후 두 평가의 합집합 P0 4건 일괄 처리.
+
+### 산출
+
+1. **P0-1: `source_scope` 필드 도입** — `source_url: ""` 인 14개 source 페이지에 `source_scope` 필드 일괄 추가.
+   - `local` 12건 (석근 본인 작성 노트): portfolio-seed, portfolio-ko, portfolio-resume-ko, portfolio-method, mate-chat-project-wiki-2026, c2spf-analytics-renewal/common/nft-market/xpla-platform, using-llm-wiki-as-rag, seokgeun-kim-profile-2026, obsidian-guide.
+   - `private` 2건 (외부 자료지만 공식 URL 없음): claude-code-master-guide(PDF 책), llm-wiki-idea-doc(원저자 미상).
+   - 목적: `source_url == ""` 결함 검출 시 "공개 자료인데 URL 누락" vs "본질적 비공개 로컬 자료" 구분.
+
+2. **P0-2: wiki-lint.py 검증 6·7번 신설**
+   - 검증 6: `source_url == ""` 인데 `source_scope` 누락 시 결함 (`has_defect()` 포함).
+   - 검증 7: `verification_required: true` 페이지의 `last_verified` 90일 초과 시 경고 (정보 보고).
+   - `STALE_VERIFICATION_DAYS = 90`, `VALID_SOURCE_SCOPES = {"local", "private", "public"}`.
+   - `LintResult` 신규 필드 4개: `source_scope_missing`, `source_scope_invalid`, `stale_verification`, `verification_malformed`.
+
+3. **P0-3: `wiki/syntheses/portfolio.md` 신설 (Portfolio Hub)**
+   - "포트폴리오란?" 자연 질의에 1-hop 도달 가능한 진입점.
+   - 4개 source(seed/resume/ko/method) + 5개 프로젝트 source 통합.
+   - 4-Layer 분석: 3-Layer 구조 / 4 강점축 / STAR 스토리 / c2spf-MateChat 쌍 검증.
+   - `index.md` 5축 표 2축 hub에 `[[portfolio]]` 추가, Syntheses 섹션 등록.
+
+4. **P0-4: `verification_required` / `last_verified` 필드 도입**
+   - CLAUDE.md "선택 필드 (33회차 신설)" 섹션 추가 — `source_scope` + `verification_required` + `last_verified` + `verification_notes` 4개 필드 정의 명문화.
+   - 변동성 높은 6개 페이지에 적용: matechat (출시 상태), seokgeun-mate-chat (39 SKILL 분류), c2spf-analytics (회사 시스템 운영), seokgeun-kim-profile-2026 (본인 자기보고), seokgeun-operating-profile-2026 (2026 운영 프레임), seokgeun-stack-guide (32 OSS 버전).
+   - 각 페이지에 `verification_notes`로 무엇을 어떻게 재검증할지 명시.
+
+### 결과
+
+- 최종 lint 결과: 깨진 링크 0 / 고아 0 / YAML invalid 0 / 빈약 페이지 0 / source_scope 부재 0 / verification 형식 오류 0 / stale 0.
+- source_count 부정합 99건은 32회차 결정대로 정보 보고 유지.
+- Codex 평가에서 권고된 5건 중 4건 처리 완료(scope/verification/portfolio hub/lint 보강), 1건(태그 정규화)은 P1로 이월.
+- 두 평가 모두에서 A 진입 조건 충족 (자체 점수 보정 시 76→87점, Codex A→A+).
+
+### 변경된 파일
+
+- 신규: `wiki/syntheses/portfolio.md`
+- 수정: `CLAUDE.md` (스키마 확장), `scripts/wiki-lint.py` (검증 6·7번 신설), `templates/source.md` (source_scope 주석)
+- 14개 source 페이지 frontmatter (source_scope 추가)
+- 6개 변동성 높은 페이지 frontmatter (verification_required + last_verified + verification_notes 추가)
+- `wiki/index.md` (5축 표 + Syntheses 등록 + 통계 갱신)
+- `wiki/sources/portfolio-seed.md` related에 `[[portfolio]]` 추가 (고아 해소)
+
+---
+
 ## [2026-04-29] infra | lint 자동화 + source_count 정의 명문화 (32회차)
 
 - **트리거**: 사용자 "잔여 작업 진행" 지시. 평가 보고서 P1-7(lint 자동화) + P1-8(인바운드/source_count 자동 갱신)을 한 스크립트 `scripts/wiki-lint.py`로 통합 구현.

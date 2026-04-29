@@ -3,6 +3,7 @@ title: "석근 프로필 (2026)"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/personal/seokgeun-kim-profile-2026-04-28.md"
 author: "석근"
 date_published: 2026-04-28
@@ -17,6 +18,9 @@ related:
   - "[[ml-ai]]"
   - "[[flutter]]"
 confidence: high
+verification_required: true
+last_verified: 2026-04-29
+verification_notes: "육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인"
 ---
 
 # 석근 프로필 (2026)

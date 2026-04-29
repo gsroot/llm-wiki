@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (32회차 / lint 자동화 + source_count 정의 명문화)
+updated: 2026-04-29 (33회차 / Codex+자체 합집합 P0 — source_scope·portfolio hub·verification_required·lint 확장)
 ---
 
 # 위키 인덱스
@@ -13,11 +13,11 @@ updated: 2026-04-29 (32회차 / lint 자동화 + source_count 정의 명문화)
 
 ## 통계
 
-- 총 페이지 수: 188
+- 총 페이지 수: 189
 - 소스 요약: 65
 - 엔티티: 76 (mate-chat은 [[matechat]]로 redirect)
 - 개념: 31
-- 종합 분석: 14 (28회차 신규: [[llm-infra-meta-cluster]])
+- 종합 분석: 15 (28회차: [[llm-infra-meta-cluster]] / 33회차 신규: [[portfolio]])
 
 ---
 
@@ -28,7 +28,7 @@ updated: 2026-04-29 (32회차 / lint 자동화 + source_count 정의 명문화)
 | # | 축 | 핵심 hub 페이지 | 인바운드 합산 | 역할 |
 |---|---|---|---:|---|
 | 1 | 개인 프로필 | [[seokgeun-kim]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] | 92 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
-| 2 | 포트폴리오 | [[portfolio-seed]] · [[c2spf-analytics]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 176 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
+| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[c2spf-analytics]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 176 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
 | 3 | 스택 가이드 | [[seokgeun-stack-guide]] | 42 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 |
 | 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 119 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 / 39 SKILL 운영 SOP) |
 | 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 477 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer, 인바운드 53% 점유 |
@@ -242,3 +242,4 @@ updated: 2026-04-29 (32회차 / lint 자동화 + source_count 정의 명문화)
 | [[seokgeun-stack-guide]] | 석근 스택 가이드 — 6분류 카탈로그 + 사이드 프로젝트 30분 부트스트랩 + 회사 BI 적용 (8회차 누적 메타 결론) | personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차 | 2026-04-28 |
 | [[matechat-chat-analysis-module]] | Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인 (3 형제 프로젝트 발견 + 회사 BI 4축 차용) | matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-project, c2spf-bi-applicable, 24회차 | 2026-04-28 |
 | [[llm-infra-meta-cluster]] | LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축 (agent-skills 58 + harness 49 + mcp 36 + claude-code 36 = 인바운드 179) | meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis | 2026-04-28 |
+| [[portfolio]] | 포트폴리오 (Portfolio Hub) — 4개 source + 5개 프로젝트를 통합한 1-hop 진입점 (33회차 신설, 2축 hub) | 포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, 33회차 | 2026-04-29 |

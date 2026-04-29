@@ -3,6 +3,7 @@ title: "LLM 위키 아이디어 문서"
 type: source
 source_type: note
 source_url: ""
+source_scope: private
 raw_path: "raw/notes/llm_wiki.md"
 author: "원저자 미상 (역자 주석 포함)"
 date_published: 2026-04-09

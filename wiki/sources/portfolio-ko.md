@@ -3,6 +3,7 @@ title: "포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)"
 type: source
 source_type: note
 source_url: ""
+source_scope: local
 raw_path: "raw/notes/portfolio/docs/50-portfolio/portfolio-ko.md"
 author: "석근"
 date_published: 2026-04-24
