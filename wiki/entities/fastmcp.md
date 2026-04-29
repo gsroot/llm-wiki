@@ -3,6 +3,7 @@ title: "FastMCP"
 type: entity
 entity_type: tool
 tags: [fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, oss-evolution, 17회차]
+aliases: [FastMCP, fastmcp]
 related:
   - "[[mcp]]"
   - "[[ml-ai]]"

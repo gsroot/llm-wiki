@@ -2,8 +2,8 @@
 title: "위키 인덱스"
 type: index
 updated: 2026-04-29
-session: 52
-session_note: "Codex+자체 평가 합집합 P0 4건 — index.md stale 갱신(196→197·종합 20→21·5축 인바운드 합산 1154→1614)·portfolio↔c2spf-analytics 양방향·c2spf·stack-guide의 sub-hub backward 8건·wiki-lint check #4 출력 표기 ❌→ℹ️."
+session: 55
+session_note: "54회차 종합 평가(자체 4축 84.5/A- + Codex 외부 88/A-) 후 합집합 P0+P1 7건 squash — E0 index.md stale·P1-6 career-timeline related·P1-7 aliases tags 변종·P1-8 변동성 entity aliases 9건·P1-9 lint --update 백필·P1-10 태그 vocabulary 정규화·P1-11 memex·qmd 보강. 자체 P1-1·2·3·4·5는 변경 범위 큼 → P2 보류."
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
 ---
@@ -17,10 +17,10 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 197 (50회차 +1 matechat-launch-metrics-ledger synthesis 신설 — 52회차 시점 stale 정정)
+- 총 페이지 수: 198 (53회차 +1 [[rag]] concept 신설 — 54회차 시점 stale 정정)
 - 소스 요약: 65
 - 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
-- 개념: 31
+- 개념: 32 (53회차 [[rag]] 신설로 31→32)
 - 종합 분석: 21 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]] / 49회차 [[matechat-business-validation]] / 50회차 [[matechat-launch-metrics-ledger]])
 
 ---
@@ -31,11 +31,11 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 | # | 축 | 핵심 hub 페이지 | 인바운드 합산 | 역할 |
 |---|---|---|---:|---|
-| 1 | 개인 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] · [[seokgeun-kim-profile-2026]] | 185 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
-| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[portfolio-resume-ko]] · [[portfolio-ko]] · [[portfolio-method]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-common]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 325 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
-| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 147 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
-| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat|석근 MateChat 본진 raw]] · [[seokgeun-matechat-validation]] · [[matechat-chat-analysis-module]] · [[matechat-project-knowledge-map]] | 235 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
-| 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 722 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer (28회차 47.9% → 43회차 46.6% → 52회차 44.7% 점진적 편중 완화, 5축 합산 1614 기준) |
+| 1 | 개인 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] · [[seokgeun-kim-profile-2026]] | 190 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
+| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[portfolio-resume-ko]] · [[portfolio-ko]] · [[portfolio-method]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-common]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 339 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
+| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 153 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
+| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat|석근 MateChat 본진 raw]] · [[seokgeun-matechat-validation]] · [[matechat-chat-analysis-module]] · [[matechat-project-knowledge-map]] | 240 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
+| 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 747 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer (28회차 47.9% → 43회차 46.6% → 52회차 44.7% → 54회차 44.8% 자연 평형점 도달, 5축 합산 1669 기준) |
 
 > **읽기 순서 가이드**: (1) 5축 식별 → 본 표 / (2) 본인 정체성 → [[seokgeun-operating-profile-2026]] / (3) 기술 의사결정 → [[seokgeun-stack-guide]] / (4) 메타 인식 → [[llm-infra-meta-cluster]]
 

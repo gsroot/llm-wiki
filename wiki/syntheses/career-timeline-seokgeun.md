@@ -3,6 +3,12 @@ title: "석근 커리어 타임라인 (2016-2026)"
 type: synthesis
 category: timeline
 tags: [career, timeline, seokgeun-kim, com2us-platform, evolution, portfolio]
+related:
+  - "[[seokgeun-kim]]"
+  - "[[portfolio]]"
+  - "[[c2spf-analytics]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[matechat]]"
 sources:
   - "[[portfolio-seed]]"
   - "[[portfolio-resume-ko]]"
@@ -13,7 +19,7 @@ sources:
   - "[[c2spf-analytics-common]]"
   - "[[c2spf-analytics-renewal]]"
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-29
 ---
 
 # 석근 커리어 타임라인 (2016-2026)

@@ -36,7 +36,7 @@ tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, hub, per
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
-cited_by_count: 56
+cited_by_count: 57
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합
@@ -267,6 +267,7 @@ flutter pub add --dev riverpod_generator build_runner
 - [[alembic]]
 - [[backend-fastapi-stack]]
 - [[c2spf-analytics]]
+- [[career-timeline-seokgeun]]
 - [[claude-code]]
 - [[com2us-platform]]
 - [[crewai]]

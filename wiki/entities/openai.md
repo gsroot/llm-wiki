@@ -3,6 +3,7 @@ title: "OpenAI"
 type: entity
 entity_type: organization
 tags: [openai, AI, AI연구소, 샌프란시스코, gpt, chatgpt, dall-e, codex, gpt-oss, agents-SDK, responses-api, harmony-format, openai-cookbook]
+aliases: [OpenAI, openai, 오픈AI]
 related:
   - "[[openai-cookbook]]"
   - "[[karpathy]]"

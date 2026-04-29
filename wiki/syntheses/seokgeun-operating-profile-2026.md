@@ -3,6 +3,7 @@ title: "석근 개인 운영 프로필 (2026)"
 type: synthesis
 category: analysis
 tags: [personal-operating-profile, seokgeun-kim, matechat, 육아휴직, 사업화, 가족, AI-collaboration, productivity, burnout-risk]
+aliases: [석근 운영 프로필 2026, seokgeun-operating-profile, 운영 프로필 2026]
 sources:
   - "[[seokgeun-kim-profile-2026]]"
   - "[[seokgeun-kim]]"

@@ -35,6 +35,7 @@ cited_by:
   - "[[c2spf-analytics-renewal]]"
   - "[[c2spf-nft-market]]"
   - "[[c2spf-xpla-platform]]"
+  - "[[career-timeline-seokgeun]]"
   - "[[claude-code]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[harness]]"

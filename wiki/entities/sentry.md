@@ -3,6 +3,7 @@ title: "Sentry"
 type: entity
 entity_type: tool
 tags: [sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차]
+aliases: [Sentry, sentry, 센트리]
 related:
   - "[[grafana]]"
   - "[[docker]]"
