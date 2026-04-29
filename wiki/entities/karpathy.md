@@ -2,7 +2,7 @@
 title: "Andrej Karpathy"
 type: entity
 entity_type: person
-tags: [karpathy, AI, llm, openai, tesla, 교육콘텐츠, nanogpt, nanochat, autoresearch, mingpt, zero-to-hero]
+tags: [karpathy, AI, LLM, openai, tesla, 교육콘텐츠, nanogpt, nanochat, autoresearch, mingpt, zero-to-hero]
 related:
   - "[[autoresearch]]"
   - "[[autonomous-research-loop]]"

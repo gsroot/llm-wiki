@@ -7,7 +7,7 @@ raw_path: "raw/articles/karpathy-nanochat/"
 author: "Andrej Karpathy"
 date_published: 2025-10-13
 date_ingested: 2026-04-27
-tags: [nanochat, karpathy, llm, gpt2-speedrun, depth-dial, 컴퓨트옵티멀, val-bpb, dclm-core, sft, rl, autoresearch]
+tags: [nanochat, karpathy, LLM, gpt2-speedrun, depth-dial, 컴퓨트옵티멀, val-bpb, dclm-core, sft, rl, autoresearch]
 related:
   - "[[karpathy]]"
   - "[[nanochat]]"

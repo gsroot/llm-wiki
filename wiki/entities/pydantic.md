@@ -2,7 +2,7 @@
 title: "Pydantic (pydantic/pydantic)"
 type: entity
 entity_type: tool
-tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, pydantic-core, rust-extension, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, logfire, pydantic-ai, annotated, pep-593, 18회차]
+tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, pydantic-core, rust-extension, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, logfire, pydantic-AI, annotated, pep-593, 18회차]
 related:
   - "[[fastapi]]"
   - "[[openai-agents-python]]"

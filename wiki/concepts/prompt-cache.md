@@ -2,7 +2,7 @@
 title: "Prompt Caching"
 type: concept
 category: ai
-tags: [prompt-cache, claude, anthropic, llm-api, 토큰경제, latency, optimization]
+tags: [prompt-cache, claude, anthropic, LLM-api, 토큰경제, latency, optimization]
 related:
   - "[[token-economy]]"
   - "[[claude-code]]"

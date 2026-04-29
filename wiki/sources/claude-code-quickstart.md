@@ -7,7 +7,7 @@ raw_path: "raw/articles/claude-code/빠른 시작.md"
 author: "Anthropic"
 date_published: 2026-04-15
 date_ingested: 2026-04-15
-tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, 가이드, tutorial]
+tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, anthropic, 가이드, tutorial]
 related:
   - "[[claude-code]]"
   - "[[claude-code-overview]]"

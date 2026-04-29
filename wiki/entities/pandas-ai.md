@@ -11,7 +11,7 @@ related:
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
-tags: [pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차]
+tags: [pandas-AI, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차]
 ---
 
 # PandasAI

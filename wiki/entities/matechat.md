@@ -2,7 +2,7 @@
 title: "MateChat"
 type: entity
 entity_type: project
-tags: [matechat, mate-chat, 메이트챗, AI, social, social-ai, fastapi, flutter, riverpod, openai, websocket, iap, clover, startup, side-project, project-wiki, sentry, prometheus, agent-skills, gstack, v1.0.0]
+tags: [matechat, mate-chat, 메이트챗, AI, social, social-AI, fastapi, flutter, riverpod, openai, websocket, iap, clover, startup, side-project, project-wiki, sentry, prometheus, agent-skills, gstack, v1.0.0]
 related:
   - "[[seokgeun-kim]]"
   - "[[seokgeun-kim-profile-2026]]"
@@ -44,6 +44,9 @@ verification_notes: "Google Play v1.0.0 출시 상태 + 39 SKILL 자작/외부 �
 ---
 
 # MateChat
+
+> [!info] 4축 hub — 사이드 프로젝트
+> AI 소셜 메시징 (Google Play v1.0.0 출시 2026-04). 39 SKILL.md 운영 SOP (자작 11 + 외부 28). FastAPI + Flutter + Riverpod + OpenAI + WebSocket. 회사 BI([[c2spf-analytics]])와 "기술 스택 검증의 쌍"으로 동작. 자작 SKILL 9개가 c2spf 차용 후보. 출시 상태는 `verification_required: true` (33회차).
 
 ## 개요
 

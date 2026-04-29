@@ -2,7 +2,7 @@
 title: "Claude Code"
 type: entity
 entity_type: tool
-tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, Anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness, spec-kit]
+tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-sdk, bare-metal-harness, spec-kit]
 related:
   - "[[anthropic]]"
   - "[[claude-agent-sdk]]"

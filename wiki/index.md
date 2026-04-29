@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (33회차 / Codex+자체 합집합 P0 — source_scope·portfolio hub·verification_required·lint 확장)
+updated: 2026-04-29 (34회차 / P1 3건 — 태그 정규화 + 1↔3축 edge + 5 hub callout)
 ---
 
 # 위키 인덱스

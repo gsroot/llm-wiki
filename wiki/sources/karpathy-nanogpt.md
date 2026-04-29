@@ -7,7 +7,7 @@ raw_path: "raw/articles/karpathy-nanogpt/"
 author: "Andrej Karpathy"
 date_published: 2022-12-28
 date_ingested: 2026-04-27
-tags: [nanogpt, karpathy, gpt, llm, 교육코드, deprecated, mingpt, 단일파일, mps]
+tags: [nanogpt, karpathy, gpt, LLM, 교육코드, deprecated, mingpt, 단일파일, mps]
 related:
   - "[[karpathy]]"
   - "[[nanogpt]]"

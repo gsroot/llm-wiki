@@ -7,7 +7,7 @@ raw_path: "raw/articles/scikit-learn-scikit-learn/"
 author: "scikit-learn community (David Cournapeau 시작 / INRIA 인큐베이션 / NumFOCUS 재정 후원 / probabl.ai 풀타임 메인테이너 고용)"
 date_published: 2010-02-01
 date_ingested: 2026-04-27
-tags: [scikit-learn, sklearn, machine-learning, python, classic-ml, fit-predict-transform, pipeline, estimator-api, slep, governance, numfocus, probabl, agents-md, ai-disclosure]
+tags: [scikit-learn, sklearn, machine-learning, python, classic-ml, fit-predict-transform, pipeline, estimator-api, slep, governance, numfocus, probabl, agents-md, AI-disclosure]
 related:
   - "[[microsoft-ml-for-beginners]]"
   - "[[ml-ai]]"

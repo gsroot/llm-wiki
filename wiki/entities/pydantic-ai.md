@@ -15,7 +15,7 @@ related:
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
-tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차]
+tags: [pydantic-AI, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차]
 ---
 
 # Pydantic AI

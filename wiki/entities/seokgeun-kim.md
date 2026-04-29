@@ -9,6 +9,8 @@ related:
   - "[[xpla-platform]]"
   - "[[matechat]]"
   - "[[seokgeun-operating-profile-2026]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[portfolio]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 8
 created: 2026-04-24
@@ -16,6 +18,9 @@ updated: 2026-04-29
 ---
 
 # 김석근 (Seokgeun Kim)
+
+> [!info] 1축 hub — 개인 정체성
+> 9년차 백엔드/풀스택 + 게임 데이터 BI 개발자. 4개 강점축([[backend-python-fastapi]] · [[data-pipeline-bigquery]] · [[ml-ai]] · [[blockchain-xpla]])과 [[matechat]] 사이드 사업화를 동시 운영. 2026 운영 프레임은 [[seokgeun-operating-profile-2026]], 9년 커리어 의사결정 지도는 [[portfolio]], 32 OSS 카탈로그는 [[seokgeun-stack-guide]].
 
 ## 개요
 
@@ -39,7 +44,7 @@ updated: 2026-04-29
   - 블록체인 (XPLA · Rust 스마트 컨트랙트 · NestJS/TypeORM)
 - **관심 분야**: 파이썬, AI, 데이터 분석, 개인 비서 AI 서비스 개발.
 - **개발 환경**: 회사 맥북 / 집 윈도우, IDE는 Antigravity와 Claude Code.
-- **선호 스택**: Python, FastAPI, 바이브 코딩.
+- **선호 스택**: Python, FastAPI, 바이브 코딩. 32 OSS 6분류 카탈로그와 30분 부트스트랩 시나리오는 [[seokgeun-stack-guide]]에 정형화됨. 9년 커리어 의사결정 지도는 [[portfolio]] hub에서 1-hop 도달.
 - **현재 핵심 개인 프로젝트**: [[matechat]] — AI가 사람을 대체하는 것이 아니라 사람 간 연결을 돕는 소셜+AI 하이브리드 앱.
 - **2026년 운영 키워드**: 육아휴직, MateChat closed alpha, 사용자 검증, 수익화, 번아웃 방지, 가족 시간 확보.
 - **학력**: 인하대학교 컴퓨터공학과 (2007-03 ~ 2014-02).

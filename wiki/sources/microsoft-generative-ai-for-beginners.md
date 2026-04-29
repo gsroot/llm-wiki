@@ -7,7 +7,7 @@ raw_path: "raw/articles/microsoft-generative-ai-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2023-06-19
 date_ingested: 2026-04-27
-tags: [generative-ai, microsoft, microsoft-for-beginners, openai, prompt-engineering, rag, ai-agents, slm, mistral, meta]
+tags: [generative-AI, microsoft, microsoft-for-beginners, openai, prompt-engineering, rag, ai-agents, slm, mistral, meta]
 related:
   - "[[microsoft]]"
   - "[[microsoft-for-beginners]]"

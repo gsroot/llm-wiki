@@ -23,6 +23,9 @@ verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행
 
 # c2spf 애널리틱스 (게임 데이터 BI)
 
+> [!info] 2축 hub — 회사 본진
+> [[com2us-platform]]의 게임 데이터 BI 본진 시스템. FastAPI + React + BigQuery + pandas + Airbridge MMP. [[c2spf-analytics-common]](2024-08 공통 모듈)과 [[c2spf-analytics-renewal]](2025 React 리뉴얼)이 핵심 자산. [[matechat]] 사이드에서 검증된 패턴이 회사로 역수입되는 단방향 펌프 형성. 운영 상태는 `verification_required: true` (33회차).
+
 ## 개요
 
 컴투스플랫폼이 운영하는 게임 데이터 분석 BI 웹 서비스. 회사 내 모든 게임에서 발생하는 로그 데이터를 수집·분석하여 대시보드·리포트·세그먼트·퍼널·코호트·ML 예측 등의 분석 기능으로 제공한다. 2017년부터 운영되어 왔으며, 김석근이 풀스택 개발 주축으로 다수 모듈을 단독 유지보수.

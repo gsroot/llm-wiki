@@ -2,7 +2,7 @@
 title: "Google"
 type: entity
 entity_type: organization
-tags: [google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, ai]
+tags: [google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, AI]
 related:
   - "[[flutter]]"
   - "[[dart]]"

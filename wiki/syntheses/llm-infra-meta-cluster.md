@@ -30,10 +30,13 @@ related:
   - "[[c2spf-analytics]]"
 created: 2026-04-28
 updated: 2026-04-28
-tags: [meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis]
+tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis]
 ---
 
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
+
+> [!important] 5축 hub — 자발 발견 메타 layer
+> 28회차에 명시화된 위키의 5번째 축. [[agent-skills]](141) + [[harness]](129) + [[mcp]](100) + [[claude-code]](91) 4개 노드가 인바운드 합산 489로 전체 52.5% 점유. 4핵심축에 직교하는 "AI 협업 운영" 메타 지식이며, [[seokgeun-stack-guide]] 의사결정의 근거이자 [[matechat]] 39 SKILL 운영의 표준.
 
 ## 한줄 요약
 

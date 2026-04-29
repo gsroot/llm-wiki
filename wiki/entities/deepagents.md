@@ -11,7 +11,7 @@ related:
 source_count: 1
 created: 2026-04-28
 updated: 2026-04-28
-tags: [deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
+tags: [deepagents, langchain-AI, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
 ---
 
 # DeepAgents

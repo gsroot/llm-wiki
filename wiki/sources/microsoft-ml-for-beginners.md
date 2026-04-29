@@ -7,7 +7,7 @@ raw_path: "raw/articles/microsoft-ml-for-beginners/"
 author: "Microsoft Cloud Advocates"
 date_published: 2021-03-03
 date_ingested: 2026-04-27
-tags: [machine-learning, microsoft, microsoft-for-beginners, scikit-learn, python, r, classic-ml, time-series, regression, classification, clustering, nlp, reinforcement-learning, responsible-ai]
+tags: [machine-learning, microsoft, microsoft-for-beginners, scikit-learn, python, r, classic-ml, time-series, regression, classification, clustering, nlp, reinforcement-learning, responsible-AI]
 related:
   - "[[microsoft]]"
   - "[[microsoft-for-beginners]]"

@@ -10,6 +10,49 @@ type: log
 
 ---
 
+## [2026-04-29] docs+lint | P1 3건 처리 — 태그 정규화 + 1↔3축 edge + hub callout (34회차)
+
+- **트리거**: 사용자 "남은 작업 진행해줘". 33회차 P0 4건 완료 후 이월된 P1 3건 일괄 처리.
+
+### 산출
+
+1. **P1-1: 태그 정규화 — 동의어 collapse**
+   - CLAUDE.md 31회차 4단계 분류 규칙 적용. 35개 파일에서 동의어 통합:
+     - `Anthropic` 4건 → `anthropic` (organization 명, 영어 단독 + 다른 org와 일관 — openai/microsoft 모두 소문자)
+     - `llm` 8건 → `LLM` (약어, 영어 단독 + 대문자 통일)
+     - `ai` 2건 → `AI` (약어, 영어 단독 + 대문자 통일)
+   - 결과: anthropic 13건, LLM 13건, AI 11건으로 통합. Graph view 클러스터 분열 해소.
+   - agent/에이전트, 데이터분석/data-analysis, 백엔드/backend 한국어+영어 병기 보완은 P2로 분리 (단순 통합과 다른 정책 작업).
+
+2. **P1-2: 1↔3축 cross-axis edge 보강**
+   - `seokgeun-kim.md` frontmatter related에 `[[seokgeun-stack-guide]]` + `[[portfolio]]` 추가 (단방향 → 양방향).
+   - 본문 "선호 스택" 항목에 `[[seokgeun-stack-guide]]`, `[[portfolio]]` 자연스러운 인용 박음.
+   - 효과: 3축 인바운드 43 → 49 (+6, 5축 중 최하 hub 보강).
+
+3. **P1-3: 5개 hub 페이지에 Obsidian callout 추가**
+   - 5축 hub 각각 H1 직후 `> [!info]` 또는 `> [!important]` 의사결정 callout 1개.
+   - 적용 대상: `seokgeun-kim`(1축) / `c2spf-analytics`(2축) / `seokgeun-stack-guide`(3축) / `matechat`(4축) / `llm-infra-meta-cluster`(5축).
+   - Callout 내용은 각 축의 정체성 + 다른 축으로 가는 1-hop 위키링크 5~7개. Reading 모드 빠른 스캔 + cross-axis edge 추가 효과.
+
+### 결과 (lint 측정)
+
+- 모든 검증 통과: 깨진 링크 0 / 고아 0 / YAML 0 / 빈약 0 / source_scope 부재 0 / verification 0 / stale 0.
+- 5축 인바운드 변동: 1축 96→102, 2축 183→213, 3축 43→49, 4축 120→126, 5축 489→494, 합계 931→984.
+- **5축 점유율 52.5% → 50.2%** (다른 축 강화로 자연 감소, 정체성 dilution 완화 신호).
+- 3축이 32회차 이래 처음 50건 근접 (49). stack-guide 콘텐츠 자체 보강(P2)은 별도 회차.
+
+### 변경된 파일
+
+- 35개 frontmatter (태그 정규화)
+- `wiki/entities/seokgeun-kim.md` (related + 본문 위키링크 + callout)
+- `wiki/entities/matechat.md` (callout)
+- `wiki/entities/c2spf-analytics.md` (callout)
+- `wiki/syntheses/seokgeun-stack-guide.md` (callout)
+- `wiki/syntheses/llm-infra-meta-cluster.md` (callout)
+- `wiki/index.md` (updated 라인)
+
+---
+
 ## [2026-04-29] infra+docs | Codex+자체 합집합 P0 4건 처리 (33회차)
 
 - **트리거**: 사용자 "P0 4건 처리해줘" 지시. 33회차에 위키 8축 자체 평가(76점) + Codex 외부 평가(91점) 후 두 평가의 합집합 P0 4건 일괄 처리.

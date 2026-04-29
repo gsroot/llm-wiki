@@ -13,7 +13,7 @@ related:
   - "[[agent-skills]]"
   - "[[react]]"
   - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
-tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, llm-pr-marker, 22회차]
+tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, LLM-pr-marker, 22회차]
 confidence: high
 ---
 

@@ -8,7 +8,7 @@ raw_path: "raw/notes/using-llm-wiki-as-rag.md"
 author: "석근 (Claude Code Opus 4.6 세션 대화 정리)"
 date_published: 2026-04-15
 date_ingested: 2026-04-15
-tags: [llm-wiki, RAG, claude-code, mcp, agent-skills, 운영가이드, 자기참조]
+tags: [LLM-wiki, RAG, claude-code, mcp, agent-skills, 운영가이드, 자기참조]
 related:
   - "[[llm-wiki-pattern]]"
   - "[[claude-code]]"

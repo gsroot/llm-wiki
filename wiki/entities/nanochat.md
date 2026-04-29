@@ -2,7 +2,7 @@
 title: "nanochat (karpathy/nanochat)"
 type: entity
 entity_type: project
-tags: [nanochat, karpathy, llm, gpt2-speedrun, depth-dial, 컴퓨트옵티멀, val-bpb, dclm-core, sft, rl, 풀파이프라인, MIT]
+tags: [nanochat, karpathy, LLM, gpt2-speedrun, depth-dial, 컴퓨트옵티멀, val-bpb, dclm-core, sft, rl, 풀파이프라인, MIT]
 related:
   - "[[karpathy]]"
   - "[[nanogpt]]"
