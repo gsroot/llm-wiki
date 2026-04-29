@@ -29,7 +29,7 @@ observed_source_refs: 39
 inbound_count: 119
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 40
+cited_by_count: 42
 ---
 
 # Claude Code
@@ -164,6 +164,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[autonomous-research-loop]]
 - [[autoresearch]]
 - [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
 - [[claude-agent-sdk]]
 - [[claude-code-master-guide]]
 - [[claude-code-overview]]
@@ -190,9 +191,9 @@ irm https://claude.ai/install.ps1 | iex
 - [[scikit-learn]]
 - [[scikit-learn-scikit-learn]]
 - [[seokgeun-kim]]
+- [[seokgeun-stack-guide]]
 - [[slash-commands-vs-agent-skills]]
 - [[spec-driven-development]]
 - [[spec-kit]]
 - [[token-economy]]
 - [[using-llm-wiki-as-rag]]
-

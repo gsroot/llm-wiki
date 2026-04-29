@@ -34,7 +34,7 @@ observed_source_refs: 58
 inbound_count: 168
 created: 2026-04-15
 updated: 2026-04-29
-cited_by_count: 57
+cited_by_count: 59
 ---
 
 # 하네스 (Harness)
@@ -270,6 +270,7 @@ project/
 - [[autonomous-research-loop]]
 - [[autoresearch]]
 - [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
 - [[claude-agent-sdk]]
 - [[claude-code]]
 - [[claude-code-master-guide]]
@@ -309,10 +310,10 @@ project/
 - [[seokgeun-kim]]
 - [[seokgeun-mate-chat]]
 - [[seokgeun-operating-profile-2026]]
+- [[seokgeun-stack-guide]]
 - [[slash-commands-vs-agent-skills]]
 - [[spec-driven-development]]
 - [[spec-kit]]
 - [[token-economy]]
 - [[using-llm-wiki-as-rag]]
 - [[uv]]
-

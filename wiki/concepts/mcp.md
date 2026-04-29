@@ -26,7 +26,7 @@ observed_source_refs: 53
 inbound_count: 131
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 41
+cited_by_count: 43
 ---
 
 # MCP (Model Context Protocol)
@@ -146,6 +146,7 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[anthropics-claude-cookbooks]]
 - [[anthropics-skills]]
 - [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
 - [[claude-agent-sdk]]
 - [[claude-code]]
 - [[claude-code-master-guide]]
@@ -178,5 +179,5 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[portfolio]]
 - [[qmd]]
 - [[seokgeun-kim]]
+- [[seokgeun-stack-guide]]
 - [[using-llm-wiki-as-rag]]
-

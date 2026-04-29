@@ -840,9 +840,9 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
         if not quiet:
             print("✓ 0건")
 
-    print("--- 4. source_count 부정합 (declared vs observed) ---")
+    print("--- 4. source_count 부정합 (declared vs observed, 정보 보고 — 결함 아님) ---")
     if result.source_count_mismatch:
-        print(f"❌ {len(result.source_count_mismatch)}건:")
+        print(f"ℹ️ {len(result.source_count_mismatch)}건 (정의 A 운영자 의미 vs 정의 B 자동 측정 차이, 결함 아님):")
         for path, declared, observed in result.source_count_mismatch[:20]:
             print(
                 f"    {path}: declared={declared} observed={observed} "

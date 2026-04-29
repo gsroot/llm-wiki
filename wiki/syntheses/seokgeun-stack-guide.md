@@ -26,6 +26,10 @@ related:
   - "[[portfolio]]"
   - "[[portfolio-seed]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[agent-skills]]"
+  - "[[harness]]"
+  - "[[mcp]]"
+  - "[[claude-code]]"
 created: 2026-04-28
 updated: 2026-04-29
 tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차]
@@ -314,4 +318,3 @@ flutter pub add --dev riverpod_generator build_runner
 - [[tanstack-query]]
 - [[uv]]
 - [[zustand]]
-

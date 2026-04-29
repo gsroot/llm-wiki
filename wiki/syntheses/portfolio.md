@@ -16,6 +16,7 @@ sources:
   - "[[mate-chat-project-wiki-2026]]"
 related:
   - "[[seokgeun-kim]]"
+  - "[[c2spf-analytics]]"
   - "[[seokgeun-stack-guide]]"
   - "[[matechat]]"
   - "[[llm-infra-meta-cluster]]"

@@ -47,7 +47,7 @@ observed_source_refs: 70
 inbound_count: 188
 created: 2026-04-27
 updated: 2026-04-29
-cited_by_count: 65
+cited_by_count: 67
 ---
 
 # Agent Skills (SKILL.md 패키지)
@@ -303,6 +303,7 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[astral-sh-uv]]
 - [[backend-fastapi-stack]]
 - [[c2spf-ai-agent-adoption-candidates]]
+- [[c2spf-analytics]]
 - [[claude-agent-sdk]]
 - [[claude-code]]
 - [[deepagents]]
@@ -350,6 +351,7 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[seokgeun-kim]]
 - [[seokgeun-mate-chat]]
 - [[seokgeun-operating-profile-2026]]
+- [[seokgeun-stack-guide]]
 - [[shadcn-ui]]
 - [[shadcn-ui-ui]]
 - [[slash-commands-vs-agent-skills]]
@@ -359,4 +361,3 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[uv]]
 - [[vercel]]
 - [[vercel-next.js]]
-
