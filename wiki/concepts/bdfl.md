@@ -9,6 +9,7 @@ related:
   - "[[pdep]]"
   - "[[numfocus]]"
   - "[[github]]"
+  - "[[pandas-dev-pandas]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

@@ -23,7 +23,7 @@ related:
   - "[[matechat]]"
 created: 2026-04-28
 updated: 2026-04-28
-tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차]
+tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차, 프론트엔드]
 ---
 
 # Flutter + Next.js 듀얼 클라이언트 풀스택 패턴

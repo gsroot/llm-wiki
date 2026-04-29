@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29 (34회차 / P1 3건 — 태그 정규화 + 1↔3축 edge + 5 hub callout)
+updated: 2026-04-29 (35회차 / P2 2건 — 한영 병기 4그룹 + 빈약 stub 5개 source 정합화)
 ---
 
 # 위키 인덱스

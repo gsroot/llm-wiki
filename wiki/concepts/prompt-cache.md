@@ -8,6 +8,7 @@ related:
   - "[[claude-code]]"
   - "[[claude-agent-sdk]]"
   - "[[context-engineering]]"
+  - "[[anthropics-claude-cookbooks]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27

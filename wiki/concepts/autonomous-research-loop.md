@@ -2,7 +2,7 @@
 title: "자율 연구 루프 (Autonomous Research Loop)"
 type: concept
 category: ai
-tags: [자율연구, autonomous-research, agent, 실험루프, 메트릭주도, 시간예산, harness, gpt2-speedrun, 실증]
+tags: [자율연구, autonomous-research, agent, 실험루프, 메트릭주도, 시간예산, harness, gpt2-speedrun, 실증, 에이전트]
 related:
   - "[[harness]]"
   - "[[context-engineering]]"

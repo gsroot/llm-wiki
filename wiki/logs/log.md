@@ -10,6 +10,49 @@ type: log
 
 ---
 
+## [2026-04-29] docs | P2 2건 처리 — 한영 병기 + 빈약 stub source 정합화 (35회차)
+
+- **트리거**: 사용자 "다음 회차 진행해줘". 34회차 완료 후 이월된 P2 2건 일괄 처리. stack-guide 콘텐츠 강화는 raw 작성 작업이라 별도 회차로 분리.
+
+### 산출
+
+1. **P2-1: 한국어+영어 병기 보완** — CLAUDE.md 31회차 4단계 분류 규칙 중 "개념·도메인 태그" 카테고리 적용. 22개 페이지에 짝 태그 자동 추가.
+   - `agent` 단독 10건 + `에이전트` 단독 2건 → 양쪽 병기 (총 16 페이지로 확장).
+   - `data-analysis` 단독 2건 + `데이터분석` 단독 1건 → 양쪽 병기 (총 3 페이지).
+   - `backend` 단독 2건 + `백엔드` 단독 1건 → 양쪽 병기 (총 3 페이지).
+   - `frontend` 단독 4건 → `프론트엔드` 추가 (4 페이지).
+   - 결과: 4그룹 모두 단독 0건, 병기 100% 달성. RAG 한국어/영어 양방향 검색 모두 가능.
+
+2. **P2-3: 빈약 concept stub 5개 source 정합화** — 자체 평가 "개념-raw 단절" 진단 정확화. 본문 `## 출처` 섹션은 이미 source 페이지 wikilink를 가지고 있었으나, frontmatter `related`에는 빠져 있어 자동화 도구가 추적 불가했음. frontmatter ↔ 본문 정합화로 해결:
+   - `pdep.md`, `bdfl.md`, `dataframe.md` → `[[pandas-dev-pandas]]` 추가.
+   - `copy-on-write.md` → `[[pandas-dev-pandas]]`, `[[pola-rs-polars]]` 추가, source_count 1→2 정정.
+   - `prompt-cache.md` → `[[anthropics-claude-cookbooks]]` 추가.
+
+### 발견
+
+- "개념-raw 단절"의 정확한 정의가 명확해짐: 본문 `## 출처` 섹션 wikilink는 충분, frontmatter `related`에 source 페이지 명시 부재가 진짜 결함이었음. 자동화 도구가 frontmatter만 읽기 때문.
+- agent/에이전트 그룹은 16 페이지(병기 4 + 단독 12 변환)로 가장 큰 그룹. 한국어 검색/영어 검색 시 양방향 회수 가능해진 효과 큼.
+
+### 결과
+
+- lint 모든 검증 통과 (깨진 링크 0 / 고아 0 / YAML 0 / 빈약 0 / source_scope 0 / verification 0 / stale 0).
+- source_count 부정합 99건 → 99건 (변동 없음, 정의 A/B 차이 유지).
+- 자체 평가 D2 5/10 → 7/10 예상 (태그 한영 병기 100%로 RAG 양방향 회수 보장), A3 7/10 → 8/10 예상 (frontmatter 출처 추적성 ↑).
+
+### 변경된 파일
+
+- 22개 페이지 frontmatter (한영 병기 짝 태그 추가)
+- 5개 concept stub frontmatter (related에 source 페이지 + copy-on-write source_count)
+- `wiki/index.md` (updated 라인)
+
+### 다음 회차로 이월
+
+- **stack-guide 도구별 source 깊이 보강** (3축 hub 콘텐츠 강화, raw 작성 작업)
+- **wiki-lint.py 태그 정규화 회귀 검증 추가** (예: 동의어 lowercase/uppercase 분산 자동 검출)
+- **검색 계층 도입** (Codex 권고 — qmd MCP 등 RAG 자동 라우팅)
+
+---
+
 ## [2026-04-29] docs+lint | P1 3건 처리 — 태그 정규화 + 1↔3축 edge + hub callout (34회차)
 
 - **트리거**: 사용자 "남은 작업 진행해줘". 33회차 P0 4건 완료 후 이월된 P1 3건 일괄 처리.

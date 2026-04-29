@@ -2,7 +2,7 @@
 title: "프론트엔드 (React + TypeScript + Vite + TanStack)"
 type: concept
 category: web-dev
-tags: [frontend, react, typescript, vite, tanstack, zustand, ag-grid, highcharts, mobx]
+tags: [frontend, react, typescript, vite, tanstack, zustand, ag-grid, highcharts, mobx, 프론트엔드]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"

@@ -7,7 +7,7 @@ raw_path: "raw/articles/langchain-ai-langchain/"
 author: "LangChain Inc. (Harrison Chase 외)"
 date_published: 2022-10-17
 date_ingested: 2026-04-28
-tags: [langchain, LLM-framework, agent, monorepo, langchain-inc, langsmith, agents-md, claude-md, 17회차]
+tags: [langchain, LLM-framework, agent, monorepo, langchain-inc, langsmith, agents-md, claude-md, 17회차, 에이전트]
 related:
   - "[[langchain]]"
   - "[[langgraph]]"

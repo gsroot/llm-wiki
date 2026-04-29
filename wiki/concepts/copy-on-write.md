@@ -7,7 +7,9 @@ related:
   - "[[pandas]]"
   - "[[dataframe]]"
   - "[[ml-ai]]"
-source_count: 1
+  - "[[pandas-dev-pandas]]"
+  - "[[pola-rs-polars]]"
+source_count: 2
 created: 2026-04-27
 updated: 2026-04-27
 ---

@@ -7,7 +7,7 @@ raw_path: "raw/articles/langchain-ai-langgraph/"
 author: "LangChain Inc."
 date_published: 2024-01-01
 date_ingested: 2026-04-28
-tags: [langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, 17회차]
+tags: [langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, 17회차, 에이전트]
 related:
   - "[[langgraph]]"
   - "[[langchain]]"

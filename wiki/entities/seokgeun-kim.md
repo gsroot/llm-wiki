@@ -2,7 +2,7 @@
 title: "김석근 (Seokgeun Kim)"
 type: entity
 entity_type: person
-tags: [석근, owner, 백엔드, 풀스택, BI, 게임데이터, 컴투스플랫폼, matechat, 개인프로필]
+tags: [석근, owner, 백엔드, 풀스택, BI, 게임데이터, 컴투스플랫폼, matechat, 개인프로필, backend]
 related:
   - "[[com2us-platform]]"
   - "[[c2spf-analytics]]"

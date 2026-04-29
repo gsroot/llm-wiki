@@ -8,7 +8,7 @@ raw_path: "raw/notes/portfolio/old-portfolio.md"
 author: "석근"
 date_published: 2025-11-01
 date_ingested: 2026-04-24
-tags: [포트폴리오, career, portfolio, backend, data, ml, blockchain]
+tags: [포트폴리오, career, portfolio, backend, data, ml, blockchain, 백엔드]
 related:
   - "[[portfolio]]"
   - "[[seokgeun-kim]]"

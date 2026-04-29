@@ -2,7 +2,7 @@
 title: "React"
 type: entity
 entity_type: tool
-tags: [react, javascript, ui-library, meta, frontend, hooks, jsx, 23회차]
+tags: [react, javascript, ui-library, meta, frontend, hooks, jsx, 23회차, 프론트엔드]
 related:
   - "[[nextjs]]"
   - "[[zustand]]"

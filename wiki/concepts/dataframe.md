@@ -2,12 +2,13 @@
 title: "DataFrame"
 type: concept
 category: data
-tags: [dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data]
+tags: [dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data, data-analysis]
 related:
   - "[[pandas]]"
   - "[[copy-on-write]]"
   - "[[ml-ai]]"
   - "[[data-pipeline-bigquery]]"
+  - "[[pandas-dev-pandas]]"
 source_count: 1
 created: 2026-04-27
 updated: 2026-04-27
