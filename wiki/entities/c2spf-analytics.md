@@ -24,7 +24,7 @@ verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행
 # c2spf 애널리틱스 (게임 데이터 BI)
 
 > [!info] 2축 hub — 회사 본진
-> [[com2us-platform]]의 게임 데이터 BI 본진 시스템. FastAPI + React + BigQuery + pandas + Airbridge MMP. [[c2spf-analytics-common]](2024-08 공통 모듈)과 [[c2spf-analytics-renewal]](2025 React 리뉴얼)이 핵심 자산. [[matechat]] 사이드에서 검증된 패턴이 회사로 역수입되는 단방향 펌프 형성. 운영 상태는 `verification_required: true` (33회차).
+> [[com2us-platform|컴투스플랫폼 c2spf]]의 게임 데이터 BI 본진 시스템. FastAPI + React + BigQuery + pandas + Airbridge MMP. [[c2spf-analytics-common]](2024-08 공통 모듈)과 [[c2spf-analytics-renewal]](2025 React 리뉴얼)이 핵심 자산. [[matechat|MateChat 사이드 프로젝트]] 사이드에서 검증된 패턴이 회사로 역수입되는 단방향 펌프 형성. 운영 상태는 `verification_required: true` (33회차).
 
 ## 개요
 
@@ -52,7 +52,7 @@ verification_notes: "회사 BI 시스템 운영 상태 (스택·리뉴얼 진행
 
 ## 9년차 운영 시스템의 누적 자산
 
-c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 + API 계약 + 운영 가이드 + 도메인 지식이 함께 누적된 복합 자산**이다. 신규 개발자가 코드만 받아 운영하기 어려운 이유는 이 5계층 자산이 분리되어 보존되지 않기 때문이다. 본 위키의 [[seokgeun-stack-guide]]가 권장하는 38개 SOP SKILL.md 패턴([[matechat]] 본진 채택)은 이 5계층 자산을 동기화하는 후보 메커니즘이다.
+c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 + API 계약 + 운영 가이드 + 도메인 지식이 함께 누적된 복합 자산**이다. 신규 개발자가 코드만 받아 운영하기 어려운 이유는 이 5계층 자산이 분리되어 보존되지 않기 때문이다. 본 위키의 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]가 권장하는 38개 SOP SKILL.md 패턴([[matechat]] 본진 채택)은 이 5계층 자산을 동기화하는 후보 메커니즘이다.
 
 ### 자기 커밋 분포 (포트폴리오 기준)
 
@@ -99,7 +99,7 @@ c2spf-analytics는 본 위키에서 **인바운드 4위(43)**의 hub다. agent-s
 ## 관련 개념
 
 - [[com2us-platform]] — 운영 회사
-- [[seokgeun-kim]] — 주축 개발자, 1,111커밋 누계
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 주축 개발자, 1,111커밋 누계
 - [[backend-python-fastapi]] — 공통 API 스택, [[matechat]] 백엔드와 동일 6단
 - [[frontend-react]] — 2025-06 리뉴얼 표준, [[tanstack-query]] + [[zustand]] 22회차 발견과 일치
 - [[data-pipeline-bigquery]] — BI 데이터 파이프라인

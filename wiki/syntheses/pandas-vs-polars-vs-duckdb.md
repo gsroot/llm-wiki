@@ -184,7 +184,7 @@ pd_df.plot(...)  # Plotly/Matplotlib 호환
 
 → **각 도구의 강점만 사용**. PyArrow가 사이의 zero-copy 다리.
 
-## 6. 마이그레이션 비용 추정 ([[c2spf-analytics]])
+## 6. 마이그레이션 비용 추정 ([[c2spf-analytics|c2spf 게임 데이터 BI]])
 
 기존 pandas 코드 → Polars/DuckDB 도입:
 

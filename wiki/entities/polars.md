@@ -109,7 +109,7 @@ Rust crate `polars` → 5개 프론트엔드:
 - [[lazy-evaluation]]: Polars의 핵심 패턴. SQL 옵티마이저 사상 적용
 - [[dataframe]]: Polars의 핵심 자료구조
 - [[ml-ai]]: scikit-learn은 NumPy/pandas만 지원 → Polars는 `to_pandas()`/`to_numpy()` 변환 필요
-- [[c2spf-analytics]]: 회사 BI BigQuery → DataFrame 패턴에서 pandas 대체 후보
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: 회사 BI BigQuery → DataFrame 패턴에서 pandas 대체 후보
 
 ## 관련 엔티티
 
@@ -125,7 +125,7 @@ Rust crate `polars` → 5개 프론트엔드:
 > "Rust로 작성된 분석 쿼리 엔진. Lazy + Eager + Streaming 3중 실행 모델과 Apache Arrow 컬럼 포맷 in-memory로 pandas 대비 임포트 7배·연산 10~100배 가속 — DataFrame 추상을 '표현식 + 컨텍스트' DSL로 재정의."
 > — [[pola-rs-polars]] 한줄 요약
 
-[[seokgeun-stack-guide]] DataFrame 영역에서 [[pandas]] 대안. [[c2spf-analytics]] 대규모 분석 시 마이그레이션 후보 + [[matechat]] 채팅 분석 모듈 데이터 처리 후보 ([[pandas-vs-polars-vs-duckdb]] 결정 매트릭스 참조). **Lazy + Eager + Streaming 3중 모델**·**Apache Arrow immutable**은 [[copy-on-write]] CoW와 정반대 메모리 모델 — [[llm-infra-meta-cluster]] 5축의 메모리 모델 진화 사례. [[apache-arrow]]·[[duckdb]]와 함께 컬럼 진영 표준.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] DataFrame 영역에서 [[pandas]] 대안. [[c2spf-analytics]] 대규모 분석 시 마이그레이션 후보 + [[matechat|MateChat 사이드 프로젝트]] 채팅 분석 모듈 데이터 처리 후보 ([[pandas-vs-polars-vs-duckdb]] 결정 매트릭스 참조). **Lazy + Eager + Streaming 3중 모델**·**Apache Arrow immutable**은 [[copy-on-write]] CoW와 정반대 메모리 모델 — [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 메모리 모델 진화 사례. [[apache-arrow]]·[[duckdb]]와 함께 컬럼 진영 표준.
 
 ## 출처
 

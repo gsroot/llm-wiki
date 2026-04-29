@@ -51,9 +51,9 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[c2spf-analytics]] — 서비스 주체
-- [[com2us-platform]] — 소속
-- [[seokgeun-kim]] — 담당자
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 서비스 주체
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 소속
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 담당자
 - [[backend-python-fastapi]] — 주력 스택
 - [[devops-cicd]] — Docker + Jenkins 표준화
 - [[data-pipeline-bigquery]] — BI 데이터 파이프라인

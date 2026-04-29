@@ -36,7 +36,7 @@ updated: 2026-04-27
 | **Skia** | 2D 그래픽 라이브러리. [[flutter]] + Chrome + Android의 공통 기반 |
 | **Android** | 모바일 OS. Flutter의 주요 deploy 타깃 중 하나 |
 | **Chrome / V8** | 브라우저. JavaScript 엔진 V8이 Dart VM 설계에 영향 |
-| **Google Cloud** | GCP, BigQuery (석근의 [[c2spf-analytics]] 핵심 인프라), Vertex AI |
+| **Google Cloud** | GCP, BigQuery (석근의 [[c2spf-analytics|c2spf 게임 데이터 BI]] 핵심 인프라), Vertex AI |
 
 ### AI 진영 위치
 

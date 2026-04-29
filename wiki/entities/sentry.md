@@ -79,7 +79,7 @@ Sentry AGENTS.md 서두는 다른 어떤 OSS보다 강력한 명문화:
 > "Sentry는 developer-first 에러 트래킹/성능 모니터링 플랫폼이며, AGENTS.md를 'AI agent instruction의 single source of truth'로 강제 선언한 첫 OSS — 'CLAUDE.md/Cursor rules에 추가하지 말라'는 **반-fragmentation 룰**이 핵심."
 > — [[getsentry-sentry]] 한줄 요약
 
-[[seokgeun-stack-guide]] DevOps 5단 5단(에러 트래킹). [[matechat]] v1.0.0 출시 시 채택. **반-fragmentation 룰**은 [[llm-infra-meta-cluster]] 5축의 운영 원칙 — 위키 자체도 CLAUDE.md를 SSOT로 두고 다른 곳에 분산하지 않는 동일 원칙 적용. SSOT 패턴은 [[agent-skills]]·[[harness]] 운영에 직접 영향.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] DevOps 5단 5단(에러 트래킹). [[matechat|MateChat 사이드 프로젝트]] v1.0.0 출시 시 채택. **반-fragmentation 룰**은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 운영 원칙 — 위키 자체도 CLAUDE.md를 SSOT로 두고 다른 곳에 분산하지 않는 동일 원칙 적용. SSOT 패턴은 [[agent-skills]]·[[harness]] 운영에 직접 영향.
 
 ## 출처
 

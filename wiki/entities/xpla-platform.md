@@ -39,8 +39,8 @@ updated: 2026-04-24
 
 ## 관련 개념
 
-- [[com2us-platform]] — 운영 회사
-- [[seokgeun-kim]] — 주축 개발자
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 운영 회사
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 주축 개발자
 - [[blockchain-xpla]] — XPLA 생태계·스마트 컨트랙트 개발 패턴
 
 ## 출처

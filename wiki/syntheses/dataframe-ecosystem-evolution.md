@@ -101,7 +101,7 @@ pandas의 [[copy-on-write]]가 풀려고 한 문제:
    파일/S3/PG    SQL 옵티마이저     Expression DSL       ML/시각화 호환
 ```
 
-### 시나리오 B: 분석 BI API ([[c2spf-analytics]])
+### 시나리오 B: 분석 BI API ([[c2spf-analytics|c2spf 게임 데이터 BI]])
 
 ```
 [BigQuery storage API]

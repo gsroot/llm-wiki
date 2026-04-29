@@ -36,7 +36,7 @@ tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
 
 > [!important] 5축 hub — 자발 발견 메타 layer
-> 28회차에 명시화된 위키의 5번째 축. [[agent-skills]](141) + [[harness]](129) + [[mcp]](100) + [[claude-code]](91) 4개 노드가 인바운드 합산 489로 전체 52.5% 점유. 4핵심축에 직교하는 "AI 협업 운영" 메타 지식이며, [[seokgeun-stack-guide]] 의사결정의 근거이자 [[matechat]] 39 SKILL 운영의 표준.
+> 28회차에 명시화된 위키의 5번째 축. [[agent-skills]](141) + [[harness]](129) + [[mcp]](100) + [[claude-code]](91) 4개 노드가 인바운드 합산 489로 전체 52.5% 점유. 4핵심축에 직교하는 "AI 협업 운영" 메타 지식이며, [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 의사결정의 근거이자 [[matechat|MateChat 사이드 프로젝트]] 39 SKILL 운영의 표준.
 
 ## 한줄 요약
 
@@ -77,7 +77,7 @@ tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code
 - **정의**: Anthropic 공식 CLI 에이전트
 - **본 위키 상의 의미**: 본 위키 자체가 Claude Code 세션에서 운영됨. 그래서 [[using-llm-wiki-as-rag]], [[slash-commands-vs-agent-skills]], [[obsidian-guide]] 등이 모두 Claude Code 운영 노트.
 
-→ 4 노드의 인바운드 합산 **179**. [[c2spf-analytics]](43, 회사 BI) + [[seokgeun-kim]](30, 프로필)의 합 73을 2.4배 초과.
+→ 4 노드의 인바운드 합산 **179**. [[c2spf-analytics|c2spf 게임 데이터 BI]](43, 회사 BI) + [[seokgeun-kim|석근 (이 위키 owner)]](30, 프로필)의 합 73을 2.4배 초과.
 
 ## 메타 클러스터의 자발적 성장 패턴
 

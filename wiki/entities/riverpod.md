@@ -39,8 +39,8 @@ Flutter/Dart 진영의 reactive caching + dependency injection 프레임워크. 
 ## 관련 개념
 
 - [[flutter]] — 호스트 프레임워크
-- [[matechat]] — Riverpod 기반 사이드 프로젝트
-- [[seokgeun-kim]] — 사용자 (석근님 Flutter 사이드 프로젝트 핵심 라이브러리)
+- [[matechat|MateChat 사이드 프로젝트]] — Riverpod 기반 사이드 프로젝트
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 사용자 (석근님 Flutter 사이드 프로젝트 핵심 라이브러리)
 - [[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]] — Flutter 진영 표준 상태관리 (22회차 신규 종합)
 - [[zustand]] — React 진영 동등 위치 라이브러리
 - [[tanstack-query]] — Riverpod의 비동기 fetch+cache 기능과 유사 영역
@@ -50,7 +50,7 @@ Flutter/Dart 진영의 reactive caching + dependency injection 프레임워크. 
 > "Flutter 공식 Favorite 패키지로 인정받은 reactive caching + dependency injection 프레임워크. Provider의 후속작이며 @riverpod 코드 생성 어노테이션과 AsyncValue 패턴으로 비동기 로딩/에러 상태를 패턴매칭으로 처리한다."
 > — [[rrousselGit-riverpod]] 한줄 요약
 
-[[seokgeun-stack-guide]]에서 Flutter 진영 상태관리 표준. [[matechat]] (4축 hub) 실제 채택 — 39 SKILL 운영 SOP의 한 축. React 진영의 [[tanstack-query]](서버) + [[zustand]](클라이언트) 듀얼을 단일 라이브러리로 처리.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]에서 Flutter 진영 상태관리 표준. [[matechat]] (4축 hub) 실제 채택 — 39 SKILL 운영 SOP의 한 축. React 진영의 [[tanstack-query]](서버) + [[zustand]](클라이언트) 듀얼을 단일 라이브러리로 처리.
 
 ## 출처
 

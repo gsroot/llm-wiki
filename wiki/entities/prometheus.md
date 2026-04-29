@@ -64,7 +64,7 @@ Prometheus의 AGENTS.md는 다른 OSS(Pydantic AI 코드베이스 가이드, Ope
 > "Prometheus는 CNCF 두 번째 졸업 프로젝트(Kubernetes 다음)이자 시계열 메트릭 모니터링의 사실상 표준이며, 19회차에서 발견된 7번째 AGENTS.md 채택 OSS — 다만 그 형식이 'PR 리뷰 패턴 가이드'로 다른 OSS와 차별화됨."
 > — [[prometheus-prometheus]] 한줄 요약
 
-[[seokgeun-stack-guide]] DevOps 5단(Docker → GHA → Prometheus → Grafana → Sentry) 3단. **메트릭 수집 표준** — [[c2spf-analytics]] 회사 시스템·[[matechat]] 사이드 양쪽에서 동일 채택. PR 리뷰 패턴 AGENTS.md(148줄)는 [[llm-infra-meta-cluster]] 운영 표준 학습 자료.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] DevOps 5단(Docker → GHA → Prometheus → Grafana → Sentry) 3단. **메트릭 수집 표준** — [[c2spf-analytics|c2spf 게임 데이터 BI]] 회사 시스템·[[matechat|MateChat 사이드 프로젝트]] 사이드 양쪽에서 동일 채택. PR 리뷰 패턴 AGENTS.md(148줄)는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 운영 표준 학습 자료.
 
 ## 출처
 

@@ -43,7 +43,7 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[seokgeun-kim]] · [[com2us-platform]] · [[c2spf-analytics]] · [[xpla-platform]]
+- [[seokgeun-kim|석근 (이 위키 owner)]] · [[com2us-platform|컴투스플랫폼 c2spf]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[xpla-platform]]
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]]
 - [[portfolio-resume-ko]] — 동일 내용 이력서 형태(2페이지)
 

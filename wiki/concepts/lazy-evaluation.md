@@ -146,7 +146,7 @@ print(q.explain())
 #       Csv SCAN huge.csv
 ```
 
-### 시나리오 3: 회사 BI 적용 ([[c2spf-analytics]])
+### 시나리오 3: 회사 BI 적용 ([[c2spf-analytics|c2spf 게임 데이터 BI]])
 
 BigQuery의 `EXPLAIN PLAN` + Polars `LazyFrame.explain()` 결합 → 분석가가 SQL/DataFrame 양면에서 옵티마이저 결정 검증 가능. 비용 추정 → 쿼리 튜닝.
 

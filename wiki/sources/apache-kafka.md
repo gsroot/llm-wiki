@@ -135,7 +135,7 @@ Kafka는 Java 17/25 + Scala 2.13 — JVM 무거움이 단점. 하지만:
 - [[redis]]: 같은 데이터 인프라 영역 — Redis Streams가 단일 노드 Kafka 같음. RESP vs Kafka 프로토콜
 - [[postgresql]]: WAL이 같은 append-only log 패턴. 한 단계 더 추상화한 것이 Kafka log
 - [[apache-foundation]]: 거버넌스 주체 (별도 엔티티 후보)
-- [[c2spf-analytics]]: 회사 BI에서 게임 이벤트 스트림 → BigQuery ingestion에 Kafka가 표준 패턴
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: 회사 BI에서 게임 이벤트 스트림 → BigQuery ingestion에 Kafka가 표준 패턴
 
 ## 인용할 만한 구절
 

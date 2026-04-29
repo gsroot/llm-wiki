@@ -37,7 +37,7 @@ updated: 2026-04-29
 |---|---|---|
 | **Raw (원천)** | `10-sources/` (Jira/Confluence/GitHub 추출) | `raw/notes/portfolio/` (불변) |
 | **Synthesis (종합)** | `20-projects/` `30-skills/` `40-stories/` | `wiki/sources/` + `wiki/entities/` |
-| **Output (산출)** | `50-portfolio/` (이력서·포트폴리오 최종본) | 본 hub + [[seokgeun-kim]] |
+| **Output (산출)** | `50-portfolio/` (이력서·포트폴리오 최종본) | 본 hub + [[seokgeun-kim|석근 (이 위키 owner)]] |
 
 **구조적 동치**: Raw → Synthesis → Output 단방향 가공 흐름이 두 저장소에서 동일. 이 동치성이 양 저장소의 자동 정합성 검증을 가능케 한다 (예: portfolio 저장소가 c2spf-analytics를 갱신하면 wiki/entities/c2spf-analytics.md도 갱신되어야 함).
 
@@ -46,9 +46,9 @@ updated: 2026-04-29
 석근 9년 커리어의 자기 정의 강점 (출처: portfolio-seed 한줄 요약):
 
 1. **백엔드/풀스택** — Python·FastAPI·Node.js·React. [[c2spf-analytics-renewal]](2025 React 리뉴얼)에서 풀스택 단독 운영 사례.
-2. **게임 데이터 BI** — pandas·BigQuery·MMP. [[c2spf-analytics]] 본진 + [[c2spf-analytics-common]](공통 모듈)이 핵심 자산.
+2. **게임 데이터 BI** — pandas·BigQuery·MMP. [[c2spf-analytics|c2spf 게임 데이터 BI]] 본진 + [[c2spf-analytics-common]](공통 모듈)이 핵심 자산.
 3. **블록체인** — Rust·NestJS·XPLA. [[c2spf-nft-market]](가스비 절감)·[[c2spf-xpla-platform]](SDK)가 검증.
-4. **AI/Agent 운영** — [[matechat]] 사이드 프로젝트(39 SKILL 통합) + [[llm-infra-meta-cluster]] 메타 운영 체계.
+4. **AI/Agent 운영** — [[matechat|MateChat 사이드 프로젝트]] 사이드 프로젝트(39 SKILL 통합) + [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 메타 운영 체계.
 
 ### Layer 3: STAR 스토리 + 증거 기반 metric ([[portfolio-method]])
 
@@ -69,7 +69,7 @@ updated: 2026-04-29
 
 1. **포트폴리오 = 의사결정 지도**: 단순 이력 나열이 아닌, "다음 무엇을 할지" 판단할 수 있는 의사결정 자료. 9년 커리어가 4개 축으로 구조화되어 있어 신규 기회 평가 시 즉시 매핑 가능.
 2. **2개 저장소 동기화가 핵심 자산**: portfolio/ + llm-wiki/ 양쪽이 동일 3-Layer 구조를 공유하므로 한쪽의 결함이 다른 쪽으로 자동 감지된다. 다른 개발자 포트폴리오에 없는 독자성.
-3. **회사·사이드 쌍 검증 모델**: c2spf와 MateChat이 서로의 기술 검증 환경 — 이 모델은 [[seokgeun-stack-guide]]의 "30분 부트스트랩" 시나리오로 정형화되어 있다.
+3. **회사·사이드 쌍 검증 모델**: c2spf와 MateChat이 서로의 기술 검증 환경 — 이 모델은 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]의 "30분 부트스트랩" 시나리오로 정형화되어 있다.
 
 ## 열린 질문
 

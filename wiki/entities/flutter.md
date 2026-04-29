@@ -120,7 +120,7 @@ agent-artifacts/.gitignore (AI 산출물 격리)
 > "Google의 멀티플랫폼 UI SDK(★176K). iOS·Android·Web·Windows·macOS·Linux를 단일 Dart 코드베이스로 처리. 위키적으로 가장 중요한 발견은 저장소 자체가 agent-skills 표준의 vendor-neutral 채택 사례 — `.agents/skills/` (agentskills.io 표준)에 3개 SKILL.md + `.claude/skills` 심볼릭 링크. `docs/rules/` 4계층 토큰 예산 룰(rules_1k → rules_4k → rules_10k → rules.md 30K)이 도구별 한계를 매트릭스로 명시 — Anthropic의 progressive disclosure를 토큰 단위로 더 세분화."
 > — [[flutter-flutter]] 한줄 요약
 
-[[seokgeun-stack-guide]] 모바일·멀티플랫폼 UI 표준. [[matechat]] Google Play 출시(v1.0.0) 본진 채택 — 39 SKILL 운영의 클라이언트 진영. **vendor-neutral agentskills.io 표준 + 4계층 토큰 예산**은 [[llm-infra-meta-cluster]] 5축의 [[agent-skills]] 8단계 진화 핵심 사례. [[riverpod]] 상태관리 + [[dart]] 언어 + Skia/Impeller 그래픽.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 모바일·멀티플랫폼 UI 표준. [[matechat|MateChat 사이드 프로젝트]] Google Play 출시(v1.0.0) 본진 채택 — 39 SKILL 운영의 클라이언트 진영. **vendor-neutral agentskills.io 표준 + 4계층 토큰 예산**은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 [[agent-skills]] 8단계 진화 핵심 사례. [[riverpod]] 상태관리 + [[dart]] 언어 + Skia/Impeller 그래픽.
 
 ## 출처
 
@@ -128,7 +128,7 @@ agent-artifacts/.gitignore (AI 산출물 격리)
 
 ## 메모
 
-- 석근의 **개인 비서 AI 모바일 앱** 후보 1순위 — iOS+Android+Web 3 플랫폼 단일 코드베이스. 백엔드 [[backend-python-fastapi]] FastAPI + 프론트 Flutter 조합으로 회사 BI([[c2spf-analytics]]) React 스택과 별개의 개인 프로젝트 스택 형성 가능
+- 석근의 **개인 비서 AI 모바일 앱** 후보 1순위 — iOS+Android+Web 3 플랫폼 단일 코드베이스. 백엔드 [[backend-python-fastapi]] FastAPI + 프론트 Flutter 조합으로 회사 BI([[c2spf-analytics|c2spf 게임 데이터 BI]]) React 스택과 별개의 개인 프로젝트 스택 형성 가능
 - Flutter의 `.agents/` 패턴을 llm-wiki 자체에 차용 검토 가치 있음 — 회사 맥북·집 윈도우 양쪽에서 git pull만으로 SKILL 자산 sync
 - "feature-driven, not date-driven" 사상은 BI 운영에도 차용 가능 — 분기 OKR 기반 관행과 충돌하지만, 품질 우선 원칙으로 일부 핵심 지표에는 적용 가능
 - 후속 탐구: (a) Flutter `examples/` 단순 앱 1개로 위키 페이지 시각화 PoC, (b) `dart_skills_lint` 소스 1회독, (c) Cupertino vs Material 선택 기준 정리

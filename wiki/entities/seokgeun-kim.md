@@ -20,7 +20,7 @@ updated: 2026-04-29
 # 김석근 (Seokgeun Kim)
 
 > [!info] 1축 hub — 개인 정체성
-> 9년차 백엔드/풀스택 + 게임 데이터 BI 개발자. 4개 강점축([[backend-python-fastapi]] · [[data-pipeline-bigquery]] · [[ml-ai]] · [[blockchain-xpla]])과 [[matechat]] 사이드 사업화를 동시 운영. 2026 운영 프레임은 [[seokgeun-operating-profile-2026]], 9년 커리어 의사결정 지도는 [[portfolio]], 32 OSS 카탈로그는 [[seokgeun-stack-guide]].
+> 9년차 백엔드/풀스택 + 게임 데이터 BI 개발자. 4개 강점축([[backend-python-fastapi]] · [[data-pipeline-bigquery]] · [[ml-ai]] · [[blockchain-xpla]])과 [[matechat|MateChat 사이드 프로젝트]] 사이드 사업화를 동시 운영. 2026 운영 프레임은 [[seokgeun-operating-profile-2026]], 9년 커리어 의사결정 지도는 [[portfolio]], 32 OSS 카탈로그는 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]].
 
 ## 개요
 
@@ -61,8 +61,8 @@ updated: 2026-04-29
 
 ## 관련 엔티티/개념
 
-- [[com2us-platform]] — 현 재직 회사
-- [[c2spf-analytics]] — 주된 업무 시스템
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 현 재직 회사
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 주된 업무 시스템
 - [[xpla-platform]] — 블록체인 통합 플랫폼 (NFT 마켓에서 XPLA로 이어짐)
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]] — 주요 기술 영역
 

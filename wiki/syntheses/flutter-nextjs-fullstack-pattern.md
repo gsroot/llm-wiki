@@ -163,7 +163,7 @@ Flutter (모바일) + Next.js (웹) + 공통 FastAPI 백엔드
 
 기존 통합:
 - [[flutter-flutter]] (20회차) — Flutter 진영 호스트
-- [[matechat]] (17~18회차) — Riverpod 실증 프로젝트
+- [[matechat|MateChat 사이드 프로젝트]] (17~18회차) — Riverpod 실증 프로젝트
 
 ## 21회차 종합 (observability-and-cicd-stack)과의 연결
 
@@ -171,6 +171,6 @@ Flutter (모바일) + Next.js (웹) + 공통 FastAPI 백엔드
 
 ## 미래 작업
 
-1. **Plan 21회차 마무리**: [[seokgeun-stack-guide]] 작성 시 22회차 5개 도구가 React/Flutter 진영의 핵심 카탈로그로 들어감.
+1. **Plan 21회차 마무리**: [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 작성 시 22회차 5개 도구가 React/Flutter 진영의 핵심 카탈로그로 들어감.
 2. **점검 (Lint)**: 위키 깨진 링크 검증 — `[[frontend-flutter-stack]]`, `[[frontend-react-stack]]`, `[[poimandres]]`, `[[radix-ui]]`, `[[tailwindcss]]`, `[[turbopack]]`, `[[tanstack]]` 등이 stub 또는 본 종합 페이지로 redirect 필요.
 3. **AGENTS.md 12단계 추적**: Vercel의 다른 OSS (turbo, swr 등)에 `$skill` 인덱싱 + LLM PR 마커 확산 여부 모니터링.

@@ -100,4 +100,4 @@ confidence: high
 
 - 17회차 ML 클래식 + LLM 인프라 수집의 첫 번째.
 - 석근님 BI 워크로드 적용 가능성: 게임 사용자 LTV 예측, 매출 forecasting, churn prediction → LightGBM이 표준. [[scikit-learn]] Pipeline + LightGBM 통합이 흔한 패턴.
-- "Microsoft 졸업" 사건은 [[c2spf-analytics]]에서 미래 OSS 의존성을 평가할 때 참고: 회사 소속 OSS가 졸업할 가능성을 고려해야 함.
+- "Microsoft 졸업" 사건은 [[c2spf-analytics|c2spf 게임 데이터 BI]]에서 미래 OSS 의존성을 평가할 때 참고: 회사 소속 OSS가 졸업할 가능성을 고려해야 함.

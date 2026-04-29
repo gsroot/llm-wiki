@@ -111,7 +111,7 @@ result = pai.chat([sales, users], "Which user segment spent the most this quarte
 > "Chat with your database or your datalake (SQL, CSV, parquet) — pandas DataFrame에 .chat('질문') 메서드를 추가하는 어댑터. LiteLLM으로 다중 모델 지원."
 > — [[sinaptik-ai-pandas-ai]] 한줄 요약
 
-[[seokgeun-stack-guide]] BI 자연어 인터페이스 영역. [[c2spf-analytics]] BigQuery 기반 분석에서 비개발자 셀프서비스 후보 (df.chat 패턴). [[matechat]] 채팅 분석 모듈에서 BigQuery 결과 자연어 질의 후보. [[pandas]] 본진 + [[langchain]] 위에 빌드. NL2SQL의 사실상 표준이자 [[llm-infra-meta-cluster]] 5축의 BI ↔ LLM 브리지 사례.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] BI 자연어 인터페이스 영역. [[c2spf-analytics|c2spf 게임 데이터 BI]] BigQuery 기반 분석에서 비개발자 셀프서비스 후보 (df.chat 패턴). [[matechat|MateChat 사이드 프로젝트]] 채팅 분석 모듈에서 BigQuery 결과 자연어 질의 후보. [[pandas]] 본진 + [[langchain]] 위에 빌드. NL2SQL의 사실상 표준이자 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 BI ↔ LLM 브리지 사례.
 
 ## 출처
 

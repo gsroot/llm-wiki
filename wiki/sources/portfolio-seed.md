@@ -45,9 +45,9 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[seokgeun-kim]] — 이 문서의 저자이자 주체
-- [[com2us-platform]] — 현 재직 회사, 대부분의 경력 프로젝트 소속
-- [[c2spf-analytics]] — 게임 데이터 BI 서비스
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 이 문서의 저자이자 주체
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 현 재직 회사, 대부분의 경력 프로젝트 소속
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 게임 데이터 BI 서비스
 - [[xpla-platform]] — 블록체인 플랫폼
 - [[backend-python-fastapi]] — 주력 백엔드 스택
 - [[frontend-react]] — 2025 리뉴얼로 표준화

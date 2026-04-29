@@ -58,4 +58,4 @@ updated: 2026-04-29
 ## 메모
 
 - 25회차 stub 사유: 23회차 점검에서 `[[sqlite]]` 깨진 링크 발견. 29회차에 DuckDB/SQLAlchemy/Alembic source 기반으로 1차 보강.
-- 본 위키에서 SQLite 본격 페이지가 부재하지만, [[duckdb]] / [[matechat]] (Flutter Hive 사용) / [[backend-fastapi-stack]] 운영 시 PostgreSQL 부재 환경의 대안으로 자주 호출됨.
+- 본 위키에서 SQLite 본격 페이지가 부재하지만, [[duckdb]] / [[matechat|MateChat 사이드 프로젝트]] (Flutter Hive 사용) / [[backend-fastapi-stack]] 운영 시 PostgreSQL 부재 환경의 대안으로 자주 호출됨.

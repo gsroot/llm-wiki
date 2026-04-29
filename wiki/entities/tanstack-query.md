@@ -49,7 +49,7 @@ tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 
 > "비동기/서버 상태 관리를 위한 React Query 후속작. 49.2K stars · MIT · 멀티 프레임워크(React/Solid/Svelte/Vue/Angular) 지원하며 TanStack 에코시스템 12개 패키지 중 핵심."
 > — [[tanstack-tanstack-query]] 한줄 요약
 
-[[seokgeun-stack-guide]] React 진영 서버 상태 축. [[zustand]](클라이언트 상태)와 듀얼 채택. SSR/Hydration 시 [[nextjs]]와 결합. [[c2spf-analytics]] React 리뉴얼(2025) BI 대시보드의 BigQuery 비동기 쿼리·캐싱 적용 후보. [[matechat]] 사이드는 Flutter 진영이라 동등 위치 [[riverpod]] 채택. [[llm-infra-meta-cluster]] 5축의 클라이언트 캐싱 패턴 사례 — durable execution(LangGraph)과 다른 stateless caching 모델.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] React 진영 서버 상태 축. [[zustand]](클라이언트 상태)와 듀얼 채택. SSR/Hydration 시 [[nextjs]]와 결합. [[c2spf-analytics|c2spf 게임 데이터 BI]] React 리뉴얼(2025) BI 대시보드의 BigQuery 비동기 쿼리·캐싱 적용 후보. [[matechat|MateChat 사이드 프로젝트]] 사이드는 Flutter 진영이라 동등 위치 [[riverpod]] 채택. [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 클라이언트 캐싱 패턴 사례 — durable execution(LangGraph)과 다른 stateless caching 모델.
 
 ## 출처
 

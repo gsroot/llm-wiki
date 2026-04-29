@@ -83,7 +83,7 @@ MateChat은 **출시 직전 QA 단계**다. 한때 프로젝트 위키 일부 ra
 
 MateChat 프로젝트 위키는 이미 프로젝트 내부 실행 지식으로 충분히 크고 세부적이다. `llm-wiki`는 이를 원천 스냅샷으로 보존하고, MateChat이 석근의 사업화·가족 시간·AI 협업 전략에서 어떤 결정을 요구하는지 정리하는 상위 레이어로 남기는 것이 맞다.
 
-앞으로 MateChat 관련 질문을 받을 때는 먼저 [[matechat]]과 이 지도를 보고, 세부 구현이 필요하면 [[mate-chat-project-wiki-2026]]의 `raw_path` 아래 프로젝트 위키 스냅샷으로 내려간다.
+앞으로 MateChat 관련 질문을 받을 때는 먼저 [[matechat|MateChat 사이드 프로젝트]]과 이 지도를 보고, 세부 구현이 필요하면 [[mate-chat-project-wiki-2026]]의 `raw_path` 아래 프로젝트 위키 스냅샷으로 내려간다.
 
 ## 열린 질문
 

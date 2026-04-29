@@ -97,7 +97,7 @@ Python 생태계는 역사적으로 도구가 분산되어 있었다 (pip, virtu
 
 ## 메모
 
-- **위키 자기 적용**: [[seokgeun-kim]]의 회사 BI [[c2spf-analytics]] 마이그레이션 후보로 강력 — FastAPI + Python 13 환경에서 uv 도입은 CI 시간 단축, lockfile universal로 macOS↔Linux↔Docker 일관성 확보 가능.
+- **위키 자기 적용**: [[seokgeun-kim|석근 (이 위키 owner)]]의 회사 BI [[c2spf-analytics|c2spf 게임 데이터 BI]] 마이그레이션 후보로 강력 — FastAPI + Python 13 환경에서 uv 도입은 CI 시간 단축, lockfile universal로 macOS↔Linux↔Docker 일관성 확보 가능.
 - **3제품 묶음 학습**: 위키 효율성을 위해 ruff/ty도 향후 수집 시 이 페이지에 통합 업데이트하는 패턴 채택. ruff는 별도 source 페이지로, ty는 preview 단계라 보류.
 - **후속 후보**:
   - `entities/ruff.md` — 별도 엔티티 (소스 수집 후)

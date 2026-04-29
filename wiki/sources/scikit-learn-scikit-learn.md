@@ -20,7 +20,7 @@ confidence: high
 
 ## 한줄 요약
 
-> 2007년 GSoC 프로젝트로 시작해 19년간 한 가지 API 컨트랙트(`fit`/`predict`/`transform`)를 지키며 Python 데이터 과학 스택의 "공식 베이스"로 자리잡은 라이브러리. 의도적으로 딥러닝/RL/구조적 학습을 회피하고 "직사각형 데이터(rectangular data) 위의 정통 ML"에 범위를 잠근 결정 — 그리고 그 잠금이 [[microsoft-ml-for-beginners]] 같은 입문 커리큘럼부터 [[c2spf-analytics]] BI 분석까지 모든 층의 표준 도구가 된 이유.
+> 2007년 GSoC 프로젝트로 시작해 19년간 한 가지 API 컨트랙트(`fit`/`predict`/`transform`)를 지키며 Python 데이터 과학 스택의 "공식 베이스"로 자리잡은 라이브러리. 의도적으로 딥러닝/RL/구조적 학습을 회피하고 "직사각형 데이터(rectangular data) 위의 정통 ML"에 범위를 잠근 결정 — 그리고 그 잠금이 [[microsoft-ml-for-beginners]] 같은 입문 커리큘럼부터 [[c2spf-analytics|c2spf 게임 데이터 BI]] BI 분석까지 모든 층의 표준 도구가 된 이유.
 
 ## 메타
 

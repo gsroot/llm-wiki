@@ -84,4 +84,4 @@ updated: 2026-04-24
 - [[c2spf-xpla-platform]] — XPLA 시스템 설계 리드
 - [[c2spf-analytics-common]] — 표준 정립자 변곡점 (가이드 4종)
 - [[c2spf-analytics-renewal]] — 팀 최초 React 도입
-- [[seokgeun-kim]] — 본인 엔티티
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 본인 엔티티

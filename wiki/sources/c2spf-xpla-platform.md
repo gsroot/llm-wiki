@@ -45,9 +45,9 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[com2us-platform]] — 소속 조직
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 소속 조직
 - [[xpla-platform]] — 이 프로젝트로 구축된 플랫폼 엔티티
-- [[seokgeun-kim]] — 담당자 (시스템 설계 리드)
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 담당자 (시스템 설계 리드)
 - [[blockchain-xpla]] — XPLA 생태계 개념
 
 ## 메모

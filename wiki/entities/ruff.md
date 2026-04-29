@@ -97,7 +97,7 @@ Apache Airflow, Apache Superset, FastAPI, Hugging Face, Pandas, SciPy, Zulip, da
 > "Astral의 Python 도구 3제품(uv·ruff·ty) 중 첫 번째이자 ★47K Rust 단일 바이너리로 Flake8/Black/isort/pydocstyle/pyupgrade/autoflake 등 7개 이상 도구를 10~100배 빠르게 통합하고, 같은 회사의 uv(10회차 수집)와 동일한 CLAUDE.md = @AGENTS.md 1줄 import 패턴을 채택."
 > — [[astral-sh-ruff]] 한줄 요약
 
-[[seokgeun-stack-guide]] Python 개발 도구 영역. [[uv]](Astral 1번 도구)와 함께 [[matechat]]·[[c2spf-analytics]] 양쪽 표준화 후보. **회사 차원 표준화**(Astral) 거버넌스 모델은 [[bdfl]]·[[pdep]] 등과 함께 [[llm-infra-meta-cluster]] 5축의 OSS 거버넌스 카탈로그 9번째 모델로 등록. 차세대 ty 타입 체커 동일 저장소.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] Python 개발 도구 영역. [[uv]](Astral 1번 도구)와 함께 [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]] 양쪽 표준화 후보. **회사 차원 표준화**(Astral) 거버넌스 모델은 [[bdfl]]·[[pdep]] 등과 함께 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 OSS 거버넌스 카탈로그 9번째 모델로 등록. 차세대 ty 타입 체커 동일 저장소.
 
 ## 출처
 

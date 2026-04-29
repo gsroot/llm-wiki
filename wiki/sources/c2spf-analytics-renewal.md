@@ -67,8 +67,8 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[c2spf-analytics]] — 서비스 본체
-- [[com2us-platform]] · [[seokgeun-kim]]
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 서비스 본체
+- [[com2us-platform|컴투스플랫폼 c2spf]] · [[seokgeun-kim|석근 (이 위키 owner)]]
 - [[frontend-react]] — Vite + TS + TanStack + Zustand + ag-grid 표준화
 - [[backend-python-fastapi]] — 공통 API 확장
 - [[data-pipeline-bigquery]] — Airbridge MMP × BigQuery 결합

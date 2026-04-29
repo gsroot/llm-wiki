@@ -180,7 +180,7 @@ description: FastAPI best practices and conventions. Use when working with FastA
 - [[anthropics-skills]] — 표준 정의처. fastapi가 표준을 그대로 채택.
 - [[github-spec-kit]] — Codex Skills 모드(도구 통합 사례)와 fastapi(라이브러리 사례)의 짝.
 - [[backend-python-fastapi]] — 석근의 c2spf 애널리틱스 공통 API 운영 맥락. Pydantic v2 / `def` 기본 / `Annotated` 컨벤션 시사점이 직접 연결.
-- [[c2spf-analytics]] — `analytics-common-api`(FastAPI) 92% 단독 유지보수 — 이 위키의 직접적 운영 컨텍스트.
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — `analytics-common-api`(FastAPI) 92% 단독 유지보수 — 이 위키의 직접적 운영 컨텍스트.
 
 ## 메모
 

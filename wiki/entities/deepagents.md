@@ -98,7 +98,7 @@ result = agent.invoke({"messages": [{"role": "user", "content": "DAU 추세를 �
 > "LangChain Inc.의 opinionated, ready-to-run agent — create_deep_agent() 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 셋업 완료. Claude Code/Cursor와 같은 코딩 에이전트 패턴을 LangGraph 위에 패키징."
 > — [[langchain-ai-deepagents]] 한줄 요약
 
-[[seokgeun-stack-guide]] agent harness 영역. [[langgraph]] 위에 빌드된 batteries-included 모델로 [[claude-code]]·Cursor 패턴을 라이브러리화. [[matechat]]에 통합 시 39 SKILL 운영의 코딩 에이전트 본진 후보. **harness as library** 패턴은 [[llm-infra-meta-cluster]] 5축의 [[harness]] 진화 8단계 사례 — [[crewai]]·[[pydantic-ai]]와 함께 [[agent-frameworks-matrix]]에서 6 프레임워크 비교됨.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] agent harness 영역. [[langgraph]] 위에 빌드된 batteries-included 모델로 [[claude-code]]·Cursor 패턴을 라이브러리화. [[matechat|MateChat 사이드 프로젝트]]에 통합 시 39 SKILL 운영의 코딩 에이전트 본진 후보. **harness as library** 패턴은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 [[harness]] 진화 8단계 사례 — [[crewai]]·[[pydantic-ai]]와 함께 [[agent-frameworks-matrix]]에서 6 프레임워크 비교됨.
 
 ## 출처
 

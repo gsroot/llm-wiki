@@ -85,7 +85,7 @@ confidence: high
 - [[microsoft]] / [[microsoft-for-beginners]]
 - [[microsoft-ml-for-beginners]] — 같은 날 출시된 자매 코스. ML 알고리즘 ↔ 데이터과학 라이프사이클로 상호 보완
 - [[data-pipeline-bigquery]] — BigQuery + pandas 조합으로 회사 BI 직접 응용
-- [[c2spf-analytics]] — 컴투스플랫폼 BI 서비스의 라이프사이클과 매핑 가능
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 컴투스플랫폼 BI 서비스의 라이프사이클과 매핑 가능
 - [[ml-ai]] — Azure ML Studio가 회사의 AutoML/LangGraph와 비교 대상
 
 ## 인용

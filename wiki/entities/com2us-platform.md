@@ -22,7 +22,7 @@ updated: 2026-04-24
 
 - **GitHub 조직**: [c2spf](https://github.com/c2spf) — 다수의 분석/플랫폼 레포 운영.
 - **주요 서비스 라인**
-  - **애널리틱스(BI)** — `c2spf/analytics-*` 레포 군. 게임 로그 수집·분석·시각화. → [[c2spf-analytics]]
+  - **애널리틱스(BI)** — `c2spf/analytics-*` 레포 군. 게임 로그 수집·분석·시각화. → [[c2spf-analytics|c2spf 게임 데이터 BI]]
   - **블록체인 플랫폼 (XPLA)** — NFT 마켓·민팅·지갑·트랜잭션 SDK. → [[xpla-platform]]
   - **CODE 트래블룰 API** — 가상자산 거래소 트래블룰 공통 API.
 - **사내 도구**
@@ -34,7 +34,7 @@ updated: 2026-04-24
 
 - [[c2spf-analytics]] — 회사의 핵심 BI 서비스
 - [[xpla-platform]] — 블록체인 통합 플랫폼
-- [[seokgeun-kim]] — 재직자, 위키 소유자
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 재직자, 위키 소유자
 - [[backend-python-fastapi]] · [[devops-cicd]] · [[data-pipeline-bigquery]] · [[blockchain-xpla]] — 회사에서 활용되는 핵심 기술
 
 ## 출처

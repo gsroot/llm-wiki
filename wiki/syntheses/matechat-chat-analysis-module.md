@@ -26,7 +26,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 
 ## 한줄 요약
 
-[[matechat]] 본진(v1.0.0 출시 직전 QA 단계) 외에 석근이 운영 중인 **3개 형제 분석 프로젝트**(`mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate`)와 메모리 컨텍스트(2026-04-27 S442/S443)에 박혀있는 **7가지 채팅 분석 축 + BigQuery 파이프라인** 설계 메모를 한 페이지로 통합. 회사 BI([[c2spf-analytics]]) 게임 데이터 분석에 직접 적용 가능한 패턴 정리.
+[[matechat|MateChat 사이드 프로젝트]] 본진(v1.0.0 출시 직전 QA 단계) 외에 석근이 운영 중인 **3개 형제 분석 프로젝트**(`mate-katok-analysis-backend` + `mate-katok-analysis-flutter` + `data-mate`)와 메모리 컨텍스트(2026-04-27 S442/S443)에 박혀있는 **7가지 채팅 분석 축 + BigQuery 파이프라인** 설계 메모를 한 페이지로 통합. 회사 BI([[c2spf-analytics|c2spf 게임 데이터 BI]]) 게임 데이터 분석에 직접 적용 가능한 패턴 정리.
 
 ## 형제 프로젝트 3개 (24회차 발견)
 
@@ -128,7 +128,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 ## 미래 작업
 
 1. **25회차 raw 수집**: 3 형제 프로젝트(mate-katok-analysis-backend / -flutter / data-mate)의 README + pyproject.toml + CLAUDE.md / project-plan.md / notebooks/ 1차 자료 수집. 본 종합 페이지 (a)~(e) 단계의 실제 도구 검증 또는 가설 폐기.
-2. **7축 SQL 템플릿화**: 1·2·4·5번 축의 SQL 뷰 템플릿을 [[seokgeun-stack-guide]]에 "데이터 분석 30분 부트스트랩" 섹션으로 추가.
+2. **7축 SQL 템플릿화**: 1·2·4·5번 축의 SQL 뷰 템플릿을 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]에 "데이터 분석 30분 부트스트랩" 섹션으로 추가.
 3. **이탈 예측 (6번 축) 별도 종합**: [[lightgbm]] / [[scikit-learn]] 적용 + 회사 BI 직접 차용 시나리오 분리 — 25~26회차 후보.
 4. **콘텐츠 분류 (7번 축)**: [[pandas-ai]] vs OpenAI 직접 호출 비교, 한국어 한글 토크나이즈 한계 검증.
 5. **Mate Chat 본진과 분석 모듈 통합**: BigQuery로 일배치 적재가 합리적인지 vs 본진 PostgreSQL 안에서 직접 분석이 합리적인지 — DB 부하 vs 분석 자유도 트레이드오프.
@@ -136,7 +136,7 @@ tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-projec
 ## 사용 출처 (24회차)
 
 신규:
-- [[seokgeun-mate-chat]] — 24회차 Mate Chat 본진 1차 수집
+- [[seokgeun-mate-chat|석근 MateChat 본진 raw]] — 24회차 Mate Chat 본진 1차 수집
 
 기존 통합:
 - [[matechat-project-knowledge-map]] (18회차) — Mate Chat 위키 스냅샷

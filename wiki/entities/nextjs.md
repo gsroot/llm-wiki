@@ -64,7 +64,7 @@ Vercel이 만든 React 프레임워크. 22회차에서 `$skill` 인덱싱 + `<!-
 > "Vercel이 만든 React 프레임워크. 22회차에서 22KB짜리 AGENTS.md(=CLAUDE.md symlink)에서 `$skill` 인덱싱 + `<!-- NEXT_JS_LLM_PR -->` HTML 마커 등 **AGENTS.md 12단계 진화의 핵심 변종 2개**를 발견."
 > — [[vercel-next.js]] 한줄 요약
 
-[[seokgeun-stack-guide]] React 진영 풀스택 표준. App Router + Turbopack + SSR/RSC가 [[matechat]]·[[c2spf-analytics]]·[[portfolio]] 양쪽 채택 후보. **AGENTS.md 운영 패턴 학습 자료**로서 [[llm-infra-meta-cluster]] 5축에도 기여 — `$skill` 인덱싱은 [[agent-skills]] 자동 라우팅의 표준화 사례.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] React 진영 풀스택 표준. App Router + Turbopack + SSR/RSC가 [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]]·[[portfolio]] 양쪽 채택 후보. **AGENTS.md 운영 패턴 학습 자료**로서 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축에도 기여 — `$skill` 인덱싱은 [[agent-skills]] 자동 라우팅의 표준화 사례.
 
 ## 출처
 

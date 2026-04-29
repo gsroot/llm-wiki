@@ -88,7 +88,7 @@ MateChat v1.0.0은 **출시 직전 QA 단계**이며, QA 완료 후 Google Play 
 
 ## 관련 엔티티/개념
 
-- [[matechat]]: 이 프로젝트 위키의 대상
+- [[matechat|MateChat 사이드 프로젝트]]: 이 프로젝트 위키의 대상
 - [[matechat-project-knowledge-map]]: 이 스냅샷과 개인 프로필을 함께 해석한 종합 분석
 - [[backend-python-fastapi]]: MateChat 백엔드 스택과 연결
 - [[flutter]]: MateChat 모바일 앱 스택

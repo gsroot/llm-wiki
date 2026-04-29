@@ -35,7 +35,7 @@ verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 
 # 석근 스택 가이드 — 23회차 마무리 종합
 
 > [!info] 3축 hub — 스택 의사결정 트리
-> 32 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩. [[seokgeun-kim]]의 9년 경험과 [[matechat]]·[[c2spf-analytics]] 양 프로젝트에서 검증된 스택만 수록. 새 프로젝트 시작 시 1-hop 진입점. OSS 버전·신규 도구 출현은 `verification_required: true` (33회차).
+> 32 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩. [[seokgeun-kim|석근 (이 위키 owner)]]의 9년 경험과 [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]] 양 프로젝트에서 검증된 스택만 수록. 새 프로젝트 시작 시 1-hop 진입점. OSS 버전·신규 도구 출현은 `verification_required: true` (33회차).
 
 ## 한줄 요약
 
@@ -227,7 +227,7 @@ flutter pub add --dev riverpod_generator build_runner
 
 ## 관련 메타 운영 축
 
-도구 선택 자체는 본 페이지가 담당하지만, LLM과 함께 일하는 운영 방식은 [[llm-infra-meta-cluster]]가 담당한다. 신규 OSS나 프로젝트를 평가할 때는 **본 페이지로 도구 분류 → [[llm-infra-meta-cluster]]로 agent-skills/harness/MCP/거버넌스 모델 위치 확인** 순서가 가장 안정적이다.
+도구 선택 자체는 본 페이지가 담당하지만, LLM과 함께 일하는 운영 방식은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]]가 담당한다. 신규 OSS나 프로젝트를 평가할 때는 **본 페이지로 도구 분류 → [[llm-infra-meta-cluster]]로 agent-skills/harness/MCP/거버넌스 모델 위치 확인** 순서가 가장 안정적이다.
 
 ## 미래 작업
 

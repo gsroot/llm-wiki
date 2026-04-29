@@ -45,9 +45,9 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[com2us-platform]] — 소속 조직
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 소속 조직
 - [[xpla-platform]] — NFT 마켓 후속으로 확장된 블록체인 통합 플랫폼
-- [[seokgeun-kim]] — 프로젝트 담당자
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 프로젝트 담당자
 - [[blockchain-xpla]] — XPLA 생태계, 스마트 컨트랙트 개발 패턴
 
 ## 메모

@@ -34,7 +34,7 @@ Anthropic 자기 정의 (`claude_agent_sdk/README.md`):
 
 = **Claude의 raw agentic power를 위한 bare-metal [[harness]]**. 같은 운영 기법을 코드로 노출하는 자매 도구가 [[claude-agent-sdk]]. 이 위키 자체가 Claude Code를 에이전트로 사용하여 운영되고 있다.
 
-위키 그래프에서는 [[agent-skills]], [[harness]], [[mcp]]와 함께 LLM 인프라 메타 클러스터의 핵심 노드다. 이 네 노드가 어떻게 맞물리는지는 [[llm-infra-meta-cluster]]에서 종합한다.
+위키 그래프에서는 [[agent-skills]], [[harness]], [[mcp]]와 함께 LLM 인프라 메타 클러스터의 핵심 노드다. 이 네 노드가 어떻게 맞물리는지는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]]에서 종합한다.
 
 ## 주요 특징
 

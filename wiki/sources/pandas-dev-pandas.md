@@ -186,7 +186,7 @@ pandas는 2024년경 추가한 `AGENTS.md`에서 AI 코딩 에이전트(Copilot,
 - [[microsoft-ml-for-beginners]]: ARIMA·SVR 강의의 전제 라이브러리
 - [[data-pipeline-bigquery]]: pandas-gbq + bigframes로 BigQuery ↔ pandas 양방향 표준
 - [[ml-ai]]: scikit-learn은 pandas DataFrame을 "first-class citizen"으로 처리, skrub이 다리 역할
-- [[c2spf-analytics]]: 이 데이터 분석 BI 서비스의 백엔드는 사실상 pandas 의존
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: 이 데이터 분석 BI 서비스의 백엔드는 사실상 pandas 의존
 - [[github-spec-kit]]: 사전 합의 메소드론(Constitution) vs pandas의 절차적 의사결정([[pdep|PDEP]]) — 다른 거버넌스 철학
 - [[anthropics-claude-cookbooks]]: Cookbook 패턴은 pandas의 user_guide/cookbook.rst와 같은 가족
 - [[harness]]: pandas의 [[pdep|PDEP]]는 "메타 거버넌스 하네스" — autoresearch(최소)와 spec-kit(최대) 사이의 새로운 좌표

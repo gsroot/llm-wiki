@@ -27,7 +27,7 @@ updated: 2026-04-27
 
 **Vision**: 데이터 분석/조작 소프트웨어가 (1) 누구나 접근 가능 (2) 무료로 사용/수정 가능 (3) 유연 (4) 강력 (5) 사용 쉬움 (6) 빠름.
 
-석근님 [[c2spf-analytics]] BI 직무에서 [[data-pipeline-bigquery]] → DataFrame → 대시보드/통계의 핵심 도구 레이어.
+석근님 [[c2spf-analytics|c2spf 게임 데이터 BI]] BI 직무에서 [[data-pipeline-bigquery]] → DataFrame → 대시보드/통계의 핵심 도구 레이어.
 
 ## 주요 특징
 
@@ -118,7 +118,7 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 > "2008년 AQR 헤지펀드에서 Wes McKinney가 시작 → 2009 OSS → 2015 NumFOCUS 후원 → 2026-04 v3.0 stable. BDFL+Core Team+NumFOCUS Subcommittee 3축 거버넌스, PDEP(Pandas Enhancement Proposal)으로 운영. 150만+ DataFrame, 101개 공개 API. 석근의 BI 직무에서 BigQuery·Airbridge MMP·React 대시보드를 잇는 데이터 핸들링 단일 진실 공급원."
 > — [[pandas-dev-pandas]] 한줄 요약
 
-[[seokgeun-stack-guide]] 데이터 핸들링 본진 + [[c2spf-analytics]] BI 단일 진실 공급원. [[copy-on-write]]·[[bdfl]]·[[pdep]]·[[dataframe]]의 출처 페이지. **3축 거버넌스 + PDEP**는 [[llm-infra-meta-cluster]] 5축의 OSS 거버넌스 카탈로그 7번째 모델. [[polars]]·[[duckdb]]·[[pyarrow]]와 [[dataframe-ecosystem-evolution]] 비교 매트릭스에서 함께 평가됨.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 데이터 핸들링 본진 + [[c2spf-analytics]] BI 단일 진실 공급원. [[copy-on-write]]·[[bdfl]]·[[pdep]]·[[dataframe]]의 출처 페이지. **3축 거버넌스 + PDEP**는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 OSS 거버넌스 카탈로그 7번째 모델. [[polars]]·[[duckdb]]·[[pyarrow]]와 [[dataframe-ecosystem-evolution]] 비교 매트릭스에서 함께 평가됨.
 
 ## 출처
 

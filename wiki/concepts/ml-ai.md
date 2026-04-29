@@ -66,7 +66,7 @@ updated: 2026-04-28
 | **Agent 그래프** | [[langgraph]] | Pregel + Apache Beam + NetworkX 영감, durable execution = 12번째 agent 패턴 |
 | **MCP 표준** | [[fastmcp]] | MCP 서버 70% 점유, 1.0이 공식 SDK 흡수 → 2.0 standalone (OSS 9번째 거버넌스 모델) |
 
-→ ML/AI는 이제 **클래식 ML (sklearn + LightGBM)** + **LLM Agent (LangChain/LangGraph + OpenAI Agents) + MCP (FastMCP)**의 3-layer 스택. [[c2spf-analytics]] 게임 BI에서 chatbot 분석 자동화 시 12번째 패턴 (durable + checkpoint) + Guardrails 3종 + LightGBM (피처 후처리) 합성이 reference.
+→ ML/AI는 이제 **클래식 ML (sklearn + LightGBM)** + **LLM Agent (LangChain/LangGraph + OpenAI Agents) + MCP (FastMCP)**의 3-layer 스택. [[c2spf-analytics|c2spf 게임 데이터 BI]] 게임 BI에서 chatbot 분석 자동화 시 12번째 패턴 (durable + checkpoint) + Guardrails 3종 + LightGBM (피처 후처리) 합성이 reference.
 
 ## 관련 개념
 

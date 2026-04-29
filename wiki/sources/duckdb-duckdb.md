@@ -122,7 +122,7 @@ DuckDB-Wasm은 데이터를 서버로 보내지 않고 브라우저에서 직접
 - [[pandas]]: `duckdb.sql("SELECT * FROM df")` 직접 통합으로 마이그레이션 비용 거의 0
 - [[pyarrow]]: 메모리 표현 표준, DuckDB Python 클라이언트의 zero-copy 다리
 - [[parquet]]: `SELECT * FROM 'file.parquet'`로 직접 쿼리 가능 — 가장 자주 사용되는 입력 포맷
-- [[c2spf-analytics]]: 회사 BI에서 BigQuery 외부 캐시/탐색 도구로 후보
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: 회사 BI에서 BigQuery 외부 캐시/탐색 도구로 후보
 
 ## 인용할 만한 구절
 

@@ -37,7 +37,7 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[seokgeun-kim]] — 이 방법론의 설계자이자 운영자
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 이 방법론의 설계자이자 운영자
 - [[llm-wiki-pattern]] — 동일한 "원천 → 요약 → 종합" 패턴의 일반화
 
 ## 메모

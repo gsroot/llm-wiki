@@ -19,7 +19,7 @@ updated: 2026-04-29
 
 **Event-driven Architecture** = 시스템 컴포넌트가 동기 호출(요청-응답)이 아닌 비동기 이벤트(메시지) 발행·구독으로 통신하는 아키텍처. 컴포넌트 간 시간·공간 결합 해체.
 
-본 페이지는 **stub** — 16회차 [[kafka]] / 24회차 [[matechat]] WebSocket Pub/Sub 등에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — 16회차 [[kafka]] / 24회차 [[matechat|MateChat 사이드 프로젝트]] WebSocket Pub/Sub 등에서 인용되므로 정합성 stub.
 
 ## 핵심 패턴 3가지
 
@@ -54,7 +54,7 @@ updated: 2026-04-29
 
 - [[apache-kafka]] — 분산 이벤트 로그와 replay 가능한 메시징 백본
 - [[redis-redis]] — Pub/Sub과 Streams 기반 경량 이벤트 처리
-- [[seokgeun-mate-chat]] — MateChat WebSocket/Redis PubSub 실증
+- [[seokgeun-mate-chat|석근 MateChat 본진 raw]] — MateChat WebSocket/Redis PubSub 실증
 - [[getsentry-sentry]] — 이벤트 수집 → 이슈/알림으로 이어지는 운영 EDA 변종
 
 ## 메모

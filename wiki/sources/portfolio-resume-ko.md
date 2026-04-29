@@ -42,9 +42,9 @@ confidence: high
 
 ## 관련 엔티티/개념
 
-- [[seokgeun-kim]] — 이력서 본인
-- [[com2us-platform]] — 현 재직 회사
-- [[c2spf-analytics]] — 공통 API·React 리뉴얼 주도 대상
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 이력서 본인
+- [[com2us-platform|컴투스플랫폼 c2spf]] — 현 재직 회사
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — 공통 API·React 리뉴얼 주도 대상
 - [[xpla-platform]] — NFT 마켓·XPLA 블록체인 플랫폼
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]]
 

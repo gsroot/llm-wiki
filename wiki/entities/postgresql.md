@@ -98,7 +98,7 @@ GitHub은 단순 미러 — PR 받지 않음. **agent-skills 모던파의 정반
 > "30년차 ★20.7K 객체-관계형 DBMS의 사실상 표준. GitHub은 미러일 뿐 — 실제 개발은 메일링 리스트(pgsql-hackers)와 자체 git + 패치 제출은 Pull Request를 받지 않는 보수적 거버넌스. 본 위키에서 처음 다루는 'OSS 거버넌스의 정반대 극단' 사례 (메일링 리스트 + 1980년대식 패치 워크플로우 + 30년 안정성)."
 > — [[postgres-postgres]] 한줄 요약
 
-[[seokgeun-stack-guide]] Python 백엔드 5단([[fastapi]] + [[pydantic]] + [[sqlalchemy]] + [[alembic]] + postgresql + [[redis]])의 데이터베이스 본진. [[matechat]]·[[c2spf-analytics]] 양쪽 채택. **메일링 리스트 거버넌스 + Pull Request 부재**는 [[llm-infra-meta-cluster]] 5축의 OSS 거버넌스 카탈로그 중 가장 보수적 모델 — [[bdfl]]·NumFOCUS·Astral 회사 표준화·CNCF 등과 함께 거버넌스 다양성을 보여주는 극단 사례.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] Python 백엔드 5단([[fastapi]] + [[pydantic]] + [[sqlalchemy]] + [[alembic]] + postgresql + [[redis]])의 데이터베이스 본진. [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]] 양쪽 채택. **메일링 리스트 거버넌스 + Pull Request 부재**는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 OSS 거버넌스 카탈로그 중 가장 보수적 모델 — [[bdfl]]·NumFOCUS·Astral 회사 표준화·CNCF 등과 함께 거버넌스 다양성을 보여주는 극단 사례.
 
 ## 출처
 

@@ -41,7 +41,7 @@ Flutter 공식 Favorite 패키지로 인정받은 reactive caching + dependency 
 
 - [[riverpod]] — 본 도구
 - [[flutter]] — 호스트 프레임워크
-- [[matechat]] — Riverpod 기반 사이드 프로젝트
+- [[matechat|MateChat 사이드 프로젝트]] — Riverpod 기반 사이드 프로젝트
 - [[agent-skills]] — AGENTS.md 미채택 사례 12단계 진화
 - [[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]] — Flutter 진영 표준 상태관리
 

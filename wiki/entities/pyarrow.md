@@ -121,7 +121,7 @@ IPC = "임시 빠른 직렬화", Parquet = "영구 효율 저장". 둘 다 PyArr
 - [[lazy-evaluation]]: PyArrow Datasets API가 lazy scan 제공
 - [[dataframe]]: PyArrow Table은 DataFrame의 일반화 (컬럼 추상)
 - [[ml-ai]]: ML 피처 저장소 표준 — Tecton/Feast가 Arrow 위에 빌드
-- [[c2spf-analytics]]: BigQuery storage API + PyArrow zero-copy 패턴이 표준
+- [[c2spf-analytics|c2spf 게임 데이터 BI]]: BigQuery storage API + PyArrow zero-copy 패턴이 표준
 
 ## 관련 엔티티
 
@@ -138,7 +138,7 @@ IPC = "임시 빠른 직렬화", Parquet = "영구 효율 저장". 둘 다 PyArr
 > "Apache Arrow는 언어 횡단 인메모리 컬럼 포맷 표준. 둘이 합쳐 '디스크 → 메모리 → 네트워크'의 모든 데이터 이동에서 zero-copy 보장 — 2010년대 데이터 인프라의 가장 성공적인 표준화 프로젝트."
 > — [[apache-arrow]] 한줄 요약
 
-[[seokgeun-stack-guide]] 컬럼 데이터 인메모리 표준. [[c2spf-analytics]] BigQuery → pandas/polars 변환 시 zero-copy 백엔드. **언어 횡단 표준**(11+ 언어)은 [[llm-infra-meta-cluster]] 5축의 ASF PMC 거버넌스 사례 — [[pandas]]·[[polars]]·[[duckdb]] 모두 디폴트 백엔드 채택. [[parquet]]과 함께 인메모리/온디스크 컬럼 표준 짝.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] 컬럼 데이터 인메모리 표준. [[c2spf-analytics]] BigQuery → pandas/polars 변환 시 zero-copy 백엔드. **언어 횡단 표준**(11+ 언어)은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 ASF PMC 거버넌스 사례 — [[pandas]]·[[polars]]·[[duckdb]] 모두 디폴트 백엔드 채택. [[parquet]]과 함께 인메모리/온디스크 컬럼 표준 짝.
 
 ## 출처
 

@@ -27,7 +27,7 @@ updated: 2026-04-29
 
 2026년 봄 시점, LLM 에이전트 시대의 운영 표준은 **세 가지 다른 추상화 레이어**로 결정화되고 있다. **Microsoft는 "단일 운영체계"**(co-op-translator GitHub Action·ff-quizzes·Foundry Discord 한 묶음으로 5 시리즈 통합 운영), **Anthropic은 "표준-구현 분리"**(`agentskills.io` 표준 ↔ `anthropics/skills` 구현 ↔ `anthropics/claude-cookbooks` 실습), **Karpathy는 "minimal harness"**(`program.md` 한 장 + 시간 예산 + `val_bpb` 단일 메트릭). 같은 시대의 같은 도구를 쓰면서도 **무엇을 표준으로 박고 무엇을 자유롭게 두는가**의 결정이 정반대다. 회사 BI/개인 비서를 만들 때 이 3축의 어느 위치를 잡느냐가 가장 큰 설계 결정이 된다.
 
-이 페이지가 에이전트 스택의 시간순 진화를 설명한다면, [[llm-infra-meta-cluster]]는 그 진화에서 반복 등장한 [[agent-skills]] / [[harness]] / [[mcp]] / [[claude-code]] 4개 메타 노드를 묶은 상위 지도다. RAG 질의에서 "내 위키의 숨은 5번째 축"이나 "LLM 협업 운영 패턴"을 물으면 [[llm-infra-meta-cluster]]를 먼저 본다.
+이 페이지가 에이전트 스택의 시간순 진화를 설명한다면, [[llm-infra-meta-cluster|LLM 인프라 메타 5축]]는 그 진화에서 반복 등장한 [[agent-skills]] / [[harness]] / [[mcp]] / [[claude-code]] 4개 메타 노드를 묶은 상위 지도다. RAG 질의에서 "내 위키의 숨은 5번째 축"이나 "LLM 협업 운영 패턴"을 물으면 [[llm-infra-meta-cluster]]를 먼저 본다.
 
 ## 배경
 

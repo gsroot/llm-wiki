@@ -22,7 +22,7 @@ tags: [matechat, validation, kpi, release-checklist, competitive-analysis, reven
 
 ## 한줄 요약
 
-24회차 [[seokgeun-mate-chat]]이 코드·메타·SOP 1차 자료였다면, 본 26회차 source는 **MateChat의 사용자 검증 가설·출시 체크리스트·경쟁 포지셔닝·매출 예측·북극성 비전** 6개 docs(3,641줄)를 모은 **사업화·검증 1차 자료**. codex 평가 보고서 5번 권고("MateChat 실제 사용자 검증 로그를 새 source로 추가") 직접 응답.
+24회차 [[seokgeun-mate-chat|석근 MateChat 본진 raw]]이 코드·메타·SOP 1차 자료였다면, 본 26회차 source는 **MateChat의 사용자 검증 가설·출시 체크리스트·경쟁 포지셔닝·매출 예측·북극성 비전** 6개 docs(3,641줄)를 모은 **사업화·검증 1차 자료**. codex 평가 보고서 5번 권고("MateChat 실제 사용자 검증 로그를 새 source로 추가") 직접 응답.
 
 ## 수집 대상 6 docs
 
@@ -46,7 +46,7 @@ tags: [matechat, validation, kpi, release-checklist, competitive-analysis, reven
 - **3년 후 Future-Fit Thesis**: AI 의존도가 폭증할수록 "AI → 사람" 다리가 더 필요해진다는 가설
 - **이번 분기 Wedge**: Approach A를 1명에게 깊이 검증
 
-→ [[matechat]] entity 개요와 일치하지만 본 docs는 **검증 가설의 1차 원문**.
+→ [[matechat|MateChat 사이드 프로젝트]] entity 개요와 일치하지만 본 docs는 **검증 가설의 1차 원문**.
 
 ### 2. 글로벌 출시 진단 (`26-global-launch-readiness.md`) — 4단계 평가
 
@@ -139,7 +139,7 @@ CRITICAL / HIGH / MEDIUM / OK로 출시 차단 / 품질 / UX / 완료 영역 분
 - [[seokgeun-operating-profile-2026]] — KPI·운영 계획의 텍스트판
 - [[matechat-project-knowledge-map]] — 18회차 wiki 스냅샷 종합 (보완)
 - [[matechat-chat-analysis-module]] — 24회차 분석 모듈 종합 (가설)
-- [[seokgeun-stack-guide]] — 권장 스택의 검증 사례
+- [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] — 권장 스택의 검증 사례
 
 ## 인용할 만한 구절
 

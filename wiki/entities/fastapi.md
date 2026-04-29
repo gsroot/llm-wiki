@@ -96,7 +96,7 @@ updated: 2026-04-28
 - [[backend-python-fastapi]] — 석근의 백엔드 스택 운영 맥락(c2spf 애널리틱스 공통 API)
 - [[agent-skills]] — fastapi가 self-hosted SKILL.md를 출하한 첫 라이브러리. 표준의 OSS 침투 증거.
 - [[anthropics-skills]] — fastapi가 채택한 표준 정의처
-- [[c2spf-analytics]] — fastapi 92% 단독 유지보수 코드베이스
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — fastapi 92% 단독 유지보수 코드베이스
 - [[github-spec-kit]] — Codex Skills 모드(외부 통합 사례)와 fastapi(라이브러리 self-hosted 사례)의 짝
 - [[mcp]] / [[harness]] — fastapi가 ASGI 위에서 에이전트 백엔드(MCP 서버, 하네스)로 자주 사용됨
 
@@ -105,7 +105,7 @@ updated: 2026-04-28
 > "OpenAPI · JSON Schema · OAuth2 표준을 1급 시민으로 두고 Python 타입힌트를 입력으로 삼는 웹 프레임워크. v0.136.1 기준 자체 .agents/skills/fastapi/SKILL.md를 번들링하여 메인스트림 OSS가 LLM 에이전트에게 자기 사용법을 가르치는 첫 사례를 남겼다."
 > — [[fastapi-fastapi]] 한줄 요약
 
-[[seokgeun-stack-guide]] Python 백엔드 5단의 진입축. [[matechat]] backend + [[c2spf-analytics]] 본진 양쪽 채택 ([[seokgeun-kim]]의 표준 선호 스택). **번들된 SKILL.md** 패턴은 [[llm-infra-meta-cluster]] 5축의 vendor-neutral [[agent-skills]] 채택 첫 사례 — 라이브러리 자체가 LLM 협업을 1급으로 다루는 거버넌스 신호.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] Python 백엔드 5단의 진입축. [[matechat|MateChat 사이드 프로젝트]] backend + [[c2spf-analytics]] 본진 양쪽 채택 ([[seokgeun-kim|석근 (이 위키 owner)]]의 표준 선호 스택). **번들된 SKILL.md** 패턴은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 vendor-neutral [[agent-skills]] 채택 첫 사례 — 라이브러리 자체가 LLM 협업을 1급으로 다루는 거버넌스 신호.
 
 ## 출처
 

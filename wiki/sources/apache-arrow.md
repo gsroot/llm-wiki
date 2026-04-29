@@ -145,5 +145,5 @@ Arrow를 채택한 도구는 자동으로 모든 다른 Arrow 도구와 호환. 
 - **arrow-rs / arrow-go 별도 저장소**: 단일 ASF 우산 아래지만 monorepo split — 16회차에서는 본 저장소만 수집, 향후 별도 수집 후보
 - **Flight SQL = ADBC 백본**: Snowflake/BigQuery가 Flight SQL 채택 검토 진행 중. 채택 시 데이터 웨어하우스 ↔ 분석 도구 lock-in 추가 감소
 - **Gandiva**: LLVM JIT 컴파일러 — DuckDB의 vectorized executor와 다른 접근. Arrow 위에서 표현식을 JIT.
-- **회사 BI**: [[c2spf-analytics]] BigQuery 결과를 Arrow IPC로 받아 Polars/DuckDB로 추가 분석하는 워크플로우 가능. ADBC 드라이버 채택 시 자동 활성화
+- **회사 BI**: [[c2spf-analytics|c2spf 게임 데이터 BI]] BigQuery 결과를 Arrow IPC로 받아 Polars/DuckDB로 추가 분석하는 워크플로우 가능. ADBC 드라이버 채택 시 자동 활성화
 - **Wes McKinney**: pandas → Apache Arrow → Voltron Data로 이어진 커리어. DataFrame 추상의 "재발명자"

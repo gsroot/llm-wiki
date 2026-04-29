@@ -73,7 +73,7 @@ Grafana 모노레포 구조:
 > "Grafana는 메트릭/로그/트레이스를 한 화면에서 다루는 통합 시각화 플랫폼이며, 19회차에서 발견된 9단계 AGENTS.md 진화의 핵심 사례 — **계층화 AGENTS.md(루트 + 디렉토리별)** + **`@AGENTS.md` 한 줄짜리 CLAUDE.md(SSOT redirect)** 패턴."
 > — [[grafana-grafana]] 한줄 요약
 
-[[seokgeun-stack-guide]] DevOps 5단 4단. [[prometheus]](메트릭) + Loki(로그)·Tempo(트레이스, 별도 entity 미생성)을 한 dashboard로 통합. **계층화 AGENTS.md** 패턴은 [[matechat]] 39 SKILL 운영의 directory-scoped scope 통제와 직접 연결 — [[agent-skills]] progressive disclosure의 동등 패턴.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] DevOps 5단 4단. [[prometheus]](메트릭) + Loki(로그)·Tempo(트레이스, 별도 entity 미생성)을 한 dashboard로 통합. **계층화 AGENTS.md** 패턴은 [[matechat|MateChat 사이드 프로젝트]] 39 SKILL 운영의 directory-scoped scope 통제와 직접 연결 — [[agent-skills]] progressive disclosure의 동등 패턴.
 
 ## 출처
 

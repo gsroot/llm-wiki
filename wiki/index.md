@@ -19,9 +19,9 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 - 총 페이지 수: 189
 - 소스 요약: 65
-- 엔티티: 76 (mate-chat은 [[matechat]]로 redirect)
+- 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
 - 개념: 31
-- 종합 분석: 15 (28회차: [[llm-infra-meta-cluster]] / 33회차 신규: [[portfolio]])
+- 종합 분석: 15 (28회차: [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 신규: [[portfolio]])
 
 ---
 
@@ -31,10 +31,10 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 | # | 축 | 핵심 hub 페이지 | 인바운드 합산 | 역할 |
 |---|---|---|---:|---|
-| 1 | 개인 프로필 | [[seokgeun-kim]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] | 103 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
-| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[c2spf-analytics]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 237 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
-| 3 | 스택 가이드 | [[seokgeun-stack-guide]] | 122 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
-| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 157 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
+| 1 | 개인 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] | 103 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
+| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 237 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
+| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 122 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
+| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat|석근 MateChat 본진 raw]] · [[seokgeun-matechat-validation]] · [[matechat-project-knowledge-map]] | 157 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
 | 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 535 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer (43회차: 47.9% → 46.6% 편중 완화) |
 
 > **읽기 순서 가이드**: (1) 5축 식별 → 본 표 / (2) 본인 정체성 → [[seokgeun-operating-profile-2026]] / (3) 기술 의사결정 → [[seokgeun-stack-guide]] / (4) 메타 인식 → [[llm-infra-meta-cluster]]
@@ -163,7 +163,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[seokgeun-kim]] | 김석근 (Seokgeun Kim) | person | 석근, owner, 백엔드, 풀스택, BI, matechat | 8 | 2026-04-28 |
 | [[matechat]] | MateChat (canonical) — v1.0.0 출시 직전 QA 단계 + 39 SKILL (자작 11 + 외부 28) + 위키 발견 종합 실증 | project | matechat, mate-chat, 메이트챗, AI, social, fastapi, flutter, riverpod, openai, websocket, iap, clover, sentry, prometheus, agent-skills, gstack, v1.0.0, project-wiki, 24회차, 26회차, 28회차, 44회차 | 6 | 2026-04-29 |
 | [[mate-chat]] | (redirect → [[matechat]]) | redirect | redirect, alias, matechat | 0 | 2026-04-28 |
-| [[com2us-platform]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
+| [[com2us-platform|컴투스플랫폼 c2spf]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
 | [[c2spf-analytics]] | c2spf 애널리틱스 (게임 데이터 BI) | service | analytics, c2spf, BI, 게임데이터, fastapi, react | 4 | 2026-04-24 |
 | [[xpla-platform]] | XPLA 플랫폼 (블록체인 통합 서비스) | service | xpla, blockchain, nft, smart-contract, c2spf | 3 | 2026-04-24 |
 | [[karpathy]] | Andrej Karpathy | person | karpathy, AI, llm, openai, tesla, 교육콘텐츠, nanogpt, nanochat | 3 | 2026-04-27 |

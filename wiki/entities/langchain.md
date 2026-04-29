@@ -83,7 +83,7 @@ libs/
 > "2022년 10월 출범 후 LLM 프레임워크의 사실상 표준으로 자리잡은 monorepo. 'agent engineering platform' 슬로건과 함께 v1 출시 + AGENTS.md=CLAUDE.md 동기화로 LLM 협업 표준 패턴 채택."
 > — [[langchain-ai-langchain]] 한줄 요약
 
-[[seokgeun-stack-guide]] LLM 프레임워크 영역의 사실상 표준. [[matechat]] AI 채팅 분석 모듈에서 후보 검토. [[langgraph]] 산하 + [[deepagents]] 직접 종속. **AGENTS.md=CLAUDE.md 동기화 패턴**은 [[llm-infra-meta-cluster]] 5축의 운영 표준 — [[ruff]]·[[uv]]·[[fastmcp]] 등과 같은 동기화 모델 채택.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] LLM 프레임워크 영역의 사실상 표준. [[matechat|MateChat 사이드 프로젝트]] AI 채팅 분석 모듈에서 후보 검토. [[langgraph]] 산하 + [[deepagents]] 직접 종속. **AGENTS.md=CLAUDE.md 동기화 패턴**은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 운영 표준 — [[ruff]]·[[uv]]·[[fastmcp]] 등과 같은 동기화 모델 채택.
 
 ## 출처
 

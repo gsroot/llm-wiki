@@ -133,7 +133,7 @@ print(result.output.temp_c)
 > "GenAI Agent Framework, the Pydantic way — Pydantic Validation을 만든 팀이 직접 출시한 type-safe agent framework. 16.7K+ stars, MIT, AGENTS.md = CLAUDE.md byte-for-byte 동기화 (10K), 11가지 자체 강점 명시."
 > — [[pydantic-pydantic-ai]] 한줄 요약
 
-[[seokgeun-stack-guide]] type-safe agent 영역. [[pydantic]] 본진 팀 + [[fastapi]]와 같은 타입 힌트 우선 패턴. [[matechat]] 39 SKILL 운영에서 type-safe orchestration 후보. **AGENTS.md=CLAUDE.md byte-for-byte 동기화**는 [[llm-infra-meta-cluster]] 5축의 [[agent-skills]] 8단계 진화 핵심 사례 — [[ruff]]·[[uv]]·[[langchain]]·[[fastmcp]]와 같은 동기화 모델.
+[[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] type-safe agent 영역. [[pydantic]] 본진 팀 + [[fastapi]]와 같은 타입 힌트 우선 패턴. [[matechat|MateChat 사이드 프로젝트]] 39 SKILL 운영에서 type-safe orchestration 후보. **AGENTS.md=CLAUDE.md byte-for-byte 동기화**는 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 [[agent-skills]] 8단계 진화 핵심 사례 — [[ruff]]·[[uv]]·[[langchain]]·[[fastmcp]]와 같은 동기화 모델.
 
 ## 출처
 
