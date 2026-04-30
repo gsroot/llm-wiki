@@ -25,7 +25,7 @@ observed_source_refs: 6
 inbound_count: 37
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 18
+cited_by_count: 19
 ---
 
 # GitHub

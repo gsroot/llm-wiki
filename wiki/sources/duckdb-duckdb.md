@@ -27,25 +27,25 @@ related:
 - '[[sqlite]]'
 confidence: high
 inbound_count: 26
-cited_by:
-- '[[apache-arrow]]'
-- '[[c2spf-analytics]]'
-- '[[dataframe-ecosystem-evolution]]'
-- '[[duckdb]]'
-- '[[lakehouse]]'
-- '[[lazy-evaluation]]'
-- '[[oss-saas-dual]]'
-- '[[pandas-vs-polars-vs-duckdb]]'
-- '[[predicate-pushdown]]'
-- '[[query-optimization]]'
-- '[[sqlite]]'
-- '[[streaming]]'
-- '[[zero-copy]]'
-cited_by_count: 13
 aliases:
 - Duckdb
 - duckdb
 - duckdb/duckdb (DuckDB 저장소)
+cited_by:
+  - "[[apache-arrow]]"
+  - "[[c2spf-analytics]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[duckdb]]"
+  - "[[lakehouse]]"
+  - "[[lazy-evaluation]]"
+  - "[[oss-saas-dual]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[predicate-pushdown]]"
+  - "[[query-optimization]]"
+  - "[[sqlite]]"
+  - "[[streaming]]"
+  - "[[zero-copy]]"
+cited_by_count: 13
 ---
 
 # duckdb/duckdb (DuckDB 저장소)

@@ -20,7 +20,7 @@ related:
 - '[[apache-arrow]]'
 source_count: 3
 observed_source_refs: 3
-inbound_count: 10
+inbound_count: 8
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 6

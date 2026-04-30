@@ -15,7 +15,7 @@ related:
 - '[[fastapi-fastapi]]'
 source_count: 1
 observed_source_refs: 2
-inbound_count: 11
+inbound_count: 8
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 4

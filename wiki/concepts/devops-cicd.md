@@ -39,7 +39,7 @@ related:
 - '[[getsentry-sentry]]'
 source_count: 8
 observed_source_refs: 17
-inbound_count: 43
+inbound_count: 42
 created: 2026-04-24
 updated: 2026-04-28
 cited_by_count: 23

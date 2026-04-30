@@ -24,16 +24,16 @@ related:
 - '[[autoresearch]]'
 confidence: high
 inbound_count: 8
-cited_by:
-- '[[agent-stack-evolution]]'
-- '[[harness]]'
-- '[[karpathy]]'
-- '[[nanogpt]]'
-cited_by_count: 4
 aliases:
 - Karpathy Nanogpt
 - karpathy nanogpt
 - karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[harness]]"
+  - "[[karpathy]]"
+  - "[[nanogpt]]"
+cited_by_count: 4
 ---
 
 # karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)

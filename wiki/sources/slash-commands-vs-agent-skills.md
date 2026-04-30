@@ -21,22 +21,22 @@ related:
 - '[[context-engineering]]'
 confidence: high
 inbound_count: 30
-cited_by:
-- '[[agent-skills]]'
-- '[[anthropic]]'
-- '[[anthropics-skills]]'
-- '[[autonomous-research-loop]]'
-- '[[claude-code]]'
-- '[[harness]]'
-- '[[karpathy-autoresearch]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[seokgeun-kim]]'
-- '[[using-llm-wiki-as-rag]]'
-cited_by_count: 10
 aliases:
 - 'Claude Code: Slash Commands vs Agent Skills'
 - Slash Commands Vs Agent Skills
 - slash commands vs agent skills
+cited_by:
+  - "[[agent-skills]]"
+  - "[[anthropic]]"
+  - "[[anthropics-skills]]"
+  - "[[autonomous-research-loop]]"
+  - "[[claude-code]]"
+  - "[[harness]]"
+  - "[[karpathy-autoresearch]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[seokgeun-kim]]"
+  - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 10
 ---
 
 # Claude Code: Slash Commands vs Agent Skills

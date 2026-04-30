@@ -22,7 +22,7 @@ related:
 - '[[qmd]]'
 - '[[slash-commands-vs-agent-skills]]'
 confidence: high
-inbound_count: 27
+inbound_count: 24
 cited_by:
 - '[[claude-code]]'
 - '[[claude-code-master-guide]]'

@@ -18,7 +18,7 @@ related:
 - '[[pola-rs-polars]]'
 source_count: 3
 observed_source_refs: 3
-inbound_count: 8
+inbound_count: 6
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 5

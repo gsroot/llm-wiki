@@ -35,7 +35,7 @@ verification_required: true
 last_verified: 2026-04-29
 verification_notes: v1.0.0 출시 직후부터 측정 시작. 출시 전까지는 측정 SOP·예상 KPI·실험 설계 패턴만 채운 가설 카탈로그. 실측값은 [[matechat-30day-validation-loop]] D+1~D+30 갱신, 그 이후는 본 페이지 영역별 표에 기록.
 cited_by_count: 9
-inbound_count: 16
+inbound_count: 15
 ---
 
 # MateChat 사업 검증 카탈로그

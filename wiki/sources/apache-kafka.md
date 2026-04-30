@@ -27,20 +27,20 @@ related:
 - '[[apache-foundation]]'
 confidence: high
 inbound_count: 20
-cited_by:
-- '[[apache-foundation]]'
-- '[[append-only-log]]'
-- '[[c2spf-analytics]]'
-- '[[dataframe-ecosystem-evolution]]'
-- '[[event-driven-architecture]]'
-- '[[kafka]]'
-- '[[streaming]]'
-- '[[zero-copy]]'
-cited_by_count: 8
 aliases:
 - Apache Kafka
 - apache kafka
 - apache/kafka (Kafka 저장소)
+cited_by:
+  - "[[apache-foundation]]"
+  - "[[append-only-log]]"
+  - "[[c2spf-analytics]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[event-driven-architecture]]"
+  - "[[kafka]]"
+  - "[[streaming]]"
+  - "[[zero-copy]]"
+cited_by_count: 8
 ---
 
 # apache/kafka (Kafka 저장소)

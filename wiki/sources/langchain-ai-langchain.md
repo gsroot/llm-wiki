@@ -24,18 +24,18 @@ related:
 - '[[mcp]]'
 confidence: high
 inbound_count: 15
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[agent-skills]]'
-- '[[langchain]]'
-- '[[mcp]]'
-- '[[ml-ai]]'
-- '[[oss-saas-dual]]'
-cited_by_count: 6
 aliases:
 - Langchain Ai
 - langchain ai
 - langchain-ai/langchain — The agent engineering platform
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-skills]]"
+  - "[[langchain]]"
+  - "[[mcp]]"
+  - "[[ml-ai]]"
+  - "[[oss-saas-dual]]"
+cited_by_count: 6
 ---
 
 # langchain-ai/langchain — The agent engineering platform

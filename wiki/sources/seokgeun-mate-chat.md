@@ -34,7 +34,7 @@ tags:
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: 39 SKILL 분류(자작 11 / 외부 28) — flutter/skills lock.json 재카운트
-inbound_count: 31
+inbound_count: 28
 cited_by:
 - '[[agent-skills]]'
 - '[[c2spf-ai-agent-adoption-candidates]]'

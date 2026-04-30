@@ -20,7 +20,7 @@ related:
 - '[[pandas-dev-pandas]]'
 source_count: 1
 observed_source_refs: 4
-inbound_count: 17
+inbound_count: 16
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 9

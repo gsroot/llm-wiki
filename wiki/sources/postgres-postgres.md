@@ -33,17 +33,17 @@ related:
 - '[[fastapi]]'
 confidence: high
 inbound_count: 10
-cited_by:
-- '[[append-only-log]]'
-- '[[backend-fastapi-stack]]'
-- '[[postgresql]]'
-- '[[query-optimization]]'
-cited_by_count: 4
 aliases:
 - Postgres
 - postgres
 - postgres/postgres — PostgreSQL 본체 GitHub 미러
 - postgres/postgres — PostgreSQL 본체 GitHub 미러 (★20.7K, ML+미러 거버넌스, 30년 보수파)
+cited_by:
+  - "[[append-only-log]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[postgresql]]"
+  - "[[query-optimization]]"
+cited_by_count: 4
 ---
 
 # postgres/postgres — PostgreSQL 본체 GitHub 미러

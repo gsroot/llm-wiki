@@ -40,17 +40,17 @@ related:
 - '[[scikit-learn]]'
 confidence: high
 inbound_count: 10
-cited_by:
-- '[[backend-fastapi-stack]]'
-- '[[python]]'
-- '[[sqlalchemy]]'
-- '[[sqlite]]'
-cited_by_count: 4
 aliases:
 - Sqlalchemy
 - sqlalchemy
 - sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM
 - sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM (Core/ORM 이중 레이어 + Unit of Work + 21년 관계형 추상화)
+cited_by:
+  - "[[backend-fastapi-stack]]"
+  - "[[python]]"
+  - "[[sqlalchemy]]"
+  - "[[sqlite]]"
+cited_by_count: 4
 ---
 
 # sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM

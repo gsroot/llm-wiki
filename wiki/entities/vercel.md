@@ -20,7 +20,7 @@ related:
 - '[[vercel-next.js]]'
 source_count: 1
 observed_source_refs: 3
-inbound_count: 17
+inbound_count: 15
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 5

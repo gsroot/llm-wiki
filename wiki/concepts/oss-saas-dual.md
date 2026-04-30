@@ -26,7 +26,7 @@ related:
 - '[[crewaiinc-crewai]]'
 source_count: 5
 observed_source_refs: 6
-inbound_count: 13
+inbound_count: 10
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 6

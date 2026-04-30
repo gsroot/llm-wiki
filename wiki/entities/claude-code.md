@@ -53,7 +53,7 @@ observed_source_refs: 39
 inbound_count: 129
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 43
+cited_by_count: 44
 ---
 
 # Claude Code
@@ -222,3 +222,51 @@ irm https://claude.ai/install.ps1 | iex
 - [[spec-kit]]
 - [[token-economy]]
 - [[using-llm-wiki-as-rag]]
+
+## 인용한 페이지
+
+- [[agent-patterns]]
+- [[agent-skills]]
+- [[agent-stack-evolution]]
+- [[anthropic]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[autonomous-research-loop]]
+- [[autoresearch]]
+- [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
+- [[claude-agent-sdk]]
+- [[claude-code-master-guide]]
+- [[claude-code-overview]]
+- [[claude-code-quickstart]]
+- [[claude-managed-agents]]
+- [[context-engineering]]
+- [[cowork]]
+- [[deepagents]]
+- [[flutter]]
+- [[flutter-flutter]]
+- [[github]]
+- [[github-spec-kit]]
+- [[harness]]
+- [[karpathy-autoresearch]]
+- [[llm-infra-meta-cluster]]
+- [[matechat]]
+- [[mcp]]
+- [[microsoft]]
+- [[obsidian]]
+- [[openai]]
+- [[openai-chatgpt-codex-guide]]
+- [[openai-openai-cookbook]]
+- [[portfolio]]
+- [[prompt-cache]]
+- [[rag]]
+- [[scikit-learn]]
+- [[scikit-learn-scikit-learn]]
+- [[seokgeun-kim]]
+- [[seokgeun-stack-guide]]
+- [[slash-commands-vs-agent-skills]]
+- [[spec-driven-development]]
+- [[spec-kit]]
+- [[token-economy]]
+- [[using-llm-wiki-as-rag]]
+

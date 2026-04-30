@@ -19,7 +19,7 @@ tags:
 - async-state
 - multi-framework
 confidence: high
-inbound_count: 11
+inbound_count: 9
 cited_by:
 - '[[flutter-nextjs-fullstack-pattern]]'
 - '[[react]]'

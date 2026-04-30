@@ -46,7 +46,7 @@ related:
 - '[[uv]]'
 - '[[python-packaging]]'
 confidence: high
-inbound_count: 36
+inbound_count: 31
 cited_by:
 - '[[agent-frameworks-matrix]]'
 - '[[agent-patterns]]'

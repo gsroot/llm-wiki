@@ -29,7 +29,7 @@ observed_source_refs: 19
 inbound_count: 55
 created: 2026-04-09
 updated: 2026-04-15
-cited_by_count: 21
+cited_by_count: 19
 ---
 
 # LLM 위키 패턴

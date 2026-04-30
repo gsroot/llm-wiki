@@ -24,18 +24,18 @@ tags:
 - sub-agents
 - claude-code-pattern
 inbound_count: 15
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[agent-patterns]]'
-- '[[agent-skills]]'
-- '[[deepagents]]'
-- '[[ml-ai]]'
-- '[[openai-agents-python]]'
-cited_by_count: 6
 aliases:
 - DeepAgents — LangGraph 위의 batteries-included agent harness
 - Langchain Ai Deepagents
 - langchain ai deepagents
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[deepagents]]"
+  - "[[ml-ai]]"
+  - "[[openai-agents-python]]"
+cited_by_count: 6
 ---
 
 # DeepAgents — LangGraph 위의 batteries-included agent harness

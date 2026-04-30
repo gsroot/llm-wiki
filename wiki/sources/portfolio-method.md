@@ -18,7 +18,7 @@ related:
 - '[[portfolio-seed]]'
 - '[[llm-wiki-pattern]]'
 confidence: high
-inbound_count: 13
+inbound_count: 14
 cited_by:
 - '[[career-timeline-seokgeun]]'
 - '[[portfolio]]'

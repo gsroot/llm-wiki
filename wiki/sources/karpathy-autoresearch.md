@@ -25,7 +25,7 @@ related:
 - '[[context-engineering]]'
 - '[[claude-code]]'
 confidence: high
-inbound_count: 23
+inbound_count: 22
 cited_by:
 - '[[agent-stack-evolution]]'
 - '[[anthropics-claude-cookbooks]]'

@@ -22,7 +22,7 @@ related:
 - '[[pandas]]'
 - '[[pandas-dev-pandas]]'
 confidence: high
-inbound_count: 23
+inbound_count: 22
 cited_by:
 - '[[agent-stack-evolution]]'
 - '[[c2spf-analytics]]'

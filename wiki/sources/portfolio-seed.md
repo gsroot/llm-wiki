@@ -25,7 +25,7 @@ related:
 - '[[seokgeun-stack-guide]]'
 - '[[llm-infra-meta-cluster]]'
 confidence: high
-inbound_count: 46
+inbound_count: 43
 cited_by:
 - '[[backend-python-fastapi]]'
 - '[[blockchain-xpla]]'

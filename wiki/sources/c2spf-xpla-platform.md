@@ -22,18 +22,18 @@ related:
 - '[[blockchain-xpla]]'
 confidence: high
 inbound_count: 16
-cited_by:
-- '[[blockchain-xpla]]'
-- '[[career-timeline-seokgeun]]'
-- '[[com2us-platform]]'
-- '[[portfolio]]'
-- '[[seokgeun-kim]]'
-- '[[xpla-platform]]'
-cited_by_count: 6
 aliases:
 - C2Spf Xpla Platform
 - c2spf xpla platform
 - 컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)
+cited_by:
+  - "[[blockchain-xpla]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
+  - "[[xpla-platform]]"
+cited_by_count: 6
 ---
 
 # 컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)

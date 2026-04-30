@@ -19,14 +19,14 @@ related:
 - '[[claude-code-overview]]'
 confidence: high
 inbound_count: 5
-cited_by:
-- '[[claude-code]]'
-- '[[claude-code-overview]]'
-cited_by_count: 2
 aliases:
 - Claude Code Quickstart
 - Claude Code 빠른 시작
 - claude code quickstart
+cited_by:
+  - "[[claude-code]]"
+  - "[[claude-code-overview]]"
+cited_by_count: 2
 ---
 
 # Claude Code 빠른 시작

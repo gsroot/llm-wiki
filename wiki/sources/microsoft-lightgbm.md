@@ -23,17 +23,17 @@ related:
 - '[[ml-ai]]'
 confidence: high
 inbound_count: 12
-cited_by:
-- '[[apache-arrow]]'
-- '[[c2spf-analytics]]'
-- '[[lightgbm]]'
-- '[[ml-ai]]'
-- '[[scikit-learn]]'
-cited_by_count: 5
 aliases:
 - Microsoft Lightgbm
 - lightgbm-org/LightGBM — Light Gradient Boosting Machine
 - microsoft lightgbm
+cited_by:
+  - "[[apache-arrow]]"
+  - "[[c2spf-analytics]]"
+  - "[[lightgbm]]"
+  - "[[ml-ai]]"
+  - "[[scikit-learn]]"
+cited_by_count: 5
 ---
 
 # lightgbm-org/LightGBM — Light Gradient Boosting Machine

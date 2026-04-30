@@ -20,7 +20,7 @@ tags:
 - flux
 - minimal
 confidence: high
-inbound_count: 12
+inbound_count: 11
 cited_by:
 - '[[flutter-nextjs-fullstack-pattern]]'
 - '[[poimandres]]'

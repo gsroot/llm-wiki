@@ -16,7 +16,7 @@ sources:
 - '[[flutter-nextjs-fullstack-pattern]]'
 source_count: 5
 observed_source_refs: 10
-inbound_count: 158
+inbound_count: 136
 related:
 - '[[python]]'
 - '[[fastapi]]'

@@ -23,21 +23,21 @@ related:
 - '[[agent-skills]]'
 confidence: high
 inbound_count: 19
-cited_by:
-- '[[agent-skills]]'
-- '[[agent-stack-evolution]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[mcp]]'
-- '[[microsoft]]'
-- '[[microsoft-ai-agents-for-beginners]]'
-- '[[microsoft-for-beginners]]'
-- '[[microsoft-web-dev-for-beginners]]'
-- '[[using-llm-wiki-as-rag]]'
-cited_by_count: 9
 aliases:
 - Microsoft Generative Ai For Beginners
 - microsoft generative ai for beginners
 - microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[microsoft]]"
+  - "[[microsoft-ai-agents-for-beginners]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[microsoft-web-dev-for-beginners]]"
+  - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 9
 ---
 
 # microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문

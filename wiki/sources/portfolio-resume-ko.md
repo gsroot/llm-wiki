@@ -17,23 +17,23 @@ related:
 - '[[portfolio-seed]]'
 confidence: high
 inbound_count: 27
-cited_by:
-- '[[backend-python-fastapi]]'
-- '[[c2spf-analytics]]'
-- '[[career-timeline-seokgeun]]'
-- '[[com2us-platform]]'
-- '[[frontend-react]]'
-- '[[matechat]]'
-- '[[ml-ai]]'
-- '[[portfolio]]'
-- '[[portfolio-ko]]'
-- '[[portfolio-seed]]'
-- '[[seokgeun-kim]]'
-cited_by_count: 11
 aliases:
 - Portfolio Resume Ko
 - portfolio resume ko
 - 포트폴리오 — 이력서(한국어, resume-ko.md)
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[c2spf-analytics]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[frontend-react]]"
+  - "[[matechat]]"
+  - "[[ml-ai]]"
+  - "[[portfolio]]"
+  - "[[portfolio-ko]]"
+  - "[[portfolio-seed]]"
+  - "[[seokgeun-kim]]"
+cited_by_count: 11
 ---
 
 # 포트폴리오 — 이력서(한국어, resume-ko.md)

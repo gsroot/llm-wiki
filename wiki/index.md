@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-29
+updated: 2026-04-30
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨."
 ---
@@ -13,8 +13,8 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 194
-- 소스 요약: 65
+- 총 페이지 수: 195
+- 소스 요약: 66
 - 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
 - 개념: 32
 - 종합 분석: 20
@@ -106,6 +106,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[shadcn-ui-ui]] | shadcn-ui/ui — Open Code 패러다임 | article | shadcn | 2026-04-28 | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution |
 | [[seokgeun-mate-chat]] | Mate Chat — 석근 개인 사이드 프로젝트 | project | 석근 (Mate Chat Team) | 2026-04-29 | mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack |
 | [[seokgeun-matechat-validation]] | MateChat v1.0 검증·출시 자료 (비전 / 구현 / 체크리스트 / 경쟁 / 매출 / 출시 진단 6 docs) | project | 석근 (Mate Chat Team) | 2026-04-28 | matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision |
+| [[openai-chatgpt-codex-guide]] | ChatGPT & Codex 실무 활용 가이드 (송영옥, wikidocs.net) — 8 Parts 28챕터 + 5부록 한국어 OpenAI 실무서, Path B 요약 수집 | book | 송영옥 | 2026-04-30 | openai, chatgpt, codex, prompt-engineering, 한국어자료, wikidocs, dall-e, custom-gpts, multimodal, agent, api |
 
 ## 개념 (Concepts)
 

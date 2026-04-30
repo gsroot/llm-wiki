@@ -50,7 +50,7 @@ tags:
 - 프론트엔드
 - 3축-sub-hub
 cited_by_count: 24
-inbound_count: 50
+inbound_count: 46
 ---
 
 # Flutter + Next.js 듀얼 클라이언트 풀스택 패턴

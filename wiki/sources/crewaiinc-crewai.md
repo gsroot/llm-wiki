@@ -24,18 +24,18 @@ tags:
 - oss-saas-dual
 - control-plane
 inbound_count: 14
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[agent-patterns]]'
-- '[[crewai]]'
-- '[[ml-ai]]'
-- '[[openai-agents-python]]'
-- '[[oss-saas-dual]]'
-cited_by_count: 6
 aliases:
 - CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS
 - Crewaiinc Crewai
 - crewaiinc crewai
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[crewai]]"
+  - "[[ml-ai]]"
+  - "[[openai-agents-python]]"
+  - "[[oss-saas-dual]]"
+cited_by_count: 6
 ---
 
 # CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS

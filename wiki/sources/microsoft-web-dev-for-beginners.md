@@ -20,17 +20,17 @@ related:
 - '[[frontend-react]]'
 confidence: high
 inbound_count: 11
-cited_by:
-- '[[agent-stack-evolution]]'
-- '[[c2spf-analytics-renewal]]'
-- '[[microsoft]]'
-- '[[microsoft-for-beginners]]'
-- '[[microsoft-generative-ai-for-beginners]]'
-cited_by_count: 5
 aliases:
 - Microsoft Web Dev For Beginners
 - microsoft web dev for beginners
 - microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
+cited_by_count: 5
 ---
 
 # microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문

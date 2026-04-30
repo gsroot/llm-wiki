@@ -26,7 +26,7 @@ related:
 - '[[rrousselGit-riverpod]]'
 source_count: 5
 observed_source_refs: 13
-inbound_count: 35
+inbound_count: 33
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 15

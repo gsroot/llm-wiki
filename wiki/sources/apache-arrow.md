@@ -25,7 +25,7 @@ related:
 - '[[duckdb]]'
 - '[[apache-foundation]]'
 confidence: high
-inbound_count: 50
+inbound_count: 49
 cited_by:
 - '[[apache-foundation]]'
 - '[[append-only-log]]'

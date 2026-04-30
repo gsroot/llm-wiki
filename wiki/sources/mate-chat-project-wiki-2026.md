@@ -29,7 +29,7 @@ related:
 - '[[flutter]]'
 - '[[token-economy]]'
 confidence: high
-inbound_count: 26
+inbound_count: 25
 aliases:
 - Mate Chat Project Wiki 2026
 - mate chat project wiki 2026

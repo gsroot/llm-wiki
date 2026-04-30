@@ -18,7 +18,7 @@ related:
 - '[[devops-cicd]]'
 - '[[observability-and-cicd-stack]]'
 confidence: high
-inbound_count: 9
+inbound_count: 8
 cited_by:
 - '[[devops-cicd]]'
 - '[[docker]]'

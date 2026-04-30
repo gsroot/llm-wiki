@@ -26,7 +26,7 @@ related:
 - '[[data-pipeline-bigquery]]'
 - '[[com2us-platform]]'
 confidence: high
-inbound_count: 21
+inbound_count: 20
 cited_by:
 - '[[anthropics-skills]]'
 - '[[c2spf-analytics]]'

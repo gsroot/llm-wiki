@@ -23,18 +23,18 @@ related:
 - '[[agent-skills]]'
 confidence: high
 inbound_count: 15
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[agent-skills]]'
-- '[[fastmcp]]'
-- '[[mcp]]'
-- '[[ml-ai]]'
-- '[[oss-saas-dual]]'
-cited_by_count: 6
 aliases:
 - Jlowin Fastmcp
 - jlowin fastmcp
 - jlowin/fastmcp — The standard framework for MCP
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-skills]]"
+  - "[[fastmcp]]"
+  - "[[mcp]]"
+  - "[[ml-ai]]"
+  - "[[oss-saas-dual]]"
+cited_by_count: 6
 ---
 
 # jlowin/fastmcp — The standard framework for MCP

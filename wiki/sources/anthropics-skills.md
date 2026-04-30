@@ -25,7 +25,7 @@ related:
 - '[[context-engineering]]'
 - '[[token-economy]]'
 confidence: high
-inbound_count: 82
+inbound_count: 76
 cited_by:
 - '[[agent-skills]]'
 - '[[agent-stack-evolution]]'

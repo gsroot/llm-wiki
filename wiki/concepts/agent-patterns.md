@@ -59,7 +59,7 @@ observed_source_refs: 22
 inbound_count: 68
 created: 2026-04-27
 updated: 2026-04-28
-cited_by_count: 27
+cited_by_count: 28
 ---
 
 # Building Effective Agents — 5 패턴

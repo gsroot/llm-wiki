@@ -24,7 +24,7 @@ tags:
 - skill-indexing
 - LLM-pr-marker
 confidence: high
-inbound_count: 19
+inbound_count: 17
 cited_by:
 - '[[agent-skills]]'
 - '[[flutter-nextjs-fullstack-pattern]]'

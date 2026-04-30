@@ -28,7 +28,7 @@ related:
 - '[[slash-commands-vs-agent-skills]]'
 source_count: 4
 observed_source_refs: 10
-inbound_count: 56
+inbound_count: 50
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 23

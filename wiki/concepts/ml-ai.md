@@ -63,7 +63,7 @@ related:
 - '[[openai-openai-agents-python]]'
 source_count: 15
 observed_source_refs: 48
-inbound_count: 96
+inbound_count: 95
 created: 2026-04-24
 updated: 2026-04-28
 cited_by_count: 48

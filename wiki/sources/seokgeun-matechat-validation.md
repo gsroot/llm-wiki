@@ -20,7 +20,7 @@ tags:
 - validation
 - kpi
 - side-project
-inbound_count: 15
+inbound_count: 12
 aliases:
 - MateChat v1.0 검증·출시 자료
 - MateChat v1.0 검증·출시 자료 — 비전 / 구현 현황 / 출시 체크리스트 / 경쟁 / 매출 예측

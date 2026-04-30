@@ -32,18 +32,18 @@ related:
 - '[[python-packaging]]'
 confidence: high
 inbound_count: 12
-cited_by:
-- '[[append-only-log]]'
-- '[[backend-fastapi-stack]]'
-- '[[event-driven-architecture]]'
-- '[[redis]]'
-- '[[streaming]]'
-cited_by_count: 5
 aliases:
 - Redis
 - redis
 - redis/redis — In-Memory Data Structure Server
 - redis/redis — In-Memory Data Structure Server (★74K, 17년차 MANIFESTO 10항목 철학 + 단일 스레드 + Vector Search 전환)
+cited_by:
+  - "[[append-only-log]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[event-driven-architecture]]"
+  - "[[redis]]"
+  - "[[streaming]]"
+cited_by_count: 5
 ---
 
 # redis/redis — In-Memory Data Structure Server

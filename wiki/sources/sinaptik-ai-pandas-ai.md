@@ -21,15 +21,15 @@ tags:
 - dataframe
 - bi-chatbot
 inbound_count: 8
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[ml-ai]]'
-- '[[pandas-ai]]'
-cited_by_count: 3
 aliases:
 - PandasAI — DataFrame을 자연어로 대화하는 라이브러리
 - Sinaptik Ai Pandas
 - sinaptik ai pandas
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[ml-ai]]"
+  - "[[pandas-ai]]"
+cited_by_count: 3
 ---
 
 # PandasAI — DataFrame을 자연어로 대화하는 라이브러리

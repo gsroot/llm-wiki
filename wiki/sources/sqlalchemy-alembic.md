@@ -35,16 +35,16 @@ related:
 - '[[uv]]'
 confidence: high
 inbound_count: 8
-cited_by:
-- '[[alembic]]'
-- '[[backend-fastapi-stack]]'
-- '[[sqlite]]'
-cited_by_count: 3
 aliases:
 - Sqlalchemy Alembic
 - sqlalchemy alembic
 - sqlalchemy/alembic — SQLAlchemy 진영 데이터베이스 마이그레이션 도구 (autogenerate · transactional DDL · branch merging · offline SQL)
 - sqlalchemy/alembic — 데이터베이스 마이그레이션 도구
+cited_by:
+  - "[[alembic]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[sqlite]]"
+cited_by_count: 3
 ---
 
 # sqlalchemy/alembic — 데이터베이스 마이그레이션 도구

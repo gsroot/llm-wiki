@@ -20,17 +20,17 @@ related:
 - '[[obsidian-web-clipper]]'
 confidence: high
 inbound_count: 10
-cited_by:
-- '[[claude-code-master-guide]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[mcp]]'
-- '[[obsidian]]'
-- '[[seokgeun-kim]]'
-cited_by_count: 5
 aliases:
 - Obsidian Guide
 - Obsidian 사용 가이드
 - obsidian guide
+cited_by:
+  - "[[claude-code-master-guide]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[obsidian]]"
+  - "[[seokgeun-kim]]"
+cited_by_count: 5
 ---
 
 # Obsidian 사용 가이드

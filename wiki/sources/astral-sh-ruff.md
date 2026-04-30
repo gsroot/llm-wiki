@@ -36,18 +36,18 @@ related:
 - '[[agent-stack-evolution]]'
 confidence: high
 inbound_count: 10
-cited_by:
-- '[[agent-skills]]'
-- '[[backend-fastapi-stack]]'
-- '[[harness]]'
-- '[[python]]'
-- '[[ruff]]'
-cited_by_count: 5
 aliases:
 - Astral Sh Ruff
 - astral sh ruff
 - astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터
 - astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터 (Astral 회사 차원 표준화)
+cited_by:
+  - "[[agent-skills]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[harness]]"
+  - "[[python]]"
+  - "[[ruff]]"
+cited_by_count: 5
 ---
 
 # astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터

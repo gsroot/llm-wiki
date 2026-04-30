@@ -18,7 +18,7 @@ related:
 - '[[devops-cicd]]'
 - '[[observability-and-cicd-stack]]'
 confidence: medium
-inbound_count: 8
+inbound_count: 7
 cited_by:
 - '[[devops-cicd]]'
 - '[[github-actions]]'

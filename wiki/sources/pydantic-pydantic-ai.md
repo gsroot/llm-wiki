@@ -27,19 +27,19 @@ tags:
 - agents-md
 - claude-md
 inbound_count: 15
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[agent-patterns]]'
-- '[[agent-skills]]'
-- '[[ml-ai]]'
-- '[[openai-agents-python]]'
-- '[[pydantic-ai]]'
-cited_by_count: 6
 aliases:
 - Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점
 - Pydantic Ai
 - pydantic ai
 - pydantic-ai
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[ml-ai]]"
+  - "[[openai-agents-python]]"
+  - "[[pydantic-ai]]"
+cited_by_count: 6
 ---
 
 # Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점

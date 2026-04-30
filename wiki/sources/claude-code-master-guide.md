@@ -23,22 +23,22 @@ related:
 - '[[llm-wiki-pattern]]'
 confidence: high
 inbound_count: 29
-cited_by:
-- '[[claude-code]]'
-- '[[context-engineering]]'
-- '[[cowork]]'
-- '[[harness]]'
-- '[[llm-wiki-pattern]]'
-- '[[mcp]]'
-- '[[obsidian-guide]]'
-- '[[rag]]'
-- '[[token-economy]]'
-- '[[using-llm-wiki-as-rag]]'
-cited_by_count: 10
 aliases:
 - Claude Code Master Guide
 - claude code master guide
 - 클로드 코드 중심 실전 마스터 가이드
+cited_by:
+  - "[[claude-code]]"
+  - "[[context-engineering]]"
+  - "[[cowork]]"
+  - "[[harness]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[mcp]]"
+  - "[[obsidian-guide]]"
+  - "[[rag]]"
+  - "[[token-economy]]"
+  - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 10
 ---
 
 # 클로드 코드 중심 실전 마스터 가이드

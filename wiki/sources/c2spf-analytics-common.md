@@ -28,21 +28,21 @@ related:
 - '[[data-pipeline-bigquery]]'
 confidence: high
 inbound_count: 24
-cited_by:
-- '[[backend-python-fastapi]]'
-- '[[c2spf-ai-agent-adoption-candidates]]'
-- '[[c2spf-analytics]]'
-- '[[career-timeline-seokgeun]]'
-- '[[com2us-platform]]'
-- '[[data-pipeline-bigquery]]'
-- '[[devops-cicd]]'
-- '[[portfolio]]'
-- '[[seokgeun-kim]]'
-cited_by_count: 9
 aliases:
 - C2Spf Analytics Common
 - c2spf analytics common
 - 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[c2spf-ai-agent-adoption-candidates]]"
+  - "[[c2spf-analytics]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[devops-cicd]]"
+  - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
+cited_by_count: 9
 ---
 
 # 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)

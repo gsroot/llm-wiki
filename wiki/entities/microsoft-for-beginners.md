@@ -21,7 +21,7 @@ related:
 - '[[microsoft-data-science-for-beginners]]'
 source_count: 5
 observed_source_refs: 18
-inbound_count: 32
+inbound_count: 30
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 11
