@@ -25,12 +25,13 @@ related:
 - '[[context-engineering]]'
 - '[[token-economy]]'
 confidence: high
-inbound_count: 85
+inbound_count: 93
 aliases:
 - Anthropics Skills
 - anthropics skills
 - anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스
 cited_by:
+  - "[[agent-sdk-comparison]]"
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
   - "[[anthropic]]"
@@ -43,6 +44,7 @@ cited_by:
   - "[[flutter-flutter]]"
   - "[[github]]"
   - "[[github-spec-kit]]"
+  - "[[governance-axis-comparison]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[llm-wiki-pattern]]"
@@ -54,7 +56,8 @@ cited_by:
   - "[[scikit-learn-scikit-learn]]"
   - "[[slash-commands-vs-agent-skills]]"
   - "[[spec-kit]]"
-cited_by_count: 23
+  - "[[vendor-neutral]]"
+cited_by_count: 26
 ---
 
 # anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스

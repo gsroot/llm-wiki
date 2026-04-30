@@ -52,10 +52,10 @@ related:
 - '[[pydantic-pydantic-ai]]'
 source_count: 1
 observed_source_refs: 27
-inbound_count: 76
+inbound_count: 77
 created: 2026-04-28
 updated: 2026-04-28
-cited_by_count: 32
+cited_by_count: 33
 ---
 
 # openai-agents-python (OpenAI Agents SDK)

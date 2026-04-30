@@ -64,7 +64,7 @@ Claude Code Skills는 [agentskills.io](https://agentskills.io) 오픈 표준을 
 | Frontmatter | ✅ | ✅ |
 | **자동 호출 (모델 판단)** | ❌ | ✅ |
 | **supporting files** | ❌ | ✅ |
-| **[[progressive-disclosure\|progressive disclosure]]** | 부분 | ✅ |
+| **[[progressive-disclosure]]** | 부분 | ✅ |
 | **`context: fork`** (서브에이전트) | ❌ | ✅ |
 | **`paths`** (경로 조건 활성) | ❌ | ✅ |
 | 동적 injection (`` !`cmd` ``) | ✅ | ✅ |

@@ -20,10 +20,10 @@ related:
 - '[[pandas-dev-pandas]]'
 source_count: 1
 observed_source_refs: 6
-inbound_count: 23
+inbound_count: 24
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 11
+cited_by_count: 12
 ---
 
 # BDFL (Benevolent Dictator For Life)

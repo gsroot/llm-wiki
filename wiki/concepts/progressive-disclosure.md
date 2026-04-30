@@ -31,9 +31,11 @@ related:
 - '[[matechat]]'
 - '[[c2spf-analytics]]'
 source_count: 3
+observed_source_refs: 9
+inbound_count: 21
 created: 2026-04-30
 updated: 2026-04-30
-cited_by_count: 7
+cited_by_count: 12
 ---
 
 # 점진적 공개 (Progressive Disclosure)

@@ -16,7 +16,7 @@ sources:
 - '[[flutter-nextjs-fullstack-pattern]]'
 source_count: 5
 observed_source_refs: 16
-inbound_count: 147
+inbound_count: 150
 related:
 - '[[python]]'
 - '[[fastapi]]'
@@ -47,7 +47,7 @@ verification_required: true
 last_verified: 2026-04-29
 verification_notes: '32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그'
 verification_procedure: 32 OSS 카탈로그 라이브러리의 GitHub release 페이지 분기별 점검 (메이저 버전 변동·deprecated 신호·라이선스 변경). 신규 OSS 출현 시 6분류 카탈로그 진입 검토. 변동 시 OSS entity 페이지·본 페이지 카탈로그 표·last_verified 갱신.
-cited_by_count: 60
+cited_by_count: 62
 ---
 
 # 석근 스택 가이드 — 마무리 종합
@@ -341,6 +341,7 @@ flutter pub add --dev riverpod_generator build_runner
 
 ## 인용한 페이지
 
+- [[agent-sdk-comparison]]
 - [[agent-skills]]
 - [[alembic]]
 - [[backend-fastapi-stack]]
@@ -357,6 +358,7 @@ flutter pub add --dev riverpod_generator build_runner
 - [[flutter]]
 - [[flutter-nextjs-fullstack-pattern]]
 - [[github-actions]]
+- [[governance-axis-comparison]]
 - [[grafana]]
 - [[harness]]
 - [[kafka]]

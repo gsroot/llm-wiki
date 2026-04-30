@@ -102,10 +102,10 @@ related:
 - '[[openai-chatgpt-codex-guide]]'
 source_count: 16
 observed_source_refs: 77
-inbound_count: 211
+inbound_count: 219
 created: 2026-04-27
 updated: 2026-04-29
-cited_by_count: 72
+cited_by_count: 75
 ---
 
 # Agent Skills (SKILL.md 패키지)
@@ -431,6 +431,7 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 
 ## 인용한 페이지
 
+- [[agent-sdk-comparison]]
 - [[agent-stack-evolution]]
 - [[anthropic]]
 - [[anthropics-claude-cookbooks]]
@@ -455,6 +456,7 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[getsentry-sentry]]
 - [[github]]
 - [[github-spec-kit]]
+- [[governance-axis-comparison]]
 - [[grafana]]
 - [[grafana-grafana]]
 - [[harness]]
@@ -501,5 +503,6 @@ Anthropic 공식 권장: **모든 신규는 Skills로 시작**. Custom Commands�
 - [[spec-kit]]
 - [[tiangolo]]
 - [[uv]]
+- [[vendor-neutral]]
 - [[vercel]]
 - [[vercel-next.js]]

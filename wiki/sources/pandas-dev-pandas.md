@@ -33,7 +33,7 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[github-spec-kit]]'
 confidence: high
-inbound_count: 46
+inbound_count: 48
 aliases:
 - Pandas Dev
 - pandas dev
@@ -50,6 +50,7 @@ cited_by:
   - "[[dataframe]]"
   - "[[dataframe-ecosystem-evolution]]"
   - "[[github-spec-kit]]"
+  - "[[governance-axis-comparison]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[microsoft-data-science-for-beginners]]"
@@ -62,7 +63,7 @@ cited_by:
   - "[[pandas-vs-polars-vs-duckdb]]"
   - "[[pdep]]"
   - "[[python]]"
-cited_by_count: 22
+cited_by_count: 23
 ---
 
 # pandas-dev/pandas — Python 데이터 분석 표준 라이브러리

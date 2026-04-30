@@ -37,7 +37,7 @@ related:
 - '[[mcp]]'
 - '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 38
+inbound_count: 48
 aliases:
 - Openai Cookbook
 - openai cookbook
@@ -46,6 +46,7 @@ aliases:
 - openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음 + 살아있는 AGENTS.md
 cited_by:
   - "[[agent-patterns]]"
+  - "[[agent-sdk-comparison]]"
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
   - "[[anthropics-claude-cookbooks]]"
@@ -55,6 +56,7 @@ cited_by:
   - "[[fastapi-fastapi]]"
   - "[[flutter-flutter]]"
   - "[[github-spec-kit]]"
+  - "[[governance-axis-comparison]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[mcp]]"
@@ -64,7 +66,8 @@ cited_by:
   - "[[openai-cookbook]]"
   - "[[openai-openai-agents-python]]"
   - "[[pandas-dev-pandas]]"
-cited_by_count: 19
+  - "[[vendor-neutral]]"
+cited_by_count: 22
 ---
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음

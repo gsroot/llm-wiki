@@ -22,7 +22,7 @@ related:
 - '[[agent-patterns]]'
 - '[[ml-ai]]'
 confidence: high
-inbound_count: 17
+inbound_count: 20
 aliases:
 - Langchain Ai Langgraph
 - langchain ai langgraph
@@ -34,7 +34,8 @@ cited_by:
   - "[[langgraph]]"
   - "[[mcp]]"
   - "[[ml-ai]]"
-cited_by_count: 6
+  - "[[vendor-neutral]]"
+cited_by_count: 7
 ---
 
 # langchain-ai/langgraph — Stateful agent orchestration framework

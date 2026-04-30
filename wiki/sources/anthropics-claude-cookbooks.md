@@ -27,13 +27,14 @@ related:
 - '[[token-economy]]'
 - '[[karpathy-autoresearch]]'
 confidence: high
-inbound_count: 67
+inbound_count: 71
 aliases:
 - Anthropics Claude Cookbooks
 - anthropics claude cookbooks
 - anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음
 cited_by:
   - "[[agent-patterns]]"
+  - "[[agent-sdk-comparison]]"
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
   - "[[anthropic]]"
@@ -57,7 +58,7 @@ cited_by:
   - "[[rag]]"
   - "[[spec-driven-development]]"
   - "[[token-economy]]"
-cited_by_count: 24
+cited_by_count: 25
 ---
 
 # anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음

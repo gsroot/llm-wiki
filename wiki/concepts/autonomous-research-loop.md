@@ -25,10 +25,10 @@ related:
 - '[[karpathy-nanochat]]'
 source_count: 2
 observed_source_refs: 19
-inbound_count: 58
+inbound_count: 59
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 25
+cited_by_count: 26
 ---
 
 # 자율 연구 루프 (Autonomous Research Loop)

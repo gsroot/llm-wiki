@@ -64,10 +64,10 @@ related:
 - '[[openai-openai-agents-python]]'
 source_count: 8
 observed_source_refs: 58
-inbound_count: 178
+inbound_count: 186
 created: 2026-04-15
 updated: 2026-04-29
-cited_by_count: 63
+cited_by_count: 66
 ---
 
 # 하네스 (Harness)
@@ -362,6 +362,7 @@ project/
 ## 인용한 페이지
 
 - [[agent-patterns]]
+- [[agent-sdk-comparison]]
 - [[agent-skills]]
 - [[agent-stack-evolution]]
 - [[anthropic]]
@@ -388,6 +389,7 @@ project/
 - [[flutter]]
 - [[flutter-flutter]]
 - [[github-spec-kit]]
+- [[governance-axis-comparison]]
 - [[karpathy]]
 - [[karpathy-autoresearch]]
 - [[karpathy-nanochat]]
@@ -424,3 +426,4 @@ project/
 - [[token-economy]]
 - [[using-llm-wiki-as-rag]]
 - [[uv]]
+- [[vendor-neutral]]

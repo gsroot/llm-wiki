@@ -23,7 +23,7 @@ related:
 - '[[agent-skills]]'
 - '[[mcp]]'
 confidence: high
-inbound_count: 17
+inbound_count: 20
 aliases:
 - Langchain Ai
 - langchain ai
@@ -35,7 +35,8 @@ cited_by:
   - "[[mcp]]"
   - "[[ml-ai]]"
   - "[[oss-saas-dual]]"
-cited_by_count: 6
+  - "[[vendor-neutral]]"
+cited_by_count: 7
 ---
 
 # langchain-ai/langchain — The agent engineering platform

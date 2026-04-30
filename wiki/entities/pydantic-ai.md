@@ -19,7 +19,7 @@ related:
 - '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 2
-inbound_count: 33
+inbound_count: 34
 created: 2026-04-28
 updated: 2026-04-28
 tags:
@@ -32,7 +32,7 @@ tags:
 - logfire
 - agents-md
 - claude-md
-cited_by_count: 15
+cited_by_count: 16
 ---
 
 # Pydantic AI

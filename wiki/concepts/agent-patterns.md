@@ -56,10 +56,10 @@ related:
 - '[[claude-managed-agents]]'
 source_count: 7
 observed_source_refs: 25
-inbound_count: 72
+inbound_count: 74
 created: 2026-04-27
 updated: 2026-04-28
-cited_by_count: 30
+cited_by_count: 31
 ---
 
 # Building Effective Agents — 5 패턴

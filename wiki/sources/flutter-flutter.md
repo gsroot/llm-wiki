@@ -39,7 +39,7 @@ related:
 - '[[context-engineering]]'
 - '[[github]]'
 confidence: high
-inbound_count: 37
+inbound_count: 42
 aliases:
 - Flutter
 - flutter
@@ -59,7 +59,8 @@ cited_by:
   - "[[llm-infra-meta-cluster]]"
   - "[[openai-openai-cookbook]]"
   - "[[progressive-disclosure]]"
-cited_by_count: 14
+  - "[[vendor-neutral]]"
+cited_by_count: 15
 ---
 
 # flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준

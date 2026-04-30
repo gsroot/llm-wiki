@@ -52,10 +52,10 @@ related:
 - '[[codex]]'
 source_count: 8
 observed_source_refs: 45
-inbound_count: 153
+inbound_count: 157
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 48
+cited_by_count: 50
 ---
 
 # Claude Code
@@ -229,6 +229,7 @@ irm https://claude.ai/install.ps1 | iex
 ## 인용한 페이지
 
 - [[agent-patterns]]
+- [[agent-sdk-comparison]]
 - [[agent-skills]]
 - [[agent-stack-evolution]]
 - [[anthropic]]
@@ -276,3 +277,4 @@ irm https://claude.ai/install.ps1 | iex
 - [[spec-kit]]
 - [[token-economy]]
 - [[using-llm-wiki-as-rag]]
+- [[vendor-neutral]]

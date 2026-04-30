@@ -49,8 +49,9 @@ cited_by:
   - "[[matechat]]"
   - "[[microsoft]]"
   - "[[openai]]"
+  - "[[progressive-disclosure]]"
   - "[[rcif-prompt-pattern]]"
-cited_by_count: 11
+cited_by_count: 12
 ---
 
 # ChatGPT & Codex 실무 활용 가이드

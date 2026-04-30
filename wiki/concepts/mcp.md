@@ -42,10 +42,10 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 source_count: 6
 observed_source_refs: 53
-inbound_count: 144
+inbound_count: 145
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 44
+cited_by_count: 45
 ---
 
 # MCP (Model Context Protocol)
@@ -206,6 +206,7 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 
 - [[agent-frameworks-matrix]]
 - [[agent-patterns]]
+- [[agent-sdk-comparison]]
 - [[agent-skills]]
 - [[agent-stack-evolution]]
 - [[anthropic]]

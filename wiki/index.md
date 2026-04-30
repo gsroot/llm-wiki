@@ -13,11 +13,11 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 199
+- 총 페이지 수: 202
 - 소스 요약: 66
 - 엔티티: 77 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect, codex 신설 2026-04-30)
-- 개념: 35 (rcif-prompt-pattern, chain-of-thought-prompting 신설 2026-04-30, progressive-disclosure 신설 2026-04-30 — Phase B audit 결과)
-- 종합 분석: 20
+- 개념: 36 (rcif-prompt-pattern, chain-of-thought-prompting 신설 2026-04-30, progressive-disclosure 신설 2026-04-30 — Phase B audit 결과, vendor-neutral 신설 2026-04-30 — Phase B-deep audit 22 페이지 언급)
+- 종합 분석: 22 (agent-sdk-comparison, governance-axis-comparison 신설 2026-04-30 — Phase B-deep)
 
 ---
 
@@ -120,6 +120,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[autonomous-research-loop]] | 자율 연구 루프 (Autonomous Research Loop) | 자율연구, agent, 메트릭주도, 시간예산, harness, gpt2-speedrun | 2 | 2026-04-27 |
 | [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills, library-self-hosted-skill, fastapi, flutter, vendor-neutral, dart-skills-lint, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror | 8 | 2026-04-28 |
 | [[progressive-disclosure]] | 점진적 공개 (Progressive Disclosure) | progressive-disclosure, LLM, context, agent-skills, token-economy, ux-design, lazy-loading | 3 | 2026-04-30 |
+| [[vendor-neutral]] | 벤더 중립 (Vendor-neutral) 패턴 | vendor-neutral, agent-skills, agents-md, claude-md, agentskills.io, governance, portability | 4 | 2026-04-30 |
 | [[agent-patterns]] | Building Effective Agents — 5 패턴 | agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, spec-kit, sdd, openai, openai-cookbook, openai-agents-python, agents-sdk, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns | 4 | 2026-04-28 |
 | [[spec-driven-development]] | Spec-Driven Development (SDD) | spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology | 1 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot, tiangolo, agent-skills, annotated, pydantic2 | 6 | 2026-04-27 |
@@ -238,6 +239,8 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution | 2026-04-28 |
 | [[pandas-vs-polars-vs-duckdb]] | Pandas vs Polars vs DuckDB — 정량 비교 매트릭스 (의사결정 트리 + 마이그레이션 ROI) | comparison, pandas, polars, duckdb, dataframe, decision-matrix | 2026-04-28 |
 | [[agent-frameworks-matrix]] | Agent Frameworks Matrix — 6 프레임워크 정량 비교 | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp | 2026-04-28 |
+| [[agent-sdk-comparison]] | Agent SDK 비교 — OpenAI Agents SDK ↔ Claude Agent SDK | agent-sdk, openai-agents-python, claude-agent-sdk, agent-frameworks, comparison, multi-agent, python, mcp | 2026-04-30 |
+| [[governance-axis-comparison]] | 거버넌스 6축 비교 — Constitution · SKILL.md · SLEP · PDEP · AGENTS.md · PLANS.md | governance, constitution, agent-skills, slep, pdep, agents-md, exec-plans, plans-md, spec-driven-development | 2026-04-30 |
 | [[observability-and-cicd-stack]] | Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름 (AGENTS.md 11단계 진화 + 4가지 새 변종) | observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf | 2026-04-28 |
 | [[flutter-nextjs-fullstack-pattern]] | Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (AGENTS.md 12단계 진화 + Open Code 10번째 거버넌스 모델) | frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui | 2026-04-28 |
 | [[seokgeun-stack-guide]] | 석근 스택 가이드 — 6분류 카탈로그 + 사이드 프로젝트 30분 부트스트랩 + 회사 BI 적용 | personal-stack, decision-tree, side-project, c2spf-bi, seokgeun | 2026-04-28 |

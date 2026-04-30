@@ -26,7 +26,7 @@ tags:
 - logfire
 - agents-md
 - claude-md
-inbound_count: 16
+inbound_count: 19
 aliases:
 - Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점
 - Pydantic Ai
@@ -39,7 +39,8 @@ cited_by:
   - "[[ml-ai]]"
   - "[[openai-agents-python]]"
   - "[[pydantic-ai]]"
-cited_by_count: 6
+  - "[[vendor-neutral]]"
+cited_by_count: 7
 ---
 
 # Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점

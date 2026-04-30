@@ -28,8 +28,8 @@ sources:
 - '[[sinaptik-ai-pandas-ai]]'
 created: 2026-04-28
 updated: 2026-04-28
-cited_by_count: 18
-inbound_count: 24
+cited_by_count: 19
+inbound_count: 26
 related:
 - '[[agent-patterns]]'
 - '[[mcp]]'

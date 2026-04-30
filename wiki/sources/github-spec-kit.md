@@ -39,7 +39,7 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[context-engineering]]'
 confidence: high
-inbound_count: 71
+inbound_count: 73
 aliases:
 - Github Spec Kit
 - github spec kit
@@ -57,6 +57,7 @@ cited_by:
   - "[[flutter]]"
   - "[[flutter-flutter]]"
   - "[[github]]"
+  - "[[governance-axis-comparison]]"
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[openai-openai-cookbook]]"
@@ -67,7 +68,7 @@ cited_by:
   - "[[spec-driven-development]]"
   - "[[spec-kit]]"
   - "[[uv]]"
-cited_by_count: 22
+cited_by_count: 23
 ---
 
 # github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)

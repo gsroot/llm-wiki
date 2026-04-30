@@ -27,10 +27,10 @@ related:
 - '[[github-spec-kit]]'
 source_count: 1
 observed_source_refs: 10
-inbound_count: 37
+inbound_count: 41
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 15
+cited_by_count: 17
 ---
 
 # Spec-Driven Development (SDD)
