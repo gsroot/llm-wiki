@@ -28,25 +28,25 @@ related:
 - '[[lazy-evaluation]]'
 confidence: high
 inbound_count: 27
-cited_by:
-- '[[apache-arrow]]'
-- '[[c2spf-analytics]]'
-- '[[copy-on-write]]'
-- '[[dataframe-ecosystem-evolution]]'
-- '[[lakehouse]]'
-- '[[lazy-evaluation]]'
-- '[[oss-saas-dual]]'
-- '[[pandas-vs-polars-vs-duckdb]]'
-- '[[polars]]'
-- '[[predicate-pushdown]]'
-- '[[query-optimization]]'
-- '[[streaming]]'
-- '[[zero-copy]]'
-cited_by_count: 13
 aliases:
 - Pola Rs Polars
 - pola rs polars
 - pola-rs/polars (Polars 저장소)
+cited_by:
+  - "[[apache-arrow]]"
+  - "[[c2spf-analytics]]"
+  - "[[copy-on-write]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[lakehouse]]"
+  - "[[lazy-evaluation]]"
+  - "[[oss-saas-dual]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[polars]]"
+  - "[[predicate-pushdown]]"
+  - "[[query-optimization]]"
+  - "[[streaming]]"
+  - "[[zero-copy]]"
+cited_by_count: 13
 ---
 
 # pola-rs/polars (Polars 저장소)

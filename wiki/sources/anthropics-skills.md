@@ -25,35 +25,35 @@ related:
 - '[[context-engineering]]'
 - '[[token-economy]]'
 confidence: high
-inbound_count: 80
-cited_by:
-- '[[agent-skills]]'
-- '[[agent-stack-evolution]]'
-- '[[anthropic]]'
-- '[[anthropics-claude-cookbooks]]'
-- '[[backend-fastapi-stack]]'
-- '[[claude-code]]'
-- '[[fastapi]]'
-- '[[fastapi-fastapi]]'
-- '[[flutter]]'
-- '[[flutter-flutter]]'
-- '[[github]]'
-- '[[github-spec-kit]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[llm-wiki-pattern]]'
-- '[[mcp]]'
-- '[[openai-openai-cookbook]]'
-- '[[pandas-dev-pandas]]'
-- '[[scikit-learn]]'
-- '[[scikit-learn-scikit-learn]]'
-- '[[slash-commands-vs-agent-skills]]'
-- '[[spec-kit]]'
-cited_by_count: 22
+inbound_count: 81
 aliases:
 - Anthropics Skills
 - anthropics skills
 - anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropic]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[claude-code]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[github]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[mcp]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[spec-kit]]"
+cited_by_count: 22
 ---
 
 # anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스

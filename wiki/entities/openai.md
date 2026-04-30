@@ -25,15 +25,17 @@ related:
 - '[[harness]]'
 - '[[openai-openai-cookbook]]'
 - '[[openai-openai-agents-python]]'
+- '[[openai-chatgpt-codex-guide]]'
+- '[[codex]]'
 source_count: 1
 observed_source_refs: 10
-inbound_count: 37
+inbound_count: 45
 created: 2026-04-27
 updated: 2026-04-27
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: OpenAI 모델 릴리스(GPT-5/codex/gpt-oss/agents-sdk) 빠르게 변동 — 분기별 모델 라인업 재검증
-cited_by_count: 15
+cited_by_count: 20
 ---
 
 # OpenAI
@@ -95,6 +97,7 @@ OpenAI는 2015-12 샌프란시스코에서 설립된 AI 연구·개발 회사로
 
 - [[openai-openai-cookbook]] — OpenAI 공식 4년차 cookbook 저장소 (★73K, 289 콘텐츠, MIT). 본 위키의 OpenAI 1차 자료.
 - [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK 저장소 (★25K, v0.14.6, MIT). 수집. cookbook이 메소드론 정의(가이드 단)라면 본 SDK는 그 메소드론을 자기 핵심 SDK 운영에 풀스택 적용한 본체 단 — `AGENTS.md = CLAUDE.md` 동기화 + `.agents/skills/` 9개 운영 SOP 스킬 + PLANS.md 5,485B + Codex hooks 통합 + `examples/agent_patterns/` 11종 패턴 reference 구현으로 OpenAI 거버넌스의 self-application 결정적 증거.
+- [[openai-chatgpt-codex-guide]] — 송영옥의 한국어 OpenAI 실무서 (wikidocs.net, CC BY, 8 Parts 28챕터 + 5부록). 1장에 OpenAI 10년 연혁(2015 설립 → 2018 GPT-1 → 2020 GPT-3 → 2022.11 ChatGPT 5일 만에 100만/2개월 만에 1억 사용자 → 2023 GPT-4 → 2024 GPT-4o/o1 → 2025 o3/GPT-4.5)이 표로 압축. 제품 라인업 6종(ChatGPT/DALL-E 3/Codex/Whisper/Sora/OpenAI API) + GPT-4o vs o3 vs GPT-4.5 모델 특성 비교 표 포함. owner의 OpenAI 사용 진입점 source.
 
 ## 논쟁/모순
 

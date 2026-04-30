@@ -14,13 +14,13 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 11
-inbound_count: 50
+inbound_count: 53
 created: 2026-04-28
 updated: 2026-04-28
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "LangChain Inc. 리브랜딩 + langchain_v1 채택률 + monorepo 구조 변경 — 분기별 재검증"
-cited_by_count: 25
+cited_by_count: 26
 ---
 
 # LangChain

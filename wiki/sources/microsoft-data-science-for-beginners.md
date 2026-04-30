@@ -23,22 +23,22 @@ related:
 - '[[pandas-dev-pandas]]'
 confidence: high
 inbound_count: 23
-cited_by:
-- '[[agent-stack-evolution]]'
-- '[[c2spf-analytics]]'
-- '[[c2spf-analytics-renewal]]'
-- '[[data-pipeline-bigquery]]'
-- '[[microsoft]]'
-- '[[microsoft-for-beginners]]'
-- '[[microsoft-ml-for-beginners]]'
-- '[[openai-openai-cookbook]]'
-- '[[pandas]]'
-- '[[pandas-dev-pandas]]'
-cited_by_count: 10
 aliases:
 - Microsoft Data Science For Beginners
 - microsoft data science for beginners
 - microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[c2spf-analytics]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas]]"
+  - "[[pandas-dev-pandas]]"
+cited_by_count: 10
 ---
 
 # microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문

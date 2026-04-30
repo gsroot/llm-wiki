@@ -17,7 +17,7 @@ sources:
 - '[[microsoft-generative-ai-for-beginners]]'
 source_count: 12
 observed_source_refs: 17
-inbound_count: 92
+inbound_count: 93
 verification_required: true
 last_verified: 2026-04-30
 verification_notes: 10개 OSS 거버넌스 모델 카탈로그 — 분기별 재검증. 본문에 박힌 인바운드 수치는 시점 스냅샷이며, 자동 필드(inbound_count·cited_by_count)가 source-of-truth.
@@ -52,7 +52,7 @@ tags:
 - governance
 - hub
 verification_procedure: 'agent-skills(204)/harness(178)/mcp(143)/claude-code(128) 4개 sub-hub 외부 상태 분기별 점검: Anthropic Skills 공식 통합 진척, MCP 표준 버전, Claude Code 출시 채널 상태, agent harness 거버넌스 모델 변동. 변동 시 본문 12단계 AGENTS.md 진화 표·last_verified 갱신.'
-cited_by_count: 59
+cited_by_count: 58
 ---
 
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
@@ -280,3 +280,65 @@ cited_by_count: 59
 - [[tanstack-query]]
 - [[using-llm-wiki-as-rag]]
 - [[zustand]]
+
+## 인용한 페이지
+
+- [[agent-skills]]
+- [[agent-stack-evolution]]
+- [[anthropics-claude-cookbooks]]
+- [[anthropics-skills]]
+- [[astral-sh-uv]]
+- [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
+- [[claude-code]]
+- [[crewai]]
+- [[deepagents]]
+- [[fastapi]]
+- [[fastapi-fastapi]]
+- [[fastmcp]]
+- [[flutter]]
+- [[flutter-flutter]]
+- [[flutter-nextjs-fullstack-pattern]]
+- [[github-spec-kit]]
+- [[harness]]
+- [[kafka]]
+- [[langchain]]
+- [[langgraph]]
+- [[lightgbm]]
+- [[matechat]]
+- [[matechat-business-validation]]
+- [[matechat-launch-metrics-ledger]]
+- [[mcp]]
+- [[microsoft-ai-agents-for-beginners]]
+- [[microsoft-generative-ai-for-beginners]]
+- [[nextjs]]
+- [[obsidian-guide]]
+- [[openai-agents-python]]
+- [[openai-openai-agents-python]]
+- [[openai-openai-cookbook]]
+- [[pandas]]
+- [[pandas-ai]]
+- [[pandas-dev-pandas]]
+- [[polars]]
+- [[portfolio]]
+- [[portfolio-seed]]
+- [[postgresql]]
+- [[prometheus]]
+- [[pyarrow]]
+- [[pydantic]]
+- [[pydantic-ai]]
+- [[rag]]
+- [[redis]]
+- [[ruff]]
+- [[scikit-learn]]
+- [[scikit-learn-scikit-learn]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-operating-profile-2026]]
+- [[seokgeun-stack-guide]]
+- [[shadcn-ui]]
+- [[slash-commands-vs-agent-skills]]
+- [[tanstack-query]]
+- [[using-llm-wiki-as-rag]]
+- [[zustand]]
+

@@ -30,7 +30,7 @@ related:
 - '[[microsoft-lightgbm]]'
 source_count: 2
 observed_source_refs: 30
-inbound_count: 67
+inbound_count: 69
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 26

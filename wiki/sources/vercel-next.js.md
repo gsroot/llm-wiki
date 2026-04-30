@@ -25,20 +25,20 @@ tags:
 - LLM-pr-marker
 confidence: high
 inbound_count: 18
-cited_by:
-- '[[agent-skills]]'
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[nextjs]]'
-- '[[react]]'
-- '[[tailwindcss]]'
-- '[[turbopack]]'
-- '[[vercel]]'
-cited_by_count: 7
 aliases:
 - Vercel Next.Js
 - vercel next.js
 - vercel/next.js (The React Framework, AGENTS.md 12단계 진화 사례)
 - vercel/next.js 소스
+cited_by:
+  - "[[agent-skills]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[nextjs]]"
+  - "[[react]]"
+  - "[[tailwindcss]]"
+  - "[[turbopack]]"
+  - "[[vercel]]"
+cited_by_count: 7
 ---
 
 # vercel/next.js 소스

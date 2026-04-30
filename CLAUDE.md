@@ -305,6 +305,87 @@ grep -c "unique signature" /Users/sgkim/Projects/llm-wiki/wiki/path/file.md  # 2
 - 프론트매터 없는 위키 페이지를 만들지 않는다
 - `index.md` 업데이트 없이 새 페이지를 만들지 않는다
 
+## 추출 거버넌스 (Extraction Governance)
+
+원천 자료(source)에서 wiki layer(concept/entity/synthesis) 신설 여부를 판단할 때 따르는 일관 기준. 목적은 **over-extract(과도한 신설로 위키 비대화) 와 under-extract(자료가 위키에 흐르지 않아 그래프 빈약화) 양극단을 동시에 방어**하는 것.
+
+### 4-layer 결정 트리
+
+source 1개에서 후보를 식별할 때 순차 적용:
+
+1. **이미 위키에 존재?** → 기존 페이지 frontmatter `related` + 본문 `## 출처`에 source 추가, 끝.
+2. **어느 layer 후보?**
+   - 고유명사(사람/조직/도구/시스템) → entity 후보
+   - 추상 개념·패턴·방법론 → concept 후보
+   - 2+ source를 가로지르는 비교/타임라인/hub → synthesis 후보
+   - 위 어느 것도 아님 → source 페이지 본문에만 남기고 끝
+3. **layer별 5-test 중 3개 이상 통과** (다음 표) → Pass면 신설, Fail이면 source에만 둠.
+4. **inbound 기대 점검**: 6개월 내 2+ 페이지에서 인용될까? Yes → 신설 확정. No → 보류, 두 번째 source 등장 시 재평가.
+
+### Concept 5-test
+
+| 테스트 | 질문 |
+|---|---|
+| **Recurrence** | 2+ source에 등장하나? |
+| **Generalizability** | 단일 source 맥락 밖에서도 적용되나? |
+| **Owner relevance** | owner가 이 개념을 도구로 쓸 가능성? |
+| **Stable name** | 인용 가능한 안정 명칭? |
+| **Body weight** | 본문 30+줄 쓸 거리 있나? |
+
+### Entity 5-test
+
+| 테스트 | 질문 |
+|---|---|
+| **Uniqueness** | 세상에 하나뿐인 고유명사? |
+| **Centrality** | 1+ source의 주요 주제? (지나가는 언급 ✗) |
+| **Inbound potential** | 2+ 다른 페이지에서 참조될 가능성? |
+| **Stability** | 6+ 개월 지속 존재할 대상? |
+| **Owner relevance** | owner stack/관심에 연결? |
+
+### Synthesis 5-test
+
+| 테스트 | 질문 |
+|---|---|
+| **Multi-source** | 진짜 2+ source를 합쳐 만든 것인가? (4+ 권장: §Synthesis 분류 정책) |
+| **New insight** | 단일 source엔 없던 새 그림(비교/타임라인/hub)? |
+| **Owner-actionable** | owner의 의사결정·라우팅에 도움? |
+| **Sustained relevance** | 6+ 개월 후에도 가치 있나? |
+| **Can't-fit-elsewhere** | 기존 concept/entity/synthesis에 흡수 안 되나? |
+
+### Volume sanity check (편차 최소화)
+
+source type별 **예상 추출량 대역**. 적색 신호 발생 시 5-test 재실행.
+
+| Source 타입 | 신규 concept | 신규 entity | 신규 synthesis | 기존 페이지 보강 |
+|---|---|---|---|---|
+| 두꺼운 입문서·교재 | 3~6개 | 0~2개 | 0~1개 | 5~10개 |
+| 단일 OSS 레포 | 1~3개 | 1개(레포 자체) | 0개 | 3~5개 |
+| 짧은 블로그·기사 | 0~1개 | 0~1개 | 0개 | 1~3개 |
+| owner 본인 노트 | 0개 | 0~2개 | 0~1개 | 2~5개 |
+
+**적색 신호**:
+- 1개 source에서 concept **10+개** 신설 시도 → over-extract, Recurrence 재검
+- 두꺼운 입문서인데 concept **0개** 신설 → under-extract, 5-test 재실행
+- synthesis 신설 시 sources < 2 → multi-source 위반, source 페이지로 격하
+
+### Under-extract 자동 탐지 (lint 신호)
+
+`wiki-lint.py`가 보고하는 신호로 사후 audit:
+
+| 신호 | 의미 | 조치 |
+|---|---|---|
+| source 페이지 `inbound_count == 1` (index만 인용) | 자료가 위키 어디에도 안 흘러감 | 5-test 재실행, 누락 추출 발굴 |
+| concept 페이지 `cited_by_count == 1` | 1 source에만 묶임 → 진짜 concept 아닐 수 있음 | Recurrence 재검, source로 흡수 검토 |
+| synthesis `sources` 길이 < 2 | multi-source 위반 | source로 격하 또는 흡수 |
+
+자세한 lint 항목은 `## 점검 (Lint) 워크플로우` 섹션 참조. 본 신호는 결함이 아닌 **정보 보고**.
+
+### 적용 의무
+
+- **새 source 수집 시**: 본 거버넌스를 명시적으로 따라 신설/보강 후보를 식별. commit message에 "추출 결과: concept N개 신설 + entity M개 보강 + synthesis K개 신설/흡수" 명시.
+- **재평가 트리거**: 분기 1회 audit 또는 lint under-extract 신호 발생 시 5-test 재실행.
+- **Synthesis 분류 정책과의 관계**: 본 5-test 통과 후 synthesis로 신설된 페이지는 다음 §Synthesis 분류 정책의 category(`hub`/`comparison`/`operating-log` 등) 분류 의무를 추가로 받는다.
+
 ## Synthesis 분류 정책
 
 `wiki/syntheses/` 페이지는 두 가지 성격이 혼재한다. RAG·평가·인용 우선순위에서 두 성격을 구분하기 위해 `category:` 필드로 명시 분리한다.

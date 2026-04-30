@@ -14,7 +14,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 5
-inbound_count: 28
+inbound_count: 29
 created: 2026-04-28
 updated: 2026-04-28
 tags: [riverpod, flutter, dart, state-management, dependency-injection, reactive]

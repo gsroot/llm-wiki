@@ -16,7 +16,7 @@ sources:
 - '[[flutter-nextjs-fullstack-pattern]]'
 source_count: 5
 observed_source_refs: 10
-inbound_count: 143
+inbound_count: 144
 related:
 - '[[python]]'
 - '[[fastapi]]'
@@ -46,8 +46,8 @@ tags:
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: '32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그'
-cited_by_count: 58
 verification_procedure: 32 OSS 카탈로그 라이브러리의 GitHub release 페이지 분기별 점검 (메이저 버전 변동·deprecated 신호·라이선스 변경). 신규 OSS 출현 시 6분류 카탈로그 진입 검토. 변동 시 OSS entity 페이지·본 페이지 카탈로그 표·last_verified 갱신.
+cited_by_count: 60
 ---
 
 # 석근 스택 가이드 — 마무리 종합
@@ -338,3 +338,67 @@ flutter pub add --dev riverpod_generator build_runner
 - [[tanstack-query]]
 - [[uv]]
 - [[zustand]]
+
+## 인용한 페이지
+
+- [[agent-skills]]
+- [[alembic]]
+- [[backend-fastapi-stack]]
+- [[c2spf-analytics]]
+- [[career-timeline-seokgeun]]
+- [[claude-code]]
+- [[com2us-platform]]
+- [[crewai]]
+- [[deepagents]]
+- [[docker]]
+- [[duckdb]]
+- [[fastapi]]
+- [[fastmcp]]
+- [[flutter]]
+- [[flutter-nextjs-fullstack-pattern]]
+- [[github-actions]]
+- [[grafana]]
+- [[harness]]
+- [[kafka]]
+- [[kpi-recovery-loop]]
+- [[langchain]]
+- [[langgraph]]
+- [[lightgbm]]
+- [[llm-infra-meta-cluster]]
+- [[matechat]]
+- [[matechat-chat-analysis-module]]
+- [[mcp]]
+- [[nextjs]]
+- [[openai-agents-python]]
+- [[pandas]]
+- [[pandas-ai]]
+- [[parquet]]
+- [[polars]]
+- [[portfolio]]
+- [[portfolio-ko]]
+- [[portfolio-method]]
+- [[portfolio-resume-ko]]
+- [[portfolio-seed]]
+- [[postgresql]]
+- [[prometheus]]
+- [[pyarrow]]
+- [[pydantic]]
+- [[pydantic-ai]]
+- [[rag]]
+- [[redis]]
+- [[riverpod]]
+- [[ruff]]
+- [[scikit-learn]]
+- [[sentry]]
+- [[seokgeun-kim]]
+- [[seokgeun-mate-chat]]
+- [[seokgeun-matechat-validation]]
+- [[seokgeun-operating-profile-2026]]
+- [[shadcn-ui]]
+- [[sqlalchemy]]
+- [[tailwindcss]]
+- [[tanstack]]
+- [[tanstack-query]]
+- [[uv]]
+- [[zustand]]
+

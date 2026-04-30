@@ -25,30 +25,30 @@ related:
 - '[[seokgeun-stack-guide]]'
 - '[[llm-infra-meta-cluster]]'
 confidence: high
-inbound_count: 46
-cited_by:
-- '[[backend-python-fastapi]]'
-- '[[blockchain-xpla]]'
-- '[[c2spf-analytics]]'
-- '[[career-timeline-seokgeun]]'
-- '[[com2us-platform]]'
-- '[[data-pipeline-bigquery]]'
-- '[[devops-cicd]]'
-- '[[frontend-react]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[matechat]]'
-- '[[ml-ai]]'
-- '[[portfolio]]'
-- '[[portfolio-method]]'
-- '[[portfolio-resume-ko]]'
-- '[[seokgeun-kim]]'
-- '[[seokgeun-stack-guide]]'
-- '[[xpla-platform]]'
-cited_by_count: 17
+inbound_count: 48
 aliases:
 - Portfolio Seed
 - portfolio seed
 - 포트폴리오 시드 문서 (old-portfolio.md)
+cited_by:
+  - "[[backend-python-fastapi]]"
+  - "[[blockchain-xpla]]"
+  - "[[c2spf-analytics]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[com2us-platform]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[devops-cicd]]"
+  - "[[frontend-react]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[matechat]]"
+  - "[[ml-ai]]"
+  - "[[portfolio]]"
+  - "[[portfolio-method]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-stack-guide]]"
+  - "[[xpla-platform]]"
+cited_by_count: 17
 ---
 
 # 포트폴리오 시드 문서 (old-portfolio.md)

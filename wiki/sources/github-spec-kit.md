@@ -39,35 +39,35 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[context-engineering]]'
 confidence: high
-inbound_count: 70
-cited_by:
-- '[[agent-patterns]]'
-- '[[agent-skills]]'
-- '[[agent-stack-evolution]]'
-- '[[anthropics-claude-cookbooks]]'
-- '[[anthropics-skills]]'
-- '[[astral-sh-uv]]'
-- '[[claude-code]]'
-- '[[fastapi]]'
-- '[[fastapi-fastapi]]'
-- '[[flutter]]'
-- '[[flutter-flutter]]'
-- '[[github]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[openai-openai-cookbook]]'
-- '[[pandas-dev-pandas]]'
-- '[[pdep]]'
-- '[[scikit-learn]]'
-- '[[scikit-learn-scikit-learn]]'
-- '[[spec-driven-development]]'
-- '[[spec-kit]]'
-- '[[uv]]'
-cited_by_count: 22
+inbound_count: 71
 aliases:
 - Github Spec Kit
 - github spec kit
 - github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)
+cited_by:
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
+  - "[[astral-sh-uv]]"
+  - "[[claude-code]]"
+  - "[[fastapi]]"
+  - "[[fastapi-fastapi]]"
+  - "[[flutter]]"
+  - "[[flutter-flutter]]"
+  - "[[github]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[pdep]]"
+  - "[[scikit-learn]]"
+  - "[[scikit-learn-scikit-learn]]"
+  - "[[spec-driven-development]]"
+  - "[[spec-kit]]"
+  - "[[uv]]"
+cited_by_count: 22
 ---
 
 # github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)

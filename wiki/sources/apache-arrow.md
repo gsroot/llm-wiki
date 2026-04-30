@@ -26,32 +26,32 @@ related:
 - '[[apache-foundation]]'
 confidence: high
 inbound_count: 50
-cited_by:
-- '[[apache-foundation]]'
-- '[[append-only-log]]'
-- '[[c2spf-analytics]]'
-- '[[copy-on-write]]'
-- '[[dataframe-ecosystem-evolution]]'
-- '[[duckdb]]'
-- '[[duckdb-duckdb]]'
-- '[[kafka]]'
-- '[[lakehouse]]'
-- '[[lazy-evaluation]]'
-- '[[lightgbm]]'
-- '[[microsoft-lightgbm]]'
-- '[[pandas-vs-polars-vs-duckdb]]'
-- '[[parquet]]'
-- '[[pola-rs-polars]]'
-- '[[polars]]'
-- '[[predicate-pushdown]]'
-- '[[pyarrow]]'
-- '[[zero-copy]]'
-cited_by_count: 19
 aliases:
 - Apache Arrow
 - apache arrow
 - apache/arrow + apache/parquet-format
 - apache/arrow + apache/parquet-format (Arrow + Parquet 명세)
+cited_by:
+  - "[[apache-foundation]]"
+  - "[[append-only-log]]"
+  - "[[c2spf-analytics]]"
+  - "[[copy-on-write]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[duckdb]]"
+  - "[[duckdb-duckdb]]"
+  - "[[kafka]]"
+  - "[[lakehouse]]"
+  - "[[lazy-evaluation]]"
+  - "[[lightgbm]]"
+  - "[[microsoft-lightgbm]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[parquet]]"
+  - "[[pola-rs-polars]]"
+  - "[[polars]]"
+  - "[[predicate-pushdown]]"
+  - "[[pyarrow]]"
+  - "[[zero-copy]]"
+cited_by_count: 19
 ---
 
 # apache/arrow + apache/parquet-format

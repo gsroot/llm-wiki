@@ -24,21 +24,21 @@ related:
 - '[[harness]]'
 - '[[autonomous-research-loop]]'
 confidence: high
-inbound_count: 27
-cited_by:
-- '[[agent-stack-evolution]]'
-- '[[context-engineering]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[mcp]]'
-- '[[microsoft]]'
-- '[[microsoft-for-beginners]]'
-- '[[microsoft-generative-ai-for-beginners]]'
-cited_by_count: 8
+inbound_count: 28
 aliases:
 - Microsoft Ai Agents For Beginners
 - microsoft ai agents for beginners
 - microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[context-engineering]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[microsoft]]"
+  - "[[microsoft-for-beginners]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
+cited_by_count: 8
 ---
 
 # microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문

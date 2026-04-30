@@ -22,17 +22,17 @@ related:
 - '[[agent-skills]]'
 confidence: high
 inbound_count: 14
-cited_by:
-- '[[agent-skills]]'
-- '[[devops-cicd]]'
-- '[[observability]]'
-- '[[observability-and-cicd-stack]]'
-- '[[prometheus]]'
-cited_by_count: 5
 aliases:
 - Prometheus
 - Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md
 - prometheus
+cited_by:
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[prometheus]]"
+cited_by_count: 5
 ---
 
 # Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md

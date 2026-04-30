@@ -18,17 +18,18 @@ related:
 - '[[portfolio-seed]]'
 - '[[llm-wiki-pattern]]'
 confidence: high
-inbound_count: 16
-cited_by:
-- '[[career-timeline-seokgeun]]'
-- '[[portfolio]]'
-- '[[portfolio-seed]]'
-- '[[seokgeun-kim]]'
-cited_by_count: 4
+inbound_count: 17
 aliases:
 - Portfolio Method
 - portfolio method
 - 포트폴리오 방법론 (docs/00-meta 합본)
+cited_by:
+  - "[[career-timeline-seokgeun]]"
+  - "[[matechat]]"
+  - "[[portfolio]]"
+  - "[[portfolio-seed]]"
+  - "[[seokgeun-kim]]"
+cited_by_count: 5
 ---
 
 # 포트폴리오 방법론 (docs/00-meta 합본)

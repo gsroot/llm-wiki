@@ -39,7 +39,7 @@ related:
 - '[[seokgeun-kim-profile-2026]]'
 source_count: 8
 observed_source_refs: 35
-inbound_count: 100
+inbound_count: 103
 created: 2026-04-24
 updated: 2026-04-29
 cited_by_count: 44

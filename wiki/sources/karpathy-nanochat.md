@@ -28,17 +28,17 @@ related:
 - '[[ml-ai]]'
 confidence: high
 inbound_count: 11
-cited_by:
-- '[[agent-stack-evolution]]'
-- '[[autonomous-research-loop]]'
-- '[[harness]]'
-- '[[karpathy]]'
-- '[[nanochat]]'
-cited_by_count: 5
 aliases:
 - Karpathy Nanochat
 - karpathy nanochat
 - karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[autonomous-research-loop]]"
+  - "[[harness]]"
+  - "[[karpathy]]"
+  - "[[nanochat]]"
+cited_by_count: 5
 ---
 
 # karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인

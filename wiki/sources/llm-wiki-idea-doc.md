@@ -23,18 +23,18 @@ related:
 - '[[obsidian-web-clipper]]'
 confidence: high
 inbound_count: 15
-cited_by:
-- '[[llm-wiki-pattern]]'
-- '[[mcp]]'
-- '[[memex]]'
-- '[[obsidian-web-clipper]]'
-- '[[qmd]]'
-- '[[rag]]'
-cited_by_count: 7
 aliases:
 - LLM 위키 아이디어 문서
 - Llm Wiki Idea Doc
 - llm wiki idea doc
+cited_by:
+  - "[[llm-wiki-pattern]]"
+  - "[[mcp]]"
+  - "[[memex]]"
+  - "[[obsidian-web-clipper]]"
+  - "[[qmd]]"
+  - "[[rag]]"
+cited_by_count: 6
 ---
 
 # LLM 위키 아이디어 문서

@@ -20,17 +20,17 @@ related:
 - '[[agent-skills]]'
 confidence: high
 inbound_count: 14
-cited_by:
-- '[[agent-skills]]'
-- '[[devops-cicd]]'
-- '[[grafana]]'
-- '[[observability]]'
-- '[[observability-and-cicd-stack]]'
-cited_by_count: 5
 aliases:
 - Grafana
 - Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md
 - grafana
+cited_by:
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
+  - "[[grafana]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+cited_by_count: 5
 ---
 
 # Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md

@@ -39,26 +39,26 @@ related:
 - '[[context-engineering]]'
 - '[[github]]'
 confidence: high
-inbound_count: 33
-cited_by:
-- '[[agent-skills]]'
-- '[[agent-stack-evolution]]'
-- '[[anthropics-skills]]'
-- '[[c2spf-analytics]]'
-- '[[claude-code]]'
-- '[[dart]]'
-- '[[flutter]]'
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[github-spec-kit]]'
-- '[[google]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[openai-openai-cookbook]]'
-cited_by_count: 13
+inbound_count: 34
 aliases:
 - Flutter
 - flutter
 - flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropics-skills]]"
+  - "[[c2spf-analytics]]"
+  - "[[claude-code]]"
+  - "[[dart]]"
+  - "[[flutter]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[github-spec-kit]]"
+  - "[[google]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[openai-openai-cookbook]]"
+cited_by_count: 13
 ---
 
 # flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준

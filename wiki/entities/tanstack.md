@@ -17,7 +17,7 @@ related:
 - '[[tanstack-tanstack-query]]'
 source_count: 1
 observed_source_refs: 3
-inbound_count: 8
+inbound_count: 9
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 4

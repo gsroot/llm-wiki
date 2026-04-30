@@ -33,36 +33,36 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[github-spec-kit]]'
 confidence: high
-inbound_count: 45
-cited_by:
-- '[[anthropics-claude-cookbooks]]'
-- '[[anthropics-skills]]'
-- '[[bdfl]]'
-- '[[c2spf-analytics]]'
-- '[[c2spf-analytics-renewal]]'
-- '[[copy-on-write]]'
-- '[[data-pipeline-bigquery]]'
-- '[[dataframe]]'
-- '[[dataframe-ecosystem-evolution]]'
-- '[[github-spec-kit]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[microsoft-data-science-for-beginners]]'
-- '[[microsoft-ml-for-beginners]]'
-- '[[ml-ai]]'
-- '[[numfocus]]'
-- '[[openai-openai-cookbook]]'
-- '[[pandas]]'
-- '[[pandas-dev]]'
-- '[[pandas-vs-polars-vs-duckdb]]'
-- '[[pdep]]'
-- '[[python]]'
-cited_by_count: 22
+inbound_count: 46
 aliases:
 - Pandas Dev
 - pandas dev
 - pandas-dev/pandas — Python 데이터 분석 표준 라이브러리
 - pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BDFL + NumFOCUS + PDEP 3축 거버넌스)
+cited_by:
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[anthropics-skills]]"
+  - "[[bdfl]]"
+  - "[[c2spf-analytics]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[copy-on-write]]"
+  - "[[data-pipeline-bigquery]]"
+  - "[[dataframe]]"
+  - "[[dataframe-ecosystem-evolution]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[microsoft-data-science-for-beginners]]"
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[ml-ai]]"
+  - "[[numfocus]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas]]"
+  - "[[pandas-dev]]"
+  - "[[pandas-vs-polars-vs-duckdb]]"
+  - "[[pdep]]"
+  - "[[python]]"
+cited_by_count: 22
 ---
 
 # pandas-dev/pandas — Python 데이터 분석 표준 라이브러리

@@ -46,29 +46,29 @@ related:
 - '[[uv]]'
 - '[[python-packaging]]'
 confidence: high
-inbound_count: 34
-cited_by:
-- '[[agent-frameworks-matrix]]'
-- '[[agent-patterns]]'
-- '[[agent-skills]]'
-- '[[agent-stack-evolution]]'
-- '[[anthropics-claude-cookbooks]]'
-- '[[astral-sh-uv]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[mcp]]'
-- '[[ml-ai]]'
-- '[[openai]]'
-- '[[openai-agents-python]]'
-- '[[openai-openai-cookbook]]'
-- '[[python]]'
-cited_by_count: 14
+inbound_count: 35
 aliases:
 - Openai Agents Python
 - openai agents python
 - openai-agents-python
 - openai/openai-agents-python — OpenAI Agents SDK 본체
 - openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬
+cited_by:
+  - "[[agent-frameworks-matrix]]"
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[astral-sh-uv]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[ml-ai]]"
+  - "[[openai]]"
+  - "[[openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[python]]"
+cited_by_count: 14
 ---
 
 # openai/openai-agents-python — OpenAI Agents SDK 본체

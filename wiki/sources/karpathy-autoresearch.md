@@ -25,24 +25,25 @@ related:
 - '[[context-engineering]]'
 - '[[claude-code]]'
 confidence: high
-inbound_count: 24
-cited_by:
-- '[[agent-stack-evolution]]'
-- '[[anthropics-claude-cookbooks]]'
-- '[[astral-sh-uv]]'
-- '[[autonomous-research-loop]]'
-- '[[autoresearch]]'
-- '[[claude-code]]'
-- '[[context-engineering]]'
-- '[[harness]]'
-- '[[karpathy]]'
-- '[[slash-commands-vs-agent-skills]]'
-- '[[uv]]'
-cited_by_count: 11
+inbound_count: 25
 aliases:
 - Karpathy Autoresearch
 - karpathy autoresearch
 - karpathy/autoresearch — 자율 LLM 실험 루프
+cited_by:
+  - "[[agent-stack-evolution]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[astral-sh-uv]]"
+  - "[[autonomous-research-loop]]"
+  - "[[autoresearch]]"
+  - "[[chain-of-thought-prompting]]"
+  - "[[claude-code]]"
+  - "[[context-engineering]]"
+  - "[[harness]]"
+  - "[[karpathy]]"
+  - "[[slash-commands-vs-agent-skills]]"
+  - "[[uv]]"
+cited_by_count: 12
 ---
 
 # karpathy/autoresearch — 자율 LLM 실험 루프

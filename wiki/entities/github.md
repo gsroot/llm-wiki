@@ -20,12 +20,15 @@ related:
 - '[[anthropic]]'
 - '[[agent-skills]]'
 - '[[github-spec-kit]]'
+- '[[openai]]'
+- '[[codex]]'
+- '[[openai-chatgpt-codex-guide]]'
 source_count: 1
 observed_source_refs: 8
-inbound_count: 41
+inbound_count: 48
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 19
+cited_by_count: 21
 ---
 
 # GitHub
@@ -83,6 +86,7 @@ GitHub이 직접 운영하는 [[spec-kit]] (★91k+, MIT, 2025-08 시작 / 2026-
 ## 출처
 
 - [[github-spec-kit]] — GitHub 공식 Spec Kit 저장소 (★91k+). GitHub의 "AI 코딩 메타-층" 전략의 가장 명시적 결과물
+- [[openai-chatgpt-codex-guide]] — 송영옥 한국어 OpenAI 실무서. GitHub Copilot이 [[openai]] Codex 모델 기반으로 GitHub와의 파트너십을 통해 IDE 인라인 자동완성 도구로 가장 널리 쓰임을 명시. 13장에서 Copilot vs Claude Code vs [[codex|Codex]] 3대 코딩 도구 보완재 포지셔닝 — Copilot은 IDE 인라인 영역 담당.
 
 ## 메모
 

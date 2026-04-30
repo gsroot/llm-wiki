@@ -22,23 +22,23 @@ related:
 - '[[qmd]]'
 - '[[slash-commands-vs-agent-skills]]'
 confidence: high
-inbound_count: 28
-cited_by:
-- '[[claude-code]]'
-- '[[claude-code-master-guide]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[llm-wiki-pattern]]'
-- '[[mcp]]'
-- '[[microsoft-generative-ai-for-beginners]]'
-- '[[rag]]'
-- '[[seokgeun-kim]]'
-- '[[slash-commands-vs-agent-skills]]'
-cited_by_count: 11
+inbound_count: 29
 aliases:
 - Using Llm Wiki As Rag
 - using llm wiki as rag
 - 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법
+cited_by:
+  - "[[claude-code]]"
+  - "[[claude-code-master-guide]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[llm-wiki-pattern]]"
+  - "[[mcp]]"
+  - "[[microsoft-generative-ai-for-beginners]]"
+  - "[[rag]]"
+  - "[[seokgeun-kim]]"
+  - "[[slash-commands-vs-agent-skills]]"
+cited_by_count: 10
 ---
 
 # 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법

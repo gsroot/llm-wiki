@@ -21,18 +21,18 @@ tags:
 - dependency-injection
 confidence: high
 inbound_count: 12
-cited_by:
-- '[[agent-skills]]'
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[matechat]]'
-- '[[react]]'
-- '[[riverpod]]'
-cited_by_count: 5
 aliases:
 - rrousselGit Riverpod
 - rrousselGit riverpod
 - rrousselGit/riverpod (Flutter Favorite)
 - rrousselGit/riverpod 소스
+cited_by:
+  - "[[agent-skills]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[matechat]]"
+  - "[[react]]"
+  - "[[riverpod]]"
+cited_by_count: 5
 ---
 
 # rrousselGit/riverpod 소스

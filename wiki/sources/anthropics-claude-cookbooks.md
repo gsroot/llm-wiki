@@ -27,36 +27,36 @@ related:
 - '[[token-economy]]'
 - '[[karpathy-autoresearch]]'
 confidence: high
-inbound_count: 64
-cited_by:
-- '[[agent-patterns]]'
-- '[[agent-skills]]'
-- '[[agent-stack-evolution]]'
-- '[[anthropic]]'
-- '[[anthropics-skills]]'
-- '[[astral-sh-uv]]'
-- '[[claude-agent-sdk]]'
-- '[[claude-code]]'
-- '[[claude-managed-agents]]'
-- '[[context-engineering]]'
-- '[[github-spec-kit]]'
-- '[[harness]]'
-- '[[karpathy-autoresearch]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[mcp]]'
-- '[[openai-cookbook]]'
-- '[[openai-openai-agents-python]]'
-- '[[openai-openai-cookbook]]'
-- '[[pandas-dev-pandas]]'
-- '[[prompt-cache]]'
-- '[[rag]]'
-- '[[spec-driven-development]]'
-- '[[token-economy]]'
-cited_by_count: 23
+inbound_count: 65
 aliases:
 - Anthropics Claude Cookbooks
 - anthropics claude cookbooks
 - anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음
+cited_by:
+  - "[[agent-patterns]]"
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[anthropic]]"
+  - "[[anthropics-skills]]"
+  - "[[astral-sh-uv]]"
+  - "[[claude-agent-sdk]]"
+  - "[[claude-code]]"
+  - "[[claude-managed-agents]]"
+  - "[[context-engineering]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[karpathy-autoresearch]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mcp]]"
+  - "[[openai-cookbook]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[pandas-dev-pandas]]"
+  - "[[prompt-cache]]"
+  - "[[rag]]"
+  - "[[spec-driven-development]]"
+  - "[[token-economy]]"
+cited_by_count: 23
 ---
 
 # anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음

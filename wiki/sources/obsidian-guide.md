@@ -19,7 +19,7 @@ related:
 - '[[llm-wiki-pattern]]'
 - '[[obsidian-web-clipper]]'
 confidence: high
-inbound_count: 12
+inbound_count: 13
 aliases:
 - Obsidian Guide
 - Obsidian 사용 가이드

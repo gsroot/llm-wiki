@@ -31,20 +31,20 @@ verification_required: true
 last_verified: 2026-04-29
 verification_notes: 육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인
 inbound_count: 27
-cited_by:
-- '[[kpi-recovery-loop]]'
-- '[[mate-chat-project-wiki-2026]]'
-- '[[matechat]]'
-- '[[matechat-project-knowledge-map]]'
-- '[[parental-leave-2026-operating-plan]]'
-- '[[portfolio]]'
-- '[[seokgeun-kim]]'
-- '[[seokgeun-operating-profile-2026]]'
-cited_by_count: 8
 aliases:
 - Seokgeun Kim Profile 2026
 - seokgeun kim profile 2026
 - 석근 프로필 (2026)
+cited_by:
+  - "[[kpi-recovery-loop]]"
+  - "[[mate-chat-project-wiki-2026]]"
+  - "[[matechat]]"
+  - "[[matechat-project-knowledge-map]]"
+  - "[[parental-leave-2026-operating-plan]]"
+  - "[[portfolio]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-operating-profile-2026]]"
+cited_by_count: 8
 ---
 
 # 석근 프로필 (2026)

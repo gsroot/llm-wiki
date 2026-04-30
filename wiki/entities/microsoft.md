@@ -23,12 +23,15 @@ related:
 - '[[microsoft-web-dev-for-beginners]]'
 - '[[microsoft-ai-agents-for-beginners]]'
 - '[[microsoft-data-science-for-beginners]]'
+- '[[github]]'
+- '[[openai]]'
+- '[[openai-chatgpt-codex-guide]]'
 source_count: 5
 observed_source_refs: 17
-inbound_count: 44
+inbound_count: 46
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 15
+cited_by_count: 16
 ---
 
 # Microsoft
@@ -90,6 +93,7 @@ cited_by_count: 15
 - [[microsoft-web-dev-for-beginners]] — 24 lesson 웹 개발 코스
 - [[microsoft-ai-agents-for-beginners]] — 12+ lesson AI 에이전트 코스 (가장 최신)
 - [[microsoft-data-science-for-beginners]] — 20 lesson 데이터과학 코스
+- [[openai-chatgpt-codex-guide]] — 송영옥 한국어 OpenAI 실무서 1장. **Microsoft 2023 연구**가 인용원: "GitHub Copilot 사용자의 코드 작성 속도가 비사용자 대비 평균 55% 빠르다"는 통계. Microsoft가 [[github]] 모회사로서 [[openai]] Copilot 통합·보급의 핵심 축임을 외부 source가 다시 확인.
 
 ## 메모
 

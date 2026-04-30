@@ -20,16 +20,16 @@ related:
 - '[[llm-wiki-pattern]]'
 confidence: high
 inbound_count: 15
-cited_by:
-- '[[anthropic]]'
-- '[[claude-code]]'
-- '[[claude-code-quickstart]]'
-- '[[mcp]]'
-cited_by_count: 4
 aliases:
 - Claude Code Overview
 - Claude Code 개요
 - claude code overview
+cited_by:
+  - "[[anthropic]]"
+  - "[[claude-code]]"
+  - "[[claude-code-quickstart]]"
+  - "[[mcp]]"
+cited_by_count: 4
 ---
 
 # Claude Code 개요

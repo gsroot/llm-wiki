@@ -20,18 +20,18 @@ related:
 - '[[agent-skills]]'
 confidence: high
 inbound_count: 16
-cited_by:
-- '[[agent-skills]]'
-- '[[devops-cicd]]'
-- '[[event-driven-architecture]]'
-- '[[observability]]'
-- '[[observability-and-cicd-stack]]'
-- '[[sentry]]'
-cited_by_count: 6
 aliases:
 - Getsentry Sentry
 - Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT
 - getsentry sentry
+cited_by:
+  - "[[agent-skills]]"
+  - "[[devops-cicd]]"
+  - "[[event-driven-architecture]]"
+  - "[[observability]]"
+  - "[[observability-and-cicd-stack]]"
+  - "[[sentry]]"
+cited_by_count: 6
 ---
 
 # Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT

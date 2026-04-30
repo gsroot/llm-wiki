@@ -32,10 +32,10 @@ related:
 - '[[openai-openai-cookbook]]'
 source_count: 1
 observed_source_refs: 13
-inbound_count: 37
+inbound_count: 41
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 15
+cited_by_count: 16
 ---
 
 # openai-cookbook (OpenAI Cookbook)

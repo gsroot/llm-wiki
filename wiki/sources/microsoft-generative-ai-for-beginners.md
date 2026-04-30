@@ -22,7 +22,7 @@ related:
 - '[[context-engineering]]'
 - '[[agent-skills]]'
 confidence: high
-inbound_count: 21
+inbound_count: 22
 aliases:
 - Microsoft Generative Ai For Beginners
 - microsoft generative ai for beginners

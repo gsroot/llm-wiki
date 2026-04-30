@@ -48,12 +48,14 @@ related:
 - '[[anthropics-skills]]'
 - '[[anthropics-claude-cookbooks]]'
 - '[[github-spec-kit]]'
+- '[[openai-chatgpt-codex-guide]]'
+- '[[codex]]'
 source_count: 8
-observed_source_refs: 39
-inbound_count: 129
+observed_source_refs: 44
+inbound_count: 149
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 44
+cited_by_count: 47
 ---
 
 # Claude Code
@@ -170,6 +172,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[anthropics-skills]] — Anthropic 공식 Agent Skills 레퍼런스 리포(17개 스킬·3개 플러그인 마켓플레이스·skill-creator)
 - [[anthropics-claude-cookbooks]] — Claude API/SDK 실습 노트북 카탈로그 (~100 노트북, 14 디렉토리). claude_agent_sdk 6단계·managed_agents 8개·patterns/agents 5패턴·skills 3종
 - [[github-spec-kit]] — GitHub의 Spec-Driven Development 툴킷. `--integration claude` 옵션이 Claude Code를 1급 시민으로 지원, `MarkdownIntegration` base class 사례
+- [[openai-chatgpt-codex-guide]] — 송영옥의 한국어 OpenAI 실무서 13장 (Codex 소개)에서 **3대 코딩 도구 보완재 모델** 정리: GitHub Copilot(IDE 인라인), Claude Code(로컬 터미널 페어 프로그래밍), [[codex|Codex]](클라우드 비동기 자율 PR 생성)는 대체재가 아니라 보완재. owner의 Claude Code 일상 사용 위에 Codex를 백그라운드 보조로 결합 가능한 위치 짚어줌.
 
 ## 메모
 
@@ -235,11 +238,13 @@ irm https://claude.ai/install.ps1 | iex
 - [[autoresearch]]
 - [[backend-fastapi-stack]]
 - [[c2spf-analytics]]
+- [[chain-of-thought-prompting]]
 - [[claude-agent-sdk]]
 - [[claude-code-master-guide]]
 - [[claude-code-overview]]
 - [[claude-code-quickstart]]
 - [[claude-managed-agents]]
+- [[codex]]
 - [[context-engineering]]
 - [[cowork]]
 - [[deepagents]]
@@ -260,6 +265,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[portfolio]]
 - [[prompt-cache]]
 - [[rag]]
+- [[rcif-prompt-pattern]]
 - [[scikit-learn]]
 - [[scikit-learn-scikit-learn]]
 - [[seokgeun-kim]]

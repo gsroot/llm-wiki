@@ -64,10 +64,10 @@ related:
 - '[[openai-openai-agents-python]]'
 source_count: 8
 observed_source_refs: 58
-inbound_count: 179
+inbound_count: 176
 created: 2026-04-15
 updated: 2026-04-29
-cited_by_count: 60
+cited_by_count: 62
 ---
 
 # 하네스 (Harness)
@@ -374,10 +374,12 @@ project/
 - [[autoresearch]]
 - [[backend-fastapi-stack]]
 - [[c2spf-analytics]]
+- [[chain-of-thought-prompting]]
 - [[claude-agent-sdk]]
 - [[claude-code]]
 - [[claude-code-master-guide]]
 - [[claude-managed-agents]]
+- [[codex]]
 - [[context-engineering]]
 - [[cowork]]
 - [[crewai]]

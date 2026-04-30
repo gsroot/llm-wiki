@@ -23,19 +23,19 @@ tags:
 - code-distribution
 confidence: high
 inbound_count: 14
-cited_by:
-- '[[agent-skills]]'
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[radix-ui]]'
-- '[[react]]'
-- '[[shadcn-ui]]'
-- '[[tailwindcss]]'
-cited_by_count: 6
 aliases:
 - Shadcn Ui
 - shadcn ui
 - shadcn-ui/ui (Open Code 패러다임 — 라이브러리가 아닌 코드 분배)
 - shadcn-ui/ui 소스
+cited_by:
+  - "[[agent-skills]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[radix-ui]]"
+  - "[[react]]"
+  - "[[shadcn-ui]]"
+  - "[[tailwindcss]]"
+cited_by_count: 6
 ---
 
 # shadcn-ui/ui 소스

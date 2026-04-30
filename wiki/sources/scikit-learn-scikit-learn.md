@@ -26,25 +26,25 @@ related:
 - '[[data-pipeline-bigquery]]'
 - '[[com2us-platform]]'
 confidence: high
-inbound_count: 23
-cited_by:
-- '[[anthropics-skills]]'
-- '[[c2spf-analytics]]'
-- '[[claude-code]]'
-- '[[com2us-platform]]'
-- '[[github-spec-kit]]'
-- '[[harness]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[microsoft-ml-for-beginners]]'
-- '[[ml-ai]]'
-- '[[numfocus]]'
-- '[[python]]'
-- '[[scikit-learn]]'
-cited_by_count: 12
+inbound_count: 24
 aliases:
 - Scikit Learn
 - scikit learn
 - scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)
+cited_by:
+  - "[[anthropics-skills]]"
+  - "[[c2spf-analytics]]"
+  - "[[claude-code]]"
+  - "[[com2us-platform]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[microsoft-ml-for-beginners]]"
+  - "[[ml-ai]]"
+  - "[[numfocus]]"
+  - "[[python]]"
+  - "[[scikit-learn]]"
+cited_by_count: 12
 ---
 
 # scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)

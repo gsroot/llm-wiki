@@ -20,7 +20,7 @@ related:
 - '[[harness]]'
 - '[[context-engineering]]'
 confidence: high
-inbound_count: 34
+inbound_count: 35
 aliases:
 - 'Claude Code: Slash Commands vs Agent Skills'
 - Slash Commands Vs Agent Skills

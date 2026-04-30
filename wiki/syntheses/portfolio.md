@@ -40,36 +40,36 @@ related:
 - '[[seokgeun-operating-profile-2026]]'
 created: 2026-04-29
 updated: 2026-04-29
-inbound_count: 53
+inbound_count: 55
 cited_by:
-- '[[agent-skills]]'
-- '[[backend-fastapi-stack]]'
-- '[[c2spf-analytics]]'
-- '[[c2spf-analytics-common]]'
-- '[[c2spf-analytics-renewal]]'
-- '[[c2spf-nft-market]]'
-- '[[c2spf-xpla-platform]]'
-- '[[career-timeline-seokgeun]]'
-- '[[claude-code]]'
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[harness]]'
-- '[[kpi-recovery-loop]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[mate-chat-project-wiki-2026]]'
-- '[[matechat]]'
-- '[[matechat-business-validation]]'
-- '[[matechat-launch-metrics-ledger]]'
-- '[[mcp]]'
-- '[[nextjs]]'
-- '[[parental-leave-2026-operating-plan]]'
-- '[[portfolio-ko]]'
-- '[[portfolio-method]]'
-- '[[portfolio-resume-ko]]'
-- '[[portfolio-seed]]'
-- '[[seokgeun-kim]]'
-- '[[seokgeun-kim-profile-2026]]'
-- '[[seokgeun-operating-profile-2026]]'
-- '[[seokgeun-stack-guide]]'
+  - "[[agent-skills]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[c2spf-analytics]]"
+  - "[[c2spf-analytics-common]]"
+  - "[[c2spf-analytics-renewal]]"
+  - "[[c2spf-nft-market]]"
+  - "[[c2spf-xpla-platform]]"
+  - "[[career-timeline-seokgeun]]"
+  - "[[claude-code]]"
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[harness]]"
+  - "[[kpi-recovery-loop]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[mate-chat-project-wiki-2026]]"
+  - "[[matechat]]"
+  - "[[matechat-business-validation]]"
+  - "[[matechat-launch-metrics-ledger]]"
+  - "[[mcp]]"
+  - "[[nextjs]]"
+  - "[[parental-leave-2026-operating-plan]]"
+  - "[[portfolio-ko]]"
+  - "[[portfolio-method]]"
+  - "[[portfolio-resume-ko]]"
+  - "[[portfolio-seed]]"
+  - "[[seokgeun-kim]]"
+  - "[[seokgeun-kim-profile-2026]]"
+  - "[[seokgeun-operating-profile-2026]]"
+  - "[[seokgeun-stack-guide]]"
 cited_by_count: 28
 ---
 

@@ -261,6 +261,16 @@ class LintResult:
     # P0-2 신설 (check #16): citation chain 양방향 정합 결함
     # (rel_path, missing_slugs)
     citation_chain_missing: list[tuple[str, list[str]]] = field(default_factory=list)
+    # 추출 거버넌스 신설 (check #17): under-extracted source — source 페이지
+    # 인바운드가 1 이하(index만)면 자료가 위키 어디로도 안 흘러간 신호.
+    # 정보 보고 — 결함 아님. CLAUDE.md "추출 거버넌스" 5-test 재실행 트리거.
+    # (rel_path, inbound_count)
+    under_extracted_sources: list[tuple[str, int]] = field(default_factory=list)
+    # 추출 거버넌스 신설 (check #18): solo concept — concept 페이지가
+    # 인바운드 1 이하면 1 source에만 묶인 진짜 concept 아닐 가능성.
+    # 정보 보고 — 결함 아님. Recurrence test 재검 또는 source로 흡수 검토.
+    # (rel_path, inbound_count)
+    solo_concepts: list[tuple[str, int]] = field(default_factory=list)
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하:
@@ -768,6 +778,36 @@ def lint(update: bool = False) -> LintResult:
         rel_path = str(page.path.relative_to(WIKI_ROOT.parent))
         result.stub_entities.append((rel_path, body_lines, sc, inbound))
 
+    # 추출 거버넌스 신설:
+    # 검증 17: under-extracted source — source 페이지 인바운드 <= 1 (index만 인용)
+    # 자료가 위키의 어떤 concept/entity/synthesis로도 안 흘러갔다는 신호.
+    # 정보 보고 — 결함 아님. 5-test 재실행 트리거.
+    for page in pages:
+        if page.yaml_invalid or page.is_rag_excluded or page.is_redirect:
+            continue
+        if page.page_type != "source":
+            continue
+        inbound = result.inbound.get(page.stem, 0)
+        if inbound > 1:
+            continue
+        rel_path = str(page.path.relative_to(WIKI_ROOT.parent))
+        result.under_extracted_sources.append((rel_path, inbound))
+
+    # 추출 거버넌스 신설:
+    # 검증 18: solo concept — concept 페이지 인바운드 <= 1
+    # 1 source에만 묶인 진짜 concept이 아닐 가능성. Recurrence test 재검.
+    # 정보 보고 — 결함 아님.
+    for page in pages:
+        if page.yaml_invalid or page.is_rag_excluded or page.is_redirect:
+            continue
+        if page.page_type != "concept":
+            continue
+        inbound = result.inbound.get(page.stem, 0)
+        if inbound > 1:
+            continue
+        rel_path = str(page.path.relative_to(WIKI_ROOT.parent))
+        result.solo_concepts.append((rel_path, inbound))
+
     return result
 
 def _update_auto_fields(
@@ -1252,6 +1292,39 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건 (본문 ## 출처 ↔ frontmatter related/sources 정합)")
+
+    print(
+        "--- 17. under-extracted sources (인바운드 ≤ 1, 정보 보고 — 결함 아님) ---"
+    )
+    if result.under_extracted_sources:
+        print(
+            f"ℹ️ {len(result.under_extracted_sources)}건 "
+            f"(자료가 concept/entity/synthesis로 안 흘러감, "
+            f"CLAUDE.md '추출 거버넌스' 5-test 재실행 권장):"
+        )
+        for rel_path, inbound in result.under_extracted_sources[:10]:
+            print(f"    {rel_path}: inbound={inbound}")
+        if len(result.under_extracted_sources) > 10:
+            print(f"    ... (생략 {len(result.under_extracted_sources) - 10}건)")
+    else:
+        if not quiet:
+            print("✓ 0건 (모든 source가 위키 그래프로 흐름)")
+
+    print(
+        "--- 18. solo concepts (인바운드 ≤ 1, 정보 보고 — 결함 아님) ---"
+    )
+    if result.solo_concepts:
+        print(
+            f"ℹ️ {len(result.solo_concepts)}건 "
+            f"(1 source에만 묶임 → Recurrence test 재검 또는 source로 흡수 검토):"
+        )
+        for rel_path, inbound in result.solo_concepts[:10]:
+            print(f"    {rel_path}: inbound={inbound}")
+        if len(result.solo_concepts) > 10:
+            print(f"    ... (생략 {len(result.solo_concepts) - 10}건)")
+    else:
+        if not quiet:
+            print("✓ 0건 (모든 concept이 2+ 페이지에서 인용됨)")
 
     print(
         "--- 15. 태그 vocabulary 과밀 회귀 ---"

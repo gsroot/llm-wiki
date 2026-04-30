@@ -14,7 +14,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 4
-inbound_count: 34
+inbound_count: 36
 created: 2026-04-28
 updated: 2026-04-29
 tags: [tanstack-query, react-query, server-state, async-state, multi-framework]

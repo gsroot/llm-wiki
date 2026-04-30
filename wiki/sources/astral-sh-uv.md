@@ -28,7 +28,7 @@ related:
 - '[[seokgeun-kim]]'
 - '[[backend-python-fastapi]]'
 confidence: high
-inbound_count: 33
+inbound_count: 35
 cited_by:
 - '[[agent-skills]]'
 - '[[anthropics-claude-cookbooks]]'

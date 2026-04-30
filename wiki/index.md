@@ -1,7 +1,7 @@
 ---
 title: "위키 인덱스"
 type: index
-updated: 2026-04-30
+updated: 2026-04-30b
 rag_exclude: true
 rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨."
 ---
@@ -13,10 +13,10 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 195
+- 총 페이지 수: 198
 - 소스 요약: 66
-- 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
-- 개념: 32
+- 엔티티: 77 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect, codex 신설 2026-04-30)
+- 개념: 34 (rcif-prompt-pattern, chain-of-thought-prompting 신설 2026-04-30)
 - 종합 분석: 20
 
 ---
