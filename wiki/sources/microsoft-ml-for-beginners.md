@@ -1,30 +1,41 @@
 ---
-title: "microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML"
+title: microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML
 type: source
 source_type: article
-source_url: "https://github.com/microsoft/ML-For-Beginners"
-raw_path: "raw/articles/microsoft-ml-for-beginners/"
-author: "Microsoft Cloud Advocates"
+source_url: https://github.com/microsoft/ML-For-Beginners
+raw_path: raw/articles/microsoft-ml-for-beginners/
+author: Microsoft Cloud Advocates
 date_published: 2021-03-03
 date_ingested: 2026-04-27
-tags: [machine-learning, microsoft, microsoft-for-beginners, scikit-learn, python, r, classic-ml, time-series, regression, classification, clustering, nlp, reinforcement-learning, responsible-AI]
+tags:
+- machine-learning
+- microsoft
+- microsoft-for-beginners
+- scikit-learn
+- python
+- classic-ml
+- time-series
 related:
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[data-pipeline-bigquery]]"
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[ml-ai]]'
+- '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 21
+inbound_count: 23
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[microsoft]]"
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[pandas]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[scikit-learn]]"
-  - "[[scikit-learn-scikit-learn]]"
+- '[[agent-stack-evolution]]'
+- '[[microsoft]]'
+- '[[microsoft-data-science-for-beginners]]'
+- '[[microsoft-for-beginners]]'
+- '[[pandas]]'
+- '[[pandas-dev-pandas]]'
+- '[[scikit-learn]]'
+- '[[scikit-learn-scikit-learn]]'
 cited_by_count: 8
+aliases:
+- Microsoft Ml For Beginners
+- microsoft ml for beginners
+- microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML
 ---
 
 # microsoft/ML-For-Beginners — 12 weeks, 26 Lessons 클래식 ML

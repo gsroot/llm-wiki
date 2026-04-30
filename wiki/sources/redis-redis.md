@@ -1,25 +1,49 @@
 ---
-title: "redis/redis — In-Memory Data Structure Server (★74K, 17년차 MANIFESTO 10항목 철학 + 단일 스레드 + Vector Search 전환)"
+title: redis/redis — In-Memory Data Structure Server (★74K, 17년차 MANIFESTO 10항목 철학 + 단일 스레드 + Vector Search 전환)
 type: source
 source_type: article
-source_url: "https://github.com/redis/redis"
-raw_path: "raw/articles/redis-redis/"
-author: "Salvatore Sanfilippo (antirez 원저자) + Redis Labs"
+source_url: https://github.com/redis/redis
+raw_path: raw/articles/redis-redis/
+author: Salvatore Sanfilippo (antirez 원저자) + Redis Labs
 date_published: 2009-03-21
 date_ingested: 2026-04-28
-tags: [redis, cache, in-memory-database, key-value-store, data-structure-server, message-broker, message-queue, no-sql, real-time, vector-databases, vector-search, json, time-series, distributed-systems, antirez, rdb, aof, redis-cluster, single-thread, manifesto, valkey, license-change-2024]
+tags:
+- redis
+- cache
+- in-memory-database
+- key-value-store
+- data-structure-server
+- message-broker
+- real-time
+- vector-databases
+- vector-search
+- json
+- time-series
+- antirez
+- rdb
+- aof
+- redis-cluster
+- single-thread
+- manifesto
+- valkey
+- license-change-2024
 related:
-  - "[[fastapi]]"
-  - "[[python-packaging]]"
+- '[[fastapi]]'
+- '[[python-packaging]]'
 confidence: high
-inbound_count: 9
+inbound_count: 12
 cited_by:
-  - "[[append-only-log]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[event-driven-architecture]]"
-  - "[[redis]]"
-  - "[[streaming]]"
+- '[[append-only-log]]'
+- '[[backend-fastapi-stack]]'
+- '[[event-driven-architecture]]'
+- '[[redis]]'
+- '[[streaming]]'
 cited_by_count: 5
+aliases:
+- Redis
+- redis
+- redis/redis — In-Memory Data Structure Server
+- redis/redis — In-Memory Data Structure Server (★74K, 17년차 MANIFESTO 10항목 철학 + 단일 스레드 + Vector Search 전환)
 ---
 
 # redis/redis — In-Memory Data Structure Server

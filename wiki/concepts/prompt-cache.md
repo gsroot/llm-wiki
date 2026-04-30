@@ -1,15 +1,21 @@
 ---
-title: "Prompt Caching"
-aliases: [Prompt Cache, 프롬프트 캐시, prompt-caching]
+title: Prompt Caching
+aliases:
+- Prompt Cache
+- 프롬프트 캐시
+- prompt-caching
 type: concept
 category: ai
-tags: [prompt-cache, claude, anthropic, LLM-api, 토큰경제, latency, optimization]
+tags:
+- claude
+- anthropic
+- optimization
 related:
-  - "[[token-economy]]"
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[context-engineering]]"
-  - "[[anthropics-claude-cookbooks]]"
+- '[[token-economy]]'
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[context-engineering]]'
+- '[[anthropics-claude-cookbooks]]'
 source_count: 1
 observed_source_refs: 4
 inbound_count: 12

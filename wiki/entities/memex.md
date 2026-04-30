@@ -1,20 +1,27 @@
 ---
-title: "메멕스 (Memex)"
+title: 메멕스 (Memex)
 type: entity
 entity_type: project
-tags: [지식관리, knowledge-management, 정보검색, information-retrieval, 역사, historical-stub, 53회차]
-related: [[llm-wiki-pattern]]
+tags:
+- 지식관리
+- knowledge-management
+- 53회차
+related:
+- - llm-wiki-pattern
+- '[[llm-wiki-idea-doc]]'
 source_count: 1
 observed_source_refs: 4
 inbound_count: 7
 page_intent: historical-stub
-page_intent_note: "1945년 부시 개념의 역사적 stub. 더 확장할 의도 없음 — 본질적으로 짧은 노드. RAG 청크 적합성 검증에서 제외 후보."
+page_intent_note: 1945년 부시 개념의 역사적 stub. 더 확장할 의도 없음 — 본질적으로 짧은 노드. RAG 청크 적합성 검증에서 제외 후보.
 created: 2026-04-09
 updated: 2026-04-29
 cited_by_count: 2
 ---
 
 # 메멕스 (Memex)
+
+> **본 위키 맥락 역할**: 역사적 참조. 이 llm-wiki(석근 운영)가 채택한 [[llm-wiki-pattern|LLM 위키 패턴]]의 정신적 원류로, 바네바 부시가 1945년에 미해결로 남긴 "유지관리 주체" 문제를 LLM 에이전트가 답하는 구조의 사상적 시발점. 개념 정의 외 이 위키 운영에 직접 적용되는 기술은 없음.
 
 ## 개요
 

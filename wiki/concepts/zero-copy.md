@@ -1,14 +1,24 @@
 ---
-title: "Zero-copy"
-aliases: [Zero-Copy, 제로 카피, zero-copy]
+title: Zero-copy
+aliases:
+- Zero-Copy
+- 제로 카피
+- zero-copy
 type: concept
 category: data-architecture
-tags: [zero-copy, arrow, parquet, memory-model, performance, 25회차]
+tags:
+- zero-copy
+- parquet
+- 25회차
 related:
-  - "[[pyarrow]]"
-  - "[[parquet]]"
-  - "[[duckdb]]"
-  - "[[polars]]"
+- '[[pyarrow]]'
+- '[[parquet]]'
+- '[[duckdb]]'
+- '[[polars]]'
+- '[[apache-arrow]]'
+- '[[duckdb-duckdb]]'
+- '[[pola-rs-polars]]'
+- '[[apache-kafka]]'
 source_count: 4
 observed_source_refs: 4
 inbound_count: 10

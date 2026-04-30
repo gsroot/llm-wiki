@@ -1,26 +1,38 @@
 ---
-title: "pmndrs/zustand (React 클라이언트 상태 관리 미니멀 챔피언)"
+title: pmndrs/zustand (React 클라이언트 상태 관리 미니멀 챔피언)
 type: source
 source_type: article
-source_url: "https://github.com/pmndrs/zustand"
-raw_path: "raw/articles/pmndrs-zustand/"
-author: "Daishi Kato + Poimandres"
+source_url: https://github.com/pmndrs/zustand
+raw_path: raw/articles/pmndrs-zustand/
+author: Daishi Kato + Poimandres
 date_published: 2019-04-15
 date_ingested: 2026-04-28
 related:
-  - "[[zustand]]"
-  - "[[poimandres]]"
-  - "[[react]]"
-  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
-tags: [zustand, react, state-management, hooks, flux, minimal, 22회차]
+- '[[zustand]]'
+- '[[poimandres]]'
+- '[[react]]'
+- '[[flutter-nextjs-fullstack-pattern|React 진영 종합]]'
+tags:
+- zustand
+- react
+- state-management
+- hooks
+- flux
+- minimal
+- 22회차
 confidence: high
-inbound_count: 10
+inbound_count: 12
 cited_by:
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[poimandres]]"
-  - "[[react]]"
-  - "[[zustand]]"
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[poimandres]]'
+- '[[react]]'
+- '[[zustand]]'
 cited_by_count: 4
+aliases:
+- Pmndrs Zustand
+- pmndrs zustand
+- pmndrs/zustand (React 클라이언트 상태 관리 미니멀 챔피언)
+- pmndrs/zustand 소스
 ---
 
 # pmndrs/zustand 소스

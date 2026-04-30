@@ -1,18 +1,29 @@
 ---
-title: "Google"
-aliases: [Google, 구글]
+title: Google
+aliases:
+- Google
+- 구글
 type: entity
 entity_type: organization
-tags: [google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, AI]
+tags:
+- google
+- gemini
+- antigravity
+- flutter
+- dart
+- skia
+- devrel
+- AI
 related:
-  - "[[flutter]]"
-  - "[[dart]]"
-  - "[[github]]"
-  - "[[microsoft]]"
-  - "[[anthropic]]"
+- '[[flutter]]'
+- '[[dart]]'
+- '[[github]]'
+- '[[microsoft]]'
+- '[[anthropic]]'
+- '[[flutter-flutter]]'
 source_count: 1
 observed_source_refs: 3
-inbound_count: 13
+inbound_count: 14
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 6

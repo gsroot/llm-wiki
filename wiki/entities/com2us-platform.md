@@ -1,13 +1,29 @@
 ---
-title: "컴투스플랫폼 (Com2usPlatform, c2spf)"
+title: 컴투스플랫폼 (Com2usPlatform, c2spf)
 type: entity
 entity_type: organization
-aliases: [컴투스플랫폼, com2us-platform, Com2us Platform, c2spf, com2us]
-tags: [컴투스플랫폼, com2us-platform, c2spf, 게임플랫폼, BI, 블록체인]
+aliases:
+- 컴투스플랫폼
+- com2us-platform
+- Com2us Platform
+- c2spf
+- com2us
+tags:
+- 컴투스플랫폼
+- com2us-platform
+- c2spf
+- BI
 related:
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[xpla-platform]]"
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[xpla-platform]]'
+- '[[portfolio-seed]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-ko]]'
+- '[[c2spf-nft-market]]'
+- '[[c2spf-xpla-platform]]'
+- '[[c2spf-analytics-common]]'
+- '[[c2spf-analytics-renewal]]'
 source_count: 6
 observed_source_refs: 23
 inbound_count: 42

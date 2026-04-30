@@ -1,22 +1,32 @@
 ---
-title: "Claude Code 빠른 시작"
+title: Claude Code 빠른 시작
 type: source
 source_type: article
-source_url: "https://code.claude.com/docs/ko/quickstart"
-raw_path: "raw/articles/claude-code/빠른 시작.md"
-author: "Anthropic"
+source_url: https://code.claude.com/docs/ko/quickstart
+raw_path: raw/articles/claude-code/빠른 시작.md
+author: Anthropic
 date_published: 2026-04-15
 date_ingested: 2026-04-15
-tags: [claude-code, AI, agent, 코딩도구, coding-tool, anthropic, 가이드, tutorial]
+tags:
+- claude-code
+- AI
+- agent
+- 코딩도구
+- coding-tool
+- anthropic
 related:
-  - "[[claude-code]]"
-  - "[[claude-code-overview]]"
+- '[[claude-code]]'
+- '[[claude-code-overview]]'
 confidence: high
-inbound_count: 4
+inbound_count: 5
 cited_by:
-  - "[[claude-code]]"
-  - "[[claude-code-overview]]"
+- '[[claude-code]]'
+- '[[claude-code-overview]]'
 cited_by_count: 2
+aliases:
+- Claude Code Quickstart
+- Claude Code 빠른 시작
+- claude code quickstart
 ---
 
 # Claude Code 빠른 시작

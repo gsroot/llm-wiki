@@ -1,14 +1,25 @@
 ---
-title: "Tailwind CSS"
+title: Tailwind CSS
 type: entity
 entity_type: tool
-aliases: [Tailwind CSS, Tailwind, tailwindcss, 테일윈드, utility-first CSS]
-tags: [tailwindcss, css, utility-first, atomic-css, shadcn-ui-foundation, 25회차, 50회차]
+aliases:
+- Tailwind CSS
+- Tailwind
+- tailwindcss
+- 테일윈드
+- utility-first CSS
+tags:
+- css
+- shadcn-ui-foundation
+- 25회차
+- 50회차
 related:
-  - "[[shadcn-ui]]"
-  - "[[react]]"
-  - "[[radix-ui]]"
-  - "[[nextjs]]"
+- '[[shadcn-ui]]'
+- '[[react]]'
+- '[[radix-ui]]'
+- '[[nextjs]]'
+- '[[shadcn-ui-ui]]'
+- '[[vercel-next.js]]'
 source_count: 2
 observed_source_refs: 4
 inbound_count: 21

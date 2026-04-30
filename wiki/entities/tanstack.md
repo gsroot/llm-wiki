@@ -1,12 +1,22 @@
 ---
-title: "TanStack"
+title: TanStack
 type: entity
 entity_type: organization
-aliases: [TanStack, tanstack, 탄스택, Tanner Linsley, TanStack 진영]
-tags: [tanstack, tanner-linsley, react, query, table, router, form, 25회차, 50회차]
+aliases:
+- TanStack
+- tanstack
+- 탄스택
+- Tanner Linsley
+- TanStack 진영
+tags:
+- tanstack
+- react
+- 25회차
+- 50회차
 related:
-  - "[[tanstack-query]]"
-  - "[[react]]"
+- '[[tanstack-query]]'
+- '[[react]]'
+- '[[tanstack-tanstack-query]]'
 source_count: 1
 observed_source_refs: 3
 inbound_count: 12

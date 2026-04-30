@@ -1,18 +1,30 @@
 ---
-title: "Spec-Driven Development (SDD)"
-aliases: [Spec-Driven Development, SDD, 스펙 기반 개발]
+title: Spec-Driven Development (SDD)
+aliases:
+- Spec-Driven Development
+- SDD
+- 스펙 기반 개발
 type: concept
 category: ai
-tags: [spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology]
+tags:
+- spec-driven-development
+- sdd
+- spec-kit
+- prd
+- prompt-engineering
+- constitution
+- harness
+- methodology
 related:
-  - "[[spec-kit]]"
-  - "[[github]]"
-  - "[[harness]]"
-  - "[[agent-patterns]]"
-  - "[[claude-code]]"
-  - "[[agent-skills]]"
-  - "[[context-engineering]]"
-  - "[[autonomous-research-loop]]"
+- '[[spec-kit]]'
+- '[[github]]'
+- '[[harness]]'
+- '[[agent-patterns]]'
+- '[[claude-code]]'
+- '[[agent-skills]]'
+- '[[context-engineering]]'
+- '[[autonomous-research-loop]]'
+- '[[github-spec-kit]]'
 source_count: 1
 observed_source_refs: 10
 inbound_count: 36

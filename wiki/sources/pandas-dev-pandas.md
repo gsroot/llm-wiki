@@ -1,47 +1,68 @@
 ---
-title: "pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BDFL + NumFOCUS + PDEP 3축 거버넌스)"
+title: pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BDFL + NumFOCUS + PDEP 3축 거버넌스)
 type: source
 source_type: article
-source_url: "https://github.com/pandas-dev/pandas"
-raw_path: "raw/articles/pandas-dev-pandas/"
-author: "The pandas development team (BDFL: Wes McKinney)"
+source_url: https://github.com/pandas-dev/pandas
+raw_path: raw/articles/pandas-dev-pandas/
+author: 'The pandas development team (BDFL: Wes McKinney)'
 date_published: 2010-08-24
 date_ingested: 2026-04-27
-tags: [pandas, python, dataframe, time-series, bigquery, BI, numfocus, bdfl, pdep, pyarrow, copy-on-write, ecosystem, scikit-learn, modin, dask, bigframes, pandera, 데이터분석]
+tags:
+- pandas
+- python
+- dataframe
+- time-series
+- bigquery
+- BI
+- numfocus
+- bdfl
+- pdep
+- pyarrow
+- copy-on-write
+- scikit-learn
+- modin
+- dask
+- bigframes
+- 데이터분석
 related:
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[ml-ai]]"
-  - "[[c2spf-analytics]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[github-spec-kit]]"
+- '[[microsoft-data-science-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[data-pipeline-bigquery]]'
+- '[[ml-ai]]'
+- '[[c2spf-analytics]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[github-spec-kit]]'
 confidence: high
-inbound_count: 45
+inbound_count: 50
 cited_by:
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[bdfl]]"
-  - "[[c2spf-analytics]]"
-  - "[[c2spf-analytics-renewal]]"
-  - "[[copy-on-write]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[dataframe]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[github-spec-kit]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[numfocus]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[pandas]]"
-  - "[[pandas-dev]]"
-  - "[[pandas-vs-polars-vs-duckdb]]"
-  - "[[pdep]]"
-  - "[[python]]"
+- '[[anthropics-claude-cookbooks]]'
+- '[[anthropics-skills]]'
+- '[[bdfl]]'
+- '[[c2spf-analytics]]'
+- '[[c2spf-analytics-renewal]]'
+- '[[copy-on-write]]'
+- '[[data-pipeline-bigquery]]'
+- '[[dataframe]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[github-spec-kit]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[microsoft-data-science-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[ml-ai]]'
+- '[[numfocus]]'
+- '[[openai-openai-cookbook]]'
+- '[[pandas]]'
+- '[[pandas-dev]]'
+- '[[pandas-vs-polars-vs-duckdb]]'
+- '[[pdep]]'
+- '[[python]]'
 cited_by_count: 22
+aliases:
+- Pandas Dev
+- pandas dev
+- pandas-dev/pandas — Python 데이터 분석 표준 라이브러리
+- pandas-dev/pandas — Python 데이터 분석 표준 라이브러리 (BDFL + NumFOCUS + PDEP 3축 거버넌스)
 ---
 
 # pandas-dev/pandas — Python 데이터 분석 표준 라이브러리

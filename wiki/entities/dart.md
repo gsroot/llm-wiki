@@ -1,13 +1,19 @@
 ---
-title: "Dart"
-aliases: [Dart, 다트]
+title: Dart
+aliases:
+- Dart
+- 다트
 type: entity
 entity_type: tool
-tags: [dart, programming-language, google, flutter, aot, jit, javascript-compile, wasm, sound-null-safety, isolates]
+tags:
+- dart
+- google
+- flutter
 related:
-  - "[[flutter]]"
-  - "[[google]]"
-  - "[[github]]"
+- '[[flutter]]'
+- '[[google]]'
+- '[[github]]'
+- '[[flutter-flutter]]'
 source_count: 1
 observed_source_refs: 3
 inbound_count: 13

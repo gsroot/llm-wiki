@@ -1,13 +1,22 @@
 ---
-title: "Append-only Log"
-aliases: [Append-only Log, 어펜드 로그, append log]
+title: Append-only Log
+aliases:
+- Append-only Log
+- 어펜드 로그
+- append log
 type: concept
 category: data-architecture
-tags: [append-only-log, wal, kafka, log-structured, sequential-io, 25회차]
+tags:
+- kafka
+- 25회차
 related:
-  - "[[kafka]]"
-  - "[[postgresql]]"
-  - "[[redis]]"
+- '[[kafka]]'
+- '[[postgresql]]'
+- '[[redis]]'
+- '[[apache-kafka]]'
+- '[[postgres-postgres]]'
+- '[[redis-redis]]'
+- '[[apache-arrow]]'
 source_count: 4
 observed_source_refs: 4
 inbound_count: 14

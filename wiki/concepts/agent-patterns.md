@@ -1,31 +1,63 @@
 ---
-title: "Building Effective Agents — 5 패턴"
-aliases: [Agent Patterns, 에이전트 패턴, Building Effective Agents]
+title: Building Effective Agents — 5 패턴
+aliases:
+- Agent Patterns
+- 에이전트 패턴
+- Building Effective Agents
 type: concept
 category: ai
-tags: [agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, agent, workflow, spec-kit, sdd, pre-composed-patterns, openai, openai-cookbook, openai-agents-python, agents-SDK, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns, langgraph, pregel, state-machine, durable-execution, 12-patterns, pydantic-ai, deepagents, crewai, 18회차]
+tags:
+- agent-patterns
+- building-effective-agents
+- anthropic
+- agent
+- spec-kit
+- sdd
+- openai
+- openai-cookbook
+- openai-agents-python
+- agents-SDK
+- exec-plans
+- guardrails
+- human-in-the-loop
+- langgraph
+- pregel
+- state-machine
+- durable-execution
+- pydantic-ai
+- deepagents
+- crewai
+- 18회차
 related:
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[anthropic]]"
-  - "[[autonomous-research-loop]]"
-  - "[[harness]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[mcp]]"
-  - "[[spec-kit]]"
-  - "[[spec-driven-development]]"
-  - "[[github]]"
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-agents-python]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[deepagents]]"
-  - "[[crewai]]"
-  - "[[pydantic-ai]]"
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[anthropic]]'
+- '[[autonomous-research-loop]]'
+- '[[harness]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[mcp]]'
+- '[[spec-kit]]'
+- '[[spec-driven-development]]'
+- '[[github]]'
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[openai-agents-python]]'
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[deepagents]]'
+- '[[crewai]]'
+- '[[pydantic-ai]]'
+- '[[openai-openai-cookbook]]'
+- '[[github-spec-kit]]'
+- '[[langchain-ai-langgraph]]'
+- '[[pydantic-pydantic-ai]]'
+- '[[langchain-ai-deepagents]]'
+- '[[crewaiinc-crewai]]'
+- '[[openai-openai-agents-python]]'
+- '[[claude-managed-agents]]'
 source_count: 7
 observed_source_refs: 22
-inbound_count: 66
+inbound_count: 68
 created: 2026-04-27
 updated: 2026-04-28
 cited_by_count: 27

@@ -1,13 +1,17 @@
 ---
-title: "MateChat 프로젝트 지식 지도"
+title: MateChat 프로젝트 지식 지도
 type: synthesis
 category: analysis
-tags: [matechat, project-knowledge-map, architecture, launch, user-validation, business-strategy, project-wiki]
+tags:
+- matechat
+- architecture
+- launch
+- project-wiki
 sources:
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[matechat]]"
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-operating-profile-2026]]"
+- '[[mate-chat-project-wiki-2026]]'
+- '[[matechat]]'
+- '[[seokgeun-kim-profile-2026]]'
+- '[[seokgeun-operating-profile-2026]]'
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 6

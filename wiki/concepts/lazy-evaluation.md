@@ -1,16 +1,28 @@
 ---
-title: "Lazy Evaluation (지연 평가)"
-aliases: [Lazy Evaluation, 지연 평가, lazy-eval]
+title: Lazy Evaluation (지연 평가)
+aliases:
+- Lazy Evaluation
+- 지연 평가
+- lazy-eval
 type: concept
 category: data
-tags: [lazy-evaluation, query-optimization, predicate-pushdown, projection-pushdown, dataframe, sql, polars, duckdb, spark]
+tags:
+- lazy-evaluation
+- query-optimization
+- predicate-pushdown
+- dataframe
+- sql
+- polars
+- duckdb
 related:
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[pandas]]"
-  - "[[apache-arrow]]"
-  - "[[copy-on-write]]"
-  - "[[dataframe]]"
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[pandas]]'
+- '[[apache-arrow]]'
+- '[[copy-on-write]]'
+- '[[dataframe]]'
+- '[[pola-rs-polars]]'
+- '[[duckdb-duckdb]]'
 source_count: 2
 observed_source_refs: 5
 inbound_count: 15

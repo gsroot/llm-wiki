@@ -1,16 +1,23 @@
 ---
-title: "qmd"
+title: qmd
 type: entity
 entity_type: tool
-tags: [검색, search, 마크다운, markdown, CLI, mcp, tool-stub, 53회차]
+tags:
+- 검색
+- 마크다운
+- markdown
+- CLI
+- mcp
+- 53회차
 related:
-  - "[[llm-wiki-pattern]]"
-  - "[[mcp]]"
+- '[[llm-wiki-pattern]]'
+- '[[mcp]]'
+- '[[llm-wiki-idea-doc]]'
 source_count: 1
 observed_source_refs: 7
 inbound_count: 17
 page_intent: tool-stub
-page_intent_note: "미래 도입 후보 도구. 현 위키 197페이지 규모는 index 기반 탐색으로 충분하나 50페이지 추가 시 검색 인프라로 도입 검토 (메모 §1)."
+page_intent_note: 미래 도입 후보 도구. 현 위키 197페이지 규모는 index 기반 탐색으로 충분하나 50페이지 추가 시 검색 인프라로 도입 검토 (메모 §1).
 created: 2026-04-09
 updated: 2026-04-29
 cited_by_count: 7

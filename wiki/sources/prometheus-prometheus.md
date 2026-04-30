@@ -1,27 +1,39 @@
 ---
-title: "Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md"
+title: Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md
 type: source
 source_type: article
-source_url: "https://github.com/prometheus/prometheus"
-raw_path: "raw/articles/prometheus-prometheus/"
-author: "Prometheus Authors (CNCF)"
+source_url: https://github.com/prometheus/prometheus
+raw_path: raw/articles/prometheus-prometheus/
+author: Prometheus Authors (CNCF)
 date_published: 2026-04-28
 date_ingested: 2026-04-28
-tags: [prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차]
+tags:
+- prometheus
+- cncf
+- monitoring
+- observability
+- time-series
+- promql
+- agents-md
+- 19회차
 related:
-  - "[[prometheus]]"
-  - "[[grafana]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[agent-skills]]"
+- '[[prometheus]]'
+- '[[grafana]]'
+- '[[observability-and-cicd-stack]]'
+- '[[agent-skills]]'
 confidence: high
-inbound_count: 11
+inbound_count: 14
 cited_by:
-  - "[[agent-skills]]"
-  - "[[devops-cicd]]"
-  - "[[observability]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[prometheus]]"
+- '[[agent-skills]]'
+- '[[devops-cicd]]'
+- '[[observability]]'
+- '[[observability-and-cicd-stack]]'
+- '[[prometheus]]'
 cited_by_count: 5
+aliases:
+- Prometheus
+- Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md
+- prometheus
 ---
 
 # Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md

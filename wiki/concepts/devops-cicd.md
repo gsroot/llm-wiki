@@ -1,21 +1,43 @@
 ---
-title: "DevOps & CI/CD (Docker · Jenkins 멀티브랜치 · Loki/Grafana)"
-aliases: [DevOps CI/CD, 데브옵스, CI CD]
+title: DevOps & CI/CD (Docker · Jenkins 멀티브랜치 · Loki/Grafana)
+aliases:
+- DevOps CI/CD
+- 데브옵스
+- CI CD
 type: concept
 category: dev-tools
-tags: [devops, cicd, docker, docker-compose, jenkins, multi-branch, github-actions, nginx, loki, promtail, grafana, observability, prometheus, sentry, 19회차]
+tags:
+- devops
+- cicd
+- docker
+- jenkins
+- github-actions
+- loki
+- grafana
+- observability
+- prometheus
+- sentry
+- 19회차
 related:
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[backend-python-fastapi]]"
-  - "[[frontend-react]]"
-  - "[[docker]]"
-  - "[[github-actions]]"
-  - "[[prometheus]]"
-  - "[[grafana]]"
-  - "[[sentry]]"
-  - "[[observability]]"
-  - "[[observability-and-cicd-stack]]"
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[backend-python-fastapi]]'
+- '[[frontend-react]]'
+- '[[docker]]'
+- '[[github-actions]]'
+- '[[prometheus]]'
+- '[[grafana]]'
+- '[[sentry]]'
+- '[[observability]]'
+- '[[observability-and-cicd-stack]]'
+- '[[portfolio-seed]]'
+- '[[portfolio-ko]]'
+- '[[c2spf-analytics-common]]'
+- '[[moby-moby]]'
+- '[[github-actions-docs]]'
+- '[[prometheus-prometheus]]'
+- '[[grafana-grafana]]'
+- '[[getsentry-sentry]]'
 source_count: 8
 observed_source_refs: 17
 inbound_count: 43

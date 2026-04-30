@@ -1,43 +1,60 @@
 ---
-title: "Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 출시 직전 QA 단계)"
+title: Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 출시 직전 QA 단계)
 type: source
 source_type: project
-source_url: "(private repo, /Users/sgkim/Projects/mate-chat)"
+source_url: (private repo, /Users/sgkim/Projects/mate-chat)
 raw_path: raw/articles/seokgeun-mate-chat/
-author: "석근 (Mate Chat Team)"
+author: 석근 (Mate Chat Team)
 date_published: 2026-04-23
 date_ingested: 2026-04-28
 related:
-  - "[[matechat]]"
-  - "[[flutter]]"
-  - "[[riverpod]]"
-  - "[[fastapi]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[agent-skills]]"
-  - "[[shadcn-ui]]"
-  - "[[sentry]]"
-  - "[[prometheus]]"
-  - "[[openai-agents-python]]"
+- '[[matechat]]'
+- '[[flutter]]'
+- '[[riverpod]]'
+- '[[fastapi]]'
+- '[[backend-fastapi-stack]]'
+- '[[agent-skills]]'
+- '[[shadcn-ui]]'
+- '[[sentry]]'
+- '[[prometheus]]'
+- '[[openai-agents-python]]'
 confidence: high
-tags: [mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, 24회차]
+tags:
+- mate-chat
+- side-project
+- fastapi
+- flutter
+- riverpod
+- openai
+- websocket
+- sentry
+- prometheus
+- agent-skills
+- gstack
+- 24회차
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "39 SKILL 분류(자작 11 / 외부 28) — flutter/skills lock.json 재카운트"
-inbound_count: 29
+verification_notes: 39 SKILL 분류(자작 11 / 외부 28) — flutter/skills lock.json 재카운트
+inbound_count: 31
 cited_by:
-  - "[[agent-skills]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[event-driven-architecture]]"
-  - "[[harness]]"
-  - "[[kpi-recovery-loop]]"
-  - "[[matechat]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[matechat-business-validation]]"
-  - "[[matechat-chat-analysis-module]]"
-  - "[[matechat-launch-metrics-ledger]]"
-  - "[[seokgeun-matechat-validation]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[agent-skills]]'
+- '[[c2spf-ai-agent-adoption-candidates]]'
+- '[[event-driven-architecture]]'
+- '[[harness]]'
+- '[[kpi-recovery-loop]]'
+- '[[matechat]]'
+- '[[matechat-30day-validation-loop]]'
+- '[[matechat-business-validation]]'
+- '[[matechat-chat-analysis-module]]'
+- '[[matechat-launch-metrics-ledger]]'
+- '[[seokgeun-matechat-validation]]'
+- '[[seokgeun-stack-guide]]'
 cited_by_count: 12
+aliases:
+- Mate Chat 1차 수집 — 석근 개인 사이드 프로젝트
+- Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 출시 직전 QA 단계)
+- Seokgeun Mate Chat
+- seokgeun mate chat
 ---
 
 # Mate Chat 1차 수집 — 석근 개인 사이드 프로젝트

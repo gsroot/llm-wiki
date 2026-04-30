@@ -1,18 +1,28 @@
 ---
-title: "GitHub"
-aliases: [GitHub, 깃허브, git-hub]
+title: GitHub
+aliases:
+- GitHub
+- 깃허브
+- git-hub
 type: entity
 entity_type: organization
-tags: [github, microsoft, copilot, spec-kit, marketplace, codespaces, octoverse, devops]
+tags:
+- github
+- microsoft
+- copilot
+- spec-kit
+- marketplace
+- devops
 related:
-  - "[[spec-kit]]"
-  - "[[microsoft]]"
-  - "[[claude-code]]"
-  - "[[anthropic]]"
-  - "[[agent-skills]]"
+- '[[spec-kit]]'
+- '[[microsoft]]'
+- '[[claude-code]]'
+- '[[anthropic]]'
+- '[[agent-skills]]'
+- '[[github-spec-kit]]'
 source_count: 1
 observed_source_refs: 6
-inbound_count: 36
+inbound_count: 37
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 18

@@ -1,27 +1,46 @@
 ---
-title: "Flutter"
-aliases: [Flutter, 플러터]
+title: Flutter
+aliases:
+- Flutter
+- 플러터
 type: entity
 entity_type: tool
-tags: [flutter, dart, google, ui-toolkit, multiplatform, mobile, web, desktop, skia, impeller, hot-reload, material-design, cupertino, agent-skills, agentskills.io, vendor-neutral, riverpod, mate-chat, 22회차]
+tags:
+- flutter
+- dart
+- google
+- ui-toolkit
+- multiplatform
+- mobile
+- web
+- desktop
+- skia
+- impeller
+- hot-reload
+- agent-skills
+- agentskills.io
+- vendor-neutral
+- riverpod
+- mate-chat
+- 22회차
 related:
-  - "[[dart]]"
-  - "[[google]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[github]]"
-  - "[[token-economy]]"
-  - "[[anthropics-skills]]"
-  - "[[github-spec-kit]]"
-  - "[[claude-code]]"
-  - "[[riverpod]]"
-  - "[[matechat]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[flutter-flutter]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[dart]]'
+- '[[google]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[github]]'
+- '[[token-economy]]'
+- '[[anthropics-skills]]'
+- '[[github-spec-kit]]'
+- '[[claude-code]]'
+- '[[riverpod]]'
+- '[[matechat]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[flutter-flutter]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 17
-inbound_count: 58
+inbound_count: 59
 created: 2026-04-27
 updated: 2026-04-28
 cited_by_count: 21

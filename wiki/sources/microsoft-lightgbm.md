@@ -1,26 +1,40 @@
 ---
-title: "lightgbm-org/LightGBM — Light Gradient Boosting Machine"
+title: lightgbm-org/LightGBM — Light Gradient Boosting Machine
 type: source
 source_type: article
-source_url: "https://github.com/lightgbm-org/LightGBM"
-raw_path: "raw/articles/microsoft-LightGBM/"
-author: "lightgbm-org (formerly Microsoft Research, Guolin Ke 외)"
+source_url: https://github.com/lightgbm-org/LightGBM
+raw_path: raw/articles/microsoft-LightGBM/
+author: lightgbm-org (formerly Microsoft Research, Guolin Ke 외)
 date_published: 2017-01-01
 date_ingested: 2026-04-28
-tags: [lightgbm, gradient-boosting, gbdt, machine-learning, ml, microsoft, lightgbm-org, neurips, effver, 17회차]
+tags:
+- lightgbm
+- gradient-boosting
+- gbdt
+- machine-learning
+- ml
+- microsoft
+- lightgbm-org
+- neurips
+- effver
+- 17회차
 related:
-  - "[[lightgbm]]"
-  - "[[scikit-learn]]"
-  - "[[ml-ai]]"
+- '[[lightgbm]]'
+- '[[scikit-learn]]'
+- '[[ml-ai]]'
 confidence: high
-inbound_count: 10
+inbound_count: 12
 cited_by:
-  - "[[apache-arrow]]"
-  - "[[c2spf-analytics]]"
-  - "[[lightgbm]]"
-  - "[[ml-ai]]"
-  - "[[scikit-learn]]"
+- '[[apache-arrow]]'
+- '[[c2spf-analytics]]'
+- '[[lightgbm]]'
+- '[[ml-ai]]'
+- '[[scikit-learn]]'
 cited_by_count: 5
+aliases:
+- Microsoft Lightgbm
+- lightgbm-org/LightGBM — Light Gradient Boosting Machine
+- microsoft lightgbm
 ---
 
 # lightgbm-org/LightGBM — Light Gradient Boosting Machine

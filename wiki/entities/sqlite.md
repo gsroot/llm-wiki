@@ -1,12 +1,19 @@
 ---
-title: "SQLite"
+title: SQLite
 type: entity
 entity_type: tool
-tags: [sqlite, embedded-database, sql, c, single-file, file-format, 25회차]
+tags:
+- sqlite
+- sql
+- file-format
+- 25회차
 related:
-  - "[[postgresql]]"
-  - "[[duckdb]]"
-  - "[[redis]]"
+- '[[postgresql]]'
+- '[[duckdb]]'
+- '[[redis]]'
+- '[[duckdb-duckdb]]'
+- '[[sqlalchemy-sqlalchemy]]'
+- '[[sqlalchemy-alembic]]'
 source_count: 3
 observed_source_refs: 4
 inbound_count: 11

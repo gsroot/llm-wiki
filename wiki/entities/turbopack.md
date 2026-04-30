@@ -1,13 +1,25 @@
 ---
-title: "Turbopack"
+title: Turbopack
 type: entity
 entity_type: tool
-aliases: [Turbopack, turbopack, 터보팩, Rust 번들러, Next.js bundler]
-tags: [turbopack, vercel, rust, bundler, nextjs, build-tool, 25회차, 50회차]
+aliases:
+- Turbopack
+- turbopack
+- 터보팩
+- Rust 번들러
+- Next.js bundler
+tags:
+- turbopack
+- vercel
+- rust
+- nextjs
+- 25회차
+- 50회차
 related:
-  - "[[vercel]]"
-  - "[[nextjs]]"
-  - "[[react]]"
+- '[[vercel]]'
+- '[[nextjs]]'
+- '[[react]]'
+- '[[vercel-next.js]]'
 source_count: 1
 observed_source_refs: 1
 inbound_count: 14

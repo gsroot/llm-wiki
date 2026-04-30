@@ -1,37 +1,70 @@
 ---
-title: "하네스 (Harness)"
+title: 하네스 (Harness)
 type: concept
 category: ai
-aliases: [Agent Harness, harness, 에이전트 하네스, claude harness, AI 하네스]
-tags: [harness, claude-code, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-SDK, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, openai-agents-python, plans-md, exec-plans, living-document, 7-hour-task, 9-sop-skills, skill-chaining]
+aliases:
+- Agent Harness
+- harness
+- 에이전트 하네스
+- claude harness
+- AI 하네스
+tags:
+- harness
+- claude-code
+- agent
+- 자율연구
+- agent-skills
+- 패키지레이어
+- claude-agent-SDK
+- agent-patterns
+- bare-metal-harness
+- spec-kit
+- sdd
+- scikit-learn
+- slep
+- openai
+- openai-cookbook
+- openai-agents-python
+- plans-md
+- exec-plans
+- 9-sop-skills
+- skill-chaining
 related:
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[anthropic]]"
-  - "[[agent-patterns]]"
-  - "[[context-engineering]]"
-  - "[[token-economy]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[autonomous-research-loop]]"
-  - "[[autoresearch]]"
-  - "[[agent-skills]]"
-  - "[[spec-kit]]"
-  - "[[spec-driven-development]]"
-  - "[[github]]"
-  - "[[scikit-learn]]"
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-agents-python]]"
-  - "[[mcp]]"
-  - "[[seokgeun-kim]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[matechat]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[anthropic]]'
+- '[[agent-patterns]]'
+- '[[context-engineering]]'
+- '[[token-economy]]'
+- '[[llm-wiki-pattern]]'
+- '[[autonomous-research-loop]]'
+- '[[autoresearch]]'
+- '[[agent-skills]]'
+- '[[spec-kit]]'
+- '[[spec-driven-development]]'
+- '[[github]]'
+- '[[scikit-learn]]'
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[openai-agents-python]]'
+- '[[mcp]]'
+- '[[seokgeun-kim]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
+- '[[matechat]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[claude-code-master-guide]]'
+- '[[karpathy-autoresearch]]'
+- '[[anthropics-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[github-spec-kit]]'
+- '[[openai-openai-cookbook]]'
+- '[[flutter-flutter]]'
+- '[[openai-openai-agents-python]]'
 source_count: 8
 observed_source_refs: 58
-inbound_count: 178
+inbound_count: 179
 created: 2026-04-15
 updated: 2026-04-29
 cited_by_count: 60
@@ -40,6 +73,13 @@ cited_by_count: 60
 # 하네스 (Harness)
 
 > 한국어 표기: **에이전트 하네스** 또는 **AI 하네스**(Agent Harness).
+
+> [!tldr]
+> **Harness** = LLM 모델 위에 얹어 컨텍스트·도구·검증·작업 흐름을 관리하는 **운영 외피층**. 모델은 능력을, 하네스는 능력을 작업으로 변환하는 거버넌스.
+> - **판단**: 살아있는 운영 노트(OpenAI Cookbook 패턴) vs 정적 가이드(Anthropic Skills 패턴) / meta-harness vs library-as-harness
+> - **근거**: Claude Code·Cursor·Codex의 harness 비교 / 7-hour task 벤치마크 / 석근 운영 사례 (39 SKILL · MateChat 자작)
+> - **히스토리**: 2024 Custom Commands → 2026 Skills+MCP+Subagents 메타 운영 표준화
+> - **이 위키 맥락**: 5축(LLM 인프라 메타) sub-hub 2위 (inbound 178). 본문 4단 표는 TL;DR 섹션 참조.
 
 ## TL;DR (요약·판단·근거·히스토리 4단)
 

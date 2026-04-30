@@ -1,17 +1,23 @@
 ---
-title: "pandas-dev (GitHub 조직)"
+title: pandas-dev (GitHub 조직)
 type: entity
 entity_type: organization
-tags: [pandas-dev, github-org, numfocus, bdfl, pdep, governance, oss-governance, wes-mckinney]
+tags:
+- numfocus
+- bdfl
+- pdep
+- governance
+- oss-governance
 related:
-  - "[[pandas]]"
-  - "[[numfocus]]"
-  - "[[pdep]]"
-  - "[[bdfl]]"
-  - "[[karpathy]]"
-  - "[[anthropic]]"
-  - "[[microsoft]]"
-  - "[[github]]"
+- '[[pandas]]'
+- '[[numfocus]]'
+- '[[pdep]]'
+- '[[bdfl]]'
+- '[[karpathy]]'
+- '[[anthropic]]'
+- '[[microsoft]]'
+- '[[github]]'
+- '[[pandas-dev-pandas]]'
 source_count: 1
 observed_source_refs: 4
 inbound_count: 17

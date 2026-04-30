@@ -1,14 +1,24 @@
 ---
-title: "Predicate Pushdown"
-aliases: [Predicate Pushdown, 조건 푸시다운]
+title: Predicate Pushdown
+aliases:
+- Predicate Pushdown
+- 조건 푸시다운
 type: concept
 category: query-optimization
-tags: [predicate-pushdown, sql-optimization, parquet, duckdb, polars, 25회차]
+tags:
+- predicate-pushdown
+- parquet
+- duckdb
+- polars
+- 25회차
 related:
-  - "[[duckdb]]"
-  - "[[polars]]"
-  - "[[parquet]]"
-  - "[[pyarrow]]"
+- '[[duckdb]]'
+- '[[polars]]'
+- '[[parquet]]'
+- '[[pyarrow]]'
+- '[[duckdb-duckdb]]'
+- '[[pola-rs-polars]]'
+- '[[apache-arrow]]'
 source_count: 3
 observed_source_refs: 3
 inbound_count: 10

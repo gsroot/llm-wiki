@@ -1,33 +1,42 @@
 ---
-title: "석근 개인 운영 프로필 (2026)"
+title: 석근 개인 운영 프로필 (2026)
 type: synthesis
 category: analysis
-tags: [personal-operating-profile, seokgeun-kim, matechat, 육아휴직, 사업화, 가족, AI-collaboration, productivity, burnout-risk]
-aliases: [석근 운영 프로필 2026, seokgeun-operating-profile, 운영 프로필 2026]
+tags:
+- seokgeun-kim
+- matechat
+- 육아휴직
+- 사업화
+- 가족
+- burnout-risk
+aliases:
+- 석근 운영 프로필 2026
+- seokgeun-operating-profile
+- 운영 프로필 2026
 sources:
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-kim]]"
-  - "[[matechat]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[career-timeline-seokgeun]]"
+- '[[seokgeun-kim-profile-2026]]'
+- '[[seokgeun-kim]]'
+- '[[matechat]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[career-timeline-seokgeun]]'
 related:
-  - "[[seokgeun-stack-guide]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[kpi-recovery-loop]]"
+- '[[seokgeun-stack-guide]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[parental-leave-2026-operating-plan]]'
+- '[[matechat-30day-validation-loop]]'
+- '[[c2spf-ai-agent-adoption-candidates]]'
+- '[[kpi-recovery-loop]]'
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "2026 운영 프레임 (육아휴직·AI 협업 비중·생산성 metric) — 분기별 재검토"
+verification_notes: 2026 운영 프레임 (육아휴직·AI 협업 비중·생산성 metric) — 분기별 재검토
 cited_by_count: 18
-inbound_count: 48
+inbound_count: 49
 ---
 
 # 석근 개인 운영 프로필 (2026)

@@ -1,14 +1,24 @@
 ---
-title: "Event-driven Architecture"
-aliases: [Event-Driven Architecture, 이벤트 기반 아키텍처, EDA]
+title: Event-driven Architecture
+aliases:
+- Event-Driven Architecture
+- 이벤트 기반 아키텍처
+- EDA
 type: concept
 category: system-architecture
-tags: [event-driven-architecture, eda, event-sourcing, cqrs, kafka, pubsub, 25회차]
+tags:
+- kafka
+- pubsub
+- 25회차
 related:
-  - "[[kafka]]"
-  - "[[redis]]"
-  - "[[append-only-log]]"
-  - "[[matechat]]"
+- '[[kafka]]'
+- '[[redis]]'
+- '[[append-only-log]]'
+- '[[matechat]]'
+- '[[apache-kafka]]'
+- '[[redis-redis]]'
+- '[[seokgeun-mate-chat]]'
+- '[[getsentry-sentry]]'
 source_count: 4
 observed_source_refs: 4
 inbound_count: 12

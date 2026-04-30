@@ -1,25 +1,35 @@
 ---
-title: "MateChat 30일 검증 루프"
+title: MateChat 30일 검증 루프
 type: synthesis
-category: guide
-aliases: [MateChat 30일 검증, matechat-30day-validation-loop, 30일 알파 검증, MateChat 알파 KPI]
-tags: [matechat, 30일검증, alpha-validation, kpi, 검증루프, retention, conversion, post-launch, 48회차]
+category: operating-log
+aliases:
+- MateChat 30일 검증
+- matechat-30day-validation-loop
+- 30일 알파 검증
+- MateChat 알파 KPI
+tags:
+- matechat
+- kpi
+- retention
+- conversion
+- post-launch
+- 48회차
 sources:
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-matechat-validation]]"
-  - "[[mate-chat-project-wiki-2026]]"
+- '[[seokgeun-mate-chat]]'
+- '[[seokgeun-matechat-validation]]'
+- '[[mate-chat-project-wiki-2026]]'
 related:
-  - "[[matechat]]"
-  - "[[matechat-business-validation]]"
-  - "[[matechat-launch-metrics-ledger]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[parental-leave-2026-operating-plan]]"
+- '[[matechat]]'
+- '[[matechat-business-validation]]'
+- '[[matechat-launch-metrics-ledger]]'
+- '[[seokgeun-kim]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[parental-leave-2026-operating-plan]]'
 created: 2026-04-29
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "출시 D+30 시점에 KPI 실측값 회수 + Go/Iterate/Pivot 의사결정 박힘. 출시 전까지 가설 단계."
+verification_notes: 출시 D+30 시점에 KPI 실측값 회수 + Go/Iterate/Pivot 의사결정 박힘. 출시 전까지 가설 단계.
 cited_by_count: 11
 inbound_count: 27
 ---

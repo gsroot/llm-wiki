@@ -1,36 +1,44 @@
 ---
-title: "클로드 코드 중심 실전 마스터 가이드"
+title: 클로드 코드 중심 실전 마스터 가이드
 type: source
 source_type: book
-source_url: ""
+source_url: ''
 source_scope: private
-raw_path: "raw/articles/claude-code/클로드코드_가이드북.pdf"
-author: "CHOI (@choi.openai)"
+raw_path: raw/articles/claude-code/클로드코드_가이드북.pdf
+author: CHOI (@choi.openai)
 date_published: 2026
 date_ingested: 2026-04-15
-tags: [claude-code, cowork, harness, 토큰경제학, 거버넌스, 가이드북, 실무운영, 한국어]
+tags:
+- claude-code
+- cowork
+- harness
+- 토큰경제학
 related:
-  - "[[claude-code]]"
-  - "[[cowork]]"
-  - "[[harness]]"
-  - "[[token-economy]]"
-  - "[[context-engineering]]"
-  - "[[mcp]]"
-  - "[[llm-wiki-pattern]]"
+- '[[claude-code]]'
+- '[[cowork]]'
+- '[[harness]]'
+- '[[token-economy]]'
+- '[[context-engineering]]'
+- '[[mcp]]'
+- '[[llm-wiki-pattern]]'
 confidence: high
-inbound_count: 21
+inbound_count: 29
 cited_by:
-  - "[[claude-code]]"
-  - "[[context-engineering]]"
-  - "[[cowork]]"
-  - "[[harness]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[mcp]]"
-  - "[[obsidian-guide]]"
-  - "[[rag]]"
-  - "[[token-economy]]"
-  - "[[using-llm-wiki-as-rag]]"
+- '[[claude-code]]'
+- '[[context-engineering]]'
+- '[[cowork]]'
+- '[[harness]]'
+- '[[llm-wiki-pattern]]'
+- '[[mcp]]'
+- '[[obsidian-guide]]'
+- '[[rag]]'
+- '[[token-economy]]'
+- '[[using-llm-wiki-as-rag]]'
 cited_by_count: 10
+aliases:
+- Claude Code Master Guide
+- claude code master guide
+- 클로드 코드 중심 실전 마스터 가이드
 ---
 
 # 클로드 코드 중심 실전 마스터 가이드

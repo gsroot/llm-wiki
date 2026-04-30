@@ -1,11 +1,15 @@
 ---
-title: "Poimandres"
+title: Poimandres
 type: entity
 entity_type: organization
-tags: [poimandres, collective, react, three-fiber, zustand, jotai, valtio, 25회차]
+tags:
+- react
+- zustand
+- 25회차
 related:
-  - "[[zustand]]"
-  - "[[react]]"
+- '[[zustand]]'
+- '[[react]]'
+- '[[pmndrs-zustand]]'
 source_count: 1
 observed_source_refs: 3
 inbound_count: 11

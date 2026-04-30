@@ -1,29 +1,42 @@
 ---
-title: "langchain-ai/langchain — The agent engineering platform"
+title: langchain-ai/langchain — The agent engineering platform
 type: source
 source_type: article
-source_url: "https://github.com/langchain-ai/langchain"
-raw_path: "raw/articles/langchain-ai-langchain/"
-author: "LangChain Inc. (Harrison Chase 외)"
+source_url: https://github.com/langchain-ai/langchain
+raw_path: raw/articles/langchain-ai-langchain/
+author: LangChain Inc. (Harrison Chase 외)
 date_published: 2022-10-17
 date_ingested: 2026-04-28
-tags: [langchain, LLM-framework, agent, monorepo, langchain-inc, langsmith, agents-md, claude-md, 17회차]
+tags:
+- langchain
+- LLM-framework
+- agent
+- monorepo
+- langchain-inc
+- langsmith
+- agents-md
+- claude-md
+- 17회차
 related:
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[ml-ai]]"
-  - "[[agent-skills]]"
-  - "[[mcp]]"
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[ml-ai]]'
+- '[[agent-skills]]'
+- '[[mcp]]'
 confidence: high
-inbound_count: 12
+inbound_count: 15
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-skills]]"
-  - "[[langchain]]"
-  - "[[mcp]]"
-  - "[[ml-ai]]"
-  - "[[oss-saas-dual]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-skills]]'
+- '[[langchain]]'
+- '[[mcp]]'
+- '[[ml-ai]]'
+- '[[oss-saas-dual]]'
 cited_by_count: 6
+aliases:
+- Langchain Ai
+- langchain ai
+- langchain-ai/langchain — The agent engineering platform
 ---
 
 # langchain-ai/langchain — The agent engineering platform

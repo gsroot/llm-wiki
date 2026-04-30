@@ -1,30 +1,46 @@
 ---
-title: "apache/kafka (Kafka 저장소)"
+title: apache/kafka (Kafka 저장소)
 type: source
 source_type: article
-source_url: "https://github.com/apache/kafka"
-raw_path: "raw/articles/apache-kafka/"
-author: "Apache Software Foundation + Confluent"
+source_url: https://github.com/apache/kafka
+raw_path: raw/articles/apache-kafka/
+author: Apache Software Foundation + Confluent
 date_published: 2011-01-25
 date_ingested: 2026-04-28
-tags: [kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip]
+tags:
+- kafka
+- event-streaming
+- distributed-log
+- jvm
+- scala
+- zero-copy
+- sendfile
+- pagecache
+- pub-sub
+- asf
+- kraft
+- kip
 related:
-  - "[[kafka]]"
-  - "[[redis]]"
-  - "[[postgresql]]"
-  - "[[apache-foundation]]"
+- '[[kafka]]'
+- '[[redis]]'
+- '[[postgresql]]'
+- '[[apache-foundation]]'
 confidence: high
-inbound_count: 15
+inbound_count: 20
 cited_by:
-  - "[[apache-foundation]]"
-  - "[[append-only-log]]"
-  - "[[c2spf-analytics]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[event-driven-architecture]]"
-  - "[[kafka]]"
-  - "[[streaming]]"
-  - "[[zero-copy]]"
+- '[[apache-foundation]]'
+- '[[append-only-log]]'
+- '[[c2spf-analytics]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[event-driven-architecture]]'
+- '[[kafka]]'
+- '[[streaming]]'
+- '[[zero-copy]]'
 cited_by_count: 8
+aliases:
+- Apache Kafka
+- apache kafka
+- apache/kafka (Kafka 저장소)
 ---
 
 # apache/kafka (Kafka 저장소)

@@ -1,26 +1,34 @@
 ---
-title: "포트폴리오 방법론 (docs/00-meta 합본)"
+title: 포트폴리오 방법론 (docs/00-meta 합본)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/00-meta/"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/00-meta/
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [방법론, methodology, 3-layer, johnny-decimal, STAR, frontmatter]
+tags:
+- methodology
+- 3-layer
+- johnny-decimal
+- STAR
 related:
-  - "[[seokgeun-kim]]"
-  - "[[portfolio-seed]]"
-  - "[[llm-wiki-pattern]]"
+- '[[seokgeun-kim]]'
+- '[[portfolio-seed]]'
+- '[[llm-wiki-pattern]]'
 confidence: high
-inbound_count: 12
+inbound_count: 13
 cited_by:
-  - "[[career-timeline-seokgeun]]"
-  - "[[portfolio]]"
-  - "[[portfolio-seed]]"
-  - "[[seokgeun-kim]]"
+- '[[career-timeline-seokgeun]]'
+- '[[portfolio]]'
+- '[[portfolio-seed]]'
+- '[[seokgeun-kim]]'
 cited_by_count: 4
+aliases:
+- Portfolio Method
+- portfolio method
+- 포트폴리오 방법론 (docs/00-meta 합본)
 ---
 
 # 포트폴리오 방법론 (docs/00-meta 합본)
@@ -46,6 +54,8 @@ cited_by_count: 4
 
 - [[seokgeun-kim|석근 (이 위키 owner)]] — 이 방법론의 설계자이자 운영자
 - [[llm-wiki-pattern]] — 동일한 "원천 → 요약 → 종합" 패턴의 일반화
+- [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] — 본 방법론의 STAR 포맷이 32 OSS 의사결정 트리에서 "어떤 도구를 어떤 시나리오에 적용했는가"의 근거 형식으로 재사용됨 (3축↔이 source 교차 인용)
+- [[matechat]] — 본 방법론을 사이드 프로젝트 운영 기록(matechat-launch-metrics-ledger 등)에 그대로 적용한 사례 (4축↔이 source 교차 인용)
 
 ## 메모
 

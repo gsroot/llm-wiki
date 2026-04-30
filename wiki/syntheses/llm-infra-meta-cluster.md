@@ -1,45 +1,59 @@
 ---
-title: "LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축"
+title: LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
 type: synthesis
 category: hub
 sources:
-  - "[[anthropics-skills]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[github-spec-kit]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[fastapi-fastapi]]"
-  - "[[astral-sh-uv]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[flutter-flutter]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
+- '[[anthropics-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[github-spec-kit]]'
+- '[[openai-openai-cookbook]]'
+- '[[openai-openai-agents-python]]'
+- '[[fastapi-fastapi]]'
+- '[[astral-sh-uv]]'
+- '[[pandas-dev-pandas]]'
+- '[[scikit-learn-scikit-learn]]'
+- '[[flutter-flutter]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[microsoft-generative-ai-for-beginners]]'
 source_count: 12
 observed_source_refs: 17
 inbound_count: 99
 verification_required: true
 last_verified: 2026-04-30
-verification_notes: "10개 OSS 거버넌스 모델 카탈로그 — 분기별 재검증. 본문에 박힌 인바운드 수치는 28회차 시점 스냅샷이며, 자동 필드(inbound_count·cited_by_count)가 source-of-truth."
+verification_notes: 10개 OSS 거버넌스 모델 카탈로그 — 분기별 재검증. 본문에 박힌 인바운드 수치는 28회차 시점 스냅샷이며, 자동 필드(inbound_count·cited_by_count)가 source-of-truth.
 related:
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[mcp]]"
-  - "[[claude-code]]"
-  - "[[agent-patterns]]"
-  - "[[context-engineering]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-skills]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[portfolio]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[matechat]]"
-  - "[[c2spf-analytics]]"
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[mcp]]'
+- '[[claude-code]]'
+- '[[agent-patterns]]'
+- '[[context-engineering]]'
+- '[[agent-stack-evolution]]'
+- '[[anthropics-skills]]'
+- '[[seokgeun-kim]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[portfolio]]'
+- '[[seokgeun-stack-guide]]'
+- '[[matechat]]'
+- '[[c2spf-analytics]]'
 created: 2026-04-28
 updated: 2026-04-28
-aliases: [LLM 인프라 메타 클러스터, llm-infra-meta-cluster, 5축 hub, LLM 인프라 메타, agent infra meta]
-tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, hub, 28회차, hidden-axis, 53회차]
+aliases:
+- LLM 인프라 메타 클러스터
+- llm-infra-meta-cluster
+- 5축 hub
+- LLM 인프라 메타
+- agent infra meta
+tags:
+- agent-skills
+- harness
+- mcp
+- claude-code
+- governance
+- hub
+- 28회차
+- 53회차
+verification_procedure: 'agent-skills(204)/harness(178)/mcp(143)/claude-code(128) 4개 sub-hub 외부 상태 분기별 점검: Anthropic Skills 공식 통합 진척, MCP 표준 버전, Claude Code 출시 채널 상태, agent harness 거버넌스 모델 변동. 변동 시 본문 12단계 AGENTS.md 진화 표·last_verified 갱신.'
 cited_by_count: 59
 ---
 

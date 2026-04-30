@@ -1,35 +1,44 @@
 ---
-title: "microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문"
+title: microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문
 type: source
 source_type: article
-source_url: "https://github.com/microsoft/Data-Science-For-Beginners"
-raw_path: "raw/articles/microsoft-data-science-for-beginners/"
-author: "Microsoft Cloud Advocates"
+source_url: https://github.com/microsoft/Data-Science-For-Beginners
+raw_path: raw/articles/microsoft-data-science-for-beginners/
+author: Microsoft Cloud Advocates
 date_published: 2021-03-03
 date_ingested: 2026-04-27
-tags: [data-science, microsoft, microsoft-for-beginners, pandas, sql, nosql, matplotlib, data-visualization, data-ethics, data-lifecycle, azure-ml, BI]
+tags:
+- microsoft
+- microsoft-for-beginners
+- pandas
+- sql
+- BI
 related:
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[ml-ai]]"
-  - "[[c2spf-analytics]]"
-  - "[[pandas]]"
-  - "[[pandas-dev-pandas]]"
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[data-pipeline-bigquery]]'
+- '[[ml-ai]]'
+- '[[c2spf-analytics]]'
+- '[[pandas]]'
+- '[[pandas-dev-pandas]]'
 confidence: high
-inbound_count: 21
+inbound_count: 23
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[c2spf-analytics]]"
-  - "[[c2spf-analytics-renewal]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[pandas]]"
-  - "[[pandas-dev-pandas]]"
+- '[[agent-stack-evolution]]'
+- '[[c2spf-analytics]]'
+- '[[c2spf-analytics-renewal]]'
+- '[[data-pipeline-bigquery]]'
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[openai-openai-cookbook]]'
+- '[[pandas]]'
+- '[[pandas-dev-pandas]]'
 cited_by_count: 10
+aliases:
+- Microsoft Data Science For Beginners
+- microsoft data science for beginners
+- microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문
 ---
 
 # microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문

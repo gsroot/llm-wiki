@@ -66,6 +66,7 @@ llm-wiki/
   - **제품·라이브러리·도구·약어 태그**: 영어 단독 허용 (예: `fastapi`, `uv`, `zustand`, `BI`, `mcp`).
   - **고유명사 태그**: 한국어 단독 허용 (예: `석근`, `컴투스플랫폼`).
   - **회차 / 메타 태그**: `22회차`, `30회차`, `agents-md` 등 추적용 태그 자유 사용.
+  - **60회차 P0-8 신설 — vocabulary 과밀 차단**: 새 태그 추가 시 **최소 3페이지 이상 사용 가능성** 검토 의무. 페이지 본문 키워드를 그대로 태그로 박지 말 것 (검색은 본문 텍스트로 충분히 잡힘). sub-keyword·fringe technical detail은 frontmatter `aliases:` 또는 본문 위임. 회귀 차단 임계: `wiki-lint.py` check #15가 unique > 700 OR 저빈도(1-2회) > 60% 시 경고. 60회차 baseline: unique 465, 저빈도 54.6%.
 
 ### 프론트매터 규칙
 - 모든 위키 페이지는 YAML 프론트매터 필수
@@ -204,6 +205,8 @@ python3 scripts/wiki-lint.py --update      # observed_source_refs / inbound_coun
 1. **운영자는 `source_count`만 수동 관리**한다. 빈약 페이지 검사는 이 값 기준.
 2. `observed_source_refs`·`inbound_count`는 **자동 갱신 전용** — 수동 입력 금지.
 3. lint check 4번(`source_count` 부정합)은 정의 A vs 정의 B 차이 보고 — **결함이 아닌 정보 보고**. delta가 큰 경우(±10 이상) 운영자가 의미 재검토.
+   - **60회차 P0-7 정책 명문화 — 정의 A는 "운영자가 핵심으로 보는 source 페이지 수"**: hub 페이지 본문에 인용된 source 중 운영자 기준 핵심 출처만 카운트. 본문에 wikilink로 박힌 모든 source가 자동으로 가산되지 않음. 따라서 정의 A < 정의 B는 정상 (본문 인용은 풍부하나 핵심 출처 운영자 판단은 좁음). delta ±50까지 정상 범위로 간주.
+   - RAG·평가 시 신뢰도·출처 풍부도 비교는 **반드시 정의 B(`observed_source_refs`) 또는 `inbound_count`·`cited_by_count`** 사용. 정의 A는 LLM의 비교 입력에서 제외.
 4. `--update` 모드는 `observed_source_refs`·`inbound_count`·`cited_by` 자동 필드만 갱신한다. **`source_count`는 절대 자동 덮어쓰지 않는다**(32회차의 "의미 손실" 위험 제거).
 
 #### `cited_by` (source 페이지 전용 — 47회차 신설, Codex P1 권고 채택)
@@ -278,6 +281,25 @@ grep -c "unique signature" /Users/sgkim/Projects/llm-wiki/wiki/path/file.md  # 2
 - 프론트매터 없는 위키 페이지를 만들지 않는다
 - `index.md` 업데이트 없이 새 페이지를 만들지 않는다
 - `log.md` 기록 없이 수집을 완료하지 않는다
+
+## Synthesis 분류 정책 (60회차 P0-5 신설)
+
+`wiki/syntheses/` 페이지는 두 가지 성격이 혼재한다. RAG·평가·인용 우선순위에서 두 성격을 구분하기 위해 `category:` 필드로 명시 분리한다.
+
+### 진정한 synthesis (응집 메시지)
+- **요건**: 최소 4개 source 인용 + 다중 source를 종합한 새 통찰·비교·해석 틀 제시.
+- **category 예시**: `hub`, `comparison`, `analysis`, `architect`, `data`, `dev-tools`, `timeline`, `ai`, `frontend-architect`.
+- **RAG 답변 정책**: hub 라우팅 / 답변 근거로 우선 인용.
+
+### 운영 기록 (operating-log)
+- **요건**: 단일 회차 또는 단일 프로젝트의 운영 기록·검증 루프·정책 audit.
+- **category**: `operating-log` (60회차에 통합 분류 신설).
+- **RAG 답변 정책**: 답변 근거로 인용 가능하나, hub 라우팅에서는 후순위. 시점 라벨(`date`, `session`) 신선도 확인 필수.
+- **현재 분류 대상 (60회차 baseline)**: `kpi-recovery-loop`, `matechat-30day-validation-loop`, `matechat-launch-metrics-ledger`, `parental-leave-2026-operating-plan`, `wiki-bootstrap-log`, `tag-vocabulary-audit-2026-04-29` (6개).
+
+### 신설·갱신 시 의무
+- 새 synthesis 페이지는 source 4개 미만이면 `category: operating-log` 또는 다른 source/concept 페이지로 흡수 검토.
+- 운영 기록은 `category: operating-log` 명시 의무. RAG 답변 시 LLM이 hub 인용과 분리해 인지하도록 함.
 
 ## 카테고리 가이드 (개인 종합 위키)
 

@@ -1,44 +1,74 @@
 ---
-title: "openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬"
+title: openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬
 type: source
 source_type: article
-source_url: "https://github.com/openai/openai-agents-python"
-raw_path: "raw/articles/openai-openai-agents-python/"
-author: "OpenAI (Agents Team)"
+source_url: https://github.com/openai/openai-agents-python
+raw_path: raw/articles/openai-openai-agents-python/
+author: OpenAI (Agents Team)
 date_published: 2025-03-11
 date_ingested: 2026-04-28
-tags: [openai-agents-python, openai, openai-agents, agents-SDK, python, multi-agent, agent-framework, agent-skills, agents-md, plans-md, exec-plans, vendor-neutral, codex, mcp, uv, pyright, MIT-license, agent-patterns, guardrails, human-in-the-loop, handoffs, streaming, runtime-behavior-probe, implementation-strategy]
+tags:
+- openai-agents-python
+- openai
+- openai-agents
+- agents-SDK
+- python
+- multi-agent
+- agent-framework
+- agent-skills
+- agents-md
+- plans-md
+- exec-plans
+- vendor-neutral
+- codex
+- mcp
+- uv
+- pyright
+- MIT-license
+- agent-patterns
+- guardrails
+- human-in-the-loop
+- handoffs
+- streaming
+- runtime-behavior-probe
+- implementation-strategy
 related:
-  - "[[openai]]"
-  - "[[openai-agents-python]]"
-  - "[[openai-cookbook]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[agent-patterns]]"
-  - "[[spec-driven-development]]"
-  - "[[ml-ai]]"
-  - "[[mcp]]"
-  - "[[agent-stack-evolution]]"
-  - "[[uv]]"
-  - "[[python-packaging]]"
+- '[[openai]]'
+- '[[openai-agents-python]]'
+- '[[openai-cookbook]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[agent-patterns]]'
+- '[[spec-driven-development]]'
+- '[[ml-ai]]'
+- '[[mcp]]'
+- '[[agent-stack-evolution]]'
+- '[[uv]]'
+- '[[python-packaging]]'
 confidence: high
-inbound_count: 29
+inbound_count: 36
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[astral-sh-uv]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mcp]]"
-  - "[[ml-ai]]"
-  - "[[openai]]"
-  - "[[openai-agents-python]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[python]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[agent-stack-evolution]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[astral-sh-uv]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[mcp]]'
+- '[[ml-ai]]'
+- '[[openai]]'
+- '[[openai-agents-python]]'
+- '[[openai-openai-cookbook]]'
+- '[[python]]'
 cited_by_count: 14
+aliases:
+- Openai Agents Python
+- openai agents python
+- openai-agents-python
+- openai/openai-agents-python — OpenAI Agents SDK 본체
+- openai/openai-agents-python — OpenAI Agents SDK 본체 + AGENTS.md=CLAUDE.md 동기화 + 9개 운영 SOP 스킬
 ---
 
 # openai/openai-agents-python — OpenAI Agents SDK 본체

@@ -1,18 +1,31 @@
 ---
-title: "pandas (데이터 분석 라이브러리)"
-aliases: [Pandas, 판다스, pandas-dev]
+title: pandas (데이터 분석 라이브러리)
+aliases:
+- Pandas
+- 판다스
+- pandas-dev
 type: entity
 entity_type: tool
-tags: [pandas, python, dataframe, time-series, BI, scikit-learn, numpy, pyarrow, bigquery, copy-on-write, 데이터분석]
+tags:
+- pandas
+- python
+- dataframe
+- time-series
+- BI
+- scikit-learn
+- pyarrow
+- bigquery
+- copy-on-write
+- 데이터분석
 related:
-  - "[[pandas-dev]]"
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[ml-ai]]"
-  - "[[c2spf-analytics]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[pandas-dev]]'
+- '[[microsoft-data-science-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[data-pipeline-bigquery]]'
+- '[[ml-ai]]'
+- '[[c2spf-analytics]]'
+- '[[pandas-dev-pandas]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 17
 inbound_count: 81

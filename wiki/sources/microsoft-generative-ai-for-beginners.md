@@ -1,32 +1,43 @@
 ---
-title: "microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문"
+title: microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문
 type: source
 source_type: article
-source_url: "https://github.com/microsoft/generative-ai-for-beginners"
-raw_path: "raw/articles/microsoft-generative-ai-for-beginners/"
-author: "Microsoft Cloud Advocates"
+source_url: https://github.com/microsoft/generative-ai-for-beginners
+raw_path: raw/articles/microsoft-generative-ai-for-beginners/
+author: Microsoft Cloud Advocates
 date_published: 2023-06-19
 date_ingested: 2026-04-27
-tags: [generative-AI, microsoft, microsoft-for-beginners, openai, prompt-engineering, RAG, ai-agents, slm, mistral, meta]
+tags:
+- microsoft
+- microsoft-for-beginners
+- openai
+- prompt-engineering
+- RAG
+- ai-agents
+- meta
 related:
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[mcp]]"
-  - "[[context-engineering]]"
-  - "[[agent-skills]]"
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[mcp]]'
+- '[[context-engineering]]'
+- '[[agent-skills]]'
 confidence: high
-inbound_count: 17
+inbound_count: 19
 cited_by:
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mcp]]"
-  - "[[microsoft]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[microsoft-web-dev-for-beginners]]"
-  - "[[using-llm-wiki-as-rag]]"
+- '[[agent-skills]]'
+- '[[agent-stack-evolution]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[mcp]]'
+- '[[microsoft]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[microsoft-for-beginners]]'
+- '[[microsoft-web-dev-for-beginners]]'
+- '[[using-llm-wiki-as-rag]]'
 cited_by_count: 9
+aliases:
+- Microsoft Generative Ai For Beginners
+- microsoft generative ai for beginners
+- microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문
 ---
 
 # microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문

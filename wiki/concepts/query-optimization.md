@@ -1,13 +1,22 @@
 ---
-title: "Query Optimization"
-aliases: [Query Optimization, 쿼리 최적화]
+title: Query Optimization
+aliases:
+- Query Optimization
+- 쿼리 최적화
 type: concept
 category: database
-tags: [query-optimization, sql, planner, optimizer, predicate-pushdown, 25회차]
+tags:
+- query-optimization
+- sql
+- predicate-pushdown
+- 25회차
 related:
-  - "[[postgresql]]"
-  - "[[duckdb]]"
-  - "[[polars]]"
+- '[[postgresql]]'
+- '[[duckdb]]'
+- '[[polars]]'
+- '[[postgres-postgres]]'
+- '[[duckdb-duckdb]]'
+- '[[pola-rs-polars]]'
 source_count: 3
 observed_source_refs: 3
 inbound_count: 8

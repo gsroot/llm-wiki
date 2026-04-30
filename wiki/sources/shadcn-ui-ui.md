@@ -1,29 +1,42 @@
 ---
-title: "shadcn-ui/ui (Open Code 패러다임 — 라이브러리가 아닌 코드 분배)"
+title: shadcn-ui/ui (Open Code 패러다임 — 라이브러리가 아닌 코드 분배)
 type: source
 source_type: article
-source_url: "https://github.com/shadcn-ui/ui"
-raw_path: "raw/articles/shadcn-ui-ui/"
-author: "shadcn"
+source_url: https://github.com/shadcn-ui/ui
+raw_path: raw/articles/shadcn-ui-ui/
+author: shadcn
 date_published: 2023-03-08
 date_ingested: 2026-04-28
 related:
-  - "[[shadcn-ui]]"
-  - "[[radix-ui]]"
-  - "[[tailwindcss]]"
-  - "[[react]]"
-  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
-tags: [shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차]
+- '[[shadcn-ui]]'
+- '[[radix-ui]]'
+- '[[tailwindcss]]'
+- '[[react]]'
+- '[[flutter-nextjs-fullstack-pattern|React 진영 종합]]'
+tags:
+- shadcn-ui
+- react
+- components
+- tailwind
+- radix
+- open-code
+- code-distribution
+- 22회차
 confidence: high
-inbound_count: 11
+inbound_count: 14
 cited_by:
-  - "[[agent-skills]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[radix-ui]]"
-  - "[[react]]"
-  - "[[shadcn-ui]]"
-  - "[[tailwindcss]]"
+- '[[agent-skills]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[radix-ui]]'
+- '[[react]]'
+- '[[shadcn-ui]]'
+- '[[tailwindcss]]'
 cited_by_count: 6
+aliases:
+- Shadcn Ui
+- shadcn ui
+- shadcn-ui/ui (Open Code 패러다임 — 라이브러리가 아닌 코드 분배)
+- shadcn-ui/ui 소스
 ---
 
 # shadcn-ui/ui 소스

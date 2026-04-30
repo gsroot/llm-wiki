@@ -1,15 +1,21 @@
 ---
-title: "Copy-on-Write (CoW)"
-aliases: [Copy-on-Write, CoW, COW]
+title: Copy-on-Write (CoW)
+aliases:
+- Copy-on-Write
+- CoW
+- COW
 type: concept
 category: data
-tags: [copy-on-write, cow, pandas, 메모리관리, 성능, optimization]
+tags:
+- copy-on-write
+- pandas
+- optimization
 related:
-  - "[[pandas]]"
-  - "[[dataframe]]"
-  - "[[ml-ai]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[pola-rs-polars]]"
+- '[[pandas]]'
+- '[[dataframe]]'
+- '[[ml-ai]]'
+- '[[pandas-dev-pandas]]'
+- '[[pola-rs-polars]]'
 source_count: 2
 observed_source_refs: 8
 inbound_count: 28

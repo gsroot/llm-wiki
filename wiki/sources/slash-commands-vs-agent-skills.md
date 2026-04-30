@@ -1,32 +1,42 @@
 ---
-title: "Claude Code: Slash Commands vs Agent Skills"
+title: 'Claude Code: Slash Commands vs Agent Skills'
 type: source
 source_type: note
-source_url: "https://code.claude.com/docs/en/skills"
-raw_path: "raw/notes/slash-commands-vs-agent-skills.md"
-author: "석근 (Claude Code 세션 조사·분석)"
+source_url: https://code.claude.com/docs/en/skills
+raw_path: raw/notes/slash-commands-vs-agent-skills.md
+author: 석근 (Claude Code 세션 조사·분석)
 date_published: 2026-04-16
 date_ingested: 2026-04-16
-tags: [claude-code, skills, slash-command, agent-skills, 자동호출, 운영가이드, agent]
+tags:
+- claude-code
+- skills
+- slash-command
+- agent-skills
+- 운영가이드
+- agent
 related:
-  - "[[claude-code]]"
-  - "[[using-llm-wiki-as-rag]]"
-  - "[[harness]]"
-  - "[[context-engineering]]"
+- '[[claude-code]]'
+- '[[using-llm-wiki-as-rag]]'
+- '[[harness]]'
+- '[[context-engineering]]'
 confidence: high
-inbound_count: 26
+inbound_count: 30
 cited_by:
-  - "[[agent-skills]]"
-  - "[[anthropic]]"
-  - "[[anthropics-skills]]"
-  - "[[autonomous-research-loop]]"
-  - "[[claude-code]]"
-  - "[[harness]]"
-  - "[[karpathy-autoresearch]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[seokgeun-kim]]"
-  - "[[using-llm-wiki-as-rag]]"
+- '[[agent-skills]]'
+- '[[anthropic]]'
+- '[[anthropics-skills]]'
+- '[[autonomous-research-loop]]'
+- '[[claude-code]]'
+- '[[harness]]'
+- '[[karpathy-autoresearch]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[seokgeun-kim]]'
+- '[[using-llm-wiki-as-rag]]'
 cited_by_count: 10
+aliases:
+- 'Claude Code: Slash Commands vs Agent Skills'
+- Slash Commands Vs Agent Skills
+- slash commands vs agent skills
 ---
 
 # Claude Code: Slash Commands vs Agent Skills

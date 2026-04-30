@@ -1,20 +1,33 @@
 ---
-title: "LLM 위키 패턴"
-aliases: [LLM Wiki Pattern, LLM 위키 패턴]
+title: LLM 위키 패턴
+aliases:
+- LLM Wiki Pattern
+- LLM 위키 패턴
 type: concept
 category: ai
-tags: [지식관리, knowledge-management, LLM, 위키, obsidian, RAG, harness]
+tags:
+- 지식관리
+- knowledge-management
+- LLM
+- 위키
+- obsidian
+- RAG
+- harness
 related:
-  - "[[wiki-bootstrap-log]]"
-  - "[[memex]]"
-  - "[[qmd]]"
-  - "[[mcp]]"
-  - "[[obsidian-web-clipper]]"
-  - "[[harness]]"
-  - "[[context-engineering]]"
+- '[[wiki-bootstrap-log]]'
+- '[[memex]]'
+- '[[qmd]]'
+- '[[mcp]]'
+- '[[obsidian-web-clipper]]'
+- '[[harness]]'
+- '[[context-engineering]]'
+- '[[llm-wiki-idea-doc]]'
+- '[[claude-code-master-guide]]'
+- '[[using-llm-wiki-as-rag]]'
+- '[[anthropics-skills]]'
 source_count: 3
 observed_source_refs: 19
-inbound_count: 54
+inbound_count: 55
 created: 2026-04-09
 updated: 2026-04-15
 cited_by_count: 21

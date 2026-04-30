@@ -1,21 +1,40 @@
 ---
-title: "Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장)"
+title: Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장)
 type: synthesis
 category: ai
-tags: [comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp, 17회차, 18회차]
+tags:
+- comparison
+- agent-framework
+- langgraph
+- openai-agents-python
+- fastmcp
+- langchain
+- deepagents
+- crewai
+- pydantic-ai
+- pandas-ai
+- decision-matrix
+- durable-execution
+- state-machine
+- mcp
+- 17회차
+- 18회차
 sources:
-  - "[[langchain-ai-langgraph]]"
-  - "[[langchain-ai-langchain]]"
-  - "[[langchain-ai-deepagents]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[jlowin-fastmcp]]"
-  - "[[crewaiinc-crewai]]"
-  - "[[pydantic-pydantic-ai]]"
-  - "[[sinaptik-ai-pandas-ai]]"
+- '[[langchain-ai-langgraph]]'
+- '[[langchain-ai-langchain]]'
+- '[[langchain-ai-deepagents]]'
+- '[[openai-openai-agents-python]]'
+- '[[jlowin-fastmcp]]'
+- '[[crewaiinc-crewai]]'
+- '[[pydantic-pydantic-ai]]'
+- '[[sinaptik-ai-pandas-ai]]'
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 18
 inbound_count: 23
+related:
+- '[[agent-patterns]]'
+- '[[mcp]]'
 ---
 
 # Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장)

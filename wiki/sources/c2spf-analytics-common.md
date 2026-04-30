@@ -1,34 +1,48 @@
 ---
-title: "컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)"
+title: 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/2024-08-analytics-common-module.md"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/20-projects/com2us-platform/2024-08-analytics-common-module.md
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [com2us-platform, c2spf, analytics, fastapi, spring-boot, ag-grid, jenkins, docker, loki, grafana, hive-oauth]
+tags:
+- com2us-platform
+- c2spf
+- analytics
+- fastapi
+- spring-boot
+- ag-grid
+- jenkins
+- docker
+- loki
+- grafana
 related:
-  - "[[com2us-platform]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-kim]]"
-  - "[[backend-python-fastapi]]"
-  - "[[devops-cicd]]"
-  - "[[data-pipeline-bigquery]]"
+- '[[com2us-platform]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-kim]]'
+- '[[backend-python-fastapi]]'
+- '[[devops-cicd]]'
+- '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 19
+inbound_count: 24
 cited_by:
-  - "[[backend-python-fastapi]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[c2spf-analytics]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[devops-cicd]]"
-  - "[[portfolio]]"
-  - "[[seokgeun-kim]]"
+- '[[backend-python-fastapi]]'
+- '[[c2spf-ai-agent-adoption-candidates]]'
+- '[[c2spf-analytics]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[data-pipeline-bigquery]]'
+- '[[devops-cicd]]'
+- '[[portfolio]]'
+- '[[seokgeun-kim]]'
 cited_by_count: 9
+aliases:
+- C2Spf Analytics Common
+- c2spf analytics common
+- 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)
 ---
 
 # 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)

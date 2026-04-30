@@ -1,44 +1,54 @@
 ---
-title: "포트폴리오 시드 문서 (old-portfolio.md)"
+title: 포트폴리오 시드 문서 (old-portfolio.md)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/old-portfolio.md"
-author: "석근"
+raw_path: raw/notes/portfolio/old-portfolio.md
+author: 석근
 date_published: 2025-11-01
 date_ingested: 2026-04-24
-tags: [포트폴리오, career, portfolio, data, ml, blockchain, 백엔드]
+tags:
+- 포트폴리오
+- career
+- portfolio
+- ml
+- blockchain
+- 백엔드
 related:
-  - "[[portfolio]]"
-  - "[[seokgeun-kim]]"
-  - "[[com2us-platform]]"
-  - "[[c2spf-analytics]]"
-  - "[[xpla-platform]]"
-  - "[[matechat]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[portfolio]]'
+- '[[seokgeun-kim]]'
+- '[[com2us-platform]]'
+- '[[c2spf-analytics]]'
+- '[[xpla-platform]]'
+- '[[matechat]]'
+- '[[seokgeun-stack-guide]]'
+- '[[llm-infra-meta-cluster]]'
 confidence: high
-inbound_count: 36
+inbound_count: 46
 cited_by:
-  - "[[backend-python-fastapi]]"
-  - "[[blockchain-xpla]]"
-  - "[[c2spf-analytics]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[devops-cicd]]"
-  - "[[frontend-react]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[matechat]]"
-  - "[[ml-ai]]"
-  - "[[portfolio]]"
-  - "[[portfolio-method]]"
-  - "[[portfolio-resume-ko]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[xpla-platform]]"
+- '[[backend-python-fastapi]]'
+- '[[blockchain-xpla]]'
+- '[[c2spf-analytics]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[data-pipeline-bigquery]]'
+- '[[devops-cicd]]'
+- '[[frontend-react]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[matechat]]'
+- '[[ml-ai]]'
+- '[[portfolio]]'
+- '[[portfolio-method]]'
+- '[[portfolio-resume-ko]]'
+- '[[seokgeun-kim]]'
+- '[[seokgeun-stack-guide]]'
+- '[[xpla-platform]]'
 cited_by_count: 17
+aliases:
+- Portfolio Seed
+- portfolio seed
+- 포트폴리오 시드 문서 (old-portfolio.md)
 ---
 
 # 포트폴리오 시드 문서 (old-portfolio.md)

@@ -1,19 +1,38 @@
 ---
-title: "openai-cookbook (OpenAI Cookbook)"
-aliases: [OpenAI Cookbook, OpenAI 쿡북]
+title: openai-cookbook (OpenAI Cookbook)
+aliases:
+- OpenAI Cookbook
+- OpenAI 쿡북
 type: entity
 entity_type: project
-tags: [openai-cookbook, openai, cookbook, MIT, jupyter-notebook, registry-yaml, authors-yaml, agents-md, plans-md, exec-plans, recent-learnings, embeddings, agents-SDK, evals, codex, gpt-5, gpt-oss]
+tags:
+- openai-cookbook
+- openai
+- cookbook
+- MIT
+- jupyter-notebook
+- registry-yaml
+- agents-md
+- plans-md
+- exec-plans
+- recent-learnings
+- embeddings
+- agents-SDK
+- evals
+- codex
+- gpt-5
+- gpt-oss
 related:
-  - "[[openai]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[agent-patterns]]"
-  - "[[ml-ai]]"
-  - "[[anthropics-claude-cookbooks]]"
+- '[[openai]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[agent-patterns]]'
+- '[[ml-ai]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[openai-openai-cookbook]]'
 source_count: 1
 observed_source_refs: 10
-inbound_count: 34
+inbound_count: 35
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 14

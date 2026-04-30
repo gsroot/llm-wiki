@@ -1,5 +1,5 @@
 ---
-title: "DeepAgents — LangGraph 위의 batteries-included agent harness"
+title: DeepAgents — LangGraph 위의 batteries-included agent harness
 type: source
 source_type: github_repo
 source_url: https://github.com/langchain-ai/deepagents
@@ -8,22 +8,35 @@ author: LangChain Inc.
 date_published: 2025-09
 date_ingested: 2026-04-28
 related:
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[deepagents]]"
-  - "[[agent-skills]]"
-  - "[[agent-patterns]]"
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[deepagents]]'
+- '[[agent-skills]]'
+- '[[agent-patterns]]'
 confidence: high
-tags: [langchain, langgraph, deepagents, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
-inbound_count: 11
+tags:
+- langchain
+- langgraph
+- deepagents
+- agent-harness
+- planning
+- filesystem
+- sub-agents
+- claude-code-pattern
+- 18회차
+inbound_count: 15
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[deepagents]]"
-  - "[[ml-ai]]"
-  - "[[openai-agents-python]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[deepagents]]'
+- '[[ml-ai]]'
+- '[[openai-agents-python]]'
 cited_by_count: 6
+aliases:
+- DeepAgents — LangGraph 위의 batteries-included agent harness
+- Langchain Ai Deepagents
+- langchain ai deepagents
 ---
 
 # DeepAgents — LangGraph 위의 batteries-included agent harness

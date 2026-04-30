@@ -1,27 +1,50 @@
 ---
-title: "pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준 (V2 ground-up rewrite + Logfire)"
+title: pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준 (V2 ground-up rewrite + Logfire)
 type: source
 source_type: article
-source_url: "https://github.com/pydantic/pydantic"
-raw_path: "raw/articles/pydantic-pydantic/"
-author: "Samuel Colvin (Pydantic team)"
+source_url: https://github.com/pydantic/pydantic
+raw_path: raw/articles/pydantic-pydantic/
+author: Samuel Colvin (Pydantic team)
 date_published: 2017-05-03
 date_ingested: 2026-04-28
-tags: [pydantic, python, validation, type-hints, json-schema, fastapi, openai-agents-python, mypy, pyright, logfire, v1-to-v2-migration, version-policy, samuel-colvin, llms-txt, hyperlint, vale, pydantic-core, rust-extension]
+tags:
+- pydantic
+- python
+- validation
+- type-hints
+- json-schema
+- fastapi
+- openai-agents-python
+- mypy
+- pyright
+- logfire
+- v1-to-v2-migration
+- version-policy
+- samuel-colvin
+- llms-txt
+- hyperlint
+- vale
+- pydantic-core
+- rust-extension
 related:
-  - "[[fastapi]]"
-  - "[[openai-agents-python]]"
-  - "[[python-packaging]]"
-  - "[[uv]]"
-  - "[[scikit-learn]]"
-  - "[[agent-stack-evolution]]"
+- '[[fastapi]]'
+- '[[openai-agents-python]]'
+- '[[python-packaging]]'
+- '[[uv]]'
+- '[[scikit-learn]]'
+- '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 7
+inbound_count: 8
 cited_by:
-  - "[[backend-fastapi-stack]]"
-  - "[[pydantic]]"
-  - "[[python]]"
+- '[[backend-fastapi-stack]]'
+- '[[pydantic]]'
+- '[[python]]'
 cited_by_count: 3
+aliases:
+- Pydantic
+- pydantic
+- pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준
+- pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준 (V2 ground-up rewrite + Logfire)
 ---
 
 # pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준

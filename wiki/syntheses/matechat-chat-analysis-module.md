@@ -1,26 +1,32 @@
 ---
-title: "Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인 (24회차 종합)"
+title: Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인 (24회차 종합)
 type: synthesis
 category: side-project-analysis
 sources:
-  - "[[seokgeun-mate-chat]]"
-  - "[[matechat-project-knowledge-map]]"
-  - "[[seokgeun-operating-profile-2026]]"
+- '[[seokgeun-mate-chat]]'
+- '[[matechat-project-knowledge-map]]'
+- '[[seokgeun-operating-profile-2026]]'
 source_count: 3
 observed_source_refs: 4
 related:
-  - "[[matechat]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[duckdb]]"
-  - "[[polars]]"
-  - "[[pandas-ai]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[data-pipeline-bigquery]]"
+- '[[matechat]]'
+- '[[backend-fastapi-stack]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[duckdb]]'
+- '[[polars]]'
+- '[[pandas-ai]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[seokgeun-stack-guide]]'
+- '[[data-pipeline-bigquery]]'
 created: 2026-04-28
 updated: 2026-04-28
-tags: [matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-project, c2spf-bi-applicable, 24회차]
+tags:
+- matechat
+- bigquery
+- analytics
+- ml
+- side-project
+- 24회차
 cited_by_count: 6
 inbound_count: 12
 ---

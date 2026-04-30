@@ -1,35 +1,48 @@
 ---
-title: "karpathy/autoresearch — 자율 LLM 실험 루프"
+title: karpathy/autoresearch — 자율 LLM 실험 루프
 type: source
 source_type: article
-source_url: "https://github.com/karpathy/autoresearch"
-raw_path: "raw/articles/karpathy-autoresearch/"
-author: "Andrej Karpathy"
+source_url: https://github.com/karpathy/autoresearch
+raw_path: raw/articles/karpathy-autoresearch/
+author: Andrej Karpathy
 date_published: 2026-03-06
 date_ingested: 2026-04-27
-tags: [autoresearch, karpathy, LLM, 자율연구, agent, harness, nanochat, val-bpb, 실험루프]
+tags:
+- autoresearch
+- karpathy
+- LLM
+- 자율연구
+- agent
+- harness
+- nanochat
+- val-bpb
+- 실험루프
 related:
-  - "[[karpathy]]"
-  - "[[autoresearch]]"
-  - "[[autonomous-research-loop]]"
-  - "[[harness]]"
-  - "[[context-engineering]]"
-  - "[[claude-code]]"
+- '[[karpathy]]'
+- '[[autoresearch]]'
+- '[[autonomous-research-loop]]'
+- '[[harness]]'
+- '[[context-engineering]]'
+- '[[claude-code]]'
 confidence: high
-inbound_count: 18
+inbound_count: 23
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[astral-sh-uv]]"
-  - "[[autonomous-research-loop]]"
-  - "[[autoresearch]]"
-  - "[[claude-code]]"
-  - "[[context-engineering]]"
-  - "[[harness]]"
-  - "[[karpathy]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[uv]]"
+- '[[agent-stack-evolution]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[astral-sh-uv]]'
+- '[[autonomous-research-loop]]'
+- '[[autoresearch]]'
+- '[[claude-code]]'
+- '[[context-engineering]]'
+- '[[harness]]'
+- '[[karpathy]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[uv]]'
 cited_by_count: 11
+aliases:
+- Karpathy Autoresearch
+- karpathy autoresearch
+- karpathy/autoresearch — 자율 LLM 실험 루프
 ---
 
 # karpathy/autoresearch — 자율 LLM 실험 루프

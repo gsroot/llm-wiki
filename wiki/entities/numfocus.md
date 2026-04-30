@@ -1,14 +1,21 @@
 ---
-title: "NumFOCUS"
+title: NumFOCUS
 type: entity
 entity_type: organization
-tags: [numfocus, pydata, nonprofit, open-source, governance, pandas, scikit-learn]
+tags:
+- numfocus
+- open-source
+- governance
+- pandas
+- scikit-learn
 related:
-  - "[[pandas]]"
-  - "[[pandas-dev]]"
-  - "[[scikit-learn]]"
-  - "[[ml-ai]]"
-  - "[[github]]"
+- '[[pandas]]'
+- '[[pandas-dev]]'
+- '[[scikit-learn]]'
+- '[[ml-ai]]'
+- '[[github]]'
+- '[[pandas-dev-pandas]]'
+- '[[scikit-learn-scikit-learn]]'
 source_count: 2
 observed_source_refs: 9
 inbound_count: 21

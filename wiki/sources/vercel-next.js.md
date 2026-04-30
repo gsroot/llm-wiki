@@ -1,30 +1,45 @@
 ---
-title: "vercel/next.js (The React Framework, AGENTS.md 12단계 진화 사례)"
+title: vercel/next.js (The React Framework, AGENTS.md 12단계 진화 사례)
 type: source
 source_type: article
-source_url: "https://github.com/vercel/next.js"
-raw_path: "raw/articles/vercel-next.js/"
-author: "Vercel"
+source_url: https://github.com/vercel/next.js
+raw_path: raw/articles/vercel-next.js/
+author: Vercel
 date_published: 2016-10-25
 date_ingested: 2026-04-28
 related:
-  - "[[nextjs]]"
-  - "[[vercel]]"
-  - "[[agent-skills]]"
-  - "[[react]]"
-  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
-tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, LLM-pr-marker, 22회차]
+- '[[nextjs]]'
+- '[[vercel]]'
+- '[[agent-skills]]'
+- '[[react]]'
+- '[[flutter-nextjs-fullstack-pattern|React 진영 종합]]'
+tags:
+- nextjs
+- react
+- vercel
+- ssr
+- app-router
+- turbopack
+- agents-md
+- skill-indexing
+- LLM-pr-marker
+- 22회차
 confidence: high
-inbound_count: 14
+inbound_count: 19
 cited_by:
-  - "[[agent-skills]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[nextjs]]"
-  - "[[react]]"
-  - "[[tailwindcss]]"
-  - "[[turbopack]]"
-  - "[[vercel]]"
+- '[[agent-skills]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[nextjs]]'
+- '[[react]]'
+- '[[tailwindcss]]'
+- '[[turbopack]]'
+- '[[vercel]]'
 cited_by_count: 7
+aliases:
+- Vercel Next.Js
+- vercel next.js
+- vercel/next.js (The React Framework, AGENTS.md 12단계 진화 사례)
+- vercel/next.js 소스
 ---
 
 # vercel/next.js 소스

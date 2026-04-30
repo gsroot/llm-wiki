@@ -1,14 +1,22 @@
 ---
-title: "Lakehouse"
-aliases: [Lakehouse, 레이크하우스, data-lakehouse]
+title: Lakehouse
+aliases:
+- Lakehouse
+- 레이크하우스
+- data-lakehouse
 type: concept
 category: data-architecture
-tags: [lakehouse, data-warehouse, data-lake, parquet, delta-lake, iceberg, 25회차]
+tags:
+- parquet
+- 25회차
 related:
-  - "[[parquet]]"
-  - "[[duckdb]]"
-  - "[[polars]]"
-  - "[[pyarrow]]"
+- '[[parquet]]'
+- '[[duckdb]]'
+- '[[polars]]'
+- '[[pyarrow]]'
+- '[[apache-arrow]]'
+- '[[duckdb-duckdb]]'
+- '[[pola-rs-polars]]'
 source_count: 3
 observed_source_refs: 3
 inbound_count: 8

@@ -1,45 +1,69 @@
 ---
-title: "MateChat"
+title: MateChat
 type: entity
 entity_type: project
-aliases: [MateChat, 메이트챗, mate-chat, matechat, 메트챗, 매트챗]
-tags: [matechat, mate-chat, 메이트챗, AI, social, social-AI, fastapi, flutter, riverpod, openai, websocket, iap, clover, startup, side-project, project-wiki, sentry, prometheus, agent-skills, gstack, v1.0.0]
+aliases:
+- MateChat
+- 메이트챗
+- mate-chat
+- matechat
+- 메트챗
+- 매트챗
+tags:
+- matechat
+- mate-chat
+- AI
+- fastapi
+- flutter
+- riverpod
+- openai
+- websocket
+- iap
+- clover
+- side-project
+- project-wiki
+- sentry
+- prometheus
+- agent-skills
+- gstack
 related:
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[matechat-project-knowledge-map]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-matechat-validation]]"
-  - "[[backend-python-fastapi]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[ml-ai]]"
-  - "[[flutter]]"
-  - "[[riverpod]]"
-  - "[[fastapi]]"
-  - "[[pydantic]]"
-  - "[[openai]]"
-  - "[[postgresql]]"
-  - "[[redis]]"
-  - "[[sqlalchemy]]"
-  - "[[alembic]]"
-  - "[[uv]]"
-  - "[[ruff]]"
-  - "[[sentry]]"
-  - "[[prometheus]]"
-  - "[[shadcn-ui]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[mcp]]"
-  - "[[claude-code]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[c2spf-analytics]]"
-  - "[[com2us-platform]]"
-  - "[[token-economy]]"
-  - "[[portfolio]]"
-  - "[[portfolio-seed]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[seokgeun-kim]]'
+- '[[seokgeun-kim-profile-2026]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[matechat-project-knowledge-map]]'
+- '[[seokgeun-mate-chat]]'
+- '[[seokgeun-matechat-validation]]'
+- '[[backend-python-fastapi]]'
+- '[[backend-fastapi-stack]]'
+- '[[ml-ai]]'
+- '[[flutter]]'
+- '[[riverpod]]'
+- '[[fastapi]]'
+- '[[pydantic]]'
+- '[[openai]]'
+- '[[postgresql]]'
+- '[[redis]]'
+- '[[sqlalchemy]]'
+- '[[alembic]]'
+- '[[uv]]'
+- '[[ruff]]'
+- '[[sentry]]'
+- '[[prometheus]]'
+- '[[shadcn-ui]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[mcp]]'
+- '[[claude-code]]'
+- '[[seokgeun-stack-guide]]'
+- '[[c2spf-analytics]]'
+- '[[com2us-platform]]'
+- '[[token-economy]]'
+- '[[portfolio]]'
+- '[[portfolio-seed]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-ko]]'
 source_count: 6
 observed_source_refs: 29
 inbound_count: 172
@@ -47,8 +71,9 @@ created: 2026-04-28
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "현재 v1.0.0 출시 직전 QA 단계 (44회차 owner 자기보고로 확정), QA 완료 후 Google Play 출시 예정. 39 SKILL 자작/외부 분류는 lock.json 재검증."
-cited_by_count: 65
+verification_notes: 현재 v1.0.0 출시 직전 QA 단계 (44회차 owner 자기보고로 확정), QA 완료 후 Google Play 출시 예정. 39 SKILL 자작/외부 분류는 lock.json 재검증.
+verification_procedure: Google Play Console에서 v1.0.0 출시 상태 확인 (QA 단계 → 정식 출시 → 다운로드 추이). raw/notes/matechat/INDEX.md의 최근 갱신일 비교. 변동 시 본 페이지 첫 callout 출시 상태 문구·last_verified 갱신 + matechat-launch-metrics-ledger 실측 ledger 추가.
+cited_by_count: 66
 ---
 
 # MateChat
@@ -57,6 +82,13 @@ cited_by_count: 65
 > AI 소셜 메시징 (v1.0.0 출시 직전 QA 단계, QA 완료 후 Google Play 정식 출시 예정 — 44회차 owner 자기보고로 정정). 39 SKILL.md 운영 SOP (자작 11 + 외부 28). FastAPI + Flutter + Riverpod + OpenAI + WebSocket. 회사 BI([[c2spf-analytics|c2spf 게임 데이터 BI]])와 "기술 스택 검증의 쌍"으로 동작. 자작 SKILL 9개가 c2spf 차용 후보. 출시 상태는 `verification_required: true` (33회차).
 > 
 > 한국어 표기: **메이트챗**(또는 메트챗·매트챗).
+
+> [!tldr]
+> **MateChat** = [[seokgeun-kim|석근]]의 사이드 프로젝트 AI 소셜 메시징 앱 (v1.0.0 QA 단계, Google Play 정식 출시 임박). 회사 BI(c2spf)와 "기술 스택 쌍 검증" 모델 동작.
+> - **판단**: FastAPI + Flutter + Riverpod + OpenAI + WebSocket / 39 SKILL.md SOP / 페르소나·KPI·수익화 모델
+> - **근거**: 자작 11 + 외부 28 = 39 SKILL 운영 / [[seokgeun-mate-chat]] 1차 수집 source / [[matechat-launch-metrics-ledger]] 실측 ledger
+> - **히스토리**: 44회차 출시 상태 정정(QA 단계) / 47회차 page_intent 분리 / `last_verified` 신선도 추적
+> - **이 위키 맥락**: 4축 hub (inbound 172). 자작 SKILL 9개의 c2spf 역수입은 [[c2spf-analytics]] 검증 환경. RAG 답변 시 출시 상태는 `last_verified` 확인 필수.
 
 ## 언제 읽어야 하는가
 
@@ -273,6 +305,7 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 - [[polars]]
 - [[portfolio]]
 - [[portfolio-ko]]
+- [[portfolio-method]]
 - [[portfolio-resume-ko]]
 - [[portfolio-seed]]
 - [[postgresql]]

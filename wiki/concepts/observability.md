@@ -1,17 +1,30 @@
 ---
-title: "Observability — 메트릭/로그/트레이스 + 에러 + 사용자 경험"
-aliases: [Observability, 관측성, 옵저버빌리티]
+title: Observability — 메트릭/로그/트레이스 + 에러 + 사용자 경험
+aliases:
+- Observability
+- 관측성
+- 옵저버빌리티
 type: concept
 category: dev-tools
-tags: [observability, monitoring, metrics, logs, traces, error-tracking, sre, prometheus, grafana, sentry, otel, 19회차]
+tags:
+- observability
+- monitoring
+- error-tracking
+- prometheus
+- grafana
+- sentry
+- 19회차
 related:
-  - "[[prometheus]]"
-  - "[[grafana]]"
-  - "[[sentry]]"
-  - "[[devops-cicd]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[github-actions]]"
-  - "[[docker]]"
+- '[[prometheus]]'
+- '[[grafana]]'
+- '[[sentry]]'
+- '[[devops-cicd]]'
+- '[[observability-and-cicd-stack]]'
+- '[[github-actions]]'
+- '[[docker]]'
+- '[[prometheus-prometheus]]'
+- '[[grafana-grafana]]'
+- '[[getsentry-sentry]]'
 source_count: 3
 observed_source_refs: 3
 inbound_count: 10

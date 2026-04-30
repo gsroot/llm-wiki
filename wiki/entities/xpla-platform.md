@@ -1,12 +1,23 @@
 ---
-title: "XPLA 플랫폼 (c2spf 블록체인 통합 서비스)"
+title: XPLA 플랫폼 (c2spf 블록체인 통합 서비스)
 type: entity
 entity_type: service
-tags: [xpla, blockchain, nft, smart-contract, com2us-platform, c2spf, nestjs, rust]
+tags:
+- xpla
+- blockchain
+- nft
+- smart-contract
+- com2us-platform
+- c2spf
+- nestjs
+- rust
 related:
-  - "[[com2us-platform]]"
-  - "[[seokgeun-kim]]"
-  - "[[blockchain-xpla]]"
+- '[[com2us-platform]]'
+- '[[seokgeun-kim]]'
+- '[[blockchain-xpla]]'
+- '[[portfolio-seed]]'
+- '[[c2spf-nft-market]]'
+- '[[c2spf-xpla-platform]]'
 source_count: 3
 observed_source_refs: 11
 inbound_count: 21

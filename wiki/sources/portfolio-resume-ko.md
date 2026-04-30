@@ -1,33 +1,39 @@
 ---
-title: "포트폴리오 — 이력서(한국어, resume-ko.md)"
+title: 포트폴리오 — 이력서(한국어, resume-ko.md)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/50-portfolio/resume-ko.md"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/50-portfolio/resume-ko.md
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [포트폴리오, resume, career, 이직]
+tags:
+- 포트폴리오
+- career
 related:
-  - "[[seokgeun-kim]]"
-  - "[[com2us-platform]]"
-  - "[[portfolio-seed]]"
+- '[[seokgeun-kim]]'
+- '[[com2us-platform]]'
+- '[[portfolio-seed]]'
 confidence: high
-inbound_count: 21
+inbound_count: 27
 cited_by:
-  - "[[backend-python-fastapi]]"
-  - "[[c2spf-analytics]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[frontend-react]]"
-  - "[[matechat]]"
-  - "[[ml-ai]]"
-  - "[[portfolio]]"
-  - "[[portfolio-ko]]"
-  - "[[portfolio-seed]]"
-  - "[[seokgeun-kim]]"
+- '[[backend-python-fastapi]]'
+- '[[c2spf-analytics]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[frontend-react]]'
+- '[[matechat]]'
+- '[[ml-ai]]'
+- '[[portfolio]]'
+- '[[portfolio-ko]]'
+- '[[portfolio-seed]]'
+- '[[seokgeun-kim]]'
 cited_by_count: 11
+aliases:
+- Portfolio Resume Ko
+- portfolio resume ko
+- 포트폴리오 — 이력서(한국어, resume-ko.md)
 ---
 
 # 포트폴리오 — 이력서(한국어, resume-ko.md)
@@ -61,6 +67,8 @@ cited_by_count: 11
 - [[c2spf-analytics|c2spf 게임 데이터 BI]] — 공통 API·React 리뉴얼 주도 대상
 - [[xpla-platform]] — NFT 마켓·XPLA 블록체인 플랫폼
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]]
+- [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] — 이력서에 나열된 기술 스택 키워드(Python·FastAPI·React·TS·Spring Boot·Jenkins·Grafana 등)가 32 OSS 카탈로그의 의사결정 트리와 직접 매핑됨 (3축↔이 source 교차 인용)
+- [[matechat]] — 개인 프로젝트 섹션의 "MateChat" 항목이 [[portfolio]] hub의 회사·사이드 쌍 검증 모델의 사이드 측 (4축↔이 source 교차 인용)
 
 ## 메모
 

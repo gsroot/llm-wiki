@@ -1,22 +1,32 @@
 ---
-title: "MateChat v1.0 검증·출시 자료 — 비전 / 구현 현황 / 출시 체크리스트 / 경쟁 / 매출 예측"
+title: MateChat v1.0 검증·출시 자료 — 비전 / 구현 현황 / 출시 체크리스트 / 경쟁 / 매출 예측
 type: source
 source_type: project
-source_url: "(private repo, /Users/sgkim/Projects/mate-chat/docs/)"
+source_url: (private repo, /Users/sgkim/Projects/mate-chat/docs/)
 raw_path: raw/articles/seokgeun-matechat-validation/
-author: "석근 (Mate Chat Team)"
+author: 석근 (Mate Chat Team)
 date_published: 2026-04-23
 date_ingested: 2026-04-28
 related:
-  - "[[matechat]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[matechat-project-knowledge-map]]"
-  - "[[matechat-chat-analysis-module]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[matechat]]'
+- '[[seokgeun-mate-chat]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[matechat-project-knowledge-map]]'
+- '[[matechat-chat-analysis-module]]'
+- '[[seokgeun-stack-guide]]'
 confidence: high
-tags: [matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision, side-project, 26회차]
+tags:
+- matechat
+- validation
+- kpi
+- side-project
+- 26회차
 inbound_count: 15
+aliases:
+- MateChat v1.0 검증·출시 자료 (26회차 보강 수집)
+- MateChat v1.0 검증·출시 자료 — 비전 / 구현 현황 / 출시 체크리스트 / 경쟁 / 매출 예측
+- Seokgeun Matechat Validation
+- seokgeun matechat validation
 cited_by:
   - "[[matechat]]"
   - "[[matechat-30day-validation-loop]]"

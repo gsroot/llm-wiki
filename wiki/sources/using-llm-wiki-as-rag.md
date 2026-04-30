@@ -1,35 +1,46 @@
 ---
-title: "이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법"
+title: 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/using-llm-wiki-as-rag.md"
-author: "석근 (Claude Code Opus 4.6 세션 대화 정리)"
+raw_path: raw/notes/using-llm-wiki-as-rag.md
+author: 석근 (Claude Code Opus 4.6 세션 대화 정리)
 date_published: 2026-04-15
 date_ingested: 2026-04-15
-tags: [llm-wiki, RAG, claude-code, mcp, agent-skills, 운영가이드, 자기참조, 53회차]
+tags:
+- llm-wiki
+- RAG
+- claude-code
+- mcp
+- agent-skills
+- 운영가이드
+- 53회차
 related:
-  - "[[llm-wiki-pattern]]"
-  - "[[claude-code]]"
-  - "[[mcp]]"
-  - "[[qmd]]"
-  - "[[slash-commands-vs-agent-skills]]"
+- '[[llm-wiki-pattern]]'
+- '[[claude-code]]'
+- '[[mcp]]'
+- '[[qmd]]'
+- '[[slash-commands-vs-agent-skills]]'
 confidence: high
-inbound_count: 22
+inbound_count: 27
 cited_by:
-  - "[[claude-code]]"
-  - "[[claude-code-master-guide]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[mcp]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
-  - "[[rag]]"
-  - "[[seokgeun-kim]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[tag-vocabulary-audit-2026-04-29]]"
+- '[[claude-code]]'
+- '[[claude-code-master-guide]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[llm-wiki-pattern]]'
+- '[[mcp]]'
+- '[[microsoft-generative-ai-for-beginners]]'
+- '[[rag]]'
+- '[[seokgeun-kim]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[tag-vocabulary-audit-2026-04-29]]'
 cited_by_count: 11
+aliases:
+- Using Llm Wiki As Rag
+- using llm wiki as rag
+- 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법
 ---
 
 # 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법

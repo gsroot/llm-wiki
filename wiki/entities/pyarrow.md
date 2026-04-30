@@ -1,18 +1,29 @@
 ---
-title: "PyArrow"
-aliases: [PyArrow, 파이애로우, Apache Arrow Python]
+title: PyArrow
+aliases:
+- PyArrow
+- 파이애로우
+- Apache Arrow Python
 type: entity
 entity_type: tool
-tags: [pyarrow, apache-arrow, columnar, in-memory, zero-copy, parquet, ipc, python, pandas-backend, adbc, gandiva]
+tags:
+- pyarrow
+- apache-arrow
+- columnar
+- in-memory
+- zero-copy
+- parquet
+- ipc
+- python
 related:
-  - "[[apache-arrow]]"
-  - "[[parquet]]"
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[copy-on-write]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[apache-arrow]]'
+- '[[parquet]]'
+- '[[pandas]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[copy-on-write]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 8
 inbound_count: 46

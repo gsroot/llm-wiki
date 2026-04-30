@@ -1,25 +1,49 @@
 ---
-title: "postgres/postgres — PostgreSQL 본체 GitHub 미러 (★20.7K, ML+미러 거버넌스, 30년 보수파)"
+title: postgres/postgres — PostgreSQL 본체 GitHub 미러 (★20.7K, ML+미러 거버넌스, 30년 보수파)
 type: source
 source_type: article
-source_url: "https://github.com/postgres/postgres"
-raw_path: "raw/articles/postgres-postgres/"
-author: "PostgreSQL Global Development Group (PGDG)"
+source_url: https://github.com/postgres/postgres
+raw_path: raw/articles/postgres-postgres/
+author: PostgreSQL Global Development Group (PGDG)
 date_published: 2010-09-21
 date_ingested: 2026-04-28
-tags: [postgresql, postgres, sql, rdbms, oss, mailing-list-governance, github-mirror, sqlalchemy, c-language, object-relational, transactional, mvcc, fdw, jsonb, replication, pgdg, default-branch-master, no-pull-requests, pgvector, timescaledb]
+tags:
+- postgresql
+- postgres
+- sql
+- rdbms
+- oss
+- mailing-list-governance
+- github-mirror
+- sqlalchemy
+- c-language
+- object-relational
+- transactional
+- mvcc
+- fdw
+- jsonb
+- replication
+- pgdg
+- no-pull-requests
+- pgvector
+- timescaledb
 related:
-  - "[[sqlalchemy]]"
-  - "[[alembic]]"
-  - "[[fastapi]]"
+- '[[sqlalchemy]]'
+- '[[alembic]]'
+- '[[fastapi]]'
 confidence: high
-inbound_count: 8
+inbound_count: 10
 cited_by:
-  - "[[append-only-log]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[postgresql]]"
-  - "[[query-optimization]]"
+- '[[append-only-log]]'
+- '[[backend-fastapi-stack]]'
+- '[[postgresql]]'
+- '[[query-optimization]]'
 cited_by_count: 4
+aliases:
+- Postgres
+- postgres
+- postgres/postgres — PostgreSQL 본체 GitHub 미러
+- postgres/postgres — PostgreSQL 본체 GitHub 미러 (★20.7K, ML+미러 거버넌스, 30년 보수파)
 ---
 
 # postgres/postgres — PostgreSQL 본체 GitHub 미러

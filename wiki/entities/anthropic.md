@@ -1,20 +1,34 @@
 ---
-title: "Anthropic"
-aliases: [Anthropic, 앤트로픽]
+title: Anthropic
+aliases:
+- Anthropic
+- 앤트로픽
 type: entity
 entity_type: organization
-tags: [anthropic, AI, AI연구소, claude, claude-code, agent-skills, mcp, building-effective-agents]
+tags:
+- anthropic
+- AI
+- AI연구소
+- claude
+- claude-code
+- agent-skills
+- mcp
+- building-effective-agents
 related:
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[agent-skills]]"
-  - "[[mcp]]"
-  - "[[harness]]"
-  - "[[karpathy]]"
-  - "[[microsoft]]"
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[agent-skills]]'
+- '[[mcp]]'
+- '[[harness]]'
+- '[[karpathy]]'
+- '[[microsoft]]'
+- '[[claude-code-overview]]'
+- '[[anthropics-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[slash-commands-vs-agent-skills]]'
 source_count: 4
 observed_source_refs: 10
-inbound_count: 55
+inbound_count: 56
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 23

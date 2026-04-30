@@ -1,27 +1,63 @@
 ---
-title: "에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교"
-aliases: [Agent Stack Evolution, 에이전트 스택 진화]
+title: 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교
+aliases:
+- Agent Stack Evolution
+- 에이전트 스택 진화
 type: synthesis
 category: comparison
-tags: [agent-stack, 비교분석, microsoft, anthropic, karpathy, github, google, openai, harness, agent-skills, agent-patterns, autonomous-research-loop, 운영표준, BI, 개인비서, exec-plans, plans-md, recent-learnings, agents-md-living]
+tags:
+- microsoft
+- anthropic
+- karpathy
+- github
+- google
+- openai
+- harness
+- agent-skills
+- agent-patterns
+- BI
+- exec-plans
+- plans-md
+- recent-learnings
+- agents-md-living
 sources:
-  - "[[microsoft-generative-ai-for-beginners]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[microsoft-web-dev-for-beginners]]"
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[anthropics-skills]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[karpathy-autoresearch]]"
-  - "[[karpathy-nanogpt]]"
-  - "[[karpathy-nanochat]]"
-  - "[[github-spec-kit]]"
-  - "[[flutter-flutter]]"
-  - "[[openai-openai-cookbook]]"
+- '[[microsoft-generative-ai-for-beginners]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[microsoft-web-dev-for-beginners]]'
+- '[[microsoft-data-science-for-beginners]]'
+- '[[anthropics-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[karpathy-autoresearch]]'
+- '[[karpathy-nanogpt]]'
+- '[[karpathy-nanochat]]'
+- '[[github-spec-kit]]'
+- '[[flutter-flutter]]'
+- '[[openai-openai-cookbook]]'
 created: 2026-04-27
 updated: 2026-04-29
 cited_by_count: 29
-inbound_count: 49
+inbound_count: 50
+related:
+- '[[openai-openai-agents-python]]'
+- '[[harness]]'
+- '[[agent-skills]]'
+- '[[agent-patterns]]'
+- '[[autonomous-research-loop]]'
+- '[[context-engineering]]'
+- '[[anthropic]]'
+- '[[microsoft]]'
+- '[[karpathy]]'
+- '[[github]]'
+- '[[google]]'
+- '[[openai]]'
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[microsoft-for-beginners]]'
+- '[[autoresearch]]'
+- '[[spec-kit]]'
+- '[[flutter]]'
+- '[[openai-cookbook]]'
 ---
 
 # 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교

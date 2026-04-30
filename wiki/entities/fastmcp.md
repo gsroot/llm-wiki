@@ -1,17 +1,28 @@
 ---
-title: "FastMCP"
+title: FastMCP
 type: entity
 entity_type: tool
-tags: [fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, oss-evolution, 17회차]
-aliases: [FastMCP, fastmcp]
+tags:
+- fastmcp
+- mcp
+- prefect
+- jlowin
+- model-context-protocol
+- agents-md
+- claude-md
+- prefect-horizon
+- 17회차
+aliases:
+- FastMCP
+- fastmcp
 related:
-  - "[[mcp]]"
-  - "[[ml-ai]]"
-  - "[[agent-skills]]"
-  - "[[openai-agents-python]]"
-  - "[[langchain]]"
-  - "[[jlowin-fastmcp]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[mcp]]'
+- '[[ml-ai]]'
+- '[[agent-skills]]'
+- '[[openai-agents-python]]'
+- '[[langchain]]'
+- '[[jlowin-fastmcp]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 5
 inbound_count: 33
@@ -19,7 +30,7 @@ created: 2026-04-28
 updated: 2026-04-28
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "MCP 70% 점유 변동 + 2.0 standalone 안정성 + Prefect Horizon 통합 — 분기별 재검증"
+verification_notes: MCP 70% 점유 변동 + 2.0 standalone 안정성 + Prefect Horizon 통합 — 분기별 재검증
 cited_by_count: 16
 ---
 

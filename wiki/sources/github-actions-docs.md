@@ -1,24 +1,34 @@
 ---
-title: "GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계"
+title: GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계
 type: source
 source_type: article
-source_url: "https://github.com/actions/runner"
-raw_path: "raw/articles/github-actions-docs/"
-author: "GitHub (actions/runner + actions/toolkit 메인테이너)"
+source_url: https://github.com/actions/runner
+raw_path: raw/articles/github-actions-docs/
+author: GitHub (actions/runner + actions/toolkit 메인테이너)
 date_published: 2026-04-28
 date_ingested: 2026-04-28
-tags: [github-actions, ci-cd, runner, toolkit, devops, 19회차]
+tags:
+- github-actions
+- ci-cd
+- runner
+- toolkit
+- devops
+- 19회차
 related:
-  - "[[github-actions]]"
-  - "[[devops-cicd]]"
-  - "[[observability-and-cicd-stack]]"
+- '[[github-actions]]'
+- '[[devops-cicd]]'
+- '[[observability-and-cicd-stack]]'
 confidence: medium
-inbound_count: 6
+inbound_count: 8
 cited_by:
-  - "[[devops-cicd]]"
-  - "[[github-actions]]"
-  - "[[observability-and-cicd-stack]]"
+- '[[devops-cicd]]'
+- '[[github-actions]]'
+- '[[observability-and-cicd-stack]]'
 cited_by_count: 3
+aliases:
+- GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계
+- Github Actions Docs
+- github actions docs
 ---
 
 # GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계

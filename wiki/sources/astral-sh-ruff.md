@@ -1,32 +1,53 @@
 ---
-title: "astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터 (Astral 회사 차원 표준화)"
+title: astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터 (Astral 회사 차원 표준화)
 type: source
 source_type: article
-source_url: "https://github.com/astral-sh/ruff"
-raw_path: "raw/articles/astral-sh-ruff/"
-author: "Astral (Charlie Marsh 외)"
+source_url: https://github.com/astral-sh/ruff
+raw_path: raw/articles/astral-sh-ruff/
+author: Astral (Charlie Marsh 외)
 date_published: 2022-08-09
 date_ingested: 2026-04-28
-tags: [ruff, astral, python, linter, formatter, rust, pep8, static-analysis, ty, type-checker, agents-md, agent-skills, claude-md-import, monorepo, 800-rules, 10-100x, fastapi, pandas, scipy, airflow, superset, hugging-face]
+tags:
+- ruff
+- astral
+- python
+- linter
+- formatter
+- rust
+- pep8
+- ty
+- agents-md
+- agent-skills
+- claude-md-import
+- monorepo
+- 800-rules
+- fastapi
+- pandas
+- airflow
 related:
-  - "[[astral]]"
-  - "[[uv]]"
-  - "[[fastapi]]"
-  - "[[pandas]]"
-  - "[[scikit-learn]]"
-  - "[[python-packaging]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[agent-stack-evolution]]"
+- '[[astral]]'
+- '[[uv]]'
+- '[[fastapi]]'
+- '[[pandas]]'
+- '[[scikit-learn]]'
+- '[[python-packaging]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 9
+inbound_count: 10
 cited_by:
-  - "[[agent-skills]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[harness]]"
-  - "[[python]]"
-  - "[[ruff]]"
+- '[[agent-skills]]'
+- '[[backend-fastapi-stack]]'
+- '[[harness]]'
+- '[[python]]'
+- '[[ruff]]'
 cited_by_count: 5
+aliases:
+- Astral Sh Ruff
+- astral sh ruff
+- astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터
+- astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터 (Astral 회사 차원 표준화)
 ---
 
 # astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터

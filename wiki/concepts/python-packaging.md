@@ -1,13 +1,22 @@
 ---
-title: "Python 패키징 (Python Packaging)"
-aliases: [Python Packaging, 파이썬 패키징]
+title: Python 패키징 (Python Packaging)
+aliases:
+- Python Packaging
+- 파이썬 패키징
 type: concept
 category: dev-tools
-tags: [python-packaging, pip, poetry, uv, pyproject-toml, lockfile, pep-517, pep-518, pep-621, pep-723, pep-735, virtualenv, pyenv, pipx, pypa, dependency-resolution, supply-chain]
+tags:
+- poetry
+- uv
+- pep-723
+- virtualenv
+- pyenv
+- pipx
 related:
-  - "[[uv]]"
-  - "[[astral]]"
-  - "[[backend-python-fastapi]]"
+- '[[uv]]'
+- '[[astral]]'
+- '[[backend-python-fastapi]]'
+- '[[astral-sh-uv]]'
 source_count: 1
 observed_source_refs: 9
 inbound_count: 32

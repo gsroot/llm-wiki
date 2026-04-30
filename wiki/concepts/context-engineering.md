@@ -1,23 +1,34 @@
 ---
-title: "컨텍스트 엔지니어링 (Context Engineering)"
-aliases: [Context Engineering, 컨텍스트 엔지니어링]
+title: 컨텍스트 엔지니어링 (Context Engineering)
+aliases:
+- Context Engineering
+- 컨텍스트 엔지니어링
 type: concept
 category: ai
-tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM, 자율연구, agent-memory, scratchpad, microsoft-for-beginners, claude-cookbooks, memory-cookbook, automatic-context-compaction, session-memory-compaction]
+tags:
+- context-engineering
+- prompt-engineering
+- LLM
+- 자율연구
+- agent-memory
+- microsoft-for-beginners
+- claude-cookbooks
 related:
-  - "[[harness]]"
-  - "[[token-economy]]"
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[anthropic]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[autonomous-research-loop]]"
-  - "[[mcp]]"
-  - "[[microsoft-ai-agents-for-beginners]]"
-  - "[[anthropics-claude-cookbooks]]"
+- '[[harness]]'
+- '[[token-economy]]'
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[anthropic]]'
+- '[[llm-wiki-pattern]]'
+- '[[autonomous-research-loop]]'
+- '[[mcp]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[claude-code-master-guide]]'
+- '[[karpathy-autoresearch]]'
 source_count: 4
 observed_source_refs: 30
-inbound_count: 72
+inbound_count: 73
 created: 2026-04-15
 updated: 2026-04-27
 cited_by_count: 29

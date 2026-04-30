@@ -1,26 +1,38 @@
 ---
-title: "TanStack/query (서버 상태 관리의 사실상 표준)"
+title: TanStack/query (서버 상태 관리의 사실상 표준)
 type: source
 source_type: article
-source_url: "https://github.com/TanStack/query"
-raw_path: "raw/articles/tanstack-query/"
-author: "Tanner Linsley + TanStack Team"
+source_url: https://github.com/TanStack/query
+raw_path: raw/articles/tanstack-query/
+author: Tanner Linsley + TanStack Team
 date_published: 2019-09-01
 date_ingested: 2026-04-28
 related:
-  - "[[tanstack-query]]"
-  - "[[tanstack]]"
-  - "[[react]]"
-  - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
-tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 22회차]
+- '[[tanstack-query]]'
+- '[[tanstack]]'
+- '[[react]]'
+- '[[flutter-nextjs-fullstack-pattern|React 진영 종합]]'
+tags:
+- tanstack-query
+- react-query
+- server-state
+- async-state
+- multi-framework
+- 22회차
 confidence: high
-inbound_count: 9
+inbound_count: 11
 cited_by:
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[react]]"
-  - "[[tanstack]]"
-  - "[[tanstack-query]]"
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[react]]'
+- '[[tanstack]]'
+- '[[tanstack-query]]'
 cited_by_count: 4
+aliases:
+- TanStack/query (서버 상태 관리의 사실상 표준)
+- TanStack/query 소스
+- Tanstack Query
+- tanstack query
+- tanstack-query
 ---
 
 # TanStack/query 소스

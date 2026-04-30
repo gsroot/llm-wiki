@@ -1,24 +1,34 @@
 ---
-title: "Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트"
+title: Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트
 type: source
 source_type: article
-source_url: "https://github.com/moby/moby"
-raw_path: "raw/articles/moby-moby/"
-author: "Moby Project (Docker Inc. + 커뮤니티)"
+source_url: https://github.com/moby/moby
+raw_path: raw/articles/moby-moby/
+author: Moby Project (Docker Inc. + 커뮤니티)
 date_published: 2026-04-28
 date_ingested: 2026-04-28
-tags: [docker, moby, container, devops, runtime, 19회차]
+tags:
+- docker
+- moby
+- container
+- devops
+- runtime
+- 19회차
 related:
-  - "[[docker]]"
-  - "[[devops-cicd]]"
-  - "[[observability-and-cicd-stack]]"
+- '[[docker]]'
+- '[[devops-cicd]]'
+- '[[observability-and-cicd-stack]]'
 confidence: high
-inbound_count: 8
+inbound_count: 9
 cited_by:
-  - "[[devops-cicd]]"
-  - "[[docker]]"
-  - "[[observability-and-cicd-stack]]"
+- '[[devops-cicd]]'
+- '[[docker]]'
+- '[[observability-and-cicd-stack]]'
 cited_by_count: 3
+aliases:
+- Moby
+- Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트
+- moby
 ---
 
 # Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트

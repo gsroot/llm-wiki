@@ -1,19 +1,36 @@
 ---
-title: "uv (astral-sh/uv)"
-aliases: [uv, 유브이, Astral uv]
+title: uv (astral-sh/uv)
+aliases:
+- uv
+- 유브이
+- Astral uv
 type: entity
 entity_type: tool
-tags: [uv, astral, python, package-manager, rust, pubgrub, universal-lockfile, pep-723, virtualenv, pyenv, poetry, pipx, pip-tools, twine, agents-md]
+tags:
+- uv
+- astral
+- python
+- package-manager
+- rust
+- pubgrub
+- universal-lockfile
+- pep-723
+- virtualenv
+- pyenv
+- poetry
+- pipx
+- pip-tools
+- agents-md
 related:
-  - "[[astral]]"
-  - "[[python-packaging]]"
-  - "[[github]]"
-  - "[[anthropic]]"
-  - "[[ruff]]"
-  - "[[fastapi]]"
-  - "[[pydantic]]"
-  - "[[astral-sh-uv]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[astral]]'
+- '[[python-packaging]]'
+- '[[github]]'
+- '[[anthropic]]'
+- '[[ruff]]'
+- '[[fastapi]]'
+- '[[pydantic]]'
+- '[[astral-sh-uv]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 22
 inbound_count: 83

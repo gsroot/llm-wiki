@@ -1,20 +1,31 @@
 ---
-title: "자율 연구 루프 (Autonomous Research Loop)"
-aliases: [Autonomous Research Loop, 자율 연구 루프, ARL]
+title: 자율 연구 루프 (Autonomous Research Loop)
+aliases:
+- Autonomous Research Loop
+- 자율 연구 루프
+- ARL
 type: concept
 category: ai
-tags: [자율연구, autonomous-research, agent, 실험루프, 메트릭주도, 시간예산, harness, gpt2-speedrun, 실증]
+tags:
+- 자율연구
+- agent
+- 실험루프
+- 시간예산
+- harness
+- gpt2-speedrun
 related:
-  - "[[harness]]"
-  - "[[context-engineering]]"
-  - "[[token-economy]]"
-  - "[[claude-code]]"
-  - "[[autoresearch]]"
-  - "[[nanochat]]"
-  - "[[karpathy]]"
+- '[[harness]]'
+- '[[context-engineering]]'
+- '[[token-economy]]'
+- '[[claude-code]]'
+- '[[autoresearch]]'
+- '[[nanochat]]'
+- '[[karpathy]]'
+- '[[karpathy-autoresearch]]'
+- '[[karpathy-nanochat]]'
 source_count: 2
 observed_source_refs: 19
-inbound_count: 58
+inbound_count: 59
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 24

@@ -1,50 +1,109 @@
 ---
-title: "Agent Skills (SKILL.md 패키지)"
+title: Agent Skills (SKILL.md 패키지)
 type: concept
 category: ai
-aliases: [Claude Agent Skills, agent-skills, 에이전트 스킬, skill, skills]
-tags: [agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, skill-creator, harness, 패키지레이어, claude-cookbooks, custom-skills, spec-kit, codex-skills, multi-agent-adoption, library-self-hosted-skill, fastapi, vendor-neutral, dart-skills-lint, flutter, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror, pydantic-ai, prometheus, grafana, sentry, anti-fragmentation, hierarchical-agents-md, pr-pattern-agents-md, nextjs, vercel, skill-indexing, LLM-pr-marker, open-code, code-distribution, 18회차, 19회차, 22회차]
+aliases:
+- Claude Agent Skills
+- agent-skills
+- 에이전트 스킬
+- skill
+- skills
+tags:
+- agent-skills
+- skills
+- claude-code
+- anthropic
+- progressive-disclosure
+- agentskills.io
+- skill-creator
+- harness
+- 패키지레이어
+- claude-cookbooks
+- spec-kit
+- fastapi
+- vendor-neutral
+- flutter
+- openai
+- openai-cookbook
+- openai-agents-python
+- agents-md-living
+- recent-learnings
+- exec-plans
+- 9-sop-skills
+- skill-chaining
+- pydantic-ai
+- prometheus
+- grafana
+- sentry
+- anti-fragmentation
+- hierarchical-agents-md
+- nextjs
+- vercel
+- skill-indexing
+- LLM-pr-marker
+- open-code
+- code-distribution
+- 18회차
+- 19회차
+- 22회차
 related:
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[anthropic]]"
-  - "[[mcp]]"
-  - "[[harness]]"
-  - "[[context-engineering]]"
-  - "[[token-economy]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[autonomous-research-loop]]"
-  - "[[spec-kit]]"
-  - "[[spec-driven-development]]"
-  - "[[github]]"
-  - "[[fastapi]]"
-  - "[[tiangolo]]"
-  - "[[flutter]]"
-  - "[[google]]"
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-agents-python]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[deepagents]]"
-  - "[[fastmcp]]"
-  - "[[pydantic-ai]]"
-  - "[[prometheus]]"
-  - "[[grafana]]"
-  - "[[sentry]]"
-  - "[[observability]]"
-  - "[[nextjs]]"
-  - "[[shadcn-ui]]"
-  - "[[vercel]]"
-  - "[[seokgeun-kim]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[matechat]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[anthropic]]'
+- '[[mcp]]'
+- '[[harness]]'
+- '[[context-engineering]]'
+- '[[token-economy]]'
+- '[[llm-wiki-pattern]]'
+- '[[autonomous-research-loop]]'
+- '[[spec-kit]]'
+- '[[spec-driven-development]]'
+- '[[github]]'
+- '[[fastapi]]'
+- '[[tiangolo]]'
+- '[[flutter]]'
+- '[[google]]'
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[openai-agents-python]]'
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[deepagents]]'
+- '[[fastmcp]]'
+- '[[pydantic-ai]]'
+- '[[prometheus]]'
+- '[[grafana]]'
+- '[[sentry]]'
+- '[[observability]]'
+- '[[nextjs]]'
+- '[[shadcn-ui]]'
+- '[[vercel]]'
+- '[[seokgeun-kim]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
+- '[[matechat]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[anthropics-skills]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[github-spec-kit]]'
+- '[[fastapi-fastapi]]'
+- '[[openai-openai-cookbook]]'
+- '[[flutter-flutter]]'
+- '[[langchain-ai-langchain]]'
+- '[[langchain-ai-langgraph]]'
+- '[[jlowin-fastmcp]]'
+- '[[openai-openai-agents-python]]'
+- '[[langchain-ai-deepagents]]'
+- '[[pydantic-pydantic-ai]]'
+- '[[vercel-next.js]]'
+- '[[prometheus-prometheus]]'
+- '[[grafana-grafana]]'
+- '[[getsentry-sentry]]'
 source_count: 16
 observed_source_refs: 73
-inbound_count: 204
+inbound_count: 205
 created: 2026-04-27
 updated: 2026-04-29
 cited_by_count: 69
@@ -53,6 +112,13 @@ cited_by_count: 69
 # Agent Skills (SKILL.md 패키지)
 
 > 한국어 표기: **에이전트 스킬** 또는 **Claude 스킬**(Claude Agent Skills).
+
+> [!tldr]
+> **Agent Skills** = `SKILL.md` 1개 + 옵션 자원으로 묶인 LLM 에이전트 작업 패키지 (자동 호출 + progressive disclosure + 재사용성). agentskills.io 오픈 표준.
+> - **판단**: Skill vs Slash Command 분기 / 4가지 SKILL 패턴 / 안티패턴 4가지
+> - **근거**: Anthropic skill-creator 작성 원칙 / frontmatter description / 석근 39 SKILL 운영 (자작 11 + 외부 28)
+> - **히스토리**: Custom Commands(2024) → Skills 공식 통합(2026) / MateChat → c2spf 역수입 9건 후보
+> - **이 위키 맥락**: 5축(LLM 인프라 메타) sub-hub 1위 (inbound 204). 본문 4단 표는 TL;DR 섹션 참조.
 
 ## TL;DR (요약·판단·근거·히스토리 4단)
 

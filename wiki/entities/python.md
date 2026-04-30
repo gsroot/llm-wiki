@@ -1,20 +1,33 @@
 ---
-title: "Python"
-aliases: [Python, 파이썬, 파이썬 언어]
+title: Python
+aliases:
+- Python
+- 파이썬
+- 파이썬 언어
 type: entity
 entity_type: language
-tags: [python, language, dynamic-typing, gil, asyncio, 23회차]
+tags:
+- python
+- 23회차
 related:
-  - "[[fastapi]]"
-  - "[[uv]]"
-  - "[[pydantic]]"
-  - "[[sqlalchemy]]"
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[scikit-learn]]"
-  - "[[langchain]]"
-  - "[[openai-agents-python]]"
+- '[[fastapi]]'
+- '[[uv]]'
+- '[[pydantic]]'
+- '[[sqlalchemy]]'
+- '[[pandas]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[scikit-learn]]'
+- '[[langchain]]'
+- '[[openai-agents-python]]'
+- '[[fastapi-fastapi]]'
+- '[[pydantic-pydantic]]'
+- '[[sqlalchemy-sqlalchemy]]'
+- '[[astral-sh-uv]]'
+- '[[astral-sh-ruff]]'
+- '[[pandas-dev-pandas]]'
+- '[[scikit-learn-scikit-learn]]'
+- '[[openai-openai-agents-python]]'
 source_count: 8
 observed_source_refs: 8
 inbound_count: 14

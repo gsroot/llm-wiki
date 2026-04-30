@@ -1,44 +1,55 @@
 ---
-title: "석근 스택 가이드 — 23회차 마무리 종합"
+title: 석근 스택 가이드 — 23회차 마무리 종합
 type: synthesis
 category: hub
-aliases: [석근 스택 가이드, seokgeun-stack-guide, 32 OSS 카탈로그, 30분 부트스트랩, stack-guide]
+aliases:
+- 석근 스택 가이드
+- seokgeun-stack-guide
+- 32 OSS 카탈로그
+- 30분 부트스트랩
+- stack-guide
 sources:
-  - "[[backend-fastapi-stack]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[agent-frameworks-matrix]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
+- '[[backend-fastapi-stack]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[agent-frameworks-matrix]]'
+- '[[observability-and-cicd-stack]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
 source_count: 5
 observed_source_refs: 10
-inbound_count: 155
+inbound_count: 158
 related:
-  - "[[python]]"
-  - "[[fastapi]]"
-  - "[[pandas]]"
-  - "[[duckdb]]"
-  - "[[langgraph]]"
-  - "[[openai-agents-python]]"
-  - "[[flutter]]"
-  - "[[nextjs]]"
-  - "[[matechat]]"
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[com2us-platform]]"
-  - "[[portfolio]]"
-  - "[[portfolio-seed]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[mcp]]"
-  - "[[claude-code]]"
+- '[[python]]'
+- '[[fastapi]]'
+- '[[pandas]]'
+- '[[duckdb]]'
+- '[[langgraph]]'
+- '[[openai-agents-python]]'
+- '[[flutter]]'
+- '[[nextjs]]'
+- '[[matechat]]'
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[com2us-platform]]'
+- '[[portfolio]]'
+- '[[portfolio-seed]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[mcp]]'
+- '[[claude-code]]'
 created: 2026-04-28
 updated: 2026-04-29
-tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, hub, personal-stack-guide, 23회차, 53회차]
+tags:
+- decision-tree
+- side-project
+- hub
+- 23회차
+- 53회차
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
+verification_notes: '32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그'
 cited_by_count: 58
+verification_procedure: 32 OSS 카탈로그 라이브러리의 GitHub release 페이지 분기별 점검 (메이저 버전 변동·deprecated 신호·라이선스 변경). 신규 OSS 출현 시 6분류 카탈로그 진입 검토. 변동 시 OSS entity 페이지·본 페이지 카탈로그 표·last_verified 갱신.
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합
@@ -47,6 +58,13 @@ cited_by_count: 58
 > 32 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩. [[seokgeun-kim|석근 (이 위키 owner)]]의 9년 경험과 [[matechat|MateChat 사이드 프로젝트]]·[[c2spf-analytics|c2spf 게임 데이터 BI]] 양 프로젝트에서 검증된 스택만 수록. 새 프로젝트 시작 시 1-hop 진입점. OSS 버전·신규 도구 출현은 `verification_required: true` (33회차).
 > 
 > 한국어 표기: **석근 스택 가이드** 또는 **32 OSS 카탈로그**.
+
+> [!tldr]
+> **석근 스택 가이드** = 15~22회차 8회차에 걸쳐 수집한 **32 OSS + 기존 8개**를 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 명령으로 재정리한 위키 3축의 단일 hub.
+> - **판단**: 6분류(백엔드/프론트/데이터/관측성/AI/모바일) 진입점 / 시나리오 4종 의사결정 / 라이선스 주의 표
+> - **근거**: 32 OSS entity 페이지 역참조 + 회사 BI(c2spf-analytics)·사이드(MateChat) 양 프로젝트 검증
+> - **히스토리**: 23회차 마무리 종합 → 43회차 35 OSS entity 역참조 보강(+36%) → 60회차 상세 포트폴리오 cross-axis 인용 추가
+> - **이 위키 맥락**: 3축 단일 hub (inbound 155). 신규 OSS 출현 시 분기별 재카탈로그(`verification_required: true`).
 
 ## 언제 읽어야 하는가
 

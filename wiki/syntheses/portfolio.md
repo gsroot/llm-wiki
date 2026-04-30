@@ -1,62 +1,77 @@
 ---
-title: "포트폴리오 (Portfolio Hub)"
+title: 포트폴리오 (Portfolio Hub)
 type: synthesis
 category: hub
-aliases: [포트폴리오, portfolio, 석근 포트폴리오, portfolio-hub, 9년 커리어 의사결정 지도]
-tags: [포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, guide, 33회차, 53회차]
+aliases:
+- 포트폴리오
+- portfolio
+- 석근 포트폴리오
+- portfolio-hub
+- 9년 커리어 의사결정 지도
+tags:
+- 포트폴리오
+- portfolio
+- career
+- 3-layer
+- johnny-decimal
+- STAR
+- hub
+- 33회차
+- 53회차
 sources:
-  - "[[portfolio-seed]]"
-  - "[[portfolio-resume-ko]]"
-  - "[[portfolio-ko]]"
-  - "[[portfolio-method]]"
-  - "[[c2spf-analytics-renewal]]"
-  - "[[c2spf-analytics-common]]"
-  - "[[c2spf-nft-market]]"
-  - "[[c2spf-xpla-platform]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[seokgeun-kim-profile-2026]]"
+- '[[portfolio-seed]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-ko]]'
+- '[[portfolio-method]]'
+- '[[c2spf-analytics-renewal]]'
+- '[[c2spf-analytics-common]]'
+- '[[c2spf-nft-market]]'
+- '[[c2spf-xpla-platform]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[seokgeun-kim-profile-2026]]'
 related:
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[matechat]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[mcp]]"
-  - "[[claude-code]]"
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
+- '[[matechat]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[mcp]]'
+- '[[claude-code]]'
+- '[[seokgeun-operating-profile-2026]]'
 created: 2026-04-29
 updated: 2026-04-29
-inbound_count: 54
+inbound_count: 56
 cited_by:
-  - "[[agent-skills]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[c2spf-analytics]]"
-  - "[[c2spf-analytics-common]]"
-  - "[[c2spf-analytics-renewal]]"
-  - "[[c2spf-nft-market]]"
-  - "[[c2spf-xpla-platform]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[claude-code]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[harness]]"
-  - "[[kpi-recovery-loop]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[matechat]]"
-  - "[[matechat-business-validation]]"
-  - "[[matechat-launch-metrics-ledger]]"
-  - "[[mcp]]"
-  - "[[nextjs]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[portfolio-ko]]"
-  - "[[portfolio-method]]"
-  - "[[portfolio-resume-ko]]"
-  - "[[portfolio-seed]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[agent-skills]]'
+- '[[backend-fastapi-stack]]'
+- '[[c2spf-analytics]]'
+- '[[c2spf-analytics-common]]'
+- '[[c2spf-analytics-renewal]]'
+- '[[c2spf-nft-market]]'
+- '[[c2spf-xpla-platform]]'
+- '[[career-timeline-seokgeun]]'
+- '[[claude-code]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[harness]]'
+- '[[kpi-recovery-loop]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[matechat]]'
+- '[[matechat-business-validation]]'
+- '[[matechat-launch-metrics-ledger]]'
+- '[[mcp]]'
+- '[[nextjs]]'
+- '[[parental-leave-2026-operating-plan]]'
+- '[[portfolio-ko]]'
+- '[[portfolio-method]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-seed]]'
+- '[[seokgeun-kim]]'
+- '[[seokgeun-kim-profile-2026]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[seokgeun-stack-guide]]'
 cited_by_count: 28
 ---
 

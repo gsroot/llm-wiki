@@ -1,25 +1,38 @@
 ---
-title: "OpenAI"
+title: OpenAI
 type: entity
 entity_type: organization
-tags: [openai, AI, AI연구소, 샌프란시스코, gpt, chatgpt, dall-e, codex, gpt-oss, agents-SDK, responses-api, harmony-format, openai-cookbook]
-aliases: [OpenAI, openai, 오픈AI]
+tags:
+- openai
+- AI
+- AI연구소
+- gpt
+- codex
+- gpt-oss
+- agents-SDK
+- openai-cookbook
+aliases:
+- OpenAI
+- openai
+- 오픈AI
 related:
-  - "[[openai-cookbook]]"
-  - "[[karpathy]]"
-  - "[[anthropic]]"
-  - "[[ml-ai]]"
-  - "[[mcp]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
+- '[[openai-cookbook]]'
+- '[[karpathy]]'
+- '[[anthropic]]'
+- '[[ml-ai]]'
+- '[[mcp]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[openai-openai-cookbook]]'
+- '[[openai-openai-agents-python]]'
 source_count: 1
 observed_source_refs: 8
-inbound_count: 34
+inbound_count: 35
 created: 2026-04-27
 updated: 2026-04-27
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "OpenAI 모델 릴리스(GPT-5/codex/gpt-oss/agents-sdk) 빠르게 변동 — 분기별 모델 라인업 재검증"
+verification_notes: OpenAI 모델 릴리스(GPT-5/codex/gpt-oss/agents-sdk) 빠르게 변동 — 분기별 모델 라인업 재검증
 cited_by_count: 14
 ---
 

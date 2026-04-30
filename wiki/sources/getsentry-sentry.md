@@ -1,27 +1,38 @@
 ---
-title: "Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT"
+title: Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT
 type: source
 source_type: article
-source_url: "https://github.com/getsentry/sentry"
-raw_path: "raw/articles/getsentry-sentry/"
-author: "Sentry (Functional Software, Inc.)"
+source_url: https://github.com/getsentry/sentry
+raw_path: raw/articles/getsentry-sentry/
+author: Sentry (Functional Software, Inc.)
 date_published: 2026-04-28
 date_ingested: 2026-04-28
-tags: [sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차]
+tags:
+- sentry
+- error-tracking
+- observability
+- agents-md
+- anti-fragmentation
+- viewer-context
+- 19회차
 related:
-  - "[[sentry]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[agent-skills]]"
+- '[[sentry]]'
+- '[[observability-and-cicd-stack]]'
+- '[[agent-skills]]'
 confidence: high
-inbound_count: 12
+inbound_count: 16
 cited_by:
-  - "[[agent-skills]]"
-  - "[[devops-cicd]]"
-  - "[[event-driven-architecture]]"
-  - "[[observability]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[sentry]]"
+- '[[agent-skills]]'
+- '[[devops-cicd]]'
+- '[[event-driven-architecture]]'
+- '[[observability]]'
+- '[[observability-and-cicd-stack]]'
+- '[[sentry]]'
 cited_by_count: 6
+aliases:
+- Getsentry Sentry
+- Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT
+- getsentry sentry
 ---
 
 # Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT

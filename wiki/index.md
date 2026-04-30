@@ -27,15 +27,15 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 이 위키의 5개 핵심 축
 
-이 위키는 4개의 의도된 핵심축과 1개의 자발 발견 메타축으로 구성된다 (인바운드 측정 기준 / 30회차).
+이 위키는 **5개 핵심축**으로 구성된다 (1-4축은 정태 도메인, 5축은 1-4축을 가로지르는 직교 메타 layer / 28회차에 명시화 / 60회차 베이스라인).
 
 | # | 축 | 핵심 hub 페이지 | 인바운드 합산 | 역할 |
 |---|---|---|---:|---|
-| 1 | 개인 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] · [[seokgeun-kim-profile-2026]] | 190 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
-| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[portfolio-resume-ko]] · [[portfolio-ko]] · [[portfolio-method]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-common]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 339 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
-| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 153 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
-| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat|석근 MateChat 본진 raw]] · [[seokgeun-matechat-validation]] · [[matechat-chat-analysis-module]] · [[matechat-project-knowledge-map]] | 240 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
-| 5 | LLM 인프라 메타 (자발 발견) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 747 | 28회차에 명시화된 5번째 축 — 4핵심축에 직교하는 메타 layer (28회차 47.9% → 43회차 46.6% → 52회차 44.7% → 54회차 44.8% 자연 평형점 도달, 5축 합산 1669 기준) |
+| 1 | 개인 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] · [[seokgeun-kim-profile-2026]] | 195 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
+| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[portfolio-resume-ko]] · [[portfolio-ko]] · [[portfolio-method]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-common]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 340 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
+| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 155 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
+| 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat|석근 MateChat 본진 raw]] · [[seokgeun-matechat-validation]] · [[matechat-chat-analysis-module]] · [[matechat-project-knowledge-map]] | 243 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
+| 5 | LLM 인프라 메타 (의도된 핵심축) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 752 | 28회차에 명시화된 5번째 축 — 4축에 직교하는 메타 layer (28회차 47.9% → 43회차 46.6% → 52회차 44.7% → 54회차 44.8% → 60회차 44.6% 자연 평형점, 5축 합산 1685 기준) |
 
 > **읽기 순서 가이드**: (1) 5축 식별 → 본 표 / (2) 본인 정체성 → [[seokgeun-operating-profile-2026]] / (3) 기술 의사결정 → [[seokgeun-stack-guide]] / (4) 메타 인식 → [[llm-infra-meta-cluster]]
 

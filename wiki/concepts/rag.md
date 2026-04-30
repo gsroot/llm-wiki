@@ -1,20 +1,39 @@
 ---
-title: "RAG (Retrieval-Augmented Generation)"
+title: RAG (Retrieval-Augmented Generation)
 type: concept
 category: ai
-aliases: [RAG, Retrieval-Augmented Generation, 검색 증강 생성, 검색-증강-생성, retrieval-augmented-generation]
-tags: [검색증강생성, retrieval-augmented-generation, LLM, 검색, retrieval, 생성, generation, 컨텍스트, context, 임베딩, embeddings, 벡터DB, vector-database, agent-skills, harness, mcp, llm-wiki, 53회차]
+aliases:
+- RAG
+- Retrieval-Augmented Generation
+- 검색 증강 생성
+- 검색-증강-생성
+- retrieval-augmented-generation
+tags:
+- LLM
+- 검색
+- 컨텍스트
+- context
+- embeddings
+- vector-databases
+- agent-skills
+- harness
+- mcp
+- llm-wiki
+- 53회차
 related:
-  - "[[llm-wiki-pattern]]"
-  - "[[context-engineering]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[mcp]]"
-  - "[[prompt-cache]]"
-  - "[[ml-ai]]"
-  - "[[anthropic]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[claude-code]]"
+- '[[llm-wiki-pattern]]'
+- '[[context-engineering]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[mcp]]'
+- '[[prompt-cache]]'
+- '[[ml-ai]]'
+- '[[anthropic]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[claude-code]]'
+- '[[claude-code-master-guide]]'
+- '[[using-llm-wiki-as-rag]]'
+- '[[llm-wiki-idea-doc]]'
 source_count: 4
 observed_source_refs: 4
 inbound_count: 12

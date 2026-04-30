@@ -1,28 +1,38 @@
 ---
-title: "MateChat 출시 후 실측 ledger"
+title: MateChat 출시 후 실측 ledger
 type: synthesis
-category: guide
-aliases: [MateChat 실측 ledger, matechat-launch-metrics-ledger, MateChat 출시 KPI ledger, launch ledger]
+category: operating-log
+aliases:
+- MateChat 실측 ledger
+- matechat-launch-metrics-ledger
+- MateChat 출시 KPI ledger
+- launch ledger
 sources:
-  - "[[seokgeun-matechat-validation]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[seokgeun-mate-chat]]"
+- '[[seokgeun-matechat-validation]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[seokgeun-mate-chat]]'
 related:
-  - "[[matechat]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[matechat-business-validation]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-kim]]"
-  - "[[portfolio]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[matechat]]'
+- '[[matechat-30day-validation-loop]]'
+- '[[matechat-business-validation]]'
+- '[[seokgeun-mate-chat]]'
+- '[[seokgeun-kim]]'
+- '[[portfolio]]'
+- '[[llm-infra-meta-cluster]]'
 created: 2026-04-29
 updated: 2026-04-29
-tags: [matechat, 실측, ledger, post-launch, retention, conversion, funnel, 인터뷰, 51회차, 4축, raw-metrics]
+tags:
+- matechat
+- post-launch
+- retention
+- conversion
+- 51회차
+- 4축
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "v1.0.0 Google Play 출시 직후 D+1부터 컬럼 채우기 시작. 30day-loop과 달리 본 페이지는 의사결정 SOP가 아닌 raw 측정값 저장소. D+30 이후도 D+90/D+180/D+365 이정표 컬럼 유지. 출시 전까지는 빈 표·컬럼 정의·측정 출처만 박혀 있는 골격 단계."
+verification_notes: v1.0.0 Google Play 출시 직후 D+1부터 컬럼 채우기 시작. 30day-loop과 달리 본 페이지는 의사결정 SOP가 아닌 raw 측정값 저장소. D+30 이후도 D+90/D+180/D+365 이정표 컬럼 유지. 출시 전까지는 빈 표·컬럼 정의·측정 출처만 박혀 있는 골격 단계.
 cited_by_count: 9
-inbound_count: 11
+inbound_count: 12
 ---
 
 # MateChat 출시 후 실측 ledger

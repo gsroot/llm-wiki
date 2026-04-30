@@ -1,13 +1,25 @@
 ---
-title: "블록체인 (XPLA · Rust 스마트 컨트랙트 · NFT)"
-aliases: [Blockchain XPLA, 블록체인 XPLA]
+title: 블록체인 (XPLA · Rust 스마트 컨트랙트 · NFT)
+aliases:
+- Blockchain XPLA
+- 블록체인 XPLA
 type: concept
 category: web-dev
-tags: [blockchain, xpla, nft, smart-contract, rust, cosmos-SDK, web3, nestjs, discord-bot, gas-fee]
+tags:
+- blockchain
+- xpla
+- nft
+- smart-contract
+- rust
+- nestjs
+- discord-bot
 related:
-  - "[[seokgeun-kim]]"
-  - "[[xpla-platform]]"
-  - "[[backend-python-fastapi]]"
+- '[[seokgeun-kim]]'
+- '[[xpla-platform]]'
+- '[[backend-python-fastapi]]'
+- '[[portfolio-seed]]'
+- '[[c2spf-nft-market]]'
+- '[[c2spf-xpla-platform]]'
 source_count: 3
 observed_source_refs: 10
 inbound_count: 17

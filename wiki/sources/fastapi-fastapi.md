@@ -1,46 +1,49 @@
 ---
-title: "fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md)"
+title: fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md)
 type: source
 source_type: article
-source_url: "https://github.com/fastapi/fastapi"
-raw_path: "raw/articles/fastapi-fastapi/"
-author: "Sebastián Ramírez (tiangolo) — fastapi.tiangolo.com"
+source_url: https://github.com/fastapi/fastapi
+raw_path: raw/articles/fastapi-fastapi/
+author: Sebastián Ramírez (tiangolo) — fastapi.tiangolo.com
 date_published: 2018-12-05
 date_ingested: 2026-04-27
 tags:
-  - fastapi
-  - tiangolo
-  - python
-  - pydantic
-  - starlette
-  - openapi
-  - async
-  - dependency-injection
-  - agent-skills
-  - SKILL.md
-  - editor-support
+- fastapi
+- tiangolo
+- python
+- pydantic
+- starlette
+- openapi
+- async
+- dependency-injection
+- agent-skills
+- SKILL.md
 related:
-  - "[[backend-python-fastapi]]"
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[agent-skills]]"
-  - "[[anthropics-skills]]"
+- '[[backend-python-fastapi]]'
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[agent-skills]]'
+- '[[anthropics-skills]]'
 confidence: high
-inbound_count: 24
+inbound_count: 28
 cited_by:
-  - "[[agent-skills]]"
-  - "[[anthropics-skills]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[backend-python-fastapi]]"
-  - "[[c2spf-analytics]]"
-  - "[[fastapi]]"
-  - "[[github-spec-kit]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[python]]"
-  - "[[seokgeun-kim]]"
-  - "[[tiangolo]]"
+- '[[agent-skills]]'
+- '[[anthropics-skills]]'
+- '[[backend-fastapi-stack]]'
+- '[[backend-python-fastapi]]'
+- '[[c2spf-analytics]]'
+- '[[fastapi]]'
+- '[[github-spec-kit]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[openai-openai-cookbook]]'
+- '[[python]]'
+- '[[seokgeun-kim]]'
+- '[[tiangolo]]'
 cited_by_count: 12
+aliases:
+- Fastapi
+- fastapi
+- fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md)
 ---
 
 # fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md)

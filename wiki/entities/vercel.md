@@ -1,15 +1,24 @@
 ---
-title: "Vercel"
-aliases: [Vercel, 버셀]
+title: Vercel
+aliases:
+- Vercel
+- 버셀
 type: entity
 entity_type: organization
-tags: [vercel, organization, frontend, edge, nextjs, turbopack, AI-SDK, 23회차, 프론트엔드]
+tags:
+- vercel
+- frontend
+- nextjs
+- turbopack
+- 23회차
+- 프론트엔드
 related:
-  - "[[nextjs]]"
-  - "[[turbopack]]"
-  - "[[react]]"
-  - "[[shadcn-ui]]"
-  - "[[agent-skills]]"
+- '[[nextjs]]'
+- '[[turbopack]]'
+- '[[react]]'
+- '[[shadcn-ui]]'
+- '[[agent-skills]]'
+- '[[vercel-next.js]]'
 source_count: 1
 observed_source_refs: 3
 inbound_count: 17

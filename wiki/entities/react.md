@@ -1,15 +1,30 @@
 ---
-title: "React"
-aliases: [React, 리액트, React.js]
+title: React
+aliases:
+- React
+- 리액트
+- React.js
 type: entity
 entity_type: tool
-tags: [react, javascript, ui-library, meta, frontend, hooks, jsx, 23회차, 프론트엔드]
+tags:
+- react
+- javascript
+- meta
+- frontend
+- hooks
+- 23회차
+- 프론트엔드
 related:
-  - "[[nextjs]]"
-  - "[[zustand]]"
-  - "[[tanstack-query]]"
-  - "[[shadcn-ui]]"
-  - "[[radix-ui]]"
+- '[[nextjs]]'
+- '[[zustand]]'
+- '[[tanstack-query]]'
+- '[[shadcn-ui]]'
+- '[[radix-ui]]'
+- '[[vercel-next.js]]'
+- '[[tanstack-tanstack-query]]'
+- '[[pmndrs-zustand]]'
+- '[[shadcn-ui-ui]]'
+- '[[rrousselGit-riverpod]]'
 source_count: 5
 observed_source_refs: 13
 inbound_count: 35

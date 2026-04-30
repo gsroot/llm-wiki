@@ -1,16 +1,35 @@
 ---
-title: "데이터 파이프라인 (BigQuery 중심 BI)"
-aliases: [Data Pipeline BigQuery, 데이터 파이프라인, 빅쿼리 파이프라인]
+title: 데이터 파이프라인 (BigQuery 중심 BI)
+aliases:
+- Data Pipeline BigQuery
+- 데이터 파이프라인
+- 빅쿼리 파이프라인
 type: concept
 category: data
-tags: [data-pipeline, bigquery, mysql, redis, mariadb, hiveql, digdag, celery, airflow, BI, mmp, pandas, pandas-gbq, bigframes, modin, dask, pyarrow]
+tags:
+- bigquery
+- mysql
+- redis
+- airflow
+- BI
+- mmp
+- pandas
+- bigframes
+- modin
+- dask
+- pyarrow
 related:
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[backend-python-fastapi]]"
-  - "[[ml-ai]]"
-  - "[[pandas]]"
-  - "[[pandas-dev]]"
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[backend-python-fastapi]]'
+- '[[ml-ai]]'
+- '[[pandas]]'
+- '[[pandas-dev]]'
+- '[[portfolio-seed]]'
+- '[[portfolio-ko]]'
+- '[[c2spf-analytics-common]]'
+- '[[c2spf-analytics-renewal]]'
+- '[[pandas-dev-pandas]]'
 source_count: 5
 observed_source_refs: 24
 inbound_count: 50

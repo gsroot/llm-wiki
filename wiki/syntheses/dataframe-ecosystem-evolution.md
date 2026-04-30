@@ -1,18 +1,29 @@
 ---
-title: "DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB"
+title: DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB
 type: synthesis
 category: data
-tags: [dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution, 16회차]
+tags:
+- dataframe
+- pandas
+- polars
+- duckdb
+- pyarrow
+- parquet
+- apache-arrow
+- kafka
+- lazy-evaluation
+- columnar
+- 16회차
 sources:
-  - "[[pandas-dev-pandas]]"
-  - "[[pola-rs-polars]]"
-  - "[[duckdb-duckdb]]"
-  - "[[apache-arrow]]"
-  - "[[apache-kafka]]"
+- '[[pandas-dev-pandas]]'
+- '[[pola-rs-polars]]'
+- '[[duckdb-duckdb]]'
+- '[[apache-arrow]]'
+- '[[apache-kafka]]'
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 16
-inbound_count: 24
+inbound_count: 25
 ---
 
 # DataFrame 생태계 진화사

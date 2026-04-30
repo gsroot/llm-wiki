@@ -1,28 +1,41 @@
 ---
-title: "langchain-ai/langgraph — Stateful agent orchestration framework"
+title: langchain-ai/langgraph — Stateful agent orchestration framework
 type: source
 source_type: article
-source_url: "https://github.com/langchain-ai/langgraph"
-raw_path: "raw/articles/langchain-ai-langgraph/"
-author: "LangChain Inc."
+source_url: https://github.com/langchain-ai/langgraph
+raw_path: raw/articles/langchain-ai-langgraph/
+author: LangChain Inc.
 date_published: 2024-01-01
 date_ingested: 2026-04-28
-tags: [langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, 17회차]
+tags:
+- langgraph
+- langchain-inc
+- agent
+- state-machine
+- durable-execution
+- pregel
+- apache-beam
+- networkx
+- 17회차
 related:
-  - "[[langgraph]]"
-  - "[[langchain]]"
-  - "[[agent-patterns]]"
-  - "[[ml-ai]]"
+- '[[langgraph]]'
+- '[[langchain]]'
+- '[[agent-patterns]]'
+- '[[ml-ai]]'
 confidence: high
-inbound_count: 12
+inbound_count: 15
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[langgraph]]"
-  - "[[mcp]]"
-  - "[[ml-ai]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[langgraph]]'
+- '[[mcp]]'
+- '[[ml-ai]]'
 cited_by_count: 6
+aliases:
+- Langchain Ai Langgraph
+- langchain ai langgraph
+- langchain-ai/langgraph — Stateful agent orchestration framework
 ---
 
 # langchain-ai/langgraph — Stateful agent orchestration framework

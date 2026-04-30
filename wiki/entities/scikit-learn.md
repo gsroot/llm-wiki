@@ -1,17 +1,33 @@
 ---
-title: "scikit-learn (sklearn)"
-aliases: [scikit-learn, 사이킷런, sklearn, 사이킷-런]
+title: scikit-learn (sklearn)
+aliases:
+- scikit-learn
+- 사이킷런
+- sklearn
+- 사이킷-런
 type: entity
 entity_type: tool
-tags: [scikit-learn, sklearn, machine-learning, python, library, classic-ml, fit-predict-transform, pipeline, BSD-3, numfocus, probabl, slep, agents-md]
+tags:
+- scikit-learn
+- sklearn
+- machine-learning
+- python
+- classic-ml
+- fit-predict-transform
+- pipeline
+- numfocus
+- probabl
+- slep
+- agents-md
 related:
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[harness]]"
-  - "[[spec-driven-development]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[microsoft-ml-for-beginners]]'
+- '[[ml-ai]]'
+- '[[data-pipeline-bigquery]]'
+- '[[harness]]'
+- '[[spec-driven-development]]'
+- '[[scikit-learn-scikit-learn]]'
+- '[[seokgeun-stack-guide]]'
+- '[[microsoft-lightgbm]]'
 source_count: 2
 observed_source_refs: 30
 inbound_count: 68

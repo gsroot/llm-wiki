@@ -1,43 +1,57 @@
 ---
-title: "apache/arrow + apache/parquet-format (Arrow + Parquet 명세)"
+title: apache/arrow + apache/parquet-format (Arrow + Parquet 명세)
 type: source
 source_type: article
-source_url: "https://github.com/apache/arrow"
-raw_path: "raw/articles/apache-arrow/"
-author: "Apache Software Foundation (Wes McKinney 발기, Arrow PMC)"
+source_url: https://github.com/apache/arrow
+raw_path: raw/articles/apache-arrow/
+author: Apache Software Foundation (Wes McKinney 발기, Arrow PMC)
 date_published: 2016-02-17
 date_ingested: 2026-04-28
-tags: [apache-arrow, pyarrow, parquet, columnar, in-memory, ipc, flatbuffers, zero-copy, language-agnostic, asf, dremel]
+tags:
+- apache-arrow
+- pyarrow
+- parquet
+- columnar
+- in-memory
+- ipc
+- zero-copy
+- asf
+- dremel
 related:
-  - "[[pyarrow]]"
-  - "[[parquet]]"
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[apache-foundation]]"
+- '[[pyarrow]]'
+- '[[parquet]]'
+- '[[pandas]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[apache-foundation]]'
 confidence: high
-inbound_count: 45
+inbound_count: 50
 cited_by:
-  - "[[apache-foundation]]"
-  - "[[append-only-log]]"
-  - "[[c2spf-analytics]]"
-  - "[[copy-on-write]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[duckdb]]"
-  - "[[duckdb-duckdb]]"
-  - "[[kafka]]"
-  - "[[lakehouse]]"
-  - "[[lazy-evaluation]]"
-  - "[[lightgbm]]"
-  - "[[microsoft-lightgbm]]"
-  - "[[pandas-vs-polars-vs-duckdb]]"
-  - "[[parquet]]"
-  - "[[pola-rs-polars]]"
-  - "[[polars]]"
-  - "[[predicate-pushdown]]"
-  - "[[pyarrow]]"
-  - "[[zero-copy]]"
+- '[[apache-foundation]]'
+- '[[append-only-log]]'
+- '[[c2spf-analytics]]'
+- '[[copy-on-write]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[duckdb]]'
+- '[[duckdb-duckdb]]'
+- '[[kafka]]'
+- '[[lakehouse]]'
+- '[[lazy-evaluation]]'
+- '[[lightgbm]]'
+- '[[microsoft-lightgbm]]'
+- '[[pandas-vs-polars-vs-duckdb]]'
+- '[[parquet]]'
+- '[[pola-rs-polars]]'
+- '[[polars]]'
+- '[[predicate-pushdown]]'
+- '[[pyarrow]]'
+- '[[zero-copy]]'
 cited_by_count: 19
+aliases:
+- Apache Arrow
+- apache arrow
+- apache/arrow + apache/parquet-format
+- apache/arrow + apache/parquet-format (Arrow + Parquet 명세)
 ---
 
 # apache/arrow + apache/parquet-format

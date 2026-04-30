@@ -1,17 +1,31 @@
 ---
-title: "Microsoft"
-aliases: [Microsoft, 마이크로소프트, MS]
+title: Microsoft
+aliases:
+- Microsoft
+- 마이크로소프트
+- MS
 type: entity
 entity_type: organization
-tags: [microsoft, microsoft-cloud-advocates, microsoft-for-beginners, openai, azure, github, devrel]
+tags:
+- microsoft
+- microsoft-cloud-advocates
+- microsoft-for-beginners
+- openai
+- github
+- devrel
 related:
-  - "[[microsoft-for-beginners]]"
-  - "[[claude-code]]"
-  - "[[mcp]]"
-  - "[[agent-skills]]"
+- '[[microsoft-for-beginners]]'
+- '[[claude-code]]'
+- '[[mcp]]'
+- '[[agent-skills]]'
+- '[[microsoft-generative-ai-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[microsoft-web-dev-for-beginners]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[microsoft-data-science-for-beginners]]'
 source_count: 5
 observed_source_refs: 15
-inbound_count: 38
+inbound_count: 39
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 14

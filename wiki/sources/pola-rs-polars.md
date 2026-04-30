@@ -1,38 +1,52 @@
 ---
-title: "pola-rs/polars (Polars 저장소)"
+title: pola-rs/polars (Polars 저장소)
 type: source
 source_type: article
-source_url: "https://github.com/pola-rs/polars"
-raw_path: "raw/articles/pola-rs-polars/"
-author: "pola-rs (Ritchie Vink + 컨트리뷰터)"
+source_url: https://github.com/pola-rs/polars
+raw_path: raw/articles/pola-rs-polars/
+author: pola-rs (Ritchie Vink + 컨트리뷰터)
 date_published: 2020-08-01
 date_ingested: 2026-04-28
-tags: [polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3]
+tags:
+- polars
+- dataframe
+- rust
+- lazy-evaluation
+- query-optimization
+- apache-arrow
+- streaming
+- simd
+- multi-threaded
+- pyo3
 related:
-  - "[[polars]]"
-  - "[[pandas]]"
-  - "[[duckdb]]"
-  - "[[pyarrow]]"
-  - "[[copy-on-write]]"
-  - "[[dataframe]]"
-  - "[[lazy-evaluation]]"
+- '[[polars]]'
+- '[[pandas]]'
+- '[[duckdb]]'
+- '[[pyarrow]]'
+- '[[copy-on-write]]'
+- '[[dataframe]]'
+- '[[lazy-evaluation]]'
 confidence: high
-inbound_count: 20
+inbound_count: 27
 cited_by:
-  - "[[apache-arrow]]"
-  - "[[c2spf-analytics]]"
-  - "[[copy-on-write]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[lakehouse]]"
-  - "[[lazy-evaluation]]"
-  - "[[oss-saas-dual]]"
-  - "[[pandas-vs-polars-vs-duckdb]]"
-  - "[[polars]]"
-  - "[[predicate-pushdown]]"
-  - "[[query-optimization]]"
-  - "[[streaming]]"
-  - "[[zero-copy]]"
+- '[[apache-arrow]]'
+- '[[c2spf-analytics]]'
+- '[[copy-on-write]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[lakehouse]]'
+- '[[lazy-evaluation]]'
+- '[[oss-saas-dual]]'
+- '[[pandas-vs-polars-vs-duckdb]]'
+- '[[polars]]'
+- '[[predicate-pushdown]]'
+- '[[query-optimization]]'
+- '[[streaming]]'
+- '[[zero-copy]]'
 cited_by_count: 13
+aliases:
+- Pola Rs Polars
+- pola rs polars
+- pola-rs/polars (Polars 저장소)
 ---
 
 # pola-rs/polars (Polars 저장소)

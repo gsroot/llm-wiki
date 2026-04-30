@@ -1,12 +1,18 @@
 ---
-title: "Apache Software Foundation"
+title: Apache Software Foundation
 type: entity
 entity_type: organization
-tags: [apache-software-foundation, asf, oss-governance, pmc, vendor-neutral, 25회차]
+tags:
+- asf
+- oss-governance
+- vendor-neutral
+- 25회차
 related:
-  - "[[kafka]]"
-  - "[[parquet]]"
-  - "[[pyarrow]]"
+- '[[kafka]]'
+- '[[parquet]]'
+- '[[pyarrow]]'
+- '[[apache-kafka]]'
+- '[[apache-arrow]]'
 source_count: 2
 observed_source_refs: 6
 inbound_count: 13

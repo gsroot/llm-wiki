@@ -1,11 +1,12 @@
 ---
-title: "Mate Chat (redirect)"
+title: Mate Chat (redirect)
 type: entity
 entity_type: redirect
-tags: [redirect, alias, matechat]
+tags:
+- matechat
 related:
-  - "[[matechat]]"
-canonical: "[[matechat]]"
+- '[[matechat]]'
+canonical: '[[matechat]]'
 source_count: 0
 rag_exclude: true
 created: 2026-04-28

@@ -1,29 +1,56 @@
 ---
-title: "sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM (Core/ORM 이중 레이어 + Unit of Work + 21년 관계형 추상화)"
+title: sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM (Core/ORM 이중 레이어 + Unit of Work + 21년 관계형 추상화)
 type: source
 source_type: article
-source_url: "https://github.com/sqlalchemy/sqlalchemy"
-raw_path: "raw/articles/sqlalchemy-sqlalchemy/"
-author: "Mike Bayer (zzzeek) + SQLAlchemy team"
+source_url: https://github.com/sqlalchemy/sqlalchemy
+raw_path: raw/articles/sqlalchemy-sqlalchemy/
+author: Mike Bayer (zzzeek) + SQLAlchemy team
 date_published: 2018-11-27
 date_ingested: 2026-04-28
-tags: [sqlalchemy, python, sql, orm, core, unit-of-work, identity-map, data-mapper, declarative, async, sqlmodel, alembic, mike-bayer, postgresql, mysql, sqlite, dialect, dbapi, type-coercion, connection-pool, 2-0-style, annotated-mapped]
+tags:
+- sqlalchemy
+- python
+- sql
+- orm
+- core
+- unit-of-work
+- identity-map
+- data-mapper
+- declarative
+- async
+- sqlmodel
+- alembic
+- mike-bayer
+- postgresql
+- mysql
+- sqlite
+- dialect
+- dbapi
+- type-coercion
+- connection-pool
+- 2-0-style
+- annotated-mapped
 related:
-  - "[[fastapi]]"
-  - "[[postgresql]]"
-  - "[[alembic]]"
-  - "[[pydantic]]"
-  - "[[python-packaging]]"
-  - "[[uv]]"
-  - "[[scikit-learn]]"
+- '[[fastapi]]'
+- '[[postgresql]]'
+- '[[alembic]]'
+- '[[pydantic]]'
+- '[[python-packaging]]'
+- '[[uv]]'
+- '[[scikit-learn]]'
 confidence: high
-inbound_count: 8
+inbound_count: 10
 cited_by:
-  - "[[backend-fastapi-stack]]"
-  - "[[python]]"
-  - "[[sqlalchemy]]"
-  - "[[sqlite]]"
+- '[[backend-fastapi-stack]]'
+- '[[python]]'
+- '[[sqlalchemy]]'
+- '[[sqlite]]'
 cited_by_count: 4
+aliases:
+- Sqlalchemy
+- sqlalchemy
+- sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM
+- sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM (Core/ORM 이중 레이어 + Unit of Work + 21년 관계형 추상화)
 ---
 
 # sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM

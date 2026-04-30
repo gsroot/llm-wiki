@@ -1,17 +1,28 @@
 ---
-title: "LangGraph"
-aliases: [LangGraph, 랭그래프]
+title: LangGraph
+aliases:
+- LangGraph
+- 랭그래프
 type: entity
 entity_type: tool
-tags: [langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, checkpoint, 17회차]
+tags:
+- langgraph
+- langchain-inc
+- agent
+- state-machine
+- durable-execution
+- pregel
+- apache-beam
+- networkx
+- 17회차
 related:
-  - "[[langchain]]"
-  - "[[openai-agents-python]]"
-  - "[[agent-patterns]]"
-  - "[[ml-ai]]"
-  - "[[postgresql]]"
-  - "[[langchain-ai-langgraph]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[langchain]]'
+- '[[openai-agents-python]]'
+- '[[agent-patterns]]'
+- '[[ml-ai]]'
+- '[[postgresql]]'
+- '[[langchain-ai-langgraph]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 9
 inbound_count: 54

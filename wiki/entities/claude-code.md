@@ -1,32 +1,56 @@
 ---
-title: "Claude Code"
+title: Claude Code
 type: entity
 entity_type: tool
-aliases: [Claude Code, claude-code, 클로드 코드, Anthropic CLI, cc]
-tags: [claude-code, AI, agent, 코딩도구, coding-tool, anthropic, CLI, agent-skills, plugin-marketplace, claude-agent-SDK, bare-metal-harness, spec-kit]
+aliases:
+- Claude Code
+- claude-code
+- 클로드 코드
+- Anthropic CLI
+- cc
+tags:
+- claude-code
+- AI
+- agent
+- 코딩도구
+- coding-tool
+- anthropic
+- CLI
+- agent-skills
+- claude-agent-SDK
+- bare-metal-harness
+- spec-kit
 related:
-  - "[[anthropic]]"
-  - "[[claude-agent-sdk]]"
-  - "[[mcp]]"
-  - "[[agent-skills]]"
-  - "[[agent-patterns]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[obsidian-web-clipper]]"
-  - "[[cowork]]"
-  - "[[harness]]"
-  - "[[token-economy]]"
-  - "[[context-engineering]]"
-  - "[[spec-kit]]"
-  - "[[spec-driven-development]]"
-  - "[[seokgeun-kim]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[matechat]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[anthropic]]'
+- '[[claude-agent-sdk]]'
+- '[[mcp]]'
+- '[[agent-skills]]'
+- '[[agent-patterns]]'
+- '[[llm-wiki-pattern]]'
+- '[[obsidian-web-clipper]]'
+- '[[cowork]]'
+- '[[harness]]'
+- '[[token-economy]]'
+- '[[context-engineering]]'
+- '[[spec-kit]]'
+- '[[spec-driven-development]]'
+- '[[seokgeun-kim]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
+- '[[matechat]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[claude-code-overview]]'
+- '[[claude-code-quickstart]]'
+- '[[claude-code-master-guide]]'
+- '[[using-llm-wiki-as-rag]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[anthropics-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[github-spec-kit]]'
 source_count: 8
 observed_source_refs: 39
-inbound_count: 128
+inbound_count: 129
 created: 2026-04-09
 updated: 2026-04-29
 cited_by_count: 43

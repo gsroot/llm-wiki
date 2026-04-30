@@ -1,48 +1,70 @@
 ---
-title: "openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음 + 살아있는 AGENTS.md"
+title: openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음 + 살아있는 AGENTS.md
 type: source
 source_type: article
-source_url: "https://github.com/openai/openai-cookbook"
-raw_path: "raw/articles/openai-openai-cookbook/"
-author: "OpenAI (community resource)"
+source_url: https://github.com/openai/openai-cookbook
+raw_path: raw/articles/openai-openai-cookbook/
+author: OpenAI (community resource)
 date_published: 2022-03-11
 date_ingested: 2026-04-27
-tags: [openai-cookbook, openai, openai-api, prompt-engineering, embeddings, fine-tuning, agents-SDK, codex, gpt-5, gpt-oss, harmony, evals, agents-md, plans-md, exec-plans, registry-yaml, jupyter-notebook, MIT-license, recent-learnings]
+tags:
+- openai-cookbook
+- openai
+- prompt-engineering
+- embeddings
+- agents-SDK
+- codex
+- gpt-5
+- gpt-oss
+- evals
+- agents-md
+- plans-md
+- exec-plans
+- registry-yaml
+- jupyter-notebook
+- MIT-license
+- recent-learnings
 related:
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[agent-patterns]]"
-  - "[[spec-driven-development]]"
-  - "[[ml-ai]]"
-  - "[[prompt-cache]]"
-  - "[[context-engineering]]"
-  - "[[mcp]]"
-  - "[[agent-stack-evolution]]"
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[agent-patterns]]'
+- '[[spec-driven-development]]'
+- '[[ml-ai]]'
+- '[[prompt-cache]]'
+- '[[context-engineering]]'
+- '[[mcp]]'
+- '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 33
+inbound_count: 39
 cited_by:
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[astral-sh-uv]]"
-  - "[[claude-code]]"
-  - "[[fastapi-fastapi]]"
-  - "[[flutter-flutter]]"
-  - "[[github-spec-kit]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mcp]]"
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[pandas-dev-pandas]]"
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[agent-stack-evolution]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[anthropics-skills]]'
+- '[[astral-sh-uv]]'
+- '[[claude-code]]'
+- '[[fastapi-fastapi]]'
+- '[[flutter-flutter]]'
+- '[[github-spec-kit]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[mcp]]'
+- '[[microsoft-data-science-for-beginners]]'
+- '[[ml-ai]]'
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[openai-openai-agents-python]]'
+- '[[pandas-dev-pandas]]'
 cited_by_count: 19
+aliases:
+- Openai Cookbook
+- openai cookbook
+- openai-cookbook
+- openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음
+- openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음 + 살아있는 AGENTS.md
 ---
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음

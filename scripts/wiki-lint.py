@@ -258,6 +258,15 @@ class LintResult:
     # CLAUDE.md 59회차 옵션 A 정책 위반 자동 보고. 결함.
     # (rel_path, demoted_tag, canonical_tag)
     tag_canonical_violations: list[tuple[str, str, str]] = field(default_factory=list)
+    # 60회차 P0-8 신설 (check #15): 태그 vocabulary 과밀 회귀 차단 (정보 보고)
+    # unique tags > 700 OR 저빈도(1-2회) 비율 > 60% 시 경고. 결함 아님.
+    tag_vocab_unique: int = 0
+    tag_vocab_total_refs: int = 0
+    tag_vocab_low_freq_pct: float = 0.0
+    tag_vocab_warning: str = ""
+    # 60회차 P0-2 신설 (check #16): citation chain 양방향 정합 결함
+    # (rel_path, missing_slugs)
+    citation_chain_missing: list[tuple[str, list[str]]] = field(default_factory=list)
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
@@ -277,6 +286,7 @@ class LintResult:
             or self.meta_rag_exclude_missing
             or self.stub_entities
             or self.tag_canonical_violations
+            or self.citation_chain_missing
         )
 
 
@@ -511,6 +521,72 @@ def lint(update: bool = False) -> LintResult:
                 result.tag_canonical_violations.append(
                     (str(page.path.relative_to(WIKI_ROOT.parent)), demoted, canonical)
                 )
+
+    # 60회차 P0-2 신설 (check #16): citation chain 양방향 정합 (37회차 정책 회귀 차단)
+    # 본문 ## 출처(또는 ## 원문/Sources) 섹션의 wikilink가
+    # frontmatter related/sources에 모두 박혀있는지 검증. 결함.
+    citation_re = re.compile(
+        r"(?ms)^##\s*(?:출처|원문|Sources?)\s*$(.*?)(?=^##\s|\Z)"
+    )
+    inner_link_re = re.compile(r"\[\[([^\]|]+)")
+    for page in pages:
+        if page.yaml_invalid or page.is_redirect or page.is_log_file:
+            continue
+        if page.page_type == "source":
+            continue
+        fm = page.frontmatter or {}
+        if fm.get("rag_exclude"):
+            continue
+        if fm.get("type") in ("index", "log", "redirect"):
+            continue
+        m = citation_re.search(page.body)
+        if not m:
+            continue
+        section = m.group(1)
+        body_slugs: set[str] = set()
+        for link_m in inner_link_re.finditer(section):
+            slug = link_m.group(1).strip().lower()
+            if slug.startswith("index") or slug.startswith("log"):
+                continue
+            body_slugs.add(slug)
+        fm_slugs: set[str] = set()
+        for field_name in ("related", "sources"):
+            for v in fm.get(field_name, []) or []:
+                lm = inner_link_re.search(str(v))
+                if lm:
+                    fm_slugs.add(lm.group(1).strip().lower())
+        missing = body_slugs - fm_slugs
+        if missing:
+            result.citation_chain_missing.append(
+                (str(page.path.relative_to(WIKI_ROOT.parent)), sorted(missing))
+            )
+
+    # 60회차 P0-8 신설 (check #15): 태그 vocabulary 과밀 회귀 차단 (정보 보고)
+    # 904 unique → 465 정리 (60회차). 회귀 임계: unique > 700 OR 저빈도 > 60%
+    import collections as _collections
+    tag_freq: dict[str, int] = _collections.Counter()
+    for page in pages:
+        if page.yaml_invalid or page.is_log_file:
+            continue
+        page_tags = (page.frontmatter or {}).get("tags", []) or []
+        if isinstance(page_tags, list):
+            for t in page_tags:
+                tag_freq[str(t)] = tag_freq.get(str(t), 0) + 1
+    result.tag_vocab_unique = len(tag_freq)
+    result.tag_vocab_total_refs = sum(tag_freq.values())
+    if tag_freq:
+        low_freq = sum(1 for c in tag_freq.values() if c <= 2)
+        result.tag_vocab_low_freq_pct = low_freq * 100 / len(tag_freq)
+    warnings = []
+    if result.tag_vocab_unique > 700:
+        warnings.append(
+            f"unique 태그 {result.tag_vocab_unique}개 > 700 임계 (60회차 baseline 465)"
+        )
+    if result.tag_vocab_low_freq_pct > 60:
+        warnings.append(
+            f"저빈도(1-2회) 비율 {result.tag_vocab_low_freq_pct:.1f}% > 60% 임계"
+        )
+    result.tag_vocab_warning = "; ".join(warnings)
 
     # 고아 페이지: 인바운드 0 (단, redirect/index/log 제외)
     for stem, cnt in inbound.items():
@@ -1179,6 +1255,37 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건 (한·영 6쌍 canonical 정합)")
+
+    print(
+        "--- 16. citation chain 양방향 정합 (60회차 P0-2 신설 — 37회차 정책 회귀 차단) ---"
+    )
+    if result.citation_chain_missing:
+        print(f"❌ {len(result.citation_chain_missing)}건:")
+        for rel_path, missing in result.citation_chain_missing[:10]:
+            print(f"    {rel_path}: 본문 ## 출처에 있으나 fm 누락 → {missing[:3]}")
+        if len(result.citation_chain_missing) > 10:
+            remainder = len(result.citation_chain_missing) - 10
+            print(f"    ... (생략 {remainder}건)")
+    else:
+        if not quiet:
+            print("✓ 0건 (본문 ## 출처 ↔ frontmatter related/sources 정합)")
+
+    print(
+        "--- 15. 태그 vocabulary 과밀 회귀 (60회차 신설 — 정보 보고) ---"
+    )
+    if result.tag_vocab_warning:
+        print(
+            f"⚠️ {result.tag_vocab_warning} "
+            f"(unique={result.tag_vocab_unique}, refs={result.tag_vocab_total_refs}, "
+            f"저빈도={result.tag_vocab_low_freq_pct:.1f}%)"
+        )
+    else:
+        if not quiet:
+            print(
+                f"✓ vocabulary 정상 (unique={result.tag_vocab_unique}, "
+                f"refs={result.tag_vocab_total_refs}, "
+                f"저빈도={result.tag_vocab_low_freq_pct:.1f}%)"
+            )
 
 
 def report_full(result: LintResult) -> None:

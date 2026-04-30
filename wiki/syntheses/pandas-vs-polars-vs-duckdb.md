@@ -1,16 +1,25 @@
 ---
-title: "Pandas vs Polars vs DuckDB — 정량 비교 매트릭스"
+title: Pandas vs Polars vs DuckDB — 정량 비교 매트릭스
 type: synthesis
 category: data
-tags: [comparison, pandas, polars, duckdb, dataframe, decision-matrix, 16회차]
+tags:
+- comparison
+- pandas
+- polars
+- duckdb
+- dataframe
+- decision-matrix
+- 16회차
 sources:
-  - "[[pandas-dev-pandas]]"
-  - "[[pola-rs-polars]]"
-  - "[[duckdb-duckdb]]"
+- '[[pandas-dev-pandas]]'
+- '[[pola-rs-polars]]'
+- '[[duckdb-duckdb]]'
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 10
 inbound_count: 12
+related:
+- '[[dataframe-ecosystem-evolution]]'
 ---
 
 # Pandas vs Polars vs DuckDB

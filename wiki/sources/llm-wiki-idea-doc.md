@@ -1,31 +1,41 @@
 ---
-title: "LLM 위키 아이디어 문서"
+title: LLM 위키 아이디어 문서
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: private
-raw_path: "raw/notes/llm_wiki.md"
-author: "원저자 미상 (역자 주석 포함)"
+raw_path: raw/notes/llm_wiki.md
+author: 원저자 미상 (역자 주석 포함)
 date_published: 2026-04-09
 date_ingested: 2026-04-09
-tags: [지식관리, knowledge-management, LLM, 위키, RAG, obsidian]
+tags:
+- 지식관리
+- knowledge-management
+- LLM
+- 위키
+- RAG
+- obsidian
 related:
-  - "[[llm-wiki-pattern]]"
-  - "[[memex]]"
-  - "[[qmd]]"
-  - "[[mcp]]"
-  - "[[obsidian-web-clipper]]"
+- '[[llm-wiki-pattern]]'
+- '[[memex]]'
+- '[[qmd]]'
+- '[[mcp]]'
+- '[[obsidian-web-clipper]]'
 confidence: high
-inbound_count: 10
+inbound_count: 16
 cited_by:
-  - "[[llm-wiki-pattern]]"
-  - "[[mcp]]"
-  - "[[memex]]"
-  - "[[obsidian-web-clipper]]"
-  - "[[qmd]]"
-  - "[[rag]]"
-  - "[[wiki-bootstrap-log]]"
+- '[[llm-wiki-pattern]]'
+- '[[mcp]]'
+- '[[memex]]'
+- '[[obsidian-web-clipper]]'
+- '[[qmd]]'
+- '[[rag]]'
+- '[[wiki-bootstrap-log]]'
 cited_by_count: 7
+aliases:
+- LLM 위키 아이디어 문서
+- Llm Wiki Idea Doc
+- llm wiki idea doc
 ---
 
 # LLM 위키 아이디어 문서

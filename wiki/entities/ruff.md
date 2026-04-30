@@ -1,18 +1,31 @@
 ---
-title: "Ruff (astral-sh/ruff)"
-aliases: [Ruff, 러프]
+title: Ruff (astral-sh/ruff)
+aliases:
+- Ruff
+- 러프
 type: entity
 entity_type: tool
-tags: [ruff, astral, python, linter, formatter, rust, pep8, black-compatible, flake8-replacement, isort-replacement, ty, mdtest, salsa-incrementality, agents-md, claude-md-import, monorepo-cascading, 800-rules, preview-mode]
+tags:
+- ruff
+- astral
+- python
+- linter
+- formatter
+- rust
+- pep8
+- ty
+- agents-md
+- claude-md-import
+- 800-rules
 related:
-  - "[[astral]]"
-  - "[[uv]]"
-  - "[[fastapi]]"
-  - "[[python-packaging]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[astral-sh-ruff]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[astral]]'
+- '[[uv]]'
+- '[[fastapi]]'
+- '[[python-packaging]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[astral-sh-ruff]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 6
 inbound_count: 41

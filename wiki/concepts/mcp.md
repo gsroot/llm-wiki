@@ -1,29 +1,48 @@
 ---
-title: "MCP (Model Context Protocol)"
+title: MCP (Model Context Protocol)
 type: concept
 category: ai
-aliases: [Model Context Protocol, mcp, 모델 컨텍스트 프로토콜, MCP, mcp-server]
-tags: [mcp, model-context-protocol, LLM, 도구, tool-use, 프로토콜, a2a, nlweb, agentic-protocols, claude-cookbooks, claude-agent-SDK, json-rpc-subprocess]
+aliases:
+- Model Context Protocol
+- mcp
+- 모델 컨텍스트 프로토콜
+- MCP
+- mcp-server
+tags:
+- mcp
+- model-context-protocol
+- LLM
+- tool-use
+- a2a
+- nlweb
+- claude-cookbooks
+- claude-agent-SDK
 related:
-  - "[[llm-wiki-pattern]]"
-  - "[[qmd]]"
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[anthropic]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[context-engineering]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[seokgeun-kim]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[matechat]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[llm-wiki-pattern]]'
+- '[[qmd]]'
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[anthropic]]'
+- '[[microsoft-for-beginners]]'
+- '[[context-engineering]]'
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[seokgeun-kim]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
+- '[[matechat]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[llm-wiki-idea-doc]]'
+- '[[claude-code-overview]]'
+- '[[claude-code-master-guide]]'
+- '[[using-llm-wiki-as-rag]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[anthropics-claude-cookbooks]]'
 source_count: 6
 observed_source_refs: 53
-inbound_count: 143
+inbound_count: 144
 created: 2026-04-09
 updated: 2026-04-29
 cited_by_count: 44

@@ -1,22 +1,29 @@
 ---
-title: "PandasAI"
-aliases: [PandasAI, 판다스AI]
+title: PandasAI
+aliases:
+- PandasAI
+- 판다스AI
 type: entity
 entity_type: tool
 related:
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[sinaptik-ai-pandas-ai]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[pandas]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[sinaptik-ai-pandas-ai]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 2
 inbound_count: 18
 created: 2026-04-28
 updated: 2026-04-28
-tags: [pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차]
+tags:
+- pandas-ai
+- conversational-data
+- litellm
+- bi-chatbot
+- 18회차
 cited_by_count: 9
 ---
 

@@ -1,37 +1,50 @@
 ---
-title: "석근 프로필 (2026)"
+title: 석근 프로필 (2026)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/personal/seokgeun-kim-profile-2026-04-28.md"
-author: "석근"
+raw_path: raw/notes/personal/seokgeun-kim-profile-2026-04-28.md
+author: 석근
 date_published: 2026-04-28
 date_ingested: 2026-04-28
-tags: [개인프로필, seokgeun-kim, matechat, 육아휴직, 사업화, AI, fastapi, flutter, 가족, 생산성]
+tags:
+- 개인프로필
+- seokgeun-kim
+- matechat
+- 육아휴직
+- 사업화
+- AI
+- fastapi
+- flutter
+- 가족
 related:
-  - "[[seokgeun-kim]]"
-  - "[[matechat]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[backend-python-fastapi]]"
-  - "[[ml-ai]]"
-  - "[[flutter]]"
+- '[[seokgeun-kim]]'
+- '[[matechat]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[career-timeline-seokgeun]]'
+- '[[backend-python-fastapi]]'
+- '[[ml-ai]]'
+- '[[flutter]]'
 confidence: high
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인"
-inbound_count: 25
+verification_notes: 육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인
+inbound_count: 26
 cited_by:
-  - "[[kpi-recovery-loop]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[matechat]]"
-  - "[[matechat-project-knowledge-map]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[portfolio]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
+- '[[kpi-recovery-loop]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[matechat]]'
+- '[[matechat-project-knowledge-map]]'
+- '[[parental-leave-2026-operating-plan]]'
+- '[[portfolio]]'
+- '[[seokgeun-kim]]'
+- '[[seokgeun-operating-profile-2026]]'
 cited_by_count: 8
+aliases:
+- Seokgeun Kim Profile 2026
+- seokgeun kim profile 2026
+- 석근 프로필 (2026)
 ---
 
 # 석근 프로필 (2026)

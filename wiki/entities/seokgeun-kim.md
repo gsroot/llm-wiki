@@ -1,25 +1,45 @@
 ---
-title: "김석근 (Seokgeun Kim)"
+title: 김석근 (Seokgeun Kim)
 type: entity
 entity_type: person
-aliases: [석근, 김석근, Seokgeun Kim, seokgeun-kim, owner]
-tags: [석근, 백엔드, 풀스택, BI, 게임데이터, 컴투스플랫폼, matechat, 개인프로필]
+aliases:
+- 석근
+- 김석근
+- Seokgeun Kim
+- seokgeun-kim
+- owner
+tags:
+- 석근
+- 백엔드
+- BI
+- 게임데이터
+- 컴투스플랫폼
+- matechat
+- 개인프로필
 related:
-  - "[[com2us-platform]]"
-  - "[[c2spf-analytics]]"
-  - "[[xpla-platform]]"
-  - "[[matechat]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[seokgeun-stack-guide]]"
-  - "[[portfolio]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[mcp]]"
-  - "[[claude-code]]"
+- '[[com2us-platform]]'
+- '[[c2spf-analytics]]'
+- '[[xpla-platform]]'
+- '[[matechat]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[seokgeun-stack-guide]]'
+- '[[portfolio]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[mcp]]'
+- '[[claude-code]]'
+- '[[portfolio-seed]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-ko]]'
+- '[[portfolio-method]]'
+- '[[obsidian-guide]]'
+- '[[using-llm-wiki-as-rag]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[seokgeun-kim-profile-2026]]'
 source_count: 8
 observed_source_refs: 35
-inbound_count: 99
+inbound_count: 100
 created: 2026-04-24
 updated: 2026-04-29
 cited_by_count: 44

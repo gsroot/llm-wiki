@@ -1,23 +1,18 @@
 ---
-title: "Sebastián Ramírez (tiangolo)"
+title: Sebastián Ramírez (tiangolo)
 type: entity
 entity_type: person
 tags:
-  - tiangolo
-  - sebastian-ramirez
-  - python
-  - oss
-  - fastapi
-  - pydantic-contributor
-  - starlette-contributor
-  - typer
-  - sqlmodel
-  - asyncer
-  - fastapi-cloud
+- tiangolo
+- python
+- oss
+- fastapi
+- sqlmodel
 related:
-  - "[[fastapi]]"
-  - "[[backend-python-fastapi]]"
-  - "[[agent-skills]]"
+- '[[fastapi]]'
+- '[[backend-python-fastapi]]'
+- '[[agent-skills]]'
+- '[[fastapi-fastapi]]'
 source_count: 1
 observed_source_refs: 2
 inbound_count: 11

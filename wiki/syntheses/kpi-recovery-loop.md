@@ -1,26 +1,34 @@
 ---
-title: "KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP"
+title: KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP
 type: synthesis
-category: guide
-aliases: [KPI 회수 루프, kpi-recovery-loop, 측정값 회수, 의사결정 회수 SOP]
-tags: [kpi, 측정, 회수루프, sop, 의사결정, verification-required, matechat, c2spf, 48회차]
+category: operating-log
+aliases:
+- KPI 회수 루프
+- kpi-recovery-loop
+- 측정값 회수
+- 의사결정 회수 SOP
+tags:
+- kpi
+- matechat
+- c2spf
+- 48회차
 sources:
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[mate-chat-project-wiki-2026]]"
+- '[[seokgeun-kim-profile-2026]]'
+- '[[mate-chat-project-wiki-2026]]'
 related:
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[matechat]]"
-  - "[[c2spf-analytics]]"
-  - "[[portfolio]]"
+- '[[seokgeun-kim]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[parental-leave-2026-operating-plan]]'
+- '[[matechat-30day-validation-loop]]'
+- '[[c2spf-ai-agent-adoption-candidates]]'
+- '[[matechat]]'
+- '[[c2spf-analytics]]'
+- '[[portfolio]]'
 created: 2026-04-29
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "본 SOP 자체 준수 여부를 분기별 회고에서 점검. 측정값 누락된 KPI 1건이라도 있으면 SOP 결함."
+verification_notes: 본 SOP 자체 준수 여부를 분기별 회고에서 점검. 측정값 누락된 KPI 1건이라도 있으면 SOP 결함.
 cited_by_count: 9
 inbound_count: 11
 ---

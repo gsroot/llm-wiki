@@ -1,37 +1,52 @@
 ---
-title: "컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)"
+title: 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/20-projects/com2us-platform/
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [com2us-platform, c2spf, analytics, react, typescript, vite, tanstack, zustand, ag-grid, airbridge, fastapi, mmp]
+tags:
+- com2us-platform
+- c2spf
+- analytics
+- react
+- typescript
+- vite
+- tanstack
+- zustand
+- ag-grid
+- fastapi
+- mmp
 related:
-  - "[[com2us-platform]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-kim]]"
-  - "[[frontend-react]]"
-  - "[[backend-python-fastapi]]"
-  - "[[data-pipeline-bigquery]]"
+- '[[com2us-platform]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-kim]]'
+- '[[frontend-react]]'
+- '[[backend-python-fastapi]]'
+- '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 27
+inbound_count: 32
 cited_by:
-  - "[[backend-python-fastapi]]"
-  - "[[c2spf-ai-agent-adoption-candidates]]"
-  - "[[c2spf-analytics]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[frontend-react]]"
-  - "[[microsoft-data-science-for-beginners]]"
-  - "[[microsoft-web-dev-for-beginners]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[portfolio]]"
-  - "[[seokgeun-kim]]"
+- '[[backend-python-fastapi]]'
+- '[[c2spf-ai-agent-adoption-candidates]]'
+- '[[c2spf-analytics]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[data-pipeline-bigquery]]'
+- '[[frontend-react]]'
+- '[[microsoft-data-science-for-beginners]]'
+- '[[microsoft-web-dev-for-beginners]]'
+- '[[pandas-dev-pandas]]'
+- '[[portfolio]]'
+- '[[seokgeun-kim]]'
 cited_by_count: 12
+aliases:
+- C2Spf Analytics Renewal
+- c2spf analytics renewal
+- 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)
 ---
 
 # 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)

@@ -1,25 +1,39 @@
 ---
-title: "mate-chat 프로젝트 위키 스냅샷 (2026-04-28)"
+title: mate-chat 프로젝트 위키 스냅샷 (2026-04-28)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/mate-chat-wiki-2026-04-28/"
-author: "석근 + LLM-maintained Mate Chat wiki"
+raw_path: raw/notes/mate-chat-wiki-2026-04-28/
+author: 석근 + LLM-maintained Mate Chat wiki
 date_published: 2026-04-07
 date_ingested: 2026-04-28
-tags: [matechat, project-wiki, obsidian, fastapi, flutter, launch, architecture, iap, websocket, i18n, clover]
+tags:
+- matechat
+- project-wiki
+- obsidian
+- fastapi
+- flutter
+- launch
+- architecture
+- iap
+- websocket
+- clover
 related:
-  - "[[matechat]]"
-  - "[[matechat-project-knowledge-map]]"
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[backend-python-fastapi]]"
-  - "[[ml-ai]]"
-  - "[[flutter]]"
-  - "[[token-economy]]"
+- '[[matechat]]'
+- '[[matechat-project-knowledge-map]]'
+- '[[seokgeun-kim-profile-2026]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[backend-python-fastapi]]'
+- '[[ml-ai]]'
+- '[[flutter]]'
+- '[[token-economy]]'
 confidence: high
 inbound_count: 26
+aliases:
+- Mate Chat Project Wiki 2026
+- mate chat project wiki 2026
+- mate-chat 프로젝트 위키 스냅샷 (2026-04-28)
 cited_by:
   - "[[kpi-recovery-loop]]"
   - "[[matechat]]"

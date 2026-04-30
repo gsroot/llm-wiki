@@ -1,29 +1,39 @@
 ---
-title: "컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)"
+title: 컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/2024-04-xpla-platform.md"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/20-projects/com2us-platform/2024-04-xpla-platform.md
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [com2us-platform, c2spf, xpla, blockchain, nestjs, typeorm, webview, SDK]
+tags:
+- com2us-platform
+- c2spf
+- xpla
+- blockchain
+- nestjs
+- SDK
 related:
-  - "[[com2us-platform]]"
-  - "[[xpla-platform]]"
-  - "[[seokgeun-kim]]"
-  - "[[blockchain-xpla]]"
+- '[[com2us-platform]]'
+- '[[xpla-platform]]'
+- '[[seokgeun-kim]]'
+- '[[blockchain-xpla]]'
 confidence: high
-inbound_count: 13
+inbound_count: 16
 cited_by:
-  - "[[blockchain-xpla]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[portfolio]]"
-  - "[[seokgeun-kim]]"
-  - "[[xpla-platform]]"
+- '[[blockchain-xpla]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[portfolio]]'
+- '[[seokgeun-kim]]'
+- '[[xpla-platform]]'
 cited_by_count: 6
+aliases:
+- C2Spf Xpla Platform
+- c2spf xpla platform
+- 컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)
 ---
 
 # 컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)

@@ -1,18 +1,27 @@
 ---
-title: "microsoft-for-beginners (시리즈)"
+title: microsoft-for-beginners (시리즈)
 type: entity
 entity_type: project
-tags: [microsoft-for-beginners, microsoft, microsoft-cloud-advocates, curriculum, 무료교육, project-based-learning, co-op-translator, github-copilot]
+tags:
+- microsoft-for-beginners
+- microsoft
+- microsoft-cloud-advocates
+- github-copilot
 related:
-  - "[[microsoft]]"
-  - "[[mcp]]"
-  - "[[context-engineering]]"
-  - "[[ml-ai]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[frontend-react]]"
+- '[[microsoft]]'
+- '[[mcp]]'
+- '[[context-engineering]]'
+- '[[ml-ai]]'
+- '[[data-pipeline-bigquery]]'
+- '[[frontend-react]]'
+- '[[microsoft-generative-ai-for-beginners]]'
+- '[[microsoft-ai-agents-for-beginners]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[microsoft-web-dev-for-beginners]]'
+- '[[microsoft-data-science-for-beginners]]'
 source_count: 5
 observed_source_refs: 18
-inbound_count: 31
+inbound_count: 32
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 11

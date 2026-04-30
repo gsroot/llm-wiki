@@ -1,26 +1,39 @@
 ---
-title: "karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)"
+title: karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)
 type: source
 source_type: article
-source_url: "https://github.com/karpathy/nanoGPT"
-raw_path: "raw/articles/karpathy-nanogpt/"
-author: "Andrej Karpathy"
+source_url: https://github.com/karpathy/nanoGPT
+raw_path: raw/articles/karpathy-nanogpt/
+author: Andrej Karpathy
 date_published: 2022-12-28
 date_ingested: 2026-04-27
-tags: [nanogpt, karpathy, gpt, LLM, 교육코드, deprecated, mingpt, 단일파일, mps]
+tags:
+- nanogpt
+- karpathy
+- gpt
+- LLM
+- 교육코드
+- deprecated
+- mingpt
+- 단일파일
+- mps
 related:
-  - "[[karpathy]]"
-  - "[[nanogpt]]"
-  - "[[nanochat]]"
-  - "[[autoresearch]]"
+- '[[karpathy]]'
+- '[[nanogpt]]'
+- '[[nanochat]]'
+- '[[autoresearch]]'
 confidence: high
-inbound_count: 6
+inbound_count: 8
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[harness]]"
-  - "[[karpathy]]"
-  - "[[nanogpt]]"
+- '[[agent-stack-evolution]]'
+- '[[harness]]'
+- '[[karpathy]]'
+- '[[nanogpt]]'
 cited_by_count: 4
+aliases:
+- Karpathy Nanogpt
+- karpathy nanogpt
+- karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)
 ---
 
 # karpathy/nanoGPT — 가장 단순한 GPT 학습 코드 (deprecated)

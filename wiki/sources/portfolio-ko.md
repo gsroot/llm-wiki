@@ -1,35 +1,40 @@
 ---
-title: "포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)"
+title: 포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/50-portfolio/portfolio-ko.md"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/50-portfolio/portfolio-ko.md
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [포트폴리오, detailed-portfolio, 내러티브, selected-work]
+tags:
+- 포트폴리오
 related:
-  - "[[seokgeun-kim]]"
-  - "[[com2us-platform]]"
-  - "[[c2spf-analytics]]"
-  - "[[portfolio-resume-ko]]"
+- '[[seokgeun-kim]]'
+- '[[com2us-platform]]'
+- '[[c2spf-analytics]]'
+- '[[portfolio-resume-ko]]'
 confidence: high
-inbound_count: 22
+inbound_count: 31
 cited_by:
-  - "[[backend-python-fastapi]]"
-  - "[[c2spf-analytics]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[devops-cicd]]"
-  - "[[frontend-react]]"
-  - "[[matechat]]"
-  - "[[ml-ai]]"
-  - "[[portfolio]]"
-  - "[[portfolio-resume-ko]]"
-  - "[[seokgeun-kim]]"
+- '[[backend-python-fastapi]]'
+- '[[c2spf-analytics]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[data-pipeline-bigquery]]'
+- '[[devops-cicd]]'
+- '[[frontend-react]]'
+- '[[matechat]]'
+- '[[ml-ai]]'
+- '[[portfolio]]'
+- '[[portfolio-resume-ko]]'
+- '[[seokgeun-kim]]'
 cited_by_count: 12
+aliases:
+- Portfolio Ko
+- portfolio ko
+- 포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)
 ---
 
 # 포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)
@@ -61,6 +66,8 @@ cited_by_count: 12
 - [[seokgeun-kim|석근 (이 위키 owner)]] · [[com2us-platform|컴투스플랫폼 c2spf]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[xpla-platform]]
 - [[backend-python-fastapi]] · [[frontend-react]] · [[data-pipeline-bigquery]] · [[devops-cicd]] · [[blockchain-xpla]] · [[ml-ai]]
 - [[portfolio-resume-ko]] — 동일 내용 이력서 형태(2페이지)
+- [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] — Selected Work 5선의 기술 스택(Vite·TanStack·Zustand·ag-grid·FastAPI·Spring Boot·Jenkins·Grafana 등)이 32 OSS 카탈로그의 6분류 의사결정 트리와 직접 매핑됨 (3축↔이 source 교차 인용)
+- [[matechat]] — 회사 BI(c2spf-analytics)와 사이드 사업화(MateChat)의 쌍 검증 모델은 [[portfolio]] hub의 핵심 메시지이며, 본 source에 나열된 5개 프로젝트가 그 검증 환경 (4축↔이 source 교차 인용)
 
 ## 메모
 

@@ -1,26 +1,50 @@
 ---
-title: "sqlalchemy/alembic — SQLAlchemy 진영 데이터베이스 마이그레이션 도구 (autogenerate · transactional DDL · branch merging · offline SQL)"
+title: sqlalchemy/alembic — SQLAlchemy 진영 데이터베이스 마이그레이션 도구 (autogenerate · transactional DDL · branch merging · offline SQL)
 type: source
 source_type: article
-source_url: "https://github.com/sqlalchemy/alembic"
-raw_path: "raw/articles/sqlalchemy-alembic/"
-author: "Mike Bayer (zzzeek) + SQLAlchemy team"
+source_url: https://github.com/sqlalchemy/alembic
+raw_path: raw/articles/sqlalchemy-alembic/
+author: Mike Bayer (zzzeek) + SQLAlchemy team
 date_published: 2018-11-27
 date_ingested: 2026-04-28
-tags: [alembic, migration, sqlalchemy, python, ddl, transactional-ddl, autogenerate, branch-merging, sql-script-output, batch-migration, sqlite-batch, mike-bayer, postgresql, mysql, sqlite, oracle, mssql, offline-migration, cookbook]
+tags:
+- alembic
+- migration
+- sqlalchemy
+- python
+- ddl
+- transactional-ddl
+- autogenerate
+- branch-merging
+- sql-script-output
+- batch-migration
+- sqlite-batch
+- mike-bayer
+- postgresql
+- mysql
+- sqlite
+- oracle
+- mssql
+- offline-migration
+- cookbook
 related:
-  - "[[sqlalchemy]]"
-  - "[[postgresql]]"
-  - "[[fastapi]]"
-  - "[[python-packaging]]"
-  - "[[uv]]"
+- '[[sqlalchemy]]'
+- '[[postgresql]]'
+- '[[fastapi]]'
+- '[[python-packaging]]'
+- '[[uv]]'
 confidence: high
-inbound_count: 7
+inbound_count: 8
 cited_by:
-  - "[[alembic]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[sqlite]]"
+- '[[alembic]]'
+- '[[backend-fastapi-stack]]'
+- '[[sqlite]]'
 cited_by_count: 3
+aliases:
+- Sqlalchemy Alembic
+- sqlalchemy alembic
+- sqlalchemy/alembic — SQLAlchemy 진영 데이터베이스 마이그레이션 도구 (autogenerate · transactional DDL · branch merging · offline SQL)
+- sqlalchemy/alembic — 데이터베이스 마이그레이션 도구
 ---
 
 # sqlalchemy/alembic — 데이터베이스 마이그레이션 도구

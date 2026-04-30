@@ -1,27 +1,56 @@
 ---
-title: "openai-agents-python (OpenAI Agents SDK)"
-aliases: [OpenAI Agents Python, OpenAI Agents SDK, openai-agents]
+title: openai-agents-python (OpenAI Agents SDK)
+aliases:
+- OpenAI Agents Python
+- OpenAI Agents SDK
+- openai-agents
 type: entity
 entity_type: tool
-tags: [openai-agents-python, openai-agents, openai, agents-SDK, python, multi-agent, agent-framework, MIT-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version, 18회차]
+tags:
+- openai-agents-python
+- openai-agents
+- openai
+- agents-SDK
+- python
+- multi-agent
+- agent-framework
+- MIT-license
+- mcp
+- uv
+- pyright
+- ruff
+- agents-md
+- plans-md
+- exec-plans
+- agent-skills
+- codex
+- handoffs
+- guardrails
+- human-in-the-loop
+- runtime-behavior-probe
+- implementation-strategy
+- 18회차
 related:
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[agent-patterns]]"
-  - "[[mcp]]"
-  - "[[uv]]"
-  - "[[python-packaging]]"
-  - "[[claude-agent-sdk]]"
-  - "[[agent-stack-evolution]]"
-  - "[[langgraph]]"
-  - "[[deepagents]]"
-  - "[[crewai]]"
-  - "[[pydantic-ai]]"
-  - "[[fastmcp]]"
-  - "[[openai-openai-agents-python]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[agent-patterns]]'
+- '[[mcp]]'
+- '[[uv]]'
+- '[[python-packaging]]'
+- '[[claude-agent-sdk]]'
+- '[[agent-stack-evolution]]'
+- '[[langgraph]]'
+- '[[deepagents]]'
+- '[[crewai]]'
+- '[[pydantic-ai]]'
+- '[[fastmcp]]'
+- '[[openai-openai-agents-python]]'
+- '[[seokgeun-stack-guide]]'
+- '[[langchain-ai-deepagents]]'
+- '[[crewaiinc-crewai]]'
+- '[[pydantic-pydantic-ai]]'
 source_count: 1
 observed_source_refs: 24
 inbound_count: 69

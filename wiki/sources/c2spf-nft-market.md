@@ -1,29 +1,40 @@
 ---
-title: "컴투스플랫폼 NFT 마켓 (2022-05-nft-market.md)"
+title: 컴투스플랫폼 NFT 마켓 (2022-05-nft-market.md)
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/portfolio/docs/20-projects/com2us-platform/2022-05-nft-market.md"
-author: "석근"
+raw_path: raw/notes/portfolio/docs/20-projects/com2us-platform/2022-05-nft-market.md
+author: 석근
 date_published: 2026-04-24
 date_ingested: 2026-04-24
-tags: [com2us-platform, c2spf, nft, blockchain, discord-bot, rust, smart-contract, 가스비절감]
+tags:
+- com2us-platform
+- c2spf
+- nft
+- blockchain
+- discord-bot
+- rust
+- smart-contract
 related:
-  - "[[com2us-platform]]"
-  - "[[xpla-platform]]"
-  - "[[seokgeun-kim]]"
-  - "[[blockchain-xpla]]"
+- '[[com2us-platform]]'
+- '[[xpla-platform]]'
+- '[[seokgeun-kim]]'
+- '[[blockchain-xpla]]'
 confidence: high
-inbound_count: 13
+inbound_count: 16
 cited_by:
-  - "[[blockchain-xpla]]"
-  - "[[career-timeline-seokgeun]]"
-  - "[[com2us-platform]]"
-  - "[[portfolio]]"
-  - "[[seokgeun-kim]]"
-  - "[[xpla-platform]]"
+- '[[blockchain-xpla]]'
+- '[[career-timeline-seokgeun]]'
+- '[[com2us-platform]]'
+- '[[portfolio]]'
+- '[[seokgeun-kim]]'
+- '[[xpla-platform]]'
 cited_by_count: 6
+aliases:
+- C2Spf Nft Market
+- c2spf nft market
+- 컴투스플랫폼 NFT 마켓 (2022-05-nft-market.md)
 ---
 
 # 컴투스플랫폼 NFT 마켓 (2022-05-nft-market.md)

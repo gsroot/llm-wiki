@@ -1,27 +1,37 @@
 ---
-title: "Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md"
+title: Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md
 type: source
 source_type: article
-source_url: "https://github.com/grafana/grafana"
-raw_path: "raw/articles/grafana-grafana/"
-author: "Grafana Labs"
+source_url: https://github.com/grafana/grafana
+raw_path: raw/articles/grafana-grafana/
+author: Grafana Labs
 date_published: 2026-04-28
 date_ingested: 2026-04-28
-tags: [grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차]
+tags:
+- grafana
+- observability
+- dashboard
+- agents-md
+- hierarchical-agents
+- 19회차
 related:
-  - "[[grafana]]"
-  - "[[prometheus]]"
-  - "[[observability-and-cicd-stack]]"
-  - "[[agent-skills]]"
+- '[[grafana]]'
+- '[[prometheus]]'
+- '[[observability-and-cicd-stack]]'
+- '[[agent-skills]]'
 confidence: high
-inbound_count: 11
+inbound_count: 14
 cited_by:
-  - "[[agent-skills]]"
-  - "[[devops-cicd]]"
-  - "[[grafana]]"
-  - "[[observability]]"
-  - "[[observability-and-cicd-stack]]"
+- '[[agent-skills]]'
+- '[[devops-cicd]]'
+- '[[grafana]]'
+- '[[observability]]'
+- '[[observability-and-cicd-stack]]'
 cited_by_count: 5
+aliases:
+- Grafana
+- Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md
+- grafana
 ---
 
 # Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md

@@ -1,19 +1,31 @@
 ---
-title: "DuckDB"
-aliases: [DuckDB, 덕디비, duck-db]
+title: DuckDB
+aliases:
+- DuckDB
+- 덕디비
+- duck-db
 type: entity
 entity_type: tool
-tags: [duckdb, embedded, sql, analytical, columnar, vectorized, in-process, MIT-license, c++17, olap, sqlite-for-olap, motherduck]
+tags:
+- duckdb
+- embedded
+- sql
+- analytical
+- columnar
+- vectorized
+- in-process
+- MIT-license
+- c++17
 related:
-  - "[[postgresql]]"
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[pyarrow]]"
-  - "[[apache-arrow]]"
-  - "[[parquet]]"
-  - "[[c2spf-analytics]]"
-  - "[[duckdb-duckdb]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[postgresql]]'
+- '[[pandas]]'
+- '[[polars]]'
+- '[[pyarrow]]'
+- '[[apache-arrow]]'
+- '[[parquet]]'
+- '[[c2spf-analytics]]'
+- '[[duckdb-duckdb]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 14
 inbound_count: 79

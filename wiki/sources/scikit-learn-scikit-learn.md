@@ -1,34 +1,50 @@
 ---
-title: "scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)"
+title: scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)
 type: source
 source_type: article
-source_url: "https://github.com/scikit-learn/scikit-learn"
-raw_path: "raw/articles/scikit-learn-scikit-learn/"
-author: "scikit-learn community (David Cournapeau 시작 / INRIA 인큐베이션 / NumFOCUS 재정 후원 / probabl.ai 풀타임 메인테이너 고용)"
+source_url: https://github.com/scikit-learn/scikit-learn
+raw_path: raw/articles/scikit-learn-scikit-learn/
+author: scikit-learn community (David Cournapeau 시작 / INRIA 인큐베이션 / NumFOCUS 재정 후원 / probabl.ai 풀타임 메인테이너 고용)
 date_published: 2010-02-01
 date_ingested: 2026-04-27
-tags: [scikit-learn, sklearn, machine-learning, python, classic-ml, fit-predict-transform, pipeline, estimator-api, slep, governance, numfocus, probabl, agents-md, AI-disclosure]
+tags:
+- scikit-learn
+- sklearn
+- machine-learning
+- python
+- classic-ml
+- fit-predict-transform
+- pipeline
+- slep
+- governance
+- numfocus
+- probabl
+- agents-md
 related:
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[com2us-platform]]"
+- '[[microsoft-ml-for-beginners]]'
+- '[[ml-ai]]'
+- '[[data-pipeline-bigquery]]'
+- '[[com2us-platform]]'
 confidence: high
-inbound_count: 18
+inbound_count: 21
 cited_by:
-  - "[[anthropics-skills]]"
-  - "[[c2spf-analytics]]"
-  - "[[claude-code]]"
-  - "[[com2us-platform]]"
-  - "[[github-spec-kit]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[microsoft-ml-for-beginners]]"
-  - "[[ml-ai]]"
-  - "[[numfocus]]"
-  - "[[python]]"
-  - "[[scikit-learn]]"
+- '[[anthropics-skills]]'
+- '[[c2spf-analytics]]'
+- '[[claude-code]]'
+- '[[com2us-platform]]'
+- '[[github-spec-kit]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[microsoft-ml-for-beginners]]'
+- '[[ml-ai]]'
+- '[[numfocus]]'
+- '[[python]]'
+- '[[scikit-learn]]'
 cited_by_count: 12
+aliases:
+- Scikit Learn
+- scikit learn
+- scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)
 ---
 
 # scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)

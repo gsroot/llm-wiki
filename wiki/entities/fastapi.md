@@ -1,34 +1,35 @@
 ---
-title: "FastAPI"
-aliases: [FastAPI, 패스트API, fast-api]
+title: FastAPI
+aliases:
+- FastAPI
+- 패스트API
+- fast-api
 type: entity
 entity_type: tool
 tags:
-  - fastapi
-  - python
-  - web-framework
-  - asgi
-  - openapi
-  - pydantic
-  - starlette
-  - tiangolo
-  - agent-skills
-  - SKILL.md
-  - dependency-injection
-  - type-hints
+- fastapi
+- python
+- openapi
+- pydantic
+- starlette
+- tiangolo
+- agent-skills
+- SKILL.md
+- dependency-injection
+- type-hints
 related:
-  - "[[tiangolo]]"
-  - "[[backend-python-fastapi]]"
-  - "[[agent-skills]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-kim]]"
-  - "[[pydantic]]"
-  - "[[sqlalchemy]]"
-  - "[[postgresql]]"
-  - "[[ruff]]"
-  - "[[uv]]"
-  - "[[fastapi-fastapi]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[tiangolo]]'
+- '[[backend-python-fastapi]]'
+- '[[agent-skills]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-kim]]'
+- '[[pydantic]]'
+- '[[sqlalchemy]]'
+- '[[postgresql]]'
+- '[[ruff]]'
+- '[[uv]]'
+- '[[fastapi-fastapi]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 22
 inbound_count: 84

@@ -1,23 +1,67 @@
 ---
-title: "ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)"
-aliases: [ML AI, 머신러닝, machine-learning, AI ML]
+title: ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)
+aliases:
+- ML AI
+- 머신러닝
+- machine-learning
+- AI ML
 type: concept
 category: ai
-tags: [ml, AI, automl, gcp, ai-platform-pipeline, langgraph, langchain, openai, LLM, mlops, prediction, pandas, scikit-learn, sklearn, dataframe, slep, fit-predict, openai-cookbook, openai-agents-python, embeddings, agents-SDK, prompt-caching, gpt-5, gpt-oss, multi-agent-framework, guardrails, human-in-the-loop, deepagents, crewai, pydantic-ai, pandas-ai, 18회차]
+tags:
+- ml
+- AI
+- langgraph
+- langchain
+- openai
+- LLM
+- pandas
+- scikit-learn
+- sklearn
+- dataframe
+- slep
+- openai-cookbook
+- openai-agents-python
+- embeddings
+- agents-SDK
+- prompt-caching
+- gpt-5
+- gpt-oss
+- guardrails
+- human-in-the-loop
+- deepagents
+- crewai
+- pydantic-ai
+- pandas-ai
+- 18회차
 related:
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[mcp]]"
-  - "[[pandas]]"
-  - "[[scikit-learn]]"
-  - "[[openai]]"
-  - "[[openai-cookbook]]"
-  - "[[openai-agents-python]]"
-  - "[[deepagents]]"
-  - "[[crewai]]"
-  - "[[pydantic-ai]]"
-  - "[[pandas-ai]]"
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[data-pipeline-bigquery]]'
+- '[[mcp]]'
+- '[[pandas]]'
+- '[[scikit-learn]]'
+- '[[openai]]'
+- '[[openai-cookbook]]'
+- '[[openai-agents-python]]'
+- '[[deepagents]]'
+- '[[crewai]]'
+- '[[pydantic-ai]]'
+- '[[pandas-ai]]'
+- '[[portfolio-seed]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-ko]]'
+- '[[pandas-dev-pandas]]'
+- '[[scikit-learn-scikit-learn]]'
+- '[[openai-openai-cookbook]]'
+- '[[microsoft-lightgbm]]'
+- '[[langchain-ai-langchain]]'
+- '[[langchain-ai-langgraph]]'
+- '[[jlowin-fastmcp]]'
+- '[[langchain-ai-deepagents]]'
+- '[[crewaiinc-crewai]]'
+- '[[pydantic-pydantic-ai]]'
+- '[[sinaptik-ai-pandas-ai]]'
+- '[[openai-openai-agents-python]]'
 source_count: 15
 observed_source_refs: 48
 inbound_count: 96

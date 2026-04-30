@@ -1,22 +1,31 @@
 ---
-title: "DeepAgents"
-aliases: [DeepAgents, 딥에이전츠]
+title: DeepAgents
+aliases:
+- DeepAgents
+- 딥에이전츠
 type: entity
 entity_type: tool
 related:
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[fastmcp]]"
-  - "[[agent-skills]]"
-  - "[[agent-patterns]]"
-  - "[[langchain-ai-deepagents]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[fastmcp]]'
+- '[[agent-skills]]'
+- '[[agent-patterns]]'
+- '[[langchain-ai-deepagents]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 2
 inbound_count: 25
 created: 2026-04-28
 updated: 2026-04-28
-tags: [deepagents, langchain-AI, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
+tags:
+- deepagents
+- agent-harness
+- planning
+- filesystem
+- sub-agents
+- claude-code-pattern
+- 18회차
 cited_by_count: 17
 ---
 

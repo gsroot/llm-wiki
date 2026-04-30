@@ -1,5 +1,5 @@
 ---
-title: "CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS"
+title: CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS
 type: source
 source_type: github_repo
 source_url: https://github.com/crewAIInc/crewAI
@@ -8,22 +8,35 @@ author: CrewAI Inc. (crewAIInc)
 date_published: 2024
 date_ingested: 2026-04-28
 related:
-  - "[[crewai]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[agent-patterns]]"
-  - "[[oss-saas-dual]]"
+- '[[crewai]]'
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[agent-patterns]]'
+- '[[oss-saas-dual]]'
 confidence: high
-tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차]
-inbound_count: 10
+tags:
+- crewai
+- multi-agent
+- role-playing
+- flows
+- crews
+- langchain-independent
+- oss-saas-dual
+- control-plane
+- 18회차
+inbound_count: 14
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-patterns]]"
-  - "[[crewai]]"
-  - "[[ml-ai]]"
-  - "[[openai-agents-python]]"
-  - "[[oss-saas-dual]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-patterns]]'
+- '[[crewai]]'
+- '[[ml-ai]]'
+- '[[openai-agents-python]]'
+- '[[oss-saas-dual]]'
 cited_by_count: 6
+aliases:
+- CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS
+- Crewaiinc Crewai
+- crewaiinc crewai
 ---
 
 # CrewAI — LangChain 독립 멀티 에이전트 프레임워크 + Crew Control Plane SaaS

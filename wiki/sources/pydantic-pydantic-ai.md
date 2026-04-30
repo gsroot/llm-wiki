@@ -1,5 +1,5 @@
 ---
-title: "Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점"
+title: Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점
 type: source
 source_type: github_repo
 source_url: https://github.com/pydantic/pydantic-ai
@@ -8,24 +8,39 @@ author: Pydantic Services Inc. (Samuel Colvin et al.)
 date_published: 2024
 date_ingested: 2026-04-28
 related:
-  - "[[pydantic-ai]]"
-  - "[[pydantic]]"
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[fastmcp]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
+- '[[pydantic-ai]]'
+- '[[pydantic]]'
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[fastmcp]]'
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
 confidence: high
-tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, 18회차]
-inbound_count: 11
+tags:
+- pydantic-ai
+- type-safe-agent
+- model-agnostic
+- durable-execution
+- mcp
+- a2a
+- logfire
+- agents-md
+- claude-md
+- 18회차
+inbound_count: 15
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[ml-ai]]"
-  - "[[openai-agents-python]]"
-  - "[[pydantic-ai]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[ml-ai]]'
+- '[[openai-agents-python]]'
+- '[[pydantic-ai]]'
 cited_by_count: 6
+aliases:
+- Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점
+- Pydantic Ai
+- pydantic ai
+- pydantic-ai
 ---
 
 # Pydantic AI — Pydantic 팀이 만든 type-safe Agent Framework + 11가지 강점

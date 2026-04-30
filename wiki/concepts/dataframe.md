@@ -1,15 +1,24 @@
 ---
-title: "DataFrame"
-aliases: [DataFrame, 데이터프레임, 데이터 프레임, df]
+title: DataFrame
+aliases:
+- DataFrame
+- 데이터프레임
+- 데이터 프레임
+- df
 type: concept
 category: data
-tags: [dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data]
+tags:
+- dataframe
+- pandas
+- polars
+- dask
+- 데이터분석
 related:
-  - "[[pandas]]"
-  - "[[copy-on-write]]"
-  - "[[ml-ai]]"
-  - "[[data-pipeline-bigquery]]"
-  - "[[pandas-dev-pandas]]"
+- '[[pandas]]'
+- '[[copy-on-write]]'
+- '[[ml-ai]]'
+- '[[data-pipeline-bigquery]]'
+- '[[pandas-dev-pandas]]'
 source_count: 1
 observed_source_refs: 3
 inbound_count: 15

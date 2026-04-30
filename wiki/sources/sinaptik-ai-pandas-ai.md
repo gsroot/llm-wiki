@@ -1,5 +1,5 @@
 ---
-title: "PandasAI — DataFrame을 자연어로 대화하는 라이브러리"
+title: PandasAI — DataFrame을 자연어로 대화하는 라이브러리
 type: source
 source_type: github_repo
 source_url: https://github.com/sinaptik-ai/pandas-ai
@@ -8,19 +8,29 @@ author: Sinaptik AI
 date_published: 2023
 date_ingested: 2026-04-28
 related:
-  - "[[pandas-ai]]"
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[langchain]]"
+- '[[pandas-ai]]'
+- '[[pandas]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[langchain]]'
 confidence: medium
-tags: [pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차]
-inbound_count: 7
+tags:
+- pandas-ai
+- conversational-data
+- litellm
+- dataframe
+- bi-chatbot
+- 18회차
+inbound_count: 8
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[ml-ai]]"
-  - "[[pandas-ai]]"
+- '[[agent-frameworks-matrix]]'
+- '[[ml-ai]]'
+- '[[pandas-ai]]'
 cited_by_count: 3
+aliases:
+- PandasAI — DataFrame을 자연어로 대화하는 라이브러리
+- Sinaptik Ai Pandas
+- sinaptik ai pandas
 ---
 
 # PandasAI — DataFrame을 자연어로 대화하는 라이브러리

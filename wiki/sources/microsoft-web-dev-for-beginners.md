@@ -1,26 +1,36 @@
 ---
-title: "microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문"
+title: microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문
 type: source
 source_type: article
-source_url: "https://github.com/microsoft/Web-Dev-For-Beginners"
-raw_path: "raw/articles/microsoft-web-dev-for-beginners/"
-author: "Microsoft Cloud Advocates"
+source_url: https://github.com/microsoft/Web-Dev-For-Beginners
+raw_path: raw/articles/microsoft-web-dev-for-beginners/
+author: Microsoft Cloud Advocates
 date_published: 2020-11-10
 date_ingested: 2026-04-27
-tags: [web-dev, microsoft, microsoft-for-beginners, html, css, javascript, vanilla-js, project-based, accessibility, github-copilot]
+tags:
+- microsoft
+- microsoft-for-beginners
+- css
+- javascript
+- accessibility
+- github-copilot
 related:
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[frontend-react]]"
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[frontend-react]]'
 confidence: high
-inbound_count: 9
+inbound_count: 11
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[c2spf-analytics-renewal]]"
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
+- '[[agent-stack-evolution]]'
+- '[[c2spf-analytics-renewal]]'
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[microsoft-generative-ai-for-beginners]]'
 cited_by_count: 5
+aliases:
+- Microsoft Web Dev For Beginners
+- microsoft web dev for beginners
+- microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문
 ---
 
 # microsoft/Web-Dev-For-Beginners — 12 weeks, 24 Lessons 웹 개발 입문

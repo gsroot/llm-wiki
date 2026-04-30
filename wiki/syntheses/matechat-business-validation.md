@@ -1,29 +1,40 @@
 ---
-title: "MateChat 사업 검증 카탈로그"
+title: MateChat 사업 검증 카탈로그
 type: synthesis
 category: guide
-aliases: [MateChat 사업 검증, matechat-business-validation, MateChat BizVal, 사업 검증 sub-cluster, 4축 사업 검증]
+aliases:
+- MateChat 사업 검증
+- matechat-business-validation
+- MateChat BizVal
+- 사업 검증 sub-cluster
+- 4축 사업 검증
 sources:
-  - "[[matechat-30day-validation-loop]]"
-  - "[[seokgeun-matechat-validation]]"
-  - "[[mate-chat-project-wiki-2026]]"
-  - "[[seokgeun-mate-chat]]"
+- '[[matechat-30day-validation-loop]]'
+- '[[seokgeun-matechat-validation]]'
+- '[[mate-chat-project-wiki-2026]]'
+- '[[seokgeun-mate-chat]]'
 related:
-  - "[[matechat]]"
-  - "[[matechat-30day-validation-loop]]"
-  - "[[matechat-launch-metrics-ledger]]"
-  - "[[seokgeun-mate-chat]]"
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[parental-leave-2026-operating-plan]]"
-  - "[[portfolio]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[matechat]]'
+- '[[matechat-30day-validation-loop]]'
+- '[[matechat-launch-metrics-ledger]]'
+- '[[seokgeun-mate-chat]]'
+- '[[seokgeun-kim]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[parental-leave-2026-operating-plan]]'
+- '[[portfolio]]'
+- '[[llm-infra-meta-cluster]]'
 created: 2026-04-29
 updated: 2026-04-29
-tags: [matechat, 사업검증, business-validation, 4축, 출시후, post-launch, retention, conversion, marketing, 49회차]
+tags:
+- matechat
+- 4축
+- post-launch
+- retention
+- conversion
+- 49회차
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "v1.0.0 출시 직후부터 측정 시작. 출시 전까지는 측정 SOP·예상 KPI·실험 설계 패턴만 채운 가설 카탈로그. 실측값은 [[matechat-30day-validation-loop]] D+1~D+30 갱신, 그 이후는 본 페이지 영역별 표에 기록."
+verification_notes: v1.0.0 출시 직후부터 측정 시작. 출시 전까지는 측정 SOP·예상 KPI·실험 설계 패턴만 채운 가설 카탈로그. 실측값은 [[matechat-30day-validation-loop]] D+1~D+30 갱신, 그 이후는 본 페이지 영역별 표에 기록.
 cited_by_count: 9
 inbound_count: 16
 ---

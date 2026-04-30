@@ -1,16 +1,27 @@
 ---
-title: "Andrej Karpathy"
+title: Andrej Karpathy
 type: entity
 entity_type: person
-tags: [karpathy, AI, LLM, openai, tesla, 교육콘텐츠, nanogpt, nanochat, autoresearch, mingpt, zero-to-hero]
+tags:
+- karpathy
+- AI
+- LLM
+- openai
+- nanogpt
+- nanochat
+- autoresearch
+- mingpt
 related:
-  - "[[autoresearch]]"
-  - "[[autonomous-research-loop]]"
-  - "[[nanogpt]]"
-  - "[[nanochat]]"
+- '[[autoresearch]]'
+- '[[autonomous-research-loop]]'
+- '[[nanogpt]]'
+- '[[nanochat]]'
+- '[[karpathy-autoresearch]]'
+- '[[karpathy-nanogpt]]'
+- '[[karpathy-nanochat]]'
 source_count: 3
 observed_source_refs: 15
-inbound_count: 32
+inbound_count: 33
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 17

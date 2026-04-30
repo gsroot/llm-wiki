@@ -1,16 +1,28 @@
 ---
-title: "토큰 경제학 (Token Economy)"
-aliases: [Token Economy, 토큰 경제학, 토큰 경제]
+title: 토큰 경제학 (Token Economy)
+aliases:
+- Token Economy
+- 토큰 경제학
+- 토큰 경제
 type: concept
 category: ai
-tags: [토큰경제학, token-economy, LLM, 비용, 컨텍스트, context, prompt-caching, claude-cookbooks, claude-agent-SDK]
+tags:
+- 토큰경제학
+- LLM
+- 컨텍스트
+- context
+- prompt-caching
+- claude-cookbooks
+- claude-agent-SDK
 related:
-  - "[[harness]]"
-  - "[[context-engineering]]"
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[anthropic]]"
-  - "[[agent-patterns]]"
+- '[[harness]]'
+- '[[context-engineering]]'
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[anthropic]]'
+- '[[agent-patterns]]'
+- '[[claude-code-master-guide]]'
+- '[[anthropics-claude-cookbooks]]'
 source_count: 2
 observed_source_refs: 24
 inbound_count: 52

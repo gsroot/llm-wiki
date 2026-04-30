@@ -1,18 +1,26 @@
 ---
-title: "Apache Parquet"
-aliases: [Apache Parquet, 파케이, 파퀘]
+title: Apache Parquet
+aliases:
+- Apache Parquet
+- 파케이
+- 파퀘
 type: entity
 entity_type: tool
-tags: [parquet, columnar, on-disk, file-format, dremel, thrift, compression, encoding, hadoop, asf, big-data]
+tags:
+- parquet
+- columnar
+- file-format
+- dremel
+- asf
 related:
-  - "[[apache-arrow]]"
-  - "[[pyarrow]]"
-  - "[[duckdb]]"
-  - "[[polars]]"
-  - "[[pandas]]"
-  - "[[apache-foundation]]"
-  - "[[c2spf-analytics]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[apache-arrow]]'
+- '[[pyarrow]]'
+- '[[duckdb]]'
+- '[[polars]]'
+- '[[pandas]]'
+- '[[apache-foundation]]'
+- '[[c2spf-analytics]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 6
 inbound_count: 46

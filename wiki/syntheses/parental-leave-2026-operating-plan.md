@@ -1,22 +1,33 @@
 ---
-title: "2026 육아휴직 1년 운영 계획"
+title: 2026 육아휴직 1년 운영 계획
 type: synthesis
-category: guide
-aliases: [육아휴직 운영 계획, parental-leave-2026, 2026 운영 계획, 1년 휴직 계획]
-tags: [육아휴직, 운영계획, 가족, matechat, 사업화, 시간예산, burnout-risk, operating-plan, 48회차]
+category: operating-log
+aliases:
+- 육아휴직 운영 계획
+- parental-leave-2026
+- 2026 운영 계획
+- 1년 휴직 계획
+tags:
+- 육아휴직
+- 가족
+- matechat
+- 사업화
+- 시간예산
+- burnout-risk
+- 48회차
 sources:
-  - "[[seokgeun-kim-profile-2026]]"
-  - "[[mate-chat-project-wiki-2026]]"
+- '[[seokgeun-kim-profile-2026]]'
+- '[[mate-chat-project-wiki-2026]]'
 related:
-  - "[[seokgeun-kim]]"
-  - "[[seokgeun-operating-profile-2026]]"
-  - "[[matechat]]"
-  - "[[portfolio]]"
+- '[[seokgeun-kim]]'
+- '[[seokgeun-operating-profile-2026]]'
+- '[[matechat]]'
+- '[[portfolio]]'
 created: 2026-04-29
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
-verification_notes: "월간 회고 시 진행률·번아웃 신호·MateChat 검증 결과 갱신. 2026-12 종료 시점 최종 회수."
+verification_notes: 월간 회고 시 진행률·번아웃 신호·MateChat 검증 결과 갱신. 2026-12 종료 시점 최종 회수.
 cited_by_count: 10
 inbound_count: 18
 ---

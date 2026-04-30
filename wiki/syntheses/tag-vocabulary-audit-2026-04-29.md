@@ -1,19 +1,27 @@
 ---
-title: "태그 vocabulary 감사 — 2026-04-29"
+title: 태그 vocabulary 감사 — 2026-04-29
 type: synthesis
-category: audit
-tags: [tag-audit, vocabulary, obsidian, RAG, metadata, governance, 55회차]
-aliases: [태그 감사, tag-vocabulary-audit, 태그 과밀 리포트, tag vocabulary audit]
+category: operating-log
+tags:
+- obsidian
+- RAG
+- governance
+- 55회차
+aliases:
+- 태그 감사
+- tag-vocabulary-audit
+- 태그 과밀 리포트
+- tag vocabulary audit
 sources:
-  - "[[llm-wiki-pattern]]"
-  - "[[using-llm-wiki-as-rag]]"
+- '[[llm-wiki-pattern]]'
+- '[[using-llm-wiki-as-rag]]'
 related:
-  - "[[llm-wiki-pattern]]"
-  - "[[rag]]"
-  - "[[agent-skills]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[matechat]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[llm-wiki-pattern]]'
+- '[[rag]]'
+- '[[agent-skills]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[matechat]]'
+- '[[seokgeun-stack-guide]]'
 created: 2026-04-29
 updated: 2026-04-29
 cited_by_count: 5

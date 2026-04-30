@@ -1,47 +1,59 @@
 ---
-title: "anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스"
+title: anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스
 type: source
 source_type: article
-source_url: "https://github.com/anthropics/skills"
-raw_path: "raw/articles/anthropics-skills/"
-author: "Anthropic"
+source_url: https://github.com/anthropics/skills
+raw_path: raw/articles/anthropics-skills/
+author: Anthropic
 date_published: 2026-04
 date_ingested: 2026-04-27
-tags: [agent-skills, anthropic, skills, claude-code, marketplace, plugin, progressive-disclosure, skill-creator, mcp-builder, agentskills.io]
+tags:
+- agent-skills
+- anthropic
+- skills
+- claude-code
+- marketplace
+- progressive-disclosure
+- skill-creator
+- agentskills.io
 related:
-  - "[[claude-code]]"
-  - "[[agent-skills]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[mcp]]"
-  - "[[harness]]"
-  - "[[context-engineering]]"
-  - "[[token-economy]]"
+- '[[claude-code]]'
+- '[[agent-skills]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[mcp]]'
+- '[[harness]]'
+- '[[context-engineering]]'
+- '[[token-economy]]'
 confidence: high
-inbound_count: 77
+inbound_count: 82
 cited_by:
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropic]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[claude-code]]"
-  - "[[fastapi]]"
-  - "[[fastapi-fastapi]]"
-  - "[[flutter]]"
-  - "[[flutter-flutter]]"
-  - "[[github]]"
-  - "[[github-spec-kit]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[mcp]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[scikit-learn]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[slash-commands-vs-agent-skills]]"
-  - "[[spec-kit]]"
+- '[[agent-skills]]'
+- '[[agent-stack-evolution]]'
+- '[[anthropic]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[backend-fastapi-stack]]'
+- '[[claude-code]]'
+- '[[fastapi]]'
+- '[[fastapi-fastapi]]'
+- '[[flutter]]'
+- '[[flutter-flutter]]'
+- '[[github]]'
+- '[[github-spec-kit]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[llm-wiki-pattern]]'
+- '[[mcp]]'
+- '[[openai-openai-cookbook]]'
+- '[[pandas-dev-pandas]]'
+- '[[scikit-learn]]'
+- '[[scikit-learn-scikit-learn]]'
+- '[[slash-commands-vs-agent-skills]]'
+- '[[spec-kit]]'
 cited_by_count: 22
+aliases:
+- Anthropics Skills
+- anthropics skills
+- anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스
 ---
 
 # anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스

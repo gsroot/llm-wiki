@@ -1,27 +1,36 @@
 ---
-title: "Obsidian 사용 가이드"
+title: Obsidian 사용 가이드
 type: source
 source_type: note
-source_url: ""
+source_url: ''
 source_scope: local
-raw_path: "raw/notes/OBSIDIAN_GUIDE.md"
-author: "석근 (개인 정리)"
+raw_path: raw/notes/OBSIDIAN_GUIDE.md
+author: 석근 (개인 정리)
 date_published: 2026-04-07
 date_ingested: 2026-04-15
-tags: [obsidian, 지식관리, knowledge-management, 마크다운, markdown, notion, 업무생산성]
+tags:
+- obsidian
+- 지식관리
+- knowledge-management
+- 마크다운
+- markdown
 related:
-  - "[[obsidian]]"
-  - "[[llm-wiki-pattern]]"
-  - "[[obsidian-web-clipper]]"
+- '[[obsidian]]'
+- '[[llm-wiki-pattern]]'
+- '[[obsidian-web-clipper]]'
 confidence: high
-inbound_count: 8
+inbound_count: 10
 cited_by:
-  - "[[claude-code-master-guide]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mcp]]"
-  - "[[obsidian]]"
-  - "[[seokgeun-kim]]"
+- '[[claude-code-master-guide]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[mcp]]'
+- '[[obsidian]]'
+- '[[seokgeun-kim]]'
 cited_by_count: 5
+aliases:
+- Obsidian Guide
+- Obsidian 사용 가이드
+- obsidian guide
 ---
 
 # Obsidian 사용 가이드

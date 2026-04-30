@@ -1,32 +1,44 @@
 ---
-title: "microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문"
+title: microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문
 type: source
 source_type: article
-source_url: "https://github.com/microsoft/ai-agents-for-beginners"
-raw_path: "raw/articles/microsoft-ai-agents-for-beginners/"
-author: "Microsoft Cloud Advocates"
+source_url: https://github.com/microsoft/ai-agents-for-beginners
+raw_path: raw/articles/microsoft-ai-agents-for-beginners/
+author: Microsoft Cloud Advocates
 date_published: 2024-11-28
 date_ingested: 2026-04-27
-tags: [ai-agents, microsoft, microsoft-for-beginners, microsoft-agent-framework, azure-ai-foundry, mcp, a2a, nlweb, context-engineering, agent-memory]
+tags:
+- ai-agents
+- microsoft
+- microsoft-for-beginners
+- mcp
+- a2a
+- nlweb
+- context-engineering
+- agent-memory
 related:
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[mcp]]"
-  - "[[context-engineering]]"
-  - "[[harness]]"
-  - "[[autonomous-research-loop]]"
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[mcp]]'
+- '[[context-engineering]]'
+- '[[harness]]'
+- '[[autonomous-research-loop]]'
 confidence: high
-inbound_count: 23
+inbound_count: 26
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[context-engineering]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[mcp]]"
-  - "[[microsoft]]"
-  - "[[microsoft-for-beginners]]"
-  - "[[microsoft-generative-ai-for-beginners]]"
+- '[[agent-stack-evolution]]'
+- '[[context-engineering]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[mcp]]'
+- '[[microsoft]]'
+- '[[microsoft-for-beginners]]'
+- '[[microsoft-generative-ai-for-beginners]]'
 cited_by_count: 8
+aliases:
+- Microsoft Ai Agents For Beginners
+- microsoft ai agents for beginners
+- microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문
 ---
 
 # microsoft/ai-agents-for-beginners — 12+ Lessons AI 에이전트 입문

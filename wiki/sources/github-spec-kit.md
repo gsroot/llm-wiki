@@ -1,52 +1,73 @@
 ---
-title: "github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)"
+title: github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)
 type: source
 source_type: article
-source_url: "https://github.com/github/spec-kit"
-raw_path: "raw/articles/github-spec-kit/"
-author: "GitHub"
+source_url: https://github.com/github/spec-kit
+raw_path: raw/articles/github-spec-kit/
+author: GitHub
 date_published: 2026-04-24
 date_ingested: 2026-04-27
-tags: [spec-kit, github, spec-driven-development, sdd, specify-cli, slash-command, agent-skills, claude-code, copilot, gemini, codex, cursor, constitution, prd, prompt-engineering, harness, agent-patterns]
+tags:
+- spec-kit
+- github
+- spec-driven-development
+- sdd
+- specify-cli
+- slash-command
+- agent-skills
+- claude-code
+- copilot
+- gemini
+- codex
+- cursor
+- constitution
+- prd
+- prompt-engineering
+- harness
+- agent-patterns
 related:
-  - "[[github]]"
-  - "[[spec-kit]]"
-  - "[[spec-driven-development]]"
-  - "[[claude-code]]"
-  - "[[claude-agent-sdk]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[agent-patterns]]"
-  - "[[anthropic]]"
-  - "[[anthropics-skills]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[context-engineering]]"
+- '[[github]]'
+- '[[spec-kit]]'
+- '[[spec-driven-development]]'
+- '[[claude-code]]'
+- '[[claude-agent-sdk]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[agent-patterns]]'
+- '[[anthropic]]'
+- '[[anthropics-skills]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[context-engineering]]'
 confidence: high
-inbound_count: 67
+inbound_count: 74
 cited_by:
-  - "[[agent-patterns]]"
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-claude-cookbooks]]"
-  - "[[anthropics-skills]]"
-  - "[[astral-sh-uv]]"
-  - "[[claude-code]]"
-  - "[[fastapi]]"
-  - "[[fastapi-fastapi]]"
-  - "[[flutter]]"
-  - "[[flutter-flutter]]"
-  - "[[github]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[openai-openai-cookbook]]"
-  - "[[pandas-dev-pandas]]"
-  - "[[pdep]]"
-  - "[[scikit-learn]]"
-  - "[[scikit-learn-scikit-learn]]"
-  - "[[spec-driven-development]]"
-  - "[[spec-kit]]"
-  - "[[uv]]"
+- '[[agent-patterns]]'
+- '[[agent-skills]]'
+- '[[agent-stack-evolution]]'
+- '[[anthropics-claude-cookbooks]]'
+- '[[anthropics-skills]]'
+- '[[astral-sh-uv]]'
+- '[[claude-code]]'
+- '[[fastapi]]'
+- '[[fastapi-fastapi]]'
+- '[[flutter]]'
+- '[[flutter-flutter]]'
+- '[[github]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[openai-openai-cookbook]]'
+- '[[pandas-dev-pandas]]'
+- '[[pdep]]'
+- '[[scikit-learn]]'
+- '[[scikit-learn-scikit-learn]]'
+- '[[spec-driven-development]]'
+- '[[spec-kit]]'
+- '[[uv]]'
 cited_by_count: 22
+aliases:
+- Github Spec Kit
+- github spec kit
+- github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)
 ---
 
 # github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)

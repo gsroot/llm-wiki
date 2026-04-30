@@ -1,29 +1,44 @@
 ---
-title: "karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인"
+title: karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인
 type: source
 source_type: article
-source_url: "https://github.com/karpathy/nanochat"
-raw_path: "raw/articles/karpathy-nanochat/"
-author: "Andrej Karpathy"
+source_url: https://github.com/karpathy/nanochat
+raw_path: raw/articles/karpathy-nanochat/
+author: Andrej Karpathy
 date_published: 2025-10-13
 date_ingested: 2026-04-27
-tags: [nanochat, karpathy, LLM, gpt2-speedrun, depth-dial, 컴퓨트옵티멀, val-bpb, dclm-core, sft, rl, autoresearch]
+tags:
+- nanochat
+- karpathy
+- LLM
+- gpt2-speedrun
+- depth-dial
+- 컴퓨트옵티멀
+- val-bpb
+- dclm-core
+- sft
+- rl
+- autoresearch
 related:
-  - "[[karpathy]]"
-  - "[[nanochat]]"
-  - "[[nanogpt]]"
-  - "[[autoresearch]]"
-  - "[[autonomous-research-loop]]"
-  - "[[ml-ai]]"
+- '[[karpathy]]'
+- '[[nanochat]]'
+- '[[nanogpt]]'
+- '[[autoresearch]]'
+- '[[autonomous-research-loop]]'
+- '[[ml-ai]]'
 confidence: high
-inbound_count: 8
+inbound_count: 11
 cited_by:
-  - "[[agent-stack-evolution]]"
-  - "[[autonomous-research-loop]]"
-  - "[[harness]]"
-  - "[[karpathy]]"
-  - "[[nanochat]]"
+- '[[agent-stack-evolution]]'
+- '[[autonomous-research-loop]]'
+- '[[harness]]'
+- '[[karpathy]]'
+- '[[nanochat]]'
 cited_by_count: 5
+aliases:
+- Karpathy Nanochat
+- karpathy nanochat
+- karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인
 ---
 
 # karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인

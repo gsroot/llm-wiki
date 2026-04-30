@@ -1,20 +1,32 @@
 ---
-title: "Polars"
-aliases: [Polars, 폴라스]
+title: Polars
+aliases:
+- Polars
+- 폴라스
 type: entity
 entity_type: tool
-tags: [polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3, immutable, pola-rs]
+tags:
+- polars
+- dataframe
+- rust
+- lazy-evaluation
+- query-optimization
+- apache-arrow
+- streaming
+- simd
+- multi-threaded
+- pyo3
 related:
-  - "[[pandas]]"
-  - "[[duckdb]]"
-  - "[[pyarrow]]"
-  - "[[apache-arrow]]"
-  - "[[copy-on-write]]"
-  - "[[dataframe]]"
-  - "[[lazy-evaluation]]"
-  - "[[c2spf-analytics]]"
-  - "[[pola-rs-polars]]"
-  - "[[seokgeun-stack-guide]]"
+- '[[pandas]]'
+- '[[duckdb]]'
+- '[[pyarrow]]'
+- '[[apache-arrow]]'
+- '[[copy-on-write]]'
+- '[[dataframe]]'
+- '[[lazy-evaluation]]'
+- '[[c2spf-analytics]]'
+- '[[pola-rs-polars]]'
+- '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 14
 inbound_count: 80

@@ -1,42 +1,64 @@
 ---
-title: "flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준"
+title: flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준
 type: source
 source_type: article
-source_url: "https://github.com/flutter/flutter"
-raw_path: "raw/articles/flutter-flutter/"
-author: "Google (Flutter Team)"
+source_url: https://github.com/flutter/flutter
+raw_path: raw/articles/flutter-flutter/
+author: Google (Flutter Team)
 date_published: 2015-03-06
 date_ingested: 2026-04-27
-tags: [flutter, dart, google, multiplatform, ui-toolkit, mobile, web, desktop, skia, impeller, hot-reload, agent-skills, agentskills.io, vendor-neutral, progressive-disclosure, token-budget, agent-artifacts, claude-code, gemini, copilot]
+tags:
+- flutter
+- dart
+- google
+- multiplatform
+- ui-toolkit
+- mobile
+- web
+- desktop
+- skia
+- impeller
+- hot-reload
+- agent-skills
+- agentskills.io
+- vendor-neutral
+- progressive-disclosure
+- claude-code
+- gemini
+- copilot
 related:
-  - "[[flutter]]"
-  - "[[dart]]"
-  - "[[google]]"
-  - "[[agent-skills]]"
-  - "[[harness]]"
-  - "[[anthropics-skills]]"
-  - "[[github-spec-kit]]"
-  - "[[claude-code]]"
-  - "[[token-economy]]"
-  - "[[context-engineering]]"
-  - "[[github]]"
+- '[[flutter]]'
+- '[[dart]]'
+- '[[google]]'
+- '[[agent-skills]]'
+- '[[harness]]'
+- '[[anthropics-skills]]'
+- '[[github-spec-kit]]'
+- '[[claude-code]]'
+- '[[token-economy]]'
+- '[[context-engineering]]'
+- '[[github]]'
 confidence: high
-inbound_count: 28
+inbound_count: 32
 cited_by:
-  - "[[agent-skills]]"
-  - "[[agent-stack-evolution]]"
-  - "[[anthropics-skills]]"
-  - "[[c2spf-analytics]]"
-  - "[[claude-code]]"
-  - "[[dart]]"
-  - "[[flutter]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[github-spec-kit]]"
-  - "[[google]]"
-  - "[[harness]]"
-  - "[[llm-infra-meta-cluster]]"
-  - "[[openai-openai-cookbook]]"
+- '[[agent-skills]]'
+- '[[agent-stack-evolution]]'
+- '[[anthropics-skills]]'
+- '[[c2spf-analytics]]'
+- '[[claude-code]]'
+- '[[dart]]'
+- '[[flutter]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[github-spec-kit]]'
+- '[[google]]'
+- '[[harness]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[openai-openai-cookbook]]'
 cited_by_count: 13
+aliases:
+- Flutter
+- flutter
+- flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준
 ---
 
 # flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준

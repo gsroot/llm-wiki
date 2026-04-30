@@ -1,38 +1,56 @@
 ---
-title: "Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (22회차 종합)"
+title: Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (22회차 종합)
 type: synthesis
 category: frontend-architecture
-aliases: [Flutter Next.js 듀얼 클라이언트, 듀얼 클라이언트 풀스택 패턴, frontend-fullstack-pattern, 3축 프론트 sub-hub, 프론트엔드·모바일 sub-hub]
+aliases:
+- Flutter Next.js 듀얼 클라이언트
+- 듀얼 클라이언트 풀스택 패턴
+- frontend-fullstack-pattern
+- 3축 프론트 sub-hub
+- 프론트엔드·모바일 sub-hub
 sources:
-  - "[[rrousselGit-riverpod]]"
-  - "[[vercel-next.js]]"
-  - "[[tanstack-tanstack-query]]"
-  - "[[pmndrs-zustand]]"
-  - "[[shadcn-ui-ui]]"
-  - "[[flutter-flutter]]"
-  - "[[matechat]]"
+- '[[rrousselGit-riverpod]]'
+- '[[vercel-next.js]]'
+- '[[tanstack-tanstack-query]]'
+- '[[pmndrs-zustand]]'
+- '[[shadcn-ui-ui]]'
+- '[[flutter-flutter]]'
+- '[[matechat]]'
 source_count: 7
 observed_source_refs: 17
 related:
-  - "[[seokgeun-stack-guide]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[matechat]]"
-  - "[[riverpod]]"
-  - "[[nextjs]]"
-  - "[[tanstack-query]]"
-  - "[[zustand]]"
-  - "[[shadcn-ui]]"
-  - "[[flutter]]"
-  - "[[tailwindcss]]"
-  - "[[radix-ui]]"
-  - "[[turbopack]]"
-  - "[[agent-skills]]"
-  - "[[backend-fastapi-stack]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[seokgeun-stack-guide]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[matechat]]'
+- '[[riverpod]]'
+- '[[nextjs]]'
+- '[[tanstack-query]]'
+- '[[zustand]]'
+- '[[shadcn-ui]]'
+- '[[flutter]]'
+- '[[tailwindcss]]'
+- '[[radix-ui]]'
+- '[[turbopack]]'
+- '[[agent-skills]]'
+- '[[backend-fastapi-stack]]'
+- '[[llm-infra-meta-cluster]]'
 created: 2026-04-28
 updated: 2026-04-29
-tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차, 프론트엔드, 3축-sub-hub, 50회차]
+tags:
+- frontend
+- flutter
+- nextjs
+- react
+- state-management
+- riverpod
+- zustand
+- tanstack-query
+- shadcn-ui
+- 22회차
+- 프론트엔드
+- 3축-sub-hub
+- 50회차
 cited_by_count: 24
 inbound_count: 50
 ---

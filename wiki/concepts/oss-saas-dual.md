@@ -1,16 +1,30 @@
 ---
-title: "OSS+SaaS 듀얼 모델"
-aliases: [OSS SaaS Dual, OSS SaaS 듀얼, 오픈소스 SaaS]
+title: OSS+SaaS 듀얼 모델
+aliases:
+- OSS SaaS Dual
+- OSS SaaS 듀얼
+- 오픈소스 SaaS
 type: concept
 category: oss-governance
-tags: [oss-saas-dual, governance, business-model, langchain, polars, crewai, 25회차]
+tags:
+- oss-saas-dual
+- governance
+- langchain
+- polars
+- crewai
+- 25회차
 related:
-  - "[[langchain]]"
-  - "[[langgraph]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[fastmcp]]"
-  - "[[crewai]]"
+- '[[langchain]]'
+- '[[langgraph]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[fastmcp]]'
+- '[[crewai]]'
+- '[[langchain-ai-langchain]]'
+- '[[pola-rs-polars]]'
+- '[[duckdb-duckdb]]'
+- '[[jlowin-fastmcp]]'
+- '[[crewaiinc-crewai]]'
 source_count: 5
 observed_source_refs: 6
 inbound_count: 13

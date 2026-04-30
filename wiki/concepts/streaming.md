@@ -1,14 +1,26 @@
 ---
-title: "Streaming (데이터 스트리밍)"
-aliases: [Streaming, 스트리밍]
+title: Streaming (데이터 스트리밍)
+aliases:
+- Streaming
+- 스트리밍
 type: concept
 category: data-architecture
-tags: [streaming, kafka, polars, pubsub, real-time, 25회차]
+tags:
+- streaming
+- kafka
+- polars
+- pubsub
+- real-time
+- 25회차
 related:
-  - "[[kafka]]"
-  - "[[polars]]"
-  - "[[duckdb]]"
-  - "[[redis]]"
+- '[[kafka]]'
+- '[[polars]]'
+- '[[duckdb]]'
+- '[[redis]]'
+- '[[apache-kafka]]'
+- '[[pola-rs-polars]]'
+- '[[duckdb-duckdb]]'
+- '[[redis-redis]]'
 source_count: 4
 observed_source_refs: 4
 inbound_count: 9

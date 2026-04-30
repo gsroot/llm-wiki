@@ -1,17 +1,24 @@
 ---
-title: "PDEP (Pandas Enhancement Proposal)"
-aliases: [PDEP, Pandas Enhancement Proposal, 판다스 PDEP]
+title: PDEP (Pandas Enhancement Proposal)
+aliases:
+- PDEP
+- Pandas Enhancement Proposal
+- 판다스 PDEP
 type: concept
 category: dev-tools
-tags: [pdep, pandas, governance, decision-record, proposal, open-source, roadmap]
+tags:
+- pdep
+- pandas
+- governance
+- open-source
 related:
-  - "[[pandas]]"
-  - "[[pandas-dev]]"
-  - "[[copy-on-write]]"
-  - "[[bdfl]]"
-  - "[[spec-driven-development]]"
-  - "[[github-spec-kit]]"
-  - "[[pandas-dev-pandas]]"
+- '[[pandas]]'
+- '[[pandas-dev]]'
+- '[[copy-on-write]]'
+- '[[bdfl]]'
+- '[[spec-driven-development]]'
+- '[[github-spec-kit]]'
+- '[[pandas-dev-pandas]]'
 source_count: 1
 observed_source_refs: 10
 inbound_count: 25

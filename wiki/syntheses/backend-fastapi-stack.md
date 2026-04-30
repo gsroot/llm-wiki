@@ -1,34 +1,57 @@
 ---
-title: "Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존)"
+title: Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존)
 type: synthesis
 category: analysis
-aliases: [백엔드 FastAPI 6단, FastAPI 스택, backend-fastapi-stack, backend-python-stack, 3축 백엔드 sub-hub, Python 백엔드 표준 스택]
-tags: [backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions, 3축-sub-hub, 50회차]
+aliases:
+- 백엔드 FastAPI 6단
+- FastAPI 스택
+- backend-fastapi-stack
+- backend-python-stack
+- 3축 백엔드 sub-hub
+- Python 백엔드 표준 스택
+tags:
+- fastapi
+- pydantic
+- sqlalchemy
+- alembic
+- postgresql
+- redis
+- ruff
+- uv
+- ty
+- astral
+- cache
+- bdfl
+- manifesto
+- agent-skills
+- 3축-sub-hub
+- 50회차
 sources:
-  - "[[fastapi-fastapi]]"
-  - "[[pydantic-pydantic]]"
-  - "[[sqlalchemy-sqlalchemy]]"
-  - "[[sqlalchemy-alembic]]"
-  - "[[postgres-postgres]]"
-  - "[[redis-redis]]"
-  - "[[astral-sh-uv]]"
-  - "[[astral-sh-ruff]]"
+- '[[fastapi-fastapi]]'
+- '[[pydantic-pydantic]]'
+- '[[sqlalchemy-sqlalchemy]]'
+- '[[sqlalchemy-alembic]]'
+- '[[postgres-postgres]]'
+- '[[redis-redis]]'
+- '[[astral-sh-uv]]'
+- '[[astral-sh-ruff]]'
 related:
-  - "[[seokgeun-stack-guide]]"
-  - "[[portfolio]]"
-  - "[[c2spf-analytics]]"
-  - "[[matechat]]"
-  - "[[fastapi]]"
-  - "[[pydantic]]"
-  - "[[sqlalchemy]]"
-  - "[[alembic]]"
-  - "[[postgresql]]"
-  - "[[redis]]"
-  - "[[uv]]"
-  - "[[ruff]]"
-  - "[[backend-python-fastapi]]"
-  - "[[flutter-nextjs-fullstack-pattern]]"
-  - "[[llm-infra-meta-cluster]]"
+- '[[seokgeun-stack-guide]]'
+- '[[portfolio]]'
+- '[[c2spf-analytics]]'
+- '[[matechat]]'
+- '[[fastapi]]'
+- '[[pydantic]]'
+- '[[sqlalchemy]]'
+- '[[alembic]]'
+- '[[postgresql]]'
+- '[[redis]]'
+- '[[uv]]'
+- '[[ruff]]'
+- '[[backend-python-fastapi]]'
+- '[[flutter-nextjs-fullstack-pattern]]'
+- '[[llm-infra-meta-cluster]]'
+- '[[agent-stack-evolution]]'
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 28

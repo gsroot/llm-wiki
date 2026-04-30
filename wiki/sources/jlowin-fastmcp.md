@@ -1,28 +1,41 @@
 ---
-title: "jlowin/fastmcp — The standard framework for MCP"
+title: jlowin/fastmcp — The standard framework for MCP
 type: source
 source_type: article
-source_url: "https://github.com/jlowin/fastmcp"
-raw_path: "raw/articles/jlowin-fastmcp/"
-author: "Jeremiah Lowin (Prefect)"
+source_url: https://github.com/jlowin/fastmcp
+raw_path: raw/articles/jlowin-fastmcp/
+author: Jeremiah Lowin (Prefect)
 date_published: 2024-04-01
 date_ingested: 2026-04-28
-tags: [fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, 17회차]
+tags:
+- fastmcp
+- mcp
+- prefect
+- jlowin
+- model-context-protocol
+- agents-md
+- claude-md
+- prefect-horizon
+- 17회차
 related:
-  - "[[fastmcp]]"
-  - "[[mcp]]"
-  - "[[ml-ai]]"
-  - "[[agent-skills]]"
+- '[[fastmcp]]'
+- '[[mcp]]'
+- '[[ml-ai]]'
+- '[[agent-skills]]'
 confidence: high
-inbound_count: 12
+inbound_count: 15
 cited_by:
-  - "[[agent-frameworks-matrix]]"
-  - "[[agent-skills]]"
-  - "[[fastmcp]]"
-  - "[[mcp]]"
-  - "[[ml-ai]]"
-  - "[[oss-saas-dual]]"
+- '[[agent-frameworks-matrix]]'
+- '[[agent-skills]]'
+- '[[fastmcp]]'
+- '[[mcp]]'
+- '[[ml-ai]]'
+- '[[oss-saas-dual]]'
 cited_by_count: 6
+aliases:
+- Jlowin Fastmcp
+- jlowin fastmcp
+- jlowin/fastmcp — The standard framework for MCP
 ---
 
 # jlowin/fastmcp — The standard framework for MCP

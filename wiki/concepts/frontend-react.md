@@ -1,13 +1,27 @@
 ---
-title: "프론트엔드 (React + TypeScript + Vite + TanStack)"
-aliases: [Frontend React, 프론트엔드 리액트]
+title: 프론트엔드 (React + TypeScript + Vite + TanStack)
+aliases:
+- Frontend React
+- 프론트엔드 리액트
 type: concept
 category: web-dev
-tags: [frontend, react, typescript, vite, tanstack, zustand, ag-grid, highcharts, mobx, 프론트엔드]
+tags:
+- frontend
+- react
+- typescript
+- vite
+- tanstack
+- zustand
+- ag-grid
+- 프론트엔드
 related:
-  - "[[seokgeun-kim]]"
-  - "[[c2spf-analytics]]"
-  - "[[backend-python-fastapi]]"
+- '[[seokgeun-kim]]'
+- '[[c2spf-analytics]]'
+- '[[backend-python-fastapi]]'
+- '[[portfolio-seed]]'
+- '[[portfolio-resume-ko]]'
+- '[[portfolio-ko]]'
+- '[[c2spf-analytics-renewal]]'
 source_count: 4
 observed_source_refs: 13
 inbound_count: 24

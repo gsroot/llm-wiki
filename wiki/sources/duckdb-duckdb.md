@@ -1,38 +1,51 @@
 ---
-title: "duckdb/duckdb (DuckDB 저장소)"
+title: duckdb/duckdb (DuckDB 저장소)
 type: source
 source_type: article
-source_url: "https://github.com/duckdb/duckdb"
-raw_path: "raw/articles/duckdb-duckdb/"
-author: "duckdb 개발팀 (Hannes Mühleisen + Mark Raasveldt + DuckDB Labs)"
+source_url: https://github.com/duckdb/duckdb
+raw_path: raw/articles/duckdb-duckdb/
+author: duckdb 개발팀 (Hannes Mühleisen + Mark Raasveldt + DuckDB Labs)
 date_published: 2018-06-26
 date_ingested: 2026-04-28
-tags: [duckdb, embedded, sql, analytical, columnar, vectorized, in-process, MIT-license, c++17, cmake]
+tags:
+- duckdb
+- embedded
+- sql
+- analytical
+- columnar
+- vectorized
+- in-process
+- MIT-license
+- c++17
 related:
-  - "[[duckdb]]"
-  - "[[postgresql]]"
-  - "[[pandas]]"
-  - "[[polars]]"
-  - "[[pyarrow]]"
-  - "[[parquet]]"
-  - "[[sqlite]]"
+- '[[duckdb]]'
+- '[[postgresql]]'
+- '[[pandas]]'
+- '[[polars]]'
+- '[[pyarrow]]'
+- '[[parquet]]'
+- '[[sqlite]]'
 confidence: high
-inbound_count: 18
+inbound_count: 26
 cited_by:
-  - "[[apache-arrow]]"
-  - "[[c2spf-analytics]]"
-  - "[[dataframe-ecosystem-evolution]]"
-  - "[[duckdb]]"
-  - "[[lakehouse]]"
-  - "[[lazy-evaluation]]"
-  - "[[oss-saas-dual]]"
-  - "[[pandas-vs-polars-vs-duckdb]]"
-  - "[[predicate-pushdown]]"
-  - "[[query-optimization]]"
-  - "[[sqlite]]"
-  - "[[streaming]]"
-  - "[[zero-copy]]"
+- '[[apache-arrow]]'
+- '[[c2spf-analytics]]'
+- '[[dataframe-ecosystem-evolution]]'
+- '[[duckdb]]'
+- '[[lakehouse]]'
+- '[[lazy-evaluation]]'
+- '[[oss-saas-dual]]'
+- '[[pandas-vs-polars-vs-duckdb]]'
+- '[[predicate-pushdown]]'
+- '[[query-optimization]]'
+- '[[sqlite]]'
+- '[[streaming]]'
+- '[[zero-copy]]'
 cited_by_count: 13
+aliases:
+- Duckdb
+- duckdb
+- duckdb/duckdb (DuckDB 저장소)
 ---
 
 # duckdb/duckdb (DuckDB 저장소)
