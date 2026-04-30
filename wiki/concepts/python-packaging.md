@@ -12,6 +12,7 @@ observed_source_refs: 9
 inbound_count: 32
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 19
 ---
 
 # Python 패키징 (Python Packaging)

@@ -17,6 +17,7 @@ inbound_count: 35
 created: 2026-04-28
 updated: 2026-04-29
 tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 22회차]
+cited_by_count: 12
 ---
 
 # TanStack Query

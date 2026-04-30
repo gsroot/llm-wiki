@@ -15,6 +15,7 @@ observed_source_refs: 6
 inbound_count: 23
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 11
 ---
 
 # BDFL (Benevolent Dictator For Life)

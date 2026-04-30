@@ -16,6 +16,7 @@ observed_source_refs: 19
 inbound_count: 58
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 24
 ---
 
 # 자율 연구 루프 (Autonomous Research Loop)

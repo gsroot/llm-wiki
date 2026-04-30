@@ -20,6 +20,7 @@ observed_source_refs: 17
 inbound_count: 43
 created: 2026-04-24
 updated: 2026-04-28
+cited_by_count: 23
 ---
 
 # DevOps & CI/CD (Docker · Jenkins 멀티브랜치 · Loki/Grafana)

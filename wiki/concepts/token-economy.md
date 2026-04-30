@@ -15,6 +15,7 @@ observed_source_refs: 24
 inbound_count: 52
 created: 2026-04-15
 updated: 2026-04-27
+cited_by_count: 19
 ---
 
 # 토큰 경제학 (Token Economy)

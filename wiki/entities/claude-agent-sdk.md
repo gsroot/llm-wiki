@@ -15,6 +15,7 @@ observed_source_refs: 5
 inbound_count: 47
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 17
 ---
 
 # Claude Agent SDK

@@ -17,6 +17,7 @@ observed_source_refs: 5
 inbound_count: 25
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 9
 ---
 
 # Spec Kit (Specify CLI)

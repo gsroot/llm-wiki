@@ -12,6 +12,7 @@ observed_source_refs: 13
 inbound_count: 24
 created: 2026-04-24
 updated: 2026-04-24
+cited_by_count: 10
 ---
 
 # 프론트엔드 (React + TypeScript + Vite + TanStack)

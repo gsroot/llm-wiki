@@ -21,7 +21,7 @@ related:
   - "[[claude-code]]"
 source_count: 4
 observed_source_refs: 42
-inbound_count: 176
+inbound_count: 177
 created: 2026-04-24
 updated: 2026-04-29
 verification_required: true

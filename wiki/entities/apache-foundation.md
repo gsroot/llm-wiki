@@ -12,6 +12,7 @@ observed_source_refs: 6
 inbound_count: 13
 created: 2026-04-28
 updated: 2026-04-29
+cited_by_count: 4
 ---
 
 # Apache Software Foundation (ASF)

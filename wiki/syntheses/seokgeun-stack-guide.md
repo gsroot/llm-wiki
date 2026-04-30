@@ -10,6 +10,8 @@ sources:
   - "[[observability-and-cicd-stack]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
 source_count: 5
+observed_source_refs: 10
+inbound_count: 155
 related:
   - "[[python]]"
   - "[[fastapi]]"
@@ -36,7 +38,7 @@ tags: [personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, hub, per
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "32 OSS 라이브러리 버전 + 새 도구 출현 (예: ty 정식 출시) — 분기별 재카탈로그"
-cited_by_count: 57
+cited_by_count: 58
 ---
 
 # 석근 스택 가이드 — 23회차 마무리 종합
@@ -315,6 +317,7 @@ flutter pub add --dev riverpod_generator build_runner
 - [[seokgeun-operating-profile-2026]]
 - [[shadcn-ui]]
 - [[sqlalchemy]]
+- [[tag-vocabulary-audit-2026-04-29]]
 - [[tailwindcss]]
 - [[tanstack]]
 - [[tanstack-query]]

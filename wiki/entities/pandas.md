@@ -17,6 +17,7 @@ observed_source_refs: 17
 inbound_count: 81
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 35
 ---
 
 # pandas (데이터 분석 라이브러리)

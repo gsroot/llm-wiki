@@ -18,6 +18,7 @@ observed_source_refs: 21
 inbound_count: 82
 created: 2026-04-27
 updated: 2026-04-28
+cited_by_count: 36
 ---
 
 # uv (astral-sh/uv)

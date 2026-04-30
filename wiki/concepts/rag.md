@@ -20,6 +20,7 @@ observed_source_refs: 4
 inbound_count: 12
 created: 2026-04-29
 updated: 2026-04-29
+cited_by_count: 11
 ---
 
 # RAG (Retrieval-Augmented Generation)

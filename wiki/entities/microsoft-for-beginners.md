@@ -15,6 +15,7 @@ observed_source_refs: 18
 inbound_count: 31
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 11
 ---
 
 # microsoft-for-beginners (시리즈)

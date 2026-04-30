@@ -12,6 +12,7 @@ observed_source_refs: 10
 inbound_count: 17
 created: 2026-04-24
 updated: 2026-04-24
+cited_by_count: 8
 ---
 
 # 블록체인 (XPLA · Rust 스마트 컨트랙트 · NFT)

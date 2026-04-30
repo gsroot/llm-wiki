@@ -27,6 +27,7 @@ cited_by:
   - "[[rag]]"
   - "[[seokgeun-kim]]"
   - "[[slash-commands-vs-agent-skills]]"
+  - "[[tag-vocabulary-audit-2026-04-29]]"
 ---
 
 # 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법

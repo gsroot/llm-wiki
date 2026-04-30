@@ -11,6 +11,7 @@ page_intent: historical-stub
 page_intent_note: "1945년 부시 개념의 역사적 stub. 더 확장할 의도 없음 — 본질적으로 짧은 노드. RAG 청크 적합성 검증에서 제외 후보."
 created: 2026-04-09
 updated: 2026-04-29
+cited_by_count: 2
 ---
 
 # 메멕스 (Memex)

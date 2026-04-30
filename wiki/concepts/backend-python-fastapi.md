@@ -15,6 +15,7 @@ observed_source_refs: 24
 inbound_count: 56
 created: 2026-04-24
 updated: 2026-04-27
+cited_by_count: 29
 ---
 
 # Python 백엔드 (FastAPI · Spring Boot 비교 맥락)

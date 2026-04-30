@@ -17,6 +17,7 @@ updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "월간 회고 시 진행률·번아웃 신호·MateChat 검증 결과 갱신. 2026-12 종료 시점 최종 회수."
+cited_by_count: 10
 ---
 
 # 2026 육아휴직 1년 운영 계획

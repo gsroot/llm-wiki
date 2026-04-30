@@ -16,6 +16,7 @@ observed_source_refs: 10
 inbound_count: 55
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 23
 ---
 
 # Anthropic

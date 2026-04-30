@@ -16,6 +16,7 @@ observed_source_refs: 9
 inbound_count: 54
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 22
 ---
 
 # LangGraph

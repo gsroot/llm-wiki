@@ -15,6 +15,7 @@ observed_source_refs: 5
 inbound_count: 15
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 9
 ---
 
 # Lazy Evaluation (지연 평가)

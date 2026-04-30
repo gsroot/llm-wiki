@@ -20,6 +20,7 @@ inbound_count: 29
 created: 2026-04-28
 updated: 2026-04-28
 tags: [pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차]
+cited_by_count: 14
 ---
 
 # Pydantic AI

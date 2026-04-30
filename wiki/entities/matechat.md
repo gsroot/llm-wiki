@@ -42,13 +42,13 @@ related:
   - "[[llm-infra-meta-cluster]]"
 source_count: 6
 observed_source_refs: 28
-inbound_count: 169
+inbound_count: 171
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "현재 v1.0.0 출시 직전 QA 단계 (44회차 owner 자기보고로 확정), QA 완료 후 Google Play 출시 예정. 39 SKILL 자작/외부 분류는 lock.json 재검증."
-cited_by_count: 64
+cited_by_count: 65
 ---
 
 # MateChat
@@ -293,6 +293,7 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 - [[shadcn-ui]]
 - [[sqlalchemy]]
 - [[sqlite]]
+- [[tag-vocabulary-audit-2026-04-29]]
 - [[tailwindcss]]
 - [[tanstack-query]]
 - [[uv]]

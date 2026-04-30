@@ -11,6 +11,7 @@ observed_source_refs: 5
 inbound_count: 12
 created: 2026-04-09
 updated: 2026-04-09
+cited_by_count: 5
 ---
 
 # Obsidian Web Clipper

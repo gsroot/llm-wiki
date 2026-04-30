@@ -17,6 +17,7 @@ observed_source_refs: 9
 inbound_count: 35
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 15
 ---
 
 # Spec-Driven Development (SDD)

@@ -16,6 +16,7 @@ inbound_count: 23
 created: 2026-04-28
 updated: 2026-04-28
 tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차]
+cited_by_count: 14
 ---
 
 # CrewAI

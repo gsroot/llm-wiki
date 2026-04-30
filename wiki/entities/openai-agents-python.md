@@ -26,6 +26,7 @@ observed_source_refs: 24
 inbound_count: 69
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 30
 ---
 
 # openai-agents-python (OpenAI Agents SDK)

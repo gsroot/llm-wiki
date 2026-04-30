@@ -16,6 +16,7 @@ observed_source_refs: 3
 inbound_count: 10
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 6
 ---
 
 # Observability — 메트릭/로그/트레이스 + 에러 + 사용자 경험

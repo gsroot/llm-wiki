@@ -11,6 +11,7 @@ sources:
   - "[[apache-kafka]]"
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 16
 ---
 
 # DataFrame 생태계 진화사

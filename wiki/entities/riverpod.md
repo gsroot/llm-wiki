@@ -17,6 +17,7 @@ inbound_count: 28
 created: 2026-04-28
 updated: 2026-04-28
 tags: [riverpod, flutter, dart, state-management, dependency-injection, reactive, 22회차]
+cited_by_count: 10
 ---
 
 # Riverpod

@@ -20,6 +20,7 @@ sources:
   - "[[c2spf-analytics-renewal]]"
 created: 2026-04-24
 updated: 2026-04-29
+cited_by_count: 15
 ---
 
 # 석근 커리어 타임라인 (2016-2026)

@@ -15,7 +15,12 @@ sources:
   - "[[flutter-flutter]]"
   - "[[microsoft-ai-agents-for-beginners]]"
   - "[[microsoft-generative-ai-for-beginners]]"
-sources_count: 12
+source_count: 12
+observed_source_refs: 17
+inbound_count: 99
+verification_required: true
+last_verified: 2026-04-30
+verification_notes: "10개 OSS 거버넌스 모델 카탈로그 — 분기별 재검증. 본문에 박힌 인바운드 수치는 28회차 시점 스냅샷이며, 자동 필드(inbound_count·cited_by_count)가 source-of-truth."
 related:
   - "[[agent-skills]]"
   - "[[harness]]"
@@ -35,7 +40,7 @@ created: 2026-04-28
 updated: 2026-04-28
 aliases: [LLM 인프라 메타 클러스터, llm-infra-meta-cluster, 5축 hub, LLM 인프라 메타, agent infra meta]
 tags: [meta-cluster, LLM-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, hub, 28회차, hidden-axis, 53회차]
-cited_by_count: 58
+cited_by_count: 59
 ---
 
 # LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축
@@ -260,6 +265,7 @@ cited_by_count: 58
 - [[seokgeun-stack-guide]]
 - [[shadcn-ui]]
 - [[slash-commands-vs-agent-skills]]
+- [[tag-vocabulary-audit-2026-04-29]]
 - [[tanstack-query]]
 - [[using-llm-wiki-as-rag]]
 - [[zustand]]

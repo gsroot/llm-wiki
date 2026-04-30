@@ -31,6 +31,7 @@ related:
   - "[[llm-infra-meta-cluster]]"
 created: 2026-04-28
 updated: 2026-04-29
+cited_by_count: 28
 ---
 
 # Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis

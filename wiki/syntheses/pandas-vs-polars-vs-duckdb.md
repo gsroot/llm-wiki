@@ -9,6 +9,7 @@ sources:
   - "[[duckdb-duckdb]]"
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 10
 ---
 
 # Pandas vs Polars vs DuckDB

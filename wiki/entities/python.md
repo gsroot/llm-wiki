@@ -19,6 +19,7 @@ observed_source_refs: 8
 inbound_count: 14
 created: 2026-04-28
 updated: 2026-04-29
+cited_by_count: 10
 ---
 
 # Python

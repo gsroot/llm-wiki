@@ -19,6 +19,7 @@ sources:
   - "[[openai-openai-cookbook]]"
 created: 2026-04-27
 updated: 2026-04-29
+cited_by_count: 29
 ---
 
 # 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교

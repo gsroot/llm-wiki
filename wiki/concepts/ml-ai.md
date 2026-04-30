@@ -22,6 +22,7 @@ observed_source_refs: 48
 inbound_count: 96
 created: 2026-04-24
 updated: 2026-04-28
+cited_by_count: 48
 ---
 
 # ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)

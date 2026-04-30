@@ -253,6 +253,10 @@ class LintResult:
     # 51회차 P0-5 신설: stub entity 결함
     # (rel_path, body_lines, source_count, inbound)
     stub_entities: list[tuple[str, int, int, int]] = field(default_factory=list)
+    # 57회차 P0-5 신설 (check #14): cited_by_count 누락 비-메타 페이지 (정보 보고)
+    # 53회차 정책 정합화 — 비-메타 페이지에 정수 캐시 일관 적용 강제 안 하지만
+    # 미적용은 정보 보고로 가시화하여 --update 실행을 권장.
+    cited_by_count_missing: list[str] = field(default_factory=list)
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
@@ -344,6 +348,20 @@ def lint(update: bool = False) -> LintResult:
     cited_by_targets = sources_set | (HUB_CITED_BY_TARGETS & {p.stem for p in pages})
     cited_by_map: dict[str, set[str]] = {s: set() for s in cited_by_targets}
 
+    # 57회차 P0-3 신설 (56회차 4축 평가 합집합 Critical):
+    # cited_by_count(정수)를 모든 비-메타 페이지(entity/concept/synthesis)에 일관 적용.
+    # cited_by(전체 list)는 frontmatter 폭증 위험으로 sources + 11 hub 한정 유지.
+    # 정수만 박는 cited_by_count는 RAG 답변 정책 §1 "수치 비교"의 신뢰도 가중치 캐시로,
+    # 51회차 정책의 LLM 일관 적용을 위해 비-메타 194페이지 전체로 측정 갭 해소.
+    cited_by_count_targets = {
+        p.stem for p in pages
+        if p.page_type in ("entity", "concept", "synthesis")
+        and not p.is_redirect
+        and not p.is_log_file
+        and p.stem not in cited_by_targets  # 11 hub + sources는 _update_cited_by가 이미 처리
+    }
+    cited_by_count_map: dict[str, set[str]] = {s: set() for s in cited_by_count_targets}
+
     for page in pages:
         if page.yaml_invalid:
             result.yaml_invalid.append(
@@ -370,13 +388,17 @@ def lint(update: bool = False) -> LintResult:
                 # 47회차 cited_by 측정 + 48회차 hub 11개 확장
                 # log·history·redirect 페이지의 인용은 cited_by에 포함하지 않음
                 # (메타 페이지가 답변 근거 출처 추적에 들어가면 안 됨)
-                if (
-                    target in cited_by_targets
-                    and not page.is_log_file
-                    and page.stem not in {"log", "index", "index-history", "by-session"}
-                    and not page.is_redirect
-                ):
+                citing_is_meta = (
+                    page.is_log_file
+                    or page.stem in {"log", "index", "index-history", "by-session"}
+                    or page.is_redirect
+                )
+                if target in cited_by_targets and not citing_is_meta:
                     cited_by_map[target].add(page.stem)
+                # 57회차 P0-3: cited_by_count 정수 캐시를 모든 비-메타 페이지에 측정.
+                # 동일 메타 격리 정책 적용.
+                if target in cited_by_count_targets and not citing_is_meta:
+                    cited_by_count_map[target].add(page.stem)
             else:
                 if is_history:
                     continue
@@ -391,17 +413,21 @@ def lint(update: bool = False) -> LintResult:
     # source_count 부정합 검출 (entity/concept만 — source/synthesis는 source_count 없음)
     # 43회차: --update는 source_count를 덮어쓰지 않고, observed_source_refs / inbound_count
     # 두 자동 필드만 갱신한다 (운영자 수동 의미 보존).
+    # 57회차 P0-2 보강: --update의 자동 필드 갱신 대상을 synthesis까지 확장.
+    # source_count_mismatch 검출은 entity/concept만 (정의 A 운영자 수동 필드를
+    # 가지는 타입), 자동 필드 갱신은 비-메타 전체.
     for page in pages:
         if page.yaml_invalid or page.is_redirect or page.is_log_file:
             continue
-        if page.page_type not in ("entity", "concept"):
+        if page.page_type not in ("entity", "concept", "synthesis"):
             continue
-        declared = page.declared_source_count
         observed = source_count_observed.get(page.stem, 0)
-        if declared is not None and declared != observed:
-            result.source_count_mismatch.append(
-                (str(page.path.relative_to(WIKI_ROOT.parent)), declared, observed)
-            )
+        if page.page_type in ("entity", "concept"):
+            declared = page.declared_source_count
+            if declared is not None and declared != observed:
+                result.source_count_mismatch.append(
+                    (str(page.path.relative_to(WIKI_ROOT.parent)), declared, observed)
+                )
         if update:
             _update_auto_fields(
                 page,
@@ -419,6 +445,31 @@ def lint(update: bool = False) -> LintResult:
                 continue
             citing_stems = sorted(cited_by_map.get(page.stem, set()))
             _update_cited_by(page, citing_stems)
+
+    # 57회차 P0-3 신설: cited_by_count 정수 캐시를 모든 비-메타 페이지에 갱신.
+    # cited_by 리스트는 박지 않음 (frontmatter 폭증 방지) — 정수만 일관 적용.
+    # 56회차 4축 평가 합집합 Critical: 측정 갭 87페이지(cited_by_count=0) 해소.
+    if update:
+        for page in pages:
+            if page.yaml_invalid or page.is_redirect or page.is_log_file:
+                continue
+            if page.stem not in cited_by_count_targets:
+                continue
+            count = len(cited_by_count_map.get(page.stem, set()))
+            _update_cited_by_count_only(page, count)
+
+    # 57회차 P0-5 신설 (check #14): cited_by_count 누락 비-메타 페이지 정보 보고
+    # 53회차 정책에 따른 신뢰도 가중치 캐시 적용 가시화. --check 모드에서도 보고하여
+    # --update 실행을 권장. 결함이 아닌 정보 보고.
+    for page in pages:
+        if page.yaml_invalid or page.is_redirect or page.is_log_file:
+            continue
+        if page.stem not in cited_by_count_targets:
+            continue
+        if "cited_by_count:" not in page.raw:
+            result.cited_by_count_missing.append(
+                str(page.path.relative_to(WIKI_ROOT.parent))
+            )
 
     # 고아 페이지: 인바운드 0 (단, redirect/index/log 제외)
     for stem, cnt in inbound.items():
@@ -744,6 +795,52 @@ def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
         page.path.write_text(new_raw, encoding="utf-8")
 
 
+def _update_cited_by_count_only(page: WikiPage, count: int) -> None:
+    """cited_by_count(정수)만 in-place 갱신. cited_by 리스트는 박지 않음.
+
+    57회차 P0-3 신설 (56회차 4축 평가 합집합 Critical):
+    51회차 RAG 답변 정책 §1 "수치 비교"의 신뢰도 가중치 캐시를 모든 비-메타
+    페이지(entity·concept·synthesis)에 일관 적용. cited_by 리스트는 frontmatter
+    폭증 위험으로 sources + 11 hub 한정 유지하되, 정수만 박는 cited_by_count는
+    194 페이지 전체로 확장해 측정 갭 87페이지 해소.
+
+    빈 카운트(0)도 명시적으로 박는다 — "측정됐고 0"과 "측정 안 됨" 구분.
+    이는 53회차 정책의 "빈 cited_by인 경우 키 생략" 패턴과 다른 정책:
+    cited_by 리스트는 양방향 추적이라 빈 list = 의미 없음(키 생략),
+    cited_by_count는 신뢰도 가중치라 0도 의미 있음(키 박음).
+    """
+    raw = page.raw
+    fm_match = FRONTMATTER_RE.match(raw)
+    if not fm_match:
+        return
+    fm_text = fm_match.group(1)
+    body_after = raw[fm_match.end():]
+    fm_lines = fm_text.split("\n")
+
+    # 기존 cited_by_count 라인 위치 탐색
+    cnt_idx = None
+    for i, ln in enumerate(fm_lines):
+        if ln.startswith("cited_by_count:"):
+            cnt_idx = i
+            break
+
+    new_line = f"cited_by_count: {count}"
+    if cnt_idx is not None:
+        if fm_lines[cnt_idx] == new_line:
+            return  # 변경 없음
+        fm_lines[cnt_idx] = new_line
+    else:
+        # frontmatter 끝에 삽입 (trailing 빈 라인 제거 후)
+        while fm_lines and fm_lines[-1] == "":
+            fm_lines.pop()
+        fm_lines.append(new_line)
+
+    new_fm = "\n".join(fm_lines)
+    new_raw = f"---\n{new_fm}\n---\n" + body_after
+    if new_raw != raw:
+        page.path.write_text(new_raw, encoding="utf-8")
+
+
 def _replace_cited_by_body_section(body: str, citing_stems: list[str]) -> str:
     """본문에서 ## 인용한 페이지 섹션을 새 리스트로 교체. 없으면 끝에 추가."""
     header = CITED_BY_BODY_HEADER
@@ -960,6 +1057,23 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건 (canonical 충돌 stub 또는 영양실조 entity 없음)")
+
+    print(
+        "--- 13. cited_by_count 누락 비-메타 페이지 (57회차 신설 — 53회차 정책 정합화, "
+        "정보 보고 — 결함 아님) ---"
+    )
+    if result.cited_by_count_missing:
+        print(
+            f"ℹ️ {len(result.cited_by_count_missing)}건 (--update 실행 시 자동 채움):"
+        )
+        for rel_path in result.cited_by_count_missing[:10]:
+            print(f"    {rel_path}")
+        if len(result.cited_by_count_missing) > 10:
+            remainder = len(result.cited_by_count_missing) - 10
+            print(f"    ... (생략 {remainder}건)")
+    else:
+        if not quiet:
+            print("✓ 0건 (모든 비-메타 페이지에 cited_by_count 정수 캐시 적용)")
 
 
 def report_full(result: LintResult) -> None:

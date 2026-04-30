@@ -8,6 +8,7 @@ page_intent: archive
 page_intent_note: "2026-04-09 부트스트랩 시점 기록. 더 이상 갱신하지 않는 역사 기록 (synthesis 카테고리지만 archive 의도). 본문은 부트스트랩 의사결정 추적 자료로 보존."
 created: 2026-04-09
 updated: 2026-04-29
+cited_by_count: 2
 ---
 
 # 위키 부트스트랩 기록

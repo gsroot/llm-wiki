@@ -23,6 +23,7 @@ observed_source_refs: 2
 inbound_count: 11
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 4
 ---
 
 # Sebastián Ramírez (tiangolo)

@@ -16,6 +16,7 @@ inbound_count: 25
 created: 2026-04-28
 updated: 2026-04-28
 tags: [deepagents, langchain-AI, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차]
+cited_by_count: 17
 ---
 
 # DeepAgents

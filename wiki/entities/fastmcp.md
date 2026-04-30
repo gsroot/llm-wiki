@@ -20,6 +20,7 @@ updated: 2026-04-28
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "MCP 70% 점유 변동 + 2.0 standalone 안정성 + Prefect Horizon 통합 — 분기별 재검증"
+cited_by_count: 16
 ---
 
 # FastMCP

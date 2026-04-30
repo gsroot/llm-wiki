@@ -21,6 +21,7 @@ updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "본 SOP 자체 준수 여부를 분기별 회고에서 점검. 측정값 누락된 KPI 1건이라도 있으면 SOP 결함."
+cited_by_count: 9
 ---
 
 # KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP

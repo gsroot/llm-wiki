@@ -15,6 +15,7 @@ observed_source_refs: 24
 inbound_count: 50
 created: 2026-04-24
 updated: 2026-04-27
+cited_by_count: 22
 ---
 
 # 데이터 파이프라인 (BigQuery 중심 BI)

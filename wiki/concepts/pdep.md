@@ -16,6 +16,7 @@ observed_source_refs: 10
 inbound_count: 25
 created: 2026-04-27
 updated: 2026-04-27
+cited_by_count: 9
 ---
 
 # PDEP (Pandas Enhancement Proposal)

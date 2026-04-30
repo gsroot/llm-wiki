@@ -17,6 +17,7 @@ observed_source_refs: 5
 inbound_count: 40
 created: 2026-04-28
 updated: 2026-04-28
+cited_by_count: 24
 ---
 
 # Ruff (astral-sh/ruff)

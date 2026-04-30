@@ -17,6 +17,7 @@ inbound_count: 31
 created: 2026-04-28
 updated: 2026-04-28
 tags: [zustand, react, state-management, hooks, flux, minimal, providerless, 22회차]
+cited_by_count: 12
 ---
 
 # Zustand

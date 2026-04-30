@@ -12,6 +12,7 @@ observed_source_refs: 3
 inbound_count: 10
 created: 2026-04-15
 updated: 2026-04-15
+cited_by_count: 4
 ---
 
 # Obsidian

@@ -13,6 +13,7 @@ sources:
   - "[[agent-skills]]"
 created: 2026-04-28
 updated: 2026-04-29
+cited_by_count: 18
 ---
 
 # Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름

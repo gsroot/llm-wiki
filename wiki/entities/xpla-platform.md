@@ -12,6 +12,7 @@ observed_source_refs: 11
 inbound_count: 21
 created: 2026-04-24
 updated: 2026-04-24
+cited_by_count: 8
 ---
 
 # XPLA 플랫폼 (c2spf 블록체인 통합 서비스)

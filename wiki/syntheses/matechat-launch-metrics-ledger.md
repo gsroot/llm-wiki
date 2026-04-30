@@ -21,6 +21,7 @@ tags: [matechat, 실측, ledger, post-launch, retention, conversion, funnel, 인
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "v1.0.0 Google Play 출시 직후 D+1부터 컬럼 채우기 시작. 30day-loop과 달리 본 페이지는 의사결정 SOP가 아닌 raw 측정값 저장소. D+30 이후도 D+90/D+180/D+365 이정표 컬럼 유지. 출시 전까지는 빈 표·컬럼 정의·측정 출처만 박혀 있는 골격 단계."
+cited_by_count: 9
 ---
 
 # MateChat 출시 후 실측 ledger

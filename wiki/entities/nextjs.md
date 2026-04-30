@@ -19,6 +19,7 @@ inbound_count: 41
 created: 2026-04-28
 updated: 2026-04-28
 tags: [nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, 22회차]
+cited_by_count: 16
 ---
 
 # Next.js

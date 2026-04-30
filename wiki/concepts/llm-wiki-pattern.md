@@ -13,9 +13,10 @@ related:
   - "[[context-engineering]]"
 source_count: 3
 observed_source_refs: 19
-inbound_count: 51
+inbound_count: 54
 created: 2026-04-09
 updated: 2026-04-15
+cited_by_count: 21
 ---
 
 # LLM 위키 패턴

@@ -17,6 +17,7 @@ updated: 2026-04-28
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "Redis 라이선스(RSALv2/SSPL ↔ valkey 포크) + 8.0+ Vector Search 정식화 — 분기별 재검증"
+cited_by_count: 26
 ---
 
 # Redis
