@@ -64,10 +64,10 @@ related:
 - '[[openai-openai-agents-python]]'
 source_count: 8
 observed_source_refs: 58
-inbound_count: 186
+inbound_count: 187
 created: 2026-04-15
 updated: 2026-04-29
-cited_by_count: 66
+cited_by_count: 67
 ---
 
 # 하네스 (Harness)
@@ -365,6 +365,7 @@ project/
 - [[agent-sdk-comparison]]
 - [[agent-skills]]
 - [[agent-stack-evolution]]
+- [[annotated-pattern]]
 - [[anthropic]]
 - [[anthropics-claude-cookbooks]]
 - [[anthropics-skills]]

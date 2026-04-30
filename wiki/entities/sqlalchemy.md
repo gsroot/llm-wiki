@@ -15,10 +15,10 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 10
-inbound_count: 39
+inbound_count: 42
 created: 2026-04-28
 updated: 2026-04-28
-cited_by_count: 14
+cited_by_count: 15
 ---
 
 # SQLAlchemy (sqlalchemy/sqlalchemy)

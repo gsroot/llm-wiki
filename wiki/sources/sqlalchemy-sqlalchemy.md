@@ -39,18 +39,19 @@ related:
 - '[[uv]]'
 - '[[scikit-learn]]'
 confidence: high
-inbound_count: 10
+inbound_count: 12
 aliases:
 - Sqlalchemy
 - sqlalchemy
 - sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM
 - sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM (Core/ORM 이중 레이어 + Unit of Work + 21년 관계형 추상화)
 cited_by:
+  - "[[annotated-pattern]]"
   - "[[backend-fastapi-stack]]"
   - "[[python]]"
   - "[[sqlalchemy]]"
   - "[[sqlite]]"
-cited_by_count: 4
+cited_by_count: 5
 ---
 
 # sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM

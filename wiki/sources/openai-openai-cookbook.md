@@ -52,6 +52,7 @@ cited_by:
   - "[[anthropics-claude-cookbooks]]"
   - "[[anthropics-skills]]"
   - "[[astral-sh-uv]]"
+  - "[[chain-of-thought-prompting]]"
   - "[[claude-code]]"
   - "[[fastapi-fastapi]]"
   - "[[flutter-flutter]]"
@@ -67,7 +68,7 @@ cited_by:
   - "[[openai-openai-agents-python]]"
   - "[[pandas-dev-pandas]]"
   - "[[vendor-neutral]]"
-cited_by_count: 22
+cited_by_count: 23
 ---
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음

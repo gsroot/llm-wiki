@@ -25,13 +25,14 @@ related:
 - '[[agent-skills]]'
 - '[[anthropics-skills]]'
 confidence: high
-inbound_count: 29
+inbound_count: 32
 aliases:
 - Fastapi
 - fastapi
 - fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md)
 cited_by:
   - "[[agent-skills]]"
+  - "[[annotated-pattern]]"
   - "[[anthropics-skills]]"
   - "[[backend-fastapi-stack]]"
   - "[[backend-python-fastapi]]"
@@ -43,7 +44,7 @@ cited_by:
   - "[[python]]"
   - "[[seokgeun-kim]]"
   - "[[tiangolo]]"
-cited_by_count: 12
+cited_by_count: 13
 ---
 
 # fastapi/fastapi — 표준 기반 모던 Python 웹 프레임워크 (라이브러리 번들 SKILL.md)

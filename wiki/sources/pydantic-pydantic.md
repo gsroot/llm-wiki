@@ -34,17 +34,18 @@ related:
 - '[[scikit-learn]]'
 - '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 8
+inbound_count: 10
 aliases:
 - Pydantic
 - pydantic
 - pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준
 - pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준 (V2 ground-up rewrite + Logfire)
 cited_by:
+  - "[[annotated-pattern]]"
   - "[[backend-fastapi-stack]]"
   - "[[pydantic]]"
   - "[[python]]"
-cited_by_count: 3
+cited_by_count: 4
 ---
 
 # pydantic/pydantic — Python 타입 힌트 기반 데이터 검증의 사실상 표준

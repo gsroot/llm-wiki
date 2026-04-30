@@ -30,10 +30,10 @@ related:
 - '[[fastapi-fastapi]]'
 source_count: 6
 observed_source_refs: 24
-inbound_count: 58
+inbound_count: 60
 created: 2026-04-24
 updated: 2026-04-27
-cited_by_count: 29
+cited_by_count: 30
 ---
 
 # Python 백엔드 (FastAPI · Spring Boot 비교 맥락)
@@ -90,7 +90,7 @@ cited_by_count: 29
 
 [[fastapi]] v0.136.1부터 `fastapi/.agents/skills/fastapi/SKILL.md`가 라이브러리 자체에 번들링되어 LLM 에이전트가 자동으로 따라야 할 권장사항이 명문화됐다:
 
-- **`Annotated[T, Path/Query/Depends(...)]` 강제**: 디폴트 인자(`q: str = Query(...)`) 패턴 금지. 시그니처가 다른 컨텍스트(테스트, 문서)에서도 의미 보존 + 재사용성.
+- **[[annotated-pattern|`Annotated[T, Path/Query/Depends(...)]`]] 강제**: 디폴트 인자(`q: str = Query(...)`) 패턴 금지. 시그니처가 다른 컨텍스트(테스트, 문서)에서도 의미 보존 + 재사용성. → PEP 593 패턴은 [[annotated-pattern]] 페이지 참조 (FastAPI/Pydantic/SQLAlchemy/Typer 5 라이브러리 통합 사용).
 - **return type annotation 우선**: `response_model=`보다 함수 반환 타입을 권장. Pydantic 2 Rust 직렬화로 처리되므로 `ORJSONResponse`/`UJSONResponse`는 deprecated.
 - **`def` 디폴트, async는 확실할 때만**: blocking I/O는 `def`(자동 threadpool)에서 안전. async 안에 blocking이 가장 큰 성능 함정.
 - **라우터 레벨 prefix/tags/dependencies**: `include_router`에 인자 전달하지 말고 `APIRouter(prefix=..., tags=...)`에 둔다.
