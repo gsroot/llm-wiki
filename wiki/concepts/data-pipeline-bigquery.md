@@ -32,10 +32,10 @@ related:
 - '[[pandas-dev-pandas]]'
 source_count: 5
 observed_source_refs: 24
-inbound_count: 52
+inbound_count: 56
 created: 2026-04-24
 updated: 2026-04-27
-cited_by_count: 22
+cited_by_count: 24
 ---
 
 # 데이터 파이프라인 (BigQuery 중심 BI)

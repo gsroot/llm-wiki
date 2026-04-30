@@ -30,10 +30,10 @@ related:
 - '[[fastapi-fastapi]]'
 source_count: 6
 observed_source_refs: 24
-inbound_count: 60
+inbound_count: 62
 created: 2026-04-24
 updated: 2026-04-27
-cited_by_count: 30
+cited_by_count: 31
 ---
 
 # Python 백엔드 (FastAPI · Spring Boot 비교 맥락)
@@ -59,7 +59,7 @@ cited_by_count: 30
 - **Flask** — 레거시 ML 예측 서비스(2020-2021), 통합 인증 모듈(2021-06~07), 대용량 다운로드 API(2019).
 - **NestJS** (Node.js) — XPLA · NFT 마켓.
 - **공통 패턴**
- - APIResponse `{result_code, message, data}` envelope (FastAPI 측 표준).
+ - [[api-response-envelope|APIResponse `{result_code, message, data}` envelope]] (FastAPI 측 표준, 9년 운영).
  - APICode 13종 + BigQuery 결과 코드 4종 정립.
  - Pydantic v1/v2 마이그레이션 경험.
  - SQLAlchemy + Alembic 스키마 마이그레이션, Pytest 단위 테스트.

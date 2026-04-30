@@ -13,10 +13,10 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 4
-inbound_count: 24
+inbound_count: 27
 created: 2026-04-28
 updated: 2026-04-28
-cited_by_count: 10
+cited_by_count: 11
 ---
 
 # LightGBM

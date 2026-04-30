@@ -21,7 +21,7 @@ related:
 - '[[ml-ai]]'
 - '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 23
+inbound_count: 25
 aliases:
 - Microsoft Ml For Beginners
 - microsoft ml for beginners

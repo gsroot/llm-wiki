@@ -46,7 +46,7 @@ related:
 - '[[uv]]'
 - '[[python-packaging]]'
 confidence: high
-inbound_count: 47
+inbound_count: 48
 aliases:
 - Openai Agents Python
 - openai agents python
@@ -60,6 +60,7 @@ cited_by:
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
   - "[[anthropics-claude-cookbooks]]"
+  - "[[api-response-envelope]]"
   - "[[astral-sh-uv]]"
   - "[[governance-axis-comparison]]"
   - "[[harness]]"
@@ -71,7 +72,7 @@ cited_by:
   - "[[openai-openai-cookbook]]"
   - "[[python]]"
   - "[[vendor-neutral]]"
-cited_by_count: 17
+cited_by_count: 18
 ---
 
 # openai/openai-agents-python — OpenAI Agents SDK 본체

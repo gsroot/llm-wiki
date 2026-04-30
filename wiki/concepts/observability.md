@@ -26,10 +26,10 @@ related:
 - '[[getsentry-sentry]]'
 source_count: 3
 observed_source_refs: 3
-inbound_count: 9
+inbound_count: 12
 created: 2026-04-28
 updated: 2026-04-28
-cited_by_count: 6
+cited_by_count: 7
 ---
 
 # Observability — 메트릭/로그/트레이스 + 에러 + 사용자 경험

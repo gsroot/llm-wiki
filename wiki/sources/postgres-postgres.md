@@ -32,7 +32,7 @@ related:
 - '[[alembic]]'
 - '[[fastapi]]'
 confidence: high
-inbound_count: 12
+inbound_count: 14
 aliases:
 - Postgres
 - postgres

@@ -28,12 +28,13 @@ related:
 - '[[backend-python-fastapi]]'
 - '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 34
+inbound_count: 36
 aliases:
 - C2Spf Analytics Renewal
 - c2spf analytics renewal
 - 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)
 cited_by:
+  - "[[api-response-envelope]]"
   - "[[backend-python-fastapi]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
   - "[[c2spf-analytics]]"
@@ -46,7 +47,7 @@ cited_by:
   - "[[pandas-dev-pandas]]"
   - "[[portfolio]]"
   - "[[seokgeun-kim]]"
-cited_by_count: 12
+cited_by_count: 13
 ---
 
 # 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)

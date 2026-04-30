@@ -24,10 +24,10 @@ related:
 - '[[c2spf-analytics-renewal]]'
 source_count: 4
 observed_source_refs: 13
-inbound_count: 26
+inbound_count: 28
 created: 2026-04-24
 updated: 2026-04-24
-cited_by_count: 10
+cited_by_count: 11
 ---
 
 # 프론트엔드 (React + TypeScript + Vite + TanStack)

@@ -27,12 +27,13 @@ related:
 - '[[devops-cicd]]'
 - '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 26
+inbound_count: 28
 aliases:
 - C2Spf Analytics Common
 - c2spf analytics common
 - 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)
 cited_by:
+  - "[[api-response-envelope]]"
   - "[[backend-python-fastapi]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
   - "[[c2spf-analytics]]"
@@ -42,7 +43,7 @@ cited_by:
   - "[[devops-cicd]]"
   - "[[portfolio]]"
   - "[[seokgeun-kim]]"
-cited_by_count: 9
+cited_by_count: 10
 ---
 
 # 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)

@@ -21,7 +21,7 @@ related:
 - '[[observability-and-cicd-stack]]'
 - '[[agent-skills]]'
 confidence: high
-inbound_count: 14
+inbound_count: 16
 aliases:
 - Prometheus
 - Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md

@@ -13,10 +13,10 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 203
+- 총 페이지 수: 205
 - 소스 요약: 66
 - 엔티티: 77 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect, codex 신설 2026-04-30)
-- 개념: 37 (rcif-prompt-pattern, chain-of-thought-prompting 신설 2026-04-30, progressive-disclosure 신설 2026-04-30, vendor-neutral 신설 2026-04-30 — Phase B audit, annotated-pattern 신설 2026-04-30 — Cluster D~G audit, 11 페이지 PEP 593 mention)
+- 개념: 39 (rcif-prompt-pattern, chain-of-thought-prompting, progressive-disclosure, vendor-neutral, annotated-pattern, api-response-envelope, time-series-processing 신설 2026-04-30 — 다중 Phase audit. 거버넌스 도입 후 누적 신설 7개)
 - 종합 분석: 22 (agent-sdk-comparison, governance-axis-comparison 신설 2026-04-30 — Phase B-deep)
 
 ---
@@ -121,7 +121,9 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills, library-self-hosted-skill, fastapi, flutter, vendor-neutral, dart-skills-lint, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror | 8 | 2026-04-28 |
 | [[progressive-disclosure]] | 점진적 공개 (Progressive Disclosure) | progressive-disclosure, LLM, context, agent-skills, token-economy, ux-design, lazy-loading | 3 | 2026-04-30 |
 | [[vendor-neutral]] | 벤더 중립 (Vendor-neutral) 패턴 | vendor-neutral, agent-skills, agents-md, claude-md, agentskills.io, governance, portability | 4 | 2026-04-30 |
-| [[annotated-pattern]] | Annotated 패턴 (PEP 593) — Type-First Python의 단일 표현 | annotated-pattern, pep-593, python, type-hints, pydantic, fastapi, sqlalchemy, typer, backend, type-first-python | 4 | 2026-04-30 |
+| [[annotated-pattern]] | Annotated 패턴 (PEP 593) — Type-First Python의 단일 표현 | annotated-pattern, pep-593, python, type-hints, pydantic, fastapi, sqlalchemy, typer, 백엔드, type-first-python | 4 | 2026-04-30 |
+| [[api-response-envelope]] | API Response Envelope (result_code · message · data 표준) | api-response-envelope, api-design, fastapi, 백엔드, response-pattern, error-handling | 4 | 2026-04-30 |
+| [[time-series-processing]] | 시계열 처리 (Time Series Processing) — 저장 · 알고리즘 · 관측성 | time-series, 시계열, timescaledb, prometheus, arima, lightgbm, pandas, bigquery, data-analysis, 데이터분석 | 5 | 2026-04-30 |
 | [[agent-patterns]] | Building Effective Agents — 5 패턴 | agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, spec-kit, sdd, openai, openai-cookbook, openai-agents-python, agents-sdk, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns | 4 | 2026-04-28 |
 | [[spec-driven-development]] | Spec-Driven Development (SDD) | spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology | 1 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot, tiangolo, agent-skills, annotated, pydantic2 | 6 | 2026-04-27 |

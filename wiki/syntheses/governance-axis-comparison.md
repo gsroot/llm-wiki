@@ -38,8 +38,8 @@ related:
 - '[[seokgeun-stack-guide]]'
 created: 2026-04-30
 updated: 2026-04-30
-inbound_count: 12
-cited_by_count: 11
+inbound_count: 13
+cited_by_count: 12
 ---
 
 # 거버넌스 6축 비교 — Constitution · SKILL.md · SLEP · PDEP · AGENTS.md · PLANS.md

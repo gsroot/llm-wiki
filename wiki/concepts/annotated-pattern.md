@@ -33,9 +33,11 @@ related:
 - '[[c2spf-analytics]]'
 - '[[matechat]]'
 source_count: 4
+observed_source_refs: 3
+inbound_count: 13
 created: 2026-04-30
 updated: 2026-04-30
-cited_by_count: 4
+cited_by_count: 8
 ---
 
 # Annotated 패턴 (PEP 593) — Type-First Python의 단일 표현

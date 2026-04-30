@@ -21,10 +21,10 @@ related:
 - '[[pandas-dev-pandas]]'
 source_count: 1
 observed_source_refs: 3
-inbound_count: 15
+inbound_count: 17
 created: 2026-04-27
 updated: 2026-04-27
-cited_by_count: 9
+cited_by_count: 10
 ---
 
 # DataFrame

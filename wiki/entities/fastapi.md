@@ -32,10 +32,10 @@ related:
 - '[[seokgeun-stack-guide]]'
 source_count: 1
 observed_source_refs: 22
-inbound_count: 90
+inbound_count: 91
 created: 2026-04-27
 updated: 2026-04-28
-cited_by_count: 39
+cited_by_count: 40
 ---
 
 # FastAPI
