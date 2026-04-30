@@ -37,7 +37,7 @@ related:
 - '[[mcp]]'
 - '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 48
+inbound_count: 51
 aliases:
 - Openai Cookbook
 - openai cookbook

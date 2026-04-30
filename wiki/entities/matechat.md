@@ -66,7 +66,7 @@ related:
 - '[[portfolio-ko]]'
 source_count: 6
 observed_source_refs: 38
-inbound_count: 193
+inbound_count: 194
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true

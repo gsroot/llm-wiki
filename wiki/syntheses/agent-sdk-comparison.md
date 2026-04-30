@@ -37,6 +37,7 @@ related:
 created: 2026-04-30
 updated: 2026-04-30
 inbound_count: 12
+cited_by_count: 11
 ---
 
 # Agent SDK 비교 — OpenAI Agents SDK ↔ Claude Agent SDK

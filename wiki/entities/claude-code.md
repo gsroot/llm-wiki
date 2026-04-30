@@ -52,7 +52,7 @@ related:
 - '[[codex]]'
 source_count: 8
 observed_source_refs: 45
-inbound_count: 157
+inbound_count: 158
 created: 2026-04-09
 updated: 2026-04-29
 cited_by_count: 50
