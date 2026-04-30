@@ -43,6 +43,9 @@ cited_by_count: 14
 
 # openai/openai-agents-python — OpenAI Agents SDK 본체
 
+> [!tldr] 한 화면 요약 (모바일·RAG 첫 청크용)
+> [[openai|OpenAI]] 공식 멀티 에이전트 Python SDK (★25K, v0.14.6). **위키적 핵심**: `AGENTS.md = CLAUDE.md` byte-for-byte 동기화 + `.agents/skills/` 9개 SOP 스킬 + `examples/agent_patterns/` 16개 매핑 = [[agent-skills]] 외부 채택 8단계 진화의 첫 "본격 운영 SOP" 사례. [[openai-cookbook]] 패턴이 본체 SDK에 풀스택 적용된 거버넌스 자기 채택 결정적 증거. 본문 366줄.
+
 ## 한줄 요약
 
 > OpenAI 공식 1년차 ★25K 멀티 에이전트 Python SDK(v0.14.6, MIT)로, **`AGENTS.md = CLAUDE.md` 동기화 패턴 + `.agents/skills/` 9개 운영 SOP 스킬 + `examples/agent_patterns/` 16개 패턴 매핑**의 3중 채택을 통해 [[openai-cookbook]]에서 권한 거버넌스 패턴을 자기 핵심 SDK 저장소에 풀스택 적용한 증거 — agent-skills 외부 채택 8단계 진화의 8번째이자 첫 "9개 본격 운영 SOP" 사례.

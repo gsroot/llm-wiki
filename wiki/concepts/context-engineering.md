@@ -1,5 +1,6 @@
 ---
 title: "컨텍스트 엔지니어링 (Context Engineering)"
+aliases: [Context Engineering, 컨텍스트 엔지니어링]
 type: concept
 category: ai
 tags: [컨텍스트엔지니어링, context-engineering, 프롬프트엔지니어링, prompt-engineering, LLM, 자율연구, agent-memory, scratchpad, microsoft-for-beginners, claude-cookbooks, memory-cookbook, automatic-context-compaction, session-memory-compaction]

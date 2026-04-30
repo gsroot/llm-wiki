@@ -1,5 +1,6 @@
 ---
 title: "Google"
+aliases: [Google, 구글]
 type: entity
 entity_type: organization
 tags: [google, alphabet, big-tech, gemini, antigravity, flutter, dart, android, chrome, skia, deepmind, cloud, devrel, AI]

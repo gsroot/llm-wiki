@@ -1,5 +1,6 @@
 ---
 title: "CrewAI"
+aliases: [CrewAI, 크루AI]
 type: entity
 entity_type: tool
 related:

@@ -2,7 +2,7 @@
 title: "LangChain"
 type: entity
 entity_type: tool
-tags: [langchain, LLM-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md, 17회차, 에이전트]
+tags: [langchain, LLM-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md, 17회차]
 aliases: [LangChain, langchain, 랭체인]
 related:
   - "[[langgraph]]"

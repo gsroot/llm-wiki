@@ -3,7 +3,7 @@ title: "하네스 (Harness)"
 type: concept
 category: ai
 aliases: [Agent Harness, harness, 에이전트 하네스, claude harness, AI 하네스]
-tags: [하네스, harness, claude-code, 에이전트, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-SDK, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, openai-agents-python, plans-md, exec-plans, living-document, 7-hour-task, 9-sop-skills, skill-chaining]
+tags: [harness, claude-code, agent, 작업운영, ops, 자율연구, agent-skills, 패키지레이어, claude-agent-SDK, agent-patterns, bare-metal-harness, meta-harness, spec-kit, sdd, library-as-harness, scikit-learn, slep, openai, openai-cookbook, openai-agents-python, plans-md, exec-plans, living-document, 7-hour-task, 9-sop-skills, skill-chaining]
 related:
   - "[[claude-code]]"
   - "[[claude-agent-sdk]]"

@@ -1,5 +1,6 @@
 ---
 title: "Pydantic AI"
+aliases: [Pydantic AI, 파이단틱 AI]
 type: entity
 entity_type: tool
 related:

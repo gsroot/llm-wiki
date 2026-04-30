@@ -42,6 +42,9 @@ cited_by_count: 12
 
 # Mate Chat 1차 수집 — 석근 개인 사이드 프로젝트
 
+> [!tldr] 한 화면 요약 (모바일·RAG 첫 청크용)
+> 석근 개인 사이드 프로젝트 [[matechat|MateChat]] 1차 raw 수집 (v1.0.0 출시 직전 QA 단계). FastAPI + Flutter + OpenAI GPT-4 + WebSocket + IAP(클로버). **위키적 핵심**: `.agents/skills/` 39 SKILL.md 통합 운영 (자작 11 + Flutter 공식 22 + Claude Code marketplace 6) — 위키 15~22회차 6분류 도구가 단일 프로젝트에 집약된 owner 사이드의 실증 사례. 본문 319줄.
+
 ## 한줄 요약
 
 석근이 개발 중인 글로벌 소셜 메시징 플랫폼 (v1.0.0 출시 직전 QA 단계 — 44회차 owner 자기보고로 정정). FastAPI 백엔드 + Flutter 모바일 + OpenAI GPT-4 + WebSocket 실시간 채팅 + 가상화폐(클로버) IAP. **위키 15~22회차에서 발견한 6분류 도구 대부분이 단일 프로젝트에 집약된 실증 사례** + agent-skills 표준의 **`.agents/skills/` 39개 SKILL.md 통합 운영** (자작 11 + Flutter 공식 22 + Claude Code marketplace/npx 설치 6) + **외부 gstack 저장소 vendor + 자체 12개 슬래시 커맨드** (`.claude/commands/`). (28회차 검증 정정: 24회차 본문의 "38 SKILL = 단일 OSS 최대 규모, 메이저 OSS 4~12배 초과" 가설은 자작 11개 기준으로는 anthropics/skills(~12)·openai-agents-python(9)와 비슷한 규모로 약화. 진짜 가치는 **외부 28개 + 자작 11개 통합 운영의 사이드 프로젝트 깊이**.)

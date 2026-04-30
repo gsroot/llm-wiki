@@ -1,5 +1,6 @@
 ---
 title: "Streaming (데이터 스트리밍)"
+aliases: [Streaming, 스트리밍]
 type: concept
 category: data-architecture
 tags: [streaming, kafka, polars, pubsub, real-time, 25회차]

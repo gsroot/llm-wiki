@@ -1,5 +1,6 @@
 ---
 title: "Polars"
+aliases: [Polars, 폴라스]
 type: entity
 entity_type: tool
 tags: [polars, dataframe, rust, lazy-evaluation, query-optimization, apache-arrow, streaming, simd, multi-threaded, pyo3, immutable, pola-rs]

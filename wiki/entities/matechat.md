@@ -41,8 +41,8 @@ related:
   - "[[portfolio-seed]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 6
-observed_source_refs: 28
-inbound_count: 171
+observed_source_refs: 29
+inbound_count: 172
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true

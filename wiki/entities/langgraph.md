@@ -1,8 +1,9 @@
 ---
 title: "LangGraph"
+aliases: [LangGraph, 랭그래프]
 type: entity
 entity_type: tool
-tags: [langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, checkpoint, 17회차, 에이전트]
+tags: [langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, checkpoint, 17회차]
 related:
   - "[[langchain]]"
   - "[[openai-agents-python]]"

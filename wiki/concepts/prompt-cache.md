@@ -1,5 +1,6 @@
 ---
 title: "Prompt Caching"
+aliases: [Prompt Cache, 프롬프트 캐시, prompt-caching]
 type: concept
 category: ai
 tags: [prompt-cache, claude, anthropic, LLM-api, 토큰경제, latency, optimization]

@@ -31,6 +31,9 @@ cited_by_count: 5
 
 # astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터
 
+> [!tldr] 한 화면 요약 (모바일·RAG 첫 청크용)
+> [[ruff|Ruff]] = Astral 첫 제품, Rust 단일 바이너리 Python 린터·포매터 (★47K). Flake8/Black/isort/pydocstyle/pyupgrade/autoflake 7+ 도구를 10~100배 빠르게 통합. **위키적 핵심**: 같은 회사 [[uv]]와 동일한 `CLAUDE.md = @AGENTS.md` 1줄 import = "회사 차원 표준화" 9번째 변형 + 동일 저장소에 차세대 타입 체커 ty 동시 개발. 본문 314줄.
+
 ## 한줄 요약
 
 > Astral의 Python 도구 3제품(uv·ruff·ty) 중 첫 번째이자 ★47K Rust 단일 바이너리로 **Flake8/Black/isort/pydocstyle/pyupgrade/autoflake 등 7개 이상 도구를 10~100배 빠르게 통합**하고, 같은 회사의 [[uv]](10회차 수집)와 동일한 `CLAUDE.md = @AGENTS.md` 1줄 import 패턴을 채택하여 **agent-skills 외부 채택 8단계 진화에서 "회사 차원 표준화"라는 9번째 변형 사례**를 박은 라이브러리 + 동일 저장소에 차세대 타입 체커 ty를 함께 개발 중.

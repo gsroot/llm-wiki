@@ -51,6 +51,9 @@ cited_by_count: 22
 
 # github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)
 
+> [!tldr] 한 화면 요약 (모바일·RAG 첫 청크용)
+> [[github|GitHub]] 공식 [[spec-driven-development|Spec-Driven Development]] 메타-하네스 (★91K, v0.8.1). `specify` CLI 한 번으로 30+ AI 에이전트(Claude Code·Copilot·Cursor·Gemini·Codex 등)에 9개 슬래시 명령 + 5 템플릿 동일 설치. **위키적 핵심**: Codex CLI 통합이 [[agent-skills]] 패키지 형태로 배포 = "표준 위에 표준" 첫 외부 채택 사례 (2단계 진화). 본문 318줄.
+
 ## 한줄 요약
 
 > GitHub이 직접 운영하는 **Spec-Driven Development(SDD) 메타-하네스** (★91,131 / fork 7,877, 2026-04-24 v0.8.1). "코드가 사양을 보좌하는" 전통 모델을 뒤집어 **사양이 실행 가능한 산출물 — 코드를 생성하는 원본 자산**이 되도록 강제. `specify` CLI 한 번 실행으로 30+ AI 코딩 에이전트(Claude Code, Copilot, Cursor, Gemini, Codex, Qwen, Windsurf, Goose 등)에 9개 슬래시 명령(`/speckit.constitution`·`/speckit.specify`·`/speckit.clarify`·`/speckit.plan`·`/speckit.tasks`·`/speckit.analyze`·`/speckit.checklist`·`/speckit.implement`·`/speckit.taskstoissues`)과 5개 템플릿(spec·plan·tasks·constitution·checklist)을 동일하게 설치. Codex CLI는 `--integration-options="--skills"`로 [[agent-skills]] 패키지 형태로 배포되어 표준 위에 표준이 얹힘.

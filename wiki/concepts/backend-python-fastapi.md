@@ -1,8 +1,9 @@
 ---
 title: "Python 백엔드 (FastAPI · Spring Boot 비교 맥락)"
+aliases: [Backend Python, 백엔드 파이썬, Python 백엔드]
 type: concept
 category: web-dev
-tags: [backend, python, fastapi, flask, django, spring-boot, sqlalchemy, pytest, api, tiangolo, agent-skills, annotated, pydantic2, 백엔드]
+tags: [python, fastapi, flask, django, spring-boot, sqlalchemy, pytest, api, tiangolo, agent-skills, annotated, pydantic2, 백엔드]
 related:
   - "[[seokgeun-kim]]"
   - "[[c2spf-analytics]]"

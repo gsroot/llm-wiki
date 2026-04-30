@@ -1,5 +1,6 @@
 ---
 title: "openai-agents-python (OpenAI Agents SDK)"
+aliases: [OpenAI Agents Python, OpenAI Agents SDK, openai-agents]
 type: entity
 entity_type: tool
 tags: [openai-agents-python, openai-agents, openai, agents-SDK, python, multi-agent, agent-framework, MIT-license, mcp, uv, pyright, ruff, agents-md, plans-md, exec-plans, agent-skills, codex, handoffs, guardrails, human-in-the-loop, runtime-behavior-probe, implementation-strategy, run-state, schema-version, 18회차]

@@ -2,7 +2,7 @@
 title: "Cowork"
 type: entity
 entity_type: tool
-tags: [cowork, AI, anthropic, 지식업무, knowledge-work, 에이전트, 비개발자, agent]
+tags: [cowork, AI, anthropic, 지식업무, knowledge-work, 비개발자, agent]
 related:
   - "[[claude-code]]"
   - "[[harness]]"

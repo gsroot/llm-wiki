@@ -8,7 +8,7 @@ raw_path: "raw/articles/claude-code/클로드코드_가이드북.pdf"
 author: "CHOI (@choi.openai)"
 date_published: 2026
 date_ingested: 2026-04-15
-tags: [claude-code, cowork, 하네스, harness, 토큰경제학, 거버넌스, 가이드북, 실무운영, 한국어]
+tags: [claude-code, cowork, harness, 토큰경제학, 거버넌스, 가이드북, 실무운영, 한국어]
 related:
   - "[[claude-code]]"
   - "[[cowork]]"

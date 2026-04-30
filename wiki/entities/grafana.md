@@ -1,5 +1,6 @@
 ---
 title: "Grafana"
+aliases: [Grafana, 그라파나]
 type: entity
 entity_type: tool
 tags: [grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차]

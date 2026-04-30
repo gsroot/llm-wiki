@@ -1,5 +1,6 @@
 ---
 title: "BDFL (Benevolent Dictator For Life)"
+aliases: [BDFL, Benevolent Dictator For Life]
 type: concept
 category: dev-tools
 tags: [bdfl, governance, open-source, decision-making, pandas, python]

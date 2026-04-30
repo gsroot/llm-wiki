@@ -1,5 +1,6 @@
 ---
 title: "shadcn/ui"
+aliases: [shadcn/ui, shadcn-ui, 샤드씨엔]
 type: entity
 entity_type: tool
 related:

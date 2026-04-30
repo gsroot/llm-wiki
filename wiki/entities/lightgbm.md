@@ -1,5 +1,6 @@
 ---
 title: "LightGBM"
+aliases: [LightGBM, 라이트지비엠, light-gbm]
 type: entity
 entity_type: tool
 tags: [lightgbm, ml, gbdt, gradient-boosting, decision-tree, machine-learning, microsoft, lightgbm-org, neurips, effver, 17회차]

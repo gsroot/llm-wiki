@@ -1,5 +1,6 @@
 ---
 title: "Apache Kafka"
+aliases: [Apache Kafka, 카프카, 아파치 카프카]
 type: entity
 entity_type: tool
 tags: [kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip, confluent]

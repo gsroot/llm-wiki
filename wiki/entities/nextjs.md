@@ -1,5 +1,6 @@
 ---
 title: "Next.js"
+aliases: [Next.js, 넥스트JS, next-js]
 type: entity
 entity_type: tool
 related:

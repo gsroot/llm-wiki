@@ -8,7 +8,7 @@ raw_path: "raw/notes/llm_wiki.md"
 author: "원저자 미상 (역자 주석 포함)"
 date_published: 2026-04-09
 date_ingested: 2026-04-09
-tags: [지식관리, knowledge-management, LLM, 위키, wiki, RAG, obsidian]
+tags: [지식관리, knowledge-management, LLM, 위키, RAG, obsidian]
 related:
   - "[[llm-wiki-pattern]]"
   - "[[memex]]"

@@ -1,5 +1,6 @@
 ---
 title: "GitHub"
+aliases: [GitHub, 깃허브, git-hub]
 type: entity
 entity_type: organization
 tags: [github, microsoft, copilot, spec-kit, marketplace, codespaces, octoverse, devops]
@@ -10,8 +11,8 @@ related:
   - "[[anthropic]]"
   - "[[agent-skills]]"
 source_count: 1
-observed_source_refs: 5
-inbound_count: 35
+observed_source_refs: 6
+inbound_count: 36
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 18

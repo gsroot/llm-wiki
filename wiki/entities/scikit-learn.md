@@ -1,5 +1,6 @@
 ---
 title: "scikit-learn (sklearn)"
+aliases: [scikit-learn, 사이킷런, sklearn, 사이킷-런]
 type: entity
 entity_type: tool
 tags: [scikit-learn, sklearn, machine-learning, python, library, classic-ml, fit-predict-transform, pipeline, BSD-3, numfocus, probabl, slep, agents-md]

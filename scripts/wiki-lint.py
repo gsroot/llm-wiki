@@ -71,13 +71,10 @@ VALID_SOURCE_SCOPES = frozenset({"local", "private", "public"})
 CITED_BY_FRONTMATTER_THRESHOLD = 40
 CITED_BY_BODY_HEADER = "## 인용한 페이지 (cited_by — 51회차 자동 갱신)"
 
-# 36회차 신설: 한국어+영어 병기 의무 그룹 (CLAUDE.md 31회차 4단계 규칙 中 "개념·도메인" 카테고리)
-KO_EN_PAIRS: tuple[tuple[str, str], ...] = (
-    ("agent", "에이전트"),
-    ("data-analysis", "데이터분석"),
-    ("backend", "백엔드"),
-    ("frontend", "프론트엔드"),
-)
+# 36회차 신설 → 59회차 deprecated: 한국어+영어 병기 의무 (옵션 A 정책 전환으로 폐기)
+# CLAUDE.md 59회차 옵션 A: tags는 canonical 1개, 표기 변종은 aliases.
+# 본 검증은 비활성화 (빈 튜플) — check #14가 canonical 회귀 차단을 대신 담당.
+KO_EN_PAIRS: tuple[tuple[str, str], ...] = ()
 
 # 36회차 신설: case-duplicate 검증에서 정상 케이스(영어 단독 약어)는 제외
 # 이 화이트리스트의 태그는 대소문자 변형이 있어도 정상 (예: AI는 약어로 영어 단독)
@@ -257,6 +254,10 @@ class LintResult:
     # 53회차 정책 정합화 — 비-메타 페이지에 정수 캐시 일관 적용 강제 안 하지만
     # 미적용은 정보 보고로 가시화하여 --update 실행을 권장.
     cited_by_count_missing: list[str] = field(default_factory=list)
+    # 59회차 P0-2 신설 (check #14): 한·영 tag canonical 위반 (회귀 차단)
+    # CLAUDE.md 59회차 옵션 A 정책 위반 자동 보고. 결함.
+    # (rel_path, demoted_tag, canonical_tag)
+    tag_canonical_violations: list[tuple[str, str, str]] = field(default_factory=list)
 
     def has_defect(self) -> bool:
         # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
@@ -275,6 +276,7 @@ class LintResult:
             or self.tag_case_duplicates
             or self.meta_rag_exclude_missing
             or self.stub_entities
+            or self.tag_canonical_violations
         )
 
 
@@ -485,6 +487,30 @@ def lint(update: bool = False) -> LintResult:
             result.cited_by_count_missing.append(
                 str(page.path.relative_to(WIKI_ROOT.parent))
             )
+
+    # 59회차 P0-2 신설 (check #14): 한·영 tag canonical 위반 (회귀 차단)
+    # CLAUDE.md 59회차 옵션 A 정책: tags는 canonical 1개만, 강등 표기는 사용 금지.
+    # 6쌍 강등→canonical 매핑 검증.
+    TAG_CANONICAL_MAP = {
+        "에이전트": "agent",
+        "하네스": "harness",
+        "backend": "백엔드",
+        "data-analysis": "데이터분석",
+        "wiki": "위키",
+        "owner": "석근",
+    }
+    for page in pages:
+        if page.yaml_invalid or not page.frontmatter:
+            continue
+        page_tags = page.frontmatter.get("tags", []) or []
+        if not isinstance(page_tags, list):
+            continue
+        page_tags_set = {str(t) for t in page_tags}
+        for demoted, canonical in TAG_CANONICAL_MAP.items():
+            if demoted in page_tags_set:
+                result.tag_canonical_violations.append(
+                    (str(page.path.relative_to(WIKI_ROOT.parent)), demoted, canonical)
+                )
 
     # 고아 페이지: 인바운드 0 (단, redirect/index/log 제외)
     for stem, cnt in inbound.items():
@@ -1139,6 +1165,20 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
     else:
         if not quiet:
             print("✓ 0건 (모든 비-메타 페이지에 cited_by_count 정수 캐시 적용)")
+
+    print(
+        "--- 14. 한·영 tag canonical 위반 (59회차 신설 — 옵션 A 정책 회귀 차단) ---"
+    )
+    if result.tag_canonical_violations:
+        print(f"❌ {len(result.tag_canonical_violations)}건:")
+        for rel_path, demoted, canonical in result.tag_canonical_violations[:10]:
+            print(f"    {rel_path}: '{demoted}' → '{canonical}'로 정정 필요")
+        if len(result.tag_canonical_violations) > 10:
+            remainder = len(result.tag_canonical_violations) - 10
+            print(f"    ... (생략 {remainder}건)")
+    else:
+        if not quiet:
+            print("✓ 0건 (한·영 6쌍 canonical 정합)")
 
 
 def report_full(result: LintResult) -> None:

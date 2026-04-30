@@ -1,5 +1,6 @@
 ---
 title: "Alembic (sqlalchemy/alembic)"
+aliases: [Alembic, 알렘빅]
 type: entity
 entity_type: tool
 tags: [alembic, migration, sqlalchemy, python, ddl, transactional-ddl, autogenerate, branch-merging, sql-script-output, batch-migration, sqlite-batch, mike-bayer, postgresql, mysql, sqlite, oracle, mssql, offline-migration, cookbook]

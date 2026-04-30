@@ -1,5 +1,6 @@
 ---
 title: "Predicate Pushdown"
+aliases: [Predicate Pushdown, 조건 푸시다운]
 type: concept
 category: query-optimization
 tags: [predicate-pushdown, sql-optimization, parquet, duckdb, polars, 25회차]

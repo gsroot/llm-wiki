@@ -1,5 +1,6 @@
 ---
 title: "Copy-on-Write (CoW)"
+aliases: [Copy-on-Write, CoW, COW]
 type: concept
 category: data
 tags: [copy-on-write, cow, pandas, 메모리관리, 성능, optimization]

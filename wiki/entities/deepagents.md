@@ -1,5 +1,6 @@
 ---
 title: "DeepAgents"
+aliases: [DeepAgents, 딥에이전츠]
 type: entity
 entity_type: tool
 related:

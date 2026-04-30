@@ -1,5 +1,6 @@
 ---
 title: "Zustand"
+aliases: [Zustand, 주스탠드]
 type: entity
 entity_type: tool
 related:

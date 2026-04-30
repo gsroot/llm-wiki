@@ -1,5 +1,6 @@
 ---
 title: "GitHub Actions"
+aliases: [GitHub Actions, 깃허브 액션, GHA]
 type: entity
 entity_type: service
 tags: [github-actions, ci-cd, runner, toolkit, devops, oidc, 19회차]

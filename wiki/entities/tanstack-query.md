@@ -1,5 +1,6 @@
 ---
 title: "TanStack Query"
+aliases: [TanStack Query, 탠스택 쿼리, react-query]
 type: entity
 entity_type: tool
 related:

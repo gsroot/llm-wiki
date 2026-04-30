@@ -1,5 +1,6 @@
 ---
 title: "Flutter"
+aliases: [Flutter, 플러터]
 type: entity
 entity_type: tool
 tags: [flutter, dart, google, ui-toolkit, multiplatform, mobile, web, desktop, skia, impeller, hot-reload, material-design, cupertino, agent-skills, agentskills.io, vendor-neutral, riverpod, mate-chat, 22회차]
@@ -19,8 +20,8 @@ related:
   - "[[flutter-flutter]]"
   - "[[seokgeun-stack-guide]]"
 source_count: 1
-observed_source_refs: 16
-inbound_count: 57
+observed_source_refs: 17
+inbound_count: 58
 created: 2026-04-27
 updated: 2026-04-28
 cited_by_count: 21

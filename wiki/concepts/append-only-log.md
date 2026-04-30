@@ -1,5 +1,6 @@
 ---
 title: "Append-only Log"
+aliases: [Append-only Log, 어펜드 로그, append log]
 type: concept
 category: data-architecture
 tags: [append-only-log, wal, kafka, log-structured, sequential-io, 25회차]

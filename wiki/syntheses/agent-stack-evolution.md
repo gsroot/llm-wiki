@@ -1,5 +1,6 @@
 ---
 title: "에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교"
+aliases: [Agent Stack Evolution, 에이전트 스택 진화]
 type: synthesis
 category: comparison
 tags: [agent-stack, 비교분석, microsoft, anthropic, karpathy, github, google, openai, harness, agent-skills, agent-patterns, autonomous-research-loop, 운영표준, BI, 개인비서, exec-plans, plans-md, recent-learnings, agents-md-living]

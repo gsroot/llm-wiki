@@ -1,5 +1,6 @@
 ---
 title: "DevOps & CI/CD (Docker · Jenkins 멀티브랜치 · Loki/Grafana)"
+aliases: [DevOps CI/CD, 데브옵스, CI CD]
 type: concept
 category: dev-tools
 tags: [devops, cicd, docker, docker-compose, jenkins, multi-branch, github-actions, nginx, loki, promtail, grafana, observability, prometheus, sentry, 19회차]

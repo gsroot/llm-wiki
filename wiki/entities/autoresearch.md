@@ -2,7 +2,7 @@
 title: "autoresearch (karpathy/autoresearch)"
 type: entity
 entity_type: project
-tags: [autoresearch, karpathy, LLM, agent, 자율연구, nanochat, val-bpb, gpu, 단일파일, MIT, nanochat-leaderboard, 에이전트]
+tags: [autoresearch, karpathy, LLM, agent, 자율연구, nanochat, val-bpb, gpu, 단일파일, MIT, nanochat-leaderboard]
 related:
   - "[[karpathy]]"
   - "[[autonomous-research-loop]]"

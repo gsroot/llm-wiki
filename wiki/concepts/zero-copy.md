@@ -1,5 +1,6 @@
 ---
 title: "Zero-copy"
+aliases: [Zero-Copy, 제로 카피, zero-copy]
 type: concept
 category: data-architecture
 tags: [zero-copy, arrow, parquet, memory-model, performance, 25회차]

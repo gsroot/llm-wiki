@@ -1,8 +1,9 @@
 ---
 title: "Building Effective Agents — 5 패턴"
+aliases: [Agent Patterns, 에이전트 패턴, Building Effective Agents]
 type: concept
 category: ai
-tags: [agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, agent, workflow, spec-kit, sdd, pre-composed-patterns, openai, openai-cookbook, openai-agents-python, agents-SDK, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns, langgraph, pregel, state-machine, durable-execution, 12-patterns, pydantic-ai, deepagents, crewai, 18회차, 에이전트]
+tags: [agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, agent, workflow, spec-kit, sdd, pre-composed-patterns, openai, openai-cookbook, openai-agents-python, agents-SDK, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns, langgraph, pregel, state-machine, durable-execution, 12-patterns, pydantic-ai, deepagents, crewai, 18회차]
 related:
   - "[[claude-code]]"
   - "[[claude-agent-sdk]]"

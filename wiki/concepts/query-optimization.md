@@ -1,5 +1,6 @@
 ---
 title: "Query Optimization"
+aliases: [Query Optimization, 쿼리 최적화]
 type: concept
 category: database
 tags: [query-optimization, sql, planner, optimizer, predicate-pushdown, 25회차]

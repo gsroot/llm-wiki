@@ -7,7 +7,7 @@ raw_path: "raw/articles/karpathy-autoresearch/"
 author: "Andrej Karpathy"
 date_published: 2026-03-06
 date_ingested: 2026-04-27
-tags: [autoresearch, karpathy, LLM, 자율연구, agent, harness, nanochat, val-bpb, 실험루프, 에이전트]
+tags: [autoresearch, karpathy, LLM, 자율연구, agent, harness, nanochat, val-bpb, 실험루프]
 related:
   - "[[karpathy]]"
   - "[[autoresearch]]"

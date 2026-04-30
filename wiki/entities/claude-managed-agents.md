@@ -2,7 +2,7 @@
 title: "Claude Managed Agents"
 type: entity
 entity_type: service
-tags: [claude-managed-agents, cma, anthropic, hosted-runtime, agent, stateful-agent, sandbox, human-in-the-loop, 에이전트]
+tags: [claude-managed-agents, cma, anthropic, hosted-runtime, agent, stateful-agent, sandbox, human-in-the-loop]
 related:
   - "[[anthropic]]"
   - "[[claude-agent-sdk]]"

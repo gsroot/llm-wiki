@@ -1,8 +1,9 @@
 ---
 title: "LLM 위키 패턴"
+aliases: [LLM Wiki Pattern, LLM 위키 패턴]
 type: concept
 category: ai
-tags: [지식관리, knowledge-management, LLM, 위키, obsidian, RAG, 하네스, harness]
+tags: [지식관리, knowledge-management, LLM, 위키, obsidian, RAG, harness]
 related:
   - "[[wiki-bootstrap-log]]"
   - "[[memex]]"

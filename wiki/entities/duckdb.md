@@ -1,5 +1,6 @@
 ---
 title: "DuckDB"
+aliases: [DuckDB, 덕디비, duck-db]
 type: entity
 entity_type: tool
 tags: [duckdb, embedded, sql, analytical, columnar, vectorized, in-process, MIT-license, c++17, olap, sqlite-for-olap, motherduck]

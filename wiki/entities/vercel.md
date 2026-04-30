@@ -1,5 +1,6 @@
 ---
 title: "Vercel"
+aliases: [Vercel, 버셀]
 type: entity
 entity_type: organization
 tags: [vercel, organization, frontend, edge, nextjs, turbopack, AI-SDK, 23회차, 프론트엔드]

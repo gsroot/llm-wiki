@@ -1,5 +1,6 @@
 ---
 title: "Event-driven Architecture"
+aliases: [Event-Driven Architecture, 이벤트 기반 아키텍처, EDA]
 type: concept
 category: system-architecture
 tags: [event-driven-architecture, eda, event-sourcing, cqrs, kafka, pubsub, 25회차]

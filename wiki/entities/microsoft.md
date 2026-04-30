@@ -1,5 +1,6 @@
 ---
 title: "Microsoft"
+aliases: [Microsoft, 마이크로소프트, MS]
 type: entity
 entity_type: organization
 tags: [microsoft, microsoft-cloud-advocates, microsoft-for-beginners, openai, azure, github, devrel]

@@ -43,8 +43,8 @@ related:
   - "[[matechat]]"
   - "[[llm-infra-meta-cluster]]"
 source_count: 16
-observed_source_refs: 70
-inbound_count: 201
+observed_source_refs: 73
+inbound_count: 204
 created: 2026-04-27
 updated: 2026-04-29
 cited_by_count: 69

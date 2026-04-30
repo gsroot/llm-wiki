@@ -13,8 +13,8 @@ related:
   - "[[agent-skills]]"
   - "[[harness]]"
 source_count: 1
-observed_source_refs: 6
-inbound_count: 32
+observed_source_refs: 8
+inbound_count: 34
 created: 2026-04-27
 updated: 2026-04-27
 verification_required: true

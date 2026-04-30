@@ -1,5 +1,6 @@
 ---
 title: "Python"
+aliases: [Python, 파이썬, 파이썬 언어]
 type: entity
 entity_type: language
 tags: [python, language, dynamic-typing, gil, asyncio, 23회차]

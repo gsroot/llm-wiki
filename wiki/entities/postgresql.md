@@ -1,5 +1,6 @@
 ---
 title: "PostgreSQL"
+aliases: [PostgreSQL, 포스트그레스, 포스트그레SQL, postgres]
 type: entity
 entity_type: tool
 tags: [postgresql, postgres, sql, rdbms, oss, mailing-list-governance, github-mirror, sqlalchemy, c-language, object-relational, transactional, mvcc, fdw, jsonb, replication, pgdg, pgvector, timescaledb, postgis, extension-system, bsd-license, no-pull-requests, stonebraker]

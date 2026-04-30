@@ -7,7 +7,7 @@ raw_path: "raw/articles/claude-code/Claude Code 개요.md"
 author: "Anthropic"
 date_published: 2026-04-09
 date_ingested: 2026-04-09
-tags: [claude-code, AI, 에이전트, agent, 코딩도구, coding-tool, anthropic]
+tags: [claude-code, AI, agent, 코딩도구, coding-tool, anthropic]
 related:
   - "[[claude-code]]"
   - "[[mcp]]"

@@ -1,5 +1,6 @@
 ---
 title: "Observability — 메트릭/로그/트레이스 + 에러 + 사용자 경험"
+aliases: [Observability, 관측성, 옵저버빌리티]
 type: concept
 category: dev-tools
 tags: [observability, monitoring, metrics, logs, traces, error-tracking, sre, prometheus, grafana, sentry, otel, 19회차]

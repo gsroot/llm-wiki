@@ -1,5 +1,6 @@
 ---
 title: "Apache Parquet"
+aliases: [Apache Parquet, 파케이, 파퀘]
 type: entity
 entity_type: tool
 tags: [parquet, columnar, on-disk, file-format, dremel, thrift, compression, encoding, hadoop, asf, big-data]

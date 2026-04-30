@@ -1,8 +1,9 @@
 ---
 title: "pandas (데이터 분석 라이브러리)"
+aliases: [Pandas, 판다스, pandas-dev]
 type: entity
 entity_type: tool
-tags: [pandas, python, dataframe, data-analysis, time-series, BI, scikit-learn, numpy, pyarrow, bigquery, copy-on-write, 데이터분석]
+tags: [pandas, python, dataframe, time-series, BI, scikit-learn, numpy, pyarrow, bigquery, copy-on-write, 데이터분석]
 related:
   - "[[pandas-dev]]"
   - "[[microsoft-data-science-for-beginners]]"

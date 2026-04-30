@@ -1,5 +1,6 @@
 ---
 title: "Dart"
+aliases: [Dart, 다트]
 type: entity
 entity_type: tool
 tags: [dart, programming-language, google, flutter, aot, jit, javascript-compile, wasm, sound-null-safety, isolates]

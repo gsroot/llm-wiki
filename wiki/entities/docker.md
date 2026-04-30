@@ -1,5 +1,6 @@
 ---
 title: "Docker / Moby"
+aliases: [Docker, 도커, Moby]
 type: entity
 entity_type: tool
 tags: [docker, moby, container, runtime, devops, 19회차]

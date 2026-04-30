@@ -1,8 +1,9 @@
 ---
 title: "DataFrame"
+aliases: [DataFrame, 데이터프레임, 데이터 프레임, df]
 type: concept
 category: data
-tags: [dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data, data-analysis]
+tags: [dataframe, pandas, polars, dask, 데이터분석, 자료구조, tabular-data]
 related:
   - "[[pandas]]"
   - "[[copy-on-write]]"

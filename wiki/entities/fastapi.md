@@ -1,5 +1,6 @@
 ---
 title: "FastAPI"
+aliases: [FastAPI, 패스트API, fast-api]
 type: entity
 entity_type: tool
 tags:

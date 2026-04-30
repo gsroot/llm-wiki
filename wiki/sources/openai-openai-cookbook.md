@@ -47,6 +47,9 @@ cited_by_count: 19
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음
 
+> [!tldr] 한 화면 요약 (모바일·RAG 첫 청크용)
+> [[openai|OpenAI]] 공식 4년차 레시피 모음 (★73K, 289 콘텐츠, 115 저자). **위키적 핵심**: `AGENTS.md`에 **"Recent Learnings"** 섹션 = 가이드를 살아있는 운영 노트로 운영하는 첫 메인스트림 사례 + `PLANS.md`(ExecPlan) = 단일 LLM 작업 7시간+ 가능케 하는 6번째 거버넌스 축. 본문 316줄.
+
 ## 한줄 요약
 
 > OpenAI 공식이 운영하는 4년차 ★73K 레시피 모음(289개 콘텐츠 / 115명 저자)으로, **AGENTS.md 안에 "Recent Learnings" 섹션을 두어 가이드를 살아있는 운영 노트로 운영하는 첫 메인스트림 사례**이며, `PLANS.md`(ExecPlan) 패턴은 단일 LLM 작업 7시간+를 가능케 하는 6번째 거버넌스 축이다.

@@ -1,5 +1,6 @@
 ---
 title: "SQLAlchemy (sqlalchemy/sqlalchemy)"
+aliases: [SQLAlchemy, SQL Alchemy]
 type: entity
 entity_type: tool
 tags: [sqlalchemy, python, sql, orm, core, unit-of-work, identity-map, data-mapper, declarative, async, sqlmodel, alembic, mike-bayer, postgresql, mysql, sqlite, dialect, dbapi, type-coercion, connection-pool, 2-0-style, annotated-mapped, bdfl]

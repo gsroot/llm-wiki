@@ -1,5 +1,6 @@
 ---
 title: "OSS+SaaS 듀얼 모델"
+aliases: [OSS SaaS Dual, OSS SaaS 듀얼, 오픈소스 SaaS]
 type: concept
 category: oss-governance
 tags: [oss-saas-dual, governance, business-model, langchain, polars, crewai, 25회차]

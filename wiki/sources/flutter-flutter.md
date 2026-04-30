@@ -41,6 +41,9 @@ cited_by_count: 13
 
 # flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준
 
+> [!tldr] 한 화면 요약 (모바일·RAG 첫 청크용)
+> Google [[flutter|Flutter]] 멀티플랫폼 UI SDK (★176K / 2015~). 단일 Dart 코드베이스 + Skia/Impeller 엔진. **위키적 핵심**: `.agents/skills/` 3개 SKILL.md 패키지로 [[agent-skills]] 표준 vendor-neutral 채택 (4단계 진화) + `docs/rules/` 4계층 토큰 예산 룰(1K/4K/10K/30K)로 progressive disclosure 토큰 세분화. 본문 423줄 — 빠른 참조는 ## 메타·## 핵심 내용부터.
+
 ## 한줄 요약
 
 > Google의 멀티플랫폼 UI SDK(★176,117 / fork 30,289, 2015-03-06 창설). iOS·Android·Web·Windows·macOS·Linux·Fuchsia·임베디드를 **하나의 Dart 코드베이스 + Skia/Impeller 그래픽 엔진**으로 처리하는 framework + engine 통합 저장소. 위키적 측면에서 가장 중요한 발견은 **저장소 자체가 [[agent-skills]] 표준의 vendor-neutral 채택 사례**라는 점 — `.agents/skills/` (agentskills.io 표준 준수)에 3개 SKILL.md 패키지(`find-release`·`rebuilding-flutter-tool`·`upgrade-browser`)를 두고 `.claude/skills` → `../.agents/skills` 심볼릭 링크로 모든 에이전트가 같은 스킬을 공유하게 만듦. 또한 `docs/rules/` 4계층 토큰 예산 룰(rules_1k → rules_4k → rules_10k → rules.md 30K)이 도구별 한계(Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K)를 매트릭스로 명시 — **Anthropic의 progressive disclosure를 토큰 단위로 더 세분화한 패턴**.

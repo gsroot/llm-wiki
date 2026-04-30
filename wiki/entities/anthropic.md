@@ -1,5 +1,6 @@
 ---
 title: "Anthropic"
+aliases: [Anthropic, 앤트로픽]
 type: entity
 entity_type: organization
 tags: [anthropic, AI, AI연구소, claude, claude-code, agent-skills, mcp, building-effective-agents]

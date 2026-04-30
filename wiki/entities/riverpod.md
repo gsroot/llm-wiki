@@ -1,5 +1,6 @@
 ---
 title: "Riverpod"
+aliases: [Riverpod, 리버팟]
 type: entity
 entity_type: tool
 related:

@@ -1,5 +1,6 @@
 ---
 title: "Prometheus"
+aliases: [Prometheus, 프로메테우스]
 type: entity
 entity_type: tool
 tags: [prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차]

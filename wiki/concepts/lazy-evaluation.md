@@ -1,5 +1,6 @@
 ---
 title: "Lazy Evaluation (지연 평가)"
+aliases: [Lazy Evaluation, 지연 평가, lazy-eval]
 type: concept
 category: data
 tags: [lazy-evaluation, query-optimization, predicate-pushdown, projection-pushdown, dataframe, sql, polars, duckdb, spark]

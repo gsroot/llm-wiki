@@ -1,5 +1,6 @@
 ---
 title: "PandasAI"
+aliases: [PandasAI, 판다스AI]
 type: entity
 entity_type: tool
 related:

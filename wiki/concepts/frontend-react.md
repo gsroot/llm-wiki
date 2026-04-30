@@ -1,5 +1,6 @@
 ---
 title: "프론트엔드 (React + TypeScript + Vite + TanStack)"
+aliases: [Frontend React, 프론트엔드 리액트]
 type: concept
 category: web-dev
 tags: [frontend, react, typescript, vite, tanstack, zustand, ag-grid, highcharts, mobx, 프론트엔드]

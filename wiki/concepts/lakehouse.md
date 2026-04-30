@@ -1,5 +1,6 @@
 ---
 title: "Lakehouse"
+aliases: [Lakehouse, 레이크하우스, data-lakehouse]
 type: concept
 category: data-architecture
 tags: [lakehouse, data-warehouse, data-lake, parquet, delta-lake, iceberg, 25회차]

@@ -1,5 +1,6 @@
 ---
 title: "데이터 파이프라인 (BigQuery 중심 BI)"
+aliases: [Data Pipeline BigQuery, 데이터 파이프라인, 빅쿼리 파이프라인]
 type: concept
 category: data
 tags: [data-pipeline, bigquery, mysql, redis, mariadb, hiveql, digdag, celery, airflow, BI, mmp, pandas, pandas-gbq, bigframes, modin, dask, pyarrow]

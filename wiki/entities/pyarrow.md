@@ -1,5 +1,6 @@
 ---
 title: "PyArrow"
+aliases: [PyArrow, 파이애로우, Apache Arrow Python]
 type: entity
 entity_type: tool
 tags: [pyarrow, apache-arrow, columnar, in-memory, zero-copy, parquet, ipc, python, pandas-backend, adbc, gandiva]
