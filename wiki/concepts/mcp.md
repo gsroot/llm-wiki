@@ -248,4 +248,3 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 - [[seokgeun-kim]]
 - [[seokgeun-stack-guide]]
 - [[using-llm-wiki-as-rag]]
-

@@ -27,7 +27,7 @@ related:
 - '[[autonomous-research-loop]]'
 - '[[ml-ai]]'
 confidence: high
-inbound_count: 10
+inbound_count: 11
 cited_by:
 - '[[agent-stack-evolution]]'
 - '[[autonomous-research-loop]]'

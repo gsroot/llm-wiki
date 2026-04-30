@@ -18,7 +18,7 @@ related:
 - '[[claude-code]]'
 - '[[claude-code-overview]]'
 confidence: high
-inbound_count: 5
+inbound_count: 6
 aliases:
 - Claude Code Quickstart
 - Claude Code 빠른 시작

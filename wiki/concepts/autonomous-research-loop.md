@@ -25,7 +25,7 @@ related:
 - '[[karpathy-nanochat]]'
 source_count: 2
 observed_source_refs: 19
-inbound_count: 53
+inbound_count: 55
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 24

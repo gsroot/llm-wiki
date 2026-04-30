@@ -31,8 +31,8 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[openai-openai-cookbook]]'
 source_count: 1
-observed_source_refs: 10
-inbound_count: 35
+observed_source_refs: 13
+inbound_count: 37
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 15

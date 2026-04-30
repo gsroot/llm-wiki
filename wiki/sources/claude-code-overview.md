@@ -19,7 +19,7 @@ related:
 - '[[mcp]]'
 - '[[llm-wiki-pattern]]'
 confidence: high
-inbound_count: 13
+inbound_count: 15
 cited_by:
 - '[[anthropic]]'
 - '[[claude-code]]'

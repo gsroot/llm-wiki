@@ -27,7 +27,7 @@ tags:
 - ml
 - side-project
 cited_by_count: 6
-inbound_count: 10
+inbound_count: 12
 ---
 
 # Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인

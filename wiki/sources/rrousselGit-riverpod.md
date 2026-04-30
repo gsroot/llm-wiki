@@ -20,7 +20,7 @@ tags:
 - reactive
 - dependency-injection
 confidence: high
-inbound_count: 10
+inbound_count: 12
 cited_by:
 - '[[agent-skills]]'
 - '[[flutter-nextjs-fullstack-pattern]]'

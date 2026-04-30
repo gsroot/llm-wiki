@@ -22,7 +22,7 @@ related:
 - '[[scikit-learn]]'
 - '[[ml-ai]]'
 confidence: high
-inbound_count: 12
+inbound_count: 13
 aliases:
 - Microsoft Lightgbm
 - lightgbm-org/LightGBM — Light Gradient Boosting Machine

@@ -19,15 +19,15 @@ related:
 - '[[observability-and-cicd-stack]]'
 confidence: medium
 inbound_count: 7
-cited_by:
-- '[[devops-cicd]]'
-- '[[github-actions]]'
-- '[[observability-and-cicd-stack]]'
-cited_by_count: 3
 aliases:
 - GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계
 - Github Actions Docs
 - github actions docs
+cited_by:
+  - "[[devops-cicd]]"
+  - "[[github-actions]]"
+  - "[[observability-and-cicd-stack]]"
+cited_by_count: 3
 ---
 
 # GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계

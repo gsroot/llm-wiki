@@ -35,7 +35,7 @@ related:
 - '[[harness]]'
 - '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 10
+inbound_count: 12
 aliases:
 - Astral Sh Ruff
 - astral sh ruff

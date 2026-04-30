@@ -20,18 +20,18 @@ tags:
 - multi-framework
 confidence: high
 inbound_count: 9
-cited_by:
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[react]]'
-- '[[tanstack]]'
-- '[[tanstack-query]]'
-cited_by_count: 4
 aliases:
 - TanStack/query (서버 상태 관리의 사실상 표준)
 - TanStack/query 소스
 - Tanstack Query
 - tanstack query
 - tanstack-query
+cited_by:
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[react]]"
+  - "[[tanstack]]"
+  - "[[tanstack-query]]"
+cited_by_count: 4
 ---
 
 # TanStack/query 소스

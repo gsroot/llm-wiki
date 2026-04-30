@@ -22,7 +22,7 @@ tags:
 - open-code
 - code-distribution
 confidence: high
-inbound_count: 13
+inbound_count: 14
 cited_by:
 - '[[agent-skills]]'
 - '[[flutter-nextjs-fullstack-pattern]]'

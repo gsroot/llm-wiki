@@ -22,7 +22,7 @@ related:
 - '[[seokgeun-kim]]'
 - '[[blockchain-xpla]]'
 confidence: high
-inbound_count: 16
+inbound_count: 17
 aliases:
 - C2Spf Nft Market
 - c2spf nft market

@@ -30,7 +30,7 @@ confidence: high
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: 육아휴직·MateChat 출시·1인사업화 진행 상황 — 본인 자기보고 재확인
-inbound_count: 25
+inbound_count: 27
 cited_by:
 - '[[kpi-recovery-loop]]'
 - '[[mate-chat-project-wiki-2026]]'

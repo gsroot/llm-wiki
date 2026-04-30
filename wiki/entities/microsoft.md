@@ -24,8 +24,8 @@ related:
 - '[[microsoft-ai-agents-for-beginners]]'
 - '[[microsoft-data-science-for-beginners]]'
 source_count: 5
-observed_source_refs: 15
-inbound_count: 39
+observed_source_refs: 17
+inbound_count: 44
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 15

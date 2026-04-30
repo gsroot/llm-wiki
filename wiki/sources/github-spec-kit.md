@@ -39,7 +39,7 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[context-engineering]]'
 confidence: high
-inbound_count: 67
+inbound_count: 70
 cited_by:
 - '[[agent-patterns]]'
 - '[[agent-skills]]'

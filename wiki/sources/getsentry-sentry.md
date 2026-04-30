@@ -19,7 +19,7 @@ related:
 - '[[observability-and-cicd-stack]]'
 - '[[agent-skills]]'
 confidence: high
-inbound_count: 15
+inbound_count: 16
 cited_by:
 - '[[agent-skills]]'
 - '[[devops-cicd]]'

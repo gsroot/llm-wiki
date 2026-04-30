@@ -25,7 +25,7 @@ related:
 - '[[duckdb-duckdb]]'
 source_count: 2
 observed_source_refs: 5
-inbound_count: 13
+inbound_count: 14
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 9

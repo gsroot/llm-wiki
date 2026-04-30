@@ -15,7 +15,7 @@ related:
 - '[[sqlalchemy-alembic]]'
 source_count: 3
 observed_source_refs: 4
-inbound_count: 8
+inbound_count: 9
 created: 2026-04-28
 updated: 2026-04-29
 cited_by_count: 5

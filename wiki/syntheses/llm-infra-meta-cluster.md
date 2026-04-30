@@ -17,7 +17,7 @@ sources:
 - '[[microsoft-generative-ai-for-beginners]]'
 source_count: 12
 observed_source_refs: 17
-inbound_count: 85
+inbound_count: 92
 verification_required: true
 last_verified: 2026-04-30
 verification_notes: 10개 OSS 거버넌스 모델 카탈로그 — 분기별 재검증. 본문에 박힌 인바운드 수치는 시점 스냅샷이며, 자동 필드(inbound_count·cited_by_count)가 source-of-truth.

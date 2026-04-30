@@ -22,7 +22,7 @@ related:
 - '[[mcp]]'
 - '[[llm-wiki-pattern]]'
 confidence: high
-inbound_count: 29
+inbound_count: 32
 aliases:
 - Claude Code Master Guide
 - claude code master guide

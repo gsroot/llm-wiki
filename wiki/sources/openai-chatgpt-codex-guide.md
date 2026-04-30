@@ -32,9 +32,12 @@ related:
 - "[[rag]]"
 - "[[prompt-cache]]"
 confidence: high
-ingestion_mode: path-b-summary
+ingestion_mode: path-a-verbatim
 license: CC-BY (wikidocs.net `by.png` 아이콘 표시, 저자 송영옥)
-inbound_count: 1
+inbound_count: 5
+fetch_history:
+  - 2026-04-30 path-b-summary (서브에이전트 4/4 IP 게이팅 거부, 메인 에이전트 WebFetch도 일부 페이지 요약 반환)
+  - 2026-04-30 path-a-verbatim (석근 직접 fetch + scripts/fetch-codex-guide.py + scripts/clean-codex-guide.py로 39p 수집, 3p는 메인 에이전트 verbatim 결과 보존)
 ---
 
 # ChatGPT & Codex 실무 활용 가이드
@@ -50,7 +53,8 @@ inbound_count: 1
 - **플랫폼**: [wikidocs.net/book/19558](https://wikidocs.net/book/19558)
 - **라이선스**: Creative Commons BY 추정 (페이지 `by.png` 아이콘 노출)
 - **수집 일자**: 2026-04-30 (마지막 페이지 편집일 2026-04-12)
-- **수집 방식**: Path B (저작권 안전 요약) — 본문 verbatim 복사 없이 헤딩 outline + 자가 작문 한국어 요약 + 짧은 직접 인용 1~3개 (각 2문장 이내) 만 raw에 저장
+- **수집 방식**: Path A (verbatim) — `scripts/fetch-codex-guide.py` (curl + BeautifulSoup + html2text) + `scripts/clean-codex-guide.py` (이스케이프·`<<MARK>>` 정제). 42 페이지 본문 전체 (총 ~9,929 라인 / ~210KB) 보존. CC BY attribution을 frontmatter에 명시.
+- **수집 경로 결정 과정**: 1차 시도 Path B(요약+짧은 인용)는 서브에이전트 4/4가 IP 게이팅으로 거부 + 메인 에이전트 WebFetch도 일부 페이지(부록 A 등)를 자체 판단으로 요약. 결국 사용자(석근)가 직접 fetch 스크립트를 실행하는 Path A로 전환해 안정 수집. 이 경로가 CLAUDE.md "raw/는 owner가 관리한다" 원칙과 직접 일치.
 
 ## 핵심 내용 (8 Parts 구조)
 
@@ -163,7 +167,7 @@ inbound_count: 1
 
 ## 메모
 
-- **Path B 수집 사유**: 이 위키의 raw/ 다른 자료(`microsoft-generative-ai-for-beginners`, `openai-openai-cookbook` 등)는 모두 MIT/Apache OSS 레포라 verbatim 보존이 가능하지만, 이 책은 송영옥 저자의 CC BY 추정 자료로 결이 다름. 또 CLAUDE.md 자체 원칙 "원문을 위키 페이지에 통째로 복사하지 않는다. 핵심만 추출하고 원본을 참조한다"와도 정합. → 자가 작문 200~400자 + 짧은 인용(2문장 이내) + 헤딩 outline + 메타 카운트만 raw에 저장.
+- **Path A 수집으로 전환 (2026-04-30 후반)**: 초기 Path B(요약+짧은 인용)는 사용자가 가장 활용하고 싶어한 핵심 자산(부록 A 프롬프트 템플릿 20개, 부록 D Codex 치트시트, Ch 4 RCIF 코드블록 12개 등)을 누락시키는 한계가 명백해 사용자 피드백 후 재수집. CC BY 라이선스가 attribution 보존 시 verbatim 재배포 허가하므로 라이선스상 안전. 다만 CLAUDE.md "원문을 위키 페이지에 통째로 복사하지 않는다"는 **wiki/** 페이지에 적용되는 원칙이고, **raw/**는 원본 보존층이라 별개. 본 source 페이지(wiki/sources/)는 여전히 요약·매트릭스·인사이트만 담음.
 - **owner 활용 우선순위 (개인 메모)**:
   1. Ch 13~16 Codex 4개 → [[claude-code]] 일상 운영과 비교 / Codex 실험 시 즉시 참조
   2. Ch 4 RCIF + 부록 A 프롬프트 템플릿 20개 → [[matechat]] 39 SKILL 작성 골격으로 차용

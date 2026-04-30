@@ -23,7 +23,7 @@ related:
 - '[[nanochat]]'
 - '[[autoresearch]]'
 confidence: high
-inbound_count: 8
+inbound_count: 9
 aliases:
 - Karpathy Nanogpt
 - karpathy nanogpt

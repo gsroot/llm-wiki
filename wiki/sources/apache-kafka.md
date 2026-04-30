@@ -26,7 +26,7 @@ related:
 - '[[postgresql]]'
 - '[[apache-foundation]]'
 confidence: high
-inbound_count: 20
+inbound_count: 21
 aliases:
 - Apache Kafka
 - apache kafka

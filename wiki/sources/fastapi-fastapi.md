@@ -25,7 +25,7 @@ related:
 - '[[agent-skills]]'
 - '[[anthropics-skills]]'
 confidence: high
-inbound_count: 25
+inbound_count: 28
 cited_by:
 - '[[agent-skills]]'
 - '[[anthropics-skills]]'

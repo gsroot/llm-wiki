@@ -25,7 +25,7 @@ sources:
 created: 2026-04-24
 updated: 2026-04-29
 cited_by_count: 15
-inbound_count: 21
+inbound_count: 24
 ---
 
 # 석근 커리어 타임라인 (2016-2026)

@@ -30,7 +30,7 @@ related:
 - '[[fastapi-fastapi]]'
 source_count: 6
 observed_source_refs: 24
-inbound_count: 56
+inbound_count: 58
 created: 2026-04-24
 updated: 2026-04-27
 cited_by_count: 29

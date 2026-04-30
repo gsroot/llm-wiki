@@ -14,7 +14,7 @@ related:
 - '[[claude-code-master-guide]]'
 source_count: 1
 observed_source_refs: 4
-inbound_count: 9
+inbound_count: 11
 created: 2026-04-15
 updated: 2026-04-15
 cited_by_count: 3

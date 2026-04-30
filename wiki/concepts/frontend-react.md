@@ -24,7 +24,7 @@ related:
 - '[[c2spf-analytics-renewal]]'
 source_count: 4
 observed_source_refs: 13
-inbound_count: 24
+inbound_count: 26
 created: 2026-04-24
 updated: 2026-04-24
 cited_by_count: 10

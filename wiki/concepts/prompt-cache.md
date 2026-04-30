@@ -17,8 +17,8 @@ related:
 - '[[context-engineering]]'
 - '[[anthropics-claude-cookbooks]]'
 source_count: 1
-observed_source_refs: 4
-inbound_count: 12
+observed_source_refs: 7
+inbound_count: 16
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 9

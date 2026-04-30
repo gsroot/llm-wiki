@@ -33,7 +33,7 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 - '[[github-spec-kit]]'
 confidence: high
-inbound_count: 43
+inbound_count: 45
 cited_by:
 - '[[anthropics-claude-cookbooks]]'
 - '[[anthropics-skills]]'

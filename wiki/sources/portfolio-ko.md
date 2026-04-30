@@ -16,7 +16,7 @@ related:
 - '[[c2spf-analytics]]'
 - '[[portfolio-resume-ko]]'
 confidence: high
-inbound_count: 31
+inbound_count: 34
 aliases:
 - Portfolio Ko
 - portfolio ko

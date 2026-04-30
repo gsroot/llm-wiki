@@ -23,7 +23,7 @@ tags:
 - filesystem
 - sub-agents
 - claude-code-pattern
-inbound_count: 15
+inbound_count: 16
 aliases:
 - DeepAgents — LangGraph 위의 batteries-included agent harness
 - Langchain Ai Deepagents

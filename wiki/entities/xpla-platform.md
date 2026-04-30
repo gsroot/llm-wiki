@@ -20,7 +20,7 @@ related:
 - '[[c2spf-xpla-platform]]'
 source_count: 3
 observed_source_refs: 11
-inbound_count: 21
+inbound_count: 22
 created: 2026-04-24
 updated: 2026-04-24
 cited_by_count: 8

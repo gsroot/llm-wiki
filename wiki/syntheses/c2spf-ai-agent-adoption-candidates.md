@@ -28,7 +28,7 @@ verification_required: true
 last_verified: 2026-04-29
 verification_notes: 분기별 PoC 진행 상태 갱신 (검토/진행/완료/포기). 2026-Q4까지 최소 1건 도입 목표.
 cited_by_count: 12
-inbound_count: 16
+inbound_count: 20
 ---
 
 # c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매트릭스

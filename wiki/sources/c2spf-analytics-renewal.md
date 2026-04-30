@@ -28,7 +28,7 @@ related:
 - '[[backend-python-fastapi]]'
 - '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 32
+inbound_count: 34
 aliases:
 - C2Spf Analytics Renewal
 - c2spf analytics renewal

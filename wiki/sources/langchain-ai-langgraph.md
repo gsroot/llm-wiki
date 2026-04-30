@@ -22,7 +22,7 @@ related:
 - '[[agent-patterns]]'
 - '[[ml-ai]]'
 confidence: high
-inbound_count: 15
+inbound_count: 17
 aliases:
 - Langchain Ai Langgraph
 - langchain ai langgraph

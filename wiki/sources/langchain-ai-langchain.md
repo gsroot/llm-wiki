@@ -23,7 +23,7 @@ related:
 - '[[agent-skills]]'
 - '[[mcp]]'
 confidence: high
-inbound_count: 15
+inbound_count: 17
 aliases:
 - Langchain Ai
 - langchain ai

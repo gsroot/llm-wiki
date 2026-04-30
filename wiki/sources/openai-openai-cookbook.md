@@ -37,7 +37,7 @@ related:
 - '[[mcp]]'
 - '[[agent-stack-evolution]]'
 confidence: high
-inbound_count: 33
+inbound_count: 37
 cited_by:
 - '[[agent-patterns]]'
 - '[[agent-skills]]'

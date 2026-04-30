@@ -51,8 +51,8 @@ related:
 - '[[crewaiinc-crewai]]'
 - '[[pydantic-pydantic-ai]]'
 source_count: 1
-observed_source_refs: 24
-inbound_count: 69
+observed_source_refs: 27
+inbound_count: 70
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 31

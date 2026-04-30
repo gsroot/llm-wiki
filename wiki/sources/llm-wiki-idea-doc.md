@@ -22,7 +22,7 @@ related:
 - '[[mcp]]'
 - '[[obsidian-web-clipper]]'
 confidence: high
-inbound_count: 14
+inbound_count: 15
 cited_by:
 - '[[llm-wiki-pattern]]'
 - '[[mcp]]'

@@ -13,7 +13,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 2
-inbound_count: 23
+inbound_count: 25
 created: 2026-04-28
 updated: 2026-04-28
 tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane]

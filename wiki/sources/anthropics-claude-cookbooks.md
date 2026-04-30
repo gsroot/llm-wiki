@@ -27,7 +27,7 @@ related:
 - '[[token-economy]]'
 - '[[karpathy-autoresearch]]'
 confidence: high
-inbound_count: 60
+inbound_count: 64
 cited_by:
 - '[[agent-patterns]]'
 - '[[agent-skills]]'

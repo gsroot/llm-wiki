@@ -24,7 +24,7 @@ related:
 - '[[harness]]'
 - '[[autonomous-research-loop]]'
 confidence: high
-inbound_count: 25
+inbound_count: 27
 cited_by:
 - '[[agent-stack-evolution]]'
 - '[[context-engineering]]'

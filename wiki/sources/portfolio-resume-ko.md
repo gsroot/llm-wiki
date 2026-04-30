@@ -16,7 +16,7 @@ related:
 - '[[com2us-platform]]'
 - '[[portfolio-seed]]'
 confidence: high
-inbound_count: 27
+inbound_count: 30
 aliases:
 - Portfolio Resume Ko
 - portfolio resume ko

@@ -27,7 +27,7 @@ related:
 - '[[dataframe]]'
 - '[[lazy-evaluation]]'
 confidence: high
-inbound_count: 26
+inbound_count: 27
 cited_by:
 - '[[apache-arrow]]'
 - '[[c2spf-analytics]]'

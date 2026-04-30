@@ -21,17 +21,17 @@ tags:
 - minimal
 confidence: high
 inbound_count: 11
-cited_by:
-- '[[flutter-nextjs-fullstack-pattern]]'
-- '[[poimandres]]'
-- '[[react]]'
-- '[[zustand]]'
-cited_by_count: 4
 aliases:
 - Pmndrs Zustand
 - pmndrs zustand
 - pmndrs/zustand (React 클라이언트 상태 관리 미니멀 챔피언)
 - pmndrs/zustand 소스
+cited_by:
+  - "[[flutter-nextjs-fullstack-pattern]]"
+  - "[[poimandres]]"
+  - "[[react]]"
+  - "[[zustand]]"
+cited_by_count: 4
 ---
 
 # pmndrs/zustand 소스

@@ -15,7 +15,7 @@ related:
   - "[[seokgeun-stack-guide]]"
 source_count: 1
 observed_source_refs: 9
-inbound_count: 42
+inbound_count: 45
 created: 2026-04-28
 updated: 2026-04-28
 tags: [shadcn-ui, react, components, tailwind, radix, open-code, code-distribution]

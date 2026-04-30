@@ -27,7 +27,7 @@ related:
 - '[[devops-cicd]]'
 - '[[data-pipeline-bigquery]]'
 confidence: high
-inbound_count: 24
+inbound_count: 26
 aliases:
 - C2Spf Analytics Common
 - c2spf analytics common

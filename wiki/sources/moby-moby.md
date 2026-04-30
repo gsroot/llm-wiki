@@ -19,15 +19,15 @@ related:
 - '[[observability-and-cicd-stack]]'
 confidence: high
 inbound_count: 8
-cited_by:
-- '[[devops-cicd]]'
-- '[[docker]]'
-- '[[observability-and-cicd-stack]]'
-cited_by_count: 3
 aliases:
 - Moby
 - Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트
 - moby
+cited_by:
+  - "[[devops-cicd]]"
+  - "[[docker]]"
+  - "[[observability-and-cicd-stack]]"
+cited_by_count: 3
 ---
 
 # Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트

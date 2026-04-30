@@ -21,8 +21,8 @@ related:
 - '[[agent-skills]]'
 - '[[github-spec-kit]]'
 source_count: 1
-observed_source_refs: 6
-inbound_count: 37
+observed_source_refs: 8
+inbound_count: 41
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 19

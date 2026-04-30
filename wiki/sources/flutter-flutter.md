@@ -39,7 +39,7 @@ related:
 - '[[context-engineering]]'
 - '[[github]]'
 confidence: high
-inbound_count: 29
+inbound_count: 33
 cited_by:
 - '[[agent-skills]]'
 - '[[agent-stack-evolution]]'

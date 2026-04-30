@@ -40,7 +40,7 @@ related:
 - '[[seokgeun-operating-profile-2026]]'
 created: 2026-04-29
 updated: 2026-04-29
-inbound_count: 46
+inbound_count: 53
 cited_by:
 - '[[agent-skills]]'
 - '[[backend-fastapi-stack]]'

@@ -26,7 +26,7 @@ related:
 - '[[parquet]]'
 - '[[sqlite]]'
 confidence: high
-inbound_count: 26
+inbound_count: 27
 aliases:
 - Duckdb
 - duckdb
