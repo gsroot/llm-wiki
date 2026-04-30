@@ -21,6 +21,7 @@ related:
   - "[[mcp]]"
   - "[[agent-stack-evolution]]"
 confidence: high
+inbound_count: 33
 cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
@@ -41,6 +42,7 @@ cited_by:
   - "[[openai-cookbook]]"
   - "[[openai-openai-agents-python]]"
   - "[[pandas-dev-pandas]]"
+cited_by_count: 19
 ---
 
 # openai/openai-cookbook — OpenAI API 활용 코드·기사 4년 모음

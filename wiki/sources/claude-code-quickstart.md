@@ -12,9 +12,11 @@ related:
   - "[[claude-code]]"
   - "[[claude-code-overview]]"
 confidence: high
+inbound_count: 4
 cited_by:
   - "[[claude-code]]"
   - "[[claude-code-overview]]"
+cited_by_count: 2
 ---
 
 # Claude Code 빠른 시작

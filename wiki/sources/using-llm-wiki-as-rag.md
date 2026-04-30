@@ -16,6 +16,7 @@ related:
   - "[[qmd]]"
   - "[[slash-commands-vs-agent-skills]]"
 confidence: high
+inbound_count: 22
 cited_by:
   - "[[claude-code]]"
   - "[[claude-code-master-guide]]"
@@ -28,6 +29,7 @@ cited_by:
   - "[[seokgeun-kim]]"
   - "[[slash-commands-vs-agent-skills]]"
   - "[[tag-vocabulary-audit-2026-04-29]]"
+cited_by_count: 11
 ---
 
 # 이 LLM 위키를 Claude Code에서 RAG처럼 쓰는 법

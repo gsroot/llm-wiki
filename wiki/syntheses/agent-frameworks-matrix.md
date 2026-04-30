@@ -15,6 +15,7 @@ sources:
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 18
+inbound_count: 23
 ---
 
 # Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장)

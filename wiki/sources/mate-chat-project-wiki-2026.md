@@ -19,6 +19,7 @@ related:
   - "[[flutter]]"
   - "[[token-economy]]"
 confidence: high
+inbound_count: 26
 cited_by:
   - "[[kpi-recovery-loop]]"
   - "[[matechat]]"
@@ -30,6 +31,7 @@ cited_by:
   - "[[portfolio]]"
   - "[[seokgeun-kim-profile-2026]]"
   - "[[seokgeun-operating-profile-2026]]"
+cited_by_count: 10
 ---
 
 # mate-chat 프로젝트 위키 스냅샷 (2026-04-28)

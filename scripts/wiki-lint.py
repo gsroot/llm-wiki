@@ -458,13 +458,28 @@ def lint(update: bool = False) -> LintResult:
             count = len(cited_by_count_map.get(page.stem, set()))
             _update_cited_by_count_only(page, count)
 
-    # 57회차 P0-5 신설 (check #14): cited_by_count 누락 비-메타 페이지 정보 보고
+    # 58회차 P0-2 신설: synthesis + source 페이지의 inbound_count 자동 갱신.
+    # _update_auto_fields는 source_count 라인 의존 가드 때문에 entity/concept만 처리.
+    # 57회차 사후 재평가 N2 회귀: synthesis 20개 + source 65/65 inbound_count 누락 →
+    # RAG 답변 정책 §1 "수치 비교"의 일관성 갭. 본 패스로 해소.
+    if update:
+        for page in pages:
+            if page.yaml_invalid or page.is_redirect or page.is_log_file:
+                continue
+            if page.page_type not in ("synthesis", "source"):
+                continue
+            _update_inbound_count_only(page, inbound.get(page.stem, 0))
+
+    # 57회차 P0-5 신설 (check #13): cited_by_count 누락 비-메타 페이지 정보 보고
     # 53회차 정책에 따른 신뢰도 가중치 캐시 적용 가시화. --check 모드에서도 보고하여
     # --update 실행을 권장. 결함이 아닌 정보 보고.
+    # 58회차 P0-3 (R1 패치): 검사 범위를 cited_by_targets(11 hub + sources)까지 확장.
+    # 57회차 사후 재평가 회귀 R1 (B·D·A 3축 동시 발견): 11 hub 화이트홀 사각지대 해소.
+    cited_by_count_check_targets = cited_by_count_targets | cited_by_targets
     for page in pages:
         if page.yaml_invalid or page.is_redirect or page.is_log_file:
             continue
-        if page.stem not in cited_by_count_targets:
+        if page.stem not in cited_by_count_check_targets:
             continue
         if "cited_by_count:" not in page.raw:
             result.cited_by_count_missing.append(
@@ -707,6 +722,52 @@ def _update_auto_fields(
         page.path.write_text(raw, encoding="utf-8")
 
 
+def _update_inbound_count_only(page: WikiPage, inbound_count: int) -> None:
+    """inbound_count(정수)만 in-place 갱신. observed_source_refs는 박지 않음.
+
+    58회차 P0-2 신설 (57회차 사후 재평가 N2 회귀 대응):
+    `_update_auto_fields`가 source_count 라인 의존 가드(line 678)를 가져
+    synthesis 20개 + source 65/65에 inbound_count가 자동 갱신 안 되던 갭 해소.
+
+    observed_source_refs는 정의 B(source 페이지가 wikilink로 인용한 횟수)라
+    entity/concept만 의미가 있어 본 함수에서 제외.
+    inbound_count는 모든 페이지에 의미 있는 그래프 중심성 지표 (정의 C).
+
+    빈 카운트(0)도 명시적으로 박는다 — 51회차 RAG 답변 정책 §1 "수치 비교"에서
+    synthesis·source 페이지의 신뢰도 가중치 가용성을 보장.
+    """
+    raw = page.raw
+    fm_match = FRONTMATTER_RE.match(raw)
+    if not fm_match:
+        return
+    fm_text = fm_match.group(1)
+    body_after = raw[fm_match.end():]
+    fm_lines = fm_text.split("\n")
+
+    # 기존 inbound_count 라인 위치 탐색
+    cnt_idx = None
+    for i, ln in enumerate(fm_lines):
+        if ln.startswith("inbound_count:"):
+            cnt_idx = i
+            break
+
+    new_line = f"inbound_count: {inbound_count}"
+    if cnt_idx is not None:
+        if fm_lines[cnt_idx] == new_line:
+            return  # 변경 없음
+        fm_lines[cnt_idx] = new_line
+    else:
+        # frontmatter 끝에 삽입 (trailing 빈 라인 제거 후)
+        while fm_lines and fm_lines[-1] == "":
+            fm_lines.pop()
+        fm_lines.append(new_line)
+
+    new_fm = "\n".join(fm_lines)
+    new_raw = f"---\n{new_fm}\n---\n" + body_after
+    if new_raw != raw:
+        page.path.write_text(new_raw, encoding="utf-8")
+
+
 def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
     """source 페이지 frontmatter의 cited_by 필드를 in-place 갱신.
 
@@ -783,10 +844,14 @@ def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
         new_body = _replace_cited_by_body_section(body_after, citing_stems)
     else:
         # 임계값 미만: frontmatter cited_by list (47회차 기존 동작)
+        # 58회차 P0-3 (R1 패치): cited_by_count 정수도 함께 박는다.
+        # 57회차 사후 재평가 회귀 R1 (B·D·A 3축 동시 발견): portfolio·com2us-platform
+        # 등 임계값 미만 hub가 cited_by_count 없이 cited_by list만 가지면
+        # RAG 답변 정책 §1 "수치 비교" 시 정수 비교 불가. 일관성 회복.
         cb_block = ["cited_by:"] + [f'  - "[[{s}]]"' for s in citing_stems]
         while new_lines and new_lines[-1] == "":
             new_lines.pop()
-        new_lines = new_lines + cb_block
+        new_lines = new_lines + cb_block + [f"cited_by_count: {len(citing_stems)}"]
         new_body = _strip_cited_by_body_section(body_after)
 
     new_fm = "\n".join(new_lines)

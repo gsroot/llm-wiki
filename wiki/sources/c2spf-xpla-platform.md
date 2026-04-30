@@ -15,6 +15,7 @@ related:
   - "[[seokgeun-kim]]"
   - "[[blockchain-xpla]]"
 confidence: high
+inbound_count: 13
 cited_by:
   - "[[blockchain-xpla]]"
   - "[[career-timeline-seokgeun]]"
@@ -22,6 +23,7 @@ cited_by:
   - "[[portfolio]]"
   - "[[seokgeun-kim]]"
   - "[[xpla-platform]]"
+cited_by_count: 6
 ---
 
 # 컴투스플랫폼 XPLA 플랫폼 (2024-04-xpla-platform.md)

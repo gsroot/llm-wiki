@@ -17,6 +17,7 @@ related:
   - "[[dataframe]]"
   - "[[lazy-evaluation]]"
 confidence: high
+inbound_count: 20
 cited_by:
   - "[[apache-arrow]]"
   - "[[c2spf-analytics]]"
@@ -31,6 +32,7 @@ cited_by:
   - "[[query-optimization]]"
   - "[[streaming]]"
   - "[[zero-copy]]"
+cited_by_count: 13
 ---
 
 # pola-rs/polars (Polars 저장소)

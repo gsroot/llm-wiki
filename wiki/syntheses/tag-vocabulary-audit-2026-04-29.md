@@ -17,6 +17,7 @@ related:
 created: 2026-04-29
 updated: 2026-04-29
 cited_by_count: 5
+inbound_count: 8
 ---
 
 # 태그 vocabulary 감사 — 2026-04-29

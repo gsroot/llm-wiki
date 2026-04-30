@@ -14,6 +14,7 @@ related:
   - "[[harness]]"
   - "[[context-engineering]]"
 confidence: high
+inbound_count: 26
 cited_by:
   - "[[agent-skills]]"
   - "[[anthropic]]"
@@ -25,6 +26,7 @@ cited_by:
   - "[[llm-infra-meta-cluster]]"
   - "[[seokgeun-kim]]"
   - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 10
 ---
 
 # Claude Code: Slash Commands vs Agent Skills

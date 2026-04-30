@@ -18,6 +18,7 @@ related:
   - "[[token-economy]]"
   - "[[karpathy-autoresearch]]"
 confidence: high
+inbound_count: 61
 cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
@@ -42,6 +43,7 @@ cited_by:
   - "[[rag]]"
   - "[[spec-driven-development]]"
   - "[[token-economy]]"
+cited_by_count: 23
 ---
 
 # anthropics/claude-cookbooks — Claude API · Agent SDK · Managed Agents 실습 노트북 모음

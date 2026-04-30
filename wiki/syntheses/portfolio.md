@@ -27,6 +27,7 @@ related:
   - "[[claude-code]]"
 created: 2026-04-29
 updated: 2026-04-29
+inbound_count: 54
 cited_by:
   - "[[agent-skills]]"
   - "[[backend-fastapi-stack]]"
@@ -56,6 +57,7 @@ cited_by:
   - "[[seokgeun-kim-profile-2026]]"
   - "[[seokgeun-operating-profile-2026]]"
   - "[[seokgeun-stack-guide]]"
+cited_by_count: 28
 ---
 
 # 포트폴리오 (Portfolio Hub)

@@ -17,6 +17,7 @@ related:
   - "[[anthropics-claude-cookbooks]]"
   - "[[github-spec-kit]]"
 confidence: high
+inbound_count: 45
 cited_by:
   - "[[anthropics-claude-cookbooks]]"
   - "[[anthropics-skills]]"
@@ -40,6 +41,7 @@ cited_by:
   - "[[pandas-vs-polars-vs-duckdb]]"
   - "[[pdep]]"
   - "[[python]]"
+cited_by_count: 22
 ---
 
 # pandas-dev/pandas — Python 데이터 분석 표준 라이브러리

@@ -14,11 +14,13 @@ related:
   - "[[portfolio-seed]]"
   - "[[llm-wiki-pattern]]"
 confidence: high
+inbound_count: 12
 cited_by:
   - "[[career-timeline-seokgeun]]"
   - "[[portfolio]]"
   - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
+cited_by_count: 4
 ---
 
 # 포트폴리오 방법론 (docs/00-meta 합본)

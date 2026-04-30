@@ -16,12 +16,14 @@ related:
   - "[[autonomous-research-loop]]"
   - "[[ml-ai]]"
 confidence: high
+inbound_count: 8
 cited_by:
   - "[[agent-stack-evolution]]"
   - "[[autonomous-research-loop]]"
   - "[[harness]]"
   - "[[karpathy]]"
   - "[[nanochat]]"
+cited_by_count: 5
 ---
 
 # karpathy/nanochat — $100짜리 ChatGPT 풀 파이프라인

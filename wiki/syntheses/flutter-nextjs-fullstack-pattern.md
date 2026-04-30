@@ -11,7 +11,8 @@ sources:
   - "[[shadcn-ui-ui]]"
   - "[[flutter-flutter]]"
   - "[[matechat]]"
-sources_count: 7
+source_count: 7
+observed_source_refs: 17
 related:
   - "[[seokgeun-stack-guide]]"
   - "[[portfolio]]"
@@ -33,6 +34,7 @@ created: 2026-04-28
 updated: 2026-04-29
 tags: [frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차, 프론트엔드, 3축-sub-hub, 50회차]
 cited_by_count: 24
+inbound_count: 50
 ---
 
 # Flutter + Next.js 듀얼 클라이언트 풀스택 패턴

@@ -16,6 +16,7 @@ related:
   - "[[mcp]]"
   - "[[obsidian-web-clipper]]"
 confidence: high
+inbound_count: 10
 cited_by:
   - "[[llm-wiki-pattern]]"
   - "[[mcp]]"
@@ -24,6 +25,7 @@ cited_by:
   - "[[qmd]]"
   - "[[rag]]"
   - "[[wiki-bootstrap-log]]"
+cited_by_count: 7
 ---
 
 # LLM 위키 아이디어 문서

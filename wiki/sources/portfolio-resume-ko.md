@@ -14,6 +14,7 @@ related:
   - "[[com2us-platform]]"
   - "[[portfolio-seed]]"
 confidence: high
+inbound_count: 21
 cited_by:
   - "[[backend-python-fastapi]]"
   - "[[c2spf-analytics]]"
@@ -26,6 +27,7 @@ cited_by:
   - "[[portfolio-ko]]"
   - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
+cited_by_count: 11
 ---
 
 # 포트폴리오 — 이력서(한국어, resume-ko.md)

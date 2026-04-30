@@ -17,6 +17,7 @@ related:
   - "[[parquet]]"
   - "[[sqlite]]"
 confidence: high
+inbound_count: 18
 cited_by:
   - "[[apache-arrow]]"
   - "[[c2spf-analytics]]"
@@ -31,6 +32,7 @@ cited_by:
   - "[[sqlite]]"
   - "[[streaming]]"
   - "[[zero-copy]]"
+cited_by_count: 13
 ---
 
 # duckdb/duckdb (DuckDB 저장소)

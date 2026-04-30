@@ -22,6 +22,7 @@ related:
   - "[[anthropics-claude-cookbooks]]"
   - "[[context-engineering]]"
 confidence: high
+inbound_count: 67
 cited_by:
   - "[[agent-patterns]]"
   - "[[agent-skills]]"
@@ -45,6 +46,7 @@ cited_by:
   - "[[spec-driven-development]]"
   - "[[spec-kit]]"
   - "[[uv]]"
+cited_by_count: 22
 ---
 
 # github/spec-kit — Spec-Driven Development 툴킷 (Specify CLI · 9개 슬래시 명령 · 30+ 에이전트 통합)

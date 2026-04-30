@@ -15,6 +15,7 @@ related:
   - "[[context-engineering]]"
   - "[[agent-skills]]"
 confidence: high
+inbound_count: 17
 cited_by:
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
@@ -25,6 +26,7 @@ cited_by:
   - "[[microsoft-for-beginners]]"
   - "[[microsoft-web-dev-for-beginners]]"
   - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 9
 ---
 
 # microsoft/generative-ai-for-beginners — 21 Lessons GenAI 입문

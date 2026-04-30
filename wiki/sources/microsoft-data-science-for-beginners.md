@@ -17,6 +17,7 @@ related:
   - "[[pandas]]"
   - "[[pandas-dev-pandas]]"
 confidence: high
+inbound_count: 21
 cited_by:
   - "[[agent-stack-evolution]]"
   - "[[c2spf-analytics]]"
@@ -28,6 +29,7 @@ cited_by:
   - "[[openai-openai-cookbook]]"
   - "[[pandas]]"
   - "[[pandas-dev-pandas]]"
+cited_by_count: 10
 ---
 
 # microsoft/Data-Science-For-Beginners — 10 weeks, 20 Lessons 데이터과학 입문

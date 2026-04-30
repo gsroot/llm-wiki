@@ -14,12 +14,14 @@ related:
   - "[[flutter-nextjs-fullstack-pattern|Flutter 진영 종합]]"
 tags: [riverpod, flutter, dart, state-management, reactive, dependency-injection, 22회차]
 confidence: high
+inbound_count: 10
 cited_by:
   - "[[agent-skills]]"
   - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[matechat]]"
   - "[[react]]"
   - "[[riverpod]]"
+cited_by_count: 5
 ---
 
 # rrousselGit/riverpod 소스

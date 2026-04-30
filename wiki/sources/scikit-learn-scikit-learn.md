@@ -14,6 +14,7 @@ related:
   - "[[data-pipeline-bigquery]]"
   - "[[com2us-platform]]"
 confidence: high
+inbound_count: 18
 cited_by:
   - "[[anthropics-skills]]"
   - "[[c2spf-analytics]]"
@@ -27,6 +28,7 @@ cited_by:
   - "[[numfocus]]"
   - "[[python]]"
   - "[[scikit-learn]]"
+cited_by_count: 12
 ---
 
 # scikit-learn/scikit-learn — Python 머신러닝의 사실상 표준 라이브러리 (BSD-3, 2007~)

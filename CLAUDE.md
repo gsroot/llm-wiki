@@ -234,6 +234,29 @@ cited_by_count: 67
 
 결과를 보고하고, 소유자와 논의 후 수정한다.
 
+### 패턴 결함 grep 전수 검사 SOP (58회차 명문화)
+
+평가·점검·작업 중 frontmatter 키 typo·태그 중복·중복 단락 등 **패턴 결함**을 발견한 경우, 정정 직후 grep으로 동일 패턴이 다른 파일에 잔존하는지 **전수 검사 의무**.
+
+**적용 트리거**:
+- frontmatter 키 단복수 혼용·오타 발견 (예: `sources_count` vs `source_count`)
+- 본문 단락 중복 발견 (예: 같은 unique 문자열이 한 페이지에 2번)
+- 태그·alias 표기 변종 발견 (예: `agent` vs `에이전트` 분기)
+- redirect·rag_exclude·cited_by_count 등 정책 필드 누락 패턴 발견
+
+**검사 명령 패턴**:
+```bash
+# 정확한 typo·키 잔존
+grep -rn "^typo_pattern" /Users/sgkim/Projects/llm-wiki/wiki/
+
+# 본문 단락 중복 (단락 첫 30자 unique signature)
+grep -c "unique signature" /Users/sgkim/Projects/llm-wiki/wiki/path/file.md  # 2 이상이면 중복
+```
+
+**commit message 의무 항목**: P0/P1 commit message에 "**grep 전수 검증 결과: N건 잔존 / N건 정정**" 명시. 단 1건 정정으로 끝낸 작업은 SOP 미적용으로 간주, 사후 평가에서 회귀 결함으로 적발 가능.
+
+**근거 사례**: 57회차 P0-2가 `llm-infra-meta-cluster.md`의 `sources_count` 1건만 정정 후 grep 미실행 → 57회차 사후 재평가에서 `matechat-chat-analysis-module.md`·`flutter-nextjs-fullstack-pattern.md` 동일 typo 2건 잔존 발견. 58회차 P0-1로 전수 정정 + 본 SOP 명문화.
+
 ## 금지 사항
 
 - `.obsidian/` 디렉토리 수정 금지

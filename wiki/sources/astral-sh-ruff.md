@@ -19,12 +19,14 @@ related:
   - "[[harness]]"
   - "[[agent-stack-evolution]]"
 confidence: high
+inbound_count: 9
 cited_by:
   - "[[agent-skills]]"
   - "[[backend-fastapi-stack]]"
   - "[[harness]]"
   - "[[python]]"
   - "[[ruff]]"
+cited_by_count: 5
 ---
 
 # astral-sh/ruff — Rust로 작성된 초고속 Python 린터·포매터

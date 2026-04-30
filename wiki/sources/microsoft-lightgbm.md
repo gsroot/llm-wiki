@@ -13,12 +13,14 @@ related:
   - "[[scikit-learn]]"
   - "[[ml-ai]]"
 confidence: high
+inbound_count: 10
 cited_by:
   - "[[apache-arrow]]"
   - "[[c2spf-analytics]]"
   - "[[lightgbm]]"
   - "[[ml-ai]]"
   - "[[scikit-learn]]"
+cited_by_count: 5
 ---
 
 # lightgbm-org/LightGBM — Light Gradient Boosting Machine

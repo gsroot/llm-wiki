@@ -11,6 +11,7 @@ sources:
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 6
+inbound_count: 15
 ---
 
 # MateChat 프로젝트 지식 지도

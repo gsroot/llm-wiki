@@ -22,6 +22,7 @@ related:
   - "[[uv]]"
   - "[[python-packaging]]"
 confidence: high
+inbound_count: 29
 cited_by:
   - "[[agent-frameworks-matrix]]"
   - "[[agent-patterns]]"
@@ -37,6 +38,7 @@ cited_by:
   - "[[openai-agents-python]]"
   - "[[openai-openai-cookbook]]"
   - "[[python]]"
+cited_by_count: 14
 ---
 
 # openai/openai-agents-python — OpenAI Agents SDK 본체

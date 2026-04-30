@@ -17,6 +17,7 @@ related:
   - "[[devops-cicd]]"
   - "[[data-pipeline-bigquery]]"
 confidence: high
+inbound_count: 19
 cited_by:
   - "[[backend-python-fastapi]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
@@ -27,6 +28,7 @@ cited_by:
   - "[[devops-cicd]]"
   - "[[portfolio]]"
   - "[[seokgeun-kim]]"
+cited_by_count: 9
 ---
 
 # 컴투스플랫폼 애널리틱스 공통 모듈 & 배포 프로세스 (2024-08)

@@ -16,6 +16,7 @@ related:
   - "[[duckdb]]"
   - "[[apache-foundation]]"
 confidence: high
+inbound_count: 45
 cited_by:
   - "[[apache-foundation]]"
   - "[[append-only-log]]"
@@ -36,6 +37,7 @@ cited_by:
   - "[[predicate-pushdown]]"
   - "[[pyarrow]]"
   - "[[zero-copy]]"
+cited_by_count: 19
 ---
 
 # apache/arrow + apache/parquet-format

@@ -13,11 +13,13 @@ related:
   - "[[alembic]]"
   - "[[fastapi]]"
 confidence: high
+inbound_count: 8
 cited_by:
   - "[[append-only-log]]"
   - "[[backend-fastapi-stack]]"
   - "[[postgresql]]"
   - "[[query-optimization]]"
+cited_by_count: 4
 ---
 
 # postgres/postgres — PostgreSQL 본체 GitHub 미러

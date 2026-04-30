@@ -17,6 +17,7 @@ related:
   - "[[backend-python-fastapi]]"
   - "[[data-pipeline-bigquery]]"
 confidence: high
+inbound_count: 27
 cited_by:
   - "[[backend-python-fastapi]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
@@ -30,6 +31,7 @@ cited_by:
   - "[[pandas-dev-pandas]]"
   - "[[portfolio]]"
   - "[[seokgeun-kim]]"
+cited_by_count: 12
 ---
 
 # 컴투스플랫폼 애널리틱스 React 리뉴얼 + Airbridge API (2025)

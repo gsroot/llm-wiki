@@ -28,6 +28,7 @@ cited_by:
   - "[[seokgeun-kim]]"
   - "[[seokgeun-stack-guide]]"
   - "[[xpla-platform]]"
+cited_by_count: 14
 ---
 
 # 컴투스플랫폼 (Com2usPlatform, c2spf)

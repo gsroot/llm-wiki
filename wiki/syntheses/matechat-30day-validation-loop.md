@@ -21,6 +21,7 @@ verification_required: true
 last_verified: 2026-04-29
 verification_notes: "출시 D+30 시점에 KPI 실측값 회수 + Go/Iterate/Pivot 의사결정 박힘. 출시 전까지 가설 단계."
 cited_by_count: 11
+inbound_count: 27
 ---
 
 # MateChat 30일 검증 루프

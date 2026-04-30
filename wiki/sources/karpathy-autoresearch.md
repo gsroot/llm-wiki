@@ -16,6 +16,7 @@ related:
   - "[[context-engineering]]"
   - "[[claude-code]]"
 confidence: high
+inbound_count: 18
 cited_by:
   - "[[agent-stack-evolution]]"
   - "[[anthropics-claude-cookbooks]]"
@@ -28,6 +29,7 @@ cited_by:
   - "[[karpathy]]"
   - "[[slash-commands-vs-agent-skills]]"
   - "[[uv]]"
+cited_by_count: 11
 ---
 
 # karpathy/autoresearch — 자율 LLM 실험 루프

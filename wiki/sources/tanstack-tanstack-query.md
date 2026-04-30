@@ -14,11 +14,13 @@ related:
   - "[[flutter-nextjs-fullstack-pattern|React 진영 종합]]"
 tags: [tanstack-query, react-query, server-state, async-state, multi-framework, 22회차]
 confidence: high
+inbound_count: 9
 cited_by:
   - "[[flutter-nextjs-fullstack-pattern]]"
   - "[[react]]"
   - "[[tanstack]]"
   - "[[tanstack-query]]"
+cited_by_count: 4
 ---
 
 # TanStack/query 소스

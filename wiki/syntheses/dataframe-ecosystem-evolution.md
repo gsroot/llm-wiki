@@ -12,6 +12,7 @@ sources:
 created: 2026-04-28
 updated: 2026-04-28
 cited_by_count: 16
+inbound_count: 24
 ---
 
 # DataFrame 생태계 진화사

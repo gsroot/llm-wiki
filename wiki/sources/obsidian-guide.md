@@ -14,12 +14,14 @@ related:
   - "[[llm-wiki-pattern]]"
   - "[[obsidian-web-clipper]]"
 confidence: high
+inbound_count: 8
 cited_by:
   - "[[claude-code-master-guide]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[mcp]]"
   - "[[obsidian]]"
   - "[[seokgeun-kim]]"
+cited_by_count: 5
 ---
 
 # Obsidian 사용 가이드

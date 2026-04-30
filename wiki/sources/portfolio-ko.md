@@ -15,6 +15,7 @@ related:
   - "[[c2spf-analytics]]"
   - "[[portfolio-resume-ko]]"
 confidence: high
+inbound_count: 22
 cited_by:
   - "[[backend-python-fastapi]]"
   - "[[c2spf-analytics]]"
@@ -28,6 +29,7 @@ cited_by:
   - "[[portfolio]]"
   - "[[portfolio-resume-ko]]"
   - "[[seokgeun-kim]]"
+cited_by_count: 12
 ---
 
 # 포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)

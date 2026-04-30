@@ -13,10 +13,12 @@ related:
   - "[[devops-cicd]]"
   - "[[observability-and-cicd-stack]]"
 confidence: medium
+inbound_count: 6
 cited_by:
   - "[[devops-cicd]]"
   - "[[github-actions]]"
   - "[[observability-and-cicd-stack]]"
+cited_by_count: 3
 ---
 
 # GitHub Actions — Runner + Toolkit 양대 OSS + GHA 생태계

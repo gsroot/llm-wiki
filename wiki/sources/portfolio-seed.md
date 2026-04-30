@@ -19,6 +19,7 @@ related:
   - "[[seokgeun-stack-guide]]"
   - "[[llm-infra-meta-cluster]]"
 confidence: high
+inbound_count: 36
 cited_by:
   - "[[backend-python-fastapi]]"
   - "[[blockchain-xpla]]"
@@ -37,6 +38,7 @@ cited_by:
   - "[[seokgeun-kim]]"
   - "[[seokgeun-stack-guide]]"
   - "[[xpla-platform]]"
+cited_by_count: 17
 ---
 
 # 포트폴리오 시드 문서 (old-portfolio.md)

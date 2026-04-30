@@ -18,6 +18,7 @@ related:
   - "[[mcp]]"
   - "[[llm-wiki-pattern]]"
 confidence: high
+inbound_count: 21
 cited_by:
   - "[[claude-code]]"
   - "[[context-engineering]]"
@@ -29,6 +30,7 @@ cited_by:
   - "[[rag]]"
   - "[[token-economy]]"
   - "[[using-llm-wiki-as-rag]]"
+cited_by_count: 10
 ---
 
 # 클로드 코드 중심 실전 마스터 가이드

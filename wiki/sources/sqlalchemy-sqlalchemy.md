@@ -17,11 +17,13 @@ related:
   - "[[uv]]"
   - "[[scikit-learn]]"
 confidence: high
+inbound_count: 8
 cited_by:
   - "[[backend-fastapi-stack]]"
   - "[[python]]"
   - "[[sqlalchemy]]"
   - "[[sqlite]]"
+cited_by_count: 4
 ---
 
 # sqlalchemy/sqlalchemy — Python SQL Toolkit + ORM

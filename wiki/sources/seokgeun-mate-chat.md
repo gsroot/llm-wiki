@@ -23,6 +23,7 @@ tags: [mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, o
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: "39 SKILL 분류(자작 11 / 외부 28) — flutter/skills lock.json 재카운트"
+inbound_count: 29
 cited_by:
   - "[[agent-skills]]"
   - "[[c2spf-ai-agent-adoption-candidates]]"
@@ -36,6 +37,7 @@ cited_by:
   - "[[matechat-launch-metrics-ledger]]"
   - "[[seokgeun-matechat-validation]]"
   - "[[seokgeun-stack-guide]]"
+cited_by_count: 12
 ---
 
 # Mate Chat 1차 수집 — 석근 개인 사이드 프로젝트

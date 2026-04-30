@@ -17,6 +17,7 @@ related:
   - "[[context-engineering]]"
   - "[[token-economy]]"
 confidence: high
+inbound_count: 77
 cited_by:
   - "[[agent-skills]]"
   - "[[agent-stack-evolution]]"
@@ -40,6 +41,7 @@ cited_by:
   - "[[scikit-learn-scikit-learn]]"
   - "[[slash-commands-vs-agent-skills]]"
   - "[[spec-kit]]"
+cited_by_count: 22
 ---
 
 # anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스

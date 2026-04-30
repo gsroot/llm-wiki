@@ -13,6 +13,7 @@ related:
   - "[[observability-and-cicd-stack]]"
   - "[[agent-skills]]"
 confidence: high
+inbound_count: 12
 cited_by:
   - "[[agent-skills]]"
   - "[[devops-cicd]]"
@@ -20,6 +21,7 @@ cited_by:
   - "[[observability]]"
   - "[[observability-and-cicd-stack]]"
   - "[[sentry]]"
+cited_by_count: 6
 ---
 
 # Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT

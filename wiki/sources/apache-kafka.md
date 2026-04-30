@@ -14,6 +14,7 @@ related:
   - "[[postgresql]]"
   - "[[apache-foundation]]"
 confidence: high
+inbound_count: 15
 cited_by:
   - "[[apache-foundation]]"
   - "[[append-only-log]]"
@@ -23,6 +24,7 @@ cited_by:
   - "[[kafka]]"
   - "[[streaming]]"
   - "[[zero-copy]]"
+cited_by_count: 8
 ---
 
 # apache/kafka (Kafka 저장소)
