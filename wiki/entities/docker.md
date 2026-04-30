@@ -3,7 +3,7 @@ title: "Docker / Moby"
 aliases: [Docker, 도커, Moby]
 type: entity
 entity_type: tool
-tags: [docker, moby, container, runtime, devops, 19회차]
+tags: [docker, moby, container, runtime, devops]
 related:
   - "[[devops-cicd]]"
   - "[[github-actions]]"
@@ -45,9 +45,9 @@ Docker는 컨테이너화 개념을 대중화한 회사이자 제품 브랜드, 
 - [[github-actions]]: Docker action / Container job / setup-buildx-action 등 GHA 핵심 통합.
 - [[prometheus]]: prometheus 컨테이너 이미지가 1차 배포 방식 (Quay.io, Docker Hub).
 - [[grafana]]: 동일 — 컨테이너 이미지로 배포.
-- [[observability-and-cicd-stack]]: 19회차 종합의 1단계(빌드/패키징).
+- [[observability-and-cicd-stack]]: 종합의 1단계(빌드/패키징).
 
-## 19회차 운영/Observability 진영 비교
+## 운영/Observability 진영 비교
 
 | OSS | AGENTS.md | 거버넌스 | 라이선스 |
 | --- | --- | --- | --- |
@@ -74,4 +74,4 @@ Docker는 컨테이너화 개념을 대중화한 회사이자 제품 브랜드, 
 
 - Docker → Moby 분리(2017~2025)의 8년 여정은 "OSS와 상업의 분리 운영" 케이스 스터디로 가치.
 - BI 적용: c2spf-analytics 분석 잡을 Docker 컨테이너로 격리 → GHA로 빌드/푸시 → Kubernetes/ECS에 배포가 자연스러운 흐름.
-- 21회차 점검 시 Moby AGENTS.md 채택 여부 재검증 필요 (운영 진영 trend 따라갈 가능성).
+- 점검 시 Moby AGENTS.md 채택 여부 재검증 필요 (운영 진영 trend 따라갈 가능성).

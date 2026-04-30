@@ -36,7 +36,7 @@ cited_by_count: 9
 
 - **상태 영속 세션**: 파일, 도구 상태, conversation이 세션 사이에서 유지된다.
 - **Sandboxed environment**: 에이전트 실행 환경을 분리해 파일 마운트와 도구 접근을 제어한다.
-- **Human-in-the-loop**: 비용 승인, 머지 승인, 위험 작업 등에서 `decide()` / `escalate()` 같은 사용자 결정을 흐름 안에 넣는다.
+- **Human-in-the-loop**: 비용 승인, 머지 승인, 위험 작업 등에서 `decide` / `escalate` 같은 사용자 결정을 흐름 안에 넣는다.
 - **운영형 워크플로우**: issue → fix → PR → CI → review → merge, SRE incident response, data analyst report 같은 장기 작업을 예제로 다룬다.
 - **서버사이드 운영 기능**: 프롬프트 버전 관리, rollback, vault-backed credentials, `session.status_idled` 웹훅 패턴.
 
@@ -61,7 +61,6 @@ cited_by_count: 9
 
 > [!warning] 논쟁/모순
 > 현재 위키 안에서 CMA에 대한 상충 정보는 없음. 다만 hosted runtime이므로 비용·데이터 보안·사내망 접근성은 실제 도입 전에 별도 검토가 필요하다.
-
 
 ## 메모
 

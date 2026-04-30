@@ -14,7 +14,6 @@ tags:
 - pregel
 - apache-beam
 - networkx
-- 17회차
 related:
 - '[[langchain]]'
 - '[[openai-agents-python]]'
@@ -99,7 +98,7 @@ libs/
 
 ## 출처
 
-- [[langchain-ai-langgraph]] — 17회차 수집, README + AGENTS.md (139줄)
+- [[langchain-ai-langgraph]] — 수집, README + AGENTS.md (139줄)
 
 ## 메모
 

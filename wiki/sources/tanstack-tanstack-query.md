@@ -18,7 +18,6 @@ tags:
 - server-state
 - async-state
 - multi-framework
-- 22회차
 confidence: high
 inbound_count: 11
 cited_by:
@@ -47,11 +46,11 @@ aliases:
 - **다중 어댑터**: `@tanstack/react-query`, `@tanstack/solid-query`, `@tanstack/svelte-query`, `@tanstack/vue-query`, `@tanstack/angular-query-experimental` — 코어 + 어댑터 분리 구조.
 - **TanStack 에코시스템 12개 패키지**: Config, DB, DevTools, Form, Pacer, Query, Ranger, Router, Start, Store, Table, Virtual.
 - **핵심 기능**:
-  - Protocol-agnostic fetching (REST/GraphQL/promises)
-  - Caching, refetching, pagination & infinite scroll
-  - Mutations, dependent queries, background updates
-  - Prefetching, cancellation, React Suspense 지원
-- **AGENTS.md/CLAUDE.md 미채택**: 22회차 프론트 5개 중 미채택 (Next.js만 채택).
+ - Protocol-agnostic fetching (REST/GraphQL/promises)
+ - Caching, refetching, pagination & infinite scroll
+ - Mutations, dependent queries, background updates
+ - Prefetching, cancellation, React Suspense 지원
+- **AGENTS.md/CLAUDE.md 미채택**: 프론트 5개 중 미채택 (Next.js만 채택).
 
 ## 주요 인사이트
 
@@ -76,4 +75,4 @@ aliases:
 
 ## 메모
 
-22회차 (Plan 20회차 / Frontend) raw 수집. TanStack Query는 React Query → 멀티 프레임워크 확장 → TanStack 에코 12개 진화의 흐름. shadcn-ui와 함께 "프레임워크 비종속" 거버넌스 사례 (shadcn은 코드 복사, TanStack은 어댑터 분리).
+raw 수집. TanStack Query는 React Query → 멀티 프레임워크 확장 → TanStack 에코 12개 진화의 흐름. shadcn-ui와 함께 "프레임워크 비종속" 거버넌스 사례 (shadcn은 코드 복사, TanStack은 어댑터 분리).

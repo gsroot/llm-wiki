@@ -26,7 +26,6 @@ tags:
 - post-launch
 - retention
 - conversion
-- 51회차
 - 4축
 verification_required: true
 last_verified: 2026-04-29
@@ -37,12 +36,12 @@ inbound_count: 12
 
 # MateChat 출시 후 실측 ledger
 
-> [!important] raw 실측값 저장소 — 51회차 P0-4 신설 (Codex 권고 합집합)
+> [!important] raw 실측값 저장소 — P0-4 신설 (Codex 권고 합집합)
 > [[matechat|MateChat 사이드 프로젝트]] v1.0.0 출시 후 회수되는 KPI 실측값을 한 페이지에 모아 두는 raw ledger. 의사결정·메타 분석은 [[matechat-30day-validation-loop]](D+1~D+30 SOP) 와 [[matechat-business-validation]](D+31~D+365 5영역 카탈로그)이 담당하고, 본 페이지는 **숫자만 박는 단순 데이터 페이지**다.
 >
 > **현재 시점**: v1.0.0 Google Play 출시 직전 QA 단계. 모든 셀이 빈칸 또는 `-` 상태. 출시 D+0부터 채우기 시작.
 >
-> **분리 이유** (50회차 평가 Codex 권고): 측정 SOP·의사결정 도구·raw 데이터를 한 페이지에 섞으면 RAG가 "측정 방법" 질문에 raw 0값 표를 답으로 회수하거나, "현재 retention 얼마?" 질문에 측정 SOP를 답으로 돌려준다. 페이지 분리로 RAG 질의-답변 매핑 명확화.
+> **분리 이유**: 측정 SOP·의사결정 도구·raw 데이터를 한 페이지에 섞으면 RAG가 "측정 방법" 질문에 raw 0값 표를 답으로 회수하거나, "현재 retention 얼마?" 질문에 측정 SOP를 답으로 돌려준다. 페이지 분리로 RAG 질의-답변 매핑 명확화.
 
 ## 언제 읽어야 하는가
 
@@ -102,7 +101,7 @@ D+1·D+7·D+30·D+90·D+180·D+365 시점 retention 실측. 코호트는 출시 
 
 ## 5. 사용자 인터뷰 ledger
 
-| 회차 | 일시 | 인터뷰이 ID | 사용 패턴 | 핵심 인사이트 | 액션 |
+| | 일시 | 인터뷰이 ID | 사용 패턴 | 핵심 인사이트 | 액션 |
 |---|---|---|---|---|---|
 | 1 | TBD | - | - | - | - |
 | 2 | TBD | - | - | - | - |
@@ -125,7 +124,7 @@ D+1·D+7·D+30·D+90·D+180·D+365 시점 retention 실측. 코호트는 출시 
 
 - [[matechat-30day-validation-loop]]: D+1~D+30 일별 측정 SOP + 의사결정 도구. 본 ledger의 D+1·D+7·D+30 셀이 채워지면 30day-loop이 그 값으로 Go/Iterate/Pivot 판정.
 - [[matechat-business-validation]]: D+31 이후 중장기 5 영역(retention/conversion/marketing/회고/인터뷰) 메타 카탈로그. 본 ledger의 D+90·D+180·D+365 셀이 채워지면 카탈로그의 영역별 표에 인용.
-- [[matechat]]: 4축 hub. 본 ledger의 핵심 숫자(D+30 retention·paying user 누적·인터뷰 회차)를 hub 본문에 시점 라벨링과 함께 인용.
+- [[matechat]]: 4축 hub. 본 ledger의 핵심 숫자(D+30 retention·paying user 누적·인터뷰 차수)를 hub 본문에 시점 라벨링과 함께 인용.
 
 ## 8. 운영 원칙
 

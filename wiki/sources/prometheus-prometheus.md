@@ -15,7 +15,6 @@ tags:
 - time-series
 - promql
 - agents-md
-- 19회차
 related:
 - '[[prometheus]]'
 - '[[grafana]]'
@@ -40,12 +39,12 @@ aliases:
 
 ## 한줄 요약
 
-> Prometheus는 CNCF 두 번째 졸업 프로젝트(Kubernetes 다음)이자 시계열 메트릭 모니터링의 사실상 표준이며, 19회차에서 발견된 7번째 AGENTS.md 채택 OSS — 다만 그 형식이 "PR 리뷰 패턴 가이드"로 다른 OSS와 차별화됨.
+> Prometheus는 CNCF 두 번째 졸업 프로젝트(Kubernetes 다음)이자 시계열 메트릭 모니터링의 사실상 표준이며, 발견된 7번째 AGENTS.md 채택 OSS — 다만 그 형식이 "PR 리뷰 패턴 가이드"로 다른 OSS와 차별화됨.
 
 ## 핵심 내용
 
 - **8가지 핵심 차별점 (README)**: ① 다차원 데이터 모델(metric name + key/value labels), ② PromQL 쿼리 언어, ③ 분산 스토리지 의존 없음(단일 노드 자율), ④ HTTP pull 모델, ⑤ Push gateway(배치 잡용), ⑥ Service discovery 또는 정적 설정, ⑦ 다중 그래프/대시보드, ⑧ 계층/수평 federation.
-- **CNCF 거버넌스 (9번째 OSS 거버넌스 모델)**: Cloud Native Computing Foundation의 graduated 프로젝트. Apache Software Foundation(ASF, 16회차에서 발견)과 다른 클라우드 네이티브 전용 재단.
+- **CNCF 거버넌스 (9번째 OSS 거버넌스 모델)**: Cloud Native Computing Foundation의 graduated 프로젝트. Apache Software Foundation과 다른 클라우드 네이티브 전용 재단.
 - **AGENTS.md = PR 리뷰 패턴 가이드 (148줄)**: Pydantic AI/FastMCP 등의 "코드베이스 가이드" 형식과 다름. "merge된 PR에서 maintainer review 패턴을 추출해 contributor 가이드로 압축". 섹션: PR 제목 형식 / Commits / Release notes block / Tests / Performance work / Code style / Linking issues / Scope discipline / Documentation / CI workflow.
 - **PR 제목 컨벤션 (영역 prefix 강제)**: `tsdb`, `tsdb/wlog`, `promql`, `discovery/<name>`, `agent`, `alerting`, `textparse`, `ui`, `build`, `ci`, `docs`, `chore`. 성능 작업은 `[PERF]` 또는 `perf(area):` 컨벤션.
 - **Release notes block 강제**: 모든 PR에 ` ```release-notes ... ``` ` 펜스 코드 블록 필수. `[FEATURE]/[ENHANCEMENT]/[PERF]/[BUGFIX]/[SECURITY]/[CHANGE]` 6가지 prefix 또는 `NONE`.
@@ -63,7 +62,7 @@ aliases:
 
 - [[prometheus]]: 본 소스 1차 대상.
 - [[grafana]]: Prometheus의 1차 시각화 클라이언트, "기본 페어" 관계.
-- [[observability-and-cicd-stack]]: 19회차 종합의 메트릭 레이어.
+- [[observability-and-cicd-stack]]: 종합의 메트릭 레이어.
 - [[agent-skills]]: AGENTS.md 진화 8단계의 PR-패턴 변종 사례.
 
 ## 인용할 만한 구절
@@ -76,6 +75,6 @@ aliases:
 
 ## 메모
 
-- PR-패턴 형식의 AGENTS.md는 c2spf-analytics에 직접 적용 가능 — "최근 merge된 PR로부터 패턴 추출 → AGENTS.md 자동 생성" 워크플로우. SOP 스킬(13회차 수집)의 후속 진화 단서.
-- 16회차 ASF PMC와 19회차 CNCF가 "모두 vendor-neutral 재단"이지만 영역 다름: ASF = 데이터/JVM/메타데이터, CNCF = 클라우드 네이티브 인프라/런타임. Prometheus가 Linux Foundation 우산 아래라는 점이 LangChain Inc.(상업 회사)와 큰 대조.
+- PR-패턴 형식의 AGENTS.md는 c2spf-analytics에 직접 적용 가능 — "최근 merge된 PR로부터 패턴 추출 → AGENTS.md 자동 생성" 워크플로우. SOP 스킬의 후속 진화 단서.
+- ASF PMC와 CNCF가 "모두 vendor-neutral 재단"이지만 영역 다름: ASF = 데이터/JVM/메타데이터, CNCF = 클라우드 네이티브 인프라/런타임. Prometheus가 Linux Foundation 우산 아래라는 점이 LangChain Inc.(상업 회사)와 큰 대조.
 - AGENTS.md 길이 짧음(148줄) — Pydantic AI(10K bytes), DeepAgents(21K bytes) 대비. PR 패턴 가이드는 "본질만 추출" 형식이라 장기 유지비가 가장 낮을 가능성.

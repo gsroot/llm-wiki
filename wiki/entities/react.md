@@ -12,7 +12,6 @@ tags:
 - meta
 - frontend
 - hooks
-- 23회차
 - 프론트엔드
 related:
 - '[[nextjs]]'
@@ -37,11 +36,11 @@ cited_by_count: 15
 
 ## 개요
 
-**React**는 Meta(Facebook)가 만든 **UI 라이브러리**. 컴포넌트 + 단방향 데이터 흐름 + Hooks(2019) 기반. 본 위키에서는 22회차 5개 프론트엔드 OSS의 **공통 호스트 진영**으로 인용됨.
+**React**는 Meta(Facebook)가 만든 **UI 라이브러리**. 컴포넌트 + 단방향 데이터 흐름 + Hooks(2019) 기반. 본 위키에서는 5개 프론트엔드 OSS의 **공통 호스트 진영**으로 인용됨.
 
-본 페이지는 **stub** — React 저장소(facebook/react)가 raw 수집 대상이 아니지만, 22회차 페이지들이 `[[react]]`를 참조하는 빈도를 고려해 정합성 stub으로 등록.
+본 페이지는 **stub** — React 저장소(facebook/react)가 raw 수집 대상이 아니지만, 페이지들이 `[[react]]`를 참조하는 빈도를 고려해 정합성 stub으로 등록.
 
-## React 진영 표준 스택 (22회차 정리)
+## React 진영 표준 스택
 
 | 영역 | 도구 | 책임 |
 |---|---|---|
@@ -75,5 +74,5 @@ cited_by_count: 15
 
 ## 메모
 
-- 23회차 stub 사유: 22회차 신규 5개 엔티티 페이지가 모두 `[[react]]` 참조. 29회차에 22회차 프론트엔드 source 5개 기반으로 1차 보강.
+- stub 사유: 신규 5개 엔티티 페이지가 모두 `[[react]]` 참조. 프론트엔드 source 5개 기반으로 1차 보강.
 - 후속 수집 트리거: React 19 (서버 컴포넌트 안정화) 또는 React 자체 AGENTS.md 도입 시 raw 수집으로 1차 소스 등록.

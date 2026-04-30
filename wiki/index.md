@@ -2,40 +2,36 @@
 title: "위키 인덱스"
 type: index
 updated: 2026-04-29
-session: 56
-session_note: "55회차 종합 평가 후속 — synthesis 4건 tags 필드 누락 보강 + 태그 vocabulary 감사 리포트 신설. 태그 과밀은 즉시 삭제가 아니라 역할 분리(tags/aliases/logs/wikilinks) 정책으로 관리."
 rag_exclude: true
-rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨 (43회차)."
+rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 답변을 만들 때는 hub/concept/entity 페이지를 직접 인용해야 하고, 인덱스의 통계 숫자나 표를 근거로 답변하면 stale 정보(예: 페이지 수)가 노출됨."
 ---
 
 # 위키 인덱스
-
-> 회차별 누적 회고는 [[index-history]]로 분리되었다 (31회차 분리, ~1500 토큰 절감). 시간순 활동 기록은 [[log]], 회차 번호 내림차순 색인은 [[by-session]] (45회차 신설)을 참조한다.
 
 > 이 위키의 모든 페이지를 카테고리별로 정리한 카탈로그입니다.
 > LLM은 질의 시 이 파일을 먼저 읽어서 관련 페이지를 찾습니다.
 
 ## 통계
 
-- 총 페이지 수: 199 (56회차 [[tag-vocabulary-audit-2026-04-29]] synthesis 신설)
+- 총 페이지 수: 194
 - 소스 요약: 65
 - 엔티티: 76 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect)
-- 개념: 32 (53회차 [[rag]] 신설로 31→32)
-- 종합 분석: 22 (28회차 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] / 33회차 [[portfolio]] / 48회차 [[parental-leave-2026-operating-plan]]·[[matechat-30day-validation-loop]]·[[c2spf-ai-agent-adoption-candidates]]·[[kpi-recovery-loop]] / 49회차 [[matechat-business-validation]] / 50회차 [[matechat-launch-metrics-ledger]] / 56회차 [[tag-vocabulary-audit-2026-04-29]])
+- 개념: 32
+- 종합 분석: 20
 
 ---
 
 ## 이 위키의 5개 핵심 축
 
-이 위키는 **5개 핵심축**으로 구성된다 (1-4축은 정태 도메인, 5축은 1-4축을 가로지르는 직교 메타 layer / 28회차에 명시화 / 60회차 베이스라인).
+이 위키는 **5개 핵심축**으로 구성된다.
 
 | # | 축 | 핵심 hub 페이지 | 인바운드 합산 | 역할 |
 |---|---|---|---:|---|
 | 1 | 개인 프로필 | [[seokgeun-kim|석근 (이 위키 owner)]] · [[seokgeun-operating-profile-2026]] · [[career-timeline-seokgeun]] · [[seokgeun-kim-profile-2026]] | 195 | 위키 소유자 정체성·운영 원칙·9년 커리어 타임라인 |
-| 2 | 포트폴리오 | [[portfolio]] (33회차 신설 hub) · [[portfolio-seed]] · [[portfolio-resume-ko]] · [[portfolio-ko]] · [[portfolio-method]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-common]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 340 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
-| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 155 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 (43회차: 35 OSS entity 역참조 보강 +36%) |
+| 2 | 포트폴리오 | [[portfolio]] · [[portfolio-seed]] · [[portfolio-resume-ko]] · [[portfolio-ko]] · [[portfolio-method]] · [[c2spf-analytics|c2spf 게임 데이터 BI]] · [[c2spf-analytics-common]] · [[c2spf-analytics-renewal]] · [[c2spf-nft-market]] · [[c2spf-xpla-platform]] | 340 | 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오 |
+| 3 | 스택 가이드 | [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] | 155 | 32개 OSS 6분류 카탈로그 + 시나리오별 의사결정 트리 + 30분 부트스트랩 |
 | 4 | MateChat | [[matechat]] · [[seokgeun-mate-chat|석근 MateChat 본진 raw]] · [[seokgeun-matechat-validation]] · [[matechat-chat-analysis-module]] · [[matechat-project-knowledge-map]] | 243 | 사이드 프로젝트 (AI 소셜 메시징, v1.0.0 출시 직전 QA 단계 / 39 SKILL 운영 SOP) |
-| 5 | LLM 인프라 메타 (의도된 핵심축) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 752 | 28회차에 명시화된 5번째 축 — 4축에 직교하는 메타 layer (28회차 47.9% → 43회차 46.6% → 52회차 44.7% → 54회차 44.8% → 60회차 44.6% 자연 평형점, 5축 합산 1685 기준) |
+| 5 | LLM 인프라 메타 (의도된 핵심축) | [[llm-infra-meta-cluster]] · [[agent-skills]] · [[harness]] · [[mcp]] · [[claude-code]] | 752 | 명시화된 5번째 축 — 4축에 직교하는 메타 layer |
 
 > **읽기 순서 가이드**: (1) 5축 식별 → 본 표 / (2) 본인 정체성 → [[seokgeun-operating-profile-2026]] / (3) 기술 의사결정 → [[seokgeun-stack-guide]] / (4) 메타 인식 → [[llm-infra-meta-cluster]]
 
@@ -90,26 +86,26 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[duckdb-duckdb]] | duckdb/duckdb — 임베디드 OLAP DB ("분석용 SQLite") + 풍부한 SQL 방언 + 파일=테이블 패러다임 | article | duckdb 개발팀 (Hannes Mühleisen + Mark Raasveldt + DuckDB Labs) | 2026-04-28 | duckdb, embedded, sql, analytical, columnar, vectorized, in-process, mit-license, c++17, cmake |
 | [[apache-arrow]] | apache/arrow + apache/parquet-format — 인메모리/온디스크 컬럼 표준 통합 (Wes McKinney 발기, 11+ 언어, ASF PMC) | article | Apache Software Foundation (Wes McKinney 발기, Arrow PMC) | 2026-04-28 | apache-arrow, pyarrow, parquet, columnar, in-memory, ipc, flatbuffers, zero-copy, language-agnostic, asf, dremel |
 | [[apache-kafka]] | apache/kafka — 분산 이벤트 스트리밍 플랫폼 ("Don't fear the filesystem!" + zero-copy + KRaft) | article | Apache Software Foundation + Confluent | 2026-04-28 | kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip |
-| [[microsoft-lightgbm]] | lightgbm-org/LightGBM — 2017 NIPS GBDT 표준 + Microsoft 졸업 (2026-03) + EffVer 버전 체계 | article | lightgbm-org (formerly Microsoft Research, Guolin Ke 외) | 2026-04-28 | lightgbm, gradient-boosting, gbdt, machine-learning, ml, microsoft, lightgbm-org, neurips, effver, 17회차 |
-| [[langchain-ai-langchain]] | langchain-ai/langchain — The agent engineering platform (monorepo + AGENTS.md=CLAUDE.md + partners/ 모델) | article | LangChain Inc. (Harrison Chase 외) | 2026-04-28 | langchain, llm-framework, agent, monorepo, langchain-inc, langsmith, agents-md, claude-md, 17회차 |
-| [[langchain-ai-langgraph]] | langchain-ai/langgraph — Pregel + Apache Beam + NetworkX 영감의 stateful agent 그래프 (Klarna/Replit/Elastic production) | article | LangChain Inc. | 2026-04-28 | langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, 17회차 |
-| [[jlowin-fastmcp]] | jlowin/fastmcp — MCP 사실 표준 (70% 점유, 일일 100만 다운로드) + 1.0 SDK 흡수 → 2.0 standalone | article | Jeremiah Lowin (Prefect) | 2026-04-28 | fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, 17회차 |
-| [[langchain-ai-deepagents]] | langchain-ai/deepagents — batteries-included agent harness (LangGraph Native + 4종 도구 빌트인 + Deep Agents CLI) | article | LangChain Inc. | 2026-04-28 | deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차 |
-| [[crewaiinc-crewai]] | crewAIInc/crewAI — LangChain 독립 멀티 에이전트 프레임워크 (Crews+Flows) + Crew Control Plane SaaS (★50K, 100K+ 인증) | article | CrewAI Inc. | 2026-04-28 | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차 |
-| [[sinaptik-ai-pandas-ai]] | sinaptik-ai/pandas-ai — DataFrame 자연어 대화 어댑터 (df.chat) + LiteLLM 다중 모델 (★23.5K) | article | Sinaptik AI | 2026-04-28 | pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot, 18회차 |
-| [[pydantic-pydantic-ai]] | pydantic/pydantic-ai — Pydantic 팀의 type-safe agent framework + 11가지 강점 + AGENTS.md=CLAUDE.md 동기화 (★16.7K) | article | Pydantic Services Inc. (Samuel Colvin) | 2026-04-28 | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, 18회차 |
-| [[moby-moby]] | Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트 (Docker v29에서 8년 분리 완성) | article | Moby Project (Docker Inc. + 커뮤니티) | 2026-04-28 | docker, moby, container, devops, runtime, 19회차 |
-| [[github-actions-docs]] | GitHub Actions — Runner + Toolkit 양대 OSS + GHA 분산 생태계 | article | GitHub (actions/runner + actions/toolkit) | 2026-04-28 | github-actions, ci-cd, runner, toolkit, devops, 19회차 |
-| [[prometheus-prometheus]] | Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md (148줄) | article | Prometheus Authors (CNCF) | 2026-04-28 | prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차 |
-| [[grafana-grafana]] | Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md + `<!-- version: 2.0.0 -->` 버저닝 | article | Grafana Labs | 2026-04-28 | grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차 |
-| [[getsentry-sentry]] | Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT (4-tier hierarchy + "do not add to CLAUDE.md") | article | Sentry (Functional Software, Inc.) | 2026-04-28 | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차 |
-| [[rrousselGit-riverpod]] | rrousselGit/riverpod — Flutter Favorite reactive caching + DI (Provider 후속작, Remi Rousselet) | article | Remi Rousselet | 2026-04-28 | riverpod, flutter, dart, state-management, reactive, dependency-injection, 22회차 |
-| [[vercel-next.js]] | vercel/next.js — The React Framework + AGENTS.md 12단계 진화 (`$skill` 인덱싱 + LLM PR HTML 마커) | article | Vercel | 2026-04-28 | nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, llm-pr-marker, 22회차 |
-| [[tanstack-tanstack-query]] | TanStack/query — 서버 상태 관리 사실상 표준 (멀티 프레임워크 어댑터, TanStack 12 패키지) | article | Tanner Linsley + TanStack Team | 2026-04-28 | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 |
-| [[pmndrs-zustand]] | pmndrs/zustand — React 클라이언트 상태 미니멀 챔피언 ("Bear necessities", providerless) | article | Daishi Kato + Poimandres | 2026-04-28 | zustand, react, state-management, hooks, flux, minimal, 22회차 |
-| [[shadcn-ui-ui]] | shadcn-ui/ui — Open Code 패러다임 (코드 분배 플랫폼, 10번째 OSS 거버넌스 모델, 113K stars 22회차 1위) | article | shadcn | 2026-04-28 | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차 |
-| [[seokgeun-mate-chat]] | Mate Chat — 석근 개인 사이드 프로젝트 (v1.0.0 출시 직전 QA 단계, 39 SKILL = 자작 11 + 외부 설치 28, 28회차 검증) | project | 석근 (Mate Chat Team) | 2026-04-29 | mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack, 24회차, 28회차, 44회차 |
-| [[seokgeun-matechat-validation]] | MateChat v1.0 검증·출시 자료 (비전 / 구현 / 체크리스트 / 경쟁 / 매출 / 출시 진단 6 docs) | project | 석근 (Mate Chat Team) | 2026-04-28 | matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision, 26회차 |
+| [[microsoft-lightgbm]] | lightgbm-org/LightGBM — 2017 NIPS GBDT 표준 + Microsoft 졸업 (2026-03) + EffVer 버전 체계 | article | lightgbm-org (formerly Microsoft Research, Guolin Ke 외) | 2026-04-28 | lightgbm, gradient-boosting, gbdt, machine-learning, ml, microsoft, lightgbm-org, neurips, effver |
+| [[langchain-ai-langchain]] | langchain-ai/langchain — The agent engineering platform (monorepo + AGENTS.md=CLAUDE.md + partners/ 모델) | article | LangChain Inc. (Harrison Chase 외) | 2026-04-28 | langchain, llm-framework, agent, monorepo, langchain-inc, langsmith, agents-md, claude-md |
+| [[langchain-ai-langgraph]] | langchain-ai/langgraph — Pregel + Apache Beam + NetworkX 영감의 stateful agent 그래프 (Klarna/Replit/Elastic production) | article | LangChain Inc. | 2026-04-28 | langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx |
+| [[jlowin-fastmcp]] | jlowin/fastmcp — MCP 사실 표준 (70% 점유, 일일 100만 다운로드) + 1.0 SDK 흡수 → 2.0 standalone | article | Jeremiah Lowin (Prefect) | 2026-04-28 | fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon |
+| [[langchain-ai-deepagents]] | langchain-ai/deepagents — batteries-included agent harness (LangGraph Native + 4종 도구 빌트인 + Deep Agents CLI) | article | LangChain Inc. | 2026-04-28 | deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern |
+| [[crewaiinc-crewai]] | crewAIInc/crewAI — LangChain 독립 멀티 에이전트 프레임워크 (Crews+Flows) + Crew Control Plane SaaS (★50K, 100K+ 인증) | article | CrewAI Inc. | 2026-04-28 | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane |
+| [[sinaptik-ai-pandas-ai]] | sinaptik-ai/pandas-ai — DataFrame 자연어 대화 어댑터 (df.chat) + LiteLLM 다중 모델 (★23.5K) | article | Sinaptik AI | 2026-04-28 | pandas-ai, nl2sql, conversational-data, litellm, dataframe, bi-chatbot |
+| [[pydantic-pydantic-ai]] | pydantic/pydantic-ai — Pydantic 팀의 type-safe agent framework + 11가지 강점 + AGENTS.md=CLAUDE.md 동기화 (★16.7K) | article | Pydantic Services Inc. (Samuel Colvin) | 2026-04-28 | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md |
+| [[moby-moby]] | Moby (Docker Engine 업스트림) — 컨테이너 생태계의 레고 키트 (Docker v29에서 8년 분리 완성) | article | Moby Project (Docker Inc. + 커뮤니티) | 2026-04-28 | docker, moby, container, devops, runtime |
+| [[github-actions-docs]] | GitHub Actions — Runner + Toolkit 양대 OSS + GHA 분산 생태계 | article | GitHub (actions/runner + actions/toolkit) | 2026-04-28 | github-actions, ci-cd, runner, toolkit, devops |
+| [[prometheus-prometheus]] | Prometheus — CNCF 졸업 모니터링 시스템 + PR-패턴 AGENTS.md (148줄) | article | Prometheus Authors (CNCF) | 2026-04-28 | prometheus, cncf, monitoring, observability, time-series, promql, agents-md |
+| [[grafana-grafana]] | Grafana — 멀티 데이터소스 시각화 + 계층화 AGENTS.md + `<!-- version: 2.0.0 -->` 버저닝 | article | Grafana Labs | 2026-04-28 | grafana, observability, dashboard, agents-md, hierarchical-agents |
+| [[getsentry-sentry]] | Sentry — 에러 트래킹 + 반-fragmentation AGENTS.md SSOT (4-tier hierarchy + "do not add to CLAUDE.md") | article | Sentry (Functional Software, Inc.) | 2026-04-28 | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context |
+| [[rrousselGit-riverpod]] | rrousselGit/riverpod — Flutter Favorite reactive caching + DI (Provider 후속작, Remi Rousselet) | article | Remi Rousselet | 2026-04-28 | riverpod, flutter, dart, state-management, reactive, dependency-injection |
+| [[vercel-next.js]] | vercel/next.js — The React Framework + AGENTS.md 12단계 진화 (`$skill` 인덱싱 + LLM PR HTML 마커) | article | Vercel | 2026-04-28 | nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, llm-pr-marker |
+| [[tanstack-tanstack-query]] | TanStack/query — 서버 상태 관리 사실상 표준 (멀티 프레임워크 어댑터, TanStack 12 패키지) | article | Tanner Linsley + TanStack Team | 2026-04-28 | tanstack-query, react-query, server-state, async-state, multi-framework |
+| [[pmndrs-zustand]] | pmndrs/zustand — React 클라이언트 상태 미니멀 챔피언 ("Bear necessities", providerless) | article | Daishi Kato + Poimandres | 2026-04-28 | zustand, react, state-management, hooks, flux, minimal |
+| [[shadcn-ui-ui]] | shadcn-ui/ui — Open Code 패러다임 | article | shadcn | 2026-04-28 | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution |
+| [[seokgeun-mate-chat]] | Mate Chat — 석근 개인 사이드 프로젝트 | project | 석근 (Mate Chat Team) | 2026-04-29 | mate-chat, side-project, fastapi, flutter, riverpod, openai, websocket, oauth, in-app-purchase, sentry, prometheus, shadcn-ui-flutter, agent-skills, gstack |
+| [[seokgeun-matechat-validation]] | MateChat v1.0 검증·출시 자료 (비전 / 구현 / 체크리스트 / 경쟁 / 매출 / 출시 진단 6 docs) | project | 석근 (Mate Chat Team) | 2026-04-28 | matechat, validation, kpi, release-checklist, competitive-analysis, revenue-projection, product-vision |
 
 ## 개념 (Concepts)
 
@@ -137,15 +133,15 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[pdep]] | PDEP (Pandas Enhancement Proposal) | pdep, pandas, governance, decision-record, proposal, open-source, roadmap | 1 | 2026-04-27 |
 | [[bdfl]] | BDFL (Benevolent Dictator For Life) | bdfl, governance, open-source, decision-making, pandas, python | 1 | 2026-04-27 |
 | [[lazy-evaluation]] | Lazy Evaluation (지연 평가) | lazy-evaluation, query-optimization, predicate-pushdown, projection-pushdown, dataframe, sql, polars, duckdb, spark | 2 | 2026-04-28 |
-| [[observability]] | Observability — 메트릭/로그/트레이스 + 에러 + RUM | observability, monitoring, metrics, logs, traces, error-tracking, sre, prometheus, grafana, sentry, otel, 19회차 | 3 | 2026-04-28 |
-| [[lakehouse]] | Lakehouse — Data Lake + Data Warehouse 통합 (Delta/Iceberg/Hudi) | lakehouse, data-warehouse, data-lake, parquet, delta-lake, iceberg, 25회차 | 3 | 2026-04-29 |
-| [[streaming]] | Streaming (메시지 + 분석 엔진 두 의미) | streaming, kafka, polars, pubsub, real-time, 25회차 | 4 | 2026-04-29 |
-| [[zero-copy]] | Zero-copy — Arrow/Parquet 변환 비용 0 | zero-copy, arrow, parquet, memory-model, performance, 25회차 | 4 | 2026-04-29 |
-| [[append-only-log]] | Append-only Log — Kafka/WAL/AOF 공통 자료구조 | append-only-log, wal, kafka, log-structured, sequential-io, 25회차 | 4 | 2026-04-29 |
-| [[predicate-pushdown]] | Predicate Pushdown — WHERE를 데이터 소스로 밀기 | predicate-pushdown, sql-optimization, parquet, duckdb, polars, 25회차 | 3 | 2026-04-29 |
-| [[query-optimization]] | Query Optimization — 5대 표준 룰 | query-optimization, sql, planner, optimizer, 25회차 | 3 | 2026-04-29 |
-| [[event-driven-architecture]] | Event-driven Architecture — EDA + CQRS + Event Sourcing | event-driven-architecture, eda, event-sourcing, cqrs, kafka, pubsub, 25회차 | 4 | 2026-04-29 |
-| [[oss-saas-dual]] | OSS+SaaS 듀얼 모델 (5+1 사례) | oss-saas-dual, governance, business-model, langchain, polars, crewai, 25회차 | 5 | 2026-04-29 |
+| [[observability]] | Observability — 메트릭/로그/트레이스 + 에러 + RUM | observability, monitoring, metrics, logs, traces, error-tracking, sre, prometheus, grafana, sentry, otel | 3 | 2026-04-28 |
+| [[lakehouse]] | Lakehouse — Data Lake + Data Warehouse 통합 (Delta/Iceberg/Hudi) | lakehouse, data-warehouse, data-lake, parquet, delta-lake, iceberg | 3 | 2026-04-29 |
+| [[streaming]] | Streaming (메시지 + 분석 엔진 두 의미) | streaming, kafka, polars, pubsub, real-time | 4 | 2026-04-29 |
+| [[zero-copy]] | Zero-copy — Arrow/Parquet 변환 비용 0 | zero-copy, arrow, parquet, memory-model, performance | 4 | 2026-04-29 |
+| [[append-only-log]] | Append-only Log — Kafka/WAL/AOF 공통 자료구조 | append-only-log, wal, kafka, log-structured, sequential-io | 4 | 2026-04-29 |
+| [[predicate-pushdown]] | Predicate Pushdown — WHERE를 데이터 소스로 밀기 | predicate-pushdown, sql-optimization, parquet, duckdb, polars | 3 | 2026-04-29 |
+| [[query-optimization]] | Query Optimization — 5대 표준 룰 | query-optimization, sql, planner, optimizer | 3 | 2026-04-29 |
+| [[event-driven-architecture]] | Event-driven Architecture — EDA + CQRS + Event Sourcing | event-driven-architecture, eda, event-sourcing, cqrs, kafka, pubsub | 4 | 2026-04-29 |
+| [[oss-saas-dual]] | OSS+SaaS 듀얼 모델 (5+1 사례) | oss-saas-dual, governance, business-model, langchain, polars, crewai | 5 | 2026-04-29 |
 
 ## 엔티티 (Entities)
 
@@ -161,7 +157,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[qmd]] | qmd | tool | 검색, 마크다운, CLI, MCP | 1 | 2026-04-09 |
 | [[obsidian-web-clipper]] | Obsidian Web Clipper | tool | obsidian, 웹클리핑, 소스수집 | 1 | 2026-04-09 |
 | [[seokgeun-kim]] | 김석근 (Seokgeun Kim) | person | 석근, owner, 백엔드, 풀스택, BI, matechat | 8 | 2026-04-28 |
-| [[matechat]] | MateChat (canonical) — v1.0.0 출시 직전 QA 단계 + 39 SKILL (자작 11 + 외부 28) + 위키 발견 종합 실증 | project | matechat, mate-chat, 메이트챗, AI, social, fastapi, flutter, riverpod, openai, websocket, iap, clover, sentry, prometheus, agent-skills, gstack, v1.0.0, project-wiki, 24회차, 26회차, 28회차, 44회차 | 6 | 2026-04-29 |
+| [[matechat]] | MateChat (canonical) — v1.0.0 출시 직전 QA 단계 + 39 SKILL (자작 11 + 외부 28) + 위키 발견 종합 실증 | project | matechat, mate-chat, 메이트챗, AI, social, fastapi, flutter, riverpod, openai, websocket, iap, clover, sentry, prometheus, agent-skills, gstack, v1.0.0, project-wiki | 6 | 2026-04-29 |
 | [[mate-chat]] | (redirect → [[matechat]]) | redirect | redirect, alias, matechat | 0 | 2026-04-28 |
 | [[com2us-platform|컴투스플랫폼 c2spf]] | 컴투스플랫폼 (Com2usPlatform, c2spf) | organization | 컴투스플랫폼, c2spf, 게임플랫폼, BI, 블록체인 | 6 | 2026-04-24 |
 | [[c2spf-analytics]] | c2spf 애널리틱스 (게임 데이터 BI) | service | analytics, c2spf, BI, 게임데이터, fastapi, react | 4 | 2026-04-24 |
@@ -199,58 +195,56 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[pyarrow]] | PyArrow | tool | pyarrow, apache-arrow, columnar, in-memory, zero-copy, parquet, ipc, python, pandas-backend, adbc, gandiva | 1 | 2026-04-28 |
 | [[kafka]] | Apache Kafka | tool | kafka, event-streaming, distributed-log, jvm, scala, zero-copy, sendfile, pagecache, pub-sub, asf, kraft, kip, confluent | 1 | 2026-04-28 |
 | [[parquet]] | Apache Parquet | tool | parquet, columnar, on-disk, file-format, dremel, thrift, compression, encoding, hadoop, asf, big-data | 1 | 2026-04-28 |
-| [[lightgbm]] | LightGBM | tool | lightgbm, ml, gbdt, gradient-boosting, decision-tree, machine-learning, microsoft, lightgbm-org, neurips, effver, 17회차 | 1 | 2026-04-28 |
-| [[langchain]] | LangChain | tool | langchain, llm-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md, 17회차 | 1 | 2026-04-28 |
-| [[langgraph]] | LangGraph | tool | langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, checkpoint, 17회차 | 1 | 2026-04-28 |
-| [[fastmcp]] | FastMCP | tool | fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, oss-evolution, 17회차 | 1 | 2026-04-28 |
-| [[deepagents]] | DeepAgents | tool | deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern, 18회차 | 1 | 2026-04-28 |
-| [[crewai]] | CrewAI | tool | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차 | 1 | 2026-04-28 |
-| [[pandas-ai]] | PandasAI | tool | pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot, 18회차 | 1 | 2026-04-28 |
-| [[pydantic-ai]] | Pydantic AI | tool | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability, 18회차 | 1 | 2026-04-28 |
-| [[docker]] | Docker / Moby | tool | docker, moby, container, runtime, devops, 19회차 | 1 | 2026-04-28 |
-| [[github-actions]] | GitHub Actions | service | github-actions, ci-cd, runner, toolkit, devops, oidc, 19회차 | 1 | 2026-04-28 |
-| [[prometheus]] | Prometheus | tool | prometheus, cncf, monitoring, observability, time-series, promql, agents-md, 19회차 | 1 | 2026-04-28 |
-| [[grafana]] | Grafana | tool | grafana, observability, dashboard, agents-md, hierarchical-agents, 19회차 | 1 | 2026-04-28 |
-| [[sentry]] | Sentry | tool | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context, 19회차 | 1 | 2026-04-28 |
-| [[riverpod]] | Riverpod | tool | riverpod, flutter, dart, state-management, dependency-injection, reactive, 22회차 | 1 | 2026-04-28 |
-| [[nextjs]] | Next.js | tool | nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing, 22회차 | 1 | 2026-04-28 |
-| [[tanstack-query]] | TanStack Query | tool | tanstack-query, react-query, server-state, async-state, multi-framework, 22회차 | 1 | 2026-04-28 |
-| [[zustand]] | Zustand | tool | zustand, react, state-management, hooks, flux, minimal, providerless, 22회차 | 1 | 2026-04-28 |
-| [[shadcn-ui]] | shadcn/ui | tool | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution, 22회차 | 1 | 2026-04-28 |
-| [[turbopack]] | Turbopack | tool | turbopack, vercel, rust, bundler, nextjs, build-tool, 25회차 | 1 | 2026-04-29 |
-| [[radix-ui]] | Radix UI | tool | radix-ui, react, primitives, accessibility, headless, 25회차 | 1 | 2026-04-29 |
-| [[tailwindcss]] | Tailwind CSS | tool | tailwindcss, css, utility-first, atomic-css, 25회차 | 2 | 2026-04-29 |
-| [[poimandres]] | Poimandres | organization | poimandres, collective, react, three-fiber, zustand, jotai, valtio, 25회차 | 1 | 2026-04-29 |
-| [[tanstack]] | TanStack | organization | tanstack, tanner-linsley, react, query, table, router, form, 25회차 | 1 | 2026-04-29 |
-| [[sqlite]] | SQLite | tool | sqlite, embedded-database, sql, c, single-file, 25회차 | 3 | 2026-04-29 |
-| [[apache-foundation]] | Apache Software Foundation | organization | apache-software-foundation, asf, oss-governance, pmc, vendor-neutral, 25회차 | 2 | 2026-04-29 |
-| [[vercel]] | Vercel | organization | vercel, organization, frontend, edge, nextjs, turbopack, ai-sdk, 23회차 | 1 | 2026-04-28 |
-| [[react]] | React | tool | react, javascript, ui-library, meta, frontend, hooks, jsx, 23회차 | 5 | 2026-04-29 |
-| [[python]] | Python | language | python, language, dynamic-typing, gil, asyncio, 23회차 | 8 | 2026-04-29 |
+| [[lightgbm]] | LightGBM | tool | lightgbm, ml, gbdt, gradient-boosting, decision-tree, machine-learning, microsoft, lightgbm-org, neurips, effver | 1 | 2026-04-28 |
+| [[langchain]] | LangChain | tool | langchain, llm-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md | 1 | 2026-04-28 |
+| [[langgraph]] | LangGraph | tool | langgraph, langchain-inc, agent, state-machine, durable-execution, pregel, apache-beam, networkx, checkpoint | 1 | 2026-04-28 |
+| [[fastmcp]] | FastMCP | tool | fastmcp, mcp, prefect, jlowin, model-context-protocol, agents-md, claude-md, prefect-horizon, oss-evolution | 1 | 2026-04-28 |
+| [[deepagents]] | DeepAgents | tool | deepagents, langchain-ai, langgraph-native, agent-harness, planning, filesystem, sub-agents, claude-code-pattern | 1 | 2026-04-28 |
+| [[crewai]] | CrewAI | tool | crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane | 1 | 2026-04-28 |
+| [[pandas-ai]] | PandasAI | tool | pandas-ai, nl2dataframe, conversational-data, litellm, sinaptik-ai, bi-chatbot | 1 | 2026-04-28 |
+| [[pydantic-ai]] | Pydantic AI | tool | pydantic-ai, type-safe-agent, model-agnostic, durable-execution, mcp, a2a, logfire, agents-md, claude-md, capability | 1 | 2026-04-28 |
+| [[docker]] | Docker / Moby | tool | docker, moby, container, runtime, devops | 1 | 2026-04-28 |
+| [[github-actions]] | GitHub Actions | service | github-actions, ci-cd, runner, toolkit, devops, oidc | 1 | 2026-04-28 |
+| [[prometheus]] | Prometheus | tool | prometheus, cncf, monitoring, observability, time-series, promql, agents-md | 1 | 2026-04-28 |
+| [[grafana]] | Grafana | tool | grafana, observability, dashboard, agents-md, hierarchical-agents | 1 | 2026-04-28 |
+| [[sentry]] | Sentry | tool | sentry, error-tracking, observability, agents-md, anti-fragmentation, viewer-context | 1 | 2026-04-28 |
+| [[riverpod]] | Riverpod | tool | riverpod, flutter, dart, state-management, dependency-injection, reactive | 1 | 2026-04-28 |
+| [[nextjs]] | Next.js | tool | nextjs, react, vercel, ssr, app-router, turbopack, agents-md, skill-indexing | 1 | 2026-04-28 |
+| [[tanstack-query]] | TanStack Query | tool | tanstack-query, react-query, server-state, async-state, multi-framework | 1 | 2026-04-28 |
+| [[zustand]] | Zustand | tool | zustand, react, state-management, hooks, flux, minimal, providerless | 1 | 2026-04-28 |
+| [[shadcn-ui]] | shadcn/ui | tool | shadcn-ui, react, components, tailwind, radix, open-code, code-distribution | 1 | 2026-04-28 |
+| [[turbopack]] | Turbopack | tool | turbopack, vercel, rust, bundler, nextjs, build-tool | 1 | 2026-04-29 |
+| [[radix-ui]] | Radix UI | tool | radix-ui, react, primitives, accessibility, headless | 1 | 2026-04-29 |
+| [[tailwindcss]] | Tailwind CSS | tool | tailwindcss, css, utility-first, atomic-css | 2 | 2026-04-29 |
+| [[poimandres]] | Poimandres | organization | poimandres, collective, react, three-fiber, zustand, jotai, valtio | 1 | 2026-04-29 |
+| [[tanstack]] | TanStack | organization | tanstack, tanner-linsley, react, query, table, router, form | 1 | 2026-04-29 |
+| [[sqlite]] | SQLite | tool | sqlite, embedded-database, sql, c, single-file | 3 | 2026-04-29 |
+| [[apache-foundation]] | Apache Software Foundation | organization | apache-software-foundation, asf, oss-governance, pmc, vendor-neutral | 2 | 2026-04-29 |
+| [[vercel]] | Vercel | organization | vercel, organization, frontend, edge, nextjs, turbopack, ai-sdk | 1 | 2026-04-28 |
+| [[react]] | React | tool | react, javascript, ui-library, meta, frontend, hooks, jsx | 5 | 2026-04-29 |
+| [[python]] | Python | language | python, language, dynamic-typing, gil, asyncio | 8 | 2026-04-29 |
 
 ## 종합 분석 (Syntheses)
 
 | 파일 | 제목 | 태그 | 최종 수정 |
 |------|------|------|-----------|
-| [[wiki-bootstrap-log]] | 위키 부트스트랩 기록 | 메타, 운영 | 2026-04-09 |
 | [[career-timeline-seokgeun]] | 석근 커리어 타임라인 (2016-2026) | career, timeline, evolution | 2026-04-24 |
 | [[seokgeun-operating-profile-2026]] | 석근 개인 운영 프로필 (2026) | personal-operating-profile, matechat, 육아휴직, 사업화, 가족, ai-collaboration | 2026-04-28 |
 | [[matechat-project-knowledge-map]] | MateChat 프로젝트 지식 지도 | matechat, project-knowledge-map, architecture, launch, user-validation, business-strategy | 2026-04-28 |
 | [[agent-stack-evolution]] | 에이전트 스택의 6축 진화 — Microsoft · Anthropic · Karpathy · GitHub · Google · OpenAI 비교 | 비교분석, agent-stack, microsoft, anthropic, karpathy, github, google, openai, harness, BI, 개인비서, exec-plans, recent-learnings, self-adoption, 9-sop-skills, agents-md-claude-md-mirror | 2026-04-28 |
 | [[backend-fastapi-stack]] | Python 백엔드 표준 스택 — FastAPI + Pydantic + SQLAlchemy + Alembic + PostgreSQL + Redis (Astral 도구 + 7개 거버넌스 모델 공존) | backend-stack, fastapi, pydantic, sqlalchemy, alembic, postgresql, redis, ruff, uv, ty, astral, type-first-python, annotated-pep-593, async-python, oltp, cache, governance-models, bdfl, mailing-list, manifesto, agent-skills, rust-extensions | 2026-04-28 |
-| [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution, 16회차 | 2026-04-28 |
-| [[pandas-vs-polars-vs-duckdb]] | Pandas vs Polars vs DuckDB — 정량 비교 매트릭스 (의사결정 트리 + 마이그레이션 ROI) | comparison, pandas, polars, duckdb, dataframe, decision-matrix, 16회차 | 2026-04-28 |
-| [[agent-frameworks-matrix]] | Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장) | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp, 17회차, 18회차 | 2026-04-28 |
-| [[observability-and-cicd-stack]] | Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름 (AGENTS.md 11단계 진화 + 4가지 새 변종) | observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf, 19회차 | 2026-04-28 |
-| [[flutter-nextjs-fullstack-pattern]] | Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (AGENTS.md 12단계 진화 + Open Code 10번째 거버넌스 모델) | frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui, 22회차 | 2026-04-28 |
-| [[seokgeun-stack-guide]] | 석근 스택 가이드 — 6분류 카탈로그 + 사이드 프로젝트 30분 부트스트랩 + 회사 BI 적용 (8회차 누적 메타 결론) | personal-stack, decision-tree, side-project, c2spf-bi, seokgeun, 23회차 | 2026-04-28 |
-| [[matechat-chat-analysis-module]] | Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인 (3 형제 프로젝트 발견 + 회사 BI 4축 차용) | matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-project, c2spf-bi-applicable, 24회차 | 2026-04-28 |
-| [[llm-infra-meta-cluster]] | LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축 (agent-skills 58 + harness 49 + mcp 36 + claude-code 36 = 인바운드 179) | meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, 28회차, hidden-axis | 2026-04-28 |
-| [[portfolio]] | 포트폴리오 (Portfolio Hub) — 4개 source + 5개 프로젝트를 통합한 1-hop 진입점 (33회차 신설, 2축 hub) | 포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub, 33회차 | 2026-04-29 |
-| [[parental-leave-2026-operating-plan]] | 2026 육아휴직 1년 운영 계획 (월간 회고로 갱신 + verification_required) | 육아휴직, 운영계획, 가족, matechat, 사업화, 시간예산, burnout-risk, operating-plan, 48회차 | 2026-04-29 |
-| [[matechat-30day-validation-loop]] | MateChat 30일 검증 루프 — 알파 KPI 회수 SOP | matechat, 30일검증, alpha-validation, kpi, 검증루프, retention, conversion, post-launch, 48회차 | 2026-04-29 |
-| [[c2spf-ai-agent-adoption-candidates]] | c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매트릭스 | c2spf, agent-adoption, matechat, agent-skills, skill, 차용매트릭스, poc, company-bi, 48회차 | 2026-04-29 |
-| [[kpi-recovery-loop]] | KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP | kpi, 측정, 회수루프, sop, 의사결정, verification-required, matechat, c2spf, 48회차 | 2026-04-29 |
-| [[matechat-business-validation]] | MateChat 사업 검증 카탈로그 (4축 sub-cluster) | matechat, 사업검증, business-validation, 4축, 출시후, post-launch, retention, conversion, marketing, 49회차 | 2026-04-29 |
-| [[matechat-launch-metrics-ledger]] | MateChat 출시 후 실측 ledger (D+1/D+7/D+30 KPI 회수) | matechat, 실측, ledger, post-launch, retention, conversion, funnel, 인터뷰, 50회차, 4축, raw-metrics | 2026-04-29 |
-| [[tag-vocabulary-audit-2026-04-29]] | 태그 vocabulary 감사 — 2026-04-29 | tag-audit, vocabulary, obsidian, RAG, metadata, governance, 55회차 | 2026-04-29 |
+| [[dataframe-ecosystem-evolution]] | DataFrame 생태계 진화사 — Pandas → PyArrow → Polars → DuckDB (4단계 18년 진화 + ASF PMC 8번째 거버넌스) | dataframe, pandas, polars, duckdb, pyarrow, parquet, apache-arrow, kafka, lazy-evaluation, columnar, ecosystem-evolution | 2026-04-28 |
+| [[pandas-vs-polars-vs-duckdb]] | Pandas vs Polars vs DuckDB — 정량 비교 매트릭스 (의사결정 트리 + 마이그레이션 ROI) | comparison, pandas, polars, duckdb, dataframe, decision-matrix | 2026-04-28 |
+| [[agent-frameworks-matrix]] | Agent Frameworks Matrix — 6 프레임워크 정량 비교 | comparison, agent-framework, langgraph, openai-agents-python, fastmcp, langchain, deepagents, crewai, pydantic-ai, pandas-ai, decision-matrix, durable-execution, state-machine, mcp | 2026-04-28 |
+| [[observability-and-cicd-stack]] | Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름 (AGENTS.md 11단계 진화 + 4가지 새 변종) | observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf | 2026-04-28 |
+| [[flutter-nextjs-fullstack-pattern]] | Flutter + Next.js 듀얼 클라이언트 풀스택 패턴 (AGENTS.md 12단계 진화 + Open Code 10번째 거버넌스 모델) | frontend, fullstack, flutter, nextjs, react, state-management, riverpod, zustand, tanstack-query, shadcn-ui | 2026-04-28 |
+| [[seokgeun-stack-guide]] | 석근 스택 가이드 — 6분류 카탈로그 + 사이드 프로젝트 30분 부트스트랩 + 회사 BI 적용 | personal-stack, decision-tree, side-project, c2spf-bi, seokgeun | 2026-04-28 |
+| [[matechat-chat-analysis-module]] | Mate Chat 채팅 분석 모듈 — 7축 분석 + BigQuery 파이프라인 (3 형제 프로젝트 발견 + 회사 BI 4축 차용) | matechat, chat-analysis, bigquery, analytics, kakao-talk, ml, side-project, c2spf-bi-applicable | 2026-04-28 |
+| [[llm-infra-meta-cluster]] | LLM 인프라 메타 클러스터 — 위키의 숨은 5번째 축 (agent-skills 58 + harness 49 + mcp 36 + claude-code 36 = 인바운드 179) | meta-cluster, llm-infrastructure, agent-skills, harness, mcp, claude-code, governance, evolution-axis, hidden-axis | 2026-04-28 |
+| [[portfolio]] | 포트폴리오 (Portfolio Hub) — 4개 source + 5개 프로젝트를 통합한 1-hop 진입점 | 포트폴리오, portfolio, career, 3-layer, johnny-decimal, STAR, hub | 2026-04-29 |
+| [[parental-leave-2026-operating-plan]] | 2026 육아휴직 1년 운영 계획 (월간 회고로 갱신 + verification_required) | 육아휴직, 운영계획, 가족, matechat, 사업화, 시간예산, burnout-risk, operating-plan | 2026-04-29 |
+| [[matechat-30day-validation-loop]] | MateChat 30일 검증 루프 — 알파 KPI 회수 SOP | matechat, 30일검증, alpha-validation, kpi, 검증루프, retention, conversion, post-launch | 2026-04-29 |
+| [[c2spf-ai-agent-adoption-candidates]] | c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매트릭스 | c2spf, agent-adoption, matechat, agent-skills, skill, 차용매트릭스, poc, company-bi | 2026-04-29 |
+| [[kpi-recovery-loop]] | KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP | kpi, 측정, 회수루프, sop, 의사결정, verification-required, matechat, c2spf | 2026-04-29 |
+| [[matechat-business-validation]] | MateChat 사업 검증 카탈로그 (4축 sub-cluster) | matechat, 사업검증, business-validation, 4축, 출시후, post-launch, retention, conversion, marketing | 2026-04-29 |
+| [[matechat-launch-metrics-ledger]] | MateChat 출시 후 실측 ledger (D+1/D+7/D+30 KPI 회수) | matechat, 실측, ledger, post-launch, retention, conversion, funnel, 인터뷰, 4축, raw-metrics | 2026-04-29 |

@@ -9,7 +9,6 @@ category: system-architecture
 tags:
 - kafka
 - pubsub
-- 25회차
 related:
 - '[[kafka]]'
 - '[[redis]]'
@@ -33,7 +32,7 @@ cited_by_count: 7
 
 **Event-driven Architecture** = 시스템 컴포넌트가 동기 호출(요청-응답)이 아닌 비동기 이벤트(메시지) 발행·구독으로 통신하는 아키텍처. 컴포넌트 간 시간·공간 결합 해체.
 
-본 페이지는 **stub** — 16회차 [[kafka]] / 24회차 [[matechat|MateChat 사이드 프로젝트]] WebSocket Pub/Sub 등에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — [[kafka]] / [[matechat|MateChat 사이드 프로젝트]] WebSocket Pub/Sub 등에서 인용되므로 정합성 stub.
 
 ## 핵심 패턴 3가지
 
@@ -47,10 +46,10 @@ cited_by_count: 7
 
 ## 본 위키 인용 맥락
 
-- 16회차 [[kafka]]: EDA의 표준 메시지 브로커 (분산 + 영속 + replay 가능)
-- 15회차 [[redis]] Pub/Sub: 경량 EDA 백본
-- 24회차 [[matechat]]: WebSocket Pub/Sub (Redis 기반) — 실시간 채팅 메시지 브로드캐스트
-- 19회차 [[observability-and-cicd-stack]]: Sentry 이벤트 수신 → 알림 발송도 EDA의 변종
+- [[kafka]]: EDA의 표준 메시지 브로커 (분산 + 영속 + replay 가능)
+- [[redis]] Pub/Sub: 경량 EDA 백본
+- [[matechat]]: WebSocket Pub/Sub (Redis 기반) — 실시간 채팅 메시지 브로드캐스트
+- [[observability-and-cicd-stack]]: Sentry 이벤트 수신 → 알림 발송도 EDA의 변종
 
 ## 회사 BI 응용
 
@@ -73,5 +72,5 @@ cited_by_count: 7
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[event-driven-architecture]]` 깨진 링크 발견. 29회차에 Kafka/Redis/MateChat/Sentry source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[event-driven-architecture]]` 깨진 링크 발견. Kafka/Redis/MateChat/Sentry source 기반으로 1차 보강.
 - 후속: Event Sourcing + CQRS는 별도 종합 페이지 가치 — DDD 패턴과 결합.

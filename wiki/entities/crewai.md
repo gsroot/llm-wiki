@@ -16,7 +16,7 @@ observed_source_refs: 2
 inbound_count: 23
 created: 2026-04-28
 updated: 2026-04-28
-tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane, 18회차]
+tags: [crewai, multi-agent, role-playing, flows, crews, langchain-independent, oss-saas-dual, control-plane]
 cited_by_count: 14
 ---
 
@@ -49,7 +49,7 @@ CrewAI는 두 가지 메타포를 1급 추상화로 제공:
 
 > "**completely independent of LangChain or other agent frameworks**"
 
-→ README 첫 문장에 LangChain 의존성 없음을 박아둠. **17회차의 LangChain 진영 (LangChain/LangGraph/DeepAgents)과 명확히 대립**.
+→ README 첫 문장에 LangChain 의존성 없음을 박아둠. **LangChain 진영 (LangChain/LangGraph/DeepAgents)과 명확히 대립**.
 
 ## 5번째 OSS+SaaS 듀얼 모델
 
@@ -113,7 +113,7 @@ task1 = Task(description="2026 게임 산업 동향 조사", agent=researcher)
 task2 = Task(description="조사 결과로 보고서 작성", agent=writer)
 
 crew = Crew(agents=[researcher, writer], tasks=[task1, task2])
-result = crew.kickoff()
+result = crew.kickoff
 ```
 
 → **role-playing이 명시적**. LangGraph는 노드/엣지로, CrewAI는 사람 팀 메타포로 작성.
@@ -127,7 +127,7 @@ result = crew.kickoff()
 
 ## 출처
 
-- [[crewaiinc-crewai]] — CrewAI (18회차)
+- [[crewaiinc-crewai]] — CrewAI
 
 ## 관련
 

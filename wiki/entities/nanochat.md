@@ -135,10 +135,10 @@ LLM 시대 오픈소스 공헌 정책의 표준 사례. 위키 운영(Claude Cod
 - **시민 LLM 학습의 표준 출발점**: 향후 [[ml-ai]] 페이지에서 "개인이 LLM 학습을 처음 해본다면 어디서?"의 답.
 - **autoresearch와의 동기화**: nanochat이 활성이고 리더보드가 갱신되면 [[autoresearch]] 페이지의 "부모 저장소" 섹션 / [[autonomous-research-loop]] "실증" 섹션 / 본 페이지 리더보드 표 — 3곳을 함께 갱신해야 함.
 - **석근 응용**:
-  - **MacBook M4 Pro**: `runs/runcpu.sh`로 축소판 학습 시도 가능 (~10분, 약한 결과). 코드 흐름 체감용.
-  - **단일 다이얼 차용**: 회사 BI 도구나 개인 비서 AI에 "사용자는 우선순위 한 가지만 정하고 나머지는 자동" 같은 추상화 — 의외로 [[harness]] 설계의 가장 중요한 한 줄.
-  - **AI policy**: 위키 페이지/CLAUDE.md에 "LLM이 작성한 부분은 명시" 같은 정책 추가 검토.
+ - **MacBook M4 Pro**: `runs/runcpu.sh`로 축소판 학습 시도 가능 (~10분, 약한 결과). 코드 흐름 체감용.
+ - **단일 다이얼 차용**: 회사 BI 도구나 개인 비서 AI에 "사용자는 우선순위 한 가지만 정하고 나머지는 자동" 같은 추상화 — 의외로 [[harness]] 설계의 가장 중요한 한 줄.
+ - **AI policy**: 위키 페이지/CLAUDE.md에 "LLM이 작성한 부분은 명시" 같은 정책 추가 검토.
 - **후속 탐구**:
-  1. autoresearch round 3+ 결과를 정기 추적 (리더보드 갱신 시 본 페이지 표 업데이트)
-  2. `runcpu.sh`로 M4 Pro 축소판 한 번 돌려보기 (실측 + 페이지 보강)
-  3. nanochat의 `tasks/spellingbee.py`처럼 "특정 능력 학습" 패턴을 [[ml-ai]] 응용 가설로 정리
+ 1. autoresearch round 3+ 결과를 정기 추적 (리더보드 갱신 시 본 페이지 표 업데이트)
+ 2. `runcpu.sh`로 M4 Pro 축소판 한 번 돌려보기 (실측 + 페이지 보강)
+ 3. nanochat의 `tasks/spellingbee.py`처럼 "특정 능력 학습" 패턴을 [[ml-ai]] 응용 가설로 정리

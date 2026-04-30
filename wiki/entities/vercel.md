@@ -10,7 +10,6 @@ tags:
 - frontend
 - nextjs
 - turbopack
-- 23회차
 - 프론트엔드
 related:
 - '[[nextjs]]'
@@ -31,7 +30,7 @@ cited_by_count: 5
 
 ## 개요
 
-**Vercel**은 미국 캘리포니아 기반 **클라우드 PaaS 회사** (구 ZEIT). [[nextjs]] 프레임워크의 모회사이자 메인테이너. 22회차 [[flutter-nextjs-fullstack-pattern]] 종합에서 React 진영 풀스택 표준 발견의 핵심 주체.
+**Vercel**은 미국 캘리포니아 기반 **클라우드 PaaS 회사** (구 ZEIT). [[nextjs]] 프레임워크의 모회사이자 메인테이너. [[flutter-nextjs-fullstack-pattern]] 종합에서 React 진영 풀스택 표준 발견의 핵심 주체.
 
 ## 주요 제품·OSS
 
@@ -45,8 +44,8 @@ cited_by_count: 5
 
 ## 위키에서의 의미
 
-- **22회차 핵심 발견자**: Vercel이 Next.js 저장소에 도입한 (a) `$skill` 인덱싱 syntax + (b) `<!-- NEXT_JS_LLM_PR -->` HTML 마커 = [[agent-skills]] 12단계 진화의 양대 변종을 단일 OSS에서 동시 관찰한 사례.
-- **VC-backed + 프레임워크 코어 = AGENTS.md 채택**: 22회차 5개 프론트엔드 OSS 중 Next.js만 AGENTS.md 보유. 양극화 가설(운영 60% vs 프론트 20%)의 단일 채택자로서 회사 운영 모델이 표준 채택을 가속한다는 가설 보강.
+- **핵심 발견자**: Vercel이 Next.js 저장소에 도입한 (a) `$skill` 인덱싱 syntax + (b) `<!-- NEXT_JS_LLM_PR -->` HTML 마커 = [[agent-skills]] 12단계 진화의 양대 변종을 단일 OSS에서 동시 관찰한 사례.
+- **VC-backed + 프레임워크 코어 = AGENTS.md 채택**: 5개 프론트엔드 OSS 중 Next.js만 AGENTS.md 보유. 양극화 가설(운영 60% vs 프론트 20%)의 단일 채택자로서 회사 운영 모델이 표준 채택을 가속한다는 가설 보강.
 
 ## 관련 개념
 
@@ -62,4 +61,4 @@ cited_by_count: 5
 ## 메모
 
 - 회사 BI 사이드/내부 도구를 Next.js + Vercel Hosting으로 30분 부트스트랩하면 free tier로 시연 가능. Vercel Edge Functions로 BigQuery 프록시 패턴 검토 가치 있음.
-- 23회차 stub 사유: 22회차 5개 페이지가 `[[vercel]]` 참조했으나 페이지 부재. 마무리 정합성 보강.
+- stub 사유: 5개 페이지가 `[[vercel]]` 참조했으나 페이지 부재. 마무리 정합성 보강.

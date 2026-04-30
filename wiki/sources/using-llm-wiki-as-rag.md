@@ -15,7 +15,6 @@ tags:
 - mcp
 - agent-skills
 - 운영가이드
-- 53회차
 related:
 - '[[llm-wiki-pattern]]'
 - '[[claude-code]]'
@@ -35,7 +34,6 @@ cited_by:
 - '[[rag]]'
 - '[[seokgeun-kim]]'
 - '[[slash-commands-vs-agent-skills]]'
-- '[[tag-vocabulary-audit-2026-04-29]]'
 cited_by_count: 11
 aliases:
 - Using Llm Wiki As Rag
@@ -83,8 +81,8 @@ Claude Code의 **Read/Grep/Glob가 retrieval 엔진**. `index.md`가 라우터, 
 
 1. **위키를 자주 키워라** — 수집할 때마다 기존 페이지가 업데이트·연결되어 복리로 강해짐
 2. **"위키에 물어본다" 감각** — 일반 지식 질문보다 **위키 페이지 기반 합성** 질문이 가장 강력
-   - ❌ "하네스가 뭐야?"
-   - ✅ "`wiki/concepts/harness.md` 기준으로 내 BI 업무 하네스를 설계한다면?"
+ - ❌ "하네스가 뭐야?"
+ - ✅ "`wiki/concepts/harness.md` 기준으로 내 BI 업무 하네스를 설계한다면?"
 
 ## 주요 인사이트
 
@@ -109,6 +107,6 @@ Claude Code의 **Read/Grep/Glob가 retrieval 엔진**. `index.md`가 라우터, 
 
 - 이 문서는 석근님이 Claude Code 세션에서 질문해서 받은 답변을 본인이 다시 수집 대상으로 지정한 **자기 참조적 수집** — 위키 운영 메타 문서에 해당.
 - 후속 과제:
-  - ✅ **방법 4 완료 (2026-04-16)**: slash command 대신 Agent Skill로 승격하여 `~/.claude/skills/wiki/SKILL.md` 생성. 사유: 공식 문서상 commands가 skills로 통합됐고 자동 호출·`context: fork` 등 Skill 전용 기능이 위키 조회에 유리
-  - 회사 프로젝트 CLAUDE.md 템플릿에 "참조 지식 베이스" 섹션 추가 (방법 2) — Skill 자동 호출이 있으면 우선순위 낮아짐
-  - qmd 도입 시점 판정을 위한 트리거 기준: 페이지 50개 또는 "index.md 읽는 데 5초 이상 걸리기 시작할 때"
+ - ✅ **방법 4 완료 (2026-04-16)**: slash command 대신 Agent Skill로 승격하여 `~/.claude/skills/wiki/SKILL.md` 생성. 사유: 공식 문서상 commands가 skills로 통합됐고 자동 호출·`context: fork` 등 Skill 전용 기능이 위키 조회에 유리
+ - 회사 프로젝트 CLAUDE.md 템플릿에 "참조 지식 베이스" 섹션 추가 (방법 2) — Skill 자동 호출이 있으면 우선순위 낮아짐
+ - qmd 도입 시점 판정을 위한 트리거 기준: 페이지 50개 또는 "index.md 읽는 데 5초 이상 걸리기 시작할 때"

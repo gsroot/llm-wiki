@@ -30,7 +30,6 @@ cited_by:
 - '[[obsidian-web-clipper]]'
 - '[[qmd]]'
 - '[[rag]]'
-- '[[wiki-bootstrap-log]]'
 cited_by_count: 7
 aliases:
 - LLM 위키 아이디어 문서

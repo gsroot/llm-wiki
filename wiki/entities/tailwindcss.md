@@ -11,8 +11,6 @@ aliases:
 tags:
 - css
 - shadcn-ui-foundation
-- 25회차
-- 50회차
 related:
 - '[[shadcn-ui]]'
 - '[[react]]'
@@ -34,7 +32,7 @@ cited_by_count: 8
 
 **Tailwind CSS**는 Adam Wathan이 만든 **utility-first CSS 프레임워크**. `bg-blue-500 px-4 py-2 rounded` 같은 atomic 클래스 조합으로 디자인. 2017 출시 후 React 진영의 사실상 표준 스타일링 전략으로 안착.
 
-본 페이지는 **stub** — Tailwind 저장소가 raw 수집 대상이 아닌 상태에서 22회차 [[shadcn-ui]] / [[nextjs]] 페이지 + 24회차 [[matechat|MateChat 사이드 프로젝트]]에서 참조하므로 정합성 stub으로 등록.
+본 페이지는 **stub** — Tailwind 저장소가 raw 수집 대상이 아닌 상태에서 [[shadcn-ui]] / [[nextjs]] 페이지 + [[matechat|MateChat 사이드 프로젝트]]에서 참조하므로 정합성 stub으로 등록.
 
 ## 핵심 특성
 
@@ -48,9 +46,9 @@ cited_by_count: 8
 
 ## 본 위키 인용 맥락
 
-- 22회차 [[shadcn-ui]]: `npx shadcn add` 시 Radix Primitive + **Tailwind 클래스** 조합 분배
-- 22회차 [[nextjs]] 부트스트랩: `pnpm create next-app --tailwind` 표준 옵션
-- 23회차 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]: 사이드 프로젝트 30분 부트스트랩의 default 스타일 도구
+- [[shadcn-ui]]: `npx shadcn add` 시 Radix Primitive + **Tailwind 클래스** 조합 분배
+- [[nextjs]] 부트스트랩: `pnpm create next-app --tailwind` 표준 옵션
+- [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]: 사이드 프로젝트 30분 부트스트랩의 default 스타일 도구
 
 ## 관련 개념
 
@@ -65,5 +63,5 @@ cited_by_count: 8
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[tailwindcss]]` 깨진 링크 발견. 29회차에 shadcn-ui/Next.js source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[tailwindcss]]` 깨진 링크 발견. shadcn-ui/Next.js source 기반으로 1차 보강.
 - v4 (2025+) 변화: Rust 기반 Lightning CSS 통합, `@import "tailwindcss"` 단일 줄 설정. [[ruff]] / [[uv]] / [[turbopack]]과 함께 "Rust 가속" 흐름의 일부.

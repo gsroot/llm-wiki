@@ -13,7 +13,6 @@ tags:
 - prometheus
 - grafana
 - sentry
-- 19회차
 related:
 - '[[prometheus]]'
 - '[[grafana]]'
@@ -37,7 +36,7 @@ cited_by_count: 6
 
 ## 정의
 
-**Observability(관측 가능성)** = 시스템 외부 출력(로그, 메트릭, 트레이스)만 보고 내부 상태를 추론할 수 있는 능력. 모니터링이 "알려진 문제를 감지"라면, observability는 "알려지지 않은 문제도 추론"이다. 19회차에서는 5축 데이터(metrics/logs/traces/errors/RUM)를 OSS 도구 5개([[prometheus]] / [[grafana]] / [[sentry]] / OpenTelemetry / Loki)로 매핑한다.
+**Observability(관측 가능성)** = 시스템 외부 출력(로그, 메트릭, 트레이스)만 보고 내부 상태를 추론할 수 있는 능력. 모니터링이 "알려진 문제를 감지"라면, observability는 "알려지지 않은 문제도 추론"이다. 5축 데이터(metrics/logs/traces/errors/RUM)를 OSS 도구 5개([[prometheus]] / [[grafana]] / [[sentry]] / OpenTelemetry / Loki)로 매핑한다.
 
 ## 왜 중요한가
 
@@ -45,7 +44,7 @@ cited_by_count: 6
 
 1. **컴투스플랫폼 BI 운영**: 데이터 파이프라인 장애 시 SSH 수동 검색에서 [[grafana]] 라벨 필터링으로 전환하여 트러블슈팅 시간 단축. 4환경(상용/스테이징/샌드박스/테스트) 분리 운영의 핵심 도구.
 2. **사이드 프로젝트 적용**: FastAPI + Postgres 스택의 운영 가시성을 [[prometheus]] + [[grafana]] + [[sentry]] 3단 OSS로 무료/저비용 확보 가능.
-3. **AGENTS.md 표준 진화의 직접 증거**: 19회차에서 Prometheus/Grafana/Sentry 3개 OSS가 동시에 AGENTS.md 채택 — 운영 진영의 새 표준 형성. [[agent-skills]] 진화 8~10단계의 핵심 실증 데이터.
+3. **AGENTS.md 표준 진화의 직접 증거**: Prometheus/Grafana/Sentry 3개 OSS가 동시에 AGENTS.md 채택 — 운영 진영의 새 표준 형성. [[agent-skills]] 진화 8~10단계의 핵심 실증 데이터.
 
 ## 5축 관측 데이터
 
@@ -78,11 +77,11 @@ cited_by_count: 6
 
 **OpenTelemetry(OTel)** = CNCF 프로젝트로 metrics/logs/traces 수집의 vendor-neutral 표준. SDK + Collector + Protocol(OTLP)로 분리. 대부분의 backend(Prometheus/Loki/Tempo/Jaeger/Sentry)가 OTLP 입력 지원.
 
-→ 19회차 [[prometheus]]가 OTel 호환 receiver로 보강되는 추세 (Prometheus 3.0+).
+→ [[prometheus]]가 OTel 호환 receiver로 보강되는 추세 (Prometheus 3.0+).
 
-## 19회차 발견 — AGENTS.md와 Observability의 동시 진화
+## 발견 — AGENTS.md와 Observability의 동시 진화
 
-19회차 5개 OSS 중 [[prometheus]] / [[grafana]] / [[sentry]] 3개가 AGENTS.md 채택, [[docker]] / [[github-actions]] 2개는 미채택. 이 양극화는 **"애플리케이션 코드에 가까운 운영 OSS는 AI agent 가이드를 적극 채택, 인프라 코어 OSS는 신중"** 패턴을 시사.
+5개 OSS 중 [[prometheus]] / [[grafana]] / [[sentry]] 3개가 AGENTS.md 채택, [[docker]] / [[github-actions]] 2개는 미채택. 이 양극화는 **"애플리케이션 코드에 가까운 운영 OSS는 AI agent 가이드를 적극 채택, 인프라 코어 OSS는 신중"** 패턴을 시사.
 
 | OSS | AGENTS.md | 형식 |
 | --- | --- | --- |
@@ -103,7 +102,7 @@ cited_by_count: 6
 ## 관련 개념
 
 - [[devops-cicd]]: 운영 자동화의 자매 개념. CI/CD가 "변경 자동화"라면 observability는 "운영 자동화의 시각".
-- [[agent-skills]]: 19회차 발견 — 운영 OSS의 AGENTS.md 채택 패턴.
+- [[agent-skills]]: 발견 — 운영 OSS의 AGENTS.md 채택 패턴.
 - [[backend-python-fastapi]]: 메트릭/로그/에러를 emit하는 1차 후보.
 - [[data-pipeline-bigquery]]: 파이프라인 자체의 관측 — Promtail → Loki → Grafana.
 

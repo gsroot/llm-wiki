@@ -71,10 +71,10 @@ aliases:
 
 1. **Contributors** — 한 번 기여하면 자동으로 기여자 (투표권 없음)
 2. **Core Contributors** (4 팀) — 투표권 있음, 1년 비활성 시 emeritus 권유 메일
-   - **Maintainers Team** — PR 머지·API 결정 (현재 19명, 풀타임 8명은 probabl.ai 고용)
-   - **Documentation Team** — 문서 PR 권위 머지권
-   - **Contributor Experience Team** — 이슈/PR 트리아지
-   - **Communication Team** — SNS·블로그·브랜딩 (블로그 별도 repo, scikit-learn은 7개 SNS 채널 운영: TikTok·Bluesky·Mastodon·LinkedIn 포함)
+ - **Maintainers Team** — PR 머지·API 결정 (현재 19명, 풀타임 8명은 probabl.ai 고용)
+ - **Documentation Team** — 문서 PR 권위 머지권
+ - **Contributor Experience Team** — 이슈/PR 트리아지
+ - **Communication Team** — SNS·블로그·브랜딩 (블로그 별도 repo, scikit-learn은 7개 SNS 채널 운영: TikTok·Bluesky·Mastodon·LinkedIn 포함)
 3. **Technical Committee** (7명) — Thomas Fan, Alexandre Gramfort, Olivier Grisel, Adrin Jalali, Andreas Müller, Joel Nothman, Gaël Varoquaux — 컨센서스 실패 시 최종 결정자
 
 **의사결정 룰** (4가지):
@@ -101,8 +101,8 @@ aliases:
 ## 핵심 API 설계 — 19년간 변하지 않은 5가지 컨트랙트
 
 1. **Estimator** = `fit(X, y) -> self` 컨트랙트 인터페이스. `BaseEstimator` 상속.
-   - `X`: `(n_samples, n_features)` 2D array-like
-   - `y`: 1D array (regression: float / classification: int / unsupervised: 생략)
+ - `X`: `(n_samples, n_features)` 2D array-like
+ - `y`: 1D array (regression: float / classification: int / unsupervised: 생략)
 2. **Predictor** = Estimator + `predict(X) -> y_pred` (분류기·회귀기)
 3. **Transformer** = Estimator + `transform(X) -> X_new` (`StandardScaler`, `ColumnTransformer` 등)
 4. **Pipeline** = `make_pipeline(Transformer1, Transformer2, ..., Predictor)` — 그 자체로 Estimator·Predictor 컨트랙트 만족 → "데이터 누출(data leakage) 방지"의 일차 수단
@@ -110,7 +110,7 @@ aliases:
 
 이 5개가 곧 [[microsoft-ml-for-beginners]]가 26 lesson 동안 처음부터 끝까지 그대로 쓰는 추상화 — "한 번 배우면 모든 sklearn 코드가 같은 모양"이 입문자의 진입 장벽을 깬 진짜 이유.
 
-**최근 추가된 6번째 컨트랙트 (1.3+, 2023~)**: **Metadata Routing API** — `set_fit_request(sample_weight=True)` 같은 `set_{method}_request()` 패턴으로 `sample_weight`·`groups` 같은 메타데이터를 meta-estimator를 통과해 라우팅. 19년의 "X, y만 다룬다" 컨트랙트의 첫 명시적 확장 — 아직 experimental, `sklearn.set_config(enable_metadata_routing=True)`로 옵트인. 2018 로드맵 항목 5·6번 ("Passing around information that is not (X, y)")의 9년 후 부분 답.
+**최근 추가된 6번째 컨트랙트 (1.3+, 2023~)**: **Metadata Routing API** — `set_fit_request(sample_weight=True)` 같은 `set_{method}_request` 패턴으로 `sample_weight`·`groups` 같은 메타데이터를 meta-estimator를 통과해 라우팅. 19년의 "X, y만 다룬다" 컨트랙트의 첫 명시적 확장 — 아직 experimental, `sklearn.set_config(enable_metadata_routing=True)`로 옵트인. 2018 로드맵 항목 5·6번 ("Passing around information that is not (X, y)")의 9년 후 부분 답.
 
 ## 의도적 범위 잠금 — "안 한다"의 명시화
 
@@ -212,7 +212,7 @@ FAQ는 "Why not deep learning / RL / graphical models / sequence prediction / GP
 - **수집 선별**: `sklearn/` 핵심 코드는 raw에 보관하지 않음 — 메소드론·거버넌스·API 설계 철학은 모두 마크다운/RST에 박혀있고, 실제 코드는 GitHub 그대로 참조하면 됨. ([[github-spec-kit]] 수집과 동일 원칙)
 - **org=repo 첫 사례**: `scikit-learn/scikit-learn` — `pandas-dev/pandas` (org≠repo) 컨벤션의 자연스러운 확장. raw 경로 `raw/articles/scikit-learn-scikit-learn/`로 일관성 유지.
 - **다음 단계**:
-  1. `glossary.rst` (94KB)는 보관하지 않음 — 너무 큼, 위키링크로 충분. 필요 시 `https://scikit-learn.org/stable/glossary.html` 직접 참조.
-  2. **공통 테스트 헬퍼** (`sklearn/utils/estimator_checks.py`)는 sklearn 커스텀 estimator 작성 시 핵심 — 별도 후속 탐구 후보.
-  3. SLEP 별도 repo (`scikit-learn-enhancement-proposals`) 수집 — SLEP020 (governance) / SLEP000 (process) 정도면 위키에서 "표준화 패턴 모음"으로 [[github-spec-kit]] / [[anthropics-skills]]과 4축 비교 종합 분석 가능.
+ 1. `glossary.rst` (94KB)는 보관하지 않음 — 너무 큼, 위키링크로 충분. 필요 시 `https://scikit-learn.org/stable/glossary.html` 직접 참조.
+ 2. **공통 테스트 헬퍼** (`sklearn/utils/estimator_checks.py`)는 sklearn 커스텀 estimator 작성 시 핵심 — 별도 후속 탐구 후보.
+ 3. SLEP 별도 repo (`scikit-learn-enhancement-proposals`) 수집 — SLEP020 (governance) / SLEP000 (process) 정도면 위키에서 "표준화 패턴 모음"으로 [[github-spec-kit]] / [[anthropics-skills]]과 4축 비교 종합 분석 가능.
 - **자기 차용 분석**: 위키의 운영 절차 변경(예: lint 자동화, 새 카테고리 추가)을 SLEP-style로 다룬다면 — 단발 PR이 아닌 메타 변경은 명시적 토론 + 잠금 기간 + 머지 룰. 위키 100 페이지 후로 미루기.

@@ -42,7 +42,7 @@ cited_by_count: 14
 
 ## 개요
 
-`openai/openai-cookbook`은 [[openai]]가 2022-03부터 4년간 운영해온 공식 OpenAI API 활용 코드·기사 저장소다. ★73,042 / fork 12,325 (2026-04-27) / MIT 라이선스 / 주 언어 Jupyter Notebook. registry.yaml에 등록된 289개 콘텐츠와 115명 저자(authors.yaml)로 cookbook.openai.com 정적 사이트가 자동 생성된다. 본 위키 13회차 수집 대상이며, **AGENTS.md 안에 "Recent Learnings" 섹션을 둔 첫 메인스트림 살아있는 운영 노트** 사례로 [[agent-skills]] 외부 채택 7단계 진화의 7번째 단계를 박았다.
+`openai/openai-cookbook`은 [[openai]]가 2022-03부터 4년간 운영해온 공식 OpenAI API 활용 코드·기사 저장소다. ★73,042 / fork 12,325 (2026-04-27) / MIT 라이선스 / 주 언어 Jupyter Notebook. registry.yaml에 등록된 289개 콘텐츠와 115명 저자(authors.yaml)로 cookbook.openai.com 정적 사이트가 자동 생성된다. 본 위키 수집 대상이며, **AGENTS.md 안에 "Recent Learnings" 섹션을 둔 첫 메인스트림 살아있는 운영 노트** 사례로 [[agent-skills]] 외부 채택 7단계 진화의 7번째 단계를 박았다.
 
 ## 주요 특징
 
@@ -57,21 +57,21 @@ cited_by_count: 14
 ### 거버넌스 3축
 
 1. **AGENTS.md (5.5KB) — 살아있는 운영 노트**
-   - 표준 7개 섹션 (Project Structure / Build/Test / Coding Style / Testing / Commit/PR / Metadata Workflow / Review Guidelines)
-   - **`Recent Learnings`** 섹션이 결정적 차별점 — 6개 항목, 형식: "현상 → 대응 → 이유"
-   - 다른 OSS의 정적 가이드(astral-sh/uv, scikit-learn, fastapi 등)와 본질적으로 다름
-   - "These are considered priority 0 issues for this repo" — Review Guidelines가 코드 리뷰 우선순위 박는 단계로 진화
+ - 표준 7개 섹션 (Project Structure / Build/Test / Coding Style / Testing / Commit/PR / Metadata Workflow / Review Guidelines)
+ - **`Recent Learnings`** 섹션이 결정적 차별점 — 6개 항목, 형식: "현상 → 대응 → 이유"
+ - 다른 OSS의 정적 가이드(astral-sh/uv, scikit-learn, fastapi 등)와 본질적으로 다름
+ - "These are considered priority 0 issues for this repo" — Review Guidelines가 코드 리뷰 우선순위 박는 단계로 진화
 
 2. **PLANS.md (ExecPlans) — 7시간+ LLM 단일 작업 거버넌스**
-   - `articles/codex_exec_plans.md` (16KB)에서 정의
-   - NON-NEGOTIABLE 5 요건: 자기완결 / 살아있는 문서 / 초보자 구현 가능 / 관찰 가능한 동작 / 모든 용어 본문 정의
-   - 3 모드: 작성(authoring) / 실행(implementing) / 토론(discussing)
-   - 단일 fenced code block(md 라벨), 산문 우선
+ - `articles/codex_exec_plans.md` (16KB)에서 정의
+ - NON-NEGOTIABLE 5 요건: 자기완결 / 살아있는 문서 / 초보자 구현 가능 / 관찰 가능한 동작 / 모든 용어 본문 정의
+ - 3 모드: 작성(authoring) / 실행(implementing) / 토론(discussing)
+ - 단일 fenced code block(md 라벨), 산문 우선
 
 3. **registry.yaml + authors.yaml — 정적 사이트 자동화**
-   - 새 콘텐츠 → registry 등록 → check_notebooks.py 검증 → PR 머지
-   - cookbook.openai.com 페이지 1:1 대응
-   - [[scikit-learn]] SLEP / [[pandas-dev]] PDEP가 표준 변경 거버넌스라면, registry.yaml은 콘텐츠 변경 거버넌스
+ - 새 콘텐츠 → registry 등록 → check_notebooks.py 검증 → PR 머지
+ - cookbook.openai.com 페이지 1:1 대응
+ - [[scikit-learn]] SLEP / [[pandas-dev]] PDEP가 표준 변경 거버넌스라면, registry.yaml은 콘텐츠 변경 거버넌스
 
 ### 콘텐츠 4년 진화 (registry 태그 빈도)
 
@@ -118,14 +118,13 @@ cited_by_count: 14
 > [!warning] 논쟁/모순
 > - (없음)
 
-
 ## 메모
 
 - **회사 BI 적용 시나리오**: 게임 데이터 분석 후보 기능(예: 플레이어 행동 임베딩 클러스터링)을 도입할 때 cookbook의 같은 태그 ipynb를 raw 다운로드 → 회사 데이터로 재현 → "Recent Learnings"의 같은 영역 함정 사전 확인. cookbook = 검색 가능한 사례 데이터베이스.
 - **본 위키 차용 후보**:
-  - `wiki/registry.yaml` 신설 후 `wiki/index.md` 자동 생성 PoC
-  - `templates/style-guide.md` 신설, OpenAI 8 원칙 + 한국어 컨벤션 통합
-  - `wiki/AGENTS.md` 또는 CLAUDE.md에 "Recent Learnings" 섹션 신설
-  - `python .github/scripts/check_notebooks.py` 패턴 → `lint` 워크플로우 차용
+ - `wiki/registry.yaml` 신설 후 `wiki/index.md` 자동 생성 PoC
+ - `templates/style-guide.md` 신설, OpenAI 8 원칙 + 한국어 컨벤션 통합
+ - `wiki/AGENTS.md` 또는 CLAUDE.md에 "Recent Learnings" 섹션 신설
+ - `python .github/scripts/check_notebooks.py` 패턴 → `lint` 워크플로우 차용
 - **변경 추적**: 2026-04-26 푸시 → 2026-04-27 수집. 향후 lint 시 registry.yaml diff 자동 인지 후속 후보.
 - **Anthropic 측 대비**: [[anthropics-claude-cookbooks]]는 같은 카테고리이나, 콘텐츠 규모 차이가 크고 거버넌스 모델이 다름. 두 cookbook 비교는 OpenAI vs Anthropic 양 산맥의 메타 비교에 1차 자료.

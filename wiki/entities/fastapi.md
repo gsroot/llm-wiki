@@ -85,7 +85,7 @@ cited_by_count: 37
 - 라우터 prefix/tags/dependencies는 router 레벨 선언
 - 의심되면 `def` (threadpool 자동 — async 안 blocking이 가장 큰 함정)
 - `def` 안에서 1 함수 = 1 HTTP operation
-- Pydantic `RootModel` 회피 → `Annotated[list[int], Field(min_length=1), Body()]`
+- Pydantic `RootModel` 회피 → `Annotated[list[int], Field(min_length=1), Body]`
 - Tiangolo 추천 보조 스택: **Asyncer · SQLModel · HTTPX · Typer**, **uv · Ruff · ty**
 
 ### 채택 사례
@@ -118,7 +118,7 @@ cited_by_count: 37
 
 ## 메모
 
-- 8회차 ingest의 결정적 발견은 **`.agents/skills/fastapi/SKILL.md`** — agent-stack-evolution 분석의 "표준-구현 분리(Anthropic축)" 명제를 강화하는 정량적 증거.
+- ingest의 결정적 발견은 **`.agents/skills/fastapi/SKILL.md`** — agent-stack-evolution 분석의 "표준-구현 분리(Anthropic축)" 명제를 강화하는 정량적 증거.
 - 석근의 c2spf `analytics-common-api`가 SKILL.md 권장과 어디서 일치/충돌하는지 점검하는 후속 작업이 가치 있음 — 특히 `Annotated`, `response_model`, `def` vs `async def` 사용 분포.
 - "Tiangolo Default Stack"(fastapi + fastapi-cli + Asyncer + SQLModel + Typer + HTTPX + Pydantic + Starlette + uv + Ruff + ty)을 별도 종합 페이지로 정리할 가치.
-- **15회차 (2026-04-28)**: 백엔드 코어 6개 신규 수집으로 FastAPI 의존성 라이브러리들이 위키에 박힘 — [[pydantic]] (검증, 디폴트 의존성), [[sqlalchemy]]/[[alembic]] (DB ORM/마이그레이션, SQLModel 통합), [[postgresql]] (1순위 dialect), [[ruff]]/[[uv]] (Astral 도구 스택). 종합 페이지 [[backend-fastapi-stack]]에서 전체 흐름 분석.
+- **(2026-04-28)**: 백엔드 코어 6개 신규 수집으로 FastAPI 의존성 라이브러리들이 위키에 박힘 — [[pydantic]] (검증, 디폴트 의존성), [[sqlalchemy]]/[[alembic]] (DB ORM/마이그레이션, SQLModel 통합), [[postgresql]] (1순위 dialect), [[ruff]]/[[uv]] (Astral 도구 스택). 종합 페이지 [[backend-fastapi-stack]]에서 전체 흐름 분석.

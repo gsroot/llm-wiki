@@ -160,10 +160,10 @@ README의 풍자적 도입부지만, 진심도 섞여 있다. autoresearch는 **
 - 76,912 stars (수집 시점) — Karpathy 영향력으로 보정 필요하지만 이 패턴이 빠르게 표준이 될 신호로 읽힘.
 - 노출된 포크: macos / mlx / win-rtx / amd 4종. **프로젝트 차원의 실험 인프라가 곧 GPU 종류만큼 분기됨**.
 - 석근의 응용 가능성:
-  - **BI 분석 자동화**: `train.py` ↔ `analytics_query.py`, `val_bpb` ↔ `query latency` or `dashboard freshness`. 5분 예산으로 쿼리 최적화 자율 실험.
-  - **개인 비서 AI 서비스**: program.md 패턴을 그대로 차용. 단일 메트릭(예: 응답 만족도 점수)을 정하고 prompt/skill을 자율 튜닝하게 만드는 구조 가능.
-  - 이 위키 자체에 적용: `program.md` ↔ `CLAUDE.md`, `train.py` ↔ `wiki/`. 단 LLM 위키는 "메트릭이 없는" 영역이라 자율 루프 적용 전에 평가축을 먼저 정의해야 함.
+ - **BI 분석 자동화**: `train.py` ↔ `analytics_query.py`, `val_bpb` ↔ `query latency` or `dashboard freshness`. 5분 예산으로 쿼리 최적화 자율 실험.
+ - **개인 비서 AI 서비스**: program.md 패턴을 그대로 차용. 단일 메트릭(예: 응답 만족도 점수)을 정하고 prompt/skill을 자율 튜닝하게 만드는 구조 가능.
+ - 이 위키 자체에 적용: `program.md` ↔ `CLAUDE.md`, `train.py` ↔ `wiki/`. 단 LLM 위키는 "메트릭이 없는" 영역이라 자율 루프 적용 전에 평가축을 먼저 정의해야 함.
 - 후속 탐구:
-  1. nanochat 본 저장소를 raw에 넣을지 결정 (autoresearch가 단순화판이므로 본판은 다른 맥락에서 가치 있을 가능성).
-  2. 4개 포크(macos/mlx/win-rtx/amd) 중 macOS·MLX 포크는 석근의 집 환경/맥북에서 실제 시도 가능 — 후일 별도 source로 수집 검토.
-  3. "메트릭 + 시간예산 + program.md" 3종을 BI나 개인 프로젝트에 어떻게 이식할지 설계 노트 작성.
+ 1. nanochat 본 저장소를 raw에 넣을지 결정 (autoresearch가 단순화판이므로 본판은 다른 맥락에서 가치 있을 가능성).
+ 2. 4개 포크(macos/mlx/win-rtx/amd) 중 macOS·MLX 포크는 석근의 집 환경/맥북에서 실제 시도 가능 — 후일 별도 source로 수집 검토.
+ 3. "메트릭 + 시간예산 + program.md" 3종을 BI나 개인 프로젝트에 어떻게 이식할지 설계 노트 작성.

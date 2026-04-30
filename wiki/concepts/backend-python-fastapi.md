@@ -51,18 +51,18 @@ cited_by_count: 29
 ## 핵심 내용
 
 - **FastAPI** — 현재 주력. 비동기 처리, 자동 OpenAPI 스키마 생성, Pydantic 검증.
-  - c2spf `analytics-common-api` (231/251 커밋, ~92%) — 단독 유지보수.
-  - 트래블메이트 / Mate Chat 백엔드 (개인 프로젝트).
-  - CODE 트래블룰 API (FastAPI + SQLAlchemy + Pytest + Locust).
+ - c2spf `analytics-common-api` (231/251 커밋, ~92%) — 단독 유지보수.
+ - 트래블메이트 / Mate Chat 백엔드 (개인 프로젝트).
+ - CODE 트래블룰 API (FastAPI + SQLAlchemy + Pytest + Locust).
 - **Spring Boot** — c2spf 애널리틱스 리포트 계층, 줌인터넷 스윙 브라우저.
-  - MyBatis + JPA 다중 소스 구성으로 BigQuery·MySQL을 같은 리포트 모듈에서 처리.
+ - MyBatis + JPA 다중 소스 구성으로 BigQuery·MySQL을 같은 리포트 모듈에서 처리.
 - **Flask** — 레거시 ML 예측 서비스(2020-2021), 통합 인증 모듈(2021-06~07), 대용량 다운로드 API(2019).
 - **NestJS** (Node.js) — XPLA · NFT 마켓.
 - **공통 패턴**
-  - APIResponse `{result_code, message, data}` envelope (FastAPI 측 표준).
-  - APICode 13종 + BigQuery 결과 코드 4종 정립.
-  - Pydantic v1/v2 마이그레이션 경험.
-  - SQLAlchemy + Alembic 스키마 마이그레이션, Pytest 단위 테스트.
+ - APIResponse `{result_code, message, data}` envelope (FastAPI 측 표준).
+ - APICode 13종 + BigQuery 결과 코드 4종 정립.
+ - Pydantic v1/v2 마이그레이션 경험.
+ - SQLAlchemy + Alembic 스키마 마이그레이션, Pytest 단위 테스트.
 
 ## 실전 적용
 
@@ -93,9 +93,9 @@ cited_by_count: 29
 - **`Annotated[T, Path/Query/Depends(...)]` 강제**: 디폴트 인자(`q: str = Query(...)`) 패턴 금지. 시그니처가 다른 컨텍스트(테스트, 문서)에서도 의미 보존 + 재사용성.
 - **return type annotation 우선**: `response_model=`보다 함수 반환 타입을 권장. Pydantic 2 Rust 직렬화로 처리되므로 `ORJSONResponse`/`UJSONResponse`는 deprecated.
 - **`def` 디폴트, async는 확실할 때만**: blocking I/O는 `def`(자동 threadpool)에서 안전. async 안에 blocking이 가장 큰 성능 함정.
-- **라우터 레벨 prefix/tags/dependencies**: `include_router()`에 인자 전달하지 말고 `APIRouter(prefix=..., tags=...)`에 둔다.
+- **라우터 레벨 prefix/tags/dependencies**: `include_router`에 인자 전달하지 말고 `APIRouter(prefix=..., tags=...)`에 둔다.
 - **함수 1개 = HTTP operation 1개**: `@app.api_route(methods=[...])` 다중 메서드 회피.
-- **Pydantic `RootModel` 회피**: 대신 `Annotated[list[int], Field(min_length=1), Body()]`.
+- **Pydantic `RootModel` 회피**: 대신 `Annotated[list[int], Field(min_length=1), Body]`.
 - **Tiangolo 추천 보조 스택**: Asyncer(>AnyIO/asyncio), SQLModel(>SQLAlchemy), HTTPX(>Requests), uv·Ruff·ty.
 
 c2spf `analytics-common-api`가 이 권장과 어디서 일치/충돌하는지 점검하는 게 단기 후속 작업.

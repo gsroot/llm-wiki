@@ -16,7 +16,6 @@ tags:
 - pregel
 - apache-beam
 - networkx
-- 17회차
 related:
 - '[[langgraph]]'
 - '[[langchain]]'
@@ -137,6 +136,6 @@ sdk-js (standalone)
 
 ## 메모
 
-- 17회차 LLM 인프라 수집 — agent-frameworks-matrix.md 1차 작성의 핵심 비교 대상.
+- LLM 인프라 수집 — agent-frameworks-matrix.md 1차 작성의 핵심 비교 대상.
 - [[openai-agents-python]]과 LangGraph의 구분: OpenAI는 "ChatCompletions에 가까운 운영 SOP", LangGraph는 "Pregel-style state graph". 같은 영역(stateful agent)에 다른 메타포로 답함.
 - Klarna 사용 사례: 핀테크 챗봇 + 결제 자동화 (실제 production 검증 강력).

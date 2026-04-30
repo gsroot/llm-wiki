@@ -13,7 +13,6 @@ tags:
 - retention
 - conversion
 - post-launch
-- 48회차
 sources:
 - '[[seokgeun-mate-chat]]'
 - '[[seokgeun-matechat-validation]]'
@@ -37,7 +36,7 @@ inbound_count: 27
 # MateChat 30일 검증 루프
 
 > [!important] 실행형 hub — 출시 후 30일간 일별 KPI 회수 SOP
-> 48회차 신설 (Codex 권고 P1). [[matechat|MateChat 사이드 프로젝트]] v1.0.0 출시 D+1 ~ D+30 동안 일별 측정·주별 회고·D30 의사결정의 절차를 박는다. 측정값이 비어 있으면 **Go/Iterate/Pivot 의사결정 자체가 불가능** — 47회차까지 비어 있던 회수 루프를 채우는 것이 본 페이지의 핵심.
+> 신설 (Codex 권고 P1). [[matechat|MateChat 사이드 프로젝트]] v1.0.0 출시 D+1 ~ D+30 동안 일별 측정·주별 회고·D30 의사결정의 절차를 박는다. 측정값이 비어 있으면 **Go/Iterate/Pivot 의사결정 자체가 불가능** — 비어 있던 회수 루프를 채우는 것이 본 페이지의 핵심.
 > 
 > 한국어 표기: **MateChat 30일 검증 루프** 또는 **알파 검증**.
 
@@ -125,7 +124,7 @@ Q: 핵심 KPI 4개 중 몇 개가 목표 충족?
 
 ## 출처
 
-- [[seokgeun-mate-chat]] — 39 SKILL 분포 + 출시 직전 상태 (44회차 정정)
+- [[seokgeun-mate-chat]] — 39 SKILL 분포 + 출시 직전 상태
 - [[seokgeun-matechat-validation]] — 검증 가설 + 페르소나 정의
 - [[mate-chat-project-wiki-2026]] — 출시 직전 프로젝트 스냅샷
 

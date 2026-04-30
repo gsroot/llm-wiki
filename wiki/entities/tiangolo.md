@@ -38,7 +38,7 @@ cited_by_count: 4
 | **FastAPI** | Web framework | OpenAPI/JSON Schema/OAuth2 표준 + Pydantic + Starlette + 타입힌트 우선 |
 | **Typer** | CLI builder | FastAPI와 같은 스타일을 CLI에 적용 — Python 타입힌트로 인자 파싱 |
 | **SQLModel** | SQL ORM | SQLAlchemy + Pydantic을 같은 모델 클래스로 통합. fastapi와 자연 결합 |
-| **Asyncer** | async 유틸 | AnyIO 기반, `asyncify()` / `syncify()`로 async-blocking 경계 처리 |
+| **Asyncer** | async 유틸 | AnyIO 기반, `asyncify` / `syncify`로 async-blocking 경계 처리 |
 | **fastapi-cli** | dev CLI | `fastapi dev` / `fastapi run` |
 
 ### 설계 일관성 — "Tiangolo 양식"

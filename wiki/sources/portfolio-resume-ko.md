@@ -46,11 +46,11 @@ aliases:
 
 - **Summary** — 9년차 백엔드/풀스택. 공통 API 92% 단독 유지보수 + 팀 최초 React 리뉴얼 주도. AutoML/LangGraph 기반 ML·AI 프로덕션 배포, 블록체인 프로젝트 3건 주도.
 - **핵심 성과 5선**
-  1. 팀 최초 React 기반 프론트엔드 아키텍처 도입·표준화 (Vite + React + TS + TanStack + Zustand + ag-grid).
-  2. `analytics-common-api` 92% 커밋 점유, APIResponse·APICode 표준화, Airbridge 파이프라인 확장.
-  3. 배포·운영 가이드 4종 집중 발행(2024-10), Docker Compose + Jenkins 멀티브랜치 + Promtail/Loki/Grafana 4환경.
-  4. ML 유저 예측 정확도 85%+, GCP AutoML + AI Platform Pipeline MLOps.
-  5. LangGraph 기반 트래블메이트 Google Play 출시, 토큰 기반 과금·영수증 검증 결제.
+ 1. 팀 최초 React 기반 프론트엔드 아키텍처 도입·표준화 (Vite + React + TS + TanStack + Zustand + ag-grid).
+ 2. `analytics-common-api` 92% 커밋 점유, APIResponse·APICode 표준화, Airbridge 파이프라인 확장.
+ 3. 배포·운영 가이드 4종 집중 발행(2024-10), Docker Compose + Jenkins 멀티브랜치 + Promtail/Loki/Grafana 4환경.
+ 4. ML 유저 예측 정확도 85%+, GCP AutoML + AI Platform Pipeline MLOps.
+ 5. LangGraph 기반 트래블메이트 Google Play 출시, 토큰 기반 과금·영수증 검증 결제.
 - **경력 타임라인** — 컴투스플랫폼(2017.05~): 10개 대규모 프로젝트 / 줌인터넷(2016): 스윙 브라우저·줌닷컴 분석.
 - **기술 스택** — Backend(Python/Java/Node.js), Frontend(React+TS+Vite+TanStack+ag-grid), Data/ML(BigQuery, AutoML, LangGraph), DevOps(Docker/Jenkins/GitHub Actions), Observability(Loki/Grafana), Data Store(MySQL/PostgreSQL/Redis/BigQuery), Blockchain(Rust/XPLA).
 

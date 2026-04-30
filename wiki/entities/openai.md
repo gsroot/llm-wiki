@@ -94,22 +94,21 @@ OpenAI는 2015-12 샌프란시스코에서 설립된 AI 연구·개발 회사로
 ## 출처
 
 - [[openai-openai-cookbook]] — OpenAI 공식 4년차 cookbook 저장소 (★73K, 289 콘텐츠, MIT). 본 위키의 OpenAI 1차 자료.
-- [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK 저장소 (★25K, v0.14.6, MIT). 14회차 수집. cookbook이 메소드론 정의(가이드 단)라면 본 SDK는 그 메소드론을 자기 핵심 SDK 운영에 풀스택 적용한 본체 단 — `AGENTS.md = CLAUDE.md` 동기화 + `.agents/skills/` 9개 운영 SOP 스킬 + PLANS.md 5,485B + Codex hooks 통합 + `examples/agent_patterns/` 11종 패턴 reference 구현으로 OpenAI 거버넌스의 self-application 결정적 증거.
+- [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK 저장소 (★25K, v0.14.6, MIT). 수집. cookbook이 메소드론 정의(가이드 단)라면 본 SDK는 그 메소드론을 자기 핵심 SDK 운영에 풀스택 적용한 본체 단 — `AGENTS.md = CLAUDE.md` 동기화 + `.agents/skills/` 9개 운영 SOP 스킬 + PLANS.md 5,485B + Codex hooks 통합 + `examples/agent_patterns/` 11종 패턴 reference 구현으로 OpenAI 거버넌스의 self-application 결정적 증거.
 
 ## 논쟁/모순
 
 > [!warning] 논쟁/모순
 > - (없음)
 
-
 ## 메모
 
 - **회사 BI 적용**: OpenAI API를 c2spf-analytics에 도입할 때, cookbook의 registry.yaml에서 동일 태그(`embeddings`, `clustering`, `evals`)로 검색해 가장 최근 ipynb를 1차 자료로 활용. cookbook = 검색 가능한 사례 데이터베이스.
 - **창립 인물**: Sam Altman(CEO) / Greg Brockman / Ilya Sutskever / Andrej [[karpathy]] (초창기, 후 Tesla 거쳐 독립) 등.
 - **후속 수집 후보**:
-  - https://github.com/openai/agents.md (AGENTS.md 표준 자체)
-  - https://github.com/openai/openai-python (공식 Python SDK)
-  - ~~https://github.com/openai/openai-agents-python~~ → **수집 완료 (14회차, 2026-04-28)** → [[openai-agents-python]]
-  - https://github.com/openai/codex (Codex CLI)
-  - https://github.com/openai/evals (Evals 프레임워크)
-  - https://github.com/openai/whisper, openai/tiktoken, openai/gpt-oss
+ - https://github.com/openai/agents.md (AGENTS.md 표준 자체)
+ - https://github.com/openai/openai-python (공식 Python SDK)
+ - ~~https://github.com/openai/openai-agents-python~~ → **수집 완료** → [[openai-agents-python]]
+ - https://github.com/openai/codex (Codex CLI)
+ - https://github.com/openai/evals (Evals 프레임워크)
+ - https://github.com/openai/whisper, openai/tiktoken, openai/gpt-oss

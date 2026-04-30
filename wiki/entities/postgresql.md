@@ -129,12 +129,12 @@ GitHub은 단순 미러 — PR 받지 않음. **agent-skills 모던파의 정반
 
 ## 출처
 
-- [[postgres-postgres]] — GitHub 미러 1차 수집 (15회차, 2026-04-28)
+- [[postgres-postgres]] — GitHub 미러 1차 수집
 
 ## 메모
 
 - 본 위키 첫 "메일링 리스트 거버넌스" 사례 — agent-skills 모던파 비교 축
-- PostgreSQL 본체 = GitHub 미러 한계 → 별도 회차로 공식 docs / wiki / pgvector / TimescaleDB 보강 필요
+- PostgreSQL 본체 = GitHub 미러 한계 → 공식 docs / wiki / pgvector / TimescaleDB 보강 필요
 - pgvector로 본 위키 자체 RAG 구현 PoC 가능 (별도 벡터 DB 없이)
 - c2spf-platform OLTP 표준화 — 30년 안정성 + JSONB + Transactional DDL + pgvector
 - 라이선스 변경 위험 0 (30년 BSD-style 유지) — Redis 2024 사례와 대조

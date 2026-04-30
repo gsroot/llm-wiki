@@ -11,7 +11,6 @@ tags:
 - agents-md
 - claude-md
 - prefect-horizon
-- 17회차
 aliases:
 - FastMCP
 - fastmcp
@@ -65,7 +64,7 @@ def add(a: int, b: int) -> int:
     return a + b
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run
 ```
 
 ### `FastMCPComponent` versioned identity
@@ -126,7 +125,7 @@ src/fastmcp/
 
 ## 출처
 
-- [[jlowin-fastmcp]] — 17회차 수집, README + AGENTS.md (288줄)
+- [[jlowin-fastmcp]] — 수집, README + AGENTS.md (288줄)
 
 ## 메모
 

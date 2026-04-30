@@ -32,7 +32,6 @@ tags:
 - crewai
 - pydantic-ai
 - pandas-ai
-- 18회차
 related:
 - '[[seokgeun-kim]]'
 - '[[c2spf-analytics]]'
@@ -85,17 +84,17 @@ cited_by_count: 48
 ## 핵심 내용
 
 - **AutoML 기반 예측 (2020-08 ~ 2021-09)**
-  - GCP AutoML Tables: 이탈/구매 예측 모델 학습.
-  - GCP AI Platform Pipeline: 자동 재학습, 배포, 모니터링.
-  - Digdag로 데이터 적재 워크플로 구성.
-  - 예측 결과 시각화: React + Mobx UI.
-  - 정확도 평균 85%+ — 예측된 유저의 추세와 리텐션 추세가 반비례한다는 인사이트 도출.
+ - GCP AutoML Tables: 이탈/구매 예측 모델 학습.
+ - GCP AI Platform Pipeline: 자동 재학습, 배포, 모니터링.
+ - Digdag로 데이터 적재 워크플로 구성.
+ - 예측 결과 시각화: React + Mobx UI.
+ - 정확도 평균 85%+ — 예측된 유저의 추세와 리텐션 추세가 반비례한다는 인사이트 도출.
 - **LLM/Agent 시대 (2025~)**
-  - **트래블메이트** (Google Play 출시, 2025-10~11) — LangGraph 에이전트로 여행 일정 자동 생성, 1 Clover = 1,000 tokens 과금, 서버 측 영수증 검증.
-  - **Mate Chat** (2025-08~) — OpenAI GPT 기반 커스텀 AI 챗봇("AI Mates"), WebSocket 실시간 메시징.
-  - **MCP** ([[mcp]]) — Claude Code/Cowork 통합 활용.
-  - **OpenAI Cookbook 사례 검색** ([[openai-cookbook]]) — 4년차 ★73K 저장소(289 콘텐츠 / 115명 저자)가 회사 BI에서 OpenAI API 도입 의사결정의 1차 자료. registry.yaml 태그 분포가 정확한 진화 화석 (embeddings 99 / completions 94 / responses 32 / agents-sdk 16 / mcp 8 / gpt-oss 13). 후보 기능 도입 시 같은 태그 ipynb cherry-pick → 회사 데이터 재현 → AGENTS.md "Recent Learnings"의 함정 사전 확인이 표준 워크플로우. `articles/Prompt_Caching101.ipynb` + `Prompt_Caching_201.ipynb`은 [[prompt-cache]] 정량 데이터 보강 1차 자료, `examples/agents_sdk/session_memory.ipynb`은 [[context-engineering]] OpenAI Sessions API 사례.
-  - **gpt-oss + 한국어 fine-tuning** — `articles/gpt-oss/fine-tune-korean.ipynb` (45.9KB)이 한국어 task fine-tune 1차 자료. 한국어 BI 응용 ROI 평가 후속 후보.
+ - **트래블메이트** (Google Play 출시, 2025-10~11) — LangGraph 에이전트로 여행 일정 자동 생성, 1 Clover = 1,000 tokens 과금, 서버 측 영수증 검증.
+ - **Mate Chat** (2025-08~) — OpenAI GPT 기반 커스텀 AI 챗봇("AI Mates"), WebSocket 실시간 메시징.
+ - **MCP** ([[mcp]]) — Claude Code/Cowork 통합 활용.
+ - **OpenAI Cookbook 사례 검색** ([[openai-cookbook]]) — 4년차 ★73K 저장소(289 콘텐츠 / 115명 저자)가 회사 BI에서 OpenAI API 도입 의사결정의 1차 자료. registry.yaml 태그 분포가 정확한 진화 화석 (embeddings 99 / completions 94 / responses 32 / agents-sdk 16 / mcp 8 / gpt-oss 13). 후보 기능 도입 시 같은 태그 ipynb cherry-pick → 회사 데이터 재현 → AGENTS.md "Recent Learnings"의 함정 사전 확인이 표준 워크플로우. `articles/Prompt_Caching101.ipynb` + `Prompt_Caching_201.ipynb`은 [[prompt-cache]] 정량 데이터 보강 1차 자료, `examples/agents_sdk/session_memory.ipynb`은 [[context-engineering]] OpenAI Sessions API 사례.
+ - **gpt-oss + 한국어 fine-tuning** — `articles/gpt-oss/fine-tune-korean.ipynb` (45.9KB)이 한국어 task fine-tune 1차 자료. 한국어 BI 응용 ROI 평가 후속 후보.
 - **데이터 분석 도구**: [[pandas]], NumPy, [[scikit-learn]], Jupyter Notebook (지속적). pandas DataFrame이 scikit-learn의 first-class citizen이므로 학습 입력/예측 출력이 모두 DataFrame 표준. AutoML Tables는 BigQuery 직접 학습이지만 결과 검증·후처리는 [[pandas-dev-pandas]] 도구 레이어에서 수행.
 - **scikit-learn 직접 사용 가능성** (대안 검토): 현 AutoML Tables 의존도를 sklearn `RandomForestClassifier` + `Pipeline(StandardScaler, ...)` 직접 구성으로 전환 시 — (a) 학습 비용(GCP AutoML Tables 시간당 과금) 절감, (b) 모델 디버깅 가능 (트리 구조·feature importance 노출), (c) `sample_weight` 라우팅(Metadata Routing API, 1.3+)으로 신규/이탈 유저 가중치 차별화, (d) `model_persistence.rst` 5단 의사결정으로 ONNX/joblib/skops 옵션 평가. 트레이드오프는 AutoML이 자동 Feature Engineering·HPO를 다 해주는 부분을 직접 짜야 한다는 점.
 
@@ -105,9 +104,9 @@ cited_by_count: 48
 - **AI 에이전트에서 모바일 앱 수익화로**: LangGraph 워크플로 + 토큰 과금 + 인앱결제 결합.
 - **Pandas 데이터 처리**: 카카오톡 대화 분석 앱 등 개인 프로젝트에서 Plotly 시각화와 결합.
 
-## 17회차 추가 — LLM 인프라 + 클래식 ML 보강
+## 추가 — LLM 인프라 + 클래식 ML 보강
 
-| 영역 | 17회차 추가 | 의미 |
+| 영역 | 추가 | 의미 |
 |------|------------|------|
 | **GBDT 1순위** | [[lightgbm]] | sklearn-compatible API + Pipeline 통합. 게임 BI에서 churn/LTV/매출 예측 표준 알고리즘 |
 | **LLM 프레임워크** | [[langchain]] | "agent engineering platform" 재포지셔닝, partners/ 모델 — 벤더 락인 회피 |
@@ -122,9 +121,9 @@ cited_by_count: 48
 - [[backend-python-fastapi]] — ML 서비스 백엔드 (Flask에서 FastAPI로)
 - [[mcp]] — LLM 도구 호출 프로토콜 ([[fastmcp]]가 사실 표준 구현)
 - [[scikit-learn]] — Python ML 사실상 표준 라이브러리, 5가지 API 컨트랙트(`fit`/`predict`/`transform`/`Pipeline`/Meta-estimator)
-- [[lightgbm]] — sklearn-compatible GBDT, 회사 BI 모델 1순위 (17회차)
-- [[langchain]] / [[langgraph]] — agent platform + state-machine orchestration (17회차)
-- [[fastmcp]] — MCP 사실 표준, Prefect Horizon enterprise gateway (17회차)
+- [[lightgbm]] — sklearn-compatible GBDT, 회사 BI 모델 1순위
+- [[langchain]] / [[langgraph]] — agent platform + state-machine orchestration
+- [[fastmcp]] — MCP 사실 표준, Prefect Horizon enterprise gateway
 - [[agent-patterns]] — 12번째 패턴 (State-Machine + Durable Execution) 추가
 
 ## 출처
@@ -134,18 +133,18 @@ cited_by_count: 48
 - [[pandas-dev-pandas]] — ML 입력/출력의 도구 레이어 표준 (DataFrame), Pandera로 학습 데이터 검증, ecosystem.md의 skrub/Hamilton/Featuretools가 pandas → ML 다리
 - [[scikit-learn-scikit-learn]] — sklearn 자체 소스 페이지, 거버넌스(SLEP)·5단 영속성 의사결정·생태계 30개+ 호환 라이브러리·AGENTS.md 정책
 - [[openai-openai-cookbook]] — OpenAI 공식 4년차 cookbook (★73K, 289 콘텐츠 / 115명 저자, MIT). LLM API 도입 의사결정 시 검색 가능한 사례 데이터베이스. embeddings(99건)·agents-sdk(16건)·responses(32건)·gpt-oss(13건)·mcp(8건) 태그가 4년 진화 화석. AGENTS.md "Recent Learnings" 살아있는 운영 노트 + PLANS.md ExecPlans 7시간+ 단일 작업 패턴 거버넌스 사례
-- [[microsoft-lightgbm]] — Microsoft → lightgbm-org 졸업한 GBDT 프레임워크 (2017 NIPS). sklearn-compatible API로 Pipeline 통합 + Optuna LightGBM Tuner. EffVer 버전 체계 채택. 25+ 외부 통합 (Spark/Ray/SHAP/AutoML). 회사 BI 모델 1순위 (17회차)
-- [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo (17회차)
-- [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립 (17회차)
-- [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway (17회차)
-- [[microsoft-lightgbm]] — Microsoft → lightgbm-org 졸업한 GBDT 프레임워크 (2017 NIPS). sklearn-compatible API로 Pipeline 통합 + Optuna LightGBM Tuner. EffVer 버전 체계 채택. 25+ 외부 통합 (Spark/Ray/SHAP/AutoML). 회사 BI 모델 1순위 (17회차)
-- [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo (17회차)
-- [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립 (17회차)
-- [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway (17회차)
-- [[langchain-ai-deepagents]] — LangChain Inc.의 batteries-included agent harness. `create_deep_agent()` 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 빌트인. LangGraph Native (compiled graph 반환)이라 durable execution 자동 상속. Deep Agents CLI는 Claude Code/Cursor 직접 경쟁 (18회차)
-- [[crewaiinc-crewai]] — LangChain 명시적 독립 멀티 에이전트 프레임워크 (★50K, MIT). Crews(role-playing) + Flows(enterprise event-driven) 듀얼 메타포. **Crew Control Plane SaaS = 5번째 OSS+SaaS 듀얼 모델**. 100,000+ 인증 개발자 학습 깔때기 (18회차)
-- [[pydantic-pydantic-ai]] — Pydantic 팀이 직접 출시한 type-safe agent framework (★16.7K). 11가지 자기 강점 (durable execution + graph support 포함) → **12번째 패턴 양강 합류**. 25개 provider model-agnostic, A2A 1급, YAML/JSON agent 정의, AGENTS.md=CLAUDE.md byte-for-byte 동기화 (18회차)
-- [[sinaptik-ai-pandas-ai]] — DataFrame을 자연어로 대화하는 어댑터 (★23.5K). `df.chat(...)` 한 줄로 NL2DataFrame. LiteLLM 경유 다중 모델. 16회차 데이터 레이어(Polars/DuckDB/Parquet/PyArrow)의 **자연어 인터페이스 어댑터**. BI 챗봇 PoC 1순위 (18회차)
+- [[microsoft-lightgbm]] — Microsoft → lightgbm-org 졸업한 GBDT 프레임워크 (2017 NIPS). sklearn-compatible API로 Pipeline 통합 + Optuna LightGBM Tuner. EffVer 버전 체계 채택. 25+ 외부 통합 (Spark/Ray/SHAP/AutoML). 회사 BI 모델 1순위
+- [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo
+- [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립
+- [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway
+- [[microsoft-lightgbm]] — Microsoft → lightgbm-org 졸업한 GBDT 프레임워크 (2017 NIPS). sklearn-compatible API로 Pipeline 통합 + Optuna LightGBM Tuner. EffVer 버전 체계 채택. 25+ 외부 통합 (Spark/Ray/SHAP/AutoML). 회사 BI 모델 1순위
+- [[langchain-ai-langchain]] — "agent engineering platform" 재포지셔닝, monorepo (libs/core/langchain_v1/partners) + AGENTS.md=CLAUDE.md 동기화. partners/ 패턴으로 OpenAI/Anthropic/Ollama 1급 + langchain-google/langchain-aws 별도 repo
+- [[langchain-ai-langgraph]] — Pregel + Apache Beam + NetworkX 학술 계보 + checkpoint(Postgres/SQLite)기반 durable execution. Klarna/Replit/Elastic production. LangChain v1 `create_agent`가 이 위에 빌드. 12번째 agent 패턴 정립
+- [[jlowin-fastmcp]] — Prefect의 MCP 사실 표준 프레임워크. 일일 100만 다운로드, MCP 서버 70% 점유. 1.0이 공식 MCP Python SDK에 통합 → 2.0 standalone 재시작 (OSS 9번째 거버넌스 모델). Prefect Horizon enterprise gateway
+- [[langchain-ai-deepagents]] — LangChain Inc.의 batteries-included agent harness. `create_deep_agent` 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 빌트인. LangGraph Native (compiled graph 반환)이라 durable execution 자동 상속. Deep Agents CLI는 Claude Code/Cursor 직접 경쟁
+- [[crewaiinc-crewai]] — LangChain 명시적 독립 멀티 에이전트 프레임워크 (★50K, MIT). Crews(role-playing) + Flows(enterprise event-driven) 듀얼 메타포. **Crew Control Plane SaaS = 5번째 OSS+SaaS 듀얼 모델**. 100,000+ 인증 개발자 학습 깔때기
+- [[pydantic-pydantic-ai]] — Pydantic 팀이 직접 출시한 type-safe agent framework (★16.7K). 11가지 자기 강점 (durable execution + graph support 포함) → **12번째 패턴 양강 합류**. 25개 provider model-agnostic, A2A 1급, YAML/JSON agent 정의, AGENTS.md=CLAUDE.md byte-for-byte 동기화
+- [[sinaptik-ai-pandas-ai]] — DataFrame을 자연어로 대화하는 어댑터 (★23.5K). `df.chat(...)` 한 줄로 NL2DataFrame. LiteLLM 경유 다중 모델. 데이터 레이어(Polars/DuckDB/Parquet/PyArrow)의 **자연어 인터페이스 어댑터**. BI 챗봇 PoC 1순위
 - [[openai-openai-agents-python]] — OpenAI 공식 1년차 멀티 에이전트 Python SDK(★25K, v0.14.6, MIT). cookbook이 사례 데이터베이스라면 본 SDK는 **다중 에이전트 시스템 구축의 reference 라이브러리**. 회사 BI에 LLM 에이전트 적용 시 (예: BigQuery NL2SQL / 게임 데이터 분석 자동 보고 / 자율 모니터링 알림 트리아주) 본 SDK가 1차 후보. 핵심 가치: (1) **`examples/agent_patterns/` 16개 .py — 11종 패턴 reference 구현** (Anthropic 5 + OpenAI 6확장: Guardrails 3종 + Human-in-the-loop 3종 + Forced tool use), (2) **`docs/tools.md` 37.9KB** — 도구 시스템 전체 가이드 (BI 함수 호출 패턴 차용 가능), (3) **`mcp>=1.19.0` 디폴트 의존성** — MCP 서버를 BI 도메인 도구로 wrap 가능, (4) **RunState `CURRENT_SCHEMA_VERSION`** — BI 세션·캐시 직렬화 패턴 차용. 9개 운영 SOP 스킬 중 4개(`code-change-verification`/`docs-sync`/`runtime-behavior-probe`/`pr-draft-summary`)가 c2spf-analytics SOP에 직접 매핑
 
 ## 열린 질문

@@ -166,7 +166,7 @@ c2spf-internal = { url = "https://pypi.internal.com2us-platform.com/simple" }
 # ///
 import pandas as pd
 df = pd.read_csv("metrics.csv")
-df.plot()
+df.plot
 ```
 실행: `uv run analyze.py` — venv 자동 생성, 의존성 자동 설치, 격리 실행. 옷에는 venv가 남지 않는다 (캐시만).
 

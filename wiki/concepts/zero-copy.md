@@ -9,7 +9,6 @@ category: data-architecture
 tags:
 - zero-copy
 - parquet
-- 25회차
 related:
 - '[[pyarrow]]'
 - '[[parquet]]'
@@ -31,9 +30,9 @@ cited_by_count: 6
 
 ## 정의
 
-**Zero-copy** = 동일 메모리 표현을 변환·복사 없이 다른 라이브러리·프로세스에서 그대로 읽음. 16회차 [[pyarrow]]가 이 패턴의 표준.
+**Zero-copy** = 동일 메모리 표현을 변환·복사 없이 다른 라이브러리·프로세스에서 그대로 읽음. [[pyarrow]]가 이 패턴의 표준.
 
-본 페이지는 **stub** — 16회차 [[dataframe-ecosystem-evolution]] 등에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — [[dataframe-ecosystem-evolution]] 등에서 인용되므로 정합성 stub.
 
 ## 본 위키 사례
 
@@ -45,12 +44,12 @@ cited_by_count: 6
 | [[parquet]] 디스크 → [[pyarrow]] memory | ✅ mmap 가능 |
 | Arrow IPC ↔ 다른 프로세스 | ✅ shared memory |
 
-→ 16회차 핵심 발견: **"메모리 표준 = 디스크 표준" 통합** = Apache Arrow + Parquet 단일 자료형 모델이 변환 비용 0 보장.
+→ 핵심 발견: **"메모리 표준 = 디스크 표준" 통합** = Apache Arrow + Parquet 단일 자료형 모델이 변환 비용 0 보장.
 
 ## 회사 BI 응용
 
 - BigQuery 결과 → Arrow (BigQuery Storage API) → DuckDB SQL → Polars 분석 → pandas ML 출력 = **5단계 변환 비용 0**
-- 이는 16회차 [[dataframe-ecosystem-evolution]]의 "데이터 인프라 역사상 가장 성공적인 표준화" 결론의 실증
+- 이는 [[dataframe-ecosystem-evolution]]의 "데이터 인프라 역사상 가장 성공적인 표준화" 결론의 실증
 
 ## 관련 개념
 
@@ -68,5 +67,5 @@ cited_by_count: 6
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[zero-copy]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
-- 16회차 발견 = 1990년대 Linux sendfile() 시스템콜의 Apache Arrow 일반화.
+- stub 사유: 점검에서 `[[zero-copy]]` 깨진 링크 발견. 기존 source 기반으로 1차 보강.
+- 발견 = 1990년대 Linux sendfile 시스템콜의 Apache Arrow 일반화.

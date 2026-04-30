@@ -9,3 +9,6 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# claude-mem auto-generated context (do not commit)
+AGENTS.md

@@ -31,7 +31,6 @@ tags:
 - post-launch
 - retention
 - conversion
-- 49회차
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: v1.0.0 출시 직후부터 측정 시작. 출시 전까지는 측정 SOP·예상 KPI·실험 설계 패턴만 채운 가설 카탈로그. 실측값은 [[matechat-30day-validation-loop]] D+1~D+30 갱신, 그 이후는 본 페이지 영역별 표에 기록.
@@ -41,8 +40,8 @@ inbound_count: 16
 
 # MateChat 사업 검증 카탈로그
 
-> [!important] 4축 사업 검증 sub-cluster — 49회차 P0-4 신설
-> [[matechat|MateChat 사이드 프로젝트]] 4축은 48회차까지 기술 페이지(SKILL 39·아키텍처·QA)에 편중되었고, 사용자 검증·리텐션·결제 전환·마케팅 실험·출시 후 회고 같은 **사업 검증 영역이 비어 있었다**. 본 페이지는 외부 평가(Codex 49회차)가 지적한 4축의 빈자리를 5 영역 측정 SOP + 실험 설계 패턴 + 회고 포맷의 메타 카탈로그로 채운다.
+> [!important] 4축 사업 검증 sub-cluster — P0-4 신설
+> [[matechat|MateChat 사이드 프로젝트]] 4축은 기술 페이지(SKILL 39·아키텍처·QA)에 편중되었고, 사용자 검증·리텐션·결제 전환·마케팅 실험·출시 후 회고 같은 **사업 검증 영역이 비어 있었다**. 본 페이지는 외부 평가가 지적한 4축의 빈자리를 5 영역 측정 SOP + 실험 설계 패턴 + 회고 포맷의 메타 카탈로그로 채운다.
 >
 > **현재 시점**: v1.0.0 Google Play 출시 직전 QA 단계. 본 페이지의 모든 측정 SOP는 출시 직후 Day 0부터 적용 가능하도록 가설 단계에서 정의되어 있다. 실측값은 출시 후 회수.
 
@@ -81,11 +80,11 @@ inbound_count: 16
 - **참여자 풀**: D30 retention 충족 사용자 + paying user 우선
 - **포맷**: 30분 1:1 zoom·전화. 녹취 동의 후 owner 1인 진행. 후기는 `wiki/raw/notes/matechat-interview-{YYYY-MM-DD}.md`에 저장 후 본 페이지 영역별 인사이트로 통합.
 - **질문 5개 고정**:
-  1. "MateChat을 처음 알게 된 경로는?"
-  2. "마지막으로 사용한 시점·상황은?"
-  3. "AI 도움이 가장 컸던 한 순간이 있다면?"
-  4. "친구/지인에게 추천한 적이 있나? 왜/왜 안 했나?"
-  5. "유료 결제(클로버) 의향과 그 이유는?"
+ 1. "MateChat을 처음 알게 된 경로는?"
+ 2. "마지막으로 사용한 시점·상황은?"
+ 3. "AI 도움이 가장 컸던 한 순간이 있다면?"
+ 4. "친구/지인에게 추천한 적이 있나? 왜/왜 안 했나?"
+ 5. "유료 결제(클로버) 의향과 그 이유는?"
 
 ### 1.3 가설 vs 측정 매트릭스 (출시 전 가설)
 
@@ -233,17 +232,17 @@ inbound_count: 16
 | [[matechat-30day-validation-loop]] | 4축 단기 검증 | D+1 ~ D+30 KPI 회수 SOP |
 | **본 페이지** (matechat-business-validation) | **4축 중장기 검증** | **D+31 ~ D+365 + 연간 카탈로그** |
 
-→ 49회차 P0-4 신설로 4축이 기술/검증/사업 3 sub-cluster 균형을 갖춤.
+→ P0-4 신설로 4축이 기술/검증/사업 3 sub-cluster 균형을 갖춤.
 
 ## 출처
 
-- [[matechat-30day-validation-loop]] — 단기 KPI 회수 SOP (48회차 신설). 본 페이지의 D+1~D+30 부분이 이 페이지에 위임됨.
+- [[matechat-30day-validation-loop]] — 단기 KPI 회수 SOP. 본 페이지의 D+1~D+30 부분이 이 페이지에 위임됨.
 - [[seokgeun-matechat-validation]] — owner 자체 검증 메모.
 - [[mate-chat-project-wiki-2026]] — MateChat 프로젝트 위키 2026-04-28 스냅샷.
 - [[seokgeun-mate-chat]] — 4축 owner-side entity.
 
 ## 메모
 
-- 본 페이지 신설 동기는 49회차 외부 평가(Codex)가 "4축이 기술 페이지에 편중되어 사용자 검증/리텐션/결제 전환/마케팅 실험/출시 후 회고가 묻힐 위험"이라고 지적한 결함을 채우는 것.
+- 본 페이지 신설 동기는 외부 평가(Codex)가 "4축이 기술 페이지에 편중되어 사용자 검증/리텐션/결제 전환/마케팅 실험/출시 후 회고가 묻힐 위험"이라고 지적한 결함을 채우는 것.
 - 출시 직후 D+1부터 본 페이지 § 6 미측정 영역 ledger의 항목들이 하나씩 채워질 예정. 각 영역 표·코호트 표는 출시 직후 첫 갱신 시 본 페이지 본문에 직접 기록.
 - 본 페이지가 인바운드 5+ 도달 시 — matechat·seokgeun-mate-chat·matechat-30day-validation-loop·seokgeun-operating-profile-2026·portfolio 5개에서 인용되면 — 4축 사업 검증 sub-cluster가 위키 그래프상 정착했다는 직접 증거.

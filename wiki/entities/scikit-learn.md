@@ -69,7 +69,7 @@ Python에서 머신러닝의 사실상 표준(de facto) 라이브러리. 2007년
 ```
 
 → `Pipeline = Transformer1 → Transformer2 → ... → Predictor` (그 자체로 Estimator/Predictor 컨트랙트 만족)
-→ `Meta-estimator(BaseEstimator)` (예: `GridSearchCV(estimator=RandomForestRegressor(), ...)`)
+→ `Meta-estimator(BaseEstimator)` (예: `GridSearchCV(estimator=RandomForestRegressor, ...)`)
 
 이 모양 하나만 이해하면 60+ 알고리즘이 즉시 호환된다 — [[microsoft-ml-for-beginners]] 26 lesson이 같은 추상화로 회귀·분류·클러스터링·NLP·시계열을 다룰 수 있는 이유.
 
@@ -130,10 +130,10 @@ scikit-learn 컨트랙트를 따르면 자동 호환:
 
 - [[scikit-learn-scikit-learn]] — 이 엔티티의 자체 소스 페이지 (메타·거버넌스·API·생태계 종합)
 - [[microsoft-ml-for-beginners]] — sklearn 위에 만들어진 26 lesson 입문 커리큘럼
-- [[microsoft-lightgbm]] — sklearn-compatible GBDT 라이브러리, Pipeline 1급 통합 (17회차)
-- [[microsoft-lightgbm]] — sklearn-compatible GBDT 라이브러리, Pipeline 1급 통합 (17회차)
+- [[microsoft-lightgbm]] — sklearn-compatible GBDT 라이브러리, Pipeline 1급 통합
+- [[microsoft-lightgbm]] — sklearn-compatible GBDT 라이브러리, Pipeline 1급 통합
 
-## sklearn vs LightGBM — 보완 관계 (17회차 추가)
+## sklearn vs LightGBM — 보완 관계
 
 scikit-learn에는 자체 `GradientBoostingClassifier`/`HistGradientBoostingClassifier`가 있으나, 실무에서는 **[[lightgbm]]**이 GBDT 1순위. 이유와 통합 패턴:
 
@@ -153,7 +153,7 @@ from sklearn.preprocessing import StandardScaler
 import lightgbm as lgb
 
 pipe = Pipeline([
-    ("scaler", StandardScaler()),
+    ("scaler", StandardScaler),
     ("clf", lgb.LGBMClassifier(n_estimators=500, learning_rate=0.05)),
 ])
 pipe.fit(X_train, y_train)  # sklearn 표준 컨트랙트 그대로
@@ -164,12 +164,12 @@ pipe.fit(X_train, y_train)  # sklearn 표준 컨트랙트 그대로
 ## 메모
 
 - **회사 BI 적용 후보**:
-  1. 게임 사용자 이탈/구매 예측 — GCP AutoML Tables 대체로 sklearn `RandomForestClassifier` + `Pipeline(StandardScaler, ...)` 직접 사용 시 비용 절감 + 코드 가시화 + 모델 디버깅 가능.
-  2. 시계열 (게임 매출/MAU) — sklearn에는 본격 시계열 도구 부족 → `make_regression` 기반 회귀 모델 + 외부 timeseries 라이브러리(statsmodels, prophet) 병용.
-  3. A/B 테스트 가중치 — Metadata Routing API의 `sample_weight`로 신규/이탈 유저 가중치 다르게 학습.
+ 1. 게임 사용자 이탈/구매 예측 — GCP AutoML Tables 대체로 sklearn `RandomForestClassifier` + `Pipeline(StandardScaler, ...)` 직접 사용 시 비용 절감 + 코드 가시화 + 모델 디버깅 가능.
+ 2. 시계열 (게임 매출/MAU) — sklearn에는 본격 시계열 도구 부족 → `make_regression` 기반 회귀 모델 + 외부 timeseries 라이브러리(statsmodels, prophet) 병용.
+ 3. A/B 테스트 가중치 — Metadata Routing API의 `sample_weight`로 신규/이탈 유저 가중치 다르게 학습.
 - **개인 프로젝트 적용**:
-  - 카카오톡 대화 분석 (Pandas + Plotly) → sklearn `KMeans` 클러스터링으로 대화 패턴 그룹화 추가 가능.
-  - 트래블메이트 LangGraph 에이전트 → sklearn 분류기로 사용자 의도 보조 분류 가능 (LLM 부하 절감).
+ - 카카오톡 대화 분석 (Pandas + Plotly) → sklearn `KMeans` 클러스터링으로 대화 패턴 그룹화 추가 가능.
+ - 트래블메이트 LangGraph 에이전트 → sklearn 분류기로 사용자 의도 보조 분류 가능 (LLM 부하 절감).
 - **AGENTS.md 차용**: 사이드 프로젝트가 OSS 공개될 때 `AGENTS.md` 한 페이지에 disclosure + 코멘트 가이드만 박아도 큰 거버넌스 효과.
 - **버전 잠금 위험**: sklearn 모델은 버전 간 직렬화 호환성 보장 안 함 — 프로덕션 배포 시 `pip freeze`로 정확한 버전 잠금 + validation set 예측 스냅샷 보관 (roadmap 17번 권장).
 - **"3개월 릴리스 주기"**: 2010~ 약 3개월 주기로 새 버전 릴리스 — 회사 BI에서 의존성 업데이트 캘린더화 가능.

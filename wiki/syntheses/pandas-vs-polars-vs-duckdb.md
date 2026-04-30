@@ -9,7 +9,6 @@ tags:
 - duckdb
 - dataframe
 - decision-matrix
-- 16회차
 sources:
 - '[[pandas-dev-pandas]]'
 - '[[pola-rs-polars]]'
@@ -43,15 +42,15 @@ related:
 | **SIMD** | numexpr 경유 (옵션) | **AVX2 기본, AVX-512 nightly** | Vectorized |
 | **Streaming** | chunksize iterator (제한적) | `engine='streaming'` | EXTERNAL TABLE |
 | **Pushdown** | 없음 | **자동 (predicate/projection)** | **자동 (SQL 옵티마이저)** |
-| **Query Plan** | 없음 | `explain()` | `EXPLAIN` |
-| **Parquet 직접 SELECT** | `pd.read_parquet()` | `pl.scan_parquet()` | **`SELECT * FROM 'f.parquet'`** |
+| **Query Plan** | 없음 | `explain` | `EXPLAIN` |
+| **Parquet 직접 SELECT** | `pd.read_parquet` | `pl.scan_parquet` | **`SELECT * FROM 'f.parquet'`** |
 | **S3 통합** | s3fs 추가 | fsspec 통합 | `httpfs` extension |
 | **Apache Arrow** | PyArrow 백엔드 (옵션) | **1급 (모든 컬럼이 Arrow)** | **1급 (zero-copy)** |
-| **Window 함수** | `.rolling()`, `.expanding()` | `.rolling()`, `.over()` | **풍부한 SQL window** |
-| **Group By** | `.groupby()` | `.group_by()` | `GROUP BY` |
-| **Pivot** | `.pivot_table()` | `.pivot()` | `PIVOT` 절 |
+| **Window 함수** | `.rolling`, `.expanding` | `.rolling`, `.over` | **풍부한 SQL window** |
+| **Group By** | `.groupby` | `.group_by` | `GROUP BY` |
+| **Pivot** | `.pivot_table` | `.pivot` | `PIVOT` 절 |
 | **Time Series** | **풍부 (resample, BusinessDay, tz)** | 기본 (asof, group_by_dynamic) | 기본 (date_trunc, INTERVAL) |
-| **ML 통합** | **scikit-learn 1급** | `to_pandas()/to_numpy()` 변환 | SQL 피처 엔지니어링 |
+| **ML 통합** | **scikit-learn 1급** | `to_pandas/to_numpy` 변환 | SQL 피처 엔지니어링 |
 | **시각화** | **Plotly/Matplotlib 1급** | Plotly 호환 (제한적) | DataFrame 변환 후 |
 | **단일 노드 한계** | ~10M 행 | ~4.2B 행 (`bigidx`) | ~메모리 한계 |
 | **분산 확장** | Modin/Dask/Ray | Polars Cloud (SaaS) | MotherDuck (SaaS) |
@@ -85,7 +84,7 @@ df = pd.read_parquet("sales.parquet")
 result = (
     df[df.date >= "2024-01-01"]
     .groupby("user_id")["revenue"]
-    .sum()
+    .sum
     .sort_values(ascending=False)
     .head(10)
 )
@@ -100,10 +99,10 @@ result = (
     pl.scan_parquet("sales.parquet")
     .filter(pl.col("date") >= "2024-01-01")
     .group_by("user_id")
-    .agg(pl.col("revenue").sum())
+    .agg(pl.col("revenue").sum)
     .sort("revenue", descending=True)
     .head(10)
-    .collect()
+    .collect
 )
 ```
 
@@ -119,7 +118,7 @@ result = duckdb.sql("""
     GROUP BY user_id
     ORDER BY total DESC
     LIMIT 10
-""").df()
+""").df
 ```
 
 → **셋 다 가독성 OK**. 차이는 (1) 옵티마이저 (2) 메모리 사용 (3) 학습 비용.
@@ -173,20 +172,20 @@ arrow_table = duckdb.sql("""
     SELECT user_id, date, revenue 
     FROM 's3://bucket/sales-2024.parquet' 
     WHERE date >= '2024-01-01'
-""").arrow()
+""").arrow
 
 # 2) Polars: lazy 변환 + group_by/window/streaming
 pl_df = pl.from_arrow(arrow_table)
 features = (
-    pl_df.lazy()
+    pl_df.lazy
     .with_columns(pl.col("revenue").rolling_mean(7).over("user_id").alias("ma7"))
     .group_by("user_id")
-    .agg([pl.col("revenue").sum(), pl.col("ma7").last()])
-    .collect()
+    .agg([pl.col("revenue").sum, pl.col("ma7").last])
+    .collect
 )
 
 # 3) pandas: scikit-learn 입력 + Plotly 시각화
-pd_df = features.to_pandas()
+pd_df = features.to_pandas
 from sklearn.cluster import KMeans
 clusters = KMeans(n_clusters=5).fit_predict(pd_df[["revenue", "ma7"]])
 pd_df["cluster"] = clusters
@@ -245,10 +244,10 @@ ROI:
 
 ## 출처
 
-- [[pandas-dev-pandas]] — pandas 16회차 직전 (11회차) 수집
-- [[pola-rs-polars]] — 16회차 수집
-- [[duckdb-duckdb]] — 16회차 수집
-- [[dataframe-ecosystem-evolution]] — 16회차 종합 분석
+- [[pandas-dev-pandas]] — pandas 직전 수집
+- [[pola-rs-polars]] — 수집
+- [[duckdb-duckdb]] — 수집
+- [[dataframe-ecosystem-evolution]] — 종합 분석
 
 ## 후속 작업
 

@@ -107,13 +107,12 @@ Python 생태계는 역사적으로 도구가 분산되어 있었다 (pip, virtu
 > - **VC-backed 오픈소스 지속가능성**: 무료 오픈소스 + VC 펀딩의 결합은 향후 라이센스 변경(Hashicorp/Elastic 사례) 위험을 내포한다는 비판이 일부 커뮤니티에서 제기. 현재 Astral은 일관되게 OSS 이력 유지 중이지만, 5년 후 비즈니스 모델은 미공개.
 > - **PSF/PyPA와의 거리**: uv는 PEP을 따르지만 일부 기능(PEP 723 빠른 채택, `tool.uv.sources` 같은 비표준 확장)은 PyPA 공식 도구보다 앞서나간다. 표준 fork 위험 vs 표준 견인 효과 둘 다 있음.
 
-
 ## 메모
 
 - **위키 자기 적용**: [[seokgeun-kim|석근 (이 위키 owner)]]의 회사 BI [[c2spf-analytics|c2spf 게임 데이터 BI]] 마이그레이션 후보로 강력 — FastAPI + Python 13 환경에서 uv 도입은 CI 시간 단축, lockfile universal로 macOS↔Linux↔Docker 일관성 확보 가능.
 - **3제품 묶음 학습**: 위키 효율성을 위해 ruff/ty도 향후 수집 시 이 페이지에 통합 업데이트하는 패턴 채택. ruff는 별도 source 페이지로, ty는 preview 단계라 보류.
 - **후속 후보**:
-  - `entities/ruff.md` — 별도 엔티티 (소스 수집 후)
-  - `entities/charlie-marsh.md` — 인물 페이지 (Astral 창립자)
-  - `synthesis/rust-rewrite-pattern.md` — Astral + bun + deno + pnpm + Rome 메타 분석
+ - `entities/ruff.md` — 별도 엔티티 (소스 수집 후)
+ - `entities/charlie-marsh.md` — 인물 페이지 (Astral 창립자)
+ - `synthesis/rust-rewrite-pattern.md` — Astral + bun + deno + pnpm + Rome 메타 분석
 - **이름 표기**: "Astral" (회사명, 대문자 시작), "astral-sh" (GitHub 조직 슬러그, 소문자), "uv"·"ruff"·"ty" (제품명, 소문자).

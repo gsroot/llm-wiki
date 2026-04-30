@@ -2,7 +2,7 @@
 title: "Observability + CI/CD Stack — Docker → GHA → Prometheus → Grafana → Sentry 5단 흐름"
 type: synthesis
 category: dev-tools
-tags: [observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf, 19회차]
+tags: [observability, cicd, docker, github-actions, prometheus, grafana, sentry, agents-md, anti-fragmentation, hierarchical-agents-md, cncf]
 sources:
   - "[[moby-moby]]"
   - "[[github-actions-docs]]"
@@ -21,11 +21,11 @@ inbound_count: 40
 
 ## 본문
 
-19회차에서 수집한 운영/Observability 진영 5개 OSS — [[docker]] / [[github-actions]] / [[prometheus]] / [[grafana]] / [[sentry]] — 를 단일 흐름으로 묶는다. 빌드/패키징(Docker)부터 자동화(GHA), 메트릭(Prometheus), 시각화(Grafana), 에러 추적(Sentry)까지 5단을 통합하면 사이드 프로젝트와 컴투스플랫폼 BI 양쪽에 직접 응용 가능한 OSS-only 운영 스택이 된다.
+수집한 운영/Observability 진영 5개 OSS — [[docker]] / [[github-actions]] / [[prometheus]] / [[grafana]] / [[sentry]] — 를 단일 흐름으로 묶는다. 빌드/패키징(Docker)부터 자동화(GHA), 메트릭(Prometheus), 시각화(Grafana), 에러 추적(Sentry)까지 5단을 통합하면 사이드 프로젝트와 컴투스플랫폼 BI 양쪽에 직접 응용 가능한 OSS-only 운영 스택이 된다.
 
 개념 레벨의 관측성 정의와 metrics/logs/traces/errors/RUM 5축은 [[observability]]에 정리하고, 본 페이지는 그 개념을 Docker/GitHub Actions/Prometheus/Grafana/Sentry 운영 스택으로 구체화한다.
 
-또한 이 회차의 핵심 메타 발견은 **AGENTS.md 진화 11단계** — 운영 진영 3개 OSS(Prometheus/Grafana/Sentry)가 동시에 AGENTS.md를 채택하면서 **4가지 새 변종**(PR-패턴 가이드 / `@AGENTS.md` redirect / 계층화 / anti-fragmentation 명문화)을 등장시켰다. [[agent-skills]] 11단계로 정리된 이 발견은 [[backend-fastapi-stack]](15회차)·[[dataframe-ecosystem-evolution]](16회차)·[[agent-frameworks-matrix]](17~18회차)에 이은 5번째 종합 축이다.
+또한 핵심 메타 발견은 **AGENTS.md 진화 11단계** — 운영 진영 3개 OSS(Prometheus/Grafana/Sentry)가 동시에 AGENTS.md를 채택하면서 **4가지 새 변종**(PR-패턴 가이드 / `@AGENTS.md` redirect / 계층화 / anti-fragmentation 명문화)을 등장시켰다. [[agent-skills]] 11단계로 정리된 이 발견은 [[backend-fastapi-stack]]·[[dataframe-ecosystem-evolution]]·[[agent-frameworks-matrix]]에 이은 5번째 종합 축이다.
 
 ## 5단 흐름 (Pipeline)
 
@@ -52,9 +52,9 @@ inbound_count: 40
 | 4. 시각화 | Grafana | 데이터소스 (Prometheus/Loki/PG) | 대시보드 + 알림 |
 | 5. 에러 | Sentry | SDK 이벤트 (push) | 이슈 + replay |
 
-## AGENTS.md 양극화 분석 (19회차 핵심 메타 발견)
+## AGENTS.md 양극화 분석
 
-19회차 5개 OSS의 AGENTS.md 채택 패턴:
+5개 OSS의 AGENTS.md 채택 패턴:
 
 | OSS | AGENTS.md | 형식 | 주요 특징 |
 | --- | --- | --- | --- |
@@ -73,8 +73,8 @@ inbound_count: 40
 2. **`@AGENTS.md` redirect CLAUDE.md** (Grafana/Sentry): CLAUDE.md = 1줄 `@AGENTS.md`. AGENTS.md SSOT, 두 파일 sync 운영 부담 제거.
 
 3. **계층화 AGENTS.md** (Grafana 2-tier, Sentry 4-tier): 모노레포 영역별 다른 컨벤션 → 디렉토리별 분산.
-   - Grafana: `/AGENTS.md` + `docs/AGENTS.md` + `public/app/features/alerting/unified/AGENTS.md`
-   - Sentry: `/AGENTS.md` + `src/` + `tests/` + `static/` (각각 다른 CODEOWNERS 팀)
+ - Grafana: `/AGENTS.md` + `docs/AGENTS.md` + `public/app/features/alerting/unified/AGENTS.md`
+ - Sentry: `/AGENTS.md` + `src/` + `tests/` + `static/` (각각 다른 CODEOWNERS 팀)
 
 4. **Anti-fragmentation 명문화** (Sentry): "AGENTS.md is the source of truth, **do not add to CLAUDE.md or Cursor rules**" — AI agent별 룰 파일 drift 방지.
 
@@ -82,17 +82,17 @@ inbound_count: 40
 
 ## 거버넌스 모델 9번째 추가 — CNCF graduated
 
-| # | 모델 | 사례 | 회차 |
+| # | 모델 | 사례 | |
 | --- | --- | --- | --- |
-| 1 | Anthropic | Claude Code, anthropics-skills | 5~10회차 |
-| 2 | OpenAI | OpenAI Agents Python, Cookbook | 13~14회차 |
-| 3 | Pydantic Foundation | Pydantic v2 | 15회차 |
-| 4 | Astral | UV, Ruff | 15회차 |
-| 5 | 커뮤니티 (Pola.rs) | Polars | 16회차 |
-| 6 | NumFOCUS | Pandas | 16회차 |
-| 7 | Apache Software Foundation (ASF PMC) | Arrow, Kafka | 16회차 |
-| 8 | LangChain Inc. | LangChain, LangGraph, DeepAgents | 17~18회차 |
-| 9 | **CNCF graduated** | **Prometheus** | **19회차** |
+| 1 | Anthropic | Claude Code, anthropics-skills | |
+| 2 | OpenAI | OpenAI Agents Python, Cookbook | |
+| 3 | Pydantic Foundation | Pydantic v2 | |
+| 4 | Astral | UV, Ruff | |
+| 5 | 커뮤니티 (Pola.rs) | Polars | |
+| 6 | NumFOCUS | Pandas | |
+| 7 | Apache Software Foundation (ASF PMC) | Arrow, Kafka | |
+| 8 | LangChain Inc. | LangChain, LangGraph, DeepAgents | |
+| 9 | **CNCF graduated** | **Prometheus** | **** |
 
 → ASF(데이터/JVM)와 CNCF(클라우드 네이티브 인프라/런타임)는 vendor-neutral 재단의 양대 산맥. Linux Foundation 우산.
 
@@ -161,11 +161,11 @@ FastAPI + Postgres 스택에 5단 OSS 통합:
 
 ## 다음 진화 단서
 
-19회차에서 발견된 다음 진화 후보:
+발견된 다음 진화 후보:
 
 1. **AGENTS.md 자동 생성 도구** (현재는 사람이 직접 작성). Prometheus PR-패턴 가이드처럼 "최근 merge된 PR 분석 → AGENTS.md 자동 업데이트" 워크플로우.
 2. **AGENTS.md 버저닝 표준화** (Grafana `<!-- version: 2.0.0 -->` 첫 도입). 향후 SemVer 또는 날짜 기반 표준.
-3. **Workflow YAML / Dockerfile 가이드 표준** — 코드 외 자산에 대한 LLM 가이드. 현재 없음, 21회차 점검 시 정리 필요.
+3. **Workflow YAML / Dockerfile 가이드 표준** — 코드 외 자산에 대한 LLM 가이드. 현재 없음, 점검 시 정리 필요.
 4. **OpenTelemetry 통합 layer** — Prometheus/Grafana/Sentry 모두 OTLP 입력 지원, 단일 instrument 패키지로 5축 동시 emit 가능성.
 
 ## 출처
@@ -175,12 +175,12 @@ FastAPI + Postgres 스택에 5단 OSS 통합:
 - [[prometheus-prometheus]] — CNCF graduated, PR-패턴 AGENTS.md
 - [[grafana-grafana]] — 9+10단계 진화, AGENTS.md 버저닝 첫 도입
 - [[getsentry-sentry]] — Anti-fragmentation SSOT 명문화
-- [[backend-fastapi-stack]] — 15회차 종합, 본 회차의 자매 종합 (FastAPI 메트릭 instrumentation 연계)
-- [[agent-skills]] — 11단계 진화 = 본 회차의 메타 결론
+- [[backend-fastapi-stack]] — 종합, 자매 종합 (FastAPI 메트릭 instrumentation 연계)
+- [[agent-skills]] — 11단계 진화 = 메타 결론
 
 ## 열린 질문
 
-- 19회차 AGENTS.md 양극화(애플리케이션 vs 인프라)는 시간이 지나며 좁혀질까, 유지될까? 21회차 점검 시 Docker/GHA 재확인.
+- AGENTS.md 양극화(애플리케이션 vs 인프라)는 시간이 지나며 좁혀질까, 유지될까? 점검 시 Docker/GHA 재확인.
 - Grafana AGPL-3.0 self-hosted vs Grafana Cloud 무료 티어의 BI 사용 시 trade-off는?
 - OpenTelemetry가 Prometheus/Grafana/Sentry 3가지 OSS를 단일 instrument로 통합하면 본 5단 흐름이 4단으로 압축될까? (Step 3+5 합쳐지는 시나리오)
 - Sentry의 viewer_context contextvar 패턴을 c2spf-analytics에 도입하면 인증 코드의 readability/typing 측면에서 얼마나 개선되는지 정량 측정 가능한가?

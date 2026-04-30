@@ -57,13 +57,13 @@ cited_by_count: 14
 
 - **GitHub 조직**: [c2spf](https://github.com/c2spf) — 다수의 분석/플랫폼 레포 운영.
 - **주요 서비스 라인**
-  - **애널리틱스(BI)** — `c2spf/analytics-*` 레포 군. 게임 로그 수집·분석·시각화. → [[c2spf-analytics|c2spf 게임 데이터 BI]]
-  - **블록체인 플랫폼 (XPLA)** — NFT 마켓·민팅·지갑·트랜잭션 SDK. → [[xpla-platform]]
-  - **CODE 트래블룰 API** — 가상자산 거래소 트래블룰 공통 API.
+ - **애널리틱스(BI)** — `c2spf/analytics-*` 레포 군. 게임 로그 수집·분석·시각화. → [[c2spf-analytics|c2spf 게임 데이터 BI]]
+ - **블록체인 플랫폼 (XPLA)** — NFT 마켓·민팅·지갑·트랜잭션 SDK. → [[xpla-platform]]
+ - **CODE 트래블룰 API** — 가상자산 거래소 트래블룰 공통 API.
 - **사내 도구**
-  - Jira: 프로젝트 키 `GCPPDT*`, `GCPNFT`, `GCPSRE`, `GCPHDBA`, `GCPPDTDW`, `CPBLOC` 등.
-  - Confluence: 페이지 ID 35568xxx 등으로 공통 모듈/배포/운영 가이드 관리.
-  - HIVE OAuth — 토큰·사용자·메뉴 권한·게임 권한을 8개 엔드포인트로 노출하는 사내 인증 시스템.
+ - Jira: 프로젝트 키 `GCPPDT*`, `GCPNFT`, `GCPSRE`, `GCPHDBA`, `GCPPDTDW`, `CPBLOC` 등.
+ - Confluence: 페이지 ID 35568xxx 등으로 공통 모듈/배포/운영 가이드 관리.
+ - HIVE OAuth — 토큰·사용자·메뉴 권한·게임 권한을 8개 엔드포인트로 노출하는 사내 인증 시스템.
 
 ## 관련 개념
 

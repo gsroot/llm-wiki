@@ -12,7 +12,6 @@ tags:
 - langchain
 - polars
 - crewai
-- 25회차
 related:
 - '[[langchain]]'
 - '[[langgraph]]'
@@ -37,11 +36,11 @@ cited_by_count: 6
 
 ## 정의
 
-**OSS+SaaS 듀얼 모델** = 동일 회사가 (a) 오픈소스 라이브러리 + (b) 상용 호스팅·플랫폼 SaaS를 동시 운영해 OSS 채택을 SaaS 매출로 전환하는 비즈니스 모델. 18회차 [[agent-frameworks-matrix]]에서 식별된 거버넌스 패턴.
+**OSS+SaaS 듀얼 모델** = 동일 회사가 (a) 오픈소스 라이브러리 + (b) 상용 호스팅·플랫폼 SaaS를 동시 운영해 OSS 채택을 SaaS 매출로 전환하는 비즈니스 모델. [[agent-frameworks-matrix]]에서 식별된 거버넌스 패턴.
 
-본 페이지는 **stub** — 17/18회차 다수 OSS에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — 다수 OSS에서 인용되므로 정합성 stub.
 
-## 18회차까지 누적된 사례 5+1개
+## 누적된 사례 5+1개
 
 | # | OSS | SaaS | 회사 |
 |---|---|---|---|
@@ -76,7 +75,7 @@ cited_by_count: 6
 ## 관련 개념
 
 - [[langchain]] / [[langgraph]] / [[polars]] / [[duckdb]] / [[fastmcp]] / [[crewai]] — 듀얼 모델 사례
-- [[agent-frameworks-matrix]] — 18회차 듀얼 모델 식별 종합 페이지
+- [[agent-frameworks-matrix]] — 듀얼 모델 식별 종합 페이지
 
 ## 출처
 
@@ -88,5 +87,5 @@ cited_by_count: 6
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[oss-saas-dual]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[oss-saas-dual]]` 깨진 링크 발견. 기존 source 기반으로 1차 보강.
 - 후속: 듀얼 모델 매출 비교 데이터 수집 (Confluent / Databricks / LangChain Inc 등 IPO 자료) → 비즈니스 모델 평가 종합 페이지.

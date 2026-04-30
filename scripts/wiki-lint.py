@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """wiki-lint.py — llm-wiki 정합성 검증 + source_count 자동 갱신.
 
-CLAUDE.md "점검(Lint) 워크플로우" 자동화 도구. 32회차에 P1-7+P1-8 통합으로 신설.
+CLAUDE.md "점검(Lint) 워크플로우" 자동화 도구. P1-7+P1-8 통합으로 신설.
 
 USAGE:
     python3 scripts/wiki-lint.py [--check] [--update] [--report] [--quiet]
@@ -19,24 +19,24 @@ CHECKS:
     4. source_count 부정합 (frontmatter source_count vs 실제 wiki/sources/ 인용 카운트)
        — 정보 보고. delta ±10 이상이면 운영자 의미 재검토 권장.
     5. 빈약 페이지 (source_count >= 3 인데 본문 < 30줄)
-    6. source_scope 부재 결함 (33회차): source_url=="" 인데 source_scope 누락 시 결함
-    7. last_verified 신선도 경고 (33회차): verification_required=true 페이지의 last_verified가
+    6. source_scope 부재 결함: source_url=="" 인데 source_scope 누락 시 결함
+    7. last_verified 신선도 경고: verification_required=true 페이지의 last_verified가
        90일 초과 시 경고 (결함 아닌 정보 보고)
-    8. 태그 case-duplicate 회귀 검출 (36회차): 같은 태그의 대소문자 변형이 동시 존재
-       (예: Anthropic + anthropic, llm + LLM). 34회차 정규화의 회귀 방지.
-    9. 한영 병기 의무 위반 검출 (36회차): CLAUDE.md 31회차 4단계 규칙의 "개념·도메인 태그"
+    8. 태그 case-duplicate 회귀 검출: 같은 태그의 대소문자 변형이 동시 존재
+       (예: Anthropic + anthropic, llm + LLM). 정규화의 회귀 방지.
+    9. 한영 병기 의무 위반 검출: CLAUDE.md 4단계 규칙의 "개념·도메인 태그"
        카테고리(agent/에이전트 등) 한쪽만 있으면 경고.
-    10. 메타 페이지 rag_exclude 누락 결함 (43회차): type=index 또는 type=log 페이지에
+    10. 메타 페이지 rag_exclude 누락 결함: type=index 또는 type=log 페이지에
         rag_exclude:true가 없으면 결함. RAG 답변 근거로 메타 페이지가 혼입되는 위험 차단.
-    11. 본문 정량 stale 경고 (49회차): 본문 [[페이지]](N) 패턴이 자동 측정 inbound와
-        |delta| >= 5 이고 시점 라벨(28회차/스냅샷/당시 등)이 같은 줄에 없을 때 정보 보고.
-    12. stub entity 결함 검출 (51회차 신설 — 평가 P0-5 채택): type=entity 인데 본문<25줄
+    11. 본문 정량 stale 경고: 본문 [[페이지]](N) 패턴이 자동 측정 inbound와
+        |delta| >= 5 이고 시점 라벨이 같은 줄에 없을 때 정보 보고.
+    12. stub entity 결함 검출: type=entity 인데 본문<25줄
         AND source_count==0 AND inbound>0 AND entity_type!=redirect 이면 결함.
         canonical 충돌 stub(예: 표기 변종) 회귀 차단. mate-chat 같은 redirect 후보가
         entity_type=tool 또는 project로 남아 있는 위험 검출.
     13. 인바운드 분포 보고 (5축 hub 합산 / 전체 인바운드 분포)
 
-SCHEMA (43회차 — source_count 3분리):
+SCHEMA:
     - source_count: 운영자 수동 정의 (정의 A, frontmatter)
     - observed_source_refs: source 페이지가 wikilink로 인용한 횟수 (정의 B, --update가 갱신)
     - inbound_count: 모든 페이지가 wikilink로 인용한 횟수 (정의 C, --update가 갱신)
@@ -61,27 +61,25 @@ from pathlib import Path
 
 import yaml
 
-
-STALE_VERIFICATION_DAYS = 90  # last_verified 경고 임계
+STALE_VERIFICATION_DAYS = 90 # last_verified 경고 임계
 VALID_SOURCE_SCOPES = frozenset({"local", "private", "public"})
 
-# 51회차 P0-3 신설: cited_by 비대화 완화 임계값
+# P0-3 신설: cited_by 비대화 완화 임계값
 # cited_by 항목 수가 이 값 이상이면 frontmatter list 대신 본문 ## 인용한 페이지 섹션으로
 # 이동하고 frontmatter에는 `cited_by_count: N`만 박는다. RAG 첫 청크의 의미 신호 손실 방지.
 CITED_BY_FRONTMATTER_THRESHOLD = 40
-CITED_BY_BODY_HEADER = "## 인용한 페이지 (cited_by — 51회차 자동 갱신)"
+CITED_BY_BODY_HEADER = "## 인용한 페이지"
 
-# 36회차 신설 → 59회차 deprecated: 한국어+영어 병기 의무 (옵션 A 정책 전환으로 폐기)
-# CLAUDE.md 59회차 옵션 A: tags는 canonical 1개, 표기 변종은 aliases.
+# 신설 → deprecated: 한국어+영어 병기 의무 (옵션 A 정책 전환으로 폐기)
+# CLAUDE.md 옵션 A: tags는 canonical 1개, 표기 변종은 aliases.
 # 본 검증은 비활성화 (빈 튜플) — check #14가 canonical 회귀 차단을 대신 담당.
 KO_EN_PAIRS: tuple[tuple[str, str], ...] = ()
 
-# 36회차 신설: case-duplicate 검증에서 정상 케이스(영어 단독 약어)는 제외
+# 신설: case-duplicate 검증에서 정상 케이스(영어 단독 약어)는 제외
 # 이 화이트리스트의 태그는 대소문자 변형이 있어도 정상 (예: AI는 약어로 영어 단독)
 CASE_DUPLICATE_WHITELIST: frozenset[str] = frozenset({
     # 현재는 비어있음. 회귀 발생 시 의도된 케이스만 등록.
 })
-
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent / "wiki"
 
@@ -151,7 +149,7 @@ AXES: dict[str, list[str]] = {
     ],
 }
 
-# 49회차 P0-5 신설: 본문 정량 stale 경고
+# P0-5 신설: 본문 정량 stale 경고
 # 본문에 박힌 `[[페이지명]](N)` 또는 `[[페이지명]](N, 1위)` 패턴이
 # 자동 측정 inbound와 delta가 크면 stale 가능성. 결함 아닌 정보 보고.
 BODY_STALE_INBOUND_RE = re.compile(
@@ -159,8 +157,6 @@ BODY_STALE_INBOUND_RE = re.compile(
 )
 # 시점 라벨이 있는 줄은 의도된 역사 기록 — 검사 제외.
 SNAPSHOT_LABEL_KEYS: tuple[str, ...] = (
-    "회차 시점",
-    "회차 측정",
     "당시",
     "스냅샷",
     "역사 기록",
@@ -172,7 +168,6 @@ BODY_STALE_DELTA_THRESHOLD: int = 5
 # 인바운드 통계 추정 상한 — body_value가 이보다 크면 연도·금액 등으로 간주, 검사 제외.
 # 위키 인바운드 현실적 최대값은 200대(agent-skills 등). 500 상한이면 충분한 안전 마진.
 BODY_STALE_VALUE_CEILING: int = 500
-
 
 @dataclass
 class WikiPage:
@@ -219,7 +214,6 @@ class WikiPage:
     def body_line_count(self) -> int:
         return self.body.count("\n") + 1
 
-
 @dataclass
 class LintResult:
     """검증 결과 누적."""
@@ -231,51 +225,51 @@ class LintResult:
     yaml_invalid: list[tuple[str, str]] = field(default_factory=list)
     source_count_mismatch: list[tuple[str, int, int]] = field(default_factory=list)
     thin_pages: list[tuple[str, int, int]] = field(default_factory=list)
-    # 33회차 신설
+    # 신설
     source_scope_missing: list[str] = field(default_factory=list)
     source_scope_invalid: list[tuple[str, str]] = field(default_factory=list)
     stale_verification: list[tuple[str, str, int]] = field(default_factory=list)
     verification_malformed: list[tuple[str, str]] = field(default_factory=list)
-    # 36회차 신설
+    # 신설
     tag_case_duplicates: list[tuple[str, str, int, int]] = field(default_factory=list)
     tag_pair_violations: list[tuple[str, str, list[str]]] = field(default_factory=list)
     inbound: dict[str, int] = field(default_factory=dict)
-    # 43회차 신설: 메타 페이지 rag_exclude 누락 결함
+    # 신설: 메타 페이지 rag_exclude 누락 결함
     meta_rag_exclude_missing: list[tuple[str, str]] = field(default_factory=list)
-    # 49회차 P0-5 신설: 본문 정량 stale 경고 (정보 보고, 결함 아님)
+    # P0-5 신설: 본문 정량 stale 경고 (정보 보고, 결함 아님)
     # (page_stem, target_stem, body_value, observed_value, delta)
     body_stale_numbers: list[tuple[str, str, int, int, int]] = field(
         default_factory=list
     )
-    # 51회차 P0-5 신설: stub entity 결함
+    # P0-5 신설: stub entity 결함
     # (rel_path, body_lines, source_count, inbound)
     stub_entities: list[tuple[str, int, int, int]] = field(default_factory=list)
-    # 57회차 P0-5 신설 (check #14): cited_by_count 누락 비-메타 페이지 (정보 보고)
-    # 53회차 정책 정합화 — 비-메타 페이지에 정수 캐시 일관 적용 강제 안 하지만
+    # P0-5 신설 (check #14): cited_by_count 누락 비-메타 페이지 (정보 보고)
+    # 정책 정합화 — 비-메타 페이지에 정수 캐시 일관 적용 강제 안 하지만
     # 미적용은 정보 보고로 가시화하여 --update 실행을 권장.
     cited_by_count_missing: list[str] = field(default_factory=list)
-    # 59회차 P0-2 신설 (check #14): 한·영 tag canonical 위반 (회귀 차단)
-    # CLAUDE.md 59회차 옵션 A 정책 위반 자동 보고. 결함.
+    # P0-2 신설 (check #14): 한·영 tag canonical 위반 (회귀 차단)
+    # CLAUDE.md 옵션 A 정책 위반 자동 보고. 결함.
     # (rel_path, demoted_tag, canonical_tag)
     tag_canonical_violations: list[tuple[str, str, str]] = field(default_factory=list)
-    # 60회차 P0-8 신설 (check #15): 태그 vocabulary 과밀 회귀 차단 (정보 보고)
+    # P0-8 신설 (check #15): 태그 vocabulary 과밀 회귀 차단 (정보 보고)
     # unique tags > 700 OR 저빈도(1-2회) 비율 > 60% 시 경고. 결함 아님.
     tag_vocab_unique: int = 0
     tag_vocab_total_refs: int = 0
     tag_vocab_low_freq_pct: float = 0.0
     tag_vocab_warning: str = ""
-    # 60회차 P0-2 신설 (check #16): citation chain 양방향 정합 결함
+    # P0-2 신설 (check #16): citation chain 양방향 정합 결함
     # (rel_path, missing_slugs)
     citation_chain_missing: list[tuple[str, list[str]]] = field(default_factory=list)
 
     def has_defect(self) -> bool:
-        # source_count 부정합은 결함이 아닌 정보 보고로 격하 (32회차 발견):
-        # 43회차에 source_count(정의 A, 수동) / observed_source_refs(정의 B, 자동) /
+        # source_count 부정합은 결함이 아닌 정보 보고로 격하:
+        # source_count(정의 A, 수동) / observed_source_refs(정의 B, 자동) /
         # inbound_count(정의 C, 자동) 3분리로 의미 충돌 해소 (CLAUDE.md 참조).
         # last_verified 신선도(90일 초과)도 정보 보고. source_scope 부재/이상은 결함.
-        # 36회차: tag_case_duplicates도 결함 (회귀 방지). tag_pair_violations는 경고(정보).
-        # 43회차: meta_rag_exclude_missing 결함 (RAG 답변 근거 노이즈 차단).
-        # 51회차: stub_entities 결함 (canonical 충돌 stub 회귀 차단).
+        # : tag_case_duplicates도 결함 (회귀 방지). tag_pair_violations는 경고(정보).
+        # : meta_rag_exclude_missing 결함 (RAG 답변 근거 노이즈 차단).
+        # : stub_entities 결함 (canonical 충돌 stub 회귀 차단).
         return bool(
             self.broken_links
             or self.yaml_invalid
@@ -289,10 +283,8 @@ class LintResult:
             or self.citation_chain_missing
         )
 
-
 def discover_pages() -> list[Path]:
     return sorted(WIKI_ROOT.rglob("*.md"))
-
 
 def parse_page(path: Path) -> WikiPage:
     raw = path.read_text(encoding="utf-8")
@@ -334,10 +326,8 @@ def parse_page(path: Path) -> WikiPage:
             yaml_error=str(exc).split("\n", 1)[0],
         )
 
-
 def collect_wikilinks(text: str) -> list[str]:
     return [m.group(1).strip() for m in WIKILINK_RE.finditer(text)]
-
 
 def lint(update: bool = False) -> LintResult:
     paths = discover_pages()
@@ -348,9 +338,9 @@ def lint(update: bool = False) -> LintResult:
 
     inbound: dict[str, int] = {p.stem: 0 for p in pages}
     source_count_observed: dict[str, int] = {p.stem: 0 for p in pages}
-    # 47회차 신설: cited_by_map[source_stem] = sorted list of citing page stems
+    # 신설: cited_by_map[source_stem] = sorted list of citing page stems
     sources_set = {p.stem for p in pages if p.page_type == "source"}
-    # 48회차 P1-6: cited_by 자동 갱신 대상을 5축 hub 11개로 확장
+    # P1-6: cited_by 자동 갱신 대상을 5축 hub 11개로 확장
     # entity/concept 전체에 박으면 frontmatter 폭증 → hub만 선별 적용
     HUB_CITED_BY_TARGETS = {
         "seokgeun-kim", "portfolio", "seokgeun-stack-guide", "matechat",
@@ -360,11 +350,11 @@ def lint(update: bool = False) -> LintResult:
     cited_by_targets = sources_set | (HUB_CITED_BY_TARGETS & {p.stem for p in pages})
     cited_by_map: dict[str, set[str]] = {s: set() for s in cited_by_targets}
 
-    # 57회차 P0-3 신설 (56회차 4축 평가 합집합 Critical):
+    # P0-3 신설:
     # cited_by_count(정수)를 모든 비-메타 페이지(entity/concept/synthesis)에 일관 적용.
     # cited_by(전체 list)는 frontmatter 폭증 위험으로 sources + 11 hub 한정 유지.
     # 정수만 박는 cited_by_count는 RAG 답변 정책 §1 "수치 비교"의 신뢰도 가중치 캐시로,
-    # 51회차 정책의 LLM 일관 적용을 위해 비-메타 194페이지 전체로 측정 갭 해소.
+    # 정책의 LLM 일관 적용을 위해 비-메타 194페이지 전체로 측정 갭 해소.
     cited_by_count_targets = {
         p.stem for p in pages
         if p.page_type in ("entity", "concept", "synthesis")
@@ -397,7 +387,7 @@ def lint(update: bool = False) -> LintResult:
                     source_count_observed[target] = (
                         source_count_observed.get(target, 0) + 1
                     )
-                # 47회차 cited_by 측정 + 48회차 hub 11개 확장
+                # cited_by 측정 + hub 11개 확장
                 # log·history·redirect 페이지의 인용은 cited_by에 포함하지 않음
                 # (메타 페이지가 답변 근거 출처 추적에 들어가면 안 됨)
                 citing_is_meta = (
@@ -407,7 +397,7 @@ def lint(update: bool = False) -> LintResult:
                 )
                 if target in cited_by_targets and not citing_is_meta:
                     cited_by_map[target].add(page.stem)
-                # 57회차 P0-3: cited_by_count 정수 캐시를 모든 비-메타 페이지에 측정.
+                # P0-3: cited_by_count 정수 캐시를 모든 비-메타 페이지에 측정.
                 # 동일 메타 격리 정책 적용.
                 if target in cited_by_count_targets and not citing_is_meta:
                     cited_by_count_map[target].add(page.stem)
@@ -423,9 +413,9 @@ def lint(update: bool = False) -> LintResult:
     result.inbound = inbound
 
     # source_count 부정합 검출 (entity/concept만 — source/synthesis는 source_count 없음)
-    # 43회차: --update는 source_count를 덮어쓰지 않고, observed_source_refs / inbound_count
+    # : --update는 source_count를 덮어쓰지 않고, observed_source_refs / inbound_count
     # 두 자동 필드만 갱신한다 (운영자 수동 의미 보존).
-    # 57회차 P0-2 보강: --update의 자동 필드 갱신 대상을 synthesis까지 확장.
+    # P0-2 보강: --update의 자동 필드 갱신 대상을 synthesis까지 확장.
     # source_count_mismatch 검출은 entity/concept만 (정의 A 운영자 수동 필드를
     # 가지는 타입), 자동 필드 갱신은 비-메타 전체.
     for page in pages:
@@ -447,7 +437,7 @@ def lint(update: bool = False) -> LintResult:
                 inbound_count=inbound.get(page.stem, 0),
             )
 
-    # 47회차 신설 + 48회차 hub 확장: cited_by 자동 갱신
+    # 신설 + hub 확장: cited_by 자동 갱신
     # source 페이지 전체 + 5축 hub 11개
     if update:
         for page in pages:
@@ -458,9 +448,9 @@ def lint(update: bool = False) -> LintResult:
             citing_stems = sorted(cited_by_map.get(page.stem, set()))
             _update_cited_by(page, citing_stems)
 
-    # 57회차 P0-3 신설: cited_by_count 정수 캐시를 모든 비-메타 페이지에 갱신.
+    # P0-3 신설: cited_by_count 정수 캐시를 모든 비-메타 페이지에 갱신.
     # cited_by 리스트는 박지 않음 (frontmatter 폭증 방지) — 정수만 일관 적용.
-    # 56회차 4축 평가 합집합 Critical: 측정 갭 87페이지(cited_by_count=0) 해소.
+    # 4축 평가 합집합 Critical: 측정 갭 87페이지(cited_by_count=0) 해소.
     if update:
         for page in pages:
             if page.yaml_invalid or page.is_redirect or page.is_log_file:
@@ -470,9 +460,9 @@ def lint(update: bool = False) -> LintResult:
             count = len(cited_by_count_map.get(page.stem, set()))
             _update_cited_by_count_only(page, count)
 
-    # 58회차 P0-2 신설: synthesis + source 페이지의 inbound_count 자동 갱신.
+    # P0-2 신설: synthesis + source 페이지의 inbound_count 자동 갱신.
     # _update_auto_fields는 source_count 라인 의존 가드 때문에 entity/concept만 처리.
-    # 57회차 사후 재평가 N2 회귀: synthesis 20개 + source 65/65 inbound_count 누락 →
+    # 사후 재평가 N2 회귀: synthesis 20개 + source 65/65 inbound_count 누락 →
     # RAG 답변 정책 §1 "수치 비교"의 일관성 갭. 본 패스로 해소.
     if update:
         for page in pages:
@@ -482,11 +472,11 @@ def lint(update: bool = False) -> LintResult:
                 continue
             _update_inbound_count_only(page, inbound.get(page.stem, 0))
 
-    # 57회차 P0-5 신설 (check #13): cited_by_count 누락 비-메타 페이지 정보 보고
-    # 53회차 정책에 따른 신뢰도 가중치 캐시 적용 가시화. --check 모드에서도 보고하여
+    # P0-5 신설 (check #13): cited_by_count 누락 비-메타 페이지 정보 보고
+    # 정책에 따른 신뢰도 가중치 캐시 적용 가시화. --check 모드에서도 보고하여
     # --update 실행을 권장. 결함이 아닌 정보 보고.
-    # 58회차 P0-3 (R1 패치): 검사 범위를 cited_by_targets(11 hub + sources)까지 확장.
-    # 57회차 사후 재평가 회귀 R1 (B·D·A 3축 동시 발견): 11 hub 화이트홀 사각지대 해소.
+    # P0-3 (R1 패치): 검사 범위를 cited_by_targets(11 hub + sources)까지 확장.
+    # 사후 재평가 회귀 R1 (B·D·A 3축 동시 발견): 11 hub 화이트홀 사각지대 해소.
     cited_by_count_check_targets = cited_by_count_targets | cited_by_targets
     for page in pages:
         if page.yaml_invalid or page.is_redirect or page.is_log_file:
@@ -498,8 +488,8 @@ def lint(update: bool = False) -> LintResult:
                 str(page.path.relative_to(WIKI_ROOT.parent))
             )
 
-    # 59회차 P0-2 신설 (check #14): 한·영 tag canonical 위반 (회귀 차단)
-    # CLAUDE.md 59회차 옵션 A 정책: tags는 canonical 1개만, 강등 표기는 사용 금지.
+    # P0-2 신설 (check #14): 한·영 tag canonical 위반 (회귀 차단)
+    # CLAUDE.md 옵션 A 정책: tags는 canonical 1개만, 강등 표기는 사용 금지.
     # 6쌍 강등→canonical 매핑 검증.
     TAG_CANONICAL_MAP = {
         "에이전트": "agent",
@@ -522,7 +512,7 @@ def lint(update: bool = False) -> LintResult:
                     (str(page.path.relative_to(WIKI_ROOT.parent)), demoted, canonical)
                 )
 
-    # 60회차 P0-2 신설 (check #16): citation chain 양방향 정합 (37회차 정책 회귀 차단)
+    # P0-2 신설 (check #16): citation chain 양방향 정합
     # 본문 ## 출처(또는 ## 원문/Sources) 섹션의 wikilink가
     # frontmatter related/sources에 모두 박혀있는지 검증. 결함.
     citation_re = re.compile(
@@ -561,8 +551,8 @@ def lint(update: bool = False) -> LintResult:
                 (str(page.path.relative_to(WIKI_ROOT.parent)), sorted(missing))
             )
 
-    # 60회차 P0-8 신설 (check #15): 태그 vocabulary 과밀 회귀 차단 (정보 보고)
-    # 904 unique → 465 정리 (60회차). 회귀 임계: unique > 700 OR 저빈도 > 60%
+    # P0-8 신설 (check #15): 태그 vocabulary 과밀 회귀 차단 (정보 보고)
+    # 904 unique → 465 정리. 회귀 임계: unique > 700 OR 저빈도 > 60%
     import collections as _collections
     tag_freq: dict[str, int] = _collections.Counter()
     for page in pages:
@@ -580,7 +570,7 @@ def lint(update: bool = False) -> LintResult:
     warnings = []
     if result.tag_vocab_unique > 700:
         warnings.append(
-            f"unique 태그 {result.tag_vocab_unique}개 > 700 임계 (60회차 baseline 465)"
+            f"unique 태그 {result.tag_vocab_unique}개 > 700 임계"
         )
     if result.tag_vocab_low_freq_pct > 60:
         warnings.append(
@@ -612,7 +602,7 @@ def lint(update: bool = False) -> LintResult:
                 (str(page.path.relative_to(WIKI_ROOT.parent)), sc, body_lines)
             )
 
-    # 33회차 신설:
+    # 신설:
     # 6. source_scope 부재 결함 (source_url=="" 인데 source_scope 누락)
     # 7. last_verified 신선도 (verification_required=true 페이지의 last_verified 90일 초과)
     today = date.today()
@@ -661,7 +651,7 @@ def lint(update: bool = False) -> LintResult:
             if days_old > STALE_VERIFICATION_DAYS:
                 result.stale_verification.append((rel_path, str(lv_date), days_old))
 
-    # 36회차 신설:
+    # 신설:
     # 8. 태그 case-duplicate 회귀 검출 (전역 vocabulary 기준)
     # 9. 한영 병기 의무 위반 검출 (페이지별)
     from collections import Counter, defaultdict
@@ -708,7 +698,7 @@ def lint(update: bool = False) -> LintResult:
         if missing:
             result.tag_pair_violations.append((rel_path, "병기 누락", missing))
 
-    # 43회차 신설:
+    # 신설:
     # 검증 10: 메타 페이지 rag_exclude 누락 결함
     # type: index 또는 type: log 페이지에 rag_exclude:true 가 없으면 결함.
     # RAG 답변 근거로 카탈로그(인덱스)나 메타 활동 로그가 혼입되면 stale 정보 노출.
@@ -723,10 +713,10 @@ def lint(update: bool = False) -> LintResult:
         if not bool(fm.get("rag_exclude", False)):
             result.meta_rag_exclude_missing.append((rel_path, ptype))
 
-    # 49회차 P0-5 신설:
+    # P0-5 신설:
     # 검증 11: 본문 정량 stale 경고
     # `[[페이지명]](N)` 또는 `[[페이지명]](N, 1위)` 패턴이 본문에 있고
-    # 시점 라벨("28회차 시점", "당시", "스냅샷" 등)이 같은 줄에 없을 때
+    # 시점 라벨이 같은 줄에 없을 때
     # 그 페이지의 자동 측정 inbound와 |delta| >= 5 이면 stale 가능성 정보 보고.
     # 결함 아님 — has_defect()에 추가하지 않는다.
     for page in pages:
@@ -753,7 +743,7 @@ def lint(update: bool = False) -> LintResult:
                         (page.stem, target_stem, body_value, observed, delta)
                     )
 
-    # 51회차 P0-5 신설:
+    # P0-5 신설:
     # 검증 12: stub entity 결함 검출
     # type=entity AND body<25 AND source_count==0 AND inbound>0 AND entity_type!=redirect.
     # canonical 충돌 stub (예: mate-chat이 redirect로 마이그레이션 안 된 채 entity로 남는 케이스)
@@ -780,13 +770,12 @@ def lint(update: bool = False) -> LintResult:
 
     return result
 
-
 def _update_auto_fields(
     page: WikiPage, *, observed_source_refs: int, inbound_count: int
 ) -> None:
     """frontmatter의 자동 필드(observed_source_refs, inbound_count)를 in-place 갱신.
 
-    43회차 정책 (CLAUDE.md 참조):
+    정책 (CLAUDE.md 참조):
     - source_count(정의 A, 수동)는 절대 덮어쓰지 않는다.
     - 두 자동 필드가 frontmatter에 없으면 source_count 라인 바로 다음에 삽입한다.
     - source_count 라인이 없으면 자동 필드도 삽입하지 않는다 (entity/concept만 대상).
@@ -823,11 +812,10 @@ def _update_auto_fields(
     if raw != page.raw:
         page.path.write_text(raw, encoding="utf-8")
 
-
 def _update_inbound_count_only(page: WikiPage, inbound_count: int) -> None:
     """inbound_count(정수)만 in-place 갱신. observed_source_refs는 박지 않음.
 
-    58회차 P0-2 신설 (57회차 사후 재평가 N2 회귀 대응):
+    P0-2 신설:
     `_update_auto_fields`가 source_count 라인 의존 가드(line 678)를 가져
     synthesis 20개 + source 65/65에 inbound_count가 자동 갱신 안 되던 갭 해소.
 
@@ -835,7 +823,7 @@ def _update_inbound_count_only(page: WikiPage, inbound_count: int) -> None:
     entity/concept만 의미가 있어 본 함수에서 제외.
     inbound_count는 모든 페이지에 의미 있는 그래프 중심성 지표 (정의 C).
 
-    빈 카운트(0)도 명시적으로 박는다 — 51회차 RAG 답변 정책 §1 "수치 비교"에서
+    빈 카운트(0)도 명시적으로 박는다 — RAG 답변 정책 §1 "수치 비교"에서
     synthesis·source 페이지의 신뢰도 가중치 가용성을 보장.
     """
     raw = page.raw
@@ -869,12 +857,11 @@ def _update_inbound_count_only(page: WikiPage, inbound_count: int) -> None:
     if new_raw != raw:
         page.path.write_text(new_raw, encoding="utf-8")
 
-
 def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
     """source 페이지 frontmatter의 cited_by 필드를 in-place 갱신.
 
-    47회차 신설 (Codex 평가 P1 권고 — citation chain 양방향화).
-    51회차 갱신 (평가 P0-3 채택): cited_by 항목이
+    신설 (Codex 평가 P1 권고 — citation chain 양방향화).
+    갱신 (평가 P0-3 채택): cited_by 항목이
     `CITED_BY_FRONTMATTER_THRESHOLD` 이상이면 frontmatter cited_by 리스트 대신
     `cited_by_count: N`만 박고 본문 섹션으로 이동. RAG 첫 청크 의미 신호 손실 방지.
 
@@ -945,9 +932,9 @@ def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
         new_lines.append(f"cited_by_count: {len(citing_stems)}")
         new_body = _replace_cited_by_body_section(body_after, citing_stems)
     else:
-        # 임계값 미만: frontmatter cited_by list (47회차 기존 동작)
-        # 58회차 P0-3 (R1 패치): cited_by_count 정수도 함께 박는다.
-        # 57회차 사후 재평가 회귀 R1 (B·D·A 3축 동시 발견): portfolio·com2us-platform
+        # 임계값 미만: frontmatter cited_by list
+        # P0-3 (R1 패치): cited_by_count 정수도 함께 박는다.
+        # 사후 재평가 회귀 R1 (B·D·A 3축 동시 발견): portfolio·com2us-platform
         # 등 임계값 미만 hub가 cited_by_count 없이 cited_by list만 가지면
         # RAG 답변 정책 §1 "수치 비교" 시 정수 비교 불가. 일관성 회복.
         cb_block = ["cited_by:"] + [f'  - "[[{s}]]"' for s in citing_stems]
@@ -961,18 +948,17 @@ def _update_cited_by(page: WikiPage, citing_stems: list[str]) -> None:
     if new_raw != raw:
         page.path.write_text(new_raw, encoding="utf-8")
 
-
 def _update_cited_by_count_only(page: WikiPage, count: int) -> None:
     """cited_by_count(정수)만 in-place 갱신. cited_by 리스트는 박지 않음.
 
-    57회차 P0-3 신설 (56회차 4축 평가 합집합 Critical):
-    51회차 RAG 답변 정책 §1 "수치 비교"의 신뢰도 가중치 캐시를 모든 비-메타
+    P0-3 신설:
+    RAG 답변 정책 §1 "수치 비교"의 신뢰도 가중치 캐시를 모든 비-메타
     페이지(entity·concept·synthesis)에 일관 적용. cited_by 리스트는 frontmatter
     폭증 위험으로 sources + 11 hub 한정 유지하되, 정수만 박는 cited_by_count는
     194 페이지 전체로 확장해 측정 갭 87페이지 해소.
 
     빈 카운트(0)도 명시적으로 박는다 — "측정됐고 0"과 "측정 안 됨" 구분.
-    이는 53회차 정책의 "빈 cited_by인 경우 키 생략" 패턴과 다른 정책:
+    이는 정책의 "빈 cited_by인 경우 키 생략" 패턴과 다른 정책:
     cited_by 리스트는 양방향 추적이라 빈 list = 의미 없음(키 생략),
     cited_by_count는 신뢰도 가중치라 0도 의미 있음(키 박음).
     """
@@ -1007,7 +993,6 @@ def _update_cited_by_count_only(page: WikiPage, count: int) -> None:
     if new_raw != raw:
         page.path.write_text(new_raw, encoding="utf-8")
 
-
 def _replace_cited_by_body_section(body: str, citing_stems: list[str]) -> str:
     """본문에서 ## 인용한 페이지 섹션을 새 리스트로 교체. 없으면 끝에 추가."""
     header = CITED_BY_BODY_HEADER
@@ -1037,7 +1022,6 @@ def _replace_cited_by_body_section(body: str, citing_stems: list[str]) -> str:
     new_lines = lines[:start] + block_lines + lines[end:]
     return "\n".join(new_lines)
 
-
 def _strip_cited_by_body_section(body: str) -> str:
     """본문에서 ## 인용한 페이지 섹션을 제거. 없으면 그대로."""
     header = CITED_BY_BODY_HEADER
@@ -1058,7 +1042,6 @@ def _strip_cited_by_body_section(body: str) -> str:
         end += 1
     new_lines = lines[:start] + lines[end:]
     return "\n".join(new_lines)
-
 
 def report(result: LintResult, *, quiet: bool = False) -> None:
     pages = result.pages
@@ -1175,7 +1158,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
         if not quiet:
             print("✓ 0건 (4개 그룹 모두 100% 병기)")
 
-    print("--- 10. 메타 페이지 rag_exclude 누락 (type=index/log, 43회차 신설) ---")
+    print("--- 10. 메타 페이지 rag_exclude 누락 ---")
     if result.meta_rag_exclude_missing:
         print(f"❌ {len(result.meta_rag_exclude_missing)}건:")
         for path, ptype in result.meta_rag_exclude_missing[:10]:
@@ -1186,7 +1169,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
 
     print(
         "--- 11. 본문 정량 stale 경고 "
-        "(49회차 신설, 정보 보고 — 결함 아님) ---"
+        " ---"
     )
     if result.body_stale_numbers:
         print(
@@ -1208,7 +1191,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
             )
 
     print(
-        "--- 12. stub entity 결함 (51회차 신설 — type=entity AND body<25 "
+        "--- 12. stub entity 결함 (신설 — type=entity AND body<25 "
         "AND source_count==0 AND inbound>0) ---"
     )
     if result.stub_entities:
@@ -1226,7 +1209,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
             print("✓ 0건 (canonical 충돌 stub 또는 영양실조 entity 없음)")
 
     print(
-        "--- 13. cited_by_count 누락 비-메타 페이지 (57회차 신설 — 53회차 정책 정합화, "
+        "--- 13. cited_by_count 누락 비-메타 페이지 (신설 — 정책 정합화, "
         "정보 보고 — 결함 아님) ---"
     )
     if result.cited_by_count_missing:
@@ -1243,7 +1226,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
             print("✓ 0건 (모든 비-메타 페이지에 cited_by_count 정수 캐시 적용)")
 
     print(
-        "--- 14. 한·영 tag canonical 위반 (59회차 신설 — 옵션 A 정책 회귀 차단) ---"
+        "--- 14. 한·영 tag canonical 위반 ---"
     )
     if result.tag_canonical_violations:
         print(f"❌ {len(result.tag_canonical_violations)}건:")
@@ -1257,7 +1240,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
             print("✓ 0건 (한·영 6쌍 canonical 정합)")
 
     print(
-        "--- 16. citation chain 양방향 정합 (60회차 P0-2 신설 — 37회차 정책 회귀 차단) ---"
+        "--- 16. citation chain 양방향 정합 ---"
     )
     if result.citation_chain_missing:
         print(f"❌ {len(result.citation_chain_missing)}건:")
@@ -1271,7 +1254,7 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
             print("✓ 0건 (본문 ## 출처 ↔ frontmatter related/sources 정합)")
 
     print(
-        "--- 15. 태그 vocabulary 과밀 회귀 (60회차 신설 — 정보 보고) ---"
+        "--- 15. 태그 vocabulary 과밀 회귀 ---"
     )
     if result.tag_vocab_warning:
         print(
@@ -1286,7 +1269,6 @@ def report(result: LintResult, *, quiet: bool = False) -> None:
                 f"refs={result.tag_vocab_total_refs}, "
                 f"저빈도={result.tag_vocab_low_freq_pct:.1f}%)"
             )
-
 
 def report_full(result: LintResult) -> None:
     """--report 모드: 인바운드 분포 + 5축 통계."""
@@ -1318,7 +1300,6 @@ def report_full(result: LintResult) -> None:
         for axis, subtotal in axis_totals:
             pct = subtotal * 100 / total_axis
             print(f"    {axis}: {subtotal} ({pct:4.1f}%)")
-
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
@@ -1364,7 +1345,6 @@ def main(argv: list[str] | None = None) -> int:
     if (do_check or args.update) and result.has_defect() and not args.update:
         return 1
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())

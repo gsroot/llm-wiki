@@ -54,8 +54,8 @@ cited_by_count: 5
 ## 메모
 
 - Web Clipper 외에도 다양한 소스 수집 경로가 있다:
-  - YouTube 자막: `yt-dlp --write-auto-sub`
-  - PDF 논문: `marker`로 마크다운 변환
-  - 트위터 스레드: Thread Reader App → Web Clipper
-  - 팟캐스트: Whisper로 트랜스크립트 생성
+ - YouTube 자막: `yt-dlp --write-auto-sub`
+ - PDF 논문: `marker`로 마크다운 변환
+ - 트위터 스레드: Thread Reader App → Web Clipper
+ - 팟캐스트: Whisper로 트랜스크립트 생성
 - 소스마다 메타데이터(날짜, 저자, URL, 유형)를 프론트매터로 통일하면 Dataview 활용도가 높아진다.

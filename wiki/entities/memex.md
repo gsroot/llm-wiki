@@ -5,7 +5,6 @@ entity_type: project
 tags:
 - 지식관리
 - knowledge-management
-- 53회차
 related:
 - - llm-wiki-pattern
 - '[[llm-wiki-idea-doc]]'

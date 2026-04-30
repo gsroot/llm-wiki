@@ -6,7 +6,6 @@ tags:
 - sqlite
 - sql
 - file-format
-- 25회차
 related:
 - '[[postgresql]]'
 - '[[duckdb]]'
@@ -28,7 +27,7 @@ cited_by_count: 5
 
 **SQLite**는 D. Richard Hipp가 만든 **세계에서 가장 널리 배포된 데이터베이스** — 모든 스마트폰 / 브라우저 / OS / 항공기 / 자동차 등에 임베드. C 단일 라이브러리 + 단일 파일 DB.
 
-본 페이지는 **stub** — SQLite 자체는 raw 수집 대상이 아닌 상태에서 16회차 [[duckdb]] / [[pandas-vs-polars-vs-duckdb]] 종합 페이지가 비교 대상으로 참조하므로 정합성 stub으로 등록.
+본 페이지는 **stub** — SQLite 자체는 raw 수집 대상이 아닌 상태에서 [[duckdb]] / [[pandas-vs-polars-vs-duckdb]] 종합 페이지가 비교 대상으로 참조하므로 정합성 stub으로 등록.
 
 ## 핵심 특성
 
@@ -41,7 +40,7 @@ cited_by_count: 5
 | 동시성 | 단일 writer + 다중 reader (WAL) |
 | 정체성 | "Application file format" — DB라기보다 application data file format |
 
-## DuckDB / PostgreSQL 비교 (16회차 맥락)
+## DuckDB / PostgreSQL 비교
 
 | 차원 | SQLite | [[duckdb]] | [[postgresql]] |
 |---|---|---|---|
@@ -49,7 +48,7 @@ cited_by_count: 5
 | 저장 | row-oriented | columnar | row + index |
 | 임베디드 | ✅ | ✅ | ❌ |
 | 단일 사용자 | ✅ 설계 | ✅ 설계 | ❌ 다중 사용자 |
-| 본 위키 | stub (25회차) | 본격 (16회차) | 본격 (15회차) |
+| 본 위키 | stub | 본격 | 본격 |
 
 → DuckDB가 "분석용 SQLite"라고 자기 정의 — SQLite의 임베디드 성공 모델을 OLAP로 가져온 게 DuckDB.
 
@@ -67,5 +66,5 @@ cited_by_count: 5
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[sqlite]]` 깨진 링크 발견. 29회차에 DuckDB/SQLAlchemy/Alembic source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[sqlite]]` 깨진 링크 발견. DuckDB/SQLAlchemy/Alembic source 기반으로 1차 보강.
 - 본 위키에서 SQLite 본격 페이지가 부재하지만, [[duckdb]] / [[matechat|MateChat 사이드 프로젝트]] (Flutter Hive 사용) / [[backend-fastapi-stack]] 운영 시 PostgreSQL 부재 환경의 대안으로 자주 호출됨.

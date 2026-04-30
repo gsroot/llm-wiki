@@ -31,7 +31,7 @@ cited_by_count: 17
 
 [[anthropic]]이 공개한 **Claude Code의 raw agentic power를 일반 도메인(SW 외)에 풀어놓는 Python SDK**. 원래 Anthropic 엔지니어가 개발 워크플로우를 가속화하려 만든 내부 도구였는데, 공개 후 연구·데이터 분석·워크플로우 자동화·모니터링·콘텐츠 생성 등 비-코딩 도메인에서 광범위 채택되며 "범용 에이전트 빌더"로 자리매김.
 
-핵심: `query()` 한 줄과 `ClaudeSDKClient` / `ClaudeAgentOptions` 두 인터페이스만으로 Claude Code의 모든 운영 기법(hooks · plan mode · subagent · MCP · output styles · custom slash commands)을 그대로 사용.
+핵심: `query` 한 줄과 `ClaudeSDKClient` / `ClaudeAgentOptions` 두 인터페이스만으로 Claude Code의 모든 운영 기법(hooks · plan mode · subagent · MCP · output styles · custom slash commands)을 그대로 사용.
 
 ## 주요 특징
 
@@ -39,7 +39,7 @@ cited_by_count: 17
 
 | API | 역할 |
 |-----|------|
-| `query()` | 단일 자율 쿼리 (async iter로 응답 스트림) |
+| `query` | 단일 자율 쿼리 (async iter로 응답 스트림) |
 | `ClaudeSDKClient` | 멀티턴 세션 + 컨텍스트 영속 |
 | `ClaudeAgentOptions` | 시스템 프롬프트, 도구, 권한, hooks 설정 |
 
@@ -68,7 +68,7 @@ Claude Code에서 검증된 모든 운영 기법이 SDK 옵션으로 노출:
 
 [[anthropics-claude-cookbooks]] `claude_agent_sdk/` 디렉토리에 각 단계가 다음 단계로 빌드되는 6개 노트북:
 
-1. **00 The One-Liner Research Agent** — `query()` async iter 기본
+1. **00 The One-Liner Research Agent** — `query` async iter 기본
 2. **01 The Chief of Staff Agent** — CEO용 비서, 모든 운영 기법 압축
 3. **02 The Observability Agent** — Git/GitHub MCP, CI/CD 분석
 4. **03 The Site Reliability Agent** — 자체 MCP 서버, Prometheus, read-write remediation, safety hooks

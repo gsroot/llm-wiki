@@ -56,8 +56,8 @@ cited_by_count: 9
 | 필터 | `df[df.col > 0]` |
 | 집계 | `df.groupby('key').agg(...)` |
 | 결합 | `df1.merge(df2, on=...)`, `pd.concat(...)` |
-| 변형 | `df.pivot()`, `df.melt()`, `df.stack()` |
-| 시계열 | `df.resample('D').mean()` |
+| 변형 | `df.pivot`, `df.melt`, `df.stack` |
+| 시계열 | `df.resample('D').mean` |
 
 ### 구현체별 특징
 
@@ -83,7 +83,7 @@ result = (
     .query("score > 80")
     .assign(grade=lambda d: d['score'].apply(lambda s: 'A' if s >= 90 else 'B'))
     .groupby('grade')['score']
-    .mean()
+    .mean
 )
 ```
 

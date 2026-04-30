@@ -16,7 +16,6 @@ tags:
 - langsmith
 - agents-md
 - claude-md
-- 17회차
 related:
 - '[[langchain]]'
 - '[[langgraph]]'
@@ -106,12 +105,12 @@ langchain/
 
 ### AGENTS.md = CLAUDE.md (동기화 패턴, 292줄)
 - 모노레포 전역 개발 가이드
-- 14회차 OpenAI Agents Python에서 발견된 패턴이 **LangChain Org에서 확산** (LangChain + LangGraph + DeepAgents 모두 채택)
+- OpenAI Agents Python에서 발견된 패턴이 **LangChain Org에서 확산** (LangChain + LangGraph + DeepAgents 모두 채택)
 - 핵심 규칙:
-  - uv sync --all-groups
-  - make test / make lint / make format
-  - mypy 통과
-  - 각 패키지는 독립 versioned (pyproject.toml + uv.lock)
+ - uv sync --all-groups
+ - make test / make lint / make format
+ - mypy 통과
+ - 각 패키지는 독립 versioned (pyproject.toml + uv.lock)
 
 ### License
 - MIT
@@ -119,7 +118,7 @@ langchain/
 ## 주요 인사이트
 
 1. **"agent engineering platform" 포지셔닝**: 초기에는 LLM chain 구축 도구였으나, 2024-2025년을 거치며 "agent" 중심으로 재포지셔닝. [[openai-agents-python]] 출현 이후 경쟁 압박이 가속화.
-2. **LangChain Org의 거버넌스 패턴 확산**: monorepo (libs/) + AGENTS.md=CLAUDE.md sync + uv 채택 — 14회차 [[openai-agents-python]]와 거의 같은 패턴. **LLM 코딩 에이전트 협업 표준이 빠르게 수렴 중**.
+2. **LangChain Org의 거버넌스 패턴 확산**: monorepo (libs/) + AGENTS.md=CLAUDE.md sync + uv 채택 — [[openai-agents-python]]와 거의 같은 패턴. **LLM 코딩 에이전트 협업 표준이 빠르게 수렴 중**.
 3. **partners/ 패턴**: 모델 제공자별 통합을 별도 패키지로 분리. OpenAI/Anthropic/Ollama가 1급, Google/AWS는 별도 repo. **벤더 락인 회피의 모듈성 설계**.
 4. **legacy + active 분리**: `langchain` (classic, no new features) + `langchain_v1` (active) 공존 — 마이그레이션 부담 최소화 + 새 API 동시 진행. v0 → v1 진화 패턴.
 5. **LangSmith는 별도 SaaS 제품**: OSS는 LangChain (코드), SaaS는 LangSmith (관측성·평가·배포) — Polars Cloud / MotherDuck과 같은 OSS+SaaS 듀얼 모델.
@@ -130,7 +129,7 @@ langchain/
 - [[langgraph]] — LangChain의 low-level orchestration 형제
 - [[openai-agents-python]] — 직접 경쟁 프레임워크
 - [[mcp]] — LangChain v1이 MCP 통합 지원 (partners/anthropic 등)
-- [[agent-skills]] — AGENTS.md=CLAUDE.md 패턴은 14회차 발견의 9번째 진화 단계
+- [[agent-skills]] — AGENTS.md=CLAUDE.md 패턴은 발견의 9번째 진화 단계
 - [[uv]] — LangChain monorepo 의존성 관리
 
 ## 인용할 만한 구절
@@ -143,6 +142,6 @@ langchain/
 
 ## 메모
 
-- 17회차 LLM 인프라 수집의 핵심.
+- LLM 인프라 수집의 핵심.
 - LangChain의 "agent platform" 슬로건은 2024년 후반 LLM 시장이 "에이전트"로 재정의되면서 발생한 포지션 변화. 이전 슬로건 "framework for LLM apps"는 이제 부차적.
 - 향후 위키 확장 후보: LangSmith 별도 entity 페이지, LangServe deprecated 여부, langchain.js의 위치, langgraph의 sub-agent 패턴.

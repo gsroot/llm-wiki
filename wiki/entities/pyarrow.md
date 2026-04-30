@@ -60,17 +60,17 @@ import pyarrow.parquet as pq
 table = pq.read_table("data.parquet")
 
 # pandas ↔ PyArrow zero-copy
-df = table.to_pandas()
+df = table.to_pandas
 table2 = pa.Table.from_pandas(df)
 
 # Polars ↔ PyArrow zero-copy
 import polars as pl
 pl_df = pl.from_arrow(table)
-arrow_back = pl_df.to_arrow()
+arrow_back = pl_df.to_arrow
 
 # DuckDB ↔ PyArrow zero-copy
 import duckdb
-duckdb.sql("SELECT * FROM table").arrow()
+duckdb.sql("SELECT * FROM table").arrow
 ```
 
 → **3개 DataFrame 라이브러리의 공통 다리**.
@@ -103,7 +103,7 @@ import pyarrow.dataset as ds
 
 dataset = ds.dataset("s3://bucket/year=2024/", partitioning="hive")
 filtered = dataset.scanner(filter=ds.field("region") == "US")
-table = filtered.to_table()
+table = filtered.to_table
 ```
 
 → Hive-style 파티션 자동 인식, predicate pushdown, schema evolution. **데이터 레이크의 Python 게이트웨이**.
@@ -166,7 +166,6 @@ IPC = "임시 빠른 직렬화", Parquet = "영구 효율 저장". 둘 다 PyArr
 > - **NumPy 호환성 vs Arrow 모델**: pandas가 NumPy → PyArrow로 옮겨가는 과정에서 일부 NumPy-only 라이브러리 호환성 깨짐. PDEP-10 통과 시점이 분기점
 > - **ADBC vs JDBC/ODBC**: ADBC는 분석 워크로드 최적이지만 transactional 워크로드에서 JDBC만큼 성숙하지 않음. 도입 시점 검토 필요
 > - **Compute 함수 vs Polars**: PyArrow.compute는 200+ 함수, Polars는 더 많고 expression DSL 친화. 단순 변환은 PyArrow, 복잡 분석은 Polars
-
 
 ## 메모
 

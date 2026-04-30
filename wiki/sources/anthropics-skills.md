@@ -230,7 +230,7 @@ xlsx/docx/pptx/pdf는 Claude.ai의 실제 문서 생성을 구동하는 producti
 
 - 수집 시점 raw 보존: README.md, marketplace.json, template-skill.md, spec-redirect.md, skill-creator-skill.md (33KB), mcp-builder-skill.md (9KB), frontend-design-skill.md, webapp-testing-skill.md → `raw/articles/anthropics-skills/`
 - **개인 활용 후속 탐구**:
-  1. 현재 운영 중인 `~/.claude/skills/wiki/SKILL.md`의 description을 "pushy" 원칙으로 재작성. 20개 trigger 검증 쿼리로 확인
-  2. **개인 비서 AI 서비스 설계 시 skill-creator의 5단계 루프**를 그대로 차용 가능 — Anthropic이 "billions a year"로 검증한 워크플로우
-  3. 이 위키에 `templates/skill.md` 추가 검토 (기존 entity/concept/source/synthesis 4종 + skill 1종)
+ 1. 현재 운영 중인 `~/.claude/skills/wiki/SKILL.md`의 description을 "pushy" 원칙으로 재작성. 20개 trigger 검증 쿼리로 확인
+ 2. **개인 비서 AI 서비스 설계 시 skill-creator의 5단계 루프**를 그대로 차용 가능 — Anthropic이 "billions a year"로 검증한 워크플로우
+ 3. 이 위키에 `templates/skill.md` 추가 검토 (기존 entity/concept/source/synthesis 4종 + skill 1종)
 - Partner Skills 섹션이 향후 확장 가능성 시그널 — Notion이 첫 사례. 컴투스플랫폼 BI 스킬을 만든다면 이 패턴이 모범.

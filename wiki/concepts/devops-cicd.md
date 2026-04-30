@@ -17,7 +17,6 @@ tags:
 - observability
 - prometheus
 - sentry
-- 19회차
 related:
 - '[[seokgeun-kim]]'
 - '[[c2spf-analytics]]'
@@ -64,9 +63,9 @@ c2spf 애널리틱스 팀의 표준 배포·운영 스택. Docker Compose로 빌
 - **CI**: Jenkins (멀티 브랜치 파이프라인) — 브랜치별 자동 빌드·테스트·배포. GitHub Actions는 개인 프로젝트에서 사용.
 - **배포**: nginx 리버스 프록시, AWS EC2.
 - **관측성**
-  - Promtail에서 Loki로: 컨테이너 로그 수집·중앙화.
-  - Grafana: 4환경 분리 대시보드 (상용 Primary/Standby + 샌드박스 + 테스트).
-  - ElasticSearch + Kibana (구 NFT 마켓), Fluentd 구성도 경험.
+ - Promtail에서 Loki로: 컨테이너 로그 수집·중앙화.
+ - Grafana: 4환경 분리 대시보드 (상용 Primary/Standby + 샌드박스 + 테스트).
+ - ElasticSearch + Kibana (구 NFT 마켓), Fluentd 구성도 경험.
 - **운영 트러블슈팅**: BigQuery Decimal 변환, OS별 TCP Keepalive, 슬레이브 DB 동기화 이슈.
 
 ## 실전 적용
@@ -87,15 +86,15 @@ c2spf 애널리틱스 팀의 표준 배포·운영 스택. Docker Compose로 빌
 - [[portfolio-seed]] — Docker/Jenkins/GitHub Actions 진화 타임라인
 - [[portfolio-ko]] — Selected Work 5선의 인프라 측면
 - [[c2spf-analytics-common]] — 가이드 4종 발행, 4환경 로깅 스택 구축
-- [[moby-moby]] — Docker/Moby OSS 업스트림 (19회차 신규)
-- [[github-actions-docs]] — GHA runner + toolkit (19회차 신규)
-- [[prometheus-prometheus]] — CNCF graduated 메트릭 OSS (19회차 신규)
-- [[grafana-grafana]] — 통합 시각화 (19회차 신규)
-- [[getsentry-sentry]] — 에러/RUM 추적 (19회차 신규)
+- [[moby-moby]] — Docker/Moby OSS 업스트림
+- [[github-actions-docs]] — GHA runner + toolkit
+- [[prometheus-prometheus]] — CNCF graduated 메트릭 OSS
+- [[grafana-grafana]] — 통합 시각화
+- [[getsentry-sentry]] — 에러/RUM 추적
 
-## 19회차 종합 (Observability + CI/CD 5단)
+## 종합 (Observability + CI/CD 5단)
 
-자세한 흐름은 [[observability-and-cicd-stack]] 참조: Docker → GHA → Prometheus → Grafana → Sentry 5단 OSS 통합. 19회차에서 발견된 [[agent-skills]] 11단계 진화 — 운영 진영 3 OSS(Prometheus/Grafana/Sentry) AGENTS.md 동시 채택 + 4가지 새 변종(PR-패턴/redirect/계층화/anti-fragmentation)이 본 회차의 핵심 메타 결론.
+자세한 흐름은 [[observability-and-cicd-stack]] 참조: Docker → GHA → Prometheus → Grafana → Sentry 5단 OSS 통합. 발견된 [[agent-skills]] 11단계 진화 — 운영 진영 3 OSS(Prometheus/Grafana/Sentry) AGENTS.md 동시 채택 + 4가지 새 변종(PR-패턴/redirect/계층화/anti-fragmentation)이 핵심 메타 결론.
 
 ## 열린 질문
 

@@ -25,13 +25,12 @@ tags:
 - filesystem
 - sub-agents
 - claude-code-pattern
-- 18회차
 cited_by_count: 17
 ---
 
 # DeepAgents
 
-LangChain Inc.의 **batteries-included agent harness** — `create_deep_agent()` 한 줄로 Anthropic Claude Code 스타일 에이전트(planning + filesystem + shell + sub-agents)를 LangGraph 위에 즉시 패키징.
+LangChain Inc.의 **batteries-included agent harness** — `create_deep_agent` 한 줄로 Anthropic Claude Code 스타일 에이전트(planning + filesystem + shell + sub-agents)를 LangGraph 위에 즉시 패키징.
 
 ## 기본 정보
 
@@ -49,7 +48,7 @@ DeepAgents는 새로운 agent runtime이 아닌, **LangGraph 위에 4종 도구�
 ```python
 from deepagents import create_deep_agent
 
-agent = create_deep_agent()  # 한 줄로 ready
+agent = create_deep_agent  # 한 줄로 ready
 result = agent.invoke({"messages": [...]})
 # create_deep_agent returns a compiled LangGraph graph
 ```
@@ -108,14 +107,14 @@ result = agent.invoke({"messages": [{"role": "user", "content": "DAU 추세를 �
 
 ## 의사결정 컨텍스트 (raw 인용)
 
-> "LangChain Inc.의 opinionated, ready-to-run agent — create_deep_agent() 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 셋업 완료. Claude Code/Cursor와 같은 코딩 에이전트 패턴을 LangGraph 위에 패키징."
+> "LangChain Inc.의 opinionated, ready-to-run agent — create_deep_agent 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 셋업 완료. Claude Code/Cursor와 같은 코딩 에이전트 패턴을 LangGraph 위에 패키징."
 > — [[langchain-ai-deepagents]] 한줄 요약
 
 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] agent harness 영역. [[langgraph]] 위에 빌드된 batteries-included 모델로 [[claude-code]]·Cursor 패턴을 라이브러리화. [[matechat|MateChat 사이드 프로젝트]]에 통합 시 39 SKILL 운영의 코딩 에이전트 본진 후보. **harness as library** 패턴은 [[llm-infra-meta-cluster|LLM 인프라 메타 5축]] 5축의 [[harness]] 진화 8단계 사례 — [[crewai]]·[[pydantic-ai]]와 함께 [[agent-frameworks-matrix]]에서 6 프레임워크 비교됨.
 
 ## 출처
 
-- [[langchain-ai-deepagents]] — DeepAgents (18회차)
+- [[langchain-ai-deepagents]] — DeepAgents
 
 ## 관련
 

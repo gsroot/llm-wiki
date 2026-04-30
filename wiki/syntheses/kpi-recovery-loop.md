@@ -11,7 +11,6 @@ tags:
 - kpi
 - matechat
 - c2spf
-- 48회차
 sources:
 - '[[seokgeun-kim-profile-2026]]'
 - '[[mate-chat-project-wiki-2026]]'
@@ -36,7 +35,7 @@ inbound_count: 11
 # KPI 측정값 회수 루프 — 의사결정 → 실측 → 위키 갱신 SOP
 
 > [!important] 메타 SOP — "사고 도구"가 되기 위한 마지막 적자
-> 48회차 신설 (Codex 권고 P1 + 자체 평가 A의 결정적 발견). 47회차 평가에서 **"위키가 다음 의사결정 입력은 정리하나 지난 의사결정의 결과를 회수해 가설을 갱신하는 루프가 비어 있다"**가 핵심 결손으로 식별됨. 본 페이지는 그 루프를 메타 SOP로 정형화.
+> 신설 (Codex 권고 P1 + 자체 평가 A의 결정적 발견). 평가에서 **"위키가 다음 의사결정 입력은 정리하나 지난 의사결정의 결과를 회수해 가설을 갱신하는 루프가 비어 있다"**가 핵심 결손으로 식별됨. 본 페이지는 그 루프를 메타 SOP로 정형화.
 > 
 > 한국어 표기: **KPI 측정값 회수 루프** 또는 **회수 SOP**.
 
@@ -47,11 +46,11 @@ inbound_count: 11
 - "어떤 회수 단위가 적절한가?" — 단기·중기·장기 회수 단위 표.
 - "회수 결과를 어디에 갱신하나?" — 갱신 대상 파일 + 회고 로그 위치.
 
-## 1. 결손 진단 (47회차 평가 발췌)
+## 1. 결손 진단
 
-47회차 종합 평가 보고서 핵심 발견:
+종합 평가 보고서 핵심 발견:
 
-> "MateChat 자작 SKILL 9개가 c2spf로 차용됐다는 가설이 28회차에 박힌 후 47회차 시점까지 **실제 1개도 적용된 흔적이 없다**. KPI(D30 8% / 인간-인간 5회)도 측정값이 없다. 즉 위키가 '다음 의사결정의 입력'은 잘 정리하지만, '지난 의사결정의 결과'를 회수해서 가설을 갱신하는 루프가 비어 있다."
+> "MateChat 자작 SKILL 9개가 c2spf로 차용됐다는 가설이 박힌 후 시점까지 **실제 1개도 적용된 흔적이 없다**. KPI(D30 8% / 인간-인간 5회)도 측정값이 없다. 즉 위키가 '다음 의사결정의 입력'은 잘 정리하지만, '지난 의사결정의 결과'를 회수해서 가설을 갱신하는 루프가 비어 있다."
 
 이 결손이 위키를 "잘 만든 사전 + 사고 도구 절반" 단계에서 멈추게 함. 본 SOP는 그 멈춤을 푼다.
 
@@ -82,12 +81,12 @@ inbound_count: 11
 | **MateChat 출시 KPI** | D30 / paying user / K-factor / 인간-인간 5회 | 일별 (D+1~30) → 주별 (D+30~90) → 월별 | [[matechat-30day-validation-loop]] |
 | **c2spf SKILL PoC 결과** | 도입 KPI (롤백·핫픽스·일관성) | PoC 종료 시점 (4주 후) | [[c2spf-ai-agent-adoption-candidates]] 진행 추적 표 |
 | **육아휴직 시간 예산 실측** | 영역별 실제 사용 시간 | 월별 회고 | [[parental-leave-2026-operating-plan]] 회수 체크리스트 |
-| **위키 자체 메타 KPI** | 페이지 수 / 회차 / lint 통과율 / 5축 인바운드 분포 | 회차 단위 | [[seokgeun-operating-profile-2026]] |
+| **위키 자체 메타 KPI** | 페이지 수 / lint 통과율 / 5축 인바운드 분포 | 주기 단위 | [[seokgeun-operating-profile-2026]] |
 | **번아웃 신호** | 정지 트리거 발동 횟수 + 회복 기간 | 주별 + 월별 | [[parental-leave-2026-operating-plan]] 비상 정지 트리거 |
 
 ## 4. 회수 의무가 있는 페이지 식별 (현재 상태)
 
-`verification_required: true` 페이지 (lint check 7 대상, 48회차 시점 13건):
+`verification_required: true` 페이지:
 
 - [[matechat]] — Google Play 출시 상태
 - [[c2spf-analytics]] — 회사 시스템 운영 상태
@@ -96,9 +95,9 @@ inbound_count: 11
 - [[seokgeun-mate-chat]] — 39 SKILL 분류
 - [[seokgeun-kim-profile-2026]] — 가족·번아웃 상태
 - [[langchain]]·[[openai]]·[[fastmcp]]·[[redis]]·[[sentry]] — OSS 변동
-- [[parental-leave-2026-operating-plan]] (48회차 신설)
-- [[matechat-30day-validation-loop]] (48회차 신설)
-- [[c2spf-ai-agent-adoption-candidates]] (48회차 신설)
+- [[parental-leave-2026-operating-plan]]
+- [[matechat-30day-validation-loop]]
+- [[c2spf-ai-agent-adoption-candidates]]
 - [[kpi-recovery-loop]] (본 페이지)
 
 ## 5. 회수 자동화 (wiki-lint 확장 권고)
@@ -106,7 +105,7 @@ inbound_count: 11
 현재 lint check 7은 `last_verified` 90일 초과 시 경고만. P1-6에서 다음을 추가 권고:
 
 ```python
-# wiki-lint.py 확장 (49회차 후보)
+# wiki-lint.py 확장
 def check_recovery_completeness(pages):
     """verification_required:true 페이지의 본문에 측정값 표가 있는데
     표 셀이 비어 있으면 결함 (회수 누락)."""

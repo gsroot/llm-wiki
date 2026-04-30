@@ -16,8 +16,6 @@ tags:
 - johnny-decimal
 - STAR
 - hub
-- 33회차
-- 53회차
 sources:
 - '[[portfolio-seed]]'
 - '[[portfolio-resume-ko]]'
@@ -96,12 +94,12 @@ cited_by_count: 28
 |---|---|---|
 | 1축 | [[seokgeun-kim]] (석근, 이 위키 owner) | 본인 정체성 — 포트폴리오의 주체 |
 | 2축A (메타) | **본 페이지** | 9년 커리어 의사결정 지도 |
-| 2축B (본진) | [[c2spf-analytics]] (c2spf 게임 데이터 BI) | 회사 BI 본진 entity (양방향 — 52회차 P0-2) |
+| 2축B (본진) | [[c2spf-analytics]] (c2spf 게임 데이터 BI) | 회사 BI 본진 entity |
 | 3축 | [[seokgeun-stack-guide]] (32 OSS 스택 카탈로그) | 4개 축에서 검증된 스택의 카탈로그화 |
 | 4축 | [[matechat]] (MateChat 사이드 프로젝트) | 사이드 프로젝트 + 사업화 검증 환경 |
 | 5축 | [[llm-infra-meta-cluster]] (LLM 인프라 메타 5축) | AI/Agent 운영 메타 (4번째 강점 축의 토대) |
 
-> 33회차 신설 — "포트폴리오란?" 질의에 1-hop으로 도달하는 진입점. 9개 source 페이지(seed/resume/ko/method/c2spf 5개/mate-chat) + 5개 프로젝트 source를 통합한다. 52회차에 c2spf-analytics 양방향 link 보강.
+> 신설 — "포트폴리오란?" 질의에 1-hop으로 도달하는 진입점. 9개 source 페이지(seed/resume/ko/method/c2spf 5개/mate-chat) + 5개 프로젝트 source를 통합한다. c2spf-analytics 양방향 link 보강.
 
 ## 요약
 
@@ -109,7 +107,7 @@ cited_by_count: 28
 
 ## 배경
 
-이 hub는 30~32회차 7축 평가에서 **"포트폴리오란?"이라는 자연 질의로 1-hop 도달이 불가능한 구조 결함**으로 식별되어 신설되었다. 기존에는 `portfolio-seed`(시드 문서)·`portfolio-resume-ko`(이력서)·`portfolio-ko`(상세본)·`portfolio-method`(방법론) 4개 source 페이지가 `wiki/sources/`에 흩어져 있었고, concept/synthesis 계층의 통합 hub가 없었다. RAG 회수 시 사용자가 "포트폴리오"로 질의해도 어느 source부터 봐야 할지 라우팅이 모호했다.
+이 hub는 7축 평가에서 **"포트폴리오란?"이라는 자연 질의로 1-hop 도달이 불가능한 구조 결함**으로 식별되어 신설되었다. 기존에는 `portfolio-seed`(시드 문서)·`portfolio-resume-ko`(이력서)·`portfolio-ko`(상세본)·`portfolio-method`(방법론) 4개 source 페이지가 `wiki/sources/`에 흩어져 있었고, concept/synthesis 계층의 통합 hub가 없었다. RAG 회수 시 사용자가 "포트폴리오"로 질의해도 어느 source부터 봐야 할지 라우팅이 모호했다.
 
 ## 분석
 
@@ -134,7 +132,7 @@ cited_by_count: 28
 
 ### Layer 3: STAR 스토리 + 증거 기반 metric ([[portfolio-method]])
 
-`portfolio/40-stories/`의 모든 스토리는 STAR(Situation/Task/Action/Result) 프레임워크로 기록되며, Result에 반드시 정량 metric이 들어간다. 핵심 정량 주장 3건은 다음과 같은 검증 경로를 가진다 (49회차 P0-3 명시화):
+`portfolio/40-stories/`의 모든 스토리는 STAR(Situation/Task/Action/Result) 프레임워크로 기록되며, Result에 반드시 정량 metric이 들어간다. 핵심 정량 주장 3건은 다음과 같은 검증 경로를 가진다:
 
 | 주장 | 값 | 재현 경로 |
 |---|---|---|
@@ -159,18 +157,18 @@ cited_by_count: 28
 
 > [[c2spf-analytics]] 본문에는 본 hub의 4축 강점 매핑이 인용되어 있다(역참조 `cited_by`로 추적). [[matechat]] 자작 SKILL 차용 후보 9건은 [[c2spf-ai-agent-adoption-candidates]]에서 별도 카탈로그화된다.
 
-### Layer 5: 회차 진화 (33→48→52회차)
+### Layer 5: 진화
 
-본 hub의 진화 이력은 그래프 연결성 개선 회차와 직결된다:
+본 hub의 진화 이력은 그래프 연결성 개선 작업과 직결된다:
 
-| 회차 | 작업 | 효과 |
+| | 작업 | 효과 |
 |---|---|---|
-| 33회차 | hub 신설 | "포트폴리오란?" 1-hop 답변 가능. 4 source 통합. |
-| 48회차 | aliases 표준 도입 | `aliases: [포트폴리오, 9년 커리어 의사결정 지도, ...]` Obsidian Cmd+O 직결. |
-| 50회차 P1 | sub-hub 4개(agent-skills·harness·mcp·claude-code) forward edge | 5축 메타 layer와 직결 (1-hop). |
-| 52회차 P0 | c2spf-analytics 양방향 보강 | 매트릭스 ✗ 1쌍 해소. 본 hub와 회사 본진 entity가 frontmatter 양방향. |
+| | hub 신설 | "포트폴리오란?" 1-hop 답변 가능. 4 source 통합. |
+| | aliases 표준 도입 | `aliases: [포트폴리오, 9년 커리어 의사결정 지도, ...]` Obsidian Cmd+O 직결. |
+| P1 | sub-hub 4개(agent-skills·harness·mcp·claude-code) forward edge | 5축 메타 layer와 직결 (1-hop). |
+| P0 | c2spf-analytics 양방향 보강 | 매트릭스 ✗ 1쌍 해소. 본 hub와 회사 본진 entity가 frontmatter 양방향. |
 
-> 본 hub의 인바운드 측정값은 frontmatter `cited_by` 26개 (자동 갱신, 47회차 신설). 본문 정량 수치(1,111커밋/39 SKILL/85%)는 측정 시점 라벨링되어 있고 재현 명령은 Layer 3 표 참조.
+> 본 hub의 인바운드 측정값은 frontmatter `cited_by` 26개. 본문 정량 수치(1,111커밋/39 SKILL/85%)는 측정 시점 라벨링되어 있고 재현 명령은 Layer 3 표 참조.
 
 ## 결론
 

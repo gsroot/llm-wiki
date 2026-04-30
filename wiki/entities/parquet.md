@@ -142,8 +142,8 @@ File
 - [[apache-arrow]]: 같은 PMC 산하 (2023~). 인메모리/온디스크 짝
 - [[pyarrow]]: Python 표준 Parquet reader/writer
 - [[duckdb]]: `SELECT * FROM 'file.parquet'` 직접 쿼리. predicate pushdown 자동
-- [[polars]]: `pl.scan_parquet()` lazy 읽기, predicate pushdown 자동
-- [[pandas]]: `pd.read_parquet()` (PyArrow 백엔드)
+- [[polars]]: `pl.scan_parquet` lazy 읽기, predicate pushdown 자동
+- [[pandas]]: `pd.read_parquet` (PyArrow 백엔드)
 - [[apache-foundation]]: 거버넌스 주체
 
 ## 의사결정 컨텍스트 (raw 인용)
@@ -164,7 +164,6 @@ File
 > - **Footer 위치 = 스트리밍 어려움**: 파일 끝에 footer라 streaming write 시 buffering 필요. Iceberg가 metadata 별도로 분리하는 이유
 > - **Row Group 크기 선택**: 너무 작으면 메타데이터 오버헤드, 너무 크면 메모리 압박. 기본 128MB~1GB 권장
 > - **Apache vs proprietary 변종**: Snowflake/BigQuery 내부 포맷은 Parquet 변종이지만 호환 X. Iceberg/Delta가 표준 Parquet 위에 메타데이터를 더해 "vendor-neutral lakehouse" 시도
-
 
 ## 메모
 

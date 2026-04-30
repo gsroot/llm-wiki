@@ -13,7 +13,6 @@ tags:
 - container
 - devops
 - runtime
-- 19회차
 related:
 - '[[docker]]'
 - '[[devops-cicd]]'
@@ -57,7 +56,7 @@ aliases:
 
 - [[docker]]: 본 소스 1차 대상. Docker = Moby 위에 빌드된 제품.
 - [[devops-cicd]]: 컨테이너는 CI/CD의 사실상 표준 패키징 단위.
-- [[observability-and-cicd-stack]]: 19회차 종합 — Docker → GHA → Prometheus → Grafana → Sentry 흐름의 1단계.
+- [[observability-and-cicd-stack]]: 종합 — Docker → GHA → Prometheus → Grafana → Sentry 흐름의 1단계.
 
 ## 인용할 만한 구절
 
@@ -70,5 +69,5 @@ aliases:
 ## 메모
 
 - README가 71K stars 대비 매우 짧음(102줄) — 핵심 원칙과 모듈 재정렬만 다룸. 실제 가이드는 docs/ 하위로 분산. 이는 운영 OSS의 패턴 ("저장소가 아닌 docs 사이트가 SSOT").
-- 21회차 점검 시점에 Moby의 AGENTS.md 채택 여부 재확인 필요 — Grafana/Sentry처럼 후발 채택 가능.
+- 점검 시점에 Moby의 AGENTS.md 채택 여부 재확인 필요 — Grafana/Sentry처럼 후발 채택 가능.
 - BI 영역에서 Docker의 직접 활용은 분석 잡 컨테이너화 + airflow/dbt 격리. moby/api Go 모듈은 BI에서 거의 쓸 일 없음.

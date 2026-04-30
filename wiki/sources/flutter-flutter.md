@@ -272,7 +272,7 @@ Before declaring a task done:
 **Stack:** Nav: go_router, State: ValueNotifier, Data: json_serializable, UI: Material 3
 **Code:** SOLID, Layers: Pres/Domain/Data, PascalTypes camelMembers snake_files
 **Async:** async/await, try-catch.  **Log:** dart:developer ONLY.  **Null:** sound, no `!`
-**Perf:** const everywhere, ListView.builder, compute() for heavy
+**Perf:** const everywhere, ListView.builder, compute for heavy
 **Testing:** flutter test, integration_test.  **A11y:** 4.5:1 contrast, Semantics
 **Design:** "Wow" factor. Glassmorphism, shadows.  **Docs:** Public API ///
 ```
@@ -319,10 +319,10 @@ agent-artifacts/
 1. 사소한 변경 외엔 **design doc** 작성 의무 ([Flutter design doc template](https://flutter.dev/go/template))
 2. design doc은 PR 전에 maintainer 검토
 3. 4-step contributor 흐름:
-   - Engine env setup
-   - Framework env setup
-   - Tree hygiene (PR landing, code review, breaking changes, regressions)
-   - Style guide
+ - Engine env setup
+ - Framework env setup
+ - Tree hygiene (PR landing, code review, breaking changes, regressions)
+ - Style guide
 
 위키적 의미: 이 흐름이 [[github-spec-kit]]의 SDD와 본질적으로 같은 사상 — **사양 우선, 코드는 사양의 표현**. spec-kit이 이걸 도구화한 것이라면, Flutter는 11년간 사람 절차로 운영해온 것.
 

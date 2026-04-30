@@ -52,7 +52,7 @@ Dart 2.12 이후 **sound null safety** 도입:
 
 - **Isolates** = OS 스레드 위에서 메모리 공유 없는 격리 단위
 - 메시지 전달(message passing)로만 통신 — Erlang/Elixir와 유사
-- `compute()` 함수로 무거운 작업을 별 isolate에 위임 (Flutter rules 권장)
+- `compute` 함수로 무거운 작업을 별 isolate에 위임 (Flutter rules 권장)
 
 ### 비동기 모델
 

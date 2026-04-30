@@ -88,7 +88,7 @@ GitHub이 직접 운영하는 [[spec-kit]] (★91k+, MIT, 2025-08 시작 / 2026-
 
 - 위키에 등록된 거의 모든 source가 GitHub 인프라 위에 있지만(microsoft-*, anthropics-*, karpathy-*) GitHub 자체를 entity로 만든 첫 source는 spec-kit. 이 시점부터 GitHub을 "인프라 + 조직" 두 역할로 박을 수 있게 됨.
 - 전략 추상화 비교 메모:
-  - **Microsoft (모회사)**: 인프라(Azure) + 표준 카탈로그(MCP/A2A/NLWeb) + 운영체계(Cloud Advocates)
-  - **GitHub (자회사)**: 인프라(Git/Issues/Codespaces) + **메소드론 표준화(spec-kit)** + 메타-층(30+ 에이전트 동등 지원)
-  - 두 회사가 같은 소속이지만 **자기 도구 우선 안 함** — Copilot보다 spec-kit가 30 다른 에이전트를 동등 지원하는 것이 신호
+ - **Microsoft (모회사)**: 인프라(Azure) + 표준 카탈로그(MCP/A2A/NLWeb) + 운영체계(Cloud Advocates)
+ - **GitHub (자회사)**: 인프라(Git/Issues/Codespaces) + **메소드론 표준화(spec-kit)** + 메타-층(30+ 에이전트 동등 지원)
+ - 두 회사가 같은 소속이지만 **자기 도구 우선 안 함** — Copilot보다 spec-kit가 30 다른 에이전트를 동등 지원하는 것이 신호
 - 후속 탐구: GitHub Octoverse 연차 보고서, Copilot Workspace, GitHub Models(Marketplace의 모델 카탈로그) 등 다른 GitHub 자산들의 위키 편입 필요성 검토.

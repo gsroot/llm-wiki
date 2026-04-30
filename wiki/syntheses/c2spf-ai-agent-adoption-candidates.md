@@ -11,7 +11,6 @@ tags:
 - c2spf
 - matechat
 - agent-skills
-- 48회차
 sources:
 - '[[seokgeun-mate-chat]]'
 - '[[c2spf-analytics-renewal]]'
@@ -35,7 +34,7 @@ inbound_count: 17
 # c2spf AI Agent 도입 후보 — MateChat 자작 SKILL 9건 + 차용 매트릭스
 
 > [!important] 실행형 hub — MateChat → c2spf 단방향 펌프의 실행 SOP
-> 48회차 신설 (Codex 권고 P1). [[matechat|MateChat 사이드 프로젝트]]에서 검증된 자작 11개 SKILL 중 mate-chat 도메인 특화 2개를 제외한 **9개의 c2spf 차용 후보**를 우선순위·도입 비용·기대 효과로 정량화. 28회차에 박힌 가설을 PoC로 회수하는 게 본 페이지의 핵심.
+> 신설 (Codex 권고 P1). [[matechat|MateChat 사이드 프로젝트]]에서 검증된 자작 11개 SKILL 중 mate-chat 도메인 특화 2개를 제외한 **9개의 c2spf 차용 후보**를 우선순위·도입 비용·기대 효과로 정량화. 박힌 가설을 PoC로 회수하는 게 본 페이지의 핵심.
 > 
 > 한국어 표기: **c2spf AI Agent 도입 후보** 또는 **MateChat 차용 매트릭스**.
 
@@ -48,7 +47,7 @@ inbound_count: 17
 
 ## 1. MateChat 자작 11개 → c2spf 차용 9개 분류
 
-[[seokgeun-mate-chat]] 28회차 검증 결과:
+[[seokgeun-mate-chat]] 검증 결과:
 
 | SKILL | 도메인 | c2spf 차용 가능 | 비고 |
 |---|---|---|---|

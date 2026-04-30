@@ -43,7 +43,7 @@ Karpathy가 2022-12-28 공개한 GPT 학습/파인튜닝 저장소. **`train.py`
 
 - **두 파일 본체**: `train.py`(학습 루프) + `model.py`(GPT 모델). "if-then-else 괴물" 없음.
 - **단일 GPU → 분산까지 동일 코드**: `python train.py` / `torchrun --nproc_per_node=8` / 멀티노드까지.
-- **PyTorch 2.0 `torch.compile()` 활용**: iter당 250ms → 135ms로 자동 가속.
+- **PyTorch 2.0 `torch.compile` 활용**: iter당 250ms → 135ms로 자동 가속.
 - **MPS 지원**: `--device=mps`로 Apple Silicon 2~3배 가속(Issue #28). 이게 후대 [[autoresearch]] macOS 포크들의 시발점.
 
 ### 학습 진입 단계 (README 인용)
@@ -105,8 +105,8 @@ autoresearch (단일-GPU 단순화 + 자율 실험)
 ## 메모
 
 - **deprecated이지만 위키에 보존하는 이유**:
-  1. [[autoresearch]]·[[nanochat]] 페이지가 "nanoGPT 후속작" 맥락을 빈번히 참조
-  2. LLM 입문 표준 경로의 일부 — [Zero to Hero 비디오 시리즈](https://karpathy.ai/zero-to-hero.html)와 짝지어 학습 가능
-  3. `--device=mps` 같은 디테일이 Apple Silicon ML 학습의 표준 경로 정착에 기여
+ 1. [[autoresearch]]·[[nanochat]] 페이지가 "nanoGPT 후속작" 맥락을 빈번히 참조
+ 2. LLM 입문 표준 경로의 일부 — [Zero to Hero 비디오 시리즈](https://karpathy.ai/zero-to-hero.html)와 짝지어 학습 가능
+ 3. `--device=mps` 같은 디테일이 Apple Silicon ML 학습의 표준 경로 정착에 기여
 - **석근 액션 없음**: 학습 의도가 있다면 nanochat으로 직행 권장. nanoGPT는 코드 읽기 자료로만.
 - **후속 탐구**: minGPT(전신)도 raw에 보관할 가치가 있는지 — 패턴 계보의 처음이지만 실용성은 nanoGPT보다 낮음. 지금은 보류.

@@ -48,11 +48,11 @@ aliases:
 - **캐치프레이즈** — 로그를 결정으로 바꾸는 시스템.
 - **Impact 표** — 개발 경력 9년, c2spf 기여 1,111커밋, 공통 API 92% ownership, 프론트엔드 생산성 30~40% 향상 기반, 블록체인 프로젝트 5건(가스비 ~90% 절감 포함). 모든 수치는 `10-sources/*/INDEX.md`로 역링크.
 - **Selected Work 5선**
-  1. 애널리틱스 React 리뉴얼 (2025.06–) — `analytics-frontend` 476커밋, Vite/TS/TanStack/Zustand/ag-grid 스택 표준화, 2025 FE 가이드라인 문서화, GCPPDT-741/742 Story MR, 회귀 테스트 32/32·22/22 통과, 측정값 에러 8종 × 5개 로케일 i18n.
-  2. Airbridge 데이터 가공 API (2025.01–02) — `/common/processed-data`에 MMP 결합·피벗팅, Spring Boot + FastAPI 하이브리드 파이프라인, APICode/ProcessedData 이원 에러 정책.
-  3. 애널리틱스 공통 모듈 & 배포 (2024.08–) — `analytics-common-api` 231/251(92%), HIVE OAuth 8엔드포인트, Docker Compose + Jenkins 멀티브랜치, Promtail/Loki/Grafana 4환경, 배포/운영 가이드 4종 2024-10 집중 발행.
-  4. XPLA 플랫폼 (2024.04–07) — NestJS + TypeORM + React 웹뷰, NFT 민팅 E2E, 중복 민팅·수수료 부족 엣지 케이스, CPBLOC 19건 완료.
-  5. NFT 마켓 (2022.05–2024.03) — NFT 지갑 백엔드, Discord 홀더 인증 봇, Rust 투표 스마트 컨트랙트 가스비 ~90% 절감, Docker 배포 개선.
+ 1. 애널리틱스 React 리뉴얼 (2025.06–) — `analytics-frontend` 476커밋, Vite/TS/TanStack/Zustand/ag-grid 스택 표준화, 2025 FE 가이드라인 문서화, GCPPDT-741/742 Story MR, 회귀 테스트 32/32·22/22 통과, 측정값 에러 8종 × 5개 로케일 i18n.
+ 2. Airbridge 데이터 가공 API (2025.01–02) — `/common/processed-data`에 MMP 결합·피벗팅, Spring Boot + FastAPI 하이브리드 파이프라인, APICode/ProcessedData 이원 에러 정책.
+ 3. 애널리틱스 공통 모듈 & 배포 (2024.08–) — `analytics-common-api` 231/251(92%), HIVE OAuth 8엔드포인트, Docker Compose + Jenkins 멀티브랜치, Promtail/Loki/Grafana 4환경, 배포/운영 가이드 4종 2024-10 집중 발행.
+ 4. XPLA 플랫폼 (2024.04–07) — NestJS + TypeORM + React 웹뷰, NFT 민팅 E2E, 중복 민팅·수수료 부족 엣지 케이스, CPBLOC 19건 완료.
+ 5. NFT 마켓 (2022.05–2024.03) — NFT 지갑 백엔드, Discord 홀더 인증 봇, Rust 투표 스마트 컨트랙트 가스비 ~90% 절감, Docker 배포 개선.
 - **기술 스택 심화** — 8개 카테고리별 도구와 실무 맥락 설명 (Backend·Frontend·Data/ML·DevOps·Observability·Data Store·Blockchain·Mobile).
 
 ## 주요 인사이트

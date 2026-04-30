@@ -46,7 +46,7 @@ cited_by_count: 10
 
 ### 적용 도메인
 
-- **운영체제 메모리 관리**: `fork()` 호출 후 자식 프로세스가 부모 메모리를 공유하다가, write-page에 처음 쓸 때 page fault → 실제 페이지 복사.
+- **운영체제 메모리 관리**: `fork` 호출 후 자식 프로세스가 부모 메모리를 공유하다가, write-page에 처음 쓸 때 page fault → 실제 페이지 복사.
 - **파일시스템**: ZFS, Btrfs의 스냅샷.
 - **데이터 분석**: [[pandas]] 2.0+가 도입한 PDEP-7 메모리 모델.
 - **VCS**: Git의 객체 모델(같은 내용은 동일 SHA로 공유).
@@ -81,7 +81,7 @@ df.loc[df.A > 1, 'B'] = 99  # 명확하고 일관됨
 - [[apache-arrow]]: immutable 메모리 모델의 표준. PyArrow 백엔드 채택 시 pandas도 점차 이 모델로 수렴.
 - [[lazy-evaluation]]: lazy 평가는 CoW 트레이드오프 자체를 우회 — 중간 결과를 materialize하지 않음.
 
-## CoW vs Immutable-by-Default 비교 (16회차 추가)
+## CoW vs Immutable-by-Default 비교
 
 | 축 | pandas (CoW) | [[polars]] (Immutable) |
 |----|--------------|-----------------------|
@@ -97,10 +97,10 @@ df.loc[df.A > 1, 'B'] = 99  # 명확하고 일관됨
 ## 출처
 
 - [[pandas-dev-pandas]] — pandas 3.0 stable 릴리스, PDEP-7 메모리 모델 변혁
-- [[pola-rs-polars]] — Polars의 immutable-by-default 정반대 모델 (16회차 추가)
+- [[pola-rs-polars]] — Polars의 immutable-by-default 정반대 모델
 
 ## 열린 질문
 
-- ~~다른 데이터프레임 라이브러리(Polars, Dask 등)는 어떤 메모리 모델을 채택했는가?~~ → **16회차에서 답함**: Polars는 Apache Arrow immutable, Dask는 chunked CoW (pandas 모델 분산화)
+- ~~다른 데이터프레임 라이브러리(Polars, Dask 등)는 어떤 메모리 모델을 채택했는가?~~ → **답함**: Polars는 Apache Arrow immutable, Dask는 chunked CoW (pandas 모델 분산화)
 - pandas가 PyArrow 백엔드(PDEP-10)로 1급 전환 시 CoW vs Immutable의 의미는? → 둘이 **수렴**할 가능성. PyArrow는 Arrow immutable 모델을 따르므로 pandas도 자연스럽게 immutable 방향
 - in-place 업데이트의 인지적 가치 vs 메모리 모델 단순성: 분석가의 멘탈 모델에 어느 쪽이 더 친화적인가?

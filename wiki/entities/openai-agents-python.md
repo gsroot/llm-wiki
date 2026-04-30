@@ -29,7 +29,6 @@ tags:
 - human-in-the-loop
 - runtime-behavior-probe
 - implementation-strategy
-- 18회차
 related:
 - '[[openai]]'
 - '[[openai-cookbook]]'
@@ -165,7 +164,7 @@ dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `
 - [[claude-agent-sdk]]: Anthropic 측 평행 제품 (비교 대상)
 - [[claude-managed-agents]]: Anthropic의 hosted 변형 vs OpenAI agents-python의 self-hosted
 
-## 18회차 형제 프레임워크 비교 (cross-reference)
+## 형제 프레임워크 비교 (cross-reference)
 
 | 프레임워크 | 메타포 | OpenAI Agents SDK 대비 |
 |------------|--------|------------------------|
@@ -175,7 +174,7 @@ dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `
 | [[pydantic-ai]] | type-safe agent + 11 강점 | type-safety 압도적, model-agnostic |
 | [[fastmcp]] | MCP 서버 빌드 | 직교 (SDK가 아닌 도구 layer) |
 
-→ OpenAI Agents SDK는 **11종 패턴 reference + OpenAI 락인 + RunState 직렬화**가 차별점. 18회차에서 6×N agent-frameworks-matrix.md로 정량 비교.
+→ OpenAI Agents SDK는 **11종 패턴 reference + OpenAI 락인 + RunState 직렬화**가 차별점. 6×N agent-frameworks-matrix.md로 정량 비교.
 
 ## 의사결정 컨텍스트 (raw 인용)
 
@@ -186,30 +185,29 @@ dataclass 필드 순서를 호환성 계약으로 격상한 첫 명시 사례. `
 
 ## 출처
 
-- [[openai-openai-agents-python]] — 본 SDK 저장소 1차 수집 (14회차, 2026-04-28)
-- [[langchain-ai-deepagents]] — 18회차 비교 대상 추가
-- [[crewaiinc-crewai]] — 18회차 비교 대상 추가
-- [[pydantic-pydantic-ai]] — 18회차 비교 대상 추가
+- [[openai-openai-agents-python]] — 본 SDK 저장소 1차 수집
+- [[langchain-ai-deepagents]] — 비교 대상 추가
+- [[crewaiinc-crewai]] — 비교 대상 추가
+- [[pydantic-pydantic-ai]] — 비교 대상 추가
 
 ## 논쟁/모순
 
 > [!warning] 논쟁/모순
 > - (없음)
 
-
 ## 메모
 
 - **1년 14 메이저 버전 (v0.14.6)** — 약 26일에 1 메이저 버전. cookbook(289개 / 4년)의 정적 누적 모델과 정반대로 빠른 반복·잦은 API 진화. Public API Positional Compatibility + RunState `CURRENT_SCHEMA_VERSION`이 이를 가능하게 함.
 - **회사 BI 적용 가능 영역**:
-  - `examples/financial_research_agent/`, `customer_service/`, `research_bot/` 도메인 reference (BI 도메인 매핑)
-  - 9개 스킬 중 4개 (`code-change-verification`, `docs-sync`, `runtime-behavior-probe`, `pr-draft-summary`)를 c2spf-analytics SOP에 차용
-  - `RunState` 직렬화 패턴을 BI 캐시·세션 직렬화에 응용
+ - `examples/financial_research_agent/`, `customer_service/`, `research_bot/` 도메인 reference (BI 도메인 매핑)
+ - 9개 스킬 중 4개 (`code-change-verification`, `docs-sync`, `runtime-behavior-probe`, `pr-draft-summary`)를 c2spf-analytics SOP에 차용
+ - `RunState` 직렬화 패턴을 BI 캐시·세션 직렬화에 응용
 - **다음 수집 후보**:
-  - 9개 스킬의 `agents/` sub-agent 프롬프트 본체 (별도 회차)
-  - `examples/agent_patterns/` 16개 .py 본체 (11종 패턴 코드)
-  - `docs/tools.md` 37.9KB 단독 수집
-  - `mcp>=1.19.0` 변경점 (mcp 1.x 별도 회차)
-- **별도 운영 저장소** (본 회차 미수집):
-  - openai/agents.md — AGENTS.md 표준 정의 자체
-  - openai/codex — Codex CLI 본체
-  - openai/openai-python — OpenAI 공식 Python SDK (본 Agents SDK가 의존)
+ - 9개 스킬의 `agents/` sub-agent 프롬프트 본체
+ - `examples/agent_patterns/` 16개 .py 본체 (11종 패턴 코드)
+ - `docs/tools.md` 37.9KB 단독 수집
+ - `mcp>=1.19.0` 변경점 (mcp 1.x )
+- **별도 운영 저장소** (미수집):
+ - openai/agents.md — AGENTS.md 표준 정의 자체
+ - openai/codex — Codex CLI 본체
+ - openai/openai-python — OpenAI 공식 Python SDK (본 Agents SDK가 의존)

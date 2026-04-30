@@ -78,7 +78,7 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 
 ### 시계열 (BI 핵심)
 
-`Timestamp`, `Period`, `Timedelta`, `DateOffset`, `BusinessDay`, `tz_localize`/`tz_convert`, `resample("5Min").sum()`, `pd.offsets.BusinessDay(5)` — 게임 BI의 DAU/MAU/리텐션 코호트 분석은 사실상 pandas resample + groupby + Categorical의 합주.
+`Timestamp`, `Period`, `Timedelta`, `DateOffset`, `BusinessDay`, `tz_localize`/`tz_convert`, `resample("5Min").sum`, `pd.offsets.BusinessDay(5)` — 게임 BI의 DAU/MAU/리텐션 코호트 분석은 사실상 pandas resample + groupby + Categorical의 합주.
 
 ## 학술 인용 정보
 
@@ -117,7 +117,7 @@ R 사용자에게는 `data.frame`의 풍부한 확장으로 이해 가능. NumPy
 - [[dataframe]]: 데이터 분석의 보편적 추상
 - [[lazy-evaluation]]: pandas는 본질적 eager. Polars/DuckDB의 lazy 모델과 대조 — PDEP-10 이후 부분 lazy 진화 가능성
 
-## 자매 도구 비교 (16회차 추가)
+## 자매 도구 비교
 
 | 축 | pandas | [[polars]] | [[duckdb]] |
 |----|--------|------------|------------|

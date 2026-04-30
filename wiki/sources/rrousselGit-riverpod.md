@@ -19,7 +19,6 @@ tags:
 - state-management
 - reactive
 - dependency-injection
-- 22회차
 confidence: high
 inbound_count: 11
 cited_by:
@@ -55,7 +54,7 @@ Flutter 공식 Favorite 패키지로 인정받은 reactive caching + dependency 
 
 1. **Provider의 후속작이라는 정통성**: 같은 저자가 Flutter 진영에서 Provider를 만든 후 한계를 인식하고 재설계. → 진영 내 표준 후보 중 가장 신뢰받는 라인.
 2. **Flutter Favorite 배지의 의미**: pub.dev에서 단순 인기와 별개로 "Flutter 팀 권장" 신호. RxDart 등은 Favorite 미보유.
-3. **AGENTS.md/CLAUDE.md 미채택**: 22회차 5개 프론트엔드 OSS 중 Next.js만 AGENTS.md 채택. Riverpod/TanStack/Zustand/shadcn-ui 모두 미채택 — 프론트엔드 진영 채택률 1/5 (20%, 운영 진영 3/5의 절반 이하).
+3. **AGENTS.md/CLAUDE.md 미채택**: 5개 프론트엔드 OSS 중 Next.js만 AGENTS.md 채택. Riverpod/TanStack/Zustand/shadcn-ui 모두 미채택 — 프론트엔드 진영 채택률 1/5 (20%, 운영 진영 3/5의 절반 이하).
 
 ## 관련 엔티티/개념
 
@@ -75,4 +74,4 @@ Flutter 공식 Favorite 패키지로 인정받은 reactive caching + dependency 
 
 ## 메모
 
-22회차 (Plan 20회차 / Frontend) raw 수집. Provider 진영 표준 후보이지만 GetX, Bloc, Cubit 등 경쟁자 다수 존재. Mate Chat 프로젝트가 Riverpod를 채택했기 때문에 석근님의 Flutter 사이드 프로젝트 의사결정에서 핵심.
+raw 수집. Provider 진영 표준 후보이지만 GetX, Bloc, Cubit 등 경쟁자 다수 존재. Mate Chat 프로젝트가 Riverpod를 채택했기 때문에 석근님의 Flutter 사이드 프로젝트 의사결정에서 핵심.

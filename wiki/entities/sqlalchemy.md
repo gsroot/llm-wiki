@@ -82,7 +82,7 @@ Mike Bayer 21년 1인 lead. NumFOCUS 같은 후원 없이 순수 OSS + 컨설팅
 
 ### 7. Database Introspection ↔ Generation 양방향
 
-`MetaData.reflect()`로 현재 DB → 메타, 같은 메타에서 CREATE 문 생성. [[alembic]] autogenerate의 핵심.
+`MetaData.reflect`로 현재 DB → 메타, 같은 메타에서 CREATE 문 생성. [[alembic]] autogenerate의 핵심.
 
 ### 8. Glossary = 도메인 표준 어휘
 
@@ -109,7 +109,7 @@ Mike Bayer 21년 1인 lead. NumFOCUS 같은 후원 없이 순수 OSS + 컨설팅
 
 ## 출처
 
-- [[sqlalchemy-sqlalchemy]] — 본 저장소 1차 수집 (15회차, 2026-04-28)
+- [[sqlalchemy-sqlalchemy]] — 본 저장소 1차 수집
 
 ## 메모
 

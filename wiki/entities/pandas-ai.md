@@ -23,7 +23,6 @@ tags:
 - conversational-data
 - litellm
 - bi-chatbot
-- 18회차
 cited_by_count: 9
 ---
 
@@ -59,12 +58,12 @@ response = df.chat("What is the average revenue by region?")
 
 ```
 SQL ──┐
-CSV ──┼─→ pai.read_*() → DataFrame.chat()
+CSV ──┼─→ pai.read_* → DataFrame.chat
 Parquet─┤
 PostgreSQL─┘
 ```
 
-→ 16회차 데이터 레이어 ([[polars]], [[duckdb]], [[parquet]], [[pyarrow]])의 **자연어 인터페이스 어댑터**.
+→ 데이터 레이어 ([[polars]], [[duckdb]], [[parquet]], [[pyarrow]])의 **자연어 인터페이스 어댑터**.
 
 ## 시각화 자동 생성
 
@@ -79,7 +78,7 @@ df.chat("Plot the histogram of countries showing for each one the gdp...")
 
 | 한계 | 영향 |
 |------|------|
-| **AGENTS.md/CLAUDE.md 없음** | 18회차 6개 동기화 OSS 그룹 미합류 |
+| **AGENTS.md/CLAUDE.md 없음** | 6개 동기화 OSS 그룹 미합류 |
 | **Python 3.8~3.11만 지원** | 최신 3.12+ 사용자 호환성 문제 |
 | **자체 모델 추상화 없음** | LiteLLM 종속 (단점이자 장점) |
 | **LLM이 코드 실행** | sandbox 필요, 보안 위험 |
@@ -126,7 +125,7 @@ result = pai.chat([sales, users], "Which user segment spent the most this quarte
 
 ## 출처
 
-- [[sinaptik-ai-pandas-ai]] — PandasAI (18회차)
+- [[sinaptik-ai-pandas-ai]] — PandasAI
 
 ## 관련
 

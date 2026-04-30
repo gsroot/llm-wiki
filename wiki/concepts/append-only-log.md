@@ -8,7 +8,6 @@ type: concept
 category: data-architecture
 tags:
 - kafka
-- 25회차
 related:
 - '[[kafka]]'
 - '[[postgresql]]'
@@ -31,11 +30,11 @@ cited_by_count: 8
 
 **Append-only Log** = 데이터를 끝에만 추가하고 절대 수정·삭제하지 않는 자료구조. 디스크 sequential I/O 활용 → SSD/HDD 모두에서 random write 대비 10~100배 빠름.
 
-본 페이지는 **stub** — 16회차 [[kafka]] / 15회차 [[postgresql]] / 19회차 [[sentry]] 등 다수 페이지에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — [[kafka]] / [[postgresql]] / [[sentry]] 등 다수 페이지에서 인용되므로 정합성 stub.
 
 ## 본 위키 사례
 
-| 시스템 | append-only 활용 | 위키 회차 |
+| 시스템 | append-only 활용 | 시점 |
 |---|---|---|
 | [[kafka]] | Topic = append-only log of records | 16 |
 | [[postgresql]] | WAL (Write-Ahead Log) | 15 |
@@ -45,7 +44,7 @@ cited_by_count: 8
 | [[parquet]] | row group append + footer rewrite | 16 |
 | [[event-driven-architecture]] | Event Sourcing의 자료구조 | 25 |
 
-## 16회차 "디스크는 친구" 사상
+## "디스크는 친구" 사상
 
 [[kafka]] design.md 511줄의 결론:
 - 디스크 sequential write = 메모리 random access 수준 속도
@@ -62,7 +61,7 @@ cited_by_count: 8
 - [[kafka]] — 표준 사례
 - [[postgresql]] WAL — DB 트랜잭션 로그
 - [[event-driven-architecture]] — append-only가 메시지 자료구조
-- [[zero-copy]] — sendfile() = append-only log → consumer 직접 전송
+- [[zero-copy]] — sendfile = append-only log → consumer 직접 전송
 
 ## 출처
 
@@ -73,5 +72,5 @@ cited_by_count: 8
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[append-only-log]]` 깨진 링크 발견. 29회차에 기존 16/15회차 source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[append-only-log]]` 깨진 링크 발견. 기존 source 기반으로 1차 보강.
 - LSM-Tree (Cassandra/RocksDB/SQLite WAL): append-only + compaction = 다른 변종.

@@ -43,20 +43,20 @@ c2spf의 블록체인 통합 영역. XPLA(Cosmos SDK 계열) 체인 기반의 NF
 ## 핵심 내용
 
 - **CODE 트래블룰 API** (2021-10 ~ 2022-04)
-  - 가상자산 거래소들의 트래블룰 이행을 위한 공통 API.
-  - 웹·블록체인 버전 API 구현, Sample VASP API, VerifyVasp 솔루션 연동.
-  - FastAPI + SQLAlchemy + Pytest + Locust + MariaDB + Nats + Docker + AWS.
+ - 가상자산 거래소들의 트래블룰 이행을 위한 공통 API.
+ - 웹·블록체인 버전 API 구현, Sample VASP API, VerifyVasp 솔루션 연동.
+ - FastAPI + SQLAlchemy + Pytest + Locust + MariaDB + Nats + Docker + AWS.
 - **NFT 마켓** (2022-05 ~ 2024-03)
-  - NFT 지갑 관리 백엔드 (NestJS + TypeORM).
-  - Discord 홀더 인증 봇 (Discord.py + FastAPI + Pytest).
-  - Rust 투표 스마트 컨트랙트 (가스비 ~90% 절감).
-  - GCPNFT 229/231 Done.
+ - NFT 지갑 관리 백엔드 (NestJS + TypeORM).
+ - Discord 홀더 인증 봇 (Discord.py + FastAPI + Pytest).
+ - Rust 투표 스마트 컨트랙트 (가스비 ~90% 절감).
+ - GCPNFT 229/231 Done.
 - **XPLA 플랫폼** (2024-04 ~ 2024-07)
-  - 다중 게임 SDK 통합 — 한 번의 SDK 호출로 블록체인 기능 사용.
-  - NFT 민팅 E2E 플로우 (Action 조회 → 서명 → 전송 → 결과).
-  - 엣지 케이스 선제 처리 (중복 민팅, 수수료 부족 등).
-  - NestJS + TypeORM + React 웹뷰 + MySQL 8 Master-Slave + Docker.
-  - CPBLOC 19건 전수 완료.
+ - 다중 게임 SDK 통합 — 한 번의 SDK 호출로 블록체인 기능 사용.
+ - NFT 민팅 E2E 플로우 (Action 조회 → 서명 → 전송 → 결과).
+ - 엣지 케이스 선제 처리 (중복 민팅, 수수료 부족 등).
+ - NestJS + TypeORM + React 웹뷰 + MySQL 8 Master-Slave + Docker.
+ - CPBLOC 19건 전수 완료.
 
 ## 실전 적용
 

@@ -19,7 +19,6 @@ tags:
 - harness
 - mcp
 - llm-wiki
-- 53회차
 related:
 - '[[llm-wiki-pattern]]'
 - '[[context-engineering]]'
@@ -125,7 +124,7 @@ LLM에 외부 지식을 주입하는 4가지 패턴이 있고, RAG는 그중 하
 - **검색 단계 부재**: LLM이 질의에 대해 임베딩 검색을 하지 않고, hub 페이지([[llm-infra-meta-cluster]] 등) → 세부 페이지로 직접 wikilink를 따라간다.
 - **인덱스가 사람 큐레이션**: [[index]]·[[seokgeun-stack-guide]]·5축 hub 표가 운영자가 직접 만든 라우팅. 자동 임베딩이 아닌 의도된 카탈로그.
 - **청크 단위가 페이지**: 표준 RAG는 256~1024 토큰 청크지만, 이 위키는 페이지 단위(평균 142줄, RAG 권장 100~300줄과 정합).
-- **메타 페이지 격리**: `rag_exclude: true`로 stale 통계 카탈로그를 답변 근거에서 제외 (43회차 정책).
+- **메타 페이지 격리**: `rag_exclude: true`로 stale 통계 카탈로그를 답변 근거에서 제외.
 
 → 즉 본 위키는 **"수동 인덱스 + 페이지 청킹 + LLM 추론"** 형태의 변형 RAG. [[llm-wiki-pattern]] 페이지가 본 위키를 다른 RAG 패턴과 비교한다.
 
@@ -143,21 +142,21 @@ from anthropic import Anthropic
 
 # 2. 인제스트 (한 번만)
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
-client = Client()
+client = Client
 collection = client.create_collection("docs")
 chunks = ["문서1 청크1", "문서1 청크2", ...]  # 256~1024 토큰
 collection.add(
     ids=[f"chunk-{i}" for i in range(len(chunks))],
-    embeddings=embedder.encode(chunks).tolist(),
+    embeddings=embedder.encode(chunks).tolist,
     documents=chunks,
 )
 
 # 3. 질의 시
 def rag_answer(query: str) -> str:
-    q_emb = embedder.encode([query]).tolist()
+    q_emb = embedder.encode([query]).tolist
     results = collection.query(query_embeddings=q_emb, n_results=4)
     context = "\n\n".join(results["documents"][0])
-    anthropic = Anthropic()
+    anthropic = Anthropic
     msg = anthropic.messages.create(
         model="claude-opus-4-7",
         max_tokens=1024,

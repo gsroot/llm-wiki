@@ -35,20 +35,20 @@ cited_by_count: 8
 ## 주요 특징
 
 - **모듈 구성**
-  - **NFT 마켓 백엔드** (2022-05 ~ 2024-03) — NFT 지갑 관리, 민팅, 거래.
-  - **Discord 홀더 인증 봇** — Discord.py + FastAPI + Pytest. NFT 홀더만 접근 가능한 채널/역할 부여.
-  - **Rust 투표 스마트 컨트랙트** — 가스비 ~90% 절감 최적화 적용. 의사결정 투명성 확보.
-  - **XPLA 플랫폼 SDK** (2024-04 ~ 2024-07) — 게임이 SDK 호출 한 번으로 블록체인 기능 통합.
-  - **CODE 트래블룰 API** (2021-10 ~ 2022-04) — 가상자산 거래소 트래블룰 공통 API (FastAPI).
+ - **NFT 마켓 백엔드** (2022-05 ~ 2024-03) — NFT 지갑 관리, 민팅, 거래.
+ - **Discord 홀더 인증 봇** — Discord.py + FastAPI + Pytest. NFT 홀더만 접근 가능한 채널/역할 부여.
+ - **Rust 투표 스마트 컨트랙트** — 가스비 ~90% 절감 최적화 적용. 의사결정 투명성 확보.
+ - **XPLA 플랫폼 SDK** (2024-04 ~ 2024-07) — 게임이 SDK 호출 한 번으로 블록체인 기능 통합.
+ - **CODE 트래블룰 API** (2021-10 ~ 2022-04) — 가상자산 거래소 트래블룰 공통 API (FastAPI).
 - **핵심 플로우**
-  - NFT 민팅 E2E: Action 조회 → 서명 → 전송 → 결과 노출.
-  - 엣지 케이스 선제 처리: 중복 민팅, 수수료 부족 (XPLA 잔액 < 총 수수료) 등.
+ - NFT 민팅 E2E: Action 조회 → 서명 → 전송 → 결과 노출.
+ - 엣지 케이스 선제 처리: 중복 민팅, 수수료 부족 (XPLA 잔액 < 총 수수료) 등.
 - **기술 스택**
-  - Backend: Node.js (NestJS, TypeORM, TypeScript), Python (FastAPI, Discord.py)
-  - Frontend: React + TypeScript (XPLA 웹뷰)
-  - Smart Contract: Rust
-  - Data: MySQL 8 (Master-Slave), MariaDB, Redis
-  - Infra: Docker, AWS, ElasticSearch/Kibana, Fluentd
+ - Backend: Node.js (NestJS, TypeORM, TypeScript), Python (FastAPI, Discord.py)
+ - Frontend: React + TypeScript (XPLA 웹뷰)
+ - Smart Contract: Rust
+ - Data: MySQL 8 (Master-Slave), MariaDB, Redis
+ - Infra: Docker, AWS, ElasticSearch/Kibana, Fluentd
 - **Jira 추적**: `GCPNFT` (NFT 마켓, 229/231 Done), `CPBLOC` (XPLA 플랫폼, 19건 전수 완료).
 
 ## 관련 개념

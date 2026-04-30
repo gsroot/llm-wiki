@@ -10,7 +10,6 @@ tags:
 - parquet
 - duckdb
 - polars
-- 25회차
 related:
 - '[[duckdb]]'
 - '[[polars]]'
@@ -33,7 +32,7 @@ cited_by_count: 6
 
 **Predicate Pushdown** = `WHERE` 조건(predicate)을 가능한 한 데이터 소스 가까이로 밀어 내려 (push down) 불필요한 데이터 읽기·전송을 차단하는 쿼리 최적화 기법. SQL 옵티마이저의 핵심 룰 중 하나.
 
-본 페이지는 **stub** — 16회차 [[duckdb]] / [[polars]] / [[parquet]] 등에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — [[duckdb]] / [[polars]] / [[parquet]] 등에서 인용되므로 정합성 stub.
 
 ## 동작 예시 (Parquet 분석)
 
@@ -73,5 +72,5 @@ SELECT user_id, revenue FROM 'data.parquet' WHERE date = '2026-04-28';
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[predicate-pushdown]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[predicate-pushdown]]` 깨진 링크 발견. 기존 source 기반으로 1차 보강.
 - Projection pushdown(불필요한 컬럼 제거)과 함께 columnar 쿼리 최적화의 양대 축.

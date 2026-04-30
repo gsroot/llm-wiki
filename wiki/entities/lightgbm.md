@@ -3,7 +3,7 @@ title: "LightGBM"
 aliases: [LightGBM, 라이트지비엠, light-gbm]
 type: entity
 entity_type: tool
-tags: [lightgbm, ml, gbdt, gradient-boosting, decision-tree, machine-learning, microsoft, lightgbm-org, neurips, effver, 17회차]
+tags: [lightgbm, ml, gbdt, gradient-boosting, decision-tree, machine-learning, microsoft, lightgbm-org, neurips, effver]
 related:
   - "[[scikit-learn]]"
   - "[[ml-ai]]"
@@ -70,7 +70,7 @@ cited_by_count: 10
 
 ## 출처
 
-- [[microsoft-lightgbm]] — 17회차 수집, README + MAINTAINING.md + CONTRIBUTING.md (총 280줄)
+- [[microsoft-lightgbm]] — 수집, README + MAINTAINING.md + CONTRIBUTING.md (총 280줄)
 
 ## 메모
 

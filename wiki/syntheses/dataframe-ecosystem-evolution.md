@@ -13,7 +13,6 @@ tags:
 - kafka
 - lazy-evaluation
 - columnar
-- 16회차
 sources:
 - '[[pandas-dev-pandas]]'
 - '[[pola-rs-polars]]'
@@ -152,7 +151,7 @@ S3 → Parquet 파일들 → DuckDB `SELECT * FROM 's3://...'` → 결과 분석
 
 ## 6. Apache Foundation의 8번째 거버넌스 모델
 
-15회차 [[backend-fastapi-stack]]에서 7개 OSS 거버넌스 모델 발견. 16회차에서 **Apache Software Foundation PMC**가 8번째:
+[[backend-fastapi-stack]]에서 7개 OSS 거버넌스 모델 발견. **Apache Software Foundation PMC**가 8번째:
 
 | 거버넌스 모델 | 사례 | 특징 |
 |--------------|------|------|
@@ -189,7 +188,7 @@ ASF PMC의 특징:
 | [[duckdb]] | mmap + zero-copy Parquet 읽기 |
 | [[polars]] | streaming engine = sequential page processing |
 
-→ "데이터 인프라는 본질적으로 sequential I/O 위에 빌드됨" — 16회차의 메타 발견.
+→ "데이터 인프라는 본질적으로 sequential I/O 위에 빌드됨" — 메타 발견.
 
 ## 8. 회사 BI 적용 — c2spf-analytics 권장 스택
 
@@ -204,7 +203,7 @@ api:
   - fastapi: 대시보드 API
 ```
 
-### 16회차 후 권장
+### 후 권장
 ```yaml
 storage:
   - bigquery: 운영 DW (변경 없음)
@@ -227,7 +226,7 @@ api:
 - **BQ 비용**: 탐색 워크로드를 DuckDB로 옮기면 슬롯 비용 절감
 - **Risk**: API 학습 (Polars DSL ≠ pandas), Plotly/Geopandas 일부 pandas-only
 
-## 9. 16회차의 메타 발견
+## 9. 메타 발견
 
 ### 1. "메모리 표준 = 디스크 표준" 통합의 위력
 
@@ -253,15 +252,15 @@ pandas eager의 직접 후예가 없음. Polars/DuckDB/Spark/Dask 모두 lazy. *
 
 ### 5. 단일 노드 한계 = 4.2B 행
 
-[[polars]] `bigidx`, [[pandas]] 64bit index, [[duckdb]] in-process — 모두 **2^32 행**에서 한계. 그 너머는 분산 시스템 (Spark/Dask). 16회차에서 본 도구 모두는 **노트북~중형 서버 사이즈** 대상.
+[[polars]] `bigidx`, [[pandas]] 64bit index, [[duckdb]] in-process — 모두 **2^32 행**에서 한계. 그 너머는 분산 시스템 (Spark/Dask). 본 도구 모두는 **노트북~중형 서버 사이즈** 대상.
 
 ## 출처
 
-- [[pandas-dev-pandas]] — 11회차 수집, DataFrame 추상의 표준
-- [[pola-rs-polars]] — 16회차 수집, 쿼리 엔진 패러다임
-- [[duckdb-duckdb]] — 16회차 수집, 임베디드 OLAP
-- [[apache-arrow]] — 16회차 수집, 메모리/디스크 표준 통합
-- [[apache-kafka]] — 16회차 수집, 데이터 인프라 사상
+- [[pandas-dev-pandas]] — 수집, DataFrame 추상의 표준
+- [[pola-rs-polars]] — 수집, 쿼리 엔진 패러다임
+- [[duckdb-duckdb]] — 수집, 임베디드 OLAP
+- [[apache-arrow]] — 수집, 메모리/디스크 표준 통합
+- [[apache-kafka]] — 수집, 데이터 인프라 사상
 
 ## 후속 작업
 
@@ -270,4 +269,4 @@ pandas eager의 직접 후예가 없음. Polars/DuckDB/Spark/Dask 모두 lazy. *
 - `entities/iceberg.md`, `entities/delta-lake.md` — Parquet 위 lakehouse 표준
 - `entities/spark.md` — 분산 lazy의 산업 표준 (4.2B 행 너머)
 - `entities/voltron-data.md` — Wes McKinney의 통합 거버넌스 회사
-- 17회차 ML 클래식 + LLM 인프라 진행 시 LangChain/LangGraph가 Polars/Pandas 통합 패턴 검토
+- ML 클래식 + LLM 인프라 진행 시 LangChain/LangGraph가 Polars/Pandas 통합 패턴 검토

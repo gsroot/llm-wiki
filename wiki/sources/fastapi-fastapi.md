@@ -130,11 +130,11 @@ description: FastAPI best practices and conventions. Use when working with FastA
 | `pyproject.toml [tool.fastapi] entrypoint` | 매번 path 인자 |
 | **`Annotated[T, Path/Query/Depends(...)]`** | `T = Path/Query/Depends(...)` 디폴트 인자 패턴 |
 | 함수 return type / `response_model=` | `ORJSONResponse`/`UJSONResponse` (deprecated, Pydantic Rust 직렬화로 통합) |
-| router 레벨 `prefix`, `tags`, `dependencies=` | `include_router()`에 동일 인자 전달 |
+| router 레벨 `prefix`, `tags`, `dependencies=` | `include_router`에 동일 인자 전달 |
 | `def`(threadpool 자동) — 의심되면 default | blocking 코드를 `async def` 안에서 직접 호출 |
-| `Annotated[list[int], Field(min_length=1), Body()]` | Pydantic `RootModel` |
+| `Annotated[list[int], Field(min_length=1), Body]` | Pydantic `RootModel` |
 | 함수 1개 = HTTP operation 1개 | `@app.api_route(methods=[...])` 다중 |
-| 의존성 클래스 → 함수가 인스턴스 반환 | `Annotated[Class, Depends()]` 직접 |
+| 의존성 클래스 → 함수가 인스턴스 반환 | `Annotated[Class, Depends]` 직접 |
 | **Asyncer** > AnyIO/asyncio | |
 | **SQLModel** > SQLAlchemy | |
 | **HTTPX** > Requests | |
@@ -152,29 +152,29 @@ description: FastAPI best practices and conventions. Use when working with FastA
 ## 주요 인사이트
 
 1. **에이전트 시대 OSS 컨벤션의 굳어짐**
-   - README는 사람용, **SKILL.md는 에이전트용**이라는 분업이 메인스트림 라이브러리에서 처음 명시됨.
-   - 이는 [[agent-skills]] 표준이 단순한 Anthropic 사양을 넘어 **상호운용 가능한 OSS 패턴**으로 확산되는 전환점.
-   - 정리하면 외부 채택 3단계 진화: ① anthropics/skills(표준 정의) → ② github/spec-kit(외부 도구의 Codex Skills 모드, 도구 통합) → ③ **fastapi/fastapi(라이브러리 self-hosted, 자기 코드 사용법을 자기가 출하)**.
+ - README는 사람용, **SKILL.md는 에이전트용**이라는 분업이 메인스트림 라이브러리에서 처음 명시됨.
+ - 이는 [[agent-skills]] 표준이 단순한 Anthropic 사양을 넘어 **상호운용 가능한 OSS 패턴**으로 확산되는 전환점.
+ - 정리하면 외부 채택 3단계 진화: ① anthropics/skills(표준 정의) → ② github/spec-kit(외부 도구의 Codex Skills 모드, 도구 통합) → ③ **fastapi/fastapi(라이브러리 self-hosted, 자기 코드 사용법을 자기가 출하)**.
 
 2. **표준 위에 짓되 표준에 기여한다**
-   - Pydantic JSON Schema 호환성, Starlette 비동기 베이스 — 둘 다 Tiangolo가 직접 PR한 결과.
-   - 차용이 아니라 **공동 진화**(co-evolution)가 핵심. fastapi의 발전은 항상 의존성 라이브러리의 발전과 묶여 있음.
+ - Pydantic JSON Schema 호환성, Starlette 비동기 베이스 — 둘 다 Tiangolo가 직접 PR한 결과.
+ - 차용이 아니라 **공동 진화**(co-evolution)가 핵심. fastapi의 발전은 항상 의존성 라이브러리의 발전과 묶여 있음.
 
 3. **에디터 검증 우선 설계**
-   - 코드 작성 전 PyCharm/VS Code에서 시그니처 후보들을 실제로 입력해보며 자동완성이 가장 잘 동작하는 형태를 찾음.
-   - 결과가 `Annotated[int, Path(ge=1)]` 같은 표면 — 시그니처 한 줄에 타입·검증·문서·DI가 동시에 표현되도록 설계.
-   - 석근의 c2spf 분석 API 표준화 작업과 같은 패턴(개발자 경험 우선 → 표준 자동 생성 → 클라이언트 일원화).
+ - 코드 작성 전 PyCharm/VS Code에서 시그니처 후보들을 실제로 입력해보며 자동완성이 가장 잘 동작하는 형태를 찾음.
+ - 결과가 `Annotated[int, Path(ge=1)]` 같은 표면 — 시그니처 한 줄에 타입·검증·문서·DI가 동시에 표현되도록 설계.
+ - 석근의 c2spf 분석 API 표준화 작업과 같은 패턴(개발자 경험 우선 → 표준 자동 생성 → 클라이언트 일원화).
 
 4. **Pydantic 2 / Rust 직렬화 시대의 코드 컨벤션 변경**
-   - `ORJSONResponse` 같은 별도 JSON 가속기는 **Pydantic 2의 Rust 코어 직렬화로 흡수** → 대신 응답 모델/타입을 정확히 선언하라.
-   - 이는 [[backend-python-fastapi]]에 기록된 c2spf의 Pydantic v1/v2 마이그레이션과 직결되는 운영 시사점.
+ - `ORJSONResponse` 같은 별도 JSON 가속기는 **Pydantic 2의 Rust 코어 직렬화로 흡수** → 대신 응답 모델/타입을 정확히 선언하라.
+ - 이는 [[backend-python-fastapi]]에 기록된 c2spf의 Pydantic v1/v2 마이그레이션과 직결되는 운영 시사점.
 
 5. **`def` vs `async def` 디폴트 가이드**
-   - SKILL.md는 **의심되면 `def`**을 권장(자동으로 threadpool에서 실행) — async 내부에서의 우발적 blocking이 운영 환경에서 가장 큰 성능 함정이라는 인식.
+ - SKILL.md는 **의심되면 `def`**을 권장(자동으로 threadpool에서 실행) — async 내부에서의 우발적 blocking이 운영 환경에서 가장 큰 성능 함정이라는 인식.
 
 6. **Tiangolo 생태계의 묵시적 표준 스택**
-   - SKILL.md에서 권장되는 비-FastAPI 라이브러리: **Asyncer · SQLModel · HTTPX · Typer**(전부 Tiangolo 작품) + **uv · Ruff · ty**(Astral).
-   - "마이크로 모놀리스" 같은 패키지 큐레이션. 개인비서/BI 백엔드 신규 구축 시 **이 스택을 디폴트로 채택**할 합리적 근거가 됨.
+ - SKILL.md에서 권장되는 비-FastAPI 라이브러리: **Asyncer · SQLModel · HTTPX · Typer**(전부 Tiangolo 작품) + **uv · Ruff · ty**(Astral).
+ - "마이크로 모놀리스" 같은 패키지 큐레이션. 개인비서/BI 백엔드 신규 구축 시 **이 스택을 디폴트로 채택**할 합리적 근거가 됨.
 
 ## 인용할 만한 구절
 
@@ -202,10 +202,10 @@ description: FastAPI best practices and conventions. Use when working with FastA
 
 ## 메모
 
-- **8회차 ingest의 결정적 시사점**: fastapi/.agents/skills/ 발견은 7회차 [[agent-stack-evolution]] 종합 분석의 "표준-구현 분리(Anthropic축)" 명제를 강화 — 표준이 OSS 라이브러리에 침투했다는 정량적 증거.
+- **ingest의 결정적 시사점**: fastapi/.agents/skills/ 발견은 [[agent-stack-evolution]] 종합 분석의 "표준-구현 분리(Anthropic축)" 명제를 강화 — 표준이 OSS 라이브러리에 침투했다는 정량적 증거.
 - **후속 작업 후보**:
-  1. `wiki/syntheses/agent-stack-evolution.md` 갱신 — 4번째 사례(library self-hosted skill) 반영.
-  2. SKILL.md 컨벤션이 c2spf `analytics-common-api` 코드베이스의 어느 부분과 충돌/일치하는지 점검(특히 `Annotated`, `response_model`, `ORJSONResponse` 사용 여부).
-  3. fastapi-cli + Asyncer + SQLModel + Typer + HTTPX 묶음을 "Tiangolo Default Stack"으로 별도 종합 페이지화 후보.
-  4. `_llm-test.md` 패턴은 위키 자체 lint 워크플로우(LLM 출력 회귀 검사)에 응용 가능.
+ 1. `wiki/syntheses/agent-stack-evolution.md` 갱신 — 4번째 사례(library self-hosted skill) 반영.
+ 2. SKILL.md 컨벤션이 c2spf `analytics-common-api` 코드베이스의 어느 부분과 충돌/일치하는지 점검(특히 `Annotated`, `response_model`, `ORJSONResponse` 사용 여부).
+ 3. fastapi-cli + Asyncer + SQLModel + Typer + HTTPX 묶음을 "Tiangolo Default Stack"으로 별도 종합 페이지화 후보.
+ 4. `_llm-test.md` 패턴은 위키 자체 lint 워크플로우(LLM 출력 회귀 검사)에 응용 가능.
 - **열린 질문**: SKILL.md의 권장이 c2spf의 기존 `result_code/message/data` envelope과 어떻게 결합될 수 있는가? envelope을 응답 모델로 만들고 generic으로 타입화하면 자동 OpenAPI 스키마와 충돌하지 않을지.

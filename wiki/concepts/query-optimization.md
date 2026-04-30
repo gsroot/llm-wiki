@@ -9,7 +9,6 @@ tags:
 - query-optimization
 - sql
 - predicate-pushdown
-- 25회차
 related:
 - '[[postgresql]]'
 - '[[duckdb]]'
@@ -31,7 +30,7 @@ cited_by_count: 5
 
 **Query Optimization** = SQL 또는 데이터프레임 쿼리를 의미는 동일하되 실행 비용은 더 낮은 등가 형태로 변환하는 일련의 룰·통계 기반 변환. 모든 OLTP/OLAP DB의 핵심.
 
-본 페이지는 **stub** — 15회차 [[postgresql]] / 16회차 [[duckdb]] / [[polars]] 등에서 인용되므로 정합성 stub.
+본 페이지는 **stub** — [[postgresql]] / [[duckdb]] / [[polars]] 등에서 인용되므로 정합성 stub.
 
 ## 5대 표준 최적화 룰
 
@@ -55,7 +54,7 @@ cited_by_count: 5
 ## 회사 BI 응용
 
 - BigQuery 쿼리 EXPLAIN 결과 읽기는 BI 개발자 핵심 기술
-- Polars `lf.explain()` / DuckDB `EXPLAIN ANALYZE`로 로컬에서도 옵티마이저 동작 검증 가능
+- Polars `lf.explain` / DuckDB `EXPLAIN ANALYZE`로 로컬에서도 옵티마이저 동작 검증 가능
 
 ## 관련 개념
 
@@ -71,5 +70,5 @@ cited_by_count: 5
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[query-optimization]]` 깨진 링크 발견. 29회차에 기존 source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[query-optimization]]` 깨진 링크 발견. 기존 source 기반으로 1차 보강.
 - 후속: BigQuery slot 기반 분산 실행과 Postgres genetic 옵티마이저 비교 종합 페이지 검토.

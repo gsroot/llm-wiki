@@ -8,7 +8,6 @@ type: entity
 entity_type: language
 tags:
 - python
-- 23회차
 related:
 - '[[fastapi]]'
 - '[[uv]]'
@@ -87,6 +86,6 @@ cited_by_count: 10
 
 ## 메모
 
-- 23회차 stub 사유: 위키 ~30개 엔티티가 Python 위에 빌드되어 `[[python]]` 참조. 29회차에 백엔드/데이터/ML/LLM source 8개 기반으로 1차 보강.
+- stub 사유: 위키 ~30개 엔티티가 Python 위에 빌드되어 `[[python]]` 참조. 백엔드/데이터/ML/LLM source 8개 기반으로 1차 보강.
 - 위키 안에서 Python의 위치 = "보이지 않는 호스트". 모든 백엔드/데이터/ML/LLM 페이지가 암묵적으로 Python을 가정.
 - 후속 작업: Python 3.13 GIL 옵션화(PEP 703) + free-threaded build의 본 위키 도구 영향 추적.

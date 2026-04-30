@@ -57,7 +57,7 @@ aliases:
 
 ## 한줄 요약
 
-> 21년차 ★11.8K Python SQL 툴킷·ORM. **Core(SQL 구성/DBAPI 추상)와 ORM(Unit of Work · Identity Map · Data Mapper) 이중 레이어** 구조로 raw SQL 자유와 객체 ORM 자동화를 양립시킨 사실상 표준 — Mike Bayer 1인 BDFL 거버넌스 + Python 표준 진영의 [[fastapi]](9회차) / SQLModel / [[alembic]](본 회차)와 묶이는 백엔드 표준 의존성.
+> 21년차 ★11.8K Python SQL 툴킷·ORM. **Core(SQL 구성/DBAPI 추상)와 ORM(Unit of Work · Identity Map · Data Mapper) 이중 레이어** 구조로 raw SQL 자유와 객체 ORM 자동화를 양립시킨 사실상 표준 — Mike Bayer 1인 BDFL 거버넌스 + Python 표준 진영의 [[fastapi]] / SQLModel / [[alembic]]()와 묶이는 백엔드 표준 의존성.
 
 ## 메타
 
@@ -119,7 +119,7 @@ README 5개 핵심 기능 중 첫 번째:
 - **Unit of Work** — Session에 변경 누적 → flush 시 한 번에 커밋
 - **Data Mapper** — 비즈니스 객체와 DB 매핑을 분리 (Active Record 반대)
 
-이는 [[scikit-learn]](11회차) "5가지 API 컨트랙트"와 같은 **"패턴 정의 + 19년+ 안정 유지"** 거버넌스 모델.
+이는 [[scikit-learn]] "5가지 API 컨트랙트"와 같은 **"패턴 정의 + 19년+ 안정 유지"** 거버넌스 모델.
 
 ### 3. SQLAlchemy 2.0 = unified API + async + Annotated 채택
 
@@ -127,7 +127,7 @@ README 5개 핵심 기능 중 첫 번째:
 
 - **`select(...)` 통합 API** — 1.x의 `Query` 객체 폐기 (점진적 마이그레이션)
 - **async 1급 시민** — `AsyncSession` + `AsyncEngine`
-- **Annotated 매핑** (PEP 593) — Pydantic V2 (본 회차)와 같은 패턴
+- **Annotated 매핑** (PEP 593) — Pydantic V2 ()와 같은 패턴
   ```python
   class User(Base):
       id: Mapped[int] = mapped_column(primary_key=True)
@@ -162,7 +162,7 @@ Surrogate (auto-increment id) 외에 **composite (여러 컬럼 조합) / natura
 
 ### 7. Mike Bayer 1인 BDFL 거버넌스
 
-[[scikit-learn]](11회차) BDFL = David Cournapeau, [[pandas]](8회차) BDFL = Wes McKinney와 같은 패턴. SQLAlchemy의 BDFL = Mike Bayer (zzzeek) — 21년간 1인 lead. Core/ORM 이중 레이어 디자인 결정 등 핵심 아키텍처가 한 사람의 비전. 다만 [[pandas-dev]] NumFOCUS 같은 nonprofit 후원은 SQLAlchemy에는 없음 — 순수 OSS + 컨설팅 사업 모델.
+[[scikit-learn]] BDFL = David Cournapeau, [[pandas]] BDFL = Wes McKinney와 같은 패턴. SQLAlchemy의 BDFL = Mike Bayer (zzzeek) — 21년간 1인 lead. Core/ORM 이중 레이어 디자인 결정 등 핵심 아키텍처가 한 사람의 비전. 다만 [[pandas-dev]] NumFOCUS 같은 nonprofit 후원은 SQLAlchemy에는 없음 — 순수 OSS + 컨설팅 사업 모델.
 
 ## 인사이트
 
@@ -211,17 +211,17 @@ SQLAlchemy `docs/glossary.rst`는 ORM 도메인 어휘의 **사실상 표준 사
 
 ### Insight 6: SQLAlchemy → SQLModel 통합 (FastAPI 진영)
 
-[[fastapi]](9회차) Tiangolo가 만든 **SQLModel**은 SQLAlchemy + Pydantic 통합 라이브러리:
+[[fastapi]] Tiangolo가 만든 **SQLModel**은 SQLAlchemy + Pydantic 통합 라이브러리:
 
 - SQLAlchemy 모델 = Pydantic 모델 (한 클래스)
 - DB 매핑 + API 직렬화 + 검증 = 단일 클래스 정의
-- FastAPI 디폴트 스택의 일부 (9회차 SKILL.md)
+- FastAPI 디폴트 스택의 일부
 
-본 회차 SQLAlchemy 단독 수집 후 SQLModel은 별도 회차 또는 fastapi.md 갱신 시 보강.
+SQLAlchemy 단독 수집 후 SQLModel은 또는 fastapi.md 갱신 시 보강.
 
 ### Insight 7: Postgres / SQLite / MySQL을 가리지 않는 dialect 시스템
 
-`README.dialects.rst`는 **새 DB 백엔드 dialect 작성 가이드**. 즉 SQLAlchemy 추상은 RDBMS만이 아닌 어떤 SQL-like 백엔드도 적용 가능 — BigQuery dialect (`sqlalchemy-bigquery`), DuckDB dialect (`duckdb-engine`, 16회차), ClickHouse / Snowflake / Redshift 등 OLAP. 이는 회사 BI에서 **"OLTP (PostgreSQL) + OLAP (BigQuery/DuckDB) 같은 SQLAlchemy 코드"**가 가능함을 의미.
+`README.dialects.rst`는 **새 DB 백엔드 dialect 작성 가이드**. 즉 SQLAlchemy 추상은 RDBMS만이 아닌 어떤 SQL-like 백엔드도 적용 가능 — BigQuery dialect (`sqlalchemy-bigquery`), DuckDB dialect, ClickHouse / Snowflake / Redshift 등 OLAP. 이는 회사 BI에서 **"OLTP (PostgreSQL) + OLAP (BigQuery/DuckDB) 같은 SQLAlchemy 코드"**가 가능함을 의미.
 
 ## 인용 (raw에서 직접 발췌)
 
@@ -268,8 +268,8 @@ c2spf-analytics가 현재 SQLAlchemy + Pydantic 분리 모델이라면 SQLModel 
 
 ### 가설 3: BigQuery Reflection으로 자동 dataclass 생성
 
-`MetaData.reflect()` 패턴을 BigQuery에 적용 — BigQuery 데이터셋 reflect → SQLAlchemy 메타 → Pydantic 모델 자동 생성 → FastAPI 엔드포인트에 직접 사용. 게임 데이터 스키마 변경 시 모델 코드 자동 동기화.
+`MetaData.reflect` 패턴을 BigQuery에 적용 — BigQuery 데이터셋 reflect → SQLAlchemy 메타 → Pydantic 모델 자동 생성 → FastAPI 엔드포인트에 직접 사용. 게임 데이터 스키마 변경 시 모델 코드 자동 동기화.
 
 ## 메모
 
-본 회차는 [[fastapi]](9회차) / [[pydantic]](본 회차) / [[alembic]](본 회차)와 한 묶음 — Python 백엔드 4축의 마지막 한 축. SQLAlchemy 단독은 21년 거버넌스 + Core/ORM 분리가 핵심이지만, 회사 BI 적용 가치는 다른 라이브러리와 통합되는 지점 (SQLModel / FastAPI 의존성 / Alembic 마이그레이션).
+[[fastapi]] / [[pydantic]]() / [[alembic]]()와 한 묶음 — Python 백엔드 4축의 마지막 한 축. SQLAlchemy 단독은 21년 거버넌스 + Core/ORM 분리가 핵심이지만, 회사 BI 적용 가치는 다른 라이브러리와 통합되는 지점 (SQLModel / FastAPI 의존성 / Alembic 마이그레이션).

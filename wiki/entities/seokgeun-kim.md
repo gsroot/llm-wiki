@@ -72,11 +72,11 @@ cited_by_count: 44
 
 - **현 직책**: 컴투스플랫폼 게임 데이터 BI 서비스 개발자 (2017-05 ~ 현재).
 - **전문 영역**
-  - Python 백엔드 (FastAPI · Flask · Django · SQLAlchemy · Pytest)
-  - Java 백엔드 (Spring Boot · MyBatis · JPA)
-  - 게임 데이터 분석/BI (BigQuery · ag-grid · Highcharts)
-  - ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)
-  - 블록체인 (XPLA · Rust 스마트 컨트랙트 · NestJS/TypeORM)
+ - Python 백엔드 (FastAPI · Flask · Django · SQLAlchemy · Pytest)
+ - Java 백엔드 (Spring Boot · MyBatis · JPA)
+ - 게임 데이터 분석/BI (BigQuery · ag-grid · Highcharts)
+ - ML/AI (GCP AutoML · AI Platform Pipeline · LangGraph · OpenAI API)
+ - 블록체인 (XPLA · Rust 스마트 컨트랙트 · NestJS/TypeORM)
 - **관심 분야**: 파이썬, AI, 데이터 분석, 개인 비서 AI 서비스 개발.
 - **개발 환경**: 회사 맥북 / 집 윈도우, IDE는 Antigravity와 Claude Code.
 - **선호 스택**: Python, FastAPI, 바이브 코딩. 32 OSS 6분류 카탈로그와 30분 부트스트랩 시나리오는 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]]에 정형화됨. 9년 커리어 의사결정 지도는 [[portfolio]] hub에서 1-hop 도달.
@@ -138,7 +138,7 @@ cited_by_count: 44
 - AI 호칭은 회사 직급 호칭보다 친구처럼 자연스러운 "석근" 또는 이름 호칭을 선호한다.
 - MateChat 관련 의사결정에서는 기능 추가보다 실제 사용자 검증과 지속 가능한 운영 리듬을 우선한다.
 
-## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+## 인용한 페이지 (cited_by)
 
 - [[agent-skills]]
 - [[astral]]

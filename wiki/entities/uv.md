@@ -142,14 +142,13 @@ CHANGELOG v0.11.6 (2026-04-09): wheel RECORD 파싱 취약점 advisory(GHSA-pjjw
 > - **`tool.uv.sources` vs PEP 표준**: uv 고유 확장 (git/path/index alternative source). 다른 도구로의 마이그레이션 시 lockfile 호환성 깨짐. Astral은 PEP 표준화 추진 중이라 함.
 > - **Rust 의존도**: uv는 Python 도구이지만 본체는 Rust. Python 코어 컨트리뷰터 충원 채널은 별개. 일부 Python 커뮤니티에서 "Python의 미래가 Rust에 의존하는가" 논쟁 진행 중.
 
-
 ## 메모
 
 - **회사 BI 마이그레이션 가설**: [[c2spf-analytics]] FastAPI 백엔드 + Jenkins CI 환경에서 pip → uv 전환 시 효과 추정:
-  - Cold install 시간: 5분 → 10초 수준 (CI 단축 효과 직접)
-  - lockfile universal로 macOS 개발 / Linux Docker 일관성 보장
-  - `dependency-groups`로 `[dev]`, `[ml]`, `[bi]` 등 task별 의존성 분리
-  - 적용 가능성: **High** — pyproject.toml만 정비하면 거의 drop-in
+ - Cold install 시간: 5분 → 10초 수준 (CI 단축 효과 직접)
+ - lockfile universal로 macOS 개발 / Linux Docker 일관성 보장
+ - `dependency-groups`로 `[dev]`, `[ml]`, `[bi]` 등 task별 의존성 분리
+ - 적용 가능성: **High** — pyproject.toml만 정비하면 거의 drop-in
 - **개인 비서 워크플로우**: PEP 723 + `uv run` 패턴이 [[karpathy-autoresearch]]식 단일 파일 실험 루프의 Python판 인프라
 - **위키 자기 인용**: 향후 `/wiki-ingest` 슬래시 커맨드를 Python 스크립트로 구현한다면 PEP 723 + uv run 패턴이 답
 - **버전 추적 가치**: v0.x 단계임에도 prod-ready로 광범위 채택. 1.0 이전이지만 사실상 안정. 향후 1.0 릴리스가 의미하는 변화 추적 가치

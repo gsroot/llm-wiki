@@ -11,8 +11,6 @@ aliases:
 tags:
 - tanstack
 - react
-- 25회차
-- 50회차
 related:
 - '[[tanstack-query]]'
 - '[[react]]'
@@ -31,7 +29,7 @@ cited_by_count: 4
 
 **TanStack**은 Tanner Linsley가 운영하는 **헤드리스 OSS 패키지 모음**. [[tanstack-query]] 외에 12개 이상의 멀티 프레임워크 헤드리스 라이브러리(Table / Router / Form / Virtual / Ranger 등)를 동일 메인테이너 + 어댑터 전략으로 통합.
 
-본 페이지는 **stub** — TanStack 조직 페이지가 raw 수집 대상이 아닌 상태에서 22회차 [[tanstack-query]] / [[tanstack-query]] source 페이지가 참조하므로 정합성 stub으로 등록.
+본 페이지는 **stub** — TanStack 조직 페이지가 raw 수집 대상이 아닌 상태에서 [[tanstack-query]] / [[tanstack-query]] source 페이지가 참조하므로 정합성 stub으로 등록.
 
 ## 12+ 패키지 생태계
 
@@ -46,11 +44,11 @@ cited_by_count: 4
 | TanStack Store | 미니멀 상태관리 (Zustand 대안) |
 | TanStack DB / Pacer / Match-sorter / Config / Devtools / Start | 보조 도구 |
 
-## 거버넌스 (22회차 발견)
+## 거버넌스
 
 - 단일 메인테이너 (Tanner Linsley) + 어댑터 전략 — React/Solid/Svelte/Vue 4 프레임워크 동시 지원
 - 후원 모델: GitHub Sponsors + Open Collective + Vercel 부분 협력
-- 22회차 누적 10 거버넌스 모델 중 **단독 메인테이너 모델의 대표** (Daishi의 [[zustand]]와 비슷, [[shadcn-ui]] (단독)과 다른 점은 12+ 패키지 폭)
+- 누적 10 거버넌스 모델 중 **단독 메인테이너 모델의 대표** (Daishi의 [[zustand]]와 비슷, [[shadcn-ui]] (단독)과 다른 점은 12+ 패키지 폭)
 
 ## 관련 개념
 
@@ -63,5 +61,5 @@ cited_by_count: 4
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[tanstack]]` 깨진 링크 발견. 29회차에 TanStack Query source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[tanstack]]` 깨진 링크 발견. TanStack Query source 기반으로 1차 보강.
 - 후속: TanStack Router (타입 안전 라우팅) 또는 TanStack Form은 [[seokgeun-stack-guide|석근 32 OSS 스택 카탈로그]] React 진영 부트스트랩에 추가 검토 가치.

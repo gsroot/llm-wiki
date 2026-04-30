@@ -2,7 +2,7 @@
 title: "LangChain"
 type: entity
 entity_type: tool
-tags: [langchain, LLM-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md, 17회차]
+tags: [langchain, LLM-framework, agent, langchain-inc, monorepo, langsmith, deepagents, agents-md, claude-md]
 aliases: [LangChain, langchain, 랭체인]
 related:
   - "[[langgraph]]"
@@ -59,7 +59,7 @@ libs/
 - **회사**: LangChain Inc. (창업자 Harrison Chase)
 - **License**: MIT
 - **모델**: OSS + SaaS 듀얼 (OSS=LangChain, SaaS=LangSmith)
-- **AGENTS.md = CLAUDE.md 동기화** (292줄, 14회차 OpenAI Agents Python 패턴 확산)
+- **AGENTS.md = CLAUDE.md 동기화**
 
 ### 기술 스택
 - 언어: Python 3.10+ (별도 langchain.js)
@@ -91,11 +91,11 @@ libs/
 
 ## 출처
 
-- [[langchain-ai-langchain]] — 17회차 수집, README + AGENTS.md (376줄)
+- [[langchain-ai-langchain]] — 수집, README + AGENTS.md (376줄)
 
 ## 메모
 
 - **석근님 사이드 프로젝트 적용**: AI 비서 프로젝트의 "프레임워크 선택"에서 LangChain은 최대 통합 폭. 단점은 추상화 깊이 → 디버깅 난이도. 단순 프로젝트는 [[openai-agents-python]] 또는 [[fastmcp]] 직접 사용이 더 빠를 수 있음.
 - **LangSmith 의존성 주의**: production observability를 LangSmith에 의존하면 SaaS 락인. self-hosted 옵션 확인 필요.
 - **classic vs v1**: `langchain` (classic, no new features)에서 마이그레이션 부담 있음. 새 프로젝트는 `langchain_v1` 시작.
-- 향후 위키 확장: LangSmith 별도 entity, langchain.js, DeepAgents 별도 entity (18회차 예정).
+- 향후 위키 확장: LangSmith 별도 entity, langchain.js, DeepAgents 별도 entity.

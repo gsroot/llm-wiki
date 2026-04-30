@@ -26,7 +26,6 @@ tags:
 - logfire
 - agents-md
 - claude-md
-- 18회차
 inbound_count: 15
 cited_by:
 - '[[agent-frameworks-matrix]]'
@@ -80,7 +79,7 @@ diff raw/articles/pydantic-pydantic-ai/AGENTS.md raw/articles/pydantic-pydantic-
 # (no output — identical)
 ```
 
-→ **18회차 동기화 OSS 6개 그룹 합류**:
+→ **동기화 OSS 6개 그룹 합류**:
 1. langchain (292줄)
 2. langgraph (57줄)
 3. deepagents (364줄)
@@ -94,7 +93,7 @@ Pydantic AI는 README 9번 강점에서 **durable execution을 1급으로 명시
 
 > "preserve their progress across transient API failures and application errors or restarts, and handle long-running, asynchronous, and human-in-the-loop workflows with production-grade reliability"
 
-→ **LangGraph 17회차에서 정의된 12번째 agent 패턴 (state-machine + durable execution)에 Pydantic AI도 합류**. 이제 12번째 패턴은 LangGraph 단독이 아닌 **Pydantic AI + LangGraph 양강 구도**.
+→ **LangGraph 정의된 12번째 agent 패턴 (state-machine + durable execution)에 Pydantic AI도 합류**. 이제 12번째 패턴은 LangGraph 단독이 아닌 **Pydantic AI + LangGraph 양강 구도**.
 
 11번 강점 "Graph Support"도 마찬가지: type-hint 기반 graph로 LangGraph의 동등 추상화.
 
@@ -123,7 +122,7 @@ agent = Agent(model="anthropic:claude-sonnet-4-6", capabilities=[search_capabili
 >
 > "to bring that FastAPI feeling to GenAI app and agent development"
 
-## 18회차 핵심 발견 (3가지)
+## 핵심 발견 (3가지)
 
 1. **6번째 AGENTS.md=CLAUDE.md 동기화** (Pydantic AI 합류) — 패턴 확산 가속
 2. **12번째 패턴(durable execution) 양강 구도** — LangGraph + Pydantic AI

@@ -177,7 +177,7 @@ irm https://claude.ai/install.ps1 | iex
 - LLM 위키에서의 역할: Obsidian이 IDE, Claude Code가 프로그래머, 위키가 코드베이스.
 - Cowork도 위키 에이전트로 병행 사용 가능 (외출 시).
 
-## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+## 인용한 페이지 (cited_by)
 
 - [[agent-patterns]]
 - [[agent-skills]]

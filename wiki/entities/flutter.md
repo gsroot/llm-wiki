@@ -22,7 +22,6 @@ tags:
 - vendor-neutral
 - riverpod
 - mate-chat
-- 22회차
 related:
 - '[[dart]]'
 - '[[google]]'

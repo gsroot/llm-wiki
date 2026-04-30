@@ -48,14 +48,14 @@ aliases:
 - **기간/역할**: 2022-05 ~ 2024-03. NFT 지갑 관리 백엔드 개발, Discord 봇 기능 통합, 투표 스마트 컨트랙트 개발.
 - **기술 스택**: Node.js(NestJS, TypeORM), Python(Discord.py, FastAPI, Pytest), MySQL, Redis, Fluentd, Docker, Rust, TypeScript, ElasticSearch, Kibana.
 - **핵심 성과**
-  - **Rust 기반 투표 스마트 컨트랙트 최적화로 가스비 ~90% 절감** — 사용자 비용 감소 + 투명한 의사결정 구조 제공.
-  - Discord 홀더 인증 봇 상용화 — 커뮤니티 인증 확장성 확보. 다양한 인증 방식으로 확장 가능한 아키텍처 설계.
-  - GCPNFT 이슈 229/231 Done — 높은 완결성으로 프로젝트 종료.
-  - 기존 컨테이너 관리 방식 개선으로 배포 효율성·생산성 향상.
+ - **Rust 기반 투표 스마트 컨트랙트 최적화로 가스비 ~90% 절감** — 사용자 비용 감소 + 투명한 의사결정 구조 제공.
+ - Discord 홀더 인증 봇 상용화 — 커뮤니티 인증 확장성 확보. 다양한 인증 방식으로 확장 가능한 아키텍처 설계.
+ - GCPNFT 이슈 229/231 Done — 높은 완결성으로 프로젝트 종료.
+ - 기존 컨테이너 관리 방식 개선으로 배포 효율성·생산성 향상.
 - **증거 (portfolio 저장소 내 경로)**
-  - `docs/20-projects/com2us-platform/2022-05-nft-market.md` — 프로젝트 통합 문서
-  - `docs/40-stories/problem-solving-gas-fee-optimization.md` — 가스비 최적화 STAR 스토리
-  - Jira: GCPNFT-1971, GCPNFT-1401, GCPNFT-1248, GCPNFT-983 등
+ - `docs/20-projects/com2us-platform/2022-05-nft-market.md` — 프로젝트 통합 문서
+ - `docs/40-stories/problem-solving-gas-fee-optimization.md` — 가스비 최적화 STAR 스토리
+ - Jira: GCPNFT-1971, GCPNFT-1401, GCPNFT-1248, GCPNFT-983 등
 
 ## 주요 인사이트
 

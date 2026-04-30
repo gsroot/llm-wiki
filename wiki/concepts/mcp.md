@@ -155,7 +155,7 @@ Claude Code 공식 문서에 따르면 MCP는 단순 검색을 넘어 다양한 
 
 - MCP 서버를 직접 만들어 위키 전용 도구(페이지 생성, 링크 체크 등)를 노출하면 수집 워크플로우를 더 자동화할 수 있을까?
 
-## 인용한 페이지 (cited_by — 51회차 자동 갱신)
+## 인용한 페이지 (cited_by)
 
 - [[agent-frameworks-matrix]]
 - [[agent-patterns]]

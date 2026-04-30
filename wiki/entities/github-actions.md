@@ -12,7 +12,6 @@ tags:
 - runner
 - toolkit
 - devops
-- 19회차
 related:
 - '[[docker]]'
 - '[[devops-cicd]]'
@@ -31,7 +30,7 @@ cited_by_count: 7
 
 ## 개요
 
-GitHub Actions(GHA)는 GitHub(2018 출시, 2019 GA)이 운영하는 CI/CD 서비스이자 분산 OSS 생태계. `actions/runner` (.NET Core executor) + `actions/toolkit` (TypeScript SDK) + `actions/checkout` 등 수만 개 third-party action으로 구성된다. 단일 megamonolith 저장소가 없는 19회차의 유일한 항목으로, 실제 가이드는 docs.github.com이 SSOT.
+GitHub Actions(GHA)는 GitHub(2018 출시, 2019 GA)이 운영하는 CI/CD 서비스이자 분산 OSS 생태계. `actions/runner` (.NET Core executor) + `actions/toolkit` (TypeScript SDK) + `actions/checkout` 등 수만 개 third-party action으로 구성된다. 단일 megamonolith 저장소가 없는 유일한 항목으로, 실제 가이드는 docs.github.com이 SSOT.
 
 ## 주요 특징
 
@@ -50,7 +49,7 @@ GitHub Actions(GHA)는 GitHub(2018 출시, 2019 GA)이 운영하는 CI/CD 서비
 
 - [[docker]]: Docker action / Container job / `setup-buildx-action` 등 컨테이너 통합 핵심.
 - [[devops-cicd]]: GHA = OSS 진영 CI/CD의 사실상 표준.
-- [[observability-and-cicd-stack]]: 19회차 종합의 CI/CD 자동화 레이어.
+- [[observability-and-cicd-stack]]: 종합의 CI/CD 자동화 레이어.
 
 ## actions/toolkit 핵심 패키지 (TypeScript SDK)
 
@@ -69,7 +68,7 @@ GitHub Actions(GHA)는 GitHub(2018 출시, 2019 GA)이 운영하는 CI/CD 서비
 
 정적 credential 없이 AWS STS / GCP Workload Identity / Azure AD 토큰 발급 가능. 컴투스 플랫폼 BI에서 IAM 토큰 관리 단순화 가능 — `aws-actions/configure-aws-credentials@v4`.
 
-## 19회차 운영 진영 CI/CD 비교
+## 운영 진영 CI/CD 비교
 
 | 도구 | 위치 | OSS | AGENTS.md |
 | --- | --- | --- | --- |
@@ -89,4 +88,4 @@ GitHub Actions(GHA)는 GitHub(2018 출시, 2019 GA)이 운영하는 CI/CD 서비
 - BI 적용 핵심: c2spf-analytics 배포 자동화 (PR push → pytest → Docker build → S3/ECR push → 운영 환경 deploy).
 - Self-hosted runner를 회사 VPC 내에 두면 보안 경계 안에서 BI 파이프라인 자동화 가능.
 - `@actions/cache`로 pip 의존성 캐시(빌드 5배 빠름), `@actions/artifact`로 분석 결과 워크플로우 간 공유 가능.
-- 21회차 점검 시 "GHA workflow YAML LLM 자동 생성 패턴" 정리 필요 — AGENTS.md가 없으므로 별도 가이드.
+- 점검 시 "GHA workflow YAML LLM 자동 생성 패턴" 정리 필요 — AGENTS.md가 없으므로 별도 가이드.

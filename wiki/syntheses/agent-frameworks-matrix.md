@@ -1,5 +1,5 @@
 ---
-title: Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장)
+title: Agent Frameworks Matrix — 6 프레임워크 정량 비교
 type: synthesis
 category: ai
 tags:
@@ -17,8 +17,6 @@ tags:
 - durable-execution
 - state-machine
 - mcp
-- 17회차
-- 18회차
 sources:
 - '[[langchain-ai-langgraph]]'
 - '[[langchain-ai-langchain]]'
@@ -37,11 +35,11 @@ related:
 - '[[mcp]]'
 ---
 
-# Agent Frameworks Matrix — 6 프레임워크 정량 비교 (2차, 18회차 6×N 확장)
+# Agent Frameworks Matrix — 6 프레임워크 정량 비교
 
-> **17회차 1차** — LangGraph + OpenAI Agents SDK 비교. **18회차 2차 확장** — DeepAgents / CrewAI / Pydantic AI / PandasAI 4개 추가 → **6 프레임워크 + FastMCP/LangChain 직교 layer 동시 매트릭스**.
+> **1차** — LangGraph + OpenAI Agents SDK 비교. **2차 확장** — DeepAgents / CrewAI / Pydantic AI / PandasAI 4개 추가 → **6 프레임워크 + FastMCP/LangChain 직교 layer 동시 매트릭스**.
 
-## 1. 큰 그림 (18회차 확장)
+## 1. 큰 그림
 
 이제 6개 agent 프레임워크 + 2개 직교 layer가 동일 매트릭스에 들어옴:
 
@@ -57,7 +55,7 @@ related:
 - **FastMCP**: 도구 layer (모든 프레임워크가 의존)
 - **LangChain**: 모델 추상화 + partners 생태계
 
-## 2. 정량 비교 매트릭스 (6×N — 18회차 확장)
+## 2. 정량 비교 매트릭스
 
 ### 2-1. Agent runtime/SDK 6종 (수평 확장)
 
@@ -71,7 +69,7 @@ related:
 | **본질** | state machine 엔진 | multi-agent SDK | LangGraph 프리셋 | role-playing | type-safe SDK | DataFrame 어댑터 |
 | **상태 모델** | 명시적 State graph | RunState (SCHEMA_VERSION) | LangGraph 상속 | Crew/Flow 자체 | type-hint graph | DataFrame |
 | **영속성** | **checkpoint 1급** | RunState 직렬화 | LangGraph 상속 1급 | Crew Control Plane | **durable execution 1급** | (없음) |
-| **HITL** | `interrupt()` 1급 | 3종 reference | LangGraph 상속 | Flow event 시스템 | **Tool Approval 1급** | (없음) |
+| **HITL** | `interrupt` 1급 | 3종 reference | LangGraph 상속 | Flow event 시스템 | **Tool Approval 1급** | (없음) |
 | **Type-safety** | ★ | ★★ | ★ | ★ | **★★★ (압도적)** | ★ |
 | **Model-agnostic** | ★★ (LC partners) | ★ (OpenAI 락인) | ★★ (LC) | ★★ (자체) | **★★★ (~25 provider)** | ★★★ (LiteLLM) |
 | **Reference 패턴 수** | (그래프 자체) | **11종 (Anthropic 5 + OpenAI 6)** | 4종 도구 빌트인 | Crews/Flows 변형 | 11가지 자기 강점 | (특화) |
@@ -96,7 +94,7 @@ related:
 | AGENTS.md=CLAUDE.md | ✅ symlink 168줄 | ✅ 292줄 |
 | OSS+SaaS | Prefect Horizon | LangSmith |
 
-## 2-3. 18회차 횡단 발견 (5가지)
+## 2-3. 횡단 발견 (5가지)
 
 1. **AGENTS.md=CLAUDE.md 동기화 = 6개 OSS 표준** — LangChain/LangGraph/DeepAgents/FastMCP/OpenAI Agents/Pydantic AI 모두 채택. CrewAI/PandasAI 미채택 (LangChain 진영 + OpenAI/Pydantic 진영 vs 독립 진영의 거버넌스 분기점)
 2. **5번째 OSS+SaaS 듀얼** — Crew Control Plane 추가 (Polars/DuckDB/LangChain/FastMCP/CrewAI). Pydantic Logfire는 6번째.
@@ -111,8 +109,8 @@ related:
 |------|-----------|---------------------|
 | Prompt Chaining | `StateGraph` 순차 노드 | `examples/agent_patterns/deterministic.py` |
 | Routing | conditional edge | `examples/agent_patterns/routing.py` |
-| Parallelization | `Send()` API | `examples/agent_patterns/parallelization.py` |
-| Orchestrator-Workers | sub-graph + `Send()` | `examples/agent_patterns/agents_as_tools.py` (4종 변형) |
+| Parallelization | `Send` API | `examples/agent_patterns/parallelization.py` |
+| Orchestrator-Workers | sub-graph + `Send` | `examples/agent_patterns/agents_as_tools.py` (4종 변형) |
 | Evaluator-Optimizer | conditional loop | `examples/agent_patterns/llm_as_a_judge.py` |
 
 ### OpenAI 확장 6 패턴
@@ -121,22 +119,22 @@ related:
 | Input Guardrail | input validation node | `input_guardrails.py` |
 | Output Guardrail | output validation node | `output_guardrails.py` |
 | Streaming Guardrail | streaming + interrupt | `streaming_guardrails.py` |
-| HITL (approval) | `interrupt()` API | `human_in_the_loop.py` |
+| HITL (approval) | `interrupt` API | `human_in_the_loop.py` |
 | HITL (rejection) | conditional + interrupt | `human_in_the_loop_custom_rejection.py` |
 | Forced tool use | `tool_calls` 강제 | `forcing_tool_use.py` |
 
-### LangGraph 12번째 패턴 (17회차 추가)
+### LangGraph 12번째 패턴
 | 패턴 | LangGraph (네이티브) | OpenAI Agents SDK |
 |------|---------------------|---------------------|
-| **State-Machine + Durable Execution** | **checkpoint(Postgres/SQLite)** + `interrupt()` 1급 | RunState 직렬화로 부분 지원 |
+| **State-Machine + Durable Execution** | **checkpoint(Postgres/SQLite)** + `interrupt` 1급 | RunState 직렬화로 부분 지원 |
 
 → **12번째 패턴은 LangGraph가 사실상 정의한 영역**. OpenAI Agents SDK는 RunState로 **부분 지원**하나 production checkpoint backend는 미내장.
 
-## 4. 의사결정 트리 (18회차 6×N 갱신)
+## 4. 의사결정 트리
 
 ```
 Q1: NL2DataFrame BI PoC를 만들고 싶은가?
-  YES → PandasAI (df.chat() 한 줄, 가장 빠름)
+  YES → PandasAI (df.chat 한 줄, 가장 빠름)
   NO ↓
 
 Q2: type-safety가 최우선인가? (Rust/static analysis 선호)
@@ -234,7 +232,7 @@ def search_notion(query: str) -> str: ...
 
 → FastMCP 단독. Cursor/Claude Code 클라이언트 sandbox.
 
-## 7. 결론 (18회차 6×N 시점)
+## 7. 결론
 
 6 프레임워크가 **3개 그룹**으로 자연스럽게 나뉨:
 
@@ -255,16 +253,16 @@ def search_notion(query: str) -> str: ...
 - **FastMCP**: 도구 layer (모든 프레임워크가 의존)
 - **LangChain**: 그룹 A에 속하나 독립 사용 가능
 
-## 8. 석근님 c2spf-analytics 권장 (18회차 갱신)
+## 8. 석근님 c2spf-analytics 권장
 
 이전 권장: LangGraph + FastMCP + LangChain 3-layer
 
-**18회차 갱신 권장 — 단계별 마이그레이션**:
+**갱신 권장 — 단계별 마이그레이션**:
 
 ```
 Stage 1 (PoC, 1주):
   PandasAI + LiteLLM
-  → df.chat() 한 줄로 BigQuery → NL2 결과 즉시 검증
+  → df.chat 한 줄로 BigQuery → NL2 결과 즉시 검증
 
 Stage 2 (개발, 1개월):
   Pydantic AI + Logfire
@@ -282,19 +280,19 @@ Stage 3 (운영, 분기):
 
 ## 출처
 
-- [[langchain-ai-langgraph]] — LangGraph (17회차)
-- [[langchain-ai-langchain]] — LangChain (17회차)
-- [[langchain-ai-deepagents]] — DeepAgents (18회차)
-- [[openai-openai-agents-python]] — OpenAI Agents SDK (14회차)
-- [[jlowin-fastmcp]] — FastMCP (17회차)
-- [[crewaiinc-crewai]] — CrewAI (18회차)
-- [[pydantic-pydantic-ai]] — Pydantic AI (18회차)
-- [[sinaptik-ai-pandas-ai]] — PandasAI (18회차)
+- [[langchain-ai-langgraph]] — LangGraph
+- [[langchain-ai-langchain]] — LangChain
+- [[langchain-ai-deepagents]] — DeepAgents
+- [[openai-openai-agents-python]] — OpenAI Agents SDK
+- [[jlowin-fastmcp]] — FastMCP
+- [[crewaiinc-crewai]] — CrewAI
+- [[pydantic-pydantic-ai]] — Pydantic AI
+- [[sinaptik-ai-pandas-ai]] — PandasAI
 - [[agent-patterns]] — 12 패턴 (Anthropic 5 + OpenAI 6 + LangGraph 1)
 - [[mcp]] — Model Context Protocol
 
 ## 후속 작업
 
-- 19/20/21회차로 운영(Docker/Prometheus/Grafana/Sentry) + 프론트(Riverpod/Next.js/Tanstack/Zustand/Shadcn) + 마무리
+- 운영(Docker/Prometheus/Grafana/Sentry) + 프론트(Riverpod/Next.js/Tanstack/Zustand/Shadcn) + 마무리
 - 실제 c2spf-analytics PoC 코드 작성 → BigQuery NL2SQL Pydantic AI reference
 - Temporal vs LangGraph vs Pydantic AI durable execution 3자 정량 비교

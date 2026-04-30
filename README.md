@@ -25,10 +25,20 @@ llm-wiki/
 │   ├── concepts/      # 개념, 기술, 방법론
 │   ├── sources/       # 소스별 요약
 │   ├── syntheses/     # 종합 분석
-│   ├── logs/log.md    # 활동 로그
 │   └── index.md       # 전체 카탈로그
+├── scripts/           # 점검 자동화 (wiki-lint.py)
 └── templates/         # 페이지 템플릿
 ```
+
+## 5축 구조
+
+위키는 5개 핵심축으로 구성됩니다 (`wiki/index.md` 참조).
+
+1. **개인 프로필** — 위키 소유자 정체성·운영 원칙·커리어
+2. **포트폴리오** — 회사 BI(c2spf-analytics)·블록체인·이력서·상세 포트폴리오
+3. **스택 가이드** — OSS 카탈로그 + 시나리오별 의사결정 트리
+4. **MateChat** — 사이드 프로젝트 (AI 소셜 메시징)
+5. **LLM 인프라 메타** — 1-4축에 직교하는 메타 layer (agent-skills · harness · mcp · claude-code)
 
 ## 사용법
 
@@ -36,15 +46,19 @@ llm-wiki/
 
 1. `raw/` 하위 폴더에 소스 파일을 넣는다
 2. LLM에게 "수집해줘"라고 지시한다
-3. LLM이 소스 요약, 엔티티/개념 페이지 생성·업데이트, 인덱스·로그 갱신을 수행한다
+3. LLM이 소스 요약, 엔티티/개념 페이지 생성·업데이트, 인덱스 갱신을 수행한다
 
 ### 질문하기 (질의)
 
-위키에 대해 자유롭게 질문하면, LLM이 인덱스에서 관련 페이지를 찾아 종합 답변을 제공한다.
+위키에 대해 자유롭게 질문하면, LLM이 인덱스에서 관련 페이지를 찾아 종합 답변을 제공합니다.
 
 ### 상태 점검 (Lint)
 
-"점검해줘"라고 요청하면 깨진 링크, 고아 페이지, 모순, 빈약한 페이지 등을 확인하고 개선안을 제시한다.
+```bash
+python3 scripts/wiki-lint.py --check    # 결함 검증
+python3 scripts/wiki-lint.py --report   # 인바운드 분포 + 5축 통계
+python3 scripts/wiki-lint.py --update   # 자동 필드 (cited_by, inbound_count) 갱신
+```
 
 ## 규칙
 

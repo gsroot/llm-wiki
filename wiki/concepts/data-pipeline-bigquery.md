@@ -53,21 +53,21 @@ GCP BigQuery를 핵심 데이터 웨어하우스로 두고, 게임 로그 수집
 ## 핵심 내용
 
 - **저장소 계층**
-  - Operational: MySQL · MariaDB · PostgreSQL · Redis (캐시/큐)
-  - Analytical: GCP BigQuery (메인), GCP Storage (다운로드 결과 파일).
+ - Operational: MySQL · MariaDB · PostgreSQL · Redis (캐시/큐)
+ - Analytical: GCP BigQuery (메인), GCP Storage (다운로드 결과 파일).
 - **수집/가공**
-  - 게임 클라이언트 로그 → 로그 수집 파이프라인 → BigQuery 저장.
-  - Airbridge MMP 데이터 결합으로 광고 성과 분석 (2025-01).
-  - HiveQL 기반 분산 쿼리 경험(줌인터넷).
+ - 게임 클라이언트 로그 → 로그 수집 파이프라인 → BigQuery 저장.
+ - Airbridge MMP 데이터 결합으로 광고 성과 분석 (2025-01).
+ - HiveQL 기반 분산 쿼리 경험(줌인터넷).
 - **워크플로 오케스트레이션**
-  - Digdag (게임 정보 동기화 스케줄러, 2018-07~08).
-  - Celery (대용량 다운로드 비동기 워커, 2019).
-  - GCP AI Platform Pipeline (ML 예측 MLOps, 2020~2021).
+ - Digdag (게임 정보 동기화 스케줄러, 2018-07~08).
+ - Celery (대용량 다운로드 비동기 워커, 2019).
+ - GCP AI Platform Pipeline (ML 예측 MLOps, 2020~2021).
 - **운영 트릭**
-  - BigQuery `Decimal` 타입 변환 규칙 정립.
-  - 피벗 축 NULL 플레이스홀더 처리.
-  - 슬레이브 DB 동기화 지연 대응(쿼리 라우팅, 재시도).
-  - OS별 TCP Keepalive 설정 차이.
+ - BigQuery `Decimal` 타입 변환 규칙 정립.
+ - 피벗 축 NULL 플레이스홀더 처리.
+ - 슬레이브 DB 동기화 지연 대응(쿼리 라우팅, 재시도).
+ - OS별 TCP Keepalive 설정 차이.
 
 ## 실전 적용
 
@@ -96,13 +96,13 @@ GCP BigQuery를 핵심 데이터 웨어하우스로 두고, 게임 로그 수집
 2. **Efficient datatypes**: low-cardinality 텍스트 → `Categorical`, numeric → `pd.to_numeric(downcast="...")` (~1/5 메모리)
 3. **Chunking**: 연도별 parquet 디렉터리에서 `glob.iglob` + 청크별 `value_counts.add(fill_value=0)` — out-of-core 가능
 4. **다른 라이브러리로 전환**:
-   - `import modin.pandas as pd` (한 줄 변경, 멀티코어/클러스터)
-   - **bigframes**: 데이터를 BigQuery에 두고 pandas 코드만 컴파일 (석근님 BI 환경에 가장 fit)
-   - Dask/Bodo: 분산/HPC
+ - `import modin.pandas as pd` (한 줄 변경, 멀티코어/클러스터)
+ - **bigframes**: 데이터를 BigQuery에 두고 pandas 코드만 컴파일 (석근님 BI 환경에 가장 fit)
+ - Dask/Bodo: 분산/HPC
 
 ### PyArrow 통합 ([[pdep|PDEP]]-10 진행 중)
 
-BigQuery는 Arrow 기반 응답을 우선시. pandas의 `dtype_backend="pyarrow"` + `read_csv(engine="pyarrow")` + `pd.ArrowDtype(pa.string())`로 (1) 결측 지원 (2) polars/cuDF/DuckDB와의 상호운용 (3) 더 빠른 IO. 
+BigQuery는 Arrow 기반 응답을 우선시. pandas의 `dtype_backend="pyarrow"` + `read_csv(engine="pyarrow")` + `pd.ArrowDtype(pa.string)`로 (1) 결측 지원 (2) polars/cuDF/DuckDB와의 상호운용 (3) 더 빠른 IO. 
 
 [[c2spf-analytics-renewal]]의 React 리뉴얼 백엔드에서 pandas → JSON 직렬화 시 Arrow-backed 데이터로 통일하면 큰 응답 페이로드 최적화 가능.
 

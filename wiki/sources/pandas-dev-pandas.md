@@ -178,7 +178,7 @@ aliases:
 
 ### 2. **시계열 = pandas의 차별화**
 
-`Timestamp`, `Period`, `Timedelta`, `DateOffset`, `BusinessDay` + `tz_localize`/`tz_convert` + `resample("5Min").sum()` — 이것이 [[microsoft-ml-for-beginners]]의 ARIMA·SVR 시계열 강의가 pandas를 전제로 깔린 이유. 게임 BI에서 DAU/MAU/리텐션 코호트 분석은 사실상 pandas resample + groupby + categorical의 합주.
+`Timestamp`, `Period`, `Timedelta`, `DateOffset`, `BusinessDay` + `tz_localize`/`tz_convert` + `resample("5Min").sum` — 이것이 [[microsoft-ml-for-beginners]]의 ARIMA·SVR 시계열 강의가 pandas를 전제로 깔린 이유. 게임 BI에서 DAU/MAU/리텐션 코호트 분석은 사실상 pandas resample + groupby + categorical의 합주.
 
 ### 3. **scale.rst의 3가지 패턴 = BI 메모리 폭발 대응 매뉴얼**
 
@@ -192,7 +192,7 @@ Use chunking      →   glob + per-file read_parquet + value_counts.add(fill_val
 
 ### 4. **PyArrow 통합 = pandas의 미래 데이터 모델**
 
-`pd.ArrowDtype(pa.string())` / `dtype_backend="pyarrow"` / `read_csv(engine="pyarrow")` — PDEP-10 "Required pyarrow dependency"가 통과하면 NumPy 단일 의존을 깨고 Arrow 표준이 1급 데이터 모델. polars·cuDF·DuckDB와의 상호운용성으로 직결. BigQuery도 Arrow 기반 응답을 우선시.
+`pd.ArrowDtype(pa.string)` / `dtype_backend="pyarrow"` / `read_csv(engine="pyarrow")` — PDEP-10 "Required pyarrow dependency"가 통과하면 NumPy 단일 의존을 깨고 Arrow 표준이 1급 데이터 모델. polars·cuDF·DuckDB와의 상호운용성으로 직결. BigQuery도 Arrow 기반 응답을 우선시.
 
 ### 5. **거버넌스 모델 = LLM 위키의 후보**
 

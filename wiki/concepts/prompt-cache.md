@@ -44,8 +44,8 @@ cited_by_count: 8
 - **TTL**: 5분 기본. 같은 프리픽스로 5분 안에 다시 호출하면 캐시 히트.
 - **계층 구조**: 캐시는 **prefix-based**. 메시지 배열의 앞쪽이 동일하면 거기까지 히트하고, 다른 부분부터 새로 prefill.
 - **가격**:
-  - Cache write: 일반 입력의 **1.25배** (한 번만 발생)
-  - Cache read: 일반 입력의 **0.1배** (반복 호출 시)
+ - Cache write: 일반 입력의 **1.25배** (한 번만 발생)
+ - Cache read: 일반 입력의 **0.1배** (반복 호출 시)
 - **최소 토큰**: 1024 (Sonnet/Opus) 또는 2048 (Haiku) 미만 블록은 캐시되지 않음.
 
 ### 어디에 캐싱을 거는가
@@ -70,7 +70,7 @@ cited_by_count: 8
 # Anthropic Python SDK 예시
 import anthropic
 
-client = anthropic.Anthropic()
+client = anthropic.Anthropic
 
 response = client.messages.create(
     model="claude-opus-4-7",

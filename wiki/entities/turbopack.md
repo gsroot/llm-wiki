@@ -13,8 +13,6 @@ tags:
 - vercel
 - rust
 - nextjs
-- 25회차
-- 50회차
 related:
 - '[[vercel]]'
 - '[[nextjs]]'
@@ -32,9 +30,9 @@ cited_by_count: 5
 
 ## 개요
 
-**Turbopack**은 [[vercel]]이 개발한 **Rust 기반 차세대 번들러**. webpack의 후속작으로 Next.js 13+에서 default branch `canary` 표준 (22회차 [[vercel-next.js]] AGENTS.md 명시 — `next dev --turbo` 기본).
+**Turbopack**은 [[vercel]]이 개발한 **Rust 기반 차세대 번들러**. webpack의 후속작으로 Next.js 13+에서 default branch `canary` 표준.
 
-본 페이지는 **stub** — Turbopack 단독 저장소가 raw 수집 대상이 아닌 상태에서 [[nextjs]] 등 22회차 페이지가 참조하므로 정합성 stub으로 등록.
+본 페이지는 **stub** — Turbopack 단독 저장소가 raw 수집 대상이 아닌 상태에서 [[nextjs]] 등 페이지가 참조하므로 정합성 stub으로 등록.
 
 ## 핵심 특성
 
@@ -48,9 +46,9 @@ cited_by_count: 5
 
 ## 본 위키 인용 맥락
 
-- 22회차 [[nextjs]] AGENTS.md: 빌드 명령 `pnpm build` / `pnpm test-{dev,start}-{turbo,webpack}` 4 모드 — Turbopack과 webpack 비교 테스트가 표준 워크플로우
+- [[nextjs]] AGENTS.md: 빌드 명령 `pnpm build` / `pnpm test-{dev,start}-{turbo,webpack}` 4 모드 — Turbopack과 webpack 비교 테스트가 표준 워크플로우
 - [[flutter-nextjs-fullstack-pattern]]: React 진영 부트스트랩에서 default 빌더로 등장
-- "Rust로 JS 도구를 재작성" 패턴(Ruff/uv/Turbopack)은 22회차까지 누적된 일관 흐름
+- "Rust로 JS 도구를 재작성" 패턴(Ruff/uv/Turbopack)은 누적된 일관 흐름
 
 ## 관련 개념
 
@@ -64,5 +62,5 @@ cited_by_count: 5
 
 ## 메모
 
-- 25회차 stub 사유: 23회차 점검에서 `[[turbopack]]` 깨진 링크 발견. 29회차에 Next.js source 기반으로 1차 보강.
+- stub 사유: 점검에서 `[[turbopack]]` 깨진 링크 발견. Next.js source 기반으로 1차 보강.
 - 후속 트리거: Turbopack 별도 AGENTS.md 또는 1.0 안정화 시 raw 수집 → 1차 source 등록.

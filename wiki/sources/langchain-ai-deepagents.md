@@ -23,7 +23,6 @@ tags:
 - filesystem
 - sub-agents
 - claude-code-pattern
-- 18회차
 inbound_count: 15
 cited_by:
 - '[[agent-frameworks-matrix]]'
@@ -43,7 +42,7 @@ aliases:
 
 ## 한 줄 요약
 
-LangChain Inc.의 **opinionated, ready-to-run agent** — `create_deep_agent()` 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 셋업 완료. **Claude Code/Cursor와 같은 코딩 에이전트 패턴을 LangGraph 위에 패키징**.
+LangChain Inc.의 **opinionated, ready-to-run agent** — `create_deep_agent` 한 줄로 planning + filesystem + shell + sub-agents 4종 도구 셋업 완료. **Claude Code/Cursor와 같은 코딩 에이전트 패턴을 LangGraph 위에 패키징**.
 
 ## 5섹션 요약
 
@@ -92,7 +91,7 @@ deepagents/
 
 ### 5) AGENTS.md = 사실상 CLAUDE.md (7번째 동기화 사례)
 
-DeepAgents AGENTS.md는 364줄로 **monorepo 구조 + 개발 표준 + CI/CD + 부가 자료** 기록. CLAUDE.md 별도 없음 — agents 디렉토리 단일 진실 원천(SSOT) 채택. 18회차에서 발견된 6개 동기화 사례:
+DeepAgents AGENTS.md는 364줄로 **monorepo 구조 + 개발 표준 + CI/CD + 부가 자료** 기록. CLAUDE.md 별도 없음 — agents 디렉토리 단일 진실 원천(SSOT) 채택. 발견된 6개 동기화 사례:
 
 1. langchain-ai/langchain (292줄)
 2. langchain-ai/langgraph (57줄)

@@ -32,7 +32,6 @@ tags:
 - logfire
 - agents-md
 - claude-md
-- 18회차
 cited_by_count: 14
 ---
 
@@ -81,7 +80,7 @@ diff raw/articles/pydantic-pydantic-ai/AGENTS.md raw/articles/pydantic-pydantic-
 # (no output — identical 10K)
 ```
 
-18회차 동기화 OSS 6개 그룹 합류:
+동기화 OSS 6개 그룹 합류:
 1. langchain (292줄)
 2. langgraph (57줄)
 3. deepagents (364줄)
@@ -153,7 +152,7 @@ print(result.output.temp_c)
 
 ## 출처
 
-- [[pydantic-pydantic-ai]] — Pydantic AI (18회차)
+- [[pydantic-pydantic-ai]] — Pydantic AI
 
 ## 관련
 

@@ -47,14 +47,14 @@ aliases:
 - **기간/역할**: 2024-04 ~ 2024-07. 시스템 설계, API 정의, 백엔드 + 프론트엔드(웹뷰) 풀스택, 테스트 및 리팩토링.
 - **기술 스택**: Node.js(NestJS, TypeORM), React, TypeScript, Docker, MySQL 8 (Master-Slave).
 - **핵심 성과**
-  - 여러 게임이 SDK로 블록체인 기능을 통합 호출할 수 있는 공통 플랫폼 구축.
-  - NFT 민팅 E2E 플로우(Action 조회 → 서명 → 전송 → 결과) 구현.
-  - 중복 민팅·수수료 부족 등 엣지 케이스 **선제 처리**.
-  - CPBLOC Jira 19건 전수 완료로 일정 준수.
-  - 개발·테스트·유지보수 단계의 리팩토링을 통해 코드 품질 향상.
+ - 여러 게임이 SDK로 블록체인 기능을 통합 호출할 수 있는 공통 플랫폼 구축.
+ - NFT 민팅 E2E 플로우(Action 조회 → 서명 → 전송 → 결과) 구현.
+ - 중복 민팅·수수료 부족 등 엣지 케이스 **선제 처리**.
+ - CPBLOC Jira 19건 전수 완료로 일정 준수.
+ - 개발·테스트·유지보수 단계의 리팩토링을 통해 코드 품질 향상.
 - **증거**
-  - `docs/20-projects/com2us-platform/2024-04-xpla-platform.md` — 통합 문서
-  - Jira: CPBLOC-821(Mint), CPBLOC-861, CPBLOC-862 등 19건
+ - `docs/20-projects/com2us-platform/2024-04-xpla-platform.md` — 통합 문서
+ - Jira: CPBLOC-821(Mint), CPBLOC-861, CPBLOC-862 등 19건
 
 ## 주요 인사이트
 
