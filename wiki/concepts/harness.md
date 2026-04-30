@@ -64,10 +64,10 @@ related:
 - '[[openai-openai-agents-python]]'
 source_count: 8
 observed_source_refs: 58
-inbound_count: 176
+inbound_count: 178
 created: 2026-04-15
 updated: 2026-04-29
-cited_by_count: 62
+cited_by_count: 63
 ---
 
 # 하네스 (Harness)
@@ -217,7 +217,7 @@ project/
 
 → [[anthropics-skills]] 진영의 `.claude/skills/` (자기 도구 중심)와 정면 다른 모델. **표준 채택자가 표준 정의자의 위치 컨벤션을 누르고 자체 결정**. [[github-spec-kit]] Codex 모드의 `.codex/skills/` (벤더별 분산 설치)와도 다름.
 
-특히 `docs/rules/` 4계층(rules_1k 799B → 4k 3.5K → 10k 9.4K → full 30K)이 **AI 도구 시장 매트릭스** (Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K)에 자동 매칭하는 패턴은 [[anthropics-skills]] progressive disclosure 3계층의 도구별 변종. 거대 OSS가 다중 AI 도구 환경에서 운영하는 첫 사례.
+특히 `docs/rules/` 4계층(rules_1k 799B → 4k 3.5K → 10k 9.4K → full 30K)이 **AI 도구 시장 매트릭스** (Antigravity 12K, OpenAI 1.5K, CodeRabbit 1K, Copilot 4K)에 자동 매칭하는 패턴은 [[anthropics-skills]] [[progressive-disclosure|progressive disclosure]] 3계층의 도구별 변종. 거대 OSS가 다중 AI 도구 환경에서 운영하는 첫 사례.
 
 ### 제5의 축 — "PLANS.md / ExecPlans = 7시간+ 단일 작업 living document"
 
@@ -407,6 +407,7 @@ project/
 - [[openai-openai-cookbook]]
 - [[pandas-dev-pandas]]
 - [[portfolio]]
+- [[progressive-disclosure]]
 - [[python-packaging]]
 - [[rag]]
 - [[ruff]]

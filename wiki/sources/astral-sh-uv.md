@@ -29,28 +29,29 @@ related:
 - '[[backend-python-fastapi]]'
 confidence: high
 inbound_count: 35
-cited_by:
-- '[[agent-skills]]'
-- '[[anthropics-claude-cookbooks]]'
-- '[[astral]]'
-- '[[backend-fastapi-stack]]'
-- '[[c2spf-analytics]]'
-- '[[github-spec-kit]]'
-- '[[harness]]'
-- '[[karpathy-autoresearch]]'
-- '[[llm-infra-meta-cluster]]'
-- '[[openai-agents-python]]'
-- '[[openai-openai-agents-python]]'
-- '[[openai-openai-cookbook]]'
-- '[[python]]'
-- '[[python-packaging]]'
-- '[[seokgeun-kim]]'
-- '[[uv]]'
-cited_by_count: 16
 aliases:
 - Astral Sh Uv
 - astral sh uv
 - astral-sh/uv — Rust로 작성된 초고속 Python 패키지·프로젝트 관리자
+cited_by:
+  - "[[agent-skills]]"
+  - "[[anthropics-claude-cookbooks]]"
+  - "[[astral]]"
+  - "[[backend-fastapi-stack]]"
+  - "[[c2spf-analytics]]"
+  - "[[codex]]"
+  - "[[github-spec-kit]]"
+  - "[[harness]]"
+  - "[[karpathy-autoresearch]]"
+  - "[[llm-infra-meta-cluster]]"
+  - "[[openai-agents-python]]"
+  - "[[openai-openai-agents-python]]"
+  - "[[openai-openai-cookbook]]"
+  - "[[python]]"
+  - "[[python-packaging]]"
+  - "[[seokgeun-kim]]"
+  - "[[uv]]"
+cited_by_count: 17
 ---
 
 # astral-sh/uv — Rust로 작성된 초고속 Python 패키지·프로젝트 관리자

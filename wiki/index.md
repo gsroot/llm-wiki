@@ -13,10 +13,10 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 
 ## 통계
 
-- 총 페이지 수: 198
+- 총 페이지 수: 199
 - 소스 요약: 66
 - 엔티티: 77 (mate-chat은 [[matechat|MateChat 사이드 프로젝트]]로 redirect, codex 신설 2026-04-30)
-- 개념: 34 (rcif-prompt-pattern, chain-of-thought-prompting 신설 2026-04-30)
+- 개념: 35 (rcif-prompt-pattern, chain-of-thought-prompting 신설 2026-04-30, progressive-disclosure 신설 2026-04-30 — Phase B audit 결과)
 - 종합 분석: 20
 
 ---
@@ -119,6 +119,7 @@ rag_exclude_reason: "인덱스는 카탈로그·라우터 역할. RAG가 사실 
 | [[context-engineering]] | 컨텍스트 엔지니어링 | 컨텍스트엔지니어링, 프롬프트엔지니어링, 자율연구, memory-cookbook, claude-cookbooks | 4 | 2026-04-27 |
 | [[autonomous-research-loop]] | 자율 연구 루프 (Autonomous Research Loop) | 자율연구, agent, 메트릭주도, 시간예산, harness, gpt2-speedrun | 2 | 2026-04-27 |
 | [[agent-skills]] | Agent Skills (SKILL.md 패키지) | agent-skills, skills, claude-code, anthropic, progressive-disclosure, agentskills.io, harness, claude-cookbooks, spec-kit, codex-skills, library-self-hosted-skill, fastapi, flutter, vendor-neutral, dart-skills-lint, token-budget-tiers, openai, openai-cookbook, openai-agents-python, agents-md-living, recent-learnings, exec-plans, 9-sop-skills, skill-chaining, agents-md-claude-md-mirror | 8 | 2026-04-28 |
+| [[progressive-disclosure]] | 점진적 공개 (Progressive Disclosure) | progressive-disclosure, LLM, context, agent-skills, token-economy, ux-design, lazy-loading | 3 | 2026-04-30 |
 | [[agent-patterns]] | Building Effective Agents — 5 패턴 | agent-patterns, building-effective-agents, anthropic, prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, spec-kit, sdd, openai, openai-cookbook, openai-agents-python, agents-sdk, exec-plans, guardrails, human-in-the-loop, forced-tool-use, 11-patterns | 4 | 2026-04-28 |
 | [[spec-driven-development]] | Spec-Driven Development (SDD) | spec-driven-development, sdd, spec-kit, prd, prompt-engineering, intent-driven-development, executable-specification, constitution, harness, methodology | 1 | 2026-04-27 |
 | [[backend-python-fastapi]] | Python 백엔드 (FastAPI · Spring Boot) | backend, python, fastapi, spring-boot, tiangolo, agent-skills, annotated, pydantic2 | 6 | 2026-04-27 |

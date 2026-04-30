@@ -28,8 +28,8 @@ related:
 - '[[openai-chatgpt-codex-guide]]'
 - '[[codex]]'
 source_count: 1
-observed_source_refs: 10
-inbound_count: 45
+observed_source_refs: 11
+inbound_count: 46
 created: 2026-04-27
 updated: 2026-04-27
 verification_required: true

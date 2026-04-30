@@ -28,9 +28,11 @@ related:
 - "[[claude-code]]"
 - "[[openai-chatgpt-codex-guide]]"
 source_count: 1
+observed_source_refs: 2
+inbound_count: 9
 created: 2026-04-30
 updated: 2026-04-30
-cited_by_count: 5
+cited_by_count: 7
 ---
 
 # Chain-of-Thought 프롬프팅 (단계별 사고 유도)

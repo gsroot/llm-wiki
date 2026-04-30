@@ -25,7 +25,7 @@ related:
 - '[[context-engineering]]'
 - '[[token-economy]]'
 confidence: high
-inbound_count: 81
+inbound_count: 85
 aliases:
 - Anthropics Skills
 - anthropics skills
@@ -49,11 +49,12 @@ cited_by:
   - "[[mcp]]"
   - "[[openai-openai-cookbook]]"
   - "[[pandas-dev-pandas]]"
+  - "[[progressive-disclosure]]"
   - "[[scikit-learn]]"
   - "[[scikit-learn-scikit-learn]]"
   - "[[slash-commands-vs-agent-skills]]"
   - "[[spec-kit]]"
-cited_by_count: 22
+cited_by_count: 23
 ---
 
 # anthropics/skills — Anthropic 공식 Agent Skills 레퍼런스
@@ -180,7 +181,7 @@ xlsx/docx/pptx/pdf는 Claude.ai의 실제 문서 생성을 구동하는 producti
 
 **스킬 작성을 가르치는 스킬이 다시 SKILL.md 형식**으로 쓰여 있고, **자기 자신을 평가·개선하는 검증 루프를 SKILL.md 안에서 주도**. 이게 [[autonomous-research-loop]]의 program.md와 같은 자기 진화 패턴이다. 다만 autoresearch는 "코드를 진화"시키고 skill-creator는 "지침서를 진화"시키는 차이.
 
-### 4. progressive disclosure는 [[token-economy]] + [[context-engineering]]의 결합
+### 4. [[progressive-disclosure]]는 [[token-economy]] + [[context-engineering]]의 결합
 
 - 메타데이터 100단어가 17개 스킬 × 1,536자 cap = 약 26K 토큰만 상시 점유
 - 본문은 트리거된 스킬만 로드 (평균 4-5KB)

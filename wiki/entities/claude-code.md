@@ -51,11 +51,11 @@ related:
 - '[[openai-chatgpt-codex-guide]]'
 - '[[codex]]'
 source_count: 8
-observed_source_refs: 44
-inbound_count: 149
+observed_source_refs: 45
+inbound_count: 153
 created: 2026-04-09
 updated: 2026-04-29
-cited_by_count: 47
+cited_by_count: 48
 ---
 
 # Claude Code
@@ -263,6 +263,7 @@ irm https://claude.ai/install.ps1 | iex
 - [[openai-chatgpt-codex-guide]]
 - [[openai-openai-cookbook]]
 - [[portfolio]]
+- [[progressive-disclosure]]
 - [[prompt-cache]]
 - [[rag]]
 - [[rcif-prompt-pattern]]

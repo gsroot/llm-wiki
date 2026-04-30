@@ -34,7 +34,8 @@ cited_by:
   - "[[portfolio]]"
   - "[[portfolio-resume-ko]]"
   - "[[seokgeun-kim]]"
-cited_by_count: 12
+  - "[[seokgeun-stack-guide]]"
+cited_by_count: 13
 ---
 
 # 포트폴리오 — 상세 포트폴리오(한국어, portfolio-ko.md)

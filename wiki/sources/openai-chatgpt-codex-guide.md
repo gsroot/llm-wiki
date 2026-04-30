@@ -34,10 +34,23 @@ related:
 confidence: high
 ingestion_mode: path-a-verbatim
 license: CC-BY (wikidocs.net `by.png` 아이콘 표시, 저자 송영옥)
-inbound_count: 27
+inbound_count: 29
 fetch_history:
   - 2026-04-30 path-b-summary (서브에이전트 4/4 IP 게이팅 거부, 메인 에이전트 WebFetch도 일부 페이지 요약 반환)
   - 2026-04-30 path-a-verbatim (석근 직접 fetch + scripts/fetch-codex-guide.py + scripts/clean-codex-guide.py로 39p 수집, 3p는 메인 에이전트 verbatim 결과 보존)
+cited_by:
+  - "[[agent-skills]]"
+  - "[[agent-stack-evolution]]"
+  - "[[c2spf-analytics]]"
+  - "[[chain-of-thought-prompting]]"
+  - "[[claude-code]]"
+  - "[[codex]]"
+  - "[[github]]"
+  - "[[matechat]]"
+  - "[[microsoft]]"
+  - "[[openai]]"
+  - "[[rcif-prompt-pattern]]"
+cited_by_count: 11
 ---
 
 # ChatGPT & Codex 실무 활용 가이드

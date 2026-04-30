@@ -65,15 +65,15 @@ related:
 - '[[portfolio-resume-ko]]'
 - '[[portfolio-ko]]'
 source_count: 6
-observed_source_refs: 37
-inbound_count: 182
+observed_source_refs: 38
+inbound_count: 186
 created: 2026-04-28
 updated: 2026-04-29
 verification_required: true
 last_verified: 2026-04-29
 verification_notes: 현재 v1.0.0 출시 직전 QA 단계, QA 완료 후 Google Play 출시 예정. 39 SKILL 자작/외부 분류는 lock.json 재검증.
 verification_procedure: Google Play Console에서 v1.0.0 출시 상태 확인 (QA 단계 → 정식 출시 → 다운로드 추이). raw/notes/matechat/INDEX.md의 최근 갱신일 비교. 변동 시 본 페이지 첫 callout 출시 상태 문구·last_verified 갱신 + matechat-launch-metrics-ledger 실측 ledger 추가.
-cited_by_count: 69
+cited_by_count: 70
 ---
 
 # MateChat
@@ -379,6 +379,7 @@ MateChat은 클로버라는 가상 화폐 기반 IAP 모델을 포함한다. AI 
 - [[portfolio-resume-ko]]
 - [[portfolio-seed]]
 - [[postgresql]]
+- [[progressive-disclosure]]
 - [[prometheus]]
 - [[pydantic]]
 - [[pydantic-ai]]

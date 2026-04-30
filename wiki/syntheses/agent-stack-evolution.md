@@ -37,8 +37,8 @@ sources:
 - '[[openai-chatgpt-codex-guide]]'
 created: 2026-04-27
 updated: 2026-04-29
-cited_by_count: 29
-inbound_count: 45
+cited_by_count: 30
+inbound_count: 46
 related:
 - '[[openai-openai-agents-python]]'
 - '[[harness]]'

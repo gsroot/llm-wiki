@@ -29,7 +29,8 @@ cited_by:
   - "[[portfolio]]"
   - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
-cited_by_count: 5
+  - "[[seokgeun-stack-guide]]"
+cited_by_count: 6
 ---
 
 # 포트폴리오 방법론 (docs/00-meta 합본)

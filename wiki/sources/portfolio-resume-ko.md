@@ -33,7 +33,8 @@ cited_by:
   - "[[portfolio-ko]]"
   - "[[portfolio-seed]]"
   - "[[seokgeun-kim]]"
-cited_by_count: 11
+  - "[[seokgeun-stack-guide]]"
+cited_by_count: 12
 ---
 
 # 포트폴리오 — 이력서(한국어, resume-ko.md)

@@ -39,7 +39,7 @@ related:
 - '[[context-engineering]]'
 - '[[github]]'
 confidence: high
-inbound_count: 34
+inbound_count: 37
 aliases:
 - Flutter
 - flutter
@@ -58,7 +58,8 @@ cited_by:
   - "[[harness]]"
   - "[[llm-infra-meta-cluster]]"
   - "[[openai-openai-cookbook]]"
-cited_by_count: 13
+  - "[[progressive-disclosure]]"
+cited_by_count: 14
 ---
 
 # flutter/flutter — 단일 코드베이스 멀티플랫폼 UI SDK + vendor-neutral .agents/ 스킬 표준
@@ -279,9 +280,9 @@ Before declaring a task done:
 
 **14개 영역, 800자 미만**. 모든 약어가 의도적 — "expert dev" 컨텍스트로 LLM이 자연 보간하리란 가정. 위키 운영에 직접 차용 가능한 패턴.
 
-### 위키적 의미: progressive disclosure를 토큰 단위로 세분화
+### 위키적 의미: [[progressive-disclosure]]를 토큰 단위로 세분화
 
-[[anthropics-skills]]의 progressive disclosure는 3-level (메타 → SKILL.md body → references). Flutter는 그 사이를 **rules_1k → 4k → 10k → full**로 4-tier 분할 — 메타-스킬 안에서도 도구별로 다른 깊이를 자동 매칭하는 사상. [[token-economy]] 페이지의 첫 실증.
+[[anthropics-skills]]의 [[progressive-disclosure]]는 3-level (메타 → SKILL.md body → references). Flutter는 그 사이를 **rules_1k → 4k → 10k → full**로 4-tier 분할 — 메타-스킬 안에서도 도구별로 다른 깊이를 자동 매칭하는 사상. [[token-economy]] 페이지의 첫 실증.
 
 ## 핵심 5 — `agent-artifacts/`: AI 산출물 분리 격리
 

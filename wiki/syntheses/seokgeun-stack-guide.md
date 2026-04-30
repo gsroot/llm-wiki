@@ -15,8 +15,8 @@ sources:
 - '[[observability-and-cicd-stack]]'
 - '[[flutter-nextjs-fullstack-pattern]]'
 source_count: 5
-observed_source_refs: 10
-inbound_count: 144
+observed_source_refs: 16
+inbound_count: 147
 related:
 - '[[python]]'
 - '[[fastapi]]'
@@ -401,4 +401,3 @@ flutter pub add --dev riverpod_generator build_runner
 - [[tanstack-query]]
 - [[uv]]
 - [[zustand]]
-

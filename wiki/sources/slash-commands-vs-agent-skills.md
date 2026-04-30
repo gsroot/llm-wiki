@@ -20,7 +20,7 @@ related:
 - '[[harness]]'
 - '[[context-engineering]]'
 confidence: high
-inbound_count: 35
+inbound_count: 37
 aliases:
 - 'Claude Code: Slash Commands vs Agent Skills'
 - Slash Commands Vs Agent Skills
@@ -34,9 +34,10 @@ cited_by:
   - "[[harness]]"
   - "[[karpathy-autoresearch]]"
   - "[[llm-infra-meta-cluster]]"
+  - "[[progressive-disclosure]]"
   - "[[seokgeun-kim]]"
   - "[[using-llm-wiki-as-rag]]"
-cited_by_count: 10
+cited_by_count: 11
 ---
 
 # Claude Code: Slash Commands vs Agent Skills
@@ -63,7 +64,7 @@ Claude Code Skills는 [agentskills.io](https://agentskills.io) 오픈 표준을 
 | Frontmatter | ✅ | ✅ |
 | **자동 호출 (모델 판단)** | ❌ | ✅ |
 | **supporting files** | ❌ | ✅ |
-| **progressive disclosure** | 부분 | ✅ |
+| **[[progressive-disclosure\|progressive disclosure]]** | 부분 | ✅ |
 | **`context: fork`** (서브에이전트) | ❌ | ✅ |
 | **`paths`** (경로 조건 활성) | ❌ | ✅ |
 | 동적 injection (`` !`cmd` ``) | ✅ | ✅ |

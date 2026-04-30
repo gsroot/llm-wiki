@@ -28,10 +28,10 @@ related:
 - '[[karpathy-autoresearch]]'
 source_count: 4
 observed_source_refs: 30
-inbound_count: 76
+inbound_count: 78
 created: 2026-04-15
 updated: 2026-04-27
-cited_by_count: 31
+cited_by_count: 32
 ---
 
 # 컨텍스트 엔지니어링 (Context Engineering)

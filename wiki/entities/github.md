@@ -24,8 +24,8 @@ related:
 - '[[codex]]'
 - '[[openai-chatgpt-codex-guide]]'
 source_count: 1
-observed_source_refs: 8
-inbound_count: 48
+observed_source_refs: 9
+inbound_count: 49
 created: 2026-04-27
 updated: 2026-04-27
 cited_by_count: 21

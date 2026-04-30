@@ -27,12 +27,14 @@ related:
 - "[[openai-agents-python]]"
 - "[[openai-chatgpt-codex-guide]]"
 source_count: 1
+observed_source_refs: 2
+inbound_count: 16
 created: 2026-04-30
 updated: 2026-04-30
 verification_required: true
 last_verified: 2026-04-30
 verification_notes: "Codex 제품 라인업·요금제·기능은 OpenAI가 빠르게 갱신 중. 90일마다 wikidocs 책·OpenAI 공식 문서로 재검증."
-cited_by_count: 8
+cited_by_count: 10
 ---
 
 # Codex (OpenAI 클라우드 자율 코딩 에이전트)

@@ -28,9 +28,11 @@ related:
 - "[[anthropic]]"
 - "[[openai-chatgpt-codex-guide]]"
 source_count: 1
+observed_source_refs: 1
+inbound_count: 11
 created: 2026-04-30
 updated: 2026-04-30
-cited_by_count: 5
+cited_by_count: 7
 ---
 
 # RCIF 프롬프트 4구성 요소

@@ -25,10 +25,10 @@ related:
 - '[[anthropics-claude-cookbooks]]'
 source_count: 2
 observed_source_refs: 24
-inbound_count: 54
+inbound_count: 56
 created: 2026-04-15
 updated: 2026-04-27
-cited_by_count: 19
+cited_by_count: 20
 ---
 
 # 토큰 경제학 (Token Economy)
