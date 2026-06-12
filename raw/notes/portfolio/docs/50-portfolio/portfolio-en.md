@@ -16,11 +16,11 @@
 | Metric | Value | Context |
 |--------|-------|---------|
 | **9 years** | Engineering career | Com2usPlatform (2017.05–present) + Zum Internet (2016) |
-| **1,111 commits** | Across 6 c2spf repositories | My contributions in the `c2spf` GitHub organization |
-| **92% ownership** | `analytics-common-api` | 231/251 commits — effectively sole maintainer |
+| **1,349 commits** | Across 6 c2spf repositories | My contributions in the `c2spf` GitHub organization |
+| **90.0% ownership** | `analytics-common-api` | 235/261 commits — effectively sole maintainer |
 | **~90% gas-fee reduction** | On-chain voting smart contract | Rust / XPLA (Cosmos SDK) storage and event redesign |
 
-> Additional evidence: 476 commits in `c2spf/analytics-frontend` (team's first React migration) · 85%+ accuracy in ML churn/purchase prediction · 30–40% frontend productivity uplift foundation.
+> Additional evidence: 710 commits in `c2spf-gsroot/analytics-frontend` (team's first React migration) · 85%+ accuracy in ML churn/purchase prediction · 30–40% frontend productivity uplift foundation.
 
 ---
 
@@ -41,7 +41,7 @@
 - Built ag-grid common components with type-based pinning and minWidth strategies
 - Authored **two team-wide standards** on Confluence: *2025 Frontend Development Guidelines* and *AI-Assisted Productivity Guide* (Claude Code / Codex CLI / ChatGPT scenarios)
 - Foundation for **30–40% frontend productivity uplift**; ag-grid common-component design lead time **2–3 days → <1 day**; 50%+ repetitive-dev-time reduction
-- **476 commits** to `c2spf/analytics-frontend` (~24% of repo); regression tests 32/32 and 22/22 passing for the two Story-level merges
+- **710 commits** to `c2spf-gsroot/analytics-frontend` (26.6% of repo); regression tests 32/32 and 22/22 passing for the two Story-level merges
 
 → [Detailed doc](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
 
@@ -77,7 +77,7 @@
 - Standardized deployment: Docker Compose + Jenkins multi-branch pipeline automating build/release across prod / staging / sandbox / test
 - Central logging: **4 Loki instances per environment** (prod primary/standby + sandbox + test), replacing SSH-driven log hunting
 - Published **4 deployment/operations guides** in a 2024-10 to 2024-11 sprint (Common API spec, shared JS usage, Docker Compose, Jenkins multi-branch)
-- **92% ownership** (231/251 commits) — effectively sole maintainer; ongoing work includes BigQuery Decimal conversion, pivot-axis NULL placeholders, `date_type=MINUTE` validation, TCP keepalive tuning, slave-sync mitigations
+- **90.0% ownership** (235/261 commits) — effectively sole maintainer; ongoing work includes BigQuery Decimal conversion, pivot-axis NULL placeholders, `date_type=MINUTE` validation, TCP keepalive tuning, slave-sync mitigations
 
 → [Detailed doc](../20-projects/com2us-platform/2024-08-analytics-common-module.md)
 
@@ -140,7 +140,7 @@ The Analytics product is the company's internal BI platform for game-log data �
 
 - 9 years of continuous ownership across one platform — from Spring MVC monolith to FastAPI + React modern stack
 - Scope has grown from BI features to ML services (AutoML-based prediction), blockchain platforms (NFT marketplace, XPLA SDK, CODE Travel Rule), and architectural leadership (2025 React migration)
-- 1,111 commits across 6 c2spf repositories; owner / lead on multiple Epics
+- 1,349 commits across 6 c2spf repositories; owner / lead on multiple Epics
 
 ### Zum Internet · Jan 2016 — Jul 2016
 
@@ -183,7 +183,7 @@ The Analytics product is the company's internal BI platform for game-log data �
 
 I'm a Python-first backend engineer who has spent the last nine years turning raw game logs into decisions that product, live-ops, and marketing teams can act on. The work started as the core full-stack engineer on Com2usPlatform's Analytics BI — and grew from there, domain by domain, into ML prediction services, on-chain smart contracts, and a team-wide frontend modernization.
 
-My style is pragmatic ownership: take an area nobody else owns, reduce it to a clean contract, and make it boring to operate. That's how a scattered set of Spring reports became the `analytics-common-api` (~92% of its commits are mine), and how eight years of jQuery UI became the team's first React architecture in 2025 — with documented standards and measurable productivity gains instead of a one-off rewrite.
+My style is pragmatic ownership: take an area nobody else owns, reduce it to a clean contract, and make it boring to operate. That's how a scattered set of Spring reports became the `analytics-common-api` (90.0% of its commits are mine), and how eight years of jQuery UI became the team's first React architecture in 2025 — with documented standards and measurable productivity gains instead of a one-off rewrite.
 
 Outside of work, I ship. Travel Mate (an AI travel-planning Android app built with Flutter + FastAPI + LangGraph) launched on Google Play in November 2025; Mate Chat (global AI-based social messaging) is in active development. I treat side projects as a forcing function for learning — LLM agents, OAuth 2.0, in-app purchase, WebSocket real-time — so that the next work project benefits from skills I've already debugged on my own time.
 
@@ -217,7 +217,7 @@ I care about small files, clear contracts, and honest metrics. I write tests bec
 
 Four signature moments with full STAR write-ups.
 
-- **Impact — Analytics Common Module**: consolidated duplicated reports into `analytics-common-api` (92% commits), standardizing response contracts and 4-env deployment. → [story](../40-stories/impact-analytics-common-module.md)
+- **Impact — Analytics Common Module**: consolidated duplicated reports into `analytics-common-api` (90.0% commits), standardizing response contracts and 4-env deployment. → [story](../40-stories/impact-analytics-common-module.md)
 - **Leadership — React adoption**: led the team's first React architecture migration, authored two Confluence-wide standards, built the foundation for 30–40% productivity uplift. → [story](../40-stories/leadership-react-adoption.md)
 - **Problem Solving — Gas-fee optimization**: redesigned a voting smart contract's storage and event emission for ~90% gas savings (Rust / XPLA / Cosmos SDK). → [story](../40-stories/problem-solving-gas-fee-optimization.md)
 - **Learning — AutoML & MLOps**: self-taught GCP AutoML + AI Platform Pipeline end-to-end, reached 85%+ prediction accuracy, and established the team's MLOps foundation. → [story](../40-stories/learning-automl-mlops.md)

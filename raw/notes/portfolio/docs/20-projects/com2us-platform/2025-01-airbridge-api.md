@@ -30,14 +30,14 @@ sources:
     - "https://com2us.atlassian.net/wiki/spaces/GCPP2DTDW/pages/35568410"
     - "private/confluence/35568410.md"
   github:
-    - "https://github.com/c2spf/analytics-common-api"
+    - "https://github.com/c2spf-gsroot/analytics-common-api"
   gdrive: []
   gmail: []
 tags: [backend, api, data-pipeline, adtech, airbridge, bigquery, fastapi, spring-boot]
 metrics:
   - "기존 애널리틱스에서 확인 불가했던 광고 성과 지표를 Airbridge 기반으로 측정 가능하도록 확장"
   - "`/common/processed-data` 엔드포인트 한 번에 BigQuery 메트릭 + Airbridge 데이터를 결합·피벗팅하여 반환 (Analytics Common API Swagger 명세 근거)"
-  - "공통 API 공용화로 지표·퍼널 분석에서 동일한 데이터 처리 로직 재사용 (analytics-common-api 저장소 내 본인 커밋 ~92% 점유)"
+  - "공통 API 공용화로 지표·퍼널 분석에서 동일한 데이터 처리 로직 재사용 (analytics-common-api 저장소 내 본인 커밋 90.0% 점유)"
 related_projects:
   - "2024-08-analytics-common-module"
   - "2025-06-analytics-react-renewal"
@@ -70,7 +70,7 @@ star:
   - 기존 Spring MVC(컨트롤러-서비스-리포지토리 계층, MyBatis+JPA 다중 데이터 소스) 위에 Airbridge 지표를 호출하는 경로 추가
   - OAuth 기반 Hive Console 인증(`HiveConsoleSecurityAuthFilter`)과 세션 관리, 회사/메뉴 권한 정책 유지
 - **Python(FastAPI) 공통 API 확장**
-  - `analytics-common-api` 저장소에 Airbridge 처리 로직·모델 추가 (본인 커밋 비중이 저장소 전체의 약 92% / 231 of 251, 단독 유지보수 범위)
+  - `analytics-common-api` 저장소에 Airbridge 처리 로직·모델 추가 (본인 커밋 비중이 저장소 전체의 약 90.0% / 235 of 261, 단독 유지보수 범위)
   - Swagger(`analytics-metricscreatorapi.withhive.com/docs`)로 API 명세 공개
 - **시각화 통합**
   - AG-grid 기반 차트 테이블이 Airbridge 결합 데이터를 차원·측정값으로 구분해 표시하도록 포맷 매핑
@@ -149,7 +149,7 @@ star:
 - **광고 성과 분석 가능화**: 기존 애널리틱스에서 확인할 수 없던 광고 유입·전환·캠페인 성과 지표를 Airbridge 기반으로 애널리틱스 UI 내에서 측정 가능하게 되어, 광고주/마케터의 데이터 접근성 향상
 - **지표·퍼널 분석 확장**: 차트·퍼널 분석이 BigQuery 단일 소스가 아닌 BigQuery + MMP 결합 데이터까지 다룰 수 있게 확장
 - **공통 API 재사용성**: 본 프로젝트에서 정립한 `DataCollection` → `ProcessedData` 계약은 이후 2025-06 React 리뉴얼, 대시보드 기능 개선(QA 단계, GCPPDT-639)에서도 동일 경로로 재사용됨
-- **단독 유지보수 가능 규모**: `analytics-common-api` 저장소의 내 커밋 비중 ~92% (231/251 커밋, 2024-09~2026-04). 본 프로젝트 완료 후에도 BigQuery Decimal 타입 변환, 피벗 NULL 플레이스홀더, `date_type=MINUTE` 검증 등 후속 개선을 지속 수행
+- **단독 유지보수 가능 규모**: `analytics-common-api` 저장소의 내 커밋 비중 90.0% (235/261 커밋, 2024-09~2026-05). 본 프로젝트 완료 후에도 BigQuery Decimal 타입 변환, 피벗 NULL 플레이스홀더, `date_type=MINUTE` 검증 등 후속 개선을 지속 수행
 
 ## 7. 증거 (Evidence)
 
@@ -162,12 +162,12 @@ star:
 - **애널리틱스 리포트 아키텍처 분석** (Page 35568410, author 김석근, lastmodified 2025-02-27 — **본 프로젝트 기간과 일치**): Spring Boot 리포트 계층/모델(ReportInfo, PageInfo, DataSourceInfo), OAuth 인증 흐름 ([`private/confluence/35568410.md`](../../../private/confluence/35568410.md))
 
 ### 7.3 GitHub
-- **c2spf/analytics-common-api** (private, Python/JavaScript, 575 KB): 본인 커밋 231/251 (~92%), 기여 기간 2024-09-02 ~ 2026-04-16. 커밋 메시지 중 본 프로젝트 영역 증거:
+- **c2spf-gsroot/analytics-common-api** (private, Python/JavaScript, 575 KB): 본인 커밋 235/261 (90.0%), 기여 기간 2024-09-02 ~ 2026-05-14. 커밋 메시지 중 본 프로젝트 영역 증거:
   - `BigQuery Decimal 타입 컬럼을 적절한 숫자 타입(int64/float64)으로 변환` (2026-04)
   - `피벗 테이블 생성 시 축(axis) 컬럼의 NULL 값을 플레이스홀더로 대체` (2026-04)
   - `date_type이 MINUTE일 때 minute_interval 유효성 검사 로직 추가 및 API ...` (2025-12)
   - `Jenkinsfile에서 Docker 리소스 정리 방식 개선` (2025-11)
-  - 참고: [`docs/10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md`](../../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md)
+  - 참고: [`docs/10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md`](../../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md)
 
 ### 7.4 Swagger / 운영
 - Analytics Common API Swagger UI: <https://analytics-metricscreatorapi.withhive.com/docs>
@@ -177,7 +177,7 @@ star:
 - **S (Situation)**: 기존 애널리틱스는 내부 게임 로그(BigQuery) 기반 분석만 가능해 광고 성과(에어브릿지 MMP) 데이터를 지표·퍼널 분석에서 확인할 수 없었다.
 - **T (Task)**: 에어브릿지 데이터를 애널리틱스 지표·퍼널 분석에 주입할 수 있도록 데이터 가공 API를 설계·구현하고, 기존 Spring Boot 리포트 스택과 신규 FastAPI 공통 API를 함께 확장한다.
 - **A (Action)**: 지표 공통 API `/common/processed-data`에 `AirbridgeData` 모델과 옵션(timezone, event_timestamp_source)을 추가하고, BigQuery·Airbridge 쿼리를 동시에 실행·피벗팅하여 단일 응답(`ProcessedData`)으로 반환하도록 구현. Spring Boot 리포트 계층은 `DataSourceInfo` 확장으로 공통 API에 연결. Hive OAuth 인증과 회사/메뉴 권한 정책을 그대로 재사용하고, Promtail/Loki/Grafana 로그 스택으로 3환경 운영 가시성을 확보.
-- **R (Result)**: 광고주·마케터가 애널리틱스 UI 내에서 광고 성과를 측정할 수 있게 되어 서비스 활용성과 가치가 증대. 본 프로젝트에서 정립된 `DataCollection → ProcessedData` 계약은 이후 React 리뉴얼과 대시보드 기능에서도 동일 경로로 재사용되었고, `analytics-common-api` 저장소는 본인이 2024-09부터 단독에 가까운 비중(~92%)으로 유지보수하는 주력 공통 모듈로 자리잡음.
+- **R (Result)**: 광고주·마케터가 애널리틱스 UI 내에서 광고 성과를 측정할 수 있게 되어 서비스 활용성과 가치가 증대. 본 프로젝트에서 정립된 `DataCollection → ProcessedData` 계약은 이후 React 리뉴얼과 대시보드 기능에서도 동일 경로로 재사용되었고, `analytics-common-api` 저장소는 본인이 2024-09부터 단독에 가까운 비중(90.0%)으로 유지보수하는 주력 공통 모듈로 자리잡음.
 
 ## 9. 관련 프로젝트
 

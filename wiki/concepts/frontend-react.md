@@ -68,7 +68,7 @@ c2spf 애널리틱스 React 리뉴얼(2025-06~)에서 표준화된 프론트엔�
 ## 출처
 
 - [[portfolio-seed]] — React/Mobx 진화 타임라인
-- [[portfolio-resume-ko]] · [[portfolio-ko]] — 정량 지표(476 커밋, 30~40% 향상)
+- [[portfolio-resume-ko]] · [[portfolio-ko]] — 정량 지표(710 커밋, 30~40% 향상)
 - [[c2spf-analytics-renewal]] — 리뉴얼 상세
 
 ## 열린 질문

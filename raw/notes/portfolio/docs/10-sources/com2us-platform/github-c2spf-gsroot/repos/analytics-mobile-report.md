@@ -1,15 +1,15 @@
 ---
-title: "c2spf/analytics-mobile-report"
+title: "c2spf-gsroot/analytics-mobile-report"
 type: source-index
 company: com2us-platform
 source: github
-repo: c2spf/analytics-mobile-report
+repo: c2spf-gsroot/analytics-mobile-report
 visibility: private
 primary_language: JavaScript
-collected_at: "2026-04-24"
+collected_at: "2026-06-12"
 ---
 
-# c2spf/analytics-mobile-report
+# c2spf-gsroot/analytics-mobile-report
 
 애널리틱스 모바일 리포트 — 🆕 **old-portfolio.md에 미기록 (보강 필요)**
 
@@ -17,9 +17,9 @@ collected_at: "2026-04-24"
 
 | 항목 | 값 |
 |------|----|
-| URL | <https://github.com/c2spf/analytics-mobile-report> (private) |
+| URL | <https://github.com/c2spf-gsroot/analytics-mobile-report> (private) |
 | Visibility | private |
-| Default Branch | `master` |
+| Default Branch | `main` |
 | 주 언어 | JavaScript (~183KB), Java (~183KB), HTML (~113KB), CSS |
 | 크기 | 917 KB |
 

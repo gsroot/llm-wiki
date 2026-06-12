@@ -57,7 +57,7 @@ cited_by_count: 10
 - **기간/역할**: 2024-08 ~ 2024-12(+ 유지보수). 시각화 공통 API + 공통 JS 모듈 설계·개발, Docker + Jenkins 멀티브랜치 배포 표준화, 로깅 스택 구축 — 단일 담당자.
 - **기술 스택**: Java(Spring Boot), JavaScript, Python(FastAPI), MySQL, Redis, GCP BigQuery, AG-grid, Docker Compose, Jenkins Multi-branch, Promtail/Loki/Grafana.
 - **핵심 성과**
- - `c2spf/analytics-common-api` **커밋 231/251 ≈ 92%** — 거의 단독 유지보수.
+ - `c2spf-gsroot/analytics-common-api` **커밋 235/261 = 90.0%** — 거의 단독 유지보수.
  - APIResponse `{result_code, message, data}` 표준 포맷 + **APICode 13종** + BigQuery ProcessedData 결과 코드 4종 정립.
  - **HIVE OAuth 8개 엔드포인트**를 공통 API에 통합 — 토큰·사용자·메뉴 권한·게임 권한. `/hive/auth/games`는 Redis 캐시 기반 최적화, 패턴 매칭 무효화 지원.
  - **배포/운영 가이드 4종 2024-10~11 집중 발행** — 공통 API 명세, 공통 JS, Jenkins 멀티브랜치, Docker Compose.
@@ -66,13 +66,13 @@ cited_by_count: 10
 - **증거**
  - `docs/20-projects/com2us-platform/2024-08-analytics-common-module.md` — 통합 문서
  - `docs/40-stories/impact-analytics-common-module.md` — 임팩트 STAR 스토리
- - GitHub c2spf: analytics-common-api, analytics-frontend, analytics-prediction 등
+ - GitHub c2spf-gsroot: analytics-common-api, analytics-frontend, analytics-prediction 등
  - Confluence 페이지 35568348 · 35568344 · 35568328 · 35568336 · 35568340 · 35568332 (본문 일부 수집)
  - Jira: GCPPDTDW-2386(상위 Story), GCPSRE-16239, GCPSRE-15853, GCPHDBA-2820 등
 
 ## 주요 인사이트
 
-- "92% 커밋 점유율"은 단독 오너십을 뚜렷이 보여주는 지표. 공통 API가 사실상 개인 주도 프로젝트였음을 정량화.
+- "90.0% 커밋 점유율"은 단독 오너십을 뚜렷이 보여주는 지표. 공통 API가 사실상 개인 주도 프로젝트였음을 정량화.
 - **표준화 가이드 4종을 한 달 안에 집중 발행(2024-10~11)** — 개발과 문서화를 병행한 비선형 워크플로. 이후 팀의 배포 표준이 이 가이드를 근거로 운영됨.
 - HIVE OAuth 통합은 "공통 API 범위 확장"의 대표 예시. 단순 시각화 API에서 권한·인증까지 포괄하는 플랫폼 API로 진화.
 

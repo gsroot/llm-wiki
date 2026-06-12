@@ -23,12 +23,12 @@ Python 백엔드, 게임 데이터 분석(BI), ML/AI 서비스, 블록체인 플
 | 지표 | 값 | 맥락 |
 |------|-----|------|
 | **개발 경력** | **9년** | 컴투스플랫폼 2017.05 ~ 현재 + 줌인터넷 2016 |
-| **c2spf GitHub 기여** | **1,111 커밋** | 본인 기여 커밋 총합 — [c2spf INDEX ↗](../10-sources/com2us-platform/github-c2spf/INDEX.md) |
-| **공통 API 단독 유지보수** | **92% ownership** | `analytics-common-api` 231/251 커밋 — [프로젝트 ↗](../20-projects/com2us-platform/2024-08-analytics-common-module.md) |
+| **c2spf-gsroot GitHub 기여** | **1,349 커밋** | 본인 기여 커밋 총합 — [c2spf-gsroot INDEX ↗](../10-sources/com2us-platform/github-c2spf-gsroot/INDEX.md) |
+| **공통 API 단독 유지보수** | **90.0% ownership** | `analytics-common-api` 235/261 커밋 — [프로젝트 ↗](../20-projects/com2us-platform/2024-08-analytics-common-module.md) |
 | **프론트엔드 생산성** | **30~40% 향상 기반** | 팀 최초 React 구조 표준화 — [프로젝트 ↗](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) |
 | **블록체인 플랫폼** | **5개 프로젝트** | CODE 트래블룰 · NFT 마켓 · XPLA 등 · 가스비 **~90% 절감** — [스토리 ↗](../40-stories/problem-solving-gas-fee-optimization.md) |
 
-집계 출처: [GitHub c2spf INDEX](../10-sources/com2us-platform/github-c2spf/INDEX.md) · [Jira INDEX](../10-sources/com2us-platform/jira/INDEX.md) · [Confluence INDEX](../10-sources/com2us-platform/confluence/INDEX.md)
+집계 출처: [GitHub c2spf-gsroot INDEX](../10-sources/com2us-platform/github-c2spf-gsroot/INDEX.md) · [Jira INDEX](../10-sources/com2us-platform/jira/INDEX.md) · [Confluence INDEX](../10-sources/com2us-platform/confluence/INDEX.md)
 
 ---
 
@@ -45,7 +45,7 @@ Python 백엔드, 게임 데이터 분석(BI), ML/AI 서비스, 블록체인 플
 
 **성과**
 - 팀 최초 **React 기반 프론트엔드 아키텍처** 설계·표준화. Vite + TS + TanStack + Zustand + ag-grid 스택을 팀 표준으로 확정하고 [2025 프론트엔드 개발 가이드라인](../10-sources/com2us-platform/confluence/pages-by-space.md) 문서화.
-- `c2spf/analytics-frontend` **476 커밋**(기여율 ~24%), `c2spf/analytics-common-api` **231 커밋**(92%, 거의 단독 유지보수).
+- `c2spf-gsroot/analytics-frontend` **710 커밋**(기여율 26.6%), `c2spf-gsroot/analytics-common-api` **235 커밋**(90.0%, 거의 단독 유지보수).
 - **팀 프론트엔드 생산성 30~40% 향상 기반 구축**. ag-grid 공통 컴포넌트 설계 리드타임 2~3일 → 하루 미만, 반복 개발 시간 50% 이상 절감.
 - 차트·퍼널·리텐션·대시보드 4대 분석 기능을 "생성·조회·수정" 구조로 리뉴얼. GCPPDT-741/742 Story MR 머지, 회귀 테스트 **32/32 · 22/22 통과**, 측정값 연산식 에러 **8종 × 5개 로케일 i18n**.
 - AI 기반 개발 생산성 향상 가이드 작성(Claude Code / Codex CLI / ChatGPT 실무 시나리오 4종 + 프롬프트 템플릿 4종).
@@ -79,7 +79,7 @@ Python 백엔드, 게임 데이터 분석(BI), ML/AI 서비스, 블록체인 플
 | 스택 | Python(FastAPI) · Java(Spring Boot) · JavaScript · ag-grid · MySQL · Redis · BigQuery · Docker Compose · Jenkins Multi-branch · Promtail · Loki · Grafana |
 
 **성과**
-- `c2spf/analytics-common-api` **231/251 커밋 (92%)** — 거의 단독 유지보수. APIResponse `{result_code, message, data}` 표준화, APICode 13종 + BigQuery 결과 코드 4종 정립.
+- `c2spf-gsroot/analytics-common-api` **235/261 커밋 (90.0%)** — 거의 단독 유지보수. APIResponse `{result_code, message, data}` 표준화, APICode 13종 + BigQuery 결과 코드 4종 정립.
 - **HIVE OAuth 통합**: 토큰·사용자·메뉴 권한·게임 권한 등 **8개 엔드포인트**를 공통 API에 통합. `/hive/auth/games`는 Redis 캐시 기반 최적화, 패턴 매칭 무효화 지원.
 - Docker Compose + Jenkins 멀티브랜치 파이프라인으로 브랜치별(상용/스테이징/샌드박스/테스트) 자동 빌드·배포 표준화. **배포/공통 모듈 가이드 4종**을 2024-10~11 집중 발행.
 - Promtail/Loki/Grafana로 **4개 환경 로그 중앙 집중화**(상용 Primary/Standby + 샌드박스 + 테스트). SSH 수동 검색 → Grafana 레이블 필터링으로 트러블슈팅 난이도 하락.
@@ -218,8 +218,8 @@ Python 백엔드, 게임 데이터 분석(BI), ML/AI 서비스, 블록체인 플
 
 > 4개의 재사용 가능한 서사 단위. 각각 Situation/Task/Action/Result 구조로 정리되어 있습니다.
 
-1. **리더십 — 팀 최초 React 구조 설계·도입** · Spring MVC + jQuery 레거시를 Vite + React + TypeScript + TanStack + Zustand + ag-grid 스택으로 전환. analytics-frontend 476 커밋, 팀 생산성 30~40% 향상 기반. → [상세](../40-stories/leadership-react-adoption.md)
-2. **임팩트 — 공통 모듈화 + 배포 표준화** · analytics-common-api 92% 단독 유지보수, Docker Compose + Jenkins 멀티브랜치 + Loki 4환경 로깅 스택 구축. 배포 가이드 4종 집중 발행. → [상세](../40-stories/impact-analytics-common-module.md)
+1. **리더십 — 팀 최초 React 구조 설계·도입** · Spring MVC + jQuery 레거시를 Vite + React + TypeScript + TanStack + Zustand + ag-grid 스택으로 전환. analytics-frontend 710 커밋, 팀 생산성 30~40% 향상 기반. → [상세](../40-stories/leadership-react-adoption.md)
+2. **임팩트 — 공통 모듈화 + 배포 표준화** · analytics-common-api 90.0% 단독 유지보수, Docker Compose + Jenkins 멀티브랜치 + Loki 4환경 로깅 스택 구축. 배포 가이드 4종 집중 발행. → [상세](../40-stories/impact-analytics-common-module.md)
 3. **문제 해결 — NFT 투표 컨트랙트 가스비 ~90% 절감** · Rust 스마트 컨트랙트 저장 구조·이벤트 설계 최적화로 사용자 비용 대폭 감소. → [상세](../40-stories/problem-solving-gas-fee-optimization.md)
 4. **학습 — AutoML 기반 MLOps 시스템을 처음부터 구축** · GCP AutoML Tables + AI Platform Pipeline + BigQuery 기반 유저 이탈/구매 예측. 평균 예측 정확도 85%+, 예측 유저 추세와 리텐션의 반비례 관계 입증. → [상세](../40-stories/learning-automl-mlops.md)
 

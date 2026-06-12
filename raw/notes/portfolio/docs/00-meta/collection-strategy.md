@@ -11,7 +11,7 @@
 
 ---
 
-## 🐙 GitHub (c2spf 조직)
+## 🐙 GitHub (c2spf-gsroot 조직)
 
 ### 수집 도구
 - `gh` CLI (인증 필요)
@@ -21,14 +21,14 @@
 
 **Step 1 — 조직 레포 목록**
 ```bash
-gh repo list c2spf --limit 200 \
+gh repo list c2spf-gsroot --limit 200 \
   --json name,description,visibility,isPrivate,primaryLanguage,pushedAt,updatedAt
 ```
 
 **Step 2 — 내 기여가 있는 레포 식별**
 각 레포에 대해:
 ```bash
-gh search commits --author=gsroot --repo=c2spf/<name> \
+gh search commits --author=gsroot --repo=c2spf-gsroot/<name> \
   --json sha,commit,repository --limit 50
 ```
 커밋 개수 ≥ 1이면 기여 레포로 분류.
@@ -36,21 +36,21 @@ gh search commits --author=gsroot --repo=c2spf/<name> \
 **Step 3 — 각 기여 레포 상세**
 ```bash
 # README 스냅샷
-gh api repos/c2spf/<name>/readme --jq '.content' | base64 -d > private/github/<name>-README.md
+gh api repos/c2spf-gsroot/<name>/readme --jq '.content' | base64 -d > private/github/<name>-README.md
 
 # 내 PR 목록
-gh search prs --author=gsroot --repo=c2spf/<name> \
+gh search prs --author=gsroot --repo=c2spf-gsroot/<name> \
   --json number,title,state,createdAt,closedAt,url
 ```
 
 **Step 4 — 문서 작성**
-- `docs/10-sources/com2us-platform/github-c2spf/INDEX.md` — 전체 레포 테이블
-- `docs/10-sources/com2us-platform/github-c2spf/repos/<name>.md` — 주요 레포 상세
+- `docs/10-sources/com2us-platform/github-c2spf-gsroot/INDEX.md` — 전체 레포 테이블
+- `docs/10-sources/com2us-platform/github-c2spf-gsroot/repos/<name>.md` — 주요 레포 상세
 
 ### 수집 필드
 | 필드 | 예시 | 출처 |
 |------|------|------|
-| repo_name | `c2spf/analytics-web` | `gh repo list` |
+| repo_name | `c2spf-gsroot/analytics-web` | `gh repo list` |
 | primary_language | `Python` | `gh repo list` |
 | visibility | `private` | `gh repo list` |
 | pushedAt | `2026-04-24T10:30:00Z` | `gh repo list` |

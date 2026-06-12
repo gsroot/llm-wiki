@@ -7,13 +7,13 @@
 - **회사**: 컴투스플랫폼 (Com2usPlatform)
 - **재직 기간**: 2017-05 ~ 현재
 - **수집 대상 기간**: 최근 3년 (2022-01-01 ~ 현재) 우선, 필요시 확장
-- **GitHub 조직**: <https://github.com/c2spf>
+- **회사 프로젝트 GitHub org**: <https://github.com/c2spf-gsroot>
 
 ## 소스별 인덱스
 
 | 소스 | 인덱스 | 상태 |
 |------|--------|------|
-| 🐙 GitHub | [github-c2spf/INDEX.md](./github-c2spf/INDEX.md) | 🚧 |
+| 🐙 GitHub | [github-c2spf-gsroot/INDEX.md](./github-c2spf-gsroot/INDEX.md) | 🚧 |
 | 🎫 Jira | [jira/INDEX.md](./jira/INDEX.md) | ⏳ |
 | 📖 Confluence | [confluence/INDEX.md](./confluence/INDEX.md) | ⏳ |
 | 💾 Google Drive | [google-drive/INDEX.md](./google-drive/INDEX.md) | ⏳ |

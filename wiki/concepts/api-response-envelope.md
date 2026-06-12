@@ -180,7 +180,7 @@ class APIResponse(BaseModel, Generic[T]):
     meta: dict | None = None
 ```
 
-`analytics-common-api` 92% (231/251 커밋)이 이 표준 위에 빌드. `analytics-react-renewal`이 클라이언트 측에서 같은 envelope을 type-safe하게 소비.
+`analytics-common-api` 90.0% (235/261 커밋)이 이 표준 위에 빌드. `analytics-react-renewal`이 클라이언트 측에서 같은 envelope을 type-safe하게 소비.
 
 ### [[matechat]] API 응답 모델 적용
 

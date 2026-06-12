@@ -1,15 +1,15 @@
 ---
-title: "c2spf/analytics-prediction"
+title: "c2spf-gsroot/analytics-prediction"
 type: source-index
 company: com2us-platform
 source: github
-repo: c2spf/analytics-prediction
+repo: c2spf-gsroot/analytics-prediction
 visibility: private
 primary_language: Python
-collected_at: "2026-04-24"
+collected_at: "2026-06-12"
 ---
 
-# c2spf/analytics-prediction
+# c2spf-gsroot/analytics-prediction
 
 HIVE 애널리틱스 AI 예측 프로젝트 — ✅ 완료
 
@@ -17,15 +17,15 @@ HIVE 애널리틱스 AI 예측 프로젝트 — ✅ 완료
 
 | 항목 | 값 |
 |------|----|
-| URL | <https://github.com/c2spf/analytics-prediction> (private) |
+| URL | <https://github.com/c2spf-gsroot/analytics-prediction> (private) |
 | Visibility | private |
-| Default Branch | `master` |
+| Default Branch | `main` |
 | 주 언어 | Python (~296KB), JavaScript (~252KB), CSS (~263KB), HTML |
 | 크기 | 18 MB |
 
 ## 내 기여
 
-- **내 커밋**: **116+** / 전체 925 (페이지네이션 상한, 실제 더 많을 수 있음)
+- **내 커밋**: **116** / 전체 925 (12.5%)
 - **기여 기간**: 2020-08-25 ~ 2021-03-05 (+ 이후 유지보수)
 - **역할**: 풀스택 개발 — 데이터 전처리~모델링~UI/UX까지 전 과정 + AutoML 모델 설계·학습
 

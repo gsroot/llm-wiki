@@ -25,7 +25,7 @@ skills_demonstrated:
 
 ## Action
 
-- **공통 API 서버 설계·구현** (`c2spf/analytics-common-api`, Python/FastAPI): `APIResponse { result_code, message, data }` 표준 포맷 + `APICode` 13종 + BigQuery `ProcessedData` 결과 코드 4종을 정립. `/common/processed-data`, `/permissions`, HIVE OAuth 8개 엔드포인트 통합 (Confluence 35568348).
+- **공통 API 서버 설계·구현** (`c2spf-gsroot/analytics-common-api`, Python/FastAPI): `APIResponse { result_code, message, data }` 표준 포맷 + `APICode` 13종 + BigQuery `ProcessedData` 결과 코드 4종을 정립. `/common/processed-data`, `/permissions`, HIVE OAuth 8개 엔드포인트 통합 (Confluence 35568348).
 - **공통 JavaScript + AG-grid 도입**: 프런트용 '지표 공통 JavaScript' 모듈 분리 제공, AG-grid Enterprise·테이블 전치(Transpose) 구현 가이드 작성 (Confluence 35568328 / 35568724 / 35568748). 후속 React 리뉴얼의 차트·테이블 기반이 됨.
 - **배포 가이드 4종 이틀 집중 발행 (2024-10-28 ~ 10-29)**: Jenkins 멀티 브랜치 파이프라인 가이드(35568332), Docker Compose 배포 가이드(35568336), 공통 API/JS 서비스 배포 가이드(35568340), 공통 JavaScript 사용 가이드(35568328)를 단기간 집중 정비해 팀 표준으로 고정.
 - **로깅 스택 표준화**: Promtail(WAS 사이드카) → Loki(환경별 4종: 상용 Primary/Standby + 샌드박스 + 테스트) → 중앙 Grafana 구조를 Docker로 운영하고, Loki 배포용 Jenkinsfile도 재작성해 배포 파이프라인을 재사용 (Confluence 35568344).
@@ -34,7 +34,7 @@ skills_demonstrated:
 ## Result
 
 - **정량**:
-  - `analytics-common-api` 저장소 내 **커밋 231 / 251 ≈ 92%** 점유 — 단독 유지보수 가능한 수준으로 경계 설계가 정리됨 (출처: `github-c2spf/repos/analytics-common-api.md`).
+  - `analytics-common-api` 저장소 내 **커밋 235/261 ≈ 90.0%** 점유 — 단독 유지보수 가능한 수준으로 경계 설계가 정리됨 (출처: `github-c2spf-gsroot/repos/analytics-common-api.md`).
   - 배포·운영 가이드 **4종 이틀 집중 발행** (2024-10-28 ~ 10-29)으로 팀 표준 확립.
   - **Loki 인스턴스 4개 환경** 분리 운영 (상용 Primary/Standby + 샌드박스 + 테스트, Confluence 35568344).
   - 공통 API 엔드포인트 그룹 **4개**(/common, /permissions, /hive, HIVE Auth 하위 8종) 공개 운영 (Confluence 35568348).
@@ -46,7 +46,7 @@ skills_demonstrated:
 
 ## 관련 증거
 
-- GitHub: <https://github.com/c2spf/analytics-common-api> (private, 커밋 231/251 ≈ 92%)
+- GitHub: <https://github.com/c2spf-gsroot/analytics-common-api> (private, 커밋 235/261 ≈ 90.0%)
 - Confluence (본문 수집): 35568348 (지표 공통 API 명세), 35568344 (로깅 스택 구축 가이드)
 - Confluence (메타): 35568332 (Jenkins 멀티 브랜치), 35568336 (Docker Compose), 35568340 (공통 API/JS 서비스 배포), 35568328 (공통 JS 사용), 35568724 · 35568748 (AG-grid)
 - Jira: **GCPPDTDW-2386** (공통 API - 2025 상위 Story), GCPSRE-16239, GCPSRE-15853, GCPHDBA-2820

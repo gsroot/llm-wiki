@@ -85,7 +85,7 @@ cited_by_count: 28
 - "석근의 9년 커리어를 한 화면에 보고 싶다" — 이력서·면접·외부 소개에 인용할 때.
 - "회사 c2spf와 사이드 MateChat이 어떻게 기술 스택을 검증하는가?" — 쌍 검증 매트릭스 표 (Layer 4) 진입.
 - "포트폴리오 저장소(2개)와 위키가 어떻게 동기화되는가?" — 3-Layer 구조 (Layer 1) 진입.
-- "정량 주장(1,111커밋 / 39 SKILL / 85% 정확도)의 검증 경로는?" — Layer 3 STAR 표.
+- "정량 주장(1,349커밋 / 39 SKILL / 85% 정확도)의 검증 경로는?" — Layer 3 STAR 표.
 - "다음 1인 사업화 의사결정에 어떤 입력이 필요한가?" → 열린 질문 + [[seokgeun-operating-profile-2026]] 연결.
 
 ## 1-hop 진입 (5축 hub 직결)
@@ -136,7 +136,7 @@ cited_by_count: 28
 
 | 주장 | 값 | 재현 경로 |
 |---|---|---|
-| c2spf 조직 본인 커밋 누계 | 1,111건 | `git log --author='석근' --oneline \| wc -l` (c2spf 조직 모든 리포지토리 합) |
+| c2spf-gsroot 조직 본인 커밋 누계 | 1,349건 | `git log --format='%aN <%aE>'` 기준 `김석근 <sgkim@com2us.com>` author 커밋 합산 |
 | MateChat 통합 SKILL | 39개 (자작 11 + 외부 28) | `find mate-chat/.agents/skills -name 'SKILL.md' \| wc -l` 또는 `skills-lock.json § dependencies` |
 | ML 유저 예측 평균 정확도 | 85%+ | GCP AutoML `evaluation_dashboard` 또는 `model_evaluation.json` |
 
@@ -168,7 +168,7 @@ cited_by_count: 28
 | P1 | sub-hub 4개(agent-skills·harness·mcp·claude-code) forward edge | 5축 메타 layer와 직결 (1-hop). |
 | P0 | c2spf-analytics 양방향 보강 | 매트릭스 ✗ 1쌍 해소. 본 hub와 회사 본진 entity가 frontmatter 양방향. |
 
-> 본 hub의 인바운드 측정값은 frontmatter `cited_by` 26개. 본문 정량 수치(1,111커밋/39 SKILL/85%)는 측정 시점 라벨링되어 있고 재현 명령은 Layer 3 표 참조.
+> 본 hub의 인바운드 측정값은 frontmatter `cited_by` 26개. 본문 정량 수치(1,349커밋/39 SKILL/85%)는 측정 시점 라벨링되어 있고 재현 명령은 Layer 3 표 참조.
 
 ## 결론
 

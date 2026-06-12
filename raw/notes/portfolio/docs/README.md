@@ -10,7 +10,7 @@
  Raw Layer (수집)           Synthesis Layer (가공)           Output Layer (산출)
 ┌─────────────────────┐    ┌─────────────────────────┐    ┌─────────────────────┐
 │ 10-sources/         │───▶│ 20-projects/            │───▶│ 50-portfolio/       │
-│   ├ github-c2spf/   │    │   프로젝트 통합 문서   │    │   ├ resume-ko.md    │
+│   ├ github-c2spf-gsroot/   │    │   프로젝트 통합 문서   │    │   ├ resume-ko.md    │
 │   ├ jira/           │    │                         │    │   ├ portfolio-ko.md │
 │   ├ confluence/     │    │ 30-skills/              │    │   ├ portfolio-en.md │
 │   ├ google-drive/   │───▶│   스킬 → 프로젝트 매핑 │───▶│   └ evaluation-kpt  │
@@ -43,7 +43,7 @@
 외부 시스템에서 수집한 원천 자료의 **인덱스**. 실제 원본 데이터 중 민감한 것은 `private/`에만 존재.
 
 - [com2us-platform/](./10-sources/com2us-platform/) — 컴투스플랫폼 (현 재직)
-  - [github-c2spf/INDEX.md](./10-sources/com2us-platform/github-c2spf/INDEX.md)
+  - [github-c2spf-gsroot/INDEX.md](./10-sources/com2us-platform/github-c2spf-gsroot/INDEX.md)
   - [jira/INDEX.md](./10-sources/com2us-platform/jira/INDEX.md)
   - [confluence/INDEX.md](./10-sources/com2us-platform/confluence/INDEX.md)
   - [google-drive/INDEX.md](./10-sources/com2us-platform/google-drive/INDEX.md)
@@ -102,7 +102,7 @@
 | Phase | 상태 | 내용 |
 |-------|------|------|
 | 0. Foundation | 🚧 진행 중 | 디렉토리 구조, 방법론 문서, 섹션 README |
-| A. GitHub c2spf 수집 | ⏳ 대기 | c2spf 조직 레포 목록 및 기여도 |
+| A. GitHub c2spf-gsroot 수집 | ⏳ 대기 | c2spf-gsroot 조직 레포 목록 및 기여도 |
 | B. Jira 수집 | ⏳ 대기 | 최근 3년 JQL 수집 |
 | C. Confluence 수집 | ⏳ 대기 | 최근 3년 CQL 수집 |
 | D. Google Drive | ⏳ 대기 | 문서/시트 목록 |
@@ -116,7 +116,7 @@
 ## 🔗 외부 링크
 
 - **사용자 GitHub**: <https://github.com/gsroot>
-- **컴투스플랫폼 조직 GitHub**: <https://github.com/c2spf>
+- **회사 프로젝트 GitHub org**: <https://github.com/c2spf-gsroot>
 - **Blog**: <https://gsroot.tistory.com>
 - **LinkedIn**: <https://www.linkedin.com/in/seokgeun-kim-839473285/>
 

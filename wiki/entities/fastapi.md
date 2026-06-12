@@ -44,7 +44,7 @@ cited_by_count: 40
 
 **FastAPI**는 Python 3.10+ 표준 타입힌트를 입력으로 받아 OpenAPI · JSON Schema · OAuth2 명세를 자동으로 생성·강제하는 ASGI 웹 프레임워크다. 2018년 12월 [[tiangolo]] (Sebastián Ramírez)가 공개했고, **Starlette**(비동기 코어) + **Pydantic**(데이터 검증)을 의존성으로 두며 둘 다에 직접 기여한 이력이 있다. 2026-04 시점 v0.136.1, MIT, 100% test coverage, 100% type-annotated.
 
-석근 입장에서는 c2spf 애널리틱스 공통 API의 92% 단독 유지보수 영역이자 개인 비서 / 트래블메이트 / Mate Chat 백엔드의 디폴트 스택. v0.136.1부터 **라이브러리 안에 자체 SKILL.md가 번들링**되어 LLM 에이전트가 자동으로 "FastAPI 다움"을 따르도록 가이드하는 첫 OSS 사례가 되었다.
+석근 입장에서는 c2spf 애널리틱스 공통 API의 90.0% 단독 유지보수 영역이자 개인 비서 / 트래블메이트 / Mate Chat 백엔드의 디폴트 스택. v0.136.1부터 **라이브러리 안에 자체 SKILL.md가 번들링**되어 LLM 에이전트가 자동으로 "FastAPI 다움"을 따르도록 가이드하는 첫 OSS 사례가 되었다.
 
 ## 주요 특징
 
@@ -101,7 +101,7 @@ cited_by_count: 40
 - [[backend-python-fastapi]] — 석근의 백엔드 스택 운영 맥락(c2spf 애널리틱스 공통 API)
 - [[agent-skills]] — fastapi가 self-hosted SKILL.md를 출하한 첫 라이브러리. 표준의 OSS 침투 증거.
 - [[anthropics-skills]] — fastapi가 채택한 표준 정의처
-- [[c2spf-analytics|c2spf 게임 데이터 BI]] — fastapi 92% 단독 유지보수 코드베이스
+- [[c2spf-analytics|c2spf 게임 데이터 BI]] — fastapi 90.0% 단독 유지보수 코드베이스
 - [[github-spec-kit]] — Codex Skills 모드(외부 통합 사례)와 fastapi(라이브러리 self-hosted 사례)의 짝
 - [[mcp]] / [[harness]] — fastapi가 ASGI 위에서 에이전트 백엔드(MCP 서버, 하네스)로 자주 사용됨
 

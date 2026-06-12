@@ -25,7 +25,7 @@ tags: [python, backend, async, api, fastapi, flask]
 
 Python 기반 백엔드 서비스를 9년간 설계·개발해온 주력 스택. 게임 데이터 분석(BI) 공통 API, 광고 MMP 데이터 결합 파이프라인, 가상자산 트래블룰(규제) API, 블록체인 Discord 인증 봇, 대용량 비동기 다운로드 워커, 통합 인증 모듈, AI 챗봇/에이전트(개인 프로젝트)까지 **FastAPI / Flask / SQLAlchemy / Pytest / Celery** 계열을 프로덕션 규모로 운영해왔다.
 
-- 단독 유지보수 경험: `c2spf/analytics-common-api` 저장소 본인 커밋 **231 / 251 ≈ 92%** (2024-09 ~ 2026-04 진행 중)
+- 단독 유지보수 경험: `c2spf-gsroot/analytics-common-api` 저장소 본인 커밋 **235/261 ≈ 90.0%** (2024-09 ~ 2026-04 진행 중)
 - `ABOUT ME` 중 "Python 기반 백엔드 서비스와 데이터 파이프라인을 설계·개발" (`old-portfolio.md` L7)
 
 ## 프로젝트 증거
@@ -61,7 +61,7 @@ Python 기반 백엔드 서비스를 9년간 설계·개발해온 주력 스택.
 
 | 스택 | 숙련도 | 근거 |
 |------|--------|------|
-| FastAPI | expert | 공통 API 단독 유지보수(92%), Airbridge API, NFT Discord 봇, Mate Chat, 트래블메이트 등 주력 프레임워크 |
+| FastAPI | expert | 공통 API 단독 유지보수(90.0%), Airbridge API, NFT Discord 봇, Mate Chat, 트래블메이트 등 주력 프레임워크 |
 | Flask | proficient | ML 유저 예측, 대용량 다운로드, 통합 인증 등 2019~2021년 주력 프레임워크 |
 | SQLAlchemy / Alembic | expert | 상용 서비스부터 개인 프로젝트까지 일관 사용. Alembic으로 스키마 마이그레이션 운영 |
 | Pytest | proficient | 전 프로젝트에서 회귀 테스트 스위트 유지 (old-portfolio.md 기재) |
@@ -74,7 +74,7 @@ Python 기반 백엔드 서비스를 9년간 설계·개발해온 주력 스택.
 
 ## 대표 성과
 
-- **공통 API 단독 유지보수 체계**: `c2spf/analytics-common-api` 본인 커밋 **231/251 ≈ 92%** — 저장소 단독 유지보수 수준으로 경계 설계·응답 포맷·OAuth 통합을 단독 주도 (출처: 2024-08 / 2025-01 프로젝트 문서, `github-c2spf/repos/analytics-common-api.md`).
+- **공통 API 단독 유지보수 체계**: `c2spf-gsroot/analytics-common-api` 본인 커밋 **235/261 ≈ 90.0%** — 저장소 단독 유지보수 수준으로 경계 설계·응답 포맷·OAuth 통합을 단독 주도 (출처: 2024-08 / 2025-01 프로젝트 문서, `github-c2spf-gsroot/repos/analytics-common-api.md`).
 - **API 응답 규약 표준화**: `APIResponse { result_code, message, data }` + `APICode` 13종 + `ProcessedData.result_code` 4종(BigQuery 오류 분리) 정립 (출처: Confluence 35568348).
 - **하이브리드 스택 전략**: Airbridge 프로젝트에서 기존 Spring Boot 리포트 백엔드를 유지하면서 데이터 가공 파트만 FastAPI 공통 API로 분리하여 리팩토링 리스크를 줄이고 Pandas 기반 피벗·집계 이점을 확보 (출처: 2025-01 프로젝트 문서).
 - **Google Play 출시**: LangGraph + FastAPI 기반 트래블메이트 앱을 스토어에 출시, 서버 측 영수증 검증 결제 시스템 구축 (출처: `old-portfolio.md` L263~266).
@@ -88,4 +88,4 @@ Python 기반 백엔드 서비스를 9년간 설계·개발해온 주력 스택.
 
 - `old-portfolio.md` — 경력/스킬 요약 (L7 "Python 기반 백엔드", L35 언어/프레임워크, 프로젝트별 기술 스택)
 - `docs/20-projects/com2us-platform/*.md` — 프로젝트별 YAML `tech_stack` 및 STAR 본문
-- `docs/10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md` — 커밋 비중 근거
+- `docs/10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md` — 커밋 비중 근거

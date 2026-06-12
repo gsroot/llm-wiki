@@ -88,8 +88,8 @@ cited_by_count: 44
 ## 핵심 성과 하이라이트
 
 - 팀 최초 React 기반 프론트엔드 아키텍처 도입·표준화 (2025-06~).
-- 애널리틱스 공통 API `c2spf/analytics-common-api` **231/251 커밋 (~92%)** 단독 유지보수.
-- **`c2spf` 조직 내 본인 커밋 누계 1,111건**.
+- 애널리틱스 공통 API `c2spf-gsroot/analytics-common-api` **235/261 커밋 (90.0%)** 단독 유지보수.
+- **`c2spf-gsroot` 조직 내 본인 커밋 누계 1,349건**.
 - ML 유저 예측 정확도 평균 **85% 이상** 달성 (GCP AutoML).
 - NFT 마켓 Rust 투표 스마트 컨트랙트 **가스비 ~90% 절감**.
 - LangGraph 기반 트래블메이트 Android 앱 Google Play 출시 (2025-11).

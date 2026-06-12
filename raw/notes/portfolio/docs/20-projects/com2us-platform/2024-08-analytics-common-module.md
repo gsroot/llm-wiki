@@ -32,11 +32,11 @@ sources:
     - "35568724 — ag-grid 테이블 전치(Transpose) 구현 가이드 (2025-06-02)"
     - "35568800 — 애널리틱스 '사용자 권한 게임 목록 조회' API 통합 - 오류 트러블슈팅 (2025-07-08, 본문 수집)"
   github:
-    - "https://github.com/c2spf/analytics-common-api  # 내 커밋 231 / 전체 251 (~92%, 거의 단독 유지보수)"
+    - "https://github.com/c2spf-gsroot/analytics-common-api  # 내 커밋 235 / 전체 261 (90.0%, 거의 단독 유지보수)"
   gmail: []
 tags: [backend, platform, api, devops, jenkins, docker, logging, ag-grid, fastapi]
 metrics:
-  - "공통 API 저장소 내 커밋 점유율 약 92% (231/251) — 거의 단독 유지보수 (출처: github-c2spf/repos/analytics-common-api.md)"
+  - "공통 API 저장소 내 커밋 점유율 약 90.0% (235/261) — 거의 단독 유지보수 (출처: github-c2spf-gsroot/repos/analytics-common-api.md)"
   - "공통 API 명세 문서화: APIResponse 표준화 + 결과 코드 13종(APICode) + BigQuery 처리 결과 코드 4종 정의 (출처: Confluence 35568348)"
   - "공통 API 엔드포인트 그룹 4개(/common, /permissions, /hive, HIVE Auth 하위 8종) 공개 운영 (출처: Confluence 35568348)"
   - "로깅 스택 Loki 인스턴스 4개 환경 분리 운영: 상용 Primary/Standby + 샌드박스 + 테스트 (출처: Confluence 35568344)"
@@ -48,13 +48,13 @@ star:
   situation: "애널리틱스(게임 데이터 분석 BI) 서비스가 다년간 확장되며 리포트·대시보드별로 데이터 가공·시각화 로직이 중복·분산되어 코드 일관성과 유지보수성이 떨어지고, 배포도 서버별 수동 작업 비중이 커 속도·안정성 측면에서 한계가 있었음. 공통 API 서버·로그 수집 인프라도 환경별로 정리되어 있지 않아 장애 트러블슈팅 난이도가 높았음."
   task: "① 데이터 시각화에 공통으로 쓰이는 서버 API(피벗/집계/권한/HIVE Auth)와 프론트의 공통 JavaScript 모듈을 신규 설계·개발해 중복을 제거, ② Docker Compose + Jenkins 멀티 브랜치 파이프라인 기반 배포 프로세스를 표준화, ③ Promtail/Loki/Grafana 기반 로깅 스택을 환경별로 분리 구축해 운영 가시성을 확보."
   action: |
-    - 공통 API 서버(c2spf/analytics-common-api, Python/FastAPI 추정)를 신규 설계·구현. APIResponse { result_code, message, data } 표준 포맷과 결과 코드 체계(APICode 13종 + BigQuery ProcessedData 코드 4종)를 정립하고, /common/processed-data에서 BigQuery·Airbridge 쿼리를 결합·피벗팅해 테이블로 반환하도록 설계 (Confluence 35568348).
+    - 공통 API 서버(c2spf-gsroot/analytics-common-api, Python/FastAPI 추정)를 신규 설계·구현. APIResponse { result_code, message, data } 표준 포맷과 결과 코드 체계(APICode 13종 + BigQuery ProcessedData 코드 4종)를 정립하고, /common/processed-data에서 BigQuery·Airbridge 쿼리를 결합·피벗팅해 테이블로 반환하도록 설계 (Confluence 35568348).
     - HIVE OAuth 인증 플로우 전반(/hive/auth/token·check-token·menu-permissions·menu-others·combined-info·games·games/cache)을 공통 API에 통합해 사용자/메뉴/게임 권한 조회를 Redis 캐시와 함께 단일 엔드포인트 세트로 제공.
     - 권한 관리(/permissions) CRUD 엔드포인트와 중복 조합 400·미존재 404 등 표준화된 오류 처리 규약을 적용 (Confluence 35568348).
     - 프론트용 '지표 공통 JavaScript' 모듈을 분리 제공하고 AG-grid를 도입해 대용량 사용자 데이터 처리·테이블 전치(Transpose)·Enterprise 기능 활용 가이드를 작성 (Confluence 35568328, 35568724, 35568748).
     - Docker + Docker Compose 기반 컨테이너 배포 구조와 Jenkins 멀티 브랜치 파이프라인을 도입해 브랜치별(상용/스테이징/샌드박스/테스트) 자동 빌드·배포를 구성하고, 팀 내 재사용 가능한 배포 가이드 4종을 2024-10~11 집중 발행 (Confluence 35568336, 35568332, 35568340).
     - 로깅 스택을 Promtail(WAS 사이드카) → Loki(환경별 수집 서버) → Grafana(중앙 조회) 구조로 표준화. 상용 Primary/Standby, 샌드박스, 테스트 4개 Loki 인스턴스를 Docker로 운영하고 Loki 배포용 Jenkinsfile까지 작성 (Confluence 35568344).
-    - 단독 유지보수 체계를 유지하며(커밋 231/251 ≈ 92%) BigQuery Decimal→숫자 타입 변환, 피벗 축 NULL 플레이스홀더 대체, OS별 TCP Keepalive 개선, 슬레이브 동기화 이슈 대응 등 운영 중 이슈를 지속 해소 (github-c2spf/repos/analytics-common-api.md).
+    - 단독 유지보수 체계를 유지하며(커밋 235/261 ≈ 90.0%) BigQuery Decimal→숫자 타입 변환, 피벗 축 NULL 플레이스홀더 대체, OS별 TCP Keepalive 개선, 슬레이브 동기화 이슈 대응 등 운영 중 이슈를 지속 해소 (github-c2spf-gsroot/repos/analytics-common-api.md).
   result: |
     - 데이터 가공·시각화 로직을 '공통 API + 공통 JavaScript' 한 세트로 수렴시켜 리포트 간 코드 일관성과 유지보수성을 크게 향상 (정성).
     - AG-grid 도입으로 대용량 사용자 데이터의 처리·가독성이 강화되어 후속 프로젝트(2025-06 React 리뉴얼)의 차트/테이블 기반이 됨.
@@ -83,9 +83,9 @@ star:
 
 ## 수행 내역 (Action)
 
-### 1. 공통 API 서버 설계·구현 (`c2spf/analytics-common-api`)
+### 1. 공통 API 서버 설계·구현 (`c2spf-gsroot/analytics-common-api`)
 
-- 저장소 단독 유지보수 담당 (내 커밋 **231 / 251 ≈ 92%**, 2024-09-02 ~ 2026-04-16 진행 중).
+- 저장소 단독 유지보수 담당 (내 커밋 **235/261 ≈ 90.0%**, 2024-09-02 ~ 2026-05-14 진행 중).
 - **응답 포맷 표준화**: `APIResponse { result_code, message, data }` + `APICode` 13종(성공 0, 검증 1001, 인증 1002~2007), `ProcessedData.result_code` 4종(BigQuery 오류 분리).
 - **Common Data 엔드포인트**: `POST /common/processed-data` — BigQuery·Airbridge 쿼리를 결합·피벗팅하여 `index`, `columns`, `data`, `index_names`, `column_names`, `summary_stats`, `date_type`까지 반환.
 - **HIVE OAuth 통합**: 토큰 발급/검증, 사용자 정보, 메뉴 권한, 게임 권한 등 **8개 엔드포인트**를 공통 API에 통합. `/hive/auth/games`는 Redis 캐시 기반 최적화, `/hive/auth/games/cache DELETE`는 패턴 매칭 무효화 지원.
@@ -119,7 +119,7 @@ star:
 
 ## 성과 (Result)
 
-- **코드 일관성·유지보수성 향상**: 데이터 가공·시각화 로직이 공통 API + 공통 JS로 수렴. 단독 유지보수(~92%)가 가능한 수준으로 경계 설계가 정리됨.
+- **코드 일관성·유지보수성 향상**: 데이터 가공·시각화 로직이 공통 API + 공통 JS로 수렴. 단독 유지보수(90.0%)가 가능한 수준으로 경계 설계가 정리됨.
 - **AG-grid 도입으로 사용자 데이터 처리 강화**: 대용량 테이블/전치/Enterprise 기능이 프런트 표준이 되어 후속 "애널리틱스 React 리뉴얼"(2025-06~)의 차트·테이블 기반으로 계승.
 - **배포 속도·안정성 개선**: Docker Compose + Jenkins 멀티 브랜치 파이프라인으로 브랜치-환경 자동 배포가 표준화. 배포 가이드 4종을 2024-10~11에 집중 발행하여 팀 내 재사용 가능.
 - **운영 가시성 확보**: 4개 환경의 로그가 Grafana 단일 인터페이스에서 조회·필터링 가능해져 장애 트러블슈팅 난이도 하락 (정성).
@@ -140,7 +140,7 @@ star:
 
 ## 증거 링크
 
-- GitHub: <https://github.com/c2spf/analytics-common-api> (private, 내 커밋 231/251 ~ 92%)
+- GitHub: <https://github.com/c2spf-gsroot/analytics-common-api> (private, 내 커밋 235/261 ~ 90.0%)
 - Confluence (본문 수집):
   - 35568348 — 지표 공통 API 명세 문서
   - 35568344 — 로깅 스택 구축 가이드

@@ -1,15 +1,15 @@
 ---
-title: "c2spf/analytics-frontend"
+title: "c2spf-gsroot/analytics-frontend"
 type: source-index
 company: com2us-platform
 source: github
-repo: c2spf/analytics-frontend
+repo: c2spf-gsroot/analytics-frontend
 visibility: private
 primary_language: JavaScript
-collected_at: "2026-04-24"
+collected_at: "2026-06-12"
 ---
 
-# c2spf/analytics-frontend
+# c2spf-gsroot/analytics-frontend
 
 애널리틱스 프론트엔드 (React 리뉴얼) — 🚧 현재 진행 중
 
@@ -17,7 +17,7 @@ collected_at: "2026-04-24"
 
 | 항목 | 값 |
 |------|----|
-| URL | <https://github.com/c2spf/analytics-frontend> (private) |
+| URL | <https://github.com/c2spf-gsroot/analytics-frontend> (private) |
 | Visibility | private |
 | Default Branch | `main` |
 | 주 언어 | JavaScript, TypeScript, SCSS/CSS |
@@ -25,8 +25,8 @@ collected_at: "2026-04-24"
 
 ## 내 기여
 
-- **내 커밋**: **476** / 전체 2,000+ (~24%)
-- **기여 기간**: 2025-10-13 ~ 2026-04-23 (진행 중)
+- **내 커밋**: **710** / 전체 2,673 (26.6%)
+- **기여 기간**: 2025-04-16 ~ 2026-06-10 (진행 중)
 - **역할**: 프론트엔드 리드, React 전환 설계·구축
 
 ## 기술 스택 (README 기반)

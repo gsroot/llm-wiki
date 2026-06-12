@@ -40,11 +40,11 @@ source_count: 4
 observed_source_refs: 45
 inbound_count: 199
 created: 2026-04-24
-updated: 2026-04-29
+updated: 2026-06-12
 verification_required: true
-last_verified: 2026-04-29
-verification_notes: 회사 BI 시스템 운영 상태 (스택·리뉴얼 진행도) — 회사 인프라 재확인
-verification_procedure: 사내 GitHub c2spf 조직의 analytics-* 레포 최신 커밋 확인 (operating 상태 / 1,111 커밋 누계 변동). 분기별 c2spf-analytics-common API ownership 비율 재산출 (231/251 → 갱신). 변동 시 본문 정량 단언과 last_verified 갱신.
+last_verified: 2026-06-12
+verification_notes: GitHub c2spf-gsroot 6개 저장소 원격 로그 재집계 — `김석근 <sgkim@com2us.com>` author 기준 1,349 커밋, analytics-common-api 235/261(90.0%)
+verification_procedure: 사내 GitHub c2spf-gsroot 조직의 analytics-* 레포 최신 커밋 확인 (operating 상태 / 1,349 커밋 누계 변동). 분기별 c2spf-analytics-common API ownership 비율 재산출 (235/261 → 갱신). 변동 시 본문 정량 단언과 last_verified 갱신.
 cited_by_count: 79
 ---
 
@@ -61,9 +61,9 @@ cited_by_count: 79
 
 ## 주요 특징
 
-- **레포지토리 군** (`c2spf` GitHub 조직 내)
- - `analytics-frontend` — UI. 2025-06부터 React + TypeScript + Vite 기반으로 리뉴얼. 본인 476커밋 (~24%).
- - `analytics-common-api` — 데이터 가공·시각화·HIVE OAuth 공통 API. FastAPI 기반. 본인 231/251 커밋 (~92%).
+- **레포지토리 군** (`c2spf-gsroot` GitHub 조직 내)
+ - `analytics-frontend` — UI. 2025-06부터 React + TypeScript + Vite 기반으로 리뉴얼. 본인 710커밋 (26.6%).
+ - `analytics-common-api` — 데이터 가공·시각화·HIVE OAuth 공통 API. FastAPI 기반. 본인 235/261 커밋 (90.0%).
  - `analytics-prediction` — ML 유저 예측 (이탈/구매 예측, AutoML 기반).
  - `analytics-mobile-report` — 모바일 리포트.
  - `analytics-download` — 대용량 데이터 다운로드 REST API + Celery 비동기 워커.
@@ -85,9 +85,9 @@ c2spf 애널리틱스는 코드 자체가 아니라 **코드 + 데이터 모델 
 
 ### 자기 커밋 분포 (포트폴리오 기준)
 
-- `c2spf` 조직 본인 커밋 누계: **1,111건** [재현: `git log --author='석근' --oneline | wc -l` (c2spf 조직 전체 리포지토리 합)]
-- `analytics-common-api` 단독 유지보수: 231/251 커밋 (~92%) [재현: `git shortlog -sn` in `analytics-common-api`]
-- `analytics-frontend` React 리뉴얼: 476커밋 (~24%, 팀 최초 React 도입) [재현: `git shortlog -sn --since=2025-06-01` in `analytics-frontend`]
+- `c2spf-gsroot` 조직 본인 커밋 누계: **1,349건** [재현: `git log --format='%aN <%aE>'` 기준 `김석근 <sgkim@com2us.com>` author 커밋 합산]
+- `analytics-common-api` 단독 유지보수: 235/261 커밋 (90.0%) [재현: `git shortlog -sn` in `analytics-common-api`]
+- `analytics-frontend` React 리뉴얼: 710커밋 (26.6%, 팀 최초 React 도입) [재현: `git shortlog -sn` in `analytics-frontend`]
 - ML 유저 예측: AutoML 기반 평균 정확도 85%+ [재현: GCP AutoML `evaluation_dashboard` 또는 `model_evaluation.json`]
 
 > 본 정량 주장의 마지막 측정 시점은 frontmatter `last_verified` 필드로 추적된다. 이후 변동은 `verification_required: true`에 따라 분기별 재산출 권장 — `verification_notes` 참조.
@@ -132,7 +132,7 @@ c2spf-analytics는 본 위키에서 인바운드 상위권 hub다. **시점 스�
 ## 관련 개념
 
 - [[com2us-platform]] — 운영 회사
-- [[seokgeun-kim|석근 (이 위키 owner)]] — 주축 개발자, 1,111커밋 누계
+- [[seokgeun-kim|석근 (이 위키 owner)]] — 주축 개발자, 1,349커밋 누계
 - [[backend-python-fastapi]] — 공통 API 스택, [[matechat]] 백엔드와 동일 6단
 - [[frontend-react]] — 2025-06 리뉴얼 표준, [[tanstack-query]] + [[zustand]] 발견과 일치
 - [[data-pipeline-bigquery]] — BI 데이터 파이프라인

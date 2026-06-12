@@ -32,7 +32,7 @@ tags: [java, spring-boot, backend, api, bi]
 | 2017-05 ~ 현재 | 컴투스플랫폼 애널리틱스 본체 (리포트/대시보드 BI) | 풀스택 개발, Spring MVC + jQuery + Highcharts 기반 | `old-portfolio.md` L164, Confluence 35568410 |
 | 2024-08 ~ 2024-12 | 애널리틱스 공통 모듈 & 배포 개선 | Java(Spring Boot) 리포트 계층 + Python(FastAPI) 공통 API 동시 운영 | `2024-08-analytics-common-module.md` |
 | 2025-01 ~ 2025-02 | Airbridge 데이터 가공 API | Spring MVC 컨트롤러-서비스-리포지토리 계층 + MyBatis/JPA 다중 데이터소스 확장 | `2025-01-airbridge-api.md` |
-| 2025-03 ~ 2025-04 | 애널리틱스 모바일 리포트 | Java(Spring Boot) + JavaScript 기반 모바일 친화 리포트 뷰 (101/318 커밋 ~32%) | `github-c2spf/repos/analytics-mobile-report.md` |
+| 2025-03 ~ 2025-04 | 애널리틱스 모바일 리포트 | Java(Spring Boot) + JavaScript 기반 모바일 친화 리포트 뷰 (101/318 커밋 ~32%) | `github-c2spf-gsroot/repos/analytics-mobile-report.md` |
 | 2025-06 ~ 현재 | 애널리틱스 React 리뉴얼 | 기존 Spring 리포트 백엔드와 공존하는 프런트 전환 | `2025-06-analytics-react-renewal.md` |
 
 ## 프로젝트 증거 (이 스킬을 사용한 프로젝트)
@@ -43,9 +43,9 @@ tags: [java, spring-boot, backend, api, bi]
 | 애널리틱스 본체 (장기) | 2017-05 ~ 현재 | 세그먼트 결합, CSV 다운로드, 퍼널/코호트 분석, 커스텀 리포트 기능 (Spring Boot) | `old-portfolio.md` "애널리틱스(게임 데이터 분석 웹 서비스) 개발", Confluence 35568410 |
 | 애널리틱스 공통 모듈 & 배포 개선 | 2024-08 ~ 2024-12 | Spring Boot 본체 유지 + FastAPI 공통 API 연계, Jenkinsfile 배포 표준화 | [`2024-08-analytics-common-module.md`](../20-projects/com2us-platform/2024-08-analytics-common-module.md) |
 | Airbridge 데이터 가공 API | 2025-01 ~ 2025-02 | Spring MVC(컨트롤러-서비스-리포지토리) + MyBatis + JPA 다중 데이터소스, Hive OAuth 필터(`HiveConsoleSecurityAuthFilter`), 리포트 계층(ReportInfo → TabInfo → PageInfo → DataSourceInfo) 확장 | [`2025-01-airbridge-api.md`](../20-projects/com2us-platform/2025-01-airbridge-api.md) |
-| 애널리틱스 모바일 리포트 | 2025-03 ~ 2025-04 | Spring Boot 백엔드 + JavaScript 프런트 (101 커밋 / 32% 점유), GA 통합·i18n·보안 설정 개선 | [`analytics-mobile-report.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-mobile-report.md) |
+| 애널리틱스 모바일 리포트 | 2025-03 ~ 2025-04 | Spring Boot 백엔드 + JavaScript 프런트 (101 커밋 / 32% 점유), GA 통합·i18n·보안 설정 개선 | [`analytics-mobile-report.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-mobile-report.md) |
 | 애널리틱스 React 리뉴얼 | 2025-06 ~ 현재 | 기존 Spring MVC + Thymeleaf + Bootstrap 레거시 리포트 백엔드와 React 프런트 공존 설계 | [`2025-06-analytics-react-renewal.md`](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) |
-| 트래블룰 샘플 VASP | 2021-11 ~ 2022-06 | 거래소 연동용 Sample VASP API의 Java Spring WebSocket 샘플 SDK 제공 | [`travelrule-api.md`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) |
+| 트래블룰 샘플 VASP | 2021-11 ~ 2022-06 | 거래소 연동용 Sample VASP API의 Java Spring WebSocket 샘플 SDK 제공 | [`travelrule-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) |
 
 ## 주요 기술 포인트
 
@@ -109,5 +109,5 @@ tags: [java, spring-boot, backend, api, bi]
 - [`../20-projects/com2us-platform/2024-08-analytics-common-module.md`](../20-projects/com2us-platform/2024-08-analytics-common-module.md)
 - [`../20-projects/com2us-platform/2025-01-airbridge-api.md`](../20-projects/com2us-platform/2025-01-airbridge-api.md)
 - [`../20-projects/com2us-platform/2025-06-analytics-react-renewal.md`](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/analytics-mobile-report.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-mobile-report.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) (Java Spring WebSocket 샘플)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-mobile-report.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-mobile-report.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) (Java Spring WebSocket 샘플)

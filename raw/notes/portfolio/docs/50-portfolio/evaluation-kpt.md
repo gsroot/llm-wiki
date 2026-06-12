@@ -27,13 +27,13 @@ collected_at: "2026-04-24"
 
 ### K1. 팀 최초 React 기반 리뉴얼 주도
 - Vite + React + TypeScript + TanStack Router/Query + Zustand + ag-grid 스택을 팀 표준으로 확정하고 가이드라인 문서화 (Confluence 35568626)
-- `analytics-frontend` **476커밋** 기여, 차트·퍼널·리텐션·대시보드 4대 기능을 Story 단위로 단계 진행
+- `analytics-frontend` **710커밋** 기여, 차트·퍼널·리텐션·대시보드 4대 기능을 Story 단위로 단계 진행
 - GCPPDT-741(차트 UX) MR#20/#22 회귀 테스트 **32/32 통과**, GCPPDT-742(차트 테이블) MR#23/#24 **22/22 통과**
 - **팀 전체 프론트엔드 생산성 30~40% 향상 기반** 구축 (old-portfolio.md L126, Confluence 170034641 §7 일치)
 - → 출처: [2025-06-analytics-react-renewal.md](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md), [leadership-react-adoption.md](../40-stories/leadership-react-adoption.md)
 
 ### K2. 공통 모듈 단독 유지로 팀 병목 최소화
-- `analytics-common-api` 커밋 점유율 **92% (231/251)** — 2024-09-02 ~ 2026-04-16 지속 유지보수
+- `analytics-common-api` 커밋 점유율 **90.0% (235/261)** — 2024-09-02 ~ 2026-05-14 지속 유지보수
 - 상위 Story "공통 API - 2025"(GCPPDTDW-2386) 2026-04-15 Done 완료
 - BigQuery Decimal 타입 변환, 피벗 NULL 플레이스홀더, `date_type=MINUTE` 검증, OS별 TCP Keepalive 등 운영 이슈를 선제적으로 해소
 - → 출처: [2024-08-analytics-common-module.md](../20-projects/com2us-platform/2024-08-analytics-common-module.md), [impact-analytics-common-module.md](../40-stories/impact-analytics-common-module.md)
@@ -58,7 +58,7 @@ collected_at: "2026-04-24"
 ## 3. Problem — 개선 필요 / 학습 중
 
 ### P1. 공통 모듈 단독 유지로 인한 버스팩터(Bus Factor) 리스크
-- `analytics-common-api` 커밋 92% 단독 유지는 **속도 면에선 이점**이지만, 팀 차원에서는 지식 분산이 되어 있지 않음
+- `analytics-common-api` 커밋 90.0% 단독 유지는 **속도 면에선 이점**이지만, 팀 차원에서는 지식 분산이 되어 있지 않음
 - 2024-08 이후 상위 Story가 "공통 API - 2025"로 이어지며 **범위가 계속 커지는 중** → Knowledge Transfer와 공동 오너십 체계가 필요
 
 ### P2. 인프라 의존 이슈에 대한 임시 조치
@@ -108,8 +108,8 @@ collected_at: "2026-04-24"
 
 | 지표 | 값 | 출처 |
 |------|---|------|
-| analytics-frontend 내 커밋 | **476** (전체의 ~24%) | [GitHub c2spf (repo index)](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) |
-| analytics-common-api 커밋 점유율 | **92% (231/251)** | [2024-08 공통 모듈 문서](../20-projects/com2us-platform/2024-08-analytics-common-module.md) |
+| analytics-frontend 내 커밋 | **710** (전체의 26.6%) | [GitHub c2spf-gsroot (repo index)](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) |
+| analytics-common-api 커밋 점유율 | **90.0% (235/261)** | [2024-08 공통 모듈 문서](../20-projects/com2us-platform/2024-08-analytics-common-module.md) |
 | Jira 티켓 (2022-01 ~ 현재, 4.3년) | **636건** | [Jira INDEX](../10-sources/com2us-platform/jira/INDEX.md) |
 | 애널리틱스 개발 파트 Jira (GCPPDTDW) | **128건** | [Jira INDEX](../10-sources/com2us-platform/jira/INDEX.md) |
 | AI개발2실 Jira (GCPPDT) | **66건** (In Progress 36건) | [Jira INDEX](../10-sources/com2us-platform/jira/INDEX.md) |
@@ -124,7 +124,7 @@ collected_at: "2026-04-24"
 
 ## 6. 자기 평가 요약
 
-이번 기간의 핵심은 **팀 최초 React 기반 리뉴얼을 리드**하며 스택·가이드라인·공통 컴포넌트·AI 활용 체계까지 팀 표준으로 정착시켜 **프론트엔드 생산성 30~40% 향상 기반**을 만든 것과, **공통 모듈의 거의 단독 유지보수(92%)**로 팀 병목을 최소화하면서도 배포·로깅·권한 체계를 표준화한 것이다. 강점은 기술 문서화·AI 도구 실무화·크로스 팀 협업이며, 개선할 지점은 **공통 모듈 버스팩터 완화**와 **R&D 결과물(Superset·Redis HA)의 실행 전환**, 그리고 **React 리뉴얼 4대 기능 완결**이다. 다음 반기는 "리뉴얼 완결 + 지식 분산 + R&D 실행" 세 축에 집중한다.
+이번 기간의 핵심은 **팀 최초 React 기반 리뉴얼을 리드**하며 스택·가이드라인·공통 컴포넌트·AI 활용 체계까지 팀 표준으로 정착시켜 **프론트엔드 생산성 30~40% 향상 기반**을 만든 것과, **공통 모듈의 거의 단독 유지보수(90.0%)**로 팀 병목을 최소화하면서도 배포·로깅·권한 체계를 표준화한 것이다. 강점은 기술 문서화·AI 도구 실무화·크로스 팀 협업이며, 개선할 지점은 **공통 모듈 버스팩터 완화**와 **R&D 결과물(Superset·Redis HA)의 실행 전환**, 그리고 **React 리뉴얼 4대 기능 완결**이다. 다음 반기는 "리뉴얼 완결 + 지식 분산 + R&D 실행" 세 축에 집중한다.
 
 ---
 

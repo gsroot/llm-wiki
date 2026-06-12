@@ -19,10 +19,10 @@ tags: [react, typescript, frontend, spa, tanstack]
 
 | 프로젝트 | 기간 | 역할 | 링크 |
 |---------|------|------|------|
-| 애널리틱스 React 기반 리뉴얼 | 2025-06 ~ 현재 | FE 리드, React 구조 설계·구축 주도 (476커밋) | [→](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) |
+| 애널리틱스 React 기반 리뉴얼 | 2025-06 ~ 현재 | FE 리드, React 구조 설계·구축 주도 (710커밋) | [→](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) |
 | XPLA 플랫폼 (웹뷰) | 2024-04 ~ 2024-07 | 풀스택, React 웹뷰 페이지 상태 전이 설계·구현 | [→](../20-projects/com2us-platform/2024-04-xpla-platform.md) |
 | NFT 마켓 (관리 대시보드 계열 포함) | 2022-05 ~ 2024-03 | NFT 지갑/Discord 연동 프론트 기여 | [→](../20-projects/com2us-platform/2022-05-nft-market.md) |
-| CODE 트래블룰 API — 거래소 관리 대시보드 | 2021-10 ~ 2022-06 | Python backend + React frontend 대시보드 | [→](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) |
+| CODE 트래블룰 API — 거래소 관리 대시보드 | 2021-10 ~ 2022-06 | Python backend + React frontend 대시보드 | [→](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) |
 | ML 유저 예측 프론트엔드 | 2020-08 ~ 2021-09 | React + Mobx 기반 구현 | (old-portfolio.md 참조) |
 | 애널리틱스 본체 (초기 화면) | 2017 ~ 2025 | jQuery + Thymeleaf → React 전환 주도 | (old-portfolio.md; Confluence 35568410) |
 
@@ -44,7 +44,7 @@ tags: [react, typescript, frontend, spa, tanstack]
 ## 대표 성과
 
 - **팀 최초 React 기반 아키텍처 표준화** — Vite + React + TypeScript + TanStack + Zustand + ag-grid 스택 확정, `2025 프론트엔드 개발 가이드라인`(Confluence 35568626) 문서화
-- **analytics-frontend 476커밋**(전체 ~24%) — GitHub 레포 인덱스 확인 (`docs/10-sources/com2us-platform/github-c2spf/repos/analytics-frontend.md`)
+- **analytics-frontend 710커밋**(전체 26.6%) — GitHub 레포 인덱스 확인 (`docs/10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-frontend.md`)
 - **ag-grid 공통 컴포넌트 설계 리드타임**: 2~3일 → **하루 미만**, 반복 개발 시간 50% 이상 절감 (Confluence 170034641 §4.1)
 - **팀 전체 프론트엔드 생산성 30~40% 향상 기반 구축** (old-portfolio.md L126 및 Confluence 170034641 §7 일치)
 - **GCPPDT-741 차트·측정값 UX 개선**: MR#20/#22 머지, 회귀 테스트 **32/32 통과**, 8종 에러 코드 × **5개 로케일 i18n** (validateExpression 유틸)
@@ -56,4 +56,4 @@ tags: [react, typescript, frontend, spa, tanstack]
 - Confluence 35568626 (2025 프론트엔드 개발 가이드라인)
 - Confluence 170034641 (AI 기반 개발 생산성 향상 가이드)
 - Confluence 35568410 (애널리틱스 리포트 아키텍처 분석 — 레거시 → React 전환 근거)
-- GitHub: [`c2spf/analytics-frontend`](../10-sources/com2us-platform/github-c2spf/repos/analytics-frontend.md)
+- GitHub: [`c2spf-gsroot/analytics-frontend`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-frontend.md)

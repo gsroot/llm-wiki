@@ -1,15 +1,15 @@
 ---
-title: "c2spf/analytics-common-api"
+title: "c2spf-gsroot/analytics-common-api"
 type: source-index
 company: com2us-platform
 source: github
-repo: c2spf/analytics-common-api
+repo: c2spf-gsroot/analytics-common-api
 visibility: private
 primary_language: Python
-collected_at: "2026-04-24"
+collected_at: "2026-06-12"
 ---
 
-# c2spf/analytics-common-api
+# c2spf-gsroot/analytics-common-api
 
 Analytics 공통 API + 공통 JavaScript — ✅ 운영 중 (지속 유지보수)
 
@@ -17,7 +17,7 @@ Analytics 공통 API + 공통 JavaScript — ✅ 운영 중 (지속 유지보수
 
 | 항목 | 값 |
 |------|----|
-| URL | <https://github.com/c2spf/analytics-common-api> (private) |
+| URL | <https://github.com/c2spf-gsroot/analytics-common-api> (private) |
 | Visibility | private |
 | Default Branch | `main` |
 | 주 언어 | Python (~97KB), JavaScript (~40KB), Dockerfile, Shell |
@@ -25,8 +25,8 @@ Analytics 공통 API + 공통 JavaScript — ✅ 운영 중 (지속 유지보수
 
 ## 내 기여
 
-- **내 커밋**: **231** / 전체 251 (~92% — 거의 단독 유지보수)
-- **기여 기간**: 2024-09-02 ~ 2026-04-16 (진행 중)
+- **내 커밋**: **235** / 전체 261 (90.0% — 거의 단독 유지보수)
+- **기여 기간**: 2024-09-02 ~ 2026-05-14 (진행 중)
 - **역할**: 공통 API·공통 JavaScript 설계·개발·유지보수 주 담당
 
 ## 기술 스택 (README + 커밋 메시지 기반)

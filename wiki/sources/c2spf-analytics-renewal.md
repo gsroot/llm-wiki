@@ -75,7 +75,7 @@ cited_by_count: 13
 - **스택**: Vite + React + TypeScript + TanStack Query/Router + Zustand + ag-grid + Highcharts + FastAPI + MySQL + BigQuery + Docker + Jenkins.
 - **성과**
  - 팀 최초 **React 기반 프론트엔드 아키텍처** 설계·표준화. "2025 프론트엔드 개발 가이드라인" 문서화.
- - `c2spf/analytics-frontend` **476커밋 (~24%)**, `c2spf/analytics-common-api` **231커밋 (92%)**.
+ - `c2spf-gsroot/analytics-frontend` **710커밋 (26.6%)**, `c2spf-gsroot/analytics-common-api` **235커밋 (90.0%)**.
  - **팀 프론트엔드 생산성 30~40% 향상 기반 구축**. ag-grid 공통 컴포넌트 설계 리드타임 2~3일에서 하루 미만으로, 반복 개발 시간 50%+ 절감.
  - 차트·퍼널·리텐션·대시보드 4대 분석 기능을 "생성·조회·수정" 구조로 단계적 리뉴얼.
  - GCPPDT-741/742 Story MR 머지, 회귀 테스트 **32/32 · 22/22 통과**, 측정값 연산식 에러 **8종 × 5개 로케일 i18n**.
@@ -86,7 +86,7 @@ cited_by_count: 13
 - `docs/20-projects/com2us-platform/2025-01-airbridge-api.md`
 - `docs/20-projects/com2us-platform/2025-06-analytics-react-renewal.md`
 - `docs/40-stories/leadership-react-adoption.md` — 리더십 STAR 스토리
-- GitHub: `c2spf/analytics-frontend`, `c2spf/analytics-common-api`
+- GitHub: `c2spf-gsroot/analytics-frontend`, `c2spf-gsroot/analytics-common-api`
 - Jira: GCPPDT-741, GCPPDT-742, GCPPDT-638, GCPPDT-639, GCPPDT-167
 - Confluence: 35568348 (공통 API 명세), 170034641 (FE 가이드라인)
 

@@ -5,15 +5,15 @@
 
 ## Summary
 
-- 9년차 백엔드/풀스택 개발자. **애널리틱스 공통 API(c2spf/analytics-common-api) 단독 유지보수(본인 커밋 231/251 ≈ 92%)** 및 **팀 최초 React 리뉴얼 주도**로 프론트엔드 생산성 30~40% 향상 기반을 구축.
+- 9년차 백엔드/풀스택 개발자. **애널리틱스 공통 API(c2spf-gsroot/analytics-common-api) 단독 유지보수(본인 커밋 235/261 ≈ 90.0%)** 및 **팀 최초 React 리뉴얼 주도**로 프론트엔드 생산성 30~40% 향상 기반을 구축.
 - AutoML/LangGraph 기반 ML·AI 서비스를 프로덕션까지 배포한 풀스택 엔지니어. **AI 여행 계획 Android 앱 Google Play 출시(2025-11)**.
 - CODE 트래블룰 · NFT 마켓(투표 스마트 컨트랙트 **가스비 ~90% 절감**) · XPLA 플랫폼 등 **블록체인 프로젝트 3건** 주도.
-- `analytics-frontend` **476커밋(~24%)** 기여, 공통 API 응답 envelope·APICode 표준화로 프론트-백 계약 고정.
+- `analytics-frontend` **710커밋(26.6%)** 기여, 공통 API 응답 envelope·APICode 표준화로 프론트-백 계약 고정.
 
 ## 핵심 성과 하이라이트
 
 - **팀 최초 React 기반 프론트엔드 아키텍처 도입·표준화** — Vite + React + TypeScript + TanStack + Zustand + ag-grid 스택 정립, "2025 프론트엔드 개발 가이드라인" 문서화. ag-grid 공통 컴포넌트 설계 리드타임 2~3일 → 하루 미만으로 단축.
-- **공통 API 단독 유지보수(92% 커밋 점유)** — APIResponse 표준 포맷 + APICode 13종 + BigQuery ProcessedData 결과 코드 4종 정립. Airbridge(MMP) 결합 파이프라인으로 광고 성과 분석을 애널리틱스 UI에서 측정 가능하게 확장.
+- **공통 API 단독 유지보수(90.0% 커밋 점유)** — APIResponse 표준 포맷 + APICode 13종 + BigQuery ProcessedData 결과 코드 4종 정립. Airbridge(MMP) 결합 파이프라인으로 광고 성과 분석을 애널리틱스 UI에서 측정 가능하게 확장.
 - **배포·운영 가이드 4종 집중 발행(2024-10)** — Docker Compose + Jenkins 멀티 브랜치 파이프라인 팀 표준화, Promtail/Loki/Grafana 로깅 스택 4개 환경(상용 Primary/Standby·샌드박스·테스트) 분리 운영.
 - **ML 유저 예측 평균 정확도 85% 이상 달성** — GCP AutoML + AI Platform Pipeline 기반 MLOps 체계 구축, 예측 결과를 마케팅/리텐션 전략에 활용.
 - **LangGraph 기반 AI 여행 계획 앱 Google Play 출시** — 토큰 기반 과금 시스템(1 Clover = 1,000 tokens) + 서버 측 영수증 검증 결제 시스템 구축.
@@ -22,7 +22,7 @@
 
 ### 컴투스플랫폼 (Com2usPlatform) · 2017-05 ~ 현재 · 백엔드/풀스택 개발자
 
-- **애널리틱스 React 리뉴얼** (2025-06 ~ 현재) — 팀 최초 React 기반 아키텍처 설계·구축 주도. `analytics-frontend` 476커밋 기여. 차트·퍼널·리텐션·대시보드 4대 분석 기능 "생성·조회·수정" 구조로 단계적 리뉴얼. [상세](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
+- **애널리틱스 React 리뉴얼** (2025-06 ~ 현재) — 팀 최초 React 기반 아키텍처 설계·구축 주도. `analytics-frontend` 710커밋 기여. 차트·퍼널·리텐션·대시보드 4대 분석 기능 "생성·조회·수정" 구조로 단계적 리뉴얼. [상세](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
 - **Airbridge 데이터 가공 API** (2025-01 ~ 2025-02) — `/common/processed-data` 엔드포인트에 AirbridgeData 모델·피벗팅 로직 추가. Spring Boot 리포트 스택 + FastAPI 공통 API 하이브리드 파이프라인 구축. [상세](../20-projects/com2us-platform/2025-01-airbridge-api.md)
 - **애널리틱스 공통 모듈 & 배포 프로세스 개선** (2024-08 ~ 2024-12) — FastAPI 공통 API 신규 설계·구현, HIVE OAuth 통합(8개 엔드포인트), Docker Compose + Jenkins 멀티 브랜치 파이프라인 표준화, Promtail/Loki/Grafana 로깅 스택 구축. [상세](../20-projects/com2us-platform/2024-08-analytics-common-module.md)
 - **XPLA 플랫폼** (2024-04 ~ 2024-07) — NestJS + TypeORM 백엔드, React 웹뷰. NFT 민팅 E2E 플로우(Action 조회 → 서명 → 전송 → 결과) 및 중복 민팅·수수료 부족 엣지 케이스 선제 처리. CPBLOC 19건 전수 완료. [상세](../20-projects/com2us-platform/2024-04-xpla-platform.md)

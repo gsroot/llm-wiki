@@ -35,7 +35,7 @@ skills_demonstrated:
 
 ### 정량
 
-- **GitHub 기여**: `c2spf/analytics-frontend` **476커밋** (2025-10-13 ~ 2026-04-23 기준 전체의 ~24%)로 리드 포지션을 가시화.
+- **GitHub 기여**: `c2spf-gsroot/analytics-frontend` **710커밋** (2025-04-16 ~ 2026-06-10 기준 전체의 26.6%)로 리드 포지션을 가시화.
 - **팀 전체 프론트엔드 생산성 30~40% 향상 기반 구축** (old-portfolio.md L126 원문 및 Confluence 170034641 §7 결론 일치).
 - **ag-grid 공통 컴포넌트 설계 리드타임: 2~3일 → 하루 미만**, 반복 개발 시간 50% 이상 절감 (Confluence 170034641 §4.1).
 - **회귀 테스트**: GCPPDT-741 MR#20/#22 머지 + **32/32 통과**, GCPPDT-742 MR#23/#24 머지 + **22/22 통과**.
@@ -52,7 +52,7 @@ skills_demonstrated:
 - **Confluence 170034641** — "AI 기반 개발 생산성 향상 가이드" (본인 작성)
 - **Confluence 35568348** — "지표 공통 API 명세 문서" (본인 작성)
 - **Confluence 35568410** — "애널리틱스 리포트 아키텍처 분석" (레거시 구조 배경)
-- **GitHub** `c2spf/analytics-frontend` — 476 커밋 기여, 리드
+- **GitHub** `c2spf-gsroot/analytics-frontend` — 710 커밋 기여, 리드
 - **Jira** GCPPDTDW-2365 (상위 Story), GCPPDT-741/742/638/639
 - **프로젝트 문서**: [`../20-projects/com2us-platform/2025-06-analytics-react-renewal.md`](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
 - **원 시드**: `old-portfolio.md` "애널리틱스 서비스 개편" 섹션 L111~138

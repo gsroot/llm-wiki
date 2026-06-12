@@ -50,8 +50,8 @@ Docker 기반 컨테이너 배포와 Jenkins 멀티 브랜치 파이프라인 �
 | 애널리틱스 React 리뉴얼 (2025-06 ~ 현재) | `analytics-common-api` Jenkinsfile 운영 개선: Docker 리소스 정리 방식 개선(2025-11), Docker 네트워크 존재 여부 검사, v2 서버군 도커·nginx 표준 구성(GCPSRE-15853), 공통 API nginx 정합성 개선(GCPSRE-16239, `proxy_intercept_errors off`) | [`2025-06-analytics-react-renewal.md`](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md) §주요 작업 4 |
 | NFT 마켓 (2022-05 ~ 2024-03) | 컨테이너 기반 배포 프로세스 개선(Docker 빌드·이미지·릴리스 표준화), Fluentd → ElasticSearch → Kibana 로그 수집 파이프라인 구축 | [`2022-05-nft-market.md`](../20-projects/com2us-platform/2022-05-nft-market.md) §3.2 |
 | XPLA 플랫폼 (2024-04 ~ 2024-07) | Docker 기반 배포로 환경 일관화, 블록체인 노드 의존 컨테이너화 | [`2024-04-xpla-platform.md`](../20-projects/com2us-platform/2024-04-xpla-platform.md) §5, 기술 포인트 |
-| 트래블룰 API (2021-10 ~ 2022-04) | Docker + AWS 배포, Sphinx 기반 API 문서 배포 파이프라인 | [`travelrule-api.md`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) |
-| 애널리틱스 본체 (지속) | 읽기전용 트래픽 마스터 전환·TCP Keepalive 개선 등 운영 이슈 Jenkinsfile 반영 | [`analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md) 특이 사항 |
+| 트래블룰 API (2021-10 ~ 2022-04) | Docker + AWS 배포, Sphinx 기반 API 문서 배포 파이프라인 | [`travelrule-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) |
+| 애널리틱스 본체 (지속) | 읽기전용 트래픽 마스터 전환·TCP Keepalive 개선 등 운영 이슈 Jenkinsfile 반영 | [`analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md) 특이 사항 |
 
 ## 주요 기술 포인트
 
@@ -131,6 +131,6 @@ Docker 기반 컨테이너 배포와 Jenkins 멀티 브랜치 파이프라인 �
 - [`../20-projects/com2us-platform/2025-06-analytics-react-renewal.md`](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
 - [`../20-projects/com2us-platform/2024-04-xpla-platform.md`](../20-projects/com2us-platform/2024-04-xpla-platform.md)
 - [`../20-projects/com2us-platform/2022-05-nft-market.md`](../20-projects/com2us-platform/2022-05-nft-market.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/analytics-prediction.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-prediction.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-prediction.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-prediction.md)

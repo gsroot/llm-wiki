@@ -45,7 +45,7 @@ sources:
   confluence:
     - "https://<org>.atlassian.net/wiki/spaces/AN/pages/123"
   github:
-    - "https://github.com/c2spf/<repo>"
+    - "https://github.com/c2spf-gsroot/<repo>"
   gdrive: ["private/google-drive/<file-id>.md"]
   gmail: ["private/gmail/<thread-id>.md"]
 tags: [frontend, react, architecture, refactoring]
@@ -99,7 +99,7 @@ skills_demonstrated:
 #### `type: source-index` (10-sources/)
 ```yaml
 ---
-title: "컴투스플랫폼 GitHub c2spf 조직 레포 인덱스"
+title: "컴투스플랫폼 GitHub c2spf-gsroot 조직 레포 인덱스"
 type: source-index
 company: com2us-platform
 source: github
@@ -126,8 +126,8 @@ collected_at: "2026-04-24"      # ISO 8601 date
 
 ### 외부 링크는 꺽쇠 또는 inline
 ```markdown
-<https://github.com/c2spf>      # URL 그대로 표시
-[c2spf](https://github.com/c2spf) # 텍스트 링크
+<https://github.com/c2spf-gsroot>      # URL 그대로 표시
+[c2spf-gsroot](https://github.com/c2spf-gsroot) # 텍스트 링크
 ```
 
 ### Frontmatter `sources:` 필드는 **경로 또는 URL 문자열**

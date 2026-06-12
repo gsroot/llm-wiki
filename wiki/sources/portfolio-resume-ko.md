@@ -45,10 +45,10 @@ cited_by_count: 12
 
 ## 핵심 내용
 
-- **Summary** — 9년차 백엔드/풀스택. 공통 API 92% 단독 유지보수 + 팀 최초 React 리뉴얼 주도. AutoML/LangGraph 기반 ML·AI 프로덕션 배포, 블록체인 프로젝트 3건 주도.
+- **Summary** — 9년차 백엔드/풀스택. 공통 API 90.0% 단독 유지보수 + 팀 최초 React 리뉴얼 주도. AutoML/LangGraph 기반 ML·AI 프로덕션 배포, 블록체인 프로젝트 3건 주도.
 - **핵심 성과 5선**
  1. 팀 최초 React 기반 프론트엔드 아키텍처 도입·표준화 (Vite + React + TS + TanStack + Zustand + ag-grid).
- 2. `analytics-common-api` 92% 커밋 점유, APIResponse·APICode 표준화, Airbridge 파이프라인 확장.
+ 2. `analytics-common-api` 90.0% 커밋 점유, APIResponse·APICode 표준화, Airbridge 파이프라인 확장.
  3. 배포·운영 가이드 4종 집중 발행(2024-10), Docker Compose + Jenkins 멀티브랜치 + Promtail/Loki/Grafana 4환경.
  4. ML 유저 예측 정확도 85%+, GCP AutoML + AI Platform Pipeline MLOps.
  5. LangGraph 기반 트래블메이트 Google Play 출시, 토큰 기반 과금·영수증 검증 결제.
@@ -57,7 +57,7 @@ cited_by_count: 12
 
 ## 주요 인사이트
 
-- 이력서는 **정량 수치 기반**으로 재작성됨 — "92% ownership", "476커밋 (~24%)", "가스비 ~90% 절감", "예측 정확도 85%+" 등. 각 수치는 portfolio 저장소 내 source INDEX로 역추적 가능.
+- 이력서는 **정량 수치 기반**으로 재작성됨 — "90.0% ownership", "710커밋 (26.6%)", "가스비 ~90% 절감", "예측 정확도 85%+" 등. 각 수치는 portfolio 저장소 내 source INDEX로 역추적 가능.
 - Summary 두 번째 문장은 "팀 최초 React 리뉴얼 주도"를 핵심으로 배치 → 현재 커리어 내러티브의 메인 축이 리더십·표준화임을 암시.
 - 개인 프로젝트는 별도 섹션으로 분리 → 회사 프로젝트의 깊이와 개인 프로젝트의 실행력(앱스토어 출시)을 구분해 보여줌.
 

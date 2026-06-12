@@ -42,13 +42,13 @@ sources:
     - private/confluence/35568410.md  # 애널리틱스 리포트 아키텍처 분석 (본인 작성)
     - private/confluence/35568800.md  # 사용자 권한 게임 목록 조회 API 통합 트러블슈팅 (본인 작성)
   github:
-    - "https://github.com/c2spf/analytics-frontend"   # 476 커밋 기여, 리드
-    - "https://github.com/c2spf/analytics-common-api" # 231 커밋 (92%), 거의 단독 유지보수
+    - "https://github.com/c2spf-gsroot/analytics-frontend"   # 710 커밋 기여, 리드
+    - "https://github.com/c2spf-gsroot/analytics-common-api" # 235 커밋 (90.0%), 거의 단독 유지보수
   gdrive: []
   gmail: []
 tags: [frontend, react, typescript, vite, architecture, refactoring, ag-grid, tanstack, zustand, analytics, ux]
 metrics:
-  - "내 분석 프론트엔드 GitHub 기여: analytics-frontend 476 커밋 (~24%), analytics-common-api 231 커밋 (92%, 거의 단독 유지보수) — GitHub 레포 인덱스 확인"
+  - "내 분석 프론트엔드 GitHub 기여: analytics-frontend 710 커밋 (26.6%), analytics-common-api 235 커밋 (90.0%, 거의 단독 유지보수) — GitHub 레포 인덱스 확인"
   - "팀 전체 개발 생산성 30~40% 향상 기반 구축 (old-portfolio.md L126, Confluence 170034641 L155 AI 가이드 결론 일치)"
   - "React + ag-grid 공통 컴포넌트 초안 설계 시간: 2~3일 → 하루 미만, 반복 개발 시간 50% 이상 절감 (Confluence 170034641 L83~84, AI 활용 사례 기록)"
   - "GCPPDT-742 차트 테이블 가독성 개선: MR#23/MR#24 머지 완료, 22/22 테스트 통과"
@@ -60,7 +60,7 @@ star:
   situation: "애널리틱스 서비스의 UI는 Spring MVC + Thymeleaf + Bootstrap + jQuery + Highcharts 기반 레거시 구조로 운영되고 있었고(Confluence 35568410 '애널리틱스 리포트 아키텍처 분석'), 각 서비스에 동일 로직(사용자 권한 게임 목록 조회 등)이 분산·중복 구현되어 있어 UX 개선·기능 추가의 리드타임이 길었다. 정보 구조(IA), 인터랙션, 컴포넌트 재사용성 측면에서 전면 개편 필요가 제기되었다."
   task: "팀 최초로 React 기반 프론트엔드 아키텍처를 설계·구축하고, ag-grid 중심의 공통 컴포넌트 모듈을 만들어 차트·퍼널·리텐션·대시보드 4대 분석 기능을 단계적으로 리뉴얼한다. 동시에 기존 공통 API와의 경계를 정비하고, 팀이 새 스택에 온보딩할 수 있는 가이드라인을 수립한다."
   action: "① Vite + React + TypeScript + TanStack Router + TanStack Query + Zustand + ag-grid 스택을 팀 표준으로 채택하고 '2025 프론트엔드 개발 가이드라인'(Confluence 35568626)을 문서화. ② 라우팅은 파일 기반(`src/routes/*.jsx` → `createFileRoute`), 서버 상태는 TanStack Query, 전역 상태는 Zustand 슬라이스(예: `chartStore.pieVisibility`)로 분리. ③ ag-grid 공통 모듈을 만들어 차트 테이블 컬럼 pinning·타입별 minWidth·fitCellContents 전략 도입(GCPPDT-742). ④ 차트/퍼널/리텐션/대시보드 지표를 '생성·조회·수정' 구조로 재설계, 지표 템플릿 기능(GCPPDT-638)·대시보드 CSV/이미지 내보내기(GCPPDT-639) 추가, 파이 차트 다중 측정값 시각화·validateExpression 8개 에러코드·5개 로케일 i18n(GCPPDT-741) 구현. ⑤ 공통 API(FastAPI) 측은 `result_code/message/data` 응답 envelope과 APICode(1001~2007 표준 오류 코드) 정의(Confluence 35568348). ⑥ 인프라 사전 작업으로 v2 WAS/Front/BI 서버군 도커·nginx 구성 표준화(GCPSRE-15853, 16239). ⑦ Claude Code / Codex CLI / ChatGPT를 설계 초안·리팩토링·리뷰에 도입한 AI 가이드를 별도 문서화(Confluence 170034641)."
-  result: "analytics-frontend 레포에 476커밋을 기여하며 팀 최초 React 구조 표준화를 완료, GCPPDT-741/742 Story의 MR이 머지되고 회귀 테스트 통과(32/32, 22/22). ag-grid 공통 컴포넌트 설계 리드타임을 2~3일 → 하루 미만으로 단축, 반복 개발 시간 50% 이상 절감(Confluence 170034641). 팀 전체 생산성 30~40% 향상 기반을 확보(old-portfolio.md L126 원문과 Confluence 170034641 L155 결론 일치). 공통 API 측은 analytics-common-api의 92%를 본인이 기여하며 응답 envelope/오류 코드 표준화를 문서로 확립."
+  result: "analytics-frontend 레포에 710커밋을 기여하며 팀 최초 React 구조 표준화를 완료, GCPPDT-741/742 Story의 MR이 머지되고 회귀 테스트 통과(32/32, 22/22). ag-grid 공통 컴포넌트 설계 리드타임을 2~3일 → 하루 미만으로 단축, 반복 개발 시간 50% 이상 절감(Confluence 170034641). 팀 전체 생산성 30~40% 향상 기반을 확보(old-portfolio.md L126 원문과 Confluence 170034641 L155 결론 일치). 공통 API 측은 analytics-common-api의 90.0%를 본인이 기여하며 응답 envelope/오류 코드 표준화를 문서로 확립."
 ---
 
 # 애널리틱스 서비스 React 기반 리뉴얼
@@ -77,7 +77,7 @@ star:
 - **2025 프론트엔드 개발 가이드라인 문서화** — 팀원 온보딩 절차(`.nvmrc`, Vite dev 서버, 파일 기반 라우팅 규칙), React Hook 가이드, 공통 토스트/세션 사용법 정리 (Confluence 35568626)
 - **ag-grid 공통 컴포넌트 모듈 개발** — 차트 테이블 컬럼 pinning 전략(`PINNED_DIMENSION_LIMIT=3`), 타입별 minWidth(date:110 / dim:180 / measure:130), fitCellContents 전환 (Jira GCPPDT-742)
 - **차트·퍼널·리텐션·대시보드 기능 개발** — 지표 템플릿 적용(GCPPDT-638), 대시보드 CSV/이미지 내보내기(GCPPDT-639), 파이 차트 다중 측정값 시각화·측정값 연산식 검증(GCPPDT-741)
-- **공통 API 유지보수·확장** — analytics-common-api 231커밋(전체의 92%), FastAPI + MySQL 8.4 + BigQuery + Redis 스택, Jenkins CI/CD 파이프라인 개선
+- **공통 API 유지보수·확장** — analytics-common-api 235커밋(전체의 90.0%), FastAPI + MySQL 8.4 + BigQuery + Redis 스택, Jenkins CI/CD 파이프라인 개선
 - **인프라 정합성 확보** — 애널리틱스 v2 서버군(WAS/Front/BI, live/staging/sandbox/test) 도커·nginx 구성(GCPSRE-15853), 운영 중 nginx 설정 개선(GCPSRE-16239)
 - **기획·디자인·백엔드 협업 및 QA** — 사용성 테스트, 내부 QA, 코드 리뷰, MR 피드백 반영(경계 테스트/WHY 주석 보강 등)
 - **AI 기반 개발 생산성 향상 가이드 작성** — 팀원들이 Claude Code / Codex CLI / ChatGPT를 실무에 활용할 수 있도록 시나리오·프롬프트 템플릿 정리 (Confluence 170034641)
@@ -147,7 +147,7 @@ star:
 
 ### 정량
 
-- **GitHub 기여**: analytics-frontend **476커밋**(전체 ~24%), analytics-common-api **231커밋**(전체의 **92%**, 거의 단독 유지보수) — 레포 인덱스 문서 확인
+- **GitHub 기여**: analytics-frontend **710커밋**(전체 26.6%), analytics-common-api **235커밋**(전체의 **90.0%**, 거의 단독 유지보수) — 레포 인덱스 문서 확인
 - **팀 생산성**: 반복 개발 리드타임 **30~40% 향상 기반 구축** (old-portfolio.md L126 원문; Confluence 170034641 §7 결론에서도 동일 수치로 정리)
 - **ag-grid 공통 컴포넌트 설계 시간**: 2~3일 → **하루 미만**, 반복 개발 시간 **50% 이상 절감** (Confluence 170034641 §4.1)
 - **MR·테스트**: GCPPDT-742 차트 테이블 MR#23/#24 머지 완료, **22/22 테스트 통과**; GCPPDT-741 MR#20/#22 머지, **회귀 테스트 32/32 통과**
@@ -165,8 +165,8 @@ star:
 
 ### GitHub (2건)
 
-- [`c2spf/analytics-frontend`](https://github.com/c2spf/analytics-frontend) — 476커밋 / 전체 2,000+ (~24%), 2025-10-13 ~ 2026-04-23 기여, 프론트엔드 리드
-- [`c2spf/analytics-common-api`](https://github.com/c2spf/analytics-common-api) — 231커밋 / 전체 251 (~92%), 2024-09-02 ~ 2026-04-16 기여, 공통 API·공통 JavaScript 담당
+- [`c2spf-gsroot/analytics-frontend`](https://github.com/c2spf-gsroot/analytics-frontend) — 710커밋 / 전체 2,673 (26.6%), 2025-04-16 ~ 2026-06-10 기여, 프론트엔드 리드
+- [`c2spf-gsroot/analytics-common-api`](https://github.com/c2spf-gsroot/analytics-common-api) — 235커밋 / 전체 261 (90.0%), 2024-09-02 ~ 2026-05-14 기여, 공통 API·공통 JavaScript 담당
 
 ### Jira (9건)
 
@@ -213,4 +213,4 @@ Vite + React + TypeScript + TanStack Router/Query + Zustand + ag-grid 스택을 
 
 ### Result
 
-analytics-frontend에 476커밋, analytics-common-api에 231커밋(92%)을 기여하며 팀 최초 React 구조 표준화를 완료. MR들이 순차 머지되고 회귀 테스트 통과(32/32, 22/22). ag-grid 공통 컴포넌트 설계 리드타임이 2~3일 → 하루 미만으로 단축되고 반복 개발 시간 50% 이상 절감되며, **팀 전체 프론트엔드 생산성 30~40% 향상 기반**이 확보됨(old-portfolio.md L126 및 Confluence 170034641 §7 일치). 공통 API 응답 envelope·오류 코드 표준화 문서화로 프론트-백 계약이 고정되어 신규 기능의 협업 사이클이 단축됨.
+analytics-frontend에 710커밋, analytics-common-api에 235커밋(90.0%)을 기여하며 팀 최초 React 구조 표준화를 완료. MR들이 순차 머지되고 회귀 테스트 통과(32/32, 22/22). ag-grid 공통 컴포넌트 설계 리드타임이 2~3일 → 하루 미만으로 단축되고 반복 개발 시간 50% 이상 절감되며, **팀 전체 프론트엔드 생산성 30~40% 향상 기반**이 확보됨(old-portfolio.md L126 및 Confluence 170034641 §7 일치). 공통 API 응답 envelope·오류 코드 표준화 문서화로 프론트-백 계약이 고정되어 신규 기능의 협업 사이클이 단축됨.

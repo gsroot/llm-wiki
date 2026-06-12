@@ -1,15 +1,15 @@
 ---
-title: "c2spf/analytics-download"
+title: "c2spf-gsroot/analytics-download"
 type: source-index
 company: com2us-platform
 source: github
-repo: c2spf/analytics-download
+repo: c2spf-gsroot/analytics-download
 visibility: private
 primary_language: Python
-collected_at: "2026-04-24"
+collected_at: "2026-06-12"
 ---
 
-# c2spf/analytics-download
+# c2spf-gsroot/analytics-download
 
 빅쿼리 대용량 다운로드 JobQueue Worker 데몬 — ✅ 완료
 
@@ -17,9 +17,9 @@ collected_at: "2026-04-24"
 
 | 항목 | 값 |
 |------|----|
-| URL | <https://github.com/c2spf/analytics-download> (private) |
+| URL | <https://github.com/c2spf-gsroot/analytics-download> (private) |
 | Visibility | private |
-| Default Branch | `master` |
+| Default Branch | `main` |
 | 주 언어 | Python (~80KB), JavaScript (~21KB), HTML, CSS |
 | 크기 | 5.9 MB |
 

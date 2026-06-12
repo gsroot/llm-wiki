@@ -19,7 +19,7 @@ CODE 트래블룰 API(가상자산 규제 대응 업계 초기 구현), NFT 마�
 
 | 프로젝트 | 기간 | 역할 | 링크 |
 |---------|------|------|------|
-| CODE 트래블룰 API (라이트닝) | 2021-10 ~ 2022-06 | 프로젝트 **전담 리더** — 웹/블록체인 API 설계·구현, Sample VASP API, 관리 대시보드 | [→](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) |
+| CODE 트래블룰 API (라이트닝) | 2021-10 ~ 2022-06 | 프로젝트 **전담 리더** — 웹/블록체인 API 설계·구현, Sample VASP API, 관리 대시보드 | [→](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) |
 | NFT 마켓 (지갑·Discord 홀더 인증·투표 컨트랙트) | 2022-05 ~ 2024-03 | NFT 지갑 백엔드, Discord 봇 통합, Rust 스마트 컨트랙트, 배포 개선 | [→](../20-projects/com2us-platform/2022-05-nft-market.md) |
 | XPLA 플랫폼 | 2024-04 ~ 2024-07 | 시스템 설계·API 정의·풀스택, 게임 SDK용 지갑/민팅 기능 제공 | [→](../20-projects/com2us-platform/2024-04-xpla-platform.md) |
 
@@ -46,6 +46,6 @@ CODE 트래블룰 API(가상자산 규제 대응 업계 초기 구현), NFT 마�
 ## 관련 인용 출처
 
 - [old-portfolio.md](../../old-portfolio.md) — 가스비 90% 절감, NFT 홀더 인증 상용화 원문
-- GitHub: [`c2spf/travelrule-api`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) (135커밋 / 507, 2021-11 ~ 2022-06)
+- GitHub: [`c2spf-gsroot/travelrule-api`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) (135커밋 / 507, 2021-11 ~ 2022-06)
 - Confluence PNFTBD-51985462 (디스코드 홀더 인증 봇 수집 데이터 정리)
 - Jira: GCPNFT-983/1401/1248/1971 (Epic), CPBLOC-821/861/862 (XPLA Mint·리팩토링·다국어), GCPHDBA-1245 (블록체인 웹 지갑 상용 DB)

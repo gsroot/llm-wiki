@@ -1,15 +1,15 @@
 ---
-title: "c2spf/travelrule-api"
+title: "c2spf-gsroot/travelrule-api"
 type: source-index
 company: com2us-platform
 source: github
-repo: c2spf/travelrule-api
+repo: c2spf-gsroot/travelrule-api
 visibility: private
 primary_language: Python
-collected_at: "2026-04-24"
+collected_at: "2026-06-12"
 ---
 
-# c2spf/travelrule-api
+# c2spf-gsroot/travelrule-api
 
 가상자산 거래소용 트래블룰 이행 공통 API ("라이트닝" 서비스) — ✅ 완료
 
@@ -17,9 +17,9 @@ collected_at: "2026-04-24"
 
 | 항목 | 값 |
 |------|----|
-| URL | <https://github.com/c2spf/travelrule-api> (private) |
+| URL | <https://github.com/c2spf-gsroot/travelrule-api> (private) |
 | Visibility | private |
-| Default Branch | `master` |
+| Default Branch | `main` |
 | 주 언어 | Python (~670KB), JavaScript (~312KB), CSS, Dockerfile, Shell, Mako |
 | 크기 | 3.7 MB |
 

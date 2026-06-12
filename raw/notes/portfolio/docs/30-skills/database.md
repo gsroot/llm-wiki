@@ -50,14 +50,14 @@ tags: [database, sql, nosql, redis, bigquery, rdbms]
 
 | 프로젝트 | 주요 DB 작업 | 문서 |
 |---------|-------------|------|
-| 애널리틱스 본체 (2017~) | MySQL + Redis + BigQuery 하이브리드. BigQuery Decimal 컬럼 int64/float64 변환, `date_type=MINUTE` 검증, 피벗 축 NULL 플레이스홀더 대체 등 데이터 타입 안정화 지속 | [`analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md) 특이 사항 |
+| 애널리틱스 본체 (2017~) | MySQL + Redis + BigQuery 하이브리드. BigQuery Decimal 컬럼 int64/float64 변환, `date_type=MINUTE` 검증, 피벗 축 NULL 플레이스홀더 대체 등 데이터 타입 안정화 지속 | [`analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md) 특이 사항 |
 | 애널리틱스 공통 모듈 (2024-08~) | MySQL 8.4 업그레이드 대응, **슬레이브 DB 동기화 이슈로 읽기전용 트래픽도 마스터 DB 전환** (2025-11 커밋), OS별 TCP Keepalive 개선, Redis 기반 `/hive/auth/games` 캐시 + 패턴 매칭 무효화 | [`2024-08-analytics-common-module.md`](../20-projects/com2us-platform/2024-08-analytics-common-module.md) |
 | Airbridge 데이터 가공 API (2025-01) | BigQuery + Airbridge 쿼리 결합·피벗팅, Redis 캐시 기반 사용자/메뉴/게임 권한 제공 | [`2025-01-airbridge-api.md`](../20-projects/com2us-platform/2025-01-airbridge-api.md) §5.3 |
-| ML 유저 예측 (2020-08) | MySQL 5.5 `CLASSIFICATION` DB, Redis, **GCP AutoML + BigQuery ML** 기반 예측 모델 운영 | [`analytics-prediction.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-prediction.md) |
-| 대용량 데이터 다운로드 REST API (2019-03) | MySQL, Redis, **BigQuery + Celery 비동기 워커** 기반 대용량 다운로드 JobQueue 설계 | [`analytics-download.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-download.md) |
+| ML 유저 예측 (2020-08) | MySQL 5.5 `CLASSIFICATION` DB, Redis, **GCP AutoML + BigQuery ML** 기반 예측 모델 운영 | [`analytics-prediction.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-prediction.md) |
+| 대용량 데이터 다운로드 REST API (2019-03) | MySQL, Redis, **BigQuery + Celery 비동기 워커** 기반 대용량 다운로드 JobQueue 설계 | [`analytics-download.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-download.md) |
 | NFT 마켓 (2022-05) | MySQL 8 MASTER-SLAVE(`wallet-db-live-11/12`) DB 서버 신청(GCPHDBA-1245, 2022-07), Redis 캐시, TypeORM으로 지갑/NFT 메타데이터 모델링 | [`2022-05-nft-market.md`](../20-projects/com2us-platform/2022-05-nft-market.md) §3.1, §3.2 |
 | XPLA 플랫폼 (2024-04) | 2022년 구축된 `wallet-db-live-*` 인프라 재사용, TypeORM 기반 백엔드 | [`2024-04-xpla-platform.md`](../20-projects/com2us-platform/2024-04-xpla-platform.md) |
-| CODE 트래블룰 API (2021-10) | **MariaDB** + Redis + NATS, SQLAlchemy + Alembic, Locust 부하 테스트 | [`travelrule-api.md`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md) |
+| CODE 트래블룰 API (2021-10) | **MariaDB** + Redis + NATS, SQLAlchemy + Alembic, Locust 부하 테스트 | [`travelrule-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md) |
 | 줌닷컴 사용자 데이터 분석 (2016-02) | **HiveQL** 분산 시스템 기반 쿼리 경험 | `old-portfolio.md` |
 | 권한 관리 시스템 DB (2024-11) | GCPHDBA-2820 요청자로 본인이 서비스 런칭 전 인프라 사전 준비 | [`2024-08-analytics-common-module.md`](../20-projects/com2us-platform/2024-08-analytics-common-module.md) §5 |
 | 개인: Mate Chat (2025-08~) | **PostgreSQL** + SQLAlchemy + Alembic + Redis, WebSocket 채팅·AI 대화 영속화 | `old-portfolio.md` L257 |
@@ -139,7 +139,7 @@ tags: [database, sql, nosql, redis, bigquery, rdbms]
 - [`../20-projects/com2us-platform/2025-06-analytics-react-renewal.md`](../20-projects/com2us-platform/2025-06-analytics-react-renewal.md)
 - [`../20-projects/com2us-platform/2024-04-xpla-platform.md`](../20-projects/com2us-platform/2024-04-xpla-platform.md)
 - [`../20-projects/com2us-platform/2022-05-nft-market.md`](../20-projects/com2us-platform/2022-05-nft-market.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-common-api.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/analytics-download.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-download.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/analytics-prediction.md`](../10-sources/com2us-platform/github-c2spf/repos/analytics-prediction.md)
-- [`../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md`](../10-sources/com2us-platform/github-c2spf/repos/travelrule-api.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-common-api.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-download.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-download.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-prediction.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/analytics-prediction.md)
+- [`../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md`](../10-sources/com2us-platform/github-c2spf-gsroot/repos/travelrule-api.md)

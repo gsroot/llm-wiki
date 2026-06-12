@@ -51,7 +51,7 @@ cited_by_count: 31
 ## 핵심 내용
 
 - **FastAPI** — 현재 주력. 비동기 처리, 자동 OpenAPI 스키마 생성, Pydantic 검증.
- - c2spf `analytics-common-api` (231/251 커밋, ~92%) — 단독 유지보수.
+ - c2spf `analytics-common-api` (235/261 커밋, 90.0%) — 단독 유지보수.
  - 트래블메이트 / Mate Chat 백엔드 (개인 프로젝트).
  - CODE 트래블룰 API (FastAPI + SQLAlchemy + Pytest + Locust).
 - **Spring Boot** — c2spf 애널리틱스 리포트 계층, 줌인터넷 스윙 브라우저.
